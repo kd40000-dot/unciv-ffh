@@ -83,5 +83,18 @@
     "uniques": [
       "Can only be built to improve a resource"
     ]
+  },
+  {
+    "name": "Ancient ruins",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Provides a random bonus when entered",
+      "Unbuildable",
+      "Does not need removal of [Forest]",
+      "Does not need removal of [Jungle]"
+    ]
   }
 ]

@@ -43,6 +43,12 @@ for res in data["TileResources"]:
     assert res["improvement"] in improvements, res["name"]
     assert set(res["terrainsCanBeFoundOn"]) <= terrains, res["name"]
 assert {"Amurites", "Bannor", "Ljosalfar", "Clan of Embers", "Barbarians", "Spectator"} <= civs
+# Stock terrain definitions reference Sheep and Rejuvenation.
+# Ruin rewards need a placed tile improvement with the ruins unique.
+assert "Sheep" in named(data["TileResources"]), "Terrain's Hill region needs Sheep resource"
+assert "Rejuvenation" in named(data["UnitPromotions"]), "Fountain of Youth needs Rejuvenation promotion"
+assert any("Provides a random bonus when entered" in x.get("uniques", [])
+           for x in data["TileImprovements"]), "Ruin rewards need Ancient ruins equivalent"
 print(f"OK: {len(data)} JSON files, {len(techs)} technologies, {len(unitNames)} units.")
 
 # Replicate GithubAPI.isValidModFolder root classification to catch invalid archives.

@@ -100,5 +100,17 @@
     ],
     "improvement": "Node of Mana",
     "gold": 1
+  },
+  {
+    "name": "Sheep",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Hill"
+    ],
+    "food": 1,
+    "improvement": "Pasture",
+    "improvementStats": {
+      "food": 1
+    }
   }
 ]

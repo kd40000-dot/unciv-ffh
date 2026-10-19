@@ -34,5 +34,11 @@
     "uniques": [
       "[+10]% Strength <when defending>"
     ]
+  },
+  {
+    "name": "Rejuvenation",
+    "uniques": [
+      "All healing effects doubled"
+    ]
   }
 ]

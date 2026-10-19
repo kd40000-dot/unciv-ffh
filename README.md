@@ -36,3 +36,11 @@ Unciv's GitHub ZIP importer requires recognized mod entries to outnumber
 unrecognized entries at the archive root. All auxiliary project files live
 under `development/` to keep the root valid. The validation workflow
 checks this condition to prevent regression.
+
+## Important: choose the right Base Ruleset
+
+When setting up a game, select **unciv ffh** as the **Base Ruleset**
+(not `Fantasia 3.2`). This mod is standalone rather than an expansion
+for Fantasia. Do not select both in the same game. After updating the
+mod via Unciv's mod manager, create a **new game** to test the current
+ruleset.
