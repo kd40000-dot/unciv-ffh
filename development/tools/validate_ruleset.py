@@ -35,7 +35,7 @@ print(f"OK: {len(data)} JSON files, {len(techs)} technologies, {len(unitNames)} 
 
 # Replicate GithubAPI.isValidModFolder root classification to catch invalid archives.
 repo = root.parent
-root_items = list(repo.iterdir())
+root_items = [f for f in repo.iterdir() if f.name != ".git"]  # Git metadata is not part of GitHub ZIP archives
 known_dirs = ("Images", "jsons", "maps", "music", "scenarios", "sounds", "voices", ".github")
 good = sum(1 for f in root_items if (
     (f.is_dir() and (f.name in known_dirs or f.name.startswith("Images.")))
