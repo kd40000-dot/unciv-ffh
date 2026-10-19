@@ -2,7 +2,7 @@
 """Static references and JSON check, not an Unciv engine validation."""
 import json
 from pathlib import Path
-root = Path(__file__).resolve().parents[1] / "jsons"
+root = Path(__file__).resolve().parents[2] / "jsons"
 data = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in root.glob("*.json")}
 assert data["ModOptions"]["isBaseRuleset"] is True
 named = lambda xs: {x["name"] for x in xs}
@@ -32,3 +32,16 @@ for res in data["TileResources"]:
     assert set(res["terrainsCanBeFoundOn"]) <= terrains, res["name"]
 assert {"Amurites", "Bannor", "Ljosalfar", "Clan of Embers", "Barbarians", "Spectator"} <= civs
 print(f"OK: {len(data)} JSON files, {len(techs)} technologies, {len(unitNames)} units.")
+
+# Replicate GithubAPI.isValidModFolder root classification to catch invalid archives.
+repo = root.parent
+root_items = list(repo.iterdir())
+known_dirs = ("Images", "jsons", "maps", "music", "scenarios", "sounds", "voices", ".github")
+good = sum(1 for f in root_items if (
+    (f.is_dir() and (f.name in known_dirs or f.name.startswith("Images.")))
+    or (f.is_file() and (f.suffix.lower() in (".md", ".atlas", ".png")
+        or f.name.lower() in ("preview.jpg", "atlases.json", ".nomedia", "license")))
+))
+bad = len(root_items) - good
+assert good > bad, f"Unciv rejects mod archive root: {good} good, {bad} bad"
+print(f"Unciv archive structure OK: {good} recognized, {bad} unrecognized root entries")

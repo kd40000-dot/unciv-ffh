@@ -29,3 +29,10 @@ This project is an independent fan adaptation and is not affiliated with the ori
 5. Implement spells, monster/lair interactions, and unique civ mechanics incrementally.
 
 **Not yet verified:** rendering, game creation, AI play, spell effects, and gameplay balance. We will record what has actually been tested rather than assume compatibility.
+
+## Archive download compatibility
+
+Unciv's GitHub ZIP importer requires recognized mod entries to outnumber
+unrecognized entries at the archive root. All auxiliary project files live
+under `development/` to keep the root valid. The validation workflow
+checks this condition to prevent regression.
