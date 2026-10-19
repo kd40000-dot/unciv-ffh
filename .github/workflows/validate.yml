@@ -11,3 +11,20 @@ jobs:
         with:
           python-version: '3.12'
       - run: python development/tools/validate_ruleset.py
+
+  unciv-mod-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Download official Unciv release
+        run: |
+          set -euo pipefail
+          URL=$(curl --fail --silent --show-error https://api.github.com/repos/yairm210/Unciv/releases/latest |
+            jq -er '.assets[] | select(.name == "Unciv.jar") | .browser_download_url')
+          curl --fail --location --silent --show-error "$URL" --output /tmp/Unciv.jar
+      - name: Run official Unciv ruleset validator
+        run: java -jar /tmp/Unciv.jar mod-ci
