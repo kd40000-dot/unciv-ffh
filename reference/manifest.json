@@ -1,0 +1,12 @@
+{
+  "game": "ExtraModMod Continued",
+  "source": "https://github.com/bewlay/extramodmod",
+  "sourceCommit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "civilizations": "EMM CIV4CivilizationInfos.xml and Civilizations.xml",
+  "technologies": "EMM CIV4TechInfos.xml",
+  "techCostMultiplier": 0.35,
+  "orPrerequisiteAdaptation": "Select first OR alternative; preserve all candidates in tech-source-subset.json",
+  "terrain": "Stock Unciv base terrain for early map generation",
+  "implementation": "Normal Unciv 1-unit-per-tile rules, simplified abilities; mana casting and Armageddon Counter not implemented",
+  "validation": "Reference sanity checks only; Unciv in-game test pending"
+}

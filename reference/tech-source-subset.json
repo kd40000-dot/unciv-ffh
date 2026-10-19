@@ -1,0 +1,255 @@
+{
+  "Agriculture": {
+    "sourceId": "TECH_AGRICULTURE",
+    "sourceCost": 80,
+    "or": [],
+    "and": []
+  },
+  "Ancient Chants": {
+    "sourceId": "TECH_ANCIENT_CHANTS",
+    "sourceCost": 80,
+    "or": [],
+    "and": []
+  },
+  "Crafting": {
+    "sourceId": "TECH_CRAFTING",
+    "sourceCost": 120,
+    "or": [],
+    "and": []
+  },
+  "Exploration": {
+    "sourceId": "TECH_EXPLORATION",
+    "sourceCost": 80,
+    "or": [],
+    "and": []
+  },
+  "Animal Husbandry": {
+    "sourceId": "TECH_ANIMAL_HUSBANDRY",
+    "sourceCost": 180,
+    "or": [
+      "Agriculture"
+    ],
+    "and": []
+  },
+  "Calendar": {
+    "sourceId": "TECH_CALENDAR",
+    "sourceCost": 160,
+    "or": [
+      "Agriculture"
+    ],
+    "and": []
+  },
+  "Festivals": {
+    "sourceId": "TECH_FESTIVALS",
+    "sourceCost": 180,
+    "or": [
+      "Calendar"
+    ],
+    "and": []
+  },
+  "Hunting": {
+    "sourceId": "TECH_HUNTING",
+    "sourceCost": 300,
+    "or": [
+      "Exploration"
+    ],
+    "and": []
+  },
+  "Mining": {
+    "sourceId": "TECH_MINING",
+    "sourceCost": 200,
+    "or": [
+      "Crafting"
+    ],
+    "and": []
+  },
+  "Masonry": {
+    "sourceId": "TECH_MASONRY",
+    "sourceCost": 140,
+    "or": [
+      "Crafting"
+    ],
+    "and": []
+  },
+  "Mysticism": {
+    "sourceId": "TECH_MYSTICISM",
+    "sourceCost": 200,
+    "or": [
+      "Ancient Chants"
+    ],
+    "and": []
+  },
+  "Education": {
+    "sourceId": "TECH_EDUCATION",
+    "sourceCost": 280,
+    "or": [
+      "Ancient Chants"
+    ],
+    "and": [
+      "Agriculture"
+    ]
+  },
+  "Archery": {
+    "sourceId": "TECH_ARCHERY",
+    "sourceCost": 300,
+    "or": [
+      "Hunting",
+      "Mining"
+    ],
+    "and": []
+  },
+  "Bronze Working": {
+    "sourceId": "TECH_BRONZE_WORKING",
+    "sourceCost": 400,
+    "or": [
+      "Mining"
+    ],
+    "and": []
+  },
+  "Construction": {
+    "sourceId": "TECH_CONSTRUCTION",
+    "sourceCost": 400,
+    "or": [
+      "Masonry"
+    ],
+    "and": []
+  },
+  "Warfare": {
+    "sourceId": "TECH_WARFARE",
+    "sourceCost": 320,
+    "or": [
+      "Education"
+    ],
+    "and": []
+  },
+  "Philosophy": {
+    "sourceId": "TECH_PHILOSOPHY",
+    "sourceCost": 300,
+    "or": [
+      "Mysticism"
+    ],
+    "and": []
+  },
+  "Knowledge of the Ether": {
+    "sourceId": "TECH_KNOWLEDGE_OF_THE_ETHER",
+    "sourceCost": 360,
+    "or": [
+      "Mysticism"
+    ],
+    "and": []
+  },
+  "Animal Handling": {
+    "sourceId": "TECH_ANIMAL_HANDLING",
+    "sourceCost": 600,
+    "or": [
+      "Hunting"
+    ],
+    "and": [
+      "Animal Husbandry"
+    ]
+  },
+  "Horseback Riding": {
+    "sourceId": "TECH_HORSEBACK_RIDING",
+    "sourceCost": 400,
+    "or": [
+      "Animal Husbandry"
+    ],
+    "and": []
+  },
+  "Bowyers": {
+    "sourceId": "TECH_BOWYERS",
+    "sourceCost": 1400,
+    "or": [
+      "Archery"
+    ],
+    "and": []
+  },
+  "Alteration": {
+    "sourceId": "TECH_ALTERATION",
+    "sourceCost": 640,
+    "or": [
+      "Knowledge of the Ether"
+    ],
+    "and": []
+  },
+  "Divination": {
+    "sourceId": "TECH_DIVINATION",
+    "sourceCost": 640,
+    "or": [
+      "Knowledge of the Ether"
+    ],
+    "and": []
+  },
+  "Elementalism": {
+    "sourceId": "TECH_ELEMENTALISM",
+    "sourceCost": 640,
+    "or": [
+      "Knowledge of the Ether"
+    ],
+    "and": []
+  },
+  "Necromancy": {
+    "sourceId": "TECH_NECROMANCY",
+    "sourceCost": 640,
+    "or": [
+      "Knowledge of the Ether"
+    ],
+    "and": []
+  },
+  "Sorcery": {
+    "sourceId": "TECH_SORCERY",
+    "sourceCost": 2000,
+    "or": [
+      "Alteration",
+      "Divination",
+      "Elementalism",
+      "Necromancy"
+    ],
+    "and": [
+      "Writing"
+    ]
+  },
+  "Writing": {
+    "sourceId": "TECH_WRITING",
+    "sourceCost": 380,
+    "or": [
+      "Education"
+    ],
+    "and": []
+  },
+  "Code of Laws": {
+    "sourceId": "TECH_CODE_OF_LAWS",
+    "sourceCost": 320,
+    "or": [
+      "Education"
+    ],
+    "and": []
+  },
+  "Orders from Heaven": {
+    "sourceId": "TECH_ORDERS_FROM_HEAVEN",
+    "sourceCost": 1080,
+    "or": [
+      "Philosophy"
+    ],
+    "and": [
+      "Code of Laws"
+    ]
+  },
+  "Fishing": {
+    "sourceId": "TECH_FISHING",
+    "sourceCost": 160,
+    "or": [
+      "Exploration",
+      "Seafaring"
+    ],
+    "and": []
+  },
+  "Sailing": {
+    "sourceId": "TECH_SAILING",
+    "sourceCost": 320,
+    "or": [
+      "Fishing"
+    ],
+    "and": []
+  }
+}

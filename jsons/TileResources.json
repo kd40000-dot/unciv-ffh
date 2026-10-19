@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Cattle",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Grassland"
+    ],
+    "improvement": "Pasture",
+    "food": 1
+  },
+  {
+    "name": "Deer",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Forest",
+      "Tundra"
+    ],
+    "improvement": "Camp",
+    "food": 1
+  },
+  {
+    "name": "Wheat",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Plains",
+      "Flood plains",
+      "Desert"
+    ],
+    "improvement": "Farm",
+    "food": 1
+  },
+  {
+    "name": "Fish",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Coast"
+    ],
+    "improvement": "Fishing Boats",
+    "food": 1
+  },
+  {
+    "name": "Horses",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Plains",
+      "Grassland",
+      "Hill"
+    ],
+    "improvement": "Pasture",
+    "production": 1
+  },
+  {
+    "name": "Iron",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Snow",
+      "Hill"
+    ],
+    "improvement": "Mine",
+    "production": 1
+  },
+  {
+    "name": "Gold Ore",
+    "resourceType": "Luxury",
+    "terrainsCanBeFoundOn": [
+      "Desert",
+      "Hill",
+      "Forest",
+      "Jungle"
+    ],
+    "improvement": "Mine",
+    "gold": 2
+  },
+  {
+    "name": "Silver",
+    "resourceType": "Luxury",
+    "terrainsCanBeFoundOn": [
+      "Hill",
+      "Forest",
+      "Jungle",
+      "Tundra",
+      "Grassland"
+    ],
+    "improvement": "Mine",
+    "gold": 2
+  },
+  {
+    "name": "Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  }
+]

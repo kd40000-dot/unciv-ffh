@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Settler",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 120,
+    "uniques": [
+      "Founds a new city <by consuming this unit>",
+      "Excess Food converted to Production when under construction",
+      "Requires at least [2] population"
+    ]
+  },
+  {
+    "name": "Worker",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 75,
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action"
+    ]
+  },
+  {
+    "name": "Warrior",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 6,
+    "cost": 25,
+    "upgradesTo": "Axeman",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Scout",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 4,
+    "cost": 25,
+    "upgradesTo": "Hunter",
+    "uniques": [
+      "Never appears as a Barbarian unit"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Goblin",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 4,
+    "cost": 15,
+    "replaces": "Scout",
+    "uniqueTo": "Clan of Embers",
+    "upgradesTo": "Hunter",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Hunter",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 8,
+    "cost": 60,
+    "requiredTech": "Hunting",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Axeman",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 8,
+    "cost": 45,
+    "requiredTech": "Bronze Working",
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Swordsman",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 8,
+    "cost": 45,
+    "requiredTech": "Bronze Working",
+    "replaces": "Axeman",
+    "uniqueTo": "Amurites",
+    "attackSound": "metalhit"
+  },
+  {
+    "name": "Archer",
+    "unitType": "Archer",
+    "movement": 2,
+    "strength": 5,
+    "rangedStrength": 7,
+    "range": 2,
+    "cost": 45,
+    "requiredTech": "Archery",
+    "upgradesTo": "Longbowman",
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Longbowman",
+    "unitType": "Archer",
+    "movement": 2,
+    "strength": 9,
+    "rangedStrength": 12,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Bowyers",
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Firebow",
+    "unitType": "Archer",
+    "movement": 2,
+    "strength": 9,
+    "rangedStrength": 12,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Bowyers",
+    "replaces": "Longbowman",
+    "uniqueTo": "Amurites",
+    "uniques": [
+      "[+15]% Strength <when attacking>"
+    ],
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Adept",
+    "unitType": "Mage",
+    "movement": 2,
+    "strength": 6,
+    "cost": 90,
+    "requiredTech": "Knowledge of the Ether",
+    "upgradesTo": "Mage",
+    "promotions": [
+      "Channeling I"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Mage",
+    "unitType": "Mage",
+    "movement": 2,
+    "strength": 8,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "promotions": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "All adjacent units heal [+5] HP when healing"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Wizard",
+    "unitType": "Mage",
+    "movement": 2,
+    "strength": 8,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "replaces": "Mage",
+    "uniqueTo": "Amurites",
+    "promotions": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "All adjacent units heal [+5] HP when healing",
+      "[+10]% Strength <when attacking>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Galley",
+    "unitType": "WaterMelee",
+    "movement": 3,
+    "strength": 5,
+    "cost": 90,
+    "requiredTech": "Sailing"
+  },
+  {
+    "name": "Skeleton",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 5,
+    "cost": -1,
+    "uniques": [
+      "Cannot be built"
+    ],
+    "attackSound": "nonmetalhit"
+  }
+]

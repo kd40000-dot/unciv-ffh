@@ -1,0 +1,291 @@
+[
+  {
+    "columnNumber": 0,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Agriculture",
+        "cost": 28,
+        "prerequisites": [],
+        "row": 0
+      },
+      {
+        "name": "Ancient Chants",
+        "cost": 28,
+        "prerequisites": [],
+        "row": 1
+      },
+      {
+        "name": "Crafting",
+        "cost": 42,
+        "prerequisites": [],
+        "row": 2
+      },
+      {
+        "name": "Exploration",
+        "cost": 28,
+        "prerequisites": [],
+        "row": 3
+      }
+    ]
+  },
+  {
+    "columnNumber": 1,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 120,
+    "wonderCost": 275,
+    "techs": [
+      {
+        "name": "Animal Husbandry",
+        "cost": 63,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "row": 0
+      },
+      {
+        "name": "Calendar",
+        "cost": 56,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "row": 1
+      },
+      {
+        "name": "Education",
+        "cost": 98,
+        "prerequisites": [
+          "Ancient Chants",
+          "Agriculture"
+        ],
+        "row": 2
+      },
+      {
+        "name": "Fishing",
+        "cost": 56,
+        "prerequisites": [
+          "Exploration"
+        ],
+        "row": 3
+      },
+      {
+        "name": "Hunting",
+        "cost": 105,
+        "prerequisites": [
+          "Exploration"
+        ],
+        "row": 4
+      },
+      {
+        "name": "Masonry",
+        "cost": 49,
+        "prerequisites": [
+          "Crafting"
+        ],
+        "row": 5
+      },
+      {
+        "name": "Mining",
+        "cost": 70,
+        "prerequisites": [
+          "Crafting"
+        ],
+        "row": 6
+      },
+      {
+        "name": "Mysticism",
+        "cost": 70,
+        "prerequisites": [
+          "Ancient Chants"
+        ],
+        "row": 7
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 140,
+    "wonderCost": 300,
+    "techs": [
+      {
+        "name": "Animal Handling",
+        "cost": 210,
+        "prerequisites": [
+          "Hunting",
+          "Animal Husbandry"
+        ],
+        "row": 0
+      },
+      {
+        "name": "Archery",
+        "cost": 105,
+        "prerequisites": [
+          "Hunting"
+        ],
+        "row": 1
+      },
+      {
+        "name": "Bronze Working",
+        "cost": 140,
+        "prerequisites": [
+          "Mining"
+        ],
+        "row": 2
+      },
+      {
+        "name": "Code of Laws",
+        "cost": 112,
+        "prerequisites": [
+          "Education"
+        ],
+        "row": 3
+      },
+      {
+        "name": "Construction",
+        "cost": 140,
+        "prerequisites": [
+          "Masonry"
+        ],
+        "row": 4
+      },
+      {
+        "name": "Festivals",
+        "cost": 63,
+        "prerequisites": [
+          "Calendar"
+        ],
+        "row": 5
+      },
+      {
+        "name": "Horseback Riding",
+        "cost": 140,
+        "prerequisites": [
+          "Animal Husbandry"
+        ],
+        "row": 6
+      },
+      {
+        "name": "Knowledge of the Ether",
+        "cost": 126,
+        "prerequisites": [
+          "Mysticism"
+        ],
+        "row": 7
+      },
+      {
+        "name": "Philosophy",
+        "cost": 105,
+        "prerequisites": [
+          "Mysticism"
+        ],
+        "row": 8
+      },
+      {
+        "name": "Sailing",
+        "cost": 112,
+        "prerequisites": [
+          "Fishing"
+        ],
+        "row": 9
+      },
+      {
+        "name": "Warfare",
+        "cost": 112,
+        "prerequisites": [
+          "Education"
+        ],
+        "row": 10
+      },
+      {
+        "name": "Writing",
+        "cost": 133,
+        "prerequisites": [
+          "Education"
+        ],
+        "row": 11
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Age of Magic",
+    "techCost": 100,
+    "buildingCost": 160,
+    "wonderCost": 325,
+    "techs": [
+      {
+        "name": "Alteration",
+        "cost": 224,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ],
+        "row": 0
+      },
+      {
+        "name": "Bowyers",
+        "cost": 490,
+        "prerequisites": [
+          "Archery"
+        ],
+        "row": 1
+      },
+      {
+        "name": "Divination",
+        "cost": 224,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ],
+        "row": 2
+      },
+      {
+        "name": "Elementalism",
+        "cost": 224,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ],
+        "row": 3
+      },
+      {
+        "name": "Necromancy",
+        "cost": 224,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ],
+        "row": 4
+      },
+      {
+        "name": "Orders from Heaven",
+        "cost": 378,
+        "prerequisites": [
+          "Philosophy",
+          "Code of Laws"
+        ],
+        "row": 5
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Age of Magic",
+    "techCost": 100,
+    "buildingCost": 180,
+    "wonderCost": 350,
+    "techs": [
+      {
+        "name": "Sorcery",
+        "cost": 700,
+        "prerequisites": [
+          "Alteration",
+          "Writing"
+        ],
+        "row": 0
+      }
+    ]
+  }
+]

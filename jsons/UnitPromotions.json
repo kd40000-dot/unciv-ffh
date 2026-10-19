@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Channeling I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+5] HP when healing"
+    ]
+  },
+  {
+    "name": "Life I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "All adjacent units heal [+5] HP when healing"
+    ]
+  },
+  {
+    "name": "Fire I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+10]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Enchantment I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+10]% Strength <when defending>"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Age of Rebirth",
+    "researchAgreementCost": 150,
+    "startingSettlerCount": 1,
+    "startingWorkerCount": 0,
+    "startingMilitaryUnitCount": 1,
+    "startingMilitaryUnit": "Warrior",
+    "settlerPopulation": 1,
+    "baseUnitBuyCost": 150,
+    "embarkDefense": 3,
+    "startPercent": 0,
+    "citySound": "cityAncient",
+    "iconRGB": [
+      170,
+      139,
+      78
+    ]
+  },
+  {
+    "name": "Age of Magic",
+    "researchAgreementCost": 220,
+    "startingSettlerCount": 1,
+    "startingWorkerCount": 1,
+    "startingMilitaryUnitCount": 1,
+    "startingMilitaryUnit": "Adept",
+    "settlerPopulation": 2,
+    "baseUnitBuyCost": 180,
+    "embarkDefense": 5,
+    "startPercent": 0,
+    "citySound": "cityAncient",
+    "iconRGB": [
+      121,
+      89,
+      174
+    ]
+  }
+]

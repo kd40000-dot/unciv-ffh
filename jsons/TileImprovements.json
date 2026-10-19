@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Farm",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Flood plains"
+    ],
+    "food": 1,
+    "turnsToBuild": 6,
+    "techRequired": "Agriculture"
+  },
+  {
+    "name": "Mine",
+    "terrainsCanBeBuiltOn": [
+      "Hill"
+    ],
+    "production": 1,
+    "turnsToBuild": 6,
+    "techRequired": "Mining"
+  },
+  {
+    "name": "Lumber mill",
+    "terrainsCanBeBuiltOn": [
+      "Forest"
+    ],
+    "production": 1,
+    "turnsToBuild": 6,
+    "techRequired": "Construction"
+  },
+  {
+    "name": "Camp",
+    "turnsToBuild": 6,
+    "techRequired": "Hunting",
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
+  },
+  {
+    "name": "Pasture",
+    "turnsToBuild": 6,
+    "techRequired": "Animal Husbandry",
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
+  },
+  {
+    "name": "Fishing Boats",
+    "terrainsCanBeBuiltOn": [
+      "Coast"
+    ],
+    "food": 1,
+    "turnsToBuild": 1,
+    "techRequired": "Fishing",
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
+  },
+  {
+    "name": "Road",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "turnsToBuild": 4,
+    "techRequired": "Exploration",
+    "uniques": [
+      "Can be built outside your borders",
+      "Costs [1] [Gold] per turn when in your territory"
+    ]
+  },
+  {
+    "name": "Node of Mana",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "turnsToBuild": 6,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
+  }
+]

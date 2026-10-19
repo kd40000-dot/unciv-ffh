@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Amurites",
+    "leaderName": "Valledia",
+    "adjective": [
+      "Amurite"
+    ],
+    "outerColor": [
+      68,
+      42,
+      111
+    ],
+    "innerColor": [
+      211,
+      183,
+      232
+    ],
+    "preferredVictoryType": "Domination",
+    "uniqueName": "Arcane Scholarship",
+    "uniques": [
+      "[+2 Science] from every specialist [in all cities]"
+    ],
+    "cities": [
+      "Cevedes",
+      "Udenarat",
+      "Nimarail",
+      "Ciriail",
+      "Glorairine",
+      "Enaillellion",
+      "Orrondhuir",
+      "Sierundirel",
+      "Coranttilli",
+      "Seaneriel",
+      "Angostendil",
+      "Wendar",
+      "Kevar",
+      "Sylvair",
+      "Doriath",
+      "Surewatch",
+      "Baamor",
+      "Korrigan"
+    ]
+  },
+  {
+    "name": "Bannor",
+    "leaderName": "Sabathiel",
+    "adjective": [
+      "Bannor"
+    ],
+    "outerColor": [
+      153,
+      118,
+      48
+    ],
+    "innerColor": [
+      239,
+      219,
+      152
+    ],
+    "preferredVictoryType": "Domination",
+    "uniqueName": "Crusading Zeal",
+    "uniques": [
+      "[+10]% Strength <when attacking> <for [Melee] units>"
+    ],
+    "cities": [
+      "Torrolerial",
+      "Vallus",
+      "Trinity",
+      "Tentatio-onis",
+      "Astrum",
+      "Caelestis",
+      "Ventry",
+      "Corona",
+      "Solium",
+      "Censura",
+      "Domus Novus",
+      "Fides",
+      "Judicium",
+      "Vis Vires",
+      "Pactum",
+      "Re Vera",
+      "Barak-Tor",
+      "Clar Manaul",
+      "Athel Maraya",
+      "Ithmariar",
+      "Chaend"
+    ]
+  },
+  {
+    "name": "Ljosalfar",
+    "leaderName": "Arendel",
+    "adjective": [
+      "Ljosalfar"
+    ],
+    "outerColor": [
+      40,
+      110,
+      56
+    ],
+    "innerColor": [
+      192,
+      226,
+      137
+    ],
+    "preferredVictoryType": "Domination",
+    "uniqueName": "Children of the Forest",
+    "uniques": [
+      "[+1] Movement <for [Scout] units>"
+    ],
+    "cities": [
+      "Evermore",
+      "Hyll",
+      "Bruti",
+      "Yonna",
+      "Dendrom",
+      "Eaca",
+      "Eodd",
+      "Berk",
+      "Khandar",
+      "Idul",
+      "Elendiwe",
+      "Helion",
+      "Gon Gatha",
+      "Mazenshire",
+      "Tivix",
+      "Lan Neual",
+      "Wispolen",
+      "Cerrolan",
+      "Pauleun",
+      "Organum",
+      "Kalos",
+      "Camena",
+      "Natura"
+    ]
+  },
+  {
+    "name": "Clan of Embers",
+    "leaderName": "Jonas",
+    "adjective": [
+      "Orcish"
+    ],
+    "outerColor": [
+      100,
+      40,
+      19
+    ],
+    "innerColor": [
+      200,
+      121,
+      59
+    ],
+    "preferredVictoryType": "Domination",
+    "uniqueName": "Orcish Hordes",
+    "uniques": [
+      "[+20]% Production when constructing [Military] units [in all cities]"
+    ],
+    "cities": [
+      "Braduk the Burning",
+      "Renegade Hill",
+      "Shazak",
+      "Hezic'kul",
+      "Sorodh",
+      "Pain",
+      "Ah'roog",
+      "Belphemon",
+      "Death Fort",
+      "Nezhev",
+      "Naga's Tail",
+      "Shavraim",
+      "Dark Sky",
+      "Ator",
+      "Baal",
+      "Gurr'ash",
+      "Mephisto",
+      "Wallara",
+      "Deep Dark",
+      "Shahav",
+      "Ghouls Touch",
+      "Cay",
+      "Heaven's Bane",
+      "Tu'eth",
+      "Death's Head",
+      "Dark Heart"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ],
+    "uniques": [
+      "Can only heal by pillaging",
+      "Excluded from map editor"
+    ]
+  },
+  {
+    "name": "Spectator",
+    "outerColor": [
+      255,
+      255,
+      255
+    ]
+  }
+]

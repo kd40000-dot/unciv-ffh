@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Civilian",
+    "movementType": "Land"
+  },
+  {
+    "name": "Melee",
+    "movementType": "Land"
+  },
+  {
+    "name": "Scout",
+    "movementType": "Land"
+  },
+  {
+    "name": "Archer",
+    "movementType": "Land"
+  },
+  {
+    "name": "Mage",
+    "movementType": "Land"
+  },
+  {
+    "name": "Mounted",
+    "movementType": "Land"
+  },
+  {
+    "name": "WaterMelee",
+    "movementType": "Water"
+  }
+]

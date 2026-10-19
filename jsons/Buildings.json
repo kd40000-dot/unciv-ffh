@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Palace",
+    "cost": 0,
+    "isNationalWonder": true,
+    "production": 3,
+    "science": 3,
+    "gold": 3,
+    "culture": 1,
+    "cityStrength": 2.5,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Elder Council",
+    "cost": 65,
+    "science": 2,
+    "requiredTech": "Ancient Chants"
+  },
+  {
+    "name": "Pagan Temple",
+    "cost": 85,
+    "culture": 1,
+    "requiredTech": "Mysticism"
+  },
+  {
+    "name": "Cave of Ancestors",
+    "cost": 150,
+    "science": 3,
+    "requiredTech": "Mysticism",
+    "replaces": "Pagan Temple",
+    "uniqueTo": "Amurites"
+  },
+  {
+    "name": "Market",
+    "cost": 110,
+    "gold": 2,
+    "requiredTech": "Festivals"
+  },
+  {
+    "name": "Barracks",
+    "cost": 80,
+    "requiredTech": "Warfare",
+    "uniques": [
+      "New [Military] units start with [15] XP [in this city]"
+    ]
+  },
+  {
+    "name": "Mage Guild",
+    "cost": 140,
+    "science": 2,
+    "requiredTech": "Knowledge of the Ether"
+  },
+  {
+    "name": "Training Yard",
+    "cost": 80,
+    "production": 1,
+    "requiredTech": "Warfare"
+  },
+  {
+    "name": "Smokehouse",
+    "cost": 70,
+    "food": 1,
+    "requiredTech": "Hunting"
+  },
+  {
+    "name": "Warrens",
+    "cost": 120,
+    "production": 2,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Clan of Embers"
+  }
+]

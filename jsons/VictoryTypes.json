@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Domination",
+    "victoryScreenHeader": "Capture every enemy capital.",
+    "milestones": [
+      "Capture all capitals"
+    ],
+    "victoryString": "Erebus has been conquered.",
+    "defeatString": "Your civilization has fallen."
+  }
+]
