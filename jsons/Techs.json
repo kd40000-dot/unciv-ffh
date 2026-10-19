@@ -16,19 +16,19 @@
         "name": "Ancient Chants",
         "cost": 28,
         "prerequisites": [],
-        "row": 1
+        "row": 2
       },
       {
         "name": "Crafting",
         "cost": 42,
         "prerequisites": [],
-        "row": 2
+        "row": 3
       },
       {
         "name": "Exploration",
         "cost": 28,
         "prerequisites": [],
-        "row": 3
+        "row": 4
       }
     ]
   },
@@ -53,7 +53,7 @@
         "prerequisites": [
           "Agriculture"
         ],
-        "row": 1
+        "row": 2
       },
       {
         "name": "Education",
@@ -62,7 +62,7 @@
           "Ancient Chants",
           "Agriculture"
         ],
-        "row": 2
+        "row": 3
       },
       {
         "name": "Fishing",
@@ -70,7 +70,7 @@
         "prerequisites": [
           "Exploration"
         ],
-        "row": 3
+        "row": 4
       },
       {
         "name": "Hunting",
@@ -78,7 +78,7 @@
         "prerequisites": [
           "Exploration"
         ],
-        "row": 4
+        "row": 5
       },
       {
         "name": "Masonry",
@@ -86,7 +86,7 @@
         "prerequisites": [
           "Crafting"
         ],
-        "row": 5
+        "row": 6
       },
       {
         "name": "Mining",
@@ -94,7 +94,7 @@
         "prerequisites": [
           "Crafting"
         ],
-        "row": 6
+        "row": 7
       },
       {
         "name": "Mysticism",
@@ -102,7 +102,7 @@
         "prerequisites": [
           "Ancient Chants"
         ],
-        "row": 7
+        "row": 8
       }
     ]
   },
@@ -128,7 +128,7 @@
         "prerequisites": [
           "Hunting"
         ],
-        "row": 1
+        "row": 2
       },
       {
         "name": "Bronze Working",
@@ -136,7 +136,7 @@
         "prerequisites": [
           "Mining"
         ],
-        "row": 2
+        "row": 3
       },
       {
         "name": "Code of Laws",
@@ -144,7 +144,7 @@
         "prerequisites": [
           "Education"
         ],
-        "row": 3
+        "row": 4
       },
       {
         "name": "Construction",
@@ -152,7 +152,7 @@
         "prerequisites": [
           "Masonry"
         ],
-        "row": 4
+        "row": 5
       },
       {
         "name": "Festivals",
@@ -160,7 +160,7 @@
         "prerequisites": [
           "Calendar"
         ],
-        "row": 5
+        "row": 6
       },
       {
         "name": "Horseback Riding",
@@ -168,7 +168,7 @@
         "prerequisites": [
           "Animal Husbandry"
         ],
-        "row": 6
+        "row": 7
       },
       {
         "name": "Knowledge of the Ether",
@@ -176,7 +176,7 @@
         "prerequisites": [
           "Mysticism"
         ],
-        "row": 7
+        "row": 8
       },
       {
         "name": "Philosophy",
@@ -184,7 +184,7 @@
         "prerequisites": [
           "Mysticism"
         ],
-        "row": 8
+        "row": 9
       },
       {
         "name": "Sailing",
@@ -192,7 +192,7 @@
         "prerequisites": [
           "Fishing"
         ],
-        "row": 9
+        "row": 10
       },
       {
         "name": "Warfare",
@@ -200,7 +200,7 @@
         "prerequisites": [
           "Education"
         ],
-        "row": 10
+        "row": 11
       },
       {
         "name": "Writing",
@@ -208,7 +208,7 @@
         "prerequisites": [
           "Education"
         ],
-        "row": 11
+        "row": 12
       }
     ]
   },
@@ -233,7 +233,7 @@
         "prerequisites": [
           "Archery"
         ],
-        "row": 1
+        "row": 2
       },
       {
         "name": "Divination",
@@ -241,7 +241,7 @@
         "prerequisites": [
           "Knowledge of the Ether"
         ],
-        "row": 2
+        "row": 3
       },
       {
         "name": "Elementalism",
@@ -249,7 +249,7 @@
         "prerequisites": [
           "Knowledge of the Ether"
         ],
-        "row": 3
+        "row": 4
       },
       {
         "name": "Necromancy",
@@ -257,7 +257,7 @@
         "prerequisites": [
           "Knowledge of the Ether"
         ],
-        "row": 4
+        "row": 5
       },
       {
         "name": "Orders from Heaven",
@@ -266,7 +266,7 @@
           "Philosophy",
           "Code of Laws"
         ],
-        "row": 5
+        "row": 6
       }
     ]
   },
