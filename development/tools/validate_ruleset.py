@@ -14,6 +14,18 @@ unitTypes = named(data["UnitTypes"])
 improvements = named(data["TileImprovements"])
 terrains = named(data["Terrains"])
 assert len(techs) == len(names)
+# Unciv RulesetValidator.addTechErrors: technology rows are 1-based.
+# TechPickerScreen also assumes unique locations in a column.
+positions = set()
+for column in data["Techs"]:
+    assert isinstance(column["columnNumber"], int) and column["columnNumber"] >= 0, column
+    for tech in column["techs"]:
+        assert isinstance(tech["row"], int) and tech["row"] >= 1, (
+            f"Invalid tech row: {tech['name']} -> {tech['row']}"
+        )
+        position = (column["columnNumber"], tech["row"])
+        assert position not in positions, f"Overlapping tech positions: {position}"
+        positions.add(position)
 for tech in techs:
     assert set(tech.get("prerequisites", [])) <= names, tech
 for unit in data["Units"]:

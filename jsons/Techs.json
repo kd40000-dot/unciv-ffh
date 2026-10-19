@@ -10,7 +10,7 @@
         "name": "Agriculture",
         "cost": 28,
         "prerequisites": [],
-        "row": 0
+        "row": 1
       },
       {
         "name": "Ancient Chants",
@@ -45,7 +45,7 @@
         "prerequisites": [
           "Agriculture"
         ],
-        "row": 0
+        "row": 1
       },
       {
         "name": "Calendar",
@@ -120,7 +120,7 @@
           "Hunting",
           "Animal Husbandry"
         ],
-        "row": 0
+        "row": 1
       },
       {
         "name": "Archery",
@@ -225,7 +225,7 @@
         "prerequisites": [
           "Knowledge of the Ether"
         ],
-        "row": 0
+        "row": 1
       },
       {
         "name": "Bowyers",
@@ -284,7 +284,7 @@
           "Alteration",
           "Writing"
         ],
-        "row": 0
+        "row": 1
       }
     ]
   }
