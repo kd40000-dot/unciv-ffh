@@ -110,7 +110,11 @@ def apply_adept_first_pose()->None:
         raise ValueError("Adept sprite must be nonempty 84x84")
     bounds=im.getbbox()
     if bounds[3]-bounds[1]!=43:
-        raise ValueError(f"Adept sprite height must be 43 pixels: {bounds}")
+        figure=im.crop(bounds)
+        width=max(1,round(figure.width*43/figure.height))
+        figure=figure.resize((width,43),Image.Resampling.NEAREST)
+        im=Image.new("RGBA",(84,84))
+        im.alpha_composite(figure,(42-width//2,84-43-5))
     for tileset in ("FantasyHex","AbsoluteUnits"):
         im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Adept.png",optimize=True)
 
