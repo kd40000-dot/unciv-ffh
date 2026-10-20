@@ -1,0 +1,53 @@
+name: Build Fantasy Artwork
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'development/art/sources.json'
+      - 'development/tools/build_art.py'
+      - '.github/workflows/artwork.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-graphics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image converter
+        run: python -m pip install 'Pillow>=11,<13'
+      - name: Render leader portraits, nation icons, and unit models
+        run: python development/tools/build_art.py
+      - name: Include original artwork license
+        run: |
+          mkdir -p development/licenses
+          REV=$(python -c 'import json;print(json.load(open("development/art/sources.json"))["sourceRevision"])')
+          curl --fail --location --silent --show-error "https://raw.githubusercontent.com/wesnoth/wesnoth/$REV/COPYING" -o development/licenses/WESNOTH-COPYING
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Get official Unciv texture packer / validator
+        run: |
+          set -euo pipefail
+          URL=$(curl --fail --silent --show-error https://api.github.com/repos/yairm210/Unciv/releases/latest |
+            jq -er '.assets[] | select(.name == "Unciv.jar") | .browser_download_url')
+          curl --fail --location --silent --show-error "$URL" --output /tmp/Unciv.jar
+      - name: Pack Android-compatible texture atlases and validate rules
+        run: java -jar /tmp/Unciv.jar mod-ci
+      - name: Commit generated images and packed atlases
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Images Atlases.json *.atlas *.png development/licenses || true
+          if ! git diff --staged --quiet; then
+            git commit -m "Generate GPL fantasy sprite and leader portrait atlases [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Art is already up to date."
+          fi
