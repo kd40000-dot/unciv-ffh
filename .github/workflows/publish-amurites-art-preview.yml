@@ -25,7 +25,7 @@ jobs:
           for path in Path('jsons').glob('*.json'):
               json.loads(path.read_text())
           assert Path('game.png').is_file() and Path('game.atlas').is_file()
-          assert Path('Atlases.json').read_text().strip() == '[game]'
+          assert Path('Atlases.json').read_text().strip() == '["game"]'
           assert not Path('android').exists() and not Path('core').exists()
           atlas = Path('game.atlas').read_text()
           required = [
