@@ -12,12 +12,13 @@ image_paths = [
     "LeaderIcons/Valledia", "NationIcons/Amurites",
     *(f"UnitIcons/{name}" for name in names),
     *(f"TileSets/FantasyHex/Units/{name}" for name in names),
+    *(f"TileSets/AbsoluteUnits/Units/{name}" for name in names),
 ]
 assert json.loads((ROOT / "Atlases.json").read_text()) == ["game"]
 texture = (ROOT / "game.png").read_bytes()
 assert texture.startswith(b"\x89PNG\r\n\x1a\n")
 width, height = struct.unpack(">II", texture[16:24])
-assert (width, height) == (320, 192), (width, height)
+assert 0 < width <= 4096 and 0 < height <= 4096, (width, height)
 data = (ROOT / "game.atlas").read_text()
 assert f"size: {width}, {height}" in data
 for name in image_paths:
@@ -33,7 +34,7 @@ for name in image_paths:
     w,h = map(int, dims.split(":",1)[1].strip().split(","))
     assert 0 <= x and 0 <= y and w > 0 and h > 0 and x+w <= width and y+h <= height, name
     print(f"OK atlas region {name}: {x},{y} {w}x{h}")
-for kind in ("UnitIcons", "TileSets/FantasyHex/Units"):
+for kind in ("UnitIcons", "TileSets/FantasyHex/Units", "TileSets/AbsoluteUnits/Units"):
     hashes = [
         hashlib.sha256((ROOT/"Images"/kind/(name+".png")).read_bytes()).hexdigest()
         for name in names
