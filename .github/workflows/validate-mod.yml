@@ -30,11 +30,17 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: Download official Unciv release
+      - name: Download official Unciv release using authenticated API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          URL=$(curl --fail --silent --show-error https://api.github.com/repos/yairm210/Unciv/releases/latest |
+          URL=$(curl --fail --silent --show-error --retry 3 \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/yairm210/Unciv/releases/latest |
             jq -er '.assets[] | select(.name == "Unciv.jar") | .browser_download_url')
           curl --fail --location --retry 3 --silent --show-error "$URL" -o /tmp/Unciv.jar
+          test -s /tmp/Unciv.jar
       - name: Run official mod validator
         run: java -jar /tmp/Unciv.jar mod-ci
