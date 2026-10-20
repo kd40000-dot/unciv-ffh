@@ -29,7 +29,7 @@
   },
   {
     "name": "Scout",
-    "unitType": "Scout",
+    "unitType": "Recon",
     "movement": 2,
     "strength": 3,
     "cost": 25,
