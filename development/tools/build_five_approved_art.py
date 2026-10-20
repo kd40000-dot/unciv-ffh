@@ -59,6 +59,17 @@ def make_assets()->None:
             dest.parent.mkdir(parents=True,exist_ok=True)
             sprite.save(dest,optimize=True)
 
+def apply_govannon_pixel_sprite()->None:
+    """Replace Govannon map art only; preserve all other approved unit sprites/icons."""
+    source=ROOT/"development"/"assets"/"govannon-pixel-03.png.b64"
+    raw=base64.b64decode(source.read_text("ascii").strip(),validate=True)
+    im=Image.open(BytesIO(raw)).convert("RGBA")
+    if im.size!=(84,84) or not im.getchannel("A").getextrema()[0]==0:
+        raise ValueError("Govannon pixel sprite must be 84x84 and transparent")
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Govannon.png"
+        im.save(dest,optimize=True)
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -101,4 +112,5 @@ def pack_atlas()->None:
 
 if __name__=="__main__":
     make_assets()
+    apply_govannon_pixel_sprite()
     pack_atlas()
