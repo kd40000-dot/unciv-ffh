@@ -40,5 +40,95 @@
     "uniques": [
       "All healing effects doubled"
     ]
+  },
+  {
+    "name": "Channeling II",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+5] HP when healing"
+    ]
+  },
+  {
+    "name": "Body I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+1] Movement"
+    ]
+  },
+  {
+    "name": "Nature I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "Can instantly construct a [Blooming Grove] improvement <for all movement>"
+    ]
+  },
+  {
+    "name": "Law I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+10]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Spirit I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "All adjacent units heal [+5] HP when healing"
+    ]
+  },
+  {
+    "name": "Air I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+1] Sight"
+    ]
+  },
+  {
+    "name": "Earth I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+15]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Fire II",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+1] Range"
+    ]
+  },
+  {
+    "name": "Death I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+10]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Metamagic I",
+    "unitTypes": [
+      "Mage"
+    ],
+    "uniques": [
+      "[+2] Sight"
+    ]
   }
 ]

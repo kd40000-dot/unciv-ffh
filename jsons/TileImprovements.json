@@ -96,5 +96,32 @@
       "Does not need removal of [Forest]",
       "Does not need removal of [Jungle]"
     ]
+  },
+  {
+    "name": "Arcane Circle",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "techRequired": "Knowledge of the Ether",
+    "science": 1,
+    "uniques": [
+      "Can be built outside your borders"
+    ]
+  },
+  {
+    "name": "Blooming Grove",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "techRequired": "Knowledge of the Ether",
+    "food": 2,
+    "uniques": [
+      "Can be built outside your borders"
+    ]
   }
 ]

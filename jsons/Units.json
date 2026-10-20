@@ -134,7 +134,10 @@
     "promotions": [
       "Channeling I"
     ],
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "uniques": [
+      "Can instantly construct a [Arcane Circle] improvement <for all movement>"
+    ]
   },
   {
     "name": "Mage",
@@ -144,10 +147,11 @@
     "cost": 120,
     "requiredTech": "Sorcery",
     "promotions": [
-      "Channeling I"
+      "Channeling II"
     ],
     "uniques": [
-      "All adjacent units heal [+5] HP when healing"
+      "All adjacent units heal [+5] HP when healing",
+      "Can instantly construct a [Arcane Circle] improvement <for all movement>"
     ],
     "attackSound": "nonmetalhit"
   },
@@ -161,11 +165,12 @@
     "replaces": "Mage",
     "uniqueTo": "Amurites",
     "promotions": [
-      "Channeling I"
+      "Channeling II"
     ],
     "uniques": [
       "All adjacent units heal [+5] HP when healing",
-      "[+10]% Strength <when attacking>"
+      "[+10]% Strength <when attacking>",
+      "Can instantly construct a [Arcane Circle] improvement <for all movement>"
     ],
     "attackSound": "nonmetalhit"
   },
@@ -201,7 +206,10 @@
     "promotions": [
       "Channeling I"
     ],
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "uniques": [
+      "Can instantly construct a [Arcane Circle] improvement <for all movement>"
+    ]
   },
   {
     "name": "Wolf Rider",

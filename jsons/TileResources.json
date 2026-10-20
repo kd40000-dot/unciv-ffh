@@ -99,7 +99,10 @@
       "Hill"
     ],
     "improvement": "Node of Mana",
-    "gold": 1
+    "gold": 1,
+    "uniques": [
+      "Generated on every [40] tiles <in [Land] tiles>"
+    ]
   },
   {
     "name": "Sheep",
