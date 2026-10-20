@@ -76,7 +76,14 @@ def apply_govannon_pixel_sprite()->None:
     target_width=max(1,round(figure.width*target_height/figure.height))
     figure=figure.resize((target_width,target_height),Image.Resampling.NEAREST)
     scaled=Image.new("RGBA",(84,84))
-    scaled.alpha_composite(figure,((84-target_width)//2,84-target_height-5))
+    # Shift right so the fixed portrait badge does not obscure his head.
+    scaled.alpha_composite(figure,((84-target_width)//2+12,84-target_height-5))
+    # Composite Govannon portrait onto opaque dark green backing.
+    icon_path=ROOT/"Images"/"UnitIcons"/"Govannon.png"
+    icon=Image.open(icon_path).convert("RGBA")
+    background=Image.new("RGBA",icon.size,(34,47,34,255))
+    background.alpha_composite(icon)
+    background.save(icon_path,optimize=True)
     for tileset in ("FantasyHex","AbsoluteUnits"):
         dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Govannon.png"
         scaled.save(dest,optimize=True)
