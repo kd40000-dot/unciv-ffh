@@ -1,0 +1,58 @@
+name: Pack Approved Amurite Artwork
+on:
+  push:
+    branches: [main, amurites-first-playable-01]
+    paths:
+      - 'development/assets/amurite_unit_concept_sprites.b64'
+      - 'development/tools/build_amurite_art.py'
+      - 'Images/LeaderIcons/**'
+      - 'Images/NationIcons/**'
+      - '.github/workflows/pack-amurite-art.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: amurite-art-pack
+  cancel-in-progress: false
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image toolkit
+        run: python -m pip install 'Pillow==11.3.0'
+      - name: Build unit sprites, icons and Unciv texture atlas
+        run: python development/tools/build_amurite_art.py
+      - name: Verify all unique art paths and atlas registrations
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          paths = ['LeaderIcons/Valledia','NationIcons/Amurites']
+          paths += ['UnitIcons/'+n for n in ('Firebow','Govannon','Wizard')]
+          for tile in ('FantasyHex','AbsoluteUnits'):
+              paths += ['TileSets/'+tile+'/Units/'+n for n in ('Firebow','Govannon','Wizard')]
+          atlas = Path('game.atlas').read_text()
+          for key in paths:
+              assert (Path('Images')/(key+'.png')).is_file(), key
+              assert '\n'+key+'\n' in atlas, key
+          assert Image.open('game.png').size == (1024,512)
+          assert Path('Atlases.json').read_text().strip() == '["game"]'
+          print('Verified',len(paths),'image assets and atlas mappings')
+          PY
+      - name: Commit packed assets to proof branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Images/UnitIcons Images/TileSets game.png game.atlas Atlases.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Pack approved Amurite unit sprites and Valledia into Unciv atlas'
+            git push origin HEAD:${{ github.ref_name }}
+          fi

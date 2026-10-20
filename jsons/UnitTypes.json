@@ -12,7 +12,11 @@
     "movementType": "Land"
   },
   {
-    "name": "Archery",
+    "name": "Bow",
+    "movementType": "Land"
+  },
+  {
+    "name": "Arcane",
     "movementType": "Land"
   }
 ]

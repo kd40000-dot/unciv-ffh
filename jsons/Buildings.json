@@ -23,5 +23,16 @@
     "cost": 70,
     "production": 1,
     "requiredTech": "Warfare"
+  },
+  {
+    "name": "Mage Guild",
+    "cost": 80,
+    "requiredTech": "Knowledge of the Ether",
+    "science": 1,
+    "civilopediaText": [
+      {
+        "text": "A center for arcane study. The FFH2 Adept requires a Mage Guild; full prerequisite and training progression is being added in later magic milestones."
+      }
+    ]
   }
 ]

@@ -22,6 +22,8 @@ jobs:
               json.loads(p.read_text())
               print('OK',p)
           PY
+      - name: Check unit artwork and atlas
+        run: python3 tools/validate_artwork.py
   unciv:
     runs-on: ubuntu-latest
     steps:
@@ -42,5 +44,12 @@ jobs:
             jq -er '.assets[] | select(.name == "Unciv.jar") | .browser_download_url')
           curl --fail --location --retry 3 --silent --show-error "$URL" -o /tmp/Unciv.jar
           test -s /tmp/Unciv.jar
-      - name: Run official mod validator
-        run: java -jar /tmp/Unciv.jar mod-ci
+      - name: Run official mod validator (warnings are failures)
+        shell: bash
+        run: |
+          set -euo pipefail
+          java -jar /tmp/Unciv.jar mod-ci 2>&1 | tee /tmp/unciv-mod-ci.log
+          if grep -Ei '^(Warning:|Error:)' /tmp/unciv-mod-ci.log; then
+            echo 'Unciv ruleset validation reported warnings or errors'
+            exit 1
+          fi

@@ -1,0 +1,83 @@
+
+game.png
+size: 1024, 512
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+LeaderIcons/Valledia
+  rotate: false
+  xy: 4, 4
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NationIcons/Amurites
+  rotate: false
+  xy: 264, 4
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+UnitIcons/Firebow
+  rotate: false
+  xy: 340, 4
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+UnitIcons/Govannon
+  rotate: false
+  xy: 440, 4
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+UnitIcons/Wizard
+  rotate: false
+  xy: 540, 4
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Firebow
+  rotate: false
+  xy: 640, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Govannon
+  rotate: false
+  xy: 728, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Wizard
+  rotate: false
+  xy: 816, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Firebow
+  rotate: false
+  xy: 904, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Govannon
+  rotate: false
+  xy: 4, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard
+  rotate: false
+  xy: 92, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
