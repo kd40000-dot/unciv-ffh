@@ -191,7 +191,8 @@
     "strength": 5,
     "cost": -1,
     "uniques": [
-      "Cannot be built"
+      "Cannot be built",
+      "[This Unit] is destroyed <upon turn start>"
     ],
     "attackSound": "nonmetalhit"
   },
