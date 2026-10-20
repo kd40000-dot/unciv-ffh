@@ -13,7 +13,7 @@ import base64
 import hashlib
 from io import BytesIO
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageDraw
 
 ROOT=Path(__file__).resolve().parents[2]
 NAMES=("Firebow","Wizard","Chanter","Adept","Govannon")
@@ -144,6 +144,65 @@ def apply_firebow_pixel_sprite()->None:
     for tileset in ("FantasyHex","AbsoluteUnits"):
         im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Firebow.png",optimize=True)
 
+def apply_simple_badges_and_sprite_offsets()->None:
+    """Simple opaque symbol badges and a common offset for every map figure.
+
+    The existing figures are preserved pixel-for-pixel; only their position
+    within the transparent 84x84 texture changes.
+    """
+    purple=(67,38,111,255)
+    rim=(192,159,230,255)
+    white=(250,244,255,255)
+    def make_badge(name):
+        # Render at 96px, then store the same 96px icon atlas region.
+        icon=Image.new("RGBA",(96,96))
+        d=ImageDraw.Draw(icon)
+        d.ellipse((5,5,90,90),fill=rim)
+        d.ellipse((11,11,84,84),fill=purple)
+        if name in ("Adept","Wizard","Govannon"):
+            # Flame, drawn as a recognizable single white silhouette.
+            d.polygon([(49,19),(59,39),(58,48),(69,40),(69,61),
+                       (63,72),(51,79),(38,75),(28,65),(29,52),
+                       (40,36),(41,54),(48,48)],fill=white)
+            d.polygon([(49,50),(55,61),(50,72),(43,68),(42,61)],fill=purple)
+        elif name=="Firebow":
+            # Bow and arrow.
+            d.arc((25,17,69,79),65,292,fill=white,width=7)
+            d.line((39,21,63,74),fill=white,width=4)
+            d.line((19,49,75,49),fill=white,width=6)
+            d.polygon([(78,49),(62,40),(62,58)],fill=white)
+        else:
+            # Short sword, matching the minimal weapon-symbol style.
+            d.polygon([(64,19),(73,28),(48,57),(40,49)],fill=white)
+            d.polygon([(66,16),(79,17),(76,30),(70,33),(61,24)],fill=white)
+            d.line((34,53,52,69),fill=white,width=8)
+            d.line((25,62,43,80),fill=white,width=7)
+        return icon
+
+    for name in NAMES:
+        make_badge(name).save(ROOT/"Images"/"UnitIcons"/f"{name}.png",optimize=True)
+        for tileset in ("FantasyHex","AbsoluteUnits"):
+            path=ROOT/"Images"/"TileSets"/tileset/"Units"/f"{name}.png"
+            original=Image.open(path).convert("RGBA")
+            bbox=original.getbbox()
+            if not bbox:
+                raise ValueError(f"Missing visible sprite: {name}")
+            figure=original.crop(bbox)
+            if figure.height!=43:
+                width=max(1,round(figure.width*43/figure.height))
+                figure=figure.resize((width,43),Image.Resampling.NEAREST)
+            if figure.width>65:
+                # Prevent a wide source from being cropped off the tile.
+                width=65
+                figure=figure.resize((width,43),Image.Resampling.NEAREST)
+            canvas=Image.new("RGBA",(84,84))
+            # Badge occupies the upper-left of the unit; put body right of it.
+            x=min(84-figure.width, max(0,42-figure.width//2+14))
+            canvas.alpha_composite(figure,(x,84-43-5))
+            canvas.save(path,optimize=True)
+            assert canvas.getbbox()[3]-canvas.getbbox()[1]==43
+    print("Installed simple weapon/flame badges and aligned five 43px figures")
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -191,4 +250,5 @@ if __name__=="__main__":
     apply_adept_first_pose()
     apply_wizard_front_sprite()
     apply_firebow_pixel_sprite()
+    apply_simple_badges_and_sprite_offsets()
     pack_atlas()
