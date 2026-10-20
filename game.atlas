@@ -25,58 +25,100 @@ UnitIcons/Firebow
   orig: 96, 96
   offset: 0, 0
   index: -1
-UnitIcons/Govannon
+UnitIcons/Wizard
   rotate: false
   xy: 440, 4
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
-UnitIcons/Wizard
+UnitIcons/Chanter
   rotate: false
   xy: 540, 4
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Firebow
+UnitIcons/Adept
   rotate: false
   xy: 640, 4
-  size: 84, 84
-  orig: 84, 84
+  size: 96, 96
+  orig: 96, 96
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Units/Govannon
+UnitIcons/Govannon
   rotate: false
-  xy: 728, 4
+  xy: 740, 4
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Firebow
+  rotate: false
+  xy: 840, 4
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Wizard
   rotate: false
-  xy: 816, 4
+  xy: 928, 4
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Firebow
-  rotate: false
-  xy: 904, 4
-  size: 84, 84
-  orig: 84, 84
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Govannon
+TileSets/FantasyHex/Units/Chanter
   rotate: false
   xy: 4, 264
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Wizard
+TileSets/FantasyHex/Units/Adept
   rotate: false
   xy: 92, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Govannon
+  rotate: false
+  xy: 180, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Firebow
+  rotate: false
+  xy: 268, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard
+  rotate: false
+  xy: 356, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Chanter
+  rotate: false
+  xy: 444, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Adept
+  rotate: false
+  xy: 532, 264
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Govannon
+  rotate: false
+  xy: 620, 264
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
