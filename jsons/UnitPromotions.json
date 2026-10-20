@@ -75,5 +75,29 @@
         "text": "Marks a named hero. Combat XP bonus is a provisional approximation; native FFH2 automatic hero experience and hero mechanics are not yet implemented."
       }
     ]
+  },
+  {
+    "name": "Marksman",
+    "unitTypes": [
+      "Recon"
+    ],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Source-authentic Chanter/Assassin promotion; priority targeting behavior is not yet represented."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional I",
+    "unitTypes": [
+      "Recon"
+    ],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Source-authentic Chanter promotion; dimensional spells are not yet represented."
+      }
+    ]
   }
 ]
