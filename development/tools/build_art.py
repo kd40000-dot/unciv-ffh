@@ -142,7 +142,7 @@ for name,path in unit_paths.items():
                         "Ljosalfar" if "Ljosalfar" in name else "Clan of Embers" if "Clan of Embers" in name else "")
     sprite=scaled_sprite(image,84)
     for tileset in ("FantasyHex","AbsoluteUnits"):
-        sprite.save(mkdir(ROOT/"Images/Tilesets"/tileset/"Units"/(name+".png")))
+        sprite.save(mkdir(ROOT/"Images/TileSets"/tileset/"Units"/(name+".png")))
     # Do not create icon variants for styled units (their base icon is shared).
     if name in manifest["unitSources"]:
         icon_for_sprite(image,color).save(mkdir(ROOT/"Images/UnitPortraits"/(name+".png")))
