@@ -66,7 +66,20 @@ def apply_govannon_pixel_sprite()->None:
     im=Image.open(BytesIO(raw)).convert("RGBA")
     if im.size!=(84,84) or not im.getchannel("A").getextrema()[0]==0:
         raise ValueError("Govannon pixel sprite must be 84x84 and transparent")
-    # Original 84px figure is twice the height of stock Unciv units.\n    # Scale the artwork, not its 84px texture region; preserve crisp pixel edges.\n    bounds=im.getbbox()\n    if bounds is None:\n        raise ValueError("Empty Govannon art")\n    figure=im.crop(bounds)\n    target_height=43\n    target_width=max(1,round(figure.width*target_height/figure.height))\n    figure=figure.resize((target_width,target_height),Image.Resampling.NEAREST)\n    scaled=Image.new("RGBA",(84,84))\n    scaled.alpha_composite(figure,((84-target_width)//2,84-target_height-5))\n    for tileset in ("FantasyHex","AbsoluteUnits"):\n        dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Govannon.png"\n        scaled.save(dest,optimize=True)
+    # Original 84px figure is twice the height of stock Unciv units.
+    # Scale the artwork, not its 84px texture region; preserve crisp pixel edges.
+    bounds=im.getbbox()
+    if bounds is None:
+        raise ValueError("Empty Govannon art")
+    figure=im.crop(bounds)
+    target_height=43
+    target_width=max(1,round(figure.width*target_height/figure.height))
+    figure=figure.resize((target_width,target_height),Image.Resampling.NEAREST)
+    scaled=Image.new("RGBA",(84,84))
+    scaled.alpha_composite(figure,((84-target_width)//2,84-target_height-5))
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Govannon.png"
+        scaled.save(dest,optimize=True)
 
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
