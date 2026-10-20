@@ -130,5 +130,17 @@
     "uniques": [
       "[+2] Sight"
     ]
+  },
+  {
+    "name": "Casting Probe",
+    "unitTypes": [
+      "Mage"
+    ],
+    "prerequisites": [
+      "Channeling II"
+    ],
+    "uniques": [
+      "Free [Skeleton] appears <for all movement>"
+    ]
   }
 ]
