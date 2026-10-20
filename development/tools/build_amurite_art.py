@@ -82,7 +82,7 @@ def build_atlas() -> None:
         x += width + PAD
     atlas.save(ROOT / 'game.png', optimize=True)
     (ROOT / 'game.atlas').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    (ROOT / 'Atlases.json').write_text('[game]\n', encoding='utf-8')
+    (ROOT / 'Atlases.json').write_text('["game"]\n', encoding='utf-8')
     print('Packed', len(regions), 'regions into Unciv game.atlas')
 
 

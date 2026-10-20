@@ -1,7 +1,7 @@
 name: Pack Approved Amurite Artwork
 on:
   push:
-    branches: [amurites-first-playable-01]
+    branches: [main, amurites-first-playable-01]
     paths:
       - 'development/assets/amurite_unit_concept_sprites.b64'
       - 'development/tools/build_amurite_art.py'
@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: amurites-first-playable-01
+          ref: ${{ github.ref_name }}
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
@@ -43,7 +43,7 @@ jobs:
               assert (Path('Images')/(key+'.png')).is_file(), key
               assert '\n'+key+'\n' in atlas, key
           assert Image.open('game.png').size == (1024,512)
-          assert Path('Atlases.json').read_text().strip() == '[game]'
+          assert Path('Atlases.json').read_text().strip() == '["game"]'
           print('Verified',len(paths),'image assets and atlas mappings')
           PY
       - name: Commit packed assets to proof branch
@@ -54,5 +54,5 @@ jobs:
           git add Images/UnitIcons Images/TileSets game.png game.atlas Atlases.json
           if ! git diff --cached --quiet; then
             git commit -m 'Pack approved Amurite unit sprites and Valledia into Unciv atlas'
-            git push origin HEAD:amurites-first-playable-01
+            git push origin HEAD:${{ github.ref_name }}
           fi
