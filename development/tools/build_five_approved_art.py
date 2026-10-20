@@ -118,6 +118,20 @@ def apply_adept_first_pose()->None:
     for tileset in ("FantasyHex","AbsoluteUnits"):
         im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Adept.png",optimize=True)
 
+def apply_wizard_front_sprite()->None:
+    """Use the user-approved front-facing Wizard at 43px, preserving other units."""
+    source=ROOT/"development"/"assets"/"wizard-front-09.png.b64"
+    im=Image.open(BytesIO(base64.b64decode(source.read_text("ascii").strip(),validate=True))).convert("RGBA")
+    if im.size!=(84,84) or not im.getbbox():
+        raise ValueError("Wizard sprite must be nonempty 84x84")
+    bounds=im.getbbox()
+    if bounds[3]-bounds[1]!=43:
+        raise ValueError(f"Wizard visible height must be 43px: {bounds}")
+    if im.getchannel("A").getextrema()[0]!=0:
+        raise ValueError("Wizard sprite background must be transparent")
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Wizard.png",optimize=True)
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -163,4 +177,5 @@ if __name__=="__main__":
     apply_govannon_pixel_sprite()
     apply_chanter_pixel_sprite()
     apply_adept_first_pose()
+    apply_wizard_front_sprite()
     pack_atlas()
