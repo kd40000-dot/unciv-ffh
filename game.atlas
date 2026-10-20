@@ -60,518 +60,518 @@ NationIcons/Ljosalfar
   orig: 128, 128
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Adept
+TileSets/FantasyHex/Units/Adept
   rotate: false
   xy: 764, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Adept
+TileSets/AbsoluteUnits/Units/Adept
   rotate: false
   xy: 764, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Adept-Amurites
+TileSets/FantasyHex/Units/Adept-Amurites
   rotate: false
   xy: 856, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Adept-Amurites
+TileSets/AbsoluteUnits/Units/Adept-Amurites
   rotate: false
   xy: 856, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Archer
+TileSets/FantasyHex/Units/Archer
   rotate: false
   xy: 948, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Archer
+TileSets/AbsoluteUnits/Units/Archer
   rotate: false
   xy: 948, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Archer-Ljosalfar
+TileSets/FantasyHex/Units/Archer-Ljosalfar
   rotate: false
   xy: 1040, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Archer-Ljosalfar
+TileSets/AbsoluteUnits/Units/Archer-Ljosalfar
   rotate: false
   xy: 1040, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Assassin
+TileSets/FantasyHex/Units/Assassin
   rotate: false
   xy: 1132, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Assassin
+TileSets/AbsoluteUnits/Units/Assassin
   rotate: false
   xy: 1132, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Axeman
+TileSets/FantasyHex/Units/Axeman
   rotate: false
   xy: 1224, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Axeman
+TileSets/AbsoluteUnits/Units/Axeman
   rotate: false
   xy: 1224, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Champion
+TileSets/FantasyHex/Units/Champion
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Champion
+TileSets/AbsoluteUnits/Units/Champion
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Crusader
+TileSets/AbsoluteUnits/Units/Crusader
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Swordsman
+TileSets/AbsoluteUnits/Units/Swordsman
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Warrior-Bannor
+TileSets/AbsoluteUnits/Units/Warrior-Bannor
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Crusader
+TileSets/FantasyHex/Units/Crusader
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Swordsman
+TileSets/FantasyHex/Units/Swordsman
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Warrior-Bannor
+TileSets/FantasyHex/Units/Warrior-Bannor
   rotate: false
   xy: 1316, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Chanter
+TileSets/FantasyHex/Units/Chanter
   rotate: false
   xy: 1408, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Chanter
+TileSets/AbsoluteUnits/Units/Chanter
   rotate: false
   xy: 1408, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Crossbowman
+TileSets/FantasyHex/Units/Crossbowman
   rotate: false
   xy: 1500, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Crossbowman
+TileSets/AbsoluteUnits/Units/Crossbowman
   rotate: false
   xy: 1500, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Firebow
+TileSets/FantasyHex/Units/Firebow
   rotate: false
   xy: 364, 128
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Firebow
+TileSets/AbsoluteUnits/Units/Firebow
   rotate: false
   xy: 364, 128
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Flurry
+TileSets/FantasyHex/Units/Flurry
   rotate: false
   xy: 456, 128
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Flurry
+TileSets/AbsoluteUnits/Units/Flurry
   rotate: false
   xy: 456, 128
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Fyrdwell
+TileSets/FantasyHex/Units/Fyrdwell
   rotate: false
   xy: 764, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Fyrdwell
+TileSets/AbsoluteUnits/Units/Fyrdwell
   rotate: false
   xy: 764, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Galley
+TileSets/FantasyHex/Units/Galley
   rotate: false
   xy: 856, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Galley
+TileSets/AbsoluteUnits/Units/Galley
   rotate: false
   xy: 856, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Goblin
+TileSets/FantasyHex/Units/Goblin
   rotate: false
   xy: 948, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Goblin
+TileSets/AbsoluteUnits/Units/Goblin
   rotate: false
   xy: 948, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Horse Archer
+TileSets/FantasyHex/Units/Horse Archer
   rotate: false
   xy: 1040, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Horse Archer
+TileSets/AbsoluteUnits/Units/Horse Archer
   rotate: false
   xy: 1040, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Horseman
+TileSets/FantasyHex/Units/Horseman
   rotate: false
   xy: 1132, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Horseman
+TileSets/AbsoluteUnits/Units/Horseman
   rotate: false
   xy: 1132, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Hunter
+TileSets/FantasyHex/Units/Hunter
   rotate: false
   xy: 1224, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Hunter
+TileSets/AbsoluteUnits/Units/Hunter
   rotate: false
   xy: 1224, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Lizardman
+TileSets/FantasyHex/Units/Lizardman
   rotate: false
   xy: 1316, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Lizardman
+TileSets/AbsoluteUnits/Units/Lizardman
   rotate: false
   xy: 1316, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Longbowman
+TileSets/FantasyHex/Units/Longbowman
   rotate: false
   xy: 1408, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Longbowman
+TileSets/AbsoluteUnits/Units/Longbowman
   rotate: false
   xy: 1408, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Mage
+TileSets/FantasyHex/Units/Mage
   rotate: false
   xy: 1500, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Mage
+TileSets/AbsoluteUnits/Units/Mage
   rotate: false
   xy: 1500, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Mage-Amurites
+TileSets/FantasyHex/Units/Mage-Amurites
   rotate: false
   xy: 1592, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Mage-Amurites
+TileSets/AbsoluteUnits/Units/Mage-Amurites
   rotate: false
   xy: 1592, 1268
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Ogre
+TileSets/FantasyHex/Units/Ogre
   rotate: false
   xy: 1592, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Ogre
+TileSets/AbsoluteUnits/Units/Ogre
   rotate: false
   xy: 1592, 1176
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Scout
+TileSets/FantasyHex/Units/Scout
   rotate: false
   xy: 1684, 1300
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Scout
+TileSets/AbsoluteUnits/Units/Scout
   rotate: false
   xy: 1684, 1300
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Scout-Ljosalfar
+TileSets/FantasyHex/Units/Scout-Ljosalfar
   rotate: false
   xy: 1684, 1208
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Scout-Ljosalfar
+TileSets/AbsoluteUnits/Units/Scout-Ljosalfar
   rotate: false
   xy: 1684, 1208
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Settler
+TileSets/FantasyHex/Units/Settler
   rotate: false
   xy: 308, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Settler
+TileSets/AbsoluteUnits/Units/Settler
   rotate: false
   xy: 308, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Shaman
+TileSets/FantasyHex/Units/Shaman
   rotate: false
   xy: 400, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Shaman
+TileSets/AbsoluteUnits/Units/Shaman
   rotate: false
   xy: 400, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Skeleton
+TileSets/FantasyHex/Units/Skeleton
   rotate: false
   xy: 492, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Skeleton
+TileSets/AbsoluteUnits/Units/Skeleton
   rotate: false
   xy: 492, 36
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Warrior
+TileSets/FantasyHex/Units/Warrior
   rotate: false
   xy: 1804, 1468
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Warrior
+TileSets/AbsoluteUnits/Units/Warrior
   rotate: false
   xy: 1804, 1468
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Warrior-Clan of Embers
+TileSets/FantasyHex/Units/Warrior-Clan of Embers
   rotate: false
   xy: 1896, 1468
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Warrior-Clan of Embers
+TileSets/AbsoluteUnits/Units/Warrior-Clan of Embers
   rotate: false
   xy: 1896, 1468
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Warrior-Ljosalfar
+TileSets/FantasyHex/Units/Warrior-Ljosalfar
   rotate: false
   xy: 1684, 1116
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Warrior-Ljosalfar
+TileSets/AbsoluteUnits/Units/Warrior-Ljosalfar
   rotate: false
   xy: 1684, 1116
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Wizard
+TileSets/FantasyHex/Units/Wizard
   rotate: false
   xy: 1940, 1604
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Wizard
+TileSets/AbsoluteUnits/Units/Wizard
   rotate: false
   xy: 1940, 1604
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Wolf Rider
+TileSets/FantasyHex/Units/Wolf Rider
   rotate: false
   xy: 532, 968
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Wolf Rider
+TileSets/AbsoluteUnits/Units/Wolf Rider
   rotate: false
   xy: 532, 968
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Worker
+TileSets/FantasyHex/Units/Worker
   rotate: false
   xy: 532, 876
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Worker
+TileSets/AbsoluteUnits/Units/Worker
   rotate: false
   xy: 532, 876
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/FantasyHex/Units/Worker-Ljosalfar
+TileSets/FantasyHex/Units/Worker-Ljosalfar
   rotate: false
   xy: 532, 784
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: -1
-Tilesets/AbsoluteUnits/Units/Worker-Ljosalfar
+TileSets/AbsoluteUnits/Units/Worker-Ljosalfar
   rotate: false
   xy: 532, 784
   size: 84, 84
