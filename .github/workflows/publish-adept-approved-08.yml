@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/publish-adept-approved-08.yml'
       - 'development/tools/build_five_approved_art.py'
+      - 'development/assets/adept-approved-08.png.b64'
   workflow_dispatch:
 permissions:
   contents: write
