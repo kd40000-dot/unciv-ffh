@@ -49,5 +49,126 @@
     "cost": 50,
     "requiredTech": "Hunting",
     "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Adept",
+    "unitType": "Arcane",
+    "movement": 2,
+    "strength": 3,
+    "cost": 90,
+    "requiredTech": "Knowledge of the Ether",
+    "promotions": [
+      "Channeling I"
+    ],
+    "upgradesTo": "Mage",
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "An apprentice spellcaster. The original FFH2 Adept starts with Channeling I; spellcasting awaits the shared magic ruleset."
+      }
+    ]
+  },
+  {
+    "name": "Mage",
+    "unitType": "Arcane",
+    "movement": 2,
+    "strength": 4,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Generic Mage class. The Amurites replace this with their Wizard."
+      }
+    ]
+  },
+  {
+    "name": "Wizard",
+    "replaces": "Mage",
+    "uniqueTo": "Amurites",
+    "unitType": "Arcane",
+    "movement": 2,
+    "strength": 4,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "promotions": [
+      "Channeling I",
+      "Channeling II",
+      "Spellstaff"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Amurite replacement for the Mage, with Channeling I, Channeling II, and Spellstaff as in ExtraModMod. Their spell effects and exact level-gated upgrade requirements are not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Longbowman",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 5,
+    "rangedStrength": 7,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Bowyers",
+    "uniques": [
+      "[+25]% Strength <when defending in [City] tiles>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Firebow",
+    "replaces": "Longbowman",
+    "uniqueTo": "Amurites",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 5,
+    "rangedStrength": 7,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Bowyers",
+    "promotions": [
+      "Fire I",
+      "Channeling II"
+    ],
+    "uniques": [
+      "[+25]% Strength <when defending in [City] tiles>"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Amurite Longbowman replacement. ExtraModMod gives it Fire I and Channeling II, 5 combat strength, one first strike, a defensive strike chance and special city/hill defense. Standard Unciv ranged combat is used for now; fire damage and defensive strikes are pending."
+      }
+    ]
+  },
+  {
+    "name": "Govannon",
+    "uniqueTo": "Amurites",
+    "unitType": "Arcane",
+    "movement": 2,
+    "strength": 5,
+    "cost": 480,
+    "requiredTech": "Arcane Lore",
+    "promotions": [
+      "Channeling I",
+      "Channeling II",
+      "Channeling III",
+      "Hero"
+    ],
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "Cannot be purchased"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "Amurite arcane hero. Original ExtraModMod cost 480, strength 5, and grants Channeling I–III and Hero. His teaching of arcane promotions, spellcasting and mana node actions are not yet implemented."
+      }
+    ]
   }
 ]
