@@ -88,6 +88,20 @@ def apply_govannon_pixel_sprite()->None:
         dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Govannon.png"
         scaled.save(dest,optimize=True)
 
+def apply_chanter_pixel_sprite()->None:
+    """Install approved Chanter sprite at the same 43px height as Govannon."""
+    source=ROOT/"development"/"assets"/"chanter-pixel-06.png.b64"
+    raw=base64.b64decode(source.read_text("ascii").strip(),validate=True)
+    im=Image.open(BytesIO(raw)).convert("RGBA")
+    if im.size!=(84,84) or im.getbbox() is None:
+        raise ValueError("Chanter map sprite must be a nonempty 84x84 PNG")
+    bounds=im.getbbox()
+    if bounds[3]-bounds[1]!=43:
+        raise ValueError(f"Chanter must match Govannon's 43px height: {bounds}")
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Chanter.png"
+        im.save(dest,optimize=True)
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -131,4 +145,5 @@ def pack_atlas()->None:
 if __name__=="__main__":
     make_assets()
     apply_govannon_pixel_sprite()
+    apply_chanter_pixel_sprite()
     pack_atlas()
