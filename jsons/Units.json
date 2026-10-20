@@ -147,7 +147,8 @@
     "cost": 120,
     "requiredTech": "Sorcery",
     "promotions": [
-      "Channeling II"
+      "Channeling II",
+      "Casting Probe"
     ],
     "uniques": [
       "All adjacent units heal [+5] HP when healing",
@@ -165,7 +166,8 @@
     "replaces": "Mage",
     "uniqueTo": "Amurites",
     "promotions": [
-      "Channeling II"
+      "Channeling II",
+      "Casting Probe"
     ],
     "uniques": [
       "All adjacent units heal [+5] HP when healing",
