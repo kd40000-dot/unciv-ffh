@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build Unciv-compatible 2D graphics from attributed GPL Wesnoth sources.
 
-The portraits are deliberately labelled *stand-ins* in art/sources.json:
-no claim is made that they depict the original EMM leaders.
+The four approved generated leader portraits are preserved as checked-in assets.
+Unit sprites remain attributed Wesnoth stand-ins.
 Run this on a desktop/CI machine; Android cannot pack textures.
 """
 import io
@@ -130,10 +130,12 @@ with ThreadPoolExecutor(max_workers=7) as pool:
 for faction in PALETTE:
     draw_emblem(faction).save(mkdir(ROOT/"Images/NationIcons"/(faction+".png")))
 
-for leader,path in portrait_paths.items():
-    faction={"Valledia":"Amurites","Sabathiel":"Bannor","Arendel":"Ljosalfar","Jonas":"Clan of Embers"}[leader]
-    make_portrait(images[path],faction_color(faction)).save(
-        mkdir(ROOT/"Images/LeaderIcons"/(leader+".png")))
+for leader, relative_path in manifest.get("approvedPortraits", {}).items():
+    portrait_file = ROOT / relative_path
+    if not portrait_file.is_file():
+        raise FileNotFoundError(f"Approved leader portrait missing: {portrait_file}")
+    with Image.open(portrait_file) as portrait:
+        portrait.verify()
 
 for name,path in unit_paths.items():
     image=images[path]
@@ -147,4 +149,4 @@ for name,path in unit_paths.items():
     if name in manifest["unitSources"]:
         icon_for_sprite(image,color).save(mkdir(ROOT/"Images/UnitPortraits"/(name+".png")))
         silhouette_icon(image).save(mkdir(ROOT/"Images/UnitIcons"/(name+".png")))
-print("Generated",len(unit_paths),"unit sprite variants and",len(portrait_paths),"leader portraits")
+print("Generated",len(unit_paths),"unit sprite variants and",len(manifest.get("approvedPortraits", {})),"preserved leader portraits")

@@ -2,13 +2,8 @@
   "source": "The Battle for Wesnoth (GPL-2.0-or-later artwork; https://github.com/wesnoth/wesnoth)",
   "sourceRevision": "f8be731a7cbcd44c12127a3473f804f04b8c265a",
   "sourceRoot": "data/core/images/",
-  "note": "Visual stand-ins, NOT canonical EMM leaderhead or unit art. Source links preserved for each sprite.",
-  "portraitSources": {
-    "Valledia": "portraits/humans/mage-arch+female.webp",
-    "Sabathiel": "portraits/humans/paladin.webp",
-    "Arendel": "portraits/elves/lady.webp",
-    "Jonas": "portraits/orcs/ruler.webp"
-  },
+  "note": "Unit sprites remain GPL Wesnoth stand-ins. The four user-approved generated leader portraits are stored locally and preserved by the art builder; they are not canonical FFH2/EMM game assets.",
+  "portraitSources": {},
   "factionColors": {
     "Amurites": "#573A82",
     "Bannor": "#BA9635",
@@ -55,5 +50,11 @@
     "Worker-Ljosalfar": "units/elves-wood/lady.png",
     "Adept-Amurites": "units/human-magi/mage+female.png",
     "Mage-Amurites": "units/human-magi/arch-mage.png"
+  },
+  "approvedPortraits": {
+    "Valledia": "Images/LeaderIcons/Valledia.png",
+    "Sabathiel": "Images/LeaderIcons/Sabathiel.png",
+    "Jonas": "Images/LeaderIcons/Jonas.png",
+    "Arendel": "Images/LeaderIcons/Arendel.png"
   }
 }
