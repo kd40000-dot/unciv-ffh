@@ -23,7 +23,51 @@ jobs:
         run: python -m pip install 'Pillow>=11,<13'
       - name: Remove obsolete case-mismatched sprite folders
         run: rm -rf Images/Tilesets
-      - name: Render leader portraits, nation icons, and unit models
+      - name: Fetch approved FFH leader portraits from published release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          API="https://api.github.com/repos/kd40000-dot/unciv-ffh/releases/tags/leaderheads-test"
+          URL=$(curl --fail --silent --show-error -H "Authorization: Bearer $GH_TOKEN" "$API" |
+            jq -er '.assets[] | select(.name == "unciv-ffh-approved-leader-portraits.zip") | .browser_download_url')
+          curl --fail --location --retry 3 --silent --show-error -H "Authorization: Bearer $GH_TOKEN" "$URL" -o /tmp/approved-portraits.zip
+          unzip -o /tmp/approved-portraits.zip -d .
+          sha256sum -c SHA256SUMS.txt
+          for name in Valledia Sabathiel Jonas Arendel; do
+            test -s "Images/LeaderIcons/$name.png"
+          done
+      - name: Pin approved leader portraits in artwork generator
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest_path = Path("development/art/sources.json")
+          manifest = json.loads(manifest_path.read_text())
+          names = ("Valledia", "Sabathiel", "Jonas", "Arendel")
+          manifest["portraitSources"] = {}
+          manifest["approvedPortraits"] = {name: f"Images/LeaderIcons/{name}.png" for name in names}
+          manifest["note"] = "Unit sprites remain GPL Wesnoth stand-ins. The four user-approved generated leader portraits are stored locally and preserved by the art builder; they are not canonical FFH2/EMM game assets."
+          manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
+          script_path = Path("development/tools/build_art.py")
+          source = script_path.read_text()
+          start = source.index("for leader,path in portrait_paths.items():\n")
+          end = source.index("\nfor name,path in unit_paths.items():", start)
+          replacement = """for leader, relative_path in manifest.get("approvedPortraits", {}).items():
+              portrait_file = ROOT / relative_path
+              if not portrait_file.is_file():
+                  raise FileNotFoundError(f"Approved leader portrait missing: {portrait_file}")
+              with Image.open(portrait_file) as portrait:
+                  portrait.verify()
+          """
+          source = source[:start] + replacement + source[end:]
+          source = source.replace(
+              "The portraits are deliberately labelled *stand-ins* in art/sources.json:\nno claim is made that they depict the original EMM leaders.",
+              "The four approved generated leader portraits are preserved as checked-in assets.\nUnit sprites remain attributed Wesnoth stand-ins.")
+          source = source.replace('len(portrait_paths),"leader portraits"', 'len(manifest.get("approvedPortraits", {})),"preserved leader portraits"')
+          script_path.write_text(source)
+          PY
+      - name: Render nation icons and unit models (preserve approved leader portraits)
         run: python development/tools/build_art.py
       - name: Include original artwork license
         run: |
@@ -46,9 +90,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A Images Atlases.json *.atlas *.png development/licenses || true
+          git add -A Images Atlases.json *.atlas *.png development/licenses development/tools/build_art.py development/art/sources.json || true
           if ! git diff --staged --quiet; then
-            git commit -m "Generate GPL fantasy sprite and leader portrait atlases [skip ci]"
+            git commit -m "Install approved FFH leader portraits and rebuild atlases [skip ci]"
             git push origin HEAD:main
           else
             echo "Art is already up to date."
