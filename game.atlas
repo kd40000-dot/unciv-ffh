@@ -1,0 +1,62 @@
+
+game.png
+size: 320, 192
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+LeaderIcons/Valledia
+  rotate: false
+  xy: 4, 4
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+UnitIcons/Firebow
+  rotate: false
+  xy: 124, 6
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+UnitIcons/Wizard
+  rotate: false
+  xy: 184, 6
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+UnitIcons/Govannon
+  rotate: false
+  xy: 244, 6
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+NationIcons/Amurites
+  rotate: false
+  xy: 250, 65
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Firebow
+  rotate: false
+  xy: 122, 110
+  size: 60, 79
+  orig: 60, 79
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Wizard
+  rotate: false
+  xy: 187, 110
+  size: 60, 79
+  orig: 60, 79
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Units/Govannon
+  rotate: false
+  xy: 252, 110
+  size: 60, 79
+  orig: 60, 79
+  offset: 0, 0
+  index: -1
