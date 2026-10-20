@@ -350,10 +350,9 @@
     "strength": 1,
     "rangedStrength": 12,
     "range": 2,
-    "cost": 30,
-    "requiredTech": "Sorcery",
-    "requiredResource": "Fire Mana",
+    "cost": -1,
     "uniques": [
+      "Cannot be built",
       "Self-destructs when attacking",
       "Cannot capture cities",
       "Ranged attacks may be performed over obstacles"
