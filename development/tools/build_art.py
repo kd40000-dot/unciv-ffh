@@ -24,8 +24,11 @@ def fetch_one(pair):
     path = pair[1]
     url = ART_URL + quote(manifest["sourceRoot"] + path, safe="/")
     req = Request(url, headers={"User-Agent": "Unciv-FFH-art-build/0.2"})
-    with urlopen(req, timeout=40) as response:
-        raw = response.read()
+    try:
+        with urlopen(req, timeout=40) as response:
+            raw = response.read()
+    except Exception as error:
+        raise RuntimeError(f"Source asset unavailable: {path} at {url}") from error
     return path, Image.open(io.BytesIO(raw)).convert("RGBA")
 
 def mkdir(p):
