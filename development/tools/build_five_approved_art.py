@@ -102,6 +102,18 @@ def apply_chanter_pixel_sprite()->None:
         dest=ROOT/"Images"/"TileSets"/tileset/"Units"/"Chanter.png"
         im.save(dest,optimize=True)
 
+def apply_adept_first_pose()->None:
+    """Approved first Adept pose: original low-resolution pixel art."""
+    source=ROOT/"development"/"assets"/"adept-first-pose-07.png.b64"
+    im=Image.open(BytesIO(base64.b64decode(source.read_text("ascii").strip(),validate=True))).convert("RGBA")
+    if im.size!=(84,84) or not im.getbbox():
+        raise ValueError("Adept sprite must be nonempty 84x84")
+    bounds=im.getbbox()
+    if bounds[3]-bounds[1]!=43:
+        raise ValueError(f"Adept sprite height must be 43 pixels: {bounds}")
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Adept.png",optimize=True)
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -146,4 +158,5 @@ if __name__=="__main__":
     make_assets()
     apply_govannon_pixel_sprite()
     apply_chanter_pixel_sprite()
+    apply_adept_first_pose()
     pack_atlas()
