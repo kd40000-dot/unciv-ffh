@@ -1,7 +1,7 @@
-name: Package Casting Proof (isolated Android test)
+name: Package Casting Proof 02 (next-turn expiration)
 on:
   push:
-    branches: [magic-casting-proof-01]
+    branches: [magic-casting-proof-02]
     paths:
       - 'jsons/**'
       - 'Images/**'
@@ -37,27 +37,27 @@ jobs:
       - name: Package separate test mod name
         run: |
           set -euo pipefail
-          OUT="$RUNNER_TEMP/unciv-ffh-casting-test-01"
+          OUT="$RUNNER_TEMP/unciv-ffh-casting-test-02"
           mkdir -p "$OUT"
           cp -a Images jsons game.atlas game.png Atlases.json README.md "$OUT/"
           (
             cd "$RUNNER_TEMP"
-            zip -qr "unciv-ffh-casting-test-01.zip" "unciv-ffh-casting-test-01"
-            unzip -t "unciv-ffh-casting-test-01.zip" | tail -n 1
+            zip -qr "unciv-ffh-casting-test-02.zip" "unciv-ffh-casting-test-02"
+            unzip -t "unciv-ffh-casting-test-02.zip" | tail -n 1
           )
       - name: Publish prerelease ZIP for Android mod manager
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          TAG="casting-proof-01"
-          ZIP="$RUNNER_TEMP/unciv-ffh-casting-test-01.zip"
+          TAG="casting-proof-02"
+          ZIP="$RUNNER_TEMP/unciv-ffh-casting-test-02.zip"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "$ZIP" --clobber
           else
             gh release create "$TAG" "$ZIP" \
               --target "$GITHUB_SHA" \
-              --title "Unciv casting proof 01 (test only)" \
-              --notes "Isolated Skeleton summoning action test. Not a Fireball implementation; working main mod is unchanged." \
+              --title "Unciv casting proof 02 (test only)" \
+              --notes "Isolated Skeleton summoning plus next-turn expiration test. Not a Fireball implementation; working main mod is unchanged." \
               --prerelease
           fi
