@@ -1,0 +1,80 @@
+[
+  {
+    "columnNumber": 0,
+    "era": "Age of Rebirth",
+    "techCost": 25,
+    "techs": [
+      {
+        "name": "Agriculture",
+        "row": 3,
+        "uniques": [
+          "Starting tech"
+        ]
+      },
+      {
+        "name": "Ancient Chants",
+        "row": 1
+      },
+      {
+        "name": "Exploration",
+        "row": 5
+      }
+    ]
+  },
+  {
+    "columnNumber": 1,
+    "era": "Age of Rebirth",
+    "techCost": 60,
+    "techs": [
+      {
+        "name": "Mysticism",
+        "row": 1,
+        "prerequisites": [
+          "Ancient Chants"
+        ]
+      },
+      {
+        "name": "Crafting",
+        "row": 3,
+        "prerequisites": [
+          "Agriculture"
+        ]
+      },
+      {
+        "name": "Hunting",
+        "row": 5,
+        "prerequisites": [
+          "Exploration"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Age of Rebirth",
+    "techCost": 110,
+    "techs": [
+      {
+        "name": "Knowledge of the Ether",
+        "row": 1,
+        "prerequisites": [
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Bronze Working",
+        "row": 3,
+        "prerequisites": [
+          "Crafting"
+        ]
+      },
+      {
+        "name": "Warfare",
+        "row": 5,
+        "prerequisites": [
+          "Hunting"
+        ]
+      }
+    ]
+  }
+]

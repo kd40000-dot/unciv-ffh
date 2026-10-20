@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Farm",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Flood plains"
+    ],
+    "food": 1,
+    "turnsToBuild": 6,
+    "techRequired": "Agriculture"
+  },
+  {
+    "name": "Mine",
+    "terrainsCanBeBuiltOn": [
+      "Hill"
+    ],
+    "production": 1,
+    "turnsToBuild": 6,
+    "techRequired": "Crafting"
+  },
+  {
+    "name": "Pasture",
+    "turnsToBuild": 6,
+    "techRequired": "Hunting",
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
+  },
+  {
+    "name": "Road",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "turnsToBuild": 5,
+    "techRequired": "Exploration",
+    "uniques": [
+      "Can be built outside your borders"
+    ]
+  },
+  {
+    "name": "Ancient ruins",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Provides a random bonus when entered",
+      "Unbuildable"
+    ]
+  },
+  {
+    "name": "City ruins",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Unbuildable"
+    ]
+  },
+  {
+    "name": "City center",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Ensures a minimum tile yield of [+2 Food, +1 Production]",
+      "Unpillagable",
+      "Irremovable",
+      "Unbuildable",
+      "Excluded from map editor"
+    ]
+  },
+  {
+    "name": "Barbarian encampment",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Unbuildable",
+      "Excluded from map editor",
+      "Marks a barbarian camp"
+    ]
+  }
+]

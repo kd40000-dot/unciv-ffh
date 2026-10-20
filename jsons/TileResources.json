@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Wheat",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "food": 1,
+    "improvement": "Farm",
+    "uniques": [
+      "Generated on every [18] tiles <in [Grassland] tiles>"
+    ]
+  },
+  {
+    "name": "Sheep",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Hill"
+    ],
+    "food": 1,
+    "improvement": "Pasture",
+    "uniques": [
+      "Generated on every [18] tiles <in [Hill] tiles>"
+    ]
+  }
+]

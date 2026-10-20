@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Amurites",
+    "leaderName": "Valledia",
+    "adjective": [
+      "Amurite"
+    ],
+    "outerColor": [
+      68,
+      42,
+      111
+    ],
+    "innerColor": [
+      211,
+      183,
+      232
+    ],
+    "preferredVictoryType": "Domination",
+    "uniques": [
+      "Starts with [Ancient Chants]"
+    ],
+    "cities": [
+      "Cevedes",
+      "Udenarat",
+      "Nimarail",
+      "Ciriail",
+      "Glorairine",
+      "Enaillellion",
+      "Orrondhuir",
+      "Sierundirel"
+    ]
+  },
+  {
+    "name": "Bannor",
+    "leaderName": "Sabathiel",
+    "adjective": [
+      "Bannor"
+    ],
+    "outerColor": [
+      153,
+      118,
+      48
+    ],
+    "innerColor": [
+      239,
+      219,
+      152
+    ],
+    "preferredVictoryType": "Domination",
+    "uniques": [
+      "Starts with [Exploration]"
+    ],
+    "cities": [
+      "Torrolerial",
+      "Vallus",
+      "Trinity",
+      "Tentatio-onis",
+      "Astrum",
+      "Caelestis",
+      "Ventry",
+      "Corona"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ]
+  },
+  {
+    "name": "Spectator",
+    "outerColor": [
+      255,
+      255,
+      255
+    ]
+  }
+]
