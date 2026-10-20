@@ -1,0 +1,63 @@
+name: Package Casting Proof (isolated Android test)
+on:
+  push:
+    branches: [magic-casting-proof-01]
+    paths:
+      - 'jsons/**'
+      - 'Images/**'
+      - 'game.atlas'
+      - 'game.png'
+      - 'Atlases.json'
+      - '.github/workflows/publish-casting-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  validate-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate JSON and references
+        run: python development/tools/validate_ruleset.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Download official Unciv validator
+        run: |
+          set -euo pipefail
+          URL=$(curl --fail --silent --show-error https://api.github.com/repos/yairm210/Unciv/releases/latest |
+            jq -er '.assets[] | select(.name == "Unciv.jar") | .browser_download_url')
+          curl --fail --location --retry 3 --silent --show-error "$URL" -o /tmp/Unciv.jar
+      - name: Validate with official Unciv
+        run: java -jar /tmp/Unciv.jar mod-ci
+      - name: Package separate test mod name
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/unciv-ffh-casting-test-01"
+          mkdir -p "$OUT"
+          cp -a Images jsons game.atlas game.png Atlases.json README.md "$OUT/"
+          (
+            cd "$RUNNER_TEMP"
+            zip -qr "unciv-ffh-casting-test-01.zip" "unciv-ffh-casting-test-01"
+            unzip -t "unciv-ffh-casting-test-01.zip" | tail -n 1
+          )
+      - name: Publish prerelease ZIP for Android mod manager
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="casting-proof-01"
+          ZIP="$RUNNER_TEMP/unciv-ffh-casting-test-01.zip"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$ZIP" --clobber
+          else
+            gh release create "$TAG" "$ZIP" \
+              --target "$GITHUB_SHA" \
+              --title "Unciv casting proof 01 (test only)" \
+              --notes "Isolated Skeleton summoning action test. Not a Fireball implementation; working main mod is unchanged." \
+              --prerelease
+          fi
