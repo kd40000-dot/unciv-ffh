@@ -2,7 +2,7 @@
 
 An experimental **Unciv standalone base ruleset** adapting the fantasy strategy game **ExtraModMod Continued** (EMM; descended from Fall from Heaven II).
 
-> **Status: prototype 0.1a / first playable confirmed by an Android user (2026-10-20).** The mod installs, starts a game, and is playable. This is a smoke-test milestone, not a feature-complete release.
+> **Status: prototype 0.2 (visual and civilization expansion).** Version 0.1a was confirmed playable on Android; the newly expanded graphics/units have passed Unciv's official `mod-ci` and GitHub Actions, but have **not yet had an in-game Android visual test**.
 
 ## Goals
 
@@ -53,3 +53,14 @@ When setting up a game, select **unciv ffh** as the **Base Ruleset**
 for Fantasia. Do not select both in the same game. After updating the
 mod via Unciv's mod manager, create a **new game** to test the current
 ruleset.
+
+## 0.2 graphics and civilization expansion
+
+- Four illustrated leader portraits: **Valledia, Sabathiel, Arendel, Jonas**.
+- Four nation emblems, **29 unit portraits/icons** and **37 2D unit sprite variants**, including several civilization-specific styles.
+- Official packed `game.atlas`/`game.png` for Android (no on-device graphics compiling required).
+- The prototype now contains **38 technologies and 29 units** including EMM's **Shaman, Wolf Rider, Lizardman, Ogre, Chanter, Flurry, Fyrdwell, and Crusader**.
+- These are **noncanonical GPL-licensed Battle for Wesnoth visual stand-ins**, not original FFH2/EMM leaderheads or 3D models. [Art provenance](development/ARTWORK.md) and [credits](Credits.md).
+- The Crusader temporarily has a technology gate instead of EMM's full religion condition; other systems remain adapted to Unciv's mechanics.
+
+**Testing:** Update the mod in Unciv, restart the app if old textures persist, and start a new game with `unciv ffh` as the Base Ruleset (not Fantasia). Check the diplomacy portraits, new unit art on the map, construction menu art, and civilization-specific units. Report any missing graphics. The proven rollback is the `playable-0.1a` branch.

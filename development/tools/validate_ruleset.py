@@ -63,3 +63,21 @@ good = sum(1 for f in root_items if (
 bad = len(root_items) - good
 assert good > bad, f"Unciv rejects mod archive root: {good} good, {bad} bad"
 print(f"Unciv archive structure OK: {good} recognized, {bad} unrecognized root entries")
+
+# Test that generated graphics exist and are actually in the Android atlas.
+if (repo / "game.atlas").exists():
+    atlas = (repo / "game.atlas").read_text(encoding="utf-8")
+    sources = json.loads((repo / "development/art/sources.json").read_text(encoding="utf-8"))
+    required_images = set()
+    for leader in sources["portraitSources"]:
+        required_images.add(f"LeaderIcons/{leader}")
+    for nation in sources["factionColors"]:
+        required_images.add(f"NationIcons/{nation}")
+    for unit in list(sources["unitSources"]) + list(sources["styledUnitSources"]):
+        required_images.add(f"TileSets/FantasyHex/Units/{unit}")
+        required_images.add(f"TileSets/AbsoluteUnits/Units/{unit}")
+    for image in required_images:
+        assert image in atlas, f"Graphic missing from packed Unciv atlas: {image}"
+        assert (repo / "Images" / (image + ".png")).is_file(), f"Source PNG missing: {image}"
+    assert not (repo / "Images/Tilesets").exists(), "Wrong capitalization: use TileSets, not Tilesets"
+    print(f"PASS: {len(required_images)} expected graphic names found in packed atlas")
