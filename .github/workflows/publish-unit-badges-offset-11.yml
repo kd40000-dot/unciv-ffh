@@ -54,7 +54,7 @@ jobs:
           im=Image.open(root/"Images/TileSets/FantasyHex/Units/Govannon.png").convert("RGBA")
           bounds=im.getbbox()
           assert bounds and bounds[3]-bounds[1]==43, bounds
-          assert Image.open(root/"Images/UnitIcons/Govannon.png").convert("RGBA").getchannel("A").getextrema()==(255,255)
+          assert Image.open(root/"Images/UnitIcons/Govannon.png").convert("RGBA").getchannel("A").getextrema()==(0,255)
           chanter=Image.open(root/"Images/TileSets/FantasyHex/Units/Chanter.png").convert("RGBA")
           assert chanter.getbbox() and chanter.getbbox()[3]-chanter.getbbox()[1]==43
           assert chanter.getchannel("A").getextrema()[0]==0
