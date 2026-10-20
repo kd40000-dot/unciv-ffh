@@ -10,6 +10,7 @@ WebP encoding is used only to transport the original approved cutouts.
 from __future__ import annotations
 
 import base64
+import hashlib
 from io import BytesIO
 from pathlib import Path
 from PIL import Image
@@ -17,7 +18,8 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[2]
 NAMES=("Firebow","Wizard","Chanter","Adept","Govannon")
 W,H,PAD=1024,512,4
-SOURCE=ROOT/"development"/"assets"/"amurites-five-approved.webp.b64"
+SOURCES=[ROOT/"development"/"assets"/f"approved_part{i}.b64" for i in range(4)]
+EXPECTED_SHA256="2c8f9a9dfa1d2aceba729cf9a52ae5e4c7afb3226953958a401f63771c9cc63b"
 
 def image_in_square(im:Image.Image,w:int=84,h:int=84)->Image.Image:
     im=im.convert("RGBA")
@@ -31,20 +33,24 @@ def image_in_square(im:Image.Image,w:int=84,h:int=84)->Image.Image:
     return dest
 
 def load_source()->Image.Image:
-    raw=base64.b64decode(SOURCE.read_text("ascii").strip(),validate=True)
+    text="".join(p.read_text("ascii").strip() for p in SOURCES)
+    raw=base64.b64decode(text,validate=True)
+    digest=hashlib.sha256(raw).hexdigest()
+    if digest!=EXPECTED_SHA256:
+        raise ValueError(f"Wrong approved artwork SHA256: {digest}")
     im=Image.open(BytesIO(raw)).convert("RGBA")
-    if im.size!=(480,180):
-        raise ValueError(f"Approved source expected 480x180, got {im.size}")
+    if im.size!=(400,160):
+        raise ValueError(f"Approved source expected 400x160, got {im.size}")
     return im
 
 def make_assets()->None:
     sheet=load_source()
     for i,name in enumerate(NAMES):
-        sx=i*96
+        sx=i*80
         # Top row is the already-approved Unciv map figure. Bottom row
         # is that same sheet's user-approved icon (not a newly generated one).
-        sprite=image_in_square(sheet.crop((sx,0,sx+96,84)))
-        icon=sheet.crop((sx,84,sx+96,180))
+        sprite=image_in_square(sheet.crop((sx,0,sx+80,80)))
+        icon=sheet.crop((sx,80,sx+80,160)).resize((96,96),Image.Resampling.LANCZOS)
         dest=ROOT/"Images"/"UnitIcons"/(name+".png")
         dest.parent.mkdir(parents=True,exist_ok=True)
         icon.save(dest,optimize=True)
