@@ -133,16 +133,26 @@ def apply_wizard_front_sprite()->None:
         im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Wizard.png",optimize=True)
 
 def apply_firebow_pixel_sprite()->None:
-    """Install approved simple Firebow at standard Unciv character scale."""
-    source=ROOT/"development"/"assets"/"firebow-pixel-10.png.b64"
-    im=Image.open(BytesIO(base64.b64decode(source.read_text("ascii").strip(),validate=True))).convert("RGBA")
-    if im.size!=(84,84) or not im.getbbox():
-        raise ValueError("Firebow sprite must be nonempty 84x84")
-    bounds=im.getbbox()
-    if bounds[3]-bounds[1]!=43:
-        raise ValueError(f"Firebow visible height must be 43px: {bounds}")
+    """Repair Firebow using the known-good original approved sprite source.
+
+    The prior firebow-pixel-10.png.b64 image produced visible corruption in
+    Unciv. Do not use that source again. Instead rebuild from the already
+    approved sprite in the verified five-character source collage.
+    """
+    sheet=load_source()
+    figure=sheet.crop((0,0,80,80)).convert("RGBA")
+    bounds=figure.getbbox()
+    if bounds is None:
+        raise ValueError("Missing approved Firebow figure")
+    figure=figure.crop(bounds)
+    # Downsample deliberately to the same low-resolution character scale
+    # as the stock Warrior, then retain hard pixel edges.
+    width=max(1,round(figure.width*43/figure.height))
+    figure=figure.resize((width,43),Image.Resampling.NEAREST)
+    sprite=Image.new("RGBA",(84,84))
+    sprite.alpha_composite(figure,((84-width)//2,84-43-5))
     for tileset in ("FantasyHex","AbsoluteUnits"):
-        im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Firebow.png",optimize=True)
+        sprite.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Firebow.png",optimize=True)
 
 def apply_simple_badges_and_sprite_offsets()->None:
     """Simple opaque symbol badges and a common offset for every map figure.
