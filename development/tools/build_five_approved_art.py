@@ -104,7 +104,7 @@ def apply_chanter_pixel_sprite()->None:
 
 def apply_adept_first_pose()->None:
     """Approved first Adept pose: original low-resolution pixel art."""
-    source=ROOT/"development"/"assets"/"adept-first-pose-07.png.b64"
+    source=ROOT/"development"/"assets"/"adept-approved-08.png.b64"
     im=Image.open(BytesIO(base64.b64decode(source.read_text("ascii").strip(),validate=True))).convert("RGBA")
     if im.size!=(84,84) or not im.getbbox():
         raise ValueError("Adept sprite must be nonempty 84x84")
