@@ -4,6 +4,7 @@ on:
     branches: [govannon-scaled-preview-04]
     paths:
       - '.github/workflows/publish-govannon-scaled-04.yml'
+      - 'development/tools/build_five_approved_art.py'
   workflow_dispatch:
 permissions:
   contents: write
