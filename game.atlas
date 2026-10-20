@@ -1,0 +1,986 @@
+
+game.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+LeaderIcons/Arendel
+  rotate: false
+  xy: 4, 1780
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Jonas
+  rotate: false
+  xy: 4, 1516
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Sabathiel
+  rotate: false
+  xy: 268, 1780
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Valledia
+  rotate: false
+  xy: 4, 1252
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NationIcons/Amurites
+  rotate: false
+  xy: 1636, 1392
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Bannor
+  rotate: false
+  xy: 1804, 1560
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Clan of Embers
+  rotate: false
+  xy: 172, 24
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Ljosalfar
+  rotate: false
+  xy: 628, 1224
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Adept
+  rotate: false
+  xy: 764, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Adept
+  rotate: false
+  xy: 764, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Adept-Amurites
+  rotate: false
+  xy: 856, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Adept-Amurites
+  rotate: false
+  xy: 856, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Archer
+  rotate: false
+  xy: 948, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Archer
+  rotate: false
+  xy: 948, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Archer-Ljosalfar
+  rotate: false
+  xy: 1040, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Archer-Ljosalfar
+  rotate: false
+  xy: 1040, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Assassin
+  rotate: false
+  xy: 1132, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Assassin
+  rotate: false
+  xy: 1132, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Axeman
+  rotate: false
+  xy: 1224, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Axeman
+  rotate: false
+  xy: 1224, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Champion
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Champion
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Crusader
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Swordsman
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Warrior-Bannor
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Crusader
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Swordsman
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Warrior-Bannor
+  rotate: false
+  xy: 1316, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Chanter
+  rotate: false
+  xy: 1408, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Chanter
+  rotate: false
+  xy: 1408, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Crossbowman
+  rotate: false
+  xy: 1500, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Crossbowman
+  rotate: false
+  xy: 1500, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Firebow
+  rotate: false
+  xy: 364, 128
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Firebow
+  rotate: false
+  xy: 364, 128
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Flurry
+  rotate: false
+  xy: 456, 128
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Flurry
+  rotate: false
+  xy: 456, 128
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Fyrdwell
+  rotate: false
+  xy: 764, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Fyrdwell
+  rotate: false
+  xy: 764, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Galley
+  rotate: false
+  xy: 856, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Galley
+  rotate: false
+  xy: 856, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Goblin
+  rotate: false
+  xy: 948, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Goblin
+  rotate: false
+  xy: 948, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Horse Archer
+  rotate: false
+  xy: 1040, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Horse Archer
+  rotate: false
+  xy: 1040, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Horseman
+  rotate: false
+  xy: 1132, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Horseman
+  rotate: false
+  xy: 1132, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Hunter
+  rotate: false
+  xy: 1224, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Hunter
+  rotate: false
+  xy: 1224, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Lizardman
+  rotate: false
+  xy: 1316, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Lizardman
+  rotate: false
+  xy: 1316, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Longbowman
+  rotate: false
+  xy: 1408, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Longbowman
+  rotate: false
+  xy: 1408, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Mage
+  rotate: false
+  xy: 1500, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Mage
+  rotate: false
+  xy: 1500, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Mage-Amurites
+  rotate: false
+  xy: 1592, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Mage-Amurites
+  rotate: false
+  xy: 1592, 1268
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Ogre
+  rotate: false
+  xy: 1592, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Ogre
+  rotate: false
+  xy: 1592, 1176
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Scout
+  rotate: false
+  xy: 1684, 1300
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Scout
+  rotate: false
+  xy: 1684, 1300
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Scout-Ljosalfar
+  rotate: false
+  xy: 1684, 1208
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Scout-Ljosalfar
+  rotate: false
+  xy: 1684, 1208
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Settler
+  rotate: false
+  xy: 308, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Settler
+  rotate: false
+  xy: 308, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Shaman
+  rotate: false
+  xy: 400, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Shaman
+  rotate: false
+  xy: 400, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Skeleton
+  rotate: false
+  xy: 492, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Skeleton
+  rotate: false
+  xy: 492, 36
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Warrior
+  rotate: false
+  xy: 1804, 1468
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Warrior
+  rotate: false
+  xy: 1804, 1468
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Warrior-Clan of Embers
+  rotate: false
+  xy: 1896, 1468
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Warrior-Clan of Embers
+  rotate: false
+  xy: 1896, 1468
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Warrior-Ljosalfar
+  rotate: false
+  xy: 1684, 1116
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Warrior-Ljosalfar
+  rotate: false
+  xy: 1684, 1116
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Wizard
+  rotate: false
+  xy: 1940, 1604
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Wizard
+  rotate: false
+  xy: 1940, 1604
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Wolf Rider
+  rotate: false
+  xy: 532, 968
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Wolf Rider
+  rotate: false
+  xy: 532, 968
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Worker
+  rotate: false
+  xy: 532, 876
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Worker
+  rotate: false
+  xy: 532, 876
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/FantasyHex/Units/Worker-Ljosalfar
+  rotate: false
+  xy: 532, 784
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Tilesets/AbsoluteUnits/Units/Worker-Ljosalfar
+  rotate: false
+  xy: 532, 784
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+UnitIcons/Adept
+  rotate: false
+  xy: 268, 1600
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Archer
+  rotate: false
+  xy: 532, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Assassin
+  rotate: false
+  xy: 4, 1072
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Axeman
+  rotate: false
+  xy: 268, 1420
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Champion
+  rotate: false
+  xy: 712, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Crusader
+  rotate: false
+  xy: 712, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Swordsman
+  rotate: false
+  xy: 712, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Chanter
+  rotate: false
+  xy: 4, 892
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Crossbowman
+  rotate: false
+  xy: 892, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Firebow
+  rotate: false
+  xy: 4, 712
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Flurry
+  rotate: false
+  xy: 1072, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Fyrdwell
+  rotate: false
+  xy: 4, 532
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Galley
+  rotate: false
+  xy: 1252, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Goblin
+  rotate: false
+  xy: 4, 352
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Horse Archer
+  rotate: false
+  xy: 1432, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Horseman
+  rotate: false
+  xy: 4, 172
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Hunter
+  rotate: false
+  xy: 1612, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Lizardman
+  rotate: false
+  xy: 1792, 1864
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Longbowman
+  rotate: false
+  xy: 268, 1240
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Mage
+  rotate: false
+  xy: 184, 1060
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Ogre
+  rotate: false
+  xy: 184, 880
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Scout
+  rotate: false
+  xy: 184, 700
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Settler
+  rotate: false
+  xy: 184, 520
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Shaman
+  rotate: false
+  xy: 184, 340
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Skeleton
+  rotate: false
+  xy: 184, 160
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Warrior
+  rotate: false
+  xy: 448, 1600
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Wizard
+  rotate: false
+  xy: 448, 1420
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Wolf Rider
+  rotate: false
+  xy: 448, 1240
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitIcons/Worker
+  rotate: false
+  xy: 364, 1060
+  size: 172, 172
+  orig: 172, 172
+  offset: 0, 0
+  index: -1
+UnitPortraits/Adept
+  rotate: false
+  xy: 4, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Archer
+  rotate: false
+  xy: 364, 892
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Assassin
+  rotate: false
+  xy: 364, 724
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Axeman
+  rotate: false
+  xy: 364, 556
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Champion
+  rotate: false
+  xy: 364, 388
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Crusader
+  rotate: false
+  xy: 364, 388
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Swordsman
+  rotate: false
+  xy: 364, 388
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Chanter
+  rotate: false
+  xy: 364, 220
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Crossbowman
+  rotate: false
+  xy: 628, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Firebow
+  rotate: false
+  xy: 628, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Flurry
+  rotate: false
+  xy: 796, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Fyrdwell
+  rotate: false
+  xy: 628, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Galley
+  rotate: false
+  xy: 796, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Goblin
+  rotate: false
+  xy: 964, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Horse Archer
+  rotate: false
+  xy: 796, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Horseman
+  rotate: false
+  xy: 964, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Hunter
+  rotate: false
+  xy: 1132, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Lizardman
+  rotate: false
+  xy: 964, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Longbowman
+  rotate: false
+  xy: 1132, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Mage
+  rotate: false
+  xy: 1300, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Ogre
+  rotate: false
+  xy: 1132, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Scout
+  rotate: false
+  xy: 1300, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Settler
+  rotate: false
+  xy: 1468, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Shaman
+  rotate: false
+  xy: 1300, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Skeleton
+  rotate: false
+  xy: 1468, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Warrior
+  rotate: false
+  xy: 1636, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Wizard
+  rotate: false
+  xy: 1468, 1360
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Wolf Rider
+  rotate: false
+  xy: 1636, 1528
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+UnitPortraits/Worker
+  rotate: false
+  xy: 1804, 1696
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
