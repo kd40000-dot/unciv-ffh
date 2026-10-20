@@ -1,0 +1,59 @@
+{
+  "source": "The Battle for Wesnoth (GPL-2.0-or-later artwork; https://github.com/wesnoth/wesnoth)",
+  "sourceRevision": "f8be731a7cbcd44c12127a3473f804f04b8c265a",
+  "sourceRoot": "data/core/images/",
+  "note": "Visual stand-ins, NOT canonical EMM leaderhead or unit art. Source links preserved for each sprite.",
+  "portraitSources": {
+    "Valledia": "portraits/humans/mage-arch+female.webp",
+    "Sabathiel": "portraits/humans/paladin.webp",
+    "Arendel": "portraits/elves/lady.webp",
+    "Jonas": "portraits/orcs/ruler.webp"
+  },
+  "factionColors": {
+    "Amurites": "#573A82",
+    "Bannor": "#BA9635",
+    "Ljosalfar": "#39845C",
+    "Clan of Embers": "#A95127"
+  },
+  "unitSources": {
+    "Settler": "units/human-peasants/peasant.png",
+    "Worker": "units/human-peasants/woodsman.png",
+    "Warrior": "units/human-loyalists/spearman.png",
+    "Scout": "units/human-outlaws/footpad.png",
+    "Goblin": "units/goblins/spearman.png",
+    "Hunter": "units/human-outlaws/ranger.png",
+    "Axeman": "units/human-loyalists/swordsman.png",
+    "Swordsman": "units/human-loyalists/royalguard.png",
+    "Archer": "units/human-loyalists/bowman.png",
+    "Longbowman": "units/human-loyalists/longbowman.png",
+    "Firebow": "units/elves-wood/marksman.png",
+    "Adept": "units/human-magi/mage.png",
+    "Mage": "units/human-magi/red-mage.png",
+    "Wizard": "units/human-magi/arch-mage+female.png",
+    "Galley": "units/transport/fireship.png",
+    "Skeleton": "units/undead-skeletal/deathblade.png",
+    "Shaman": "units/orcs/leader.png",
+    "Wolf Rider": "units/goblins/wolf-rider.png",
+    "Lizardman": "units/saurians/skirmisher.png",
+    "Ogre": "units/ogres/ogre.png",
+    "Chanter": "units/human-outlaws/assassin+female.png",
+    "Flurry": "units/elves-wood/sharpshooter.png",
+    "Fyrdwell": "units/elves-wood/outrider/outrider.png",
+    "Crusader": "units/human-loyalists/royalguard.png",
+    "Assassin": "units/human-outlaws/assassin.png",
+    "Champion": "units/human-loyalists/royalguard.png",
+    "Horseman": "units/human-loyalists/cavalryman/cavalryman.png",
+    "Horse Archer": "units/elves-wood/rider/rider.png",
+    "Crossbowman": "units/orcs/xbowman.png"
+  },
+  "styledUnitSources": {
+    "Warrior-Bannor": "units/human-loyalists/royalguard.png",
+    "Warrior-Clan of Embers": "units/orcs/grunt.png",
+    "Warrior-Ljosalfar": "units/elves-wood/fighter.png",
+    "Scout-Ljosalfar": "units/elves-wood/scout/scout.png",
+    "Archer-Ljosalfar": "units/elves-wood/archer.png",
+    "Worker-Ljosalfar": "units/elves-wood/lady.png",
+    "Adept-Amurites": "units/human-magi/mage+female.png",
+    "Mage-Amurites": "units/human-magi/arch-mage.png"
+  }
+}
