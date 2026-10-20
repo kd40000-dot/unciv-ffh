@@ -115,5 +115,278 @@
     "improvementStats": {
       "food": 1
     }
+  },
+  {
+    "name": "Air Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Body Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Chaos Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Creation Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Death Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Dimensional Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Earth Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Enchantment Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Entropy Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Fire Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Force Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Ice Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Law Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Life Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Metamagic Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Mind Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Nature Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Shadow Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Spirit Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Sun Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
+  },
+  {
+    "name": "Water Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "improvement": "Node of Mana",
+    "gold": 1
   }
 ]
