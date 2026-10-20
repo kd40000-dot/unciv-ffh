@@ -187,12 +187,20 @@
         "row": 9
       },
       {
+        "name": "Poisons",
+        "cost": 350,
+        "prerequisites": [
+          "Hunting"
+        ],
+        "row": 10
+      },
+      {
         "name": "Sailing",
         "cost": 112,
         "prerequisites": [
           "Fishing"
         ],
-        "row": 10
+        "row": 11
       },
       {
         "name": "Warfare",
@@ -200,7 +208,7 @@
         "prerequisites": [
           "Education"
         ],
-        "row": 11
+        "row": 12
       },
       {
         "name": "Writing",
@@ -208,7 +216,7 @@
         "prerequisites": [
           "Education"
         ],
-        "row": 12
+        "row": 13
       }
     ]
   },
@@ -252,12 +260,20 @@
         "row": 4
       },
       {
+        "name": "Mathematics",
+        "cost": 333,
+        "prerequisites": [
+          "Writing"
+        ],
+        "row": 5
+      },
+      {
         "name": "Necromancy",
         "cost": 224,
         "prerequisites": [
           "Knowledge of the Ether"
         ],
-        "row": 5
+        "row": 6
       },
       {
         "name": "Orders from Heaven",
@@ -266,7 +282,24 @@
           "Philosophy",
           "Code of Laws"
         ],
-        "row": 6
+        "row": 7
+      },
+      {
+        "name": "Smelting",
+        "cost": 280,
+        "prerequisites": [
+          "Bronze Working"
+        ],
+        "row": 8
+      },
+      {
+        "name": "Stirrups",
+        "cost": 350,
+        "prerequisites": [
+          "Archery",
+          "Horseback Riding"
+        ],
+        "row": 9
       }
     ]
   },
@@ -278,11 +311,47 @@
     "wonderCost": 350,
     "techs": [
       {
+        "name": "Engineering",
+        "cost": 770,
+        "prerequisites": [
+          "Mathematics",
+          "Construction"
+        ],
+        "row": 1
+      },
+      {
+        "name": "Iron Working",
+        "cost": 630,
+        "prerequisites": [
+          "Smelting",
+          "Warfare"
+        ],
+        "row": 2
+      },
+      {
         "name": "Sorcery",
         "cost": 700,
         "prerequisites": [
           "Alteration",
           "Writing"
+        ],
+        "row": 3
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Age of Magic",
+    "techCost": 100,
+    "buildingCost": 200,
+    "wonderCost": 375,
+    "techs": [
+      {
+        "name": "Machinery",
+        "cost": 1155,
+        "prerequisites": [
+          "Engineering",
+          "Bowyers"
         ],
         "row": 1
       }

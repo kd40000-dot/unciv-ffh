@@ -39,7 +39,8 @@
       "Surewatch",
       "Baamor",
       "Korrigan"
-    ]
+    ],
+    "style": "Amurites"
   },
   {
     "name": "Bannor",
@@ -84,7 +85,8 @@
       "Athel Maraya",
       "Ithmariar",
       "Chaend"
-    ]
+    ],
+    "style": "Bannor"
   },
   {
     "name": "Ljosalfar",
@@ -131,7 +133,8 @@
       "Kalos",
       "Camena",
       "Natura"
-    ]
+    ],
+    "style": "Ljosalfar"
   },
   {
     "name": "Clan of Embers",
@@ -181,7 +184,8 @@
       "Tu'eth",
       "Death's Head",
       "Dark Heart"
-    ]
+    ],
+    "style": "Clan of Embers"
   },
   {
     "name": "Barbarians",

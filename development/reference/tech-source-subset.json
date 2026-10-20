@@ -251,5 +251,70 @@
       "Fishing"
     ],
     "and": []
+  },
+  "Poisons": {
+    "sourceId": "TECH_POISONS",
+    "sourceCost": 1000,
+    "or": [
+      "Hunting"
+    ],
+    "and": []
+  },
+  "Smelting": {
+    "sourceId": "TECH_SMELTING",
+    "sourceCost": 800,
+    "or": [
+      "Bronze Working"
+    ],
+    "and": []
+  },
+  "Iron Working": {
+    "sourceId": "TECH_IRON_WORKING",
+    "sourceCost": 1800,
+    "or": [
+      "Smelting"
+    ],
+    "and": [
+      "Warfare"
+    ]
+  },
+  "Mathematics": {
+    "sourceId": "TECH_MATHEMATICS",
+    "sourceCost": 950,
+    "or": [
+      "Writing"
+    ],
+    "and": []
+  },
+  "Engineering": {
+    "sourceId": "TECH_ENGINEERING",
+    "sourceCost": 2200,
+    "or": [
+      "Mathematics"
+    ],
+    "and": [
+      "Construction"
+    ]
+  },
+  "Machinery": {
+    "sourceId": "TECH_MACHINERY",
+    "sourceCost": 3300,
+    "or": [
+      "Engineering"
+    ],
+    "and": [
+      "Bowyers"
+    ]
+  },
+  "Stirrups": {
+    "sourceId": "TECH_STIRRUPS",
+    "sourceCost": 1000,
+    "or": [
+      "Archery",
+      "Animal Handling"
+    ],
+    "and": [
+      "Horseback Riding"
+    ]
   }
 }

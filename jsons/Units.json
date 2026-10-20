@@ -59,7 +59,8 @@
     "strength": 8,
     "cost": 60,
     "requiredTech": "Hunting",
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "upgradesTo": "Assassin"
   },
   {
     "name": "Axeman",
@@ -68,7 +69,8 @@
     "strength": 8,
     "cost": 45,
     "requiredTech": "Bronze Working",
-    "attackSound": "metalhit"
+    "attackSound": "metalhit",
+    "upgradesTo": "Champion"
   },
   {
     "name": "Swordsman",
@@ -102,7 +104,8 @@
     "range": 2,
     "cost": 120,
     "requiredTech": "Bowyers",
-    "attackSound": "arrow"
+    "attackSound": "arrow",
+    "upgradesTo": "Crossbowman"
   },
   {
     "name": "Firebow",
@@ -184,5 +187,152 @@
       "Cannot be built"
     ],
     "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Shaman",
+    "unitType": "Mage",
+    "movement": 2,
+    "strength": 6,
+    "cost": 90,
+    "requiredTech": "Knowledge of the Ether",
+    "replaces": "Adept",
+    "uniqueTo": "Clan of Embers",
+    "upgradesTo": "Mage",
+    "promotions": [
+      "Channeling I"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Wolf Rider",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 8,
+    "cost": 60,
+    "requiredTech": "Horseback Riding",
+    "replaces": "Horseman",
+    "uniqueTo": "Clan of Embers",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Lizardman",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 8,
+    "cost": 60,
+    "requiredTech": "Hunting",
+    "replaces": "Hunter",
+    "uniqueTo": "Clan of Embers",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Ogre",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 16,
+    "cost": 180,
+    "requiredTech": "Iron Working",
+    "replaces": "Champion",
+    "uniqueTo": "Clan of Embers",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Chanter",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 11,
+    "cost": 120,
+    "requiredTech": "Poisons",
+    "replaces": "Assassin",
+    "uniqueTo": "Amurites",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Flurry",
+    "unitType": "Archer",
+    "movement": 3,
+    "strength": 16,
+    "rangedStrength": 18,
+    "range": 2,
+    "cost": 240,
+    "requiredTech": "Machinery",
+    "replaces": "Crossbowman",
+    "uniqueTo": "Ljosalfar",
+    "attackSound": "arrow"
+  },
+  {
+    "name": "Fyrdwell",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 12,
+    "rangedStrength": 10,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Stirrups",
+    "replaces": "Horse Archer",
+    "uniqueTo": "Ljosalfar",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Crusader",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 10,
+    "cost": 80,
+    "requiredTech": "Orders from Heaven",
+    "uniqueTo": "Bannor",
+    "uniques": [
+      "[+15]% Strength <when attacking>"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Assassin",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 11,
+    "cost": 120,
+    "requiredTech": "Poisons",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Champion",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 12,
+    "cost": 120,
+    "requiredTech": "Iron Working",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Horseman",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 8,
+    "cost": 60,
+    "requiredTech": "Horseback Riding",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Horse Archer",
+    "unitType": "Mounted",
+    "movement": 4,
+    "strength": 12,
+    "rangedStrength": 10,
+    "range": 2,
+    "cost": 120,
+    "requiredTech": "Stirrups",
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Crossbowman",
+    "unitType": "Archer",
+    "movement": 2,
+    "strength": 14,
+    "rangedStrength": 16,
+    "range": 2,
+    "cost": 150,
+    "requiredTech": "Machinery",
+    "attackSound": "arrow"
   }
 ]
