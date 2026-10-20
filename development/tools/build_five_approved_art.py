@@ -132,6 +132,18 @@ def apply_wizard_front_sprite()->None:
     for tileset in ("FantasyHex","AbsoluteUnits"):
         im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Wizard.png",optimize=True)
 
+def apply_firebow_pixel_sprite()->None:
+    """Install approved simple Firebow at standard Unciv character scale."""
+    source=ROOT/"development"/"assets"/"firebow-pixel-10.png.b64"
+    im=Image.open(BytesIO(base64.b64decode(source.read_text("ascii").strip(),validate=True))).convert("RGBA")
+    if im.size!=(84,84) or not im.getbbox():
+        raise ValueError("Firebow sprite must be nonempty 84x84")
+    bounds=im.getbbox()
+    if bounds[3]-bounds[1]!=43:
+        raise ValueError(f"Firebow visible height must be 43px: {bounds}")
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        im.save(ROOT/"Images"/"TileSets"/tileset/"Units"/"Firebow.png",optimize=True)
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -178,4 +190,5 @@ if __name__=="__main__":
     apply_chanter_pixel_sprite()
     apply_adept_first_pose()
     apply_wizard_front_sprite()
+    apply_firebow_pixel_sprite()
     pack_atlas()
