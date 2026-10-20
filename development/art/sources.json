@@ -49,7 +49,7 @@
   "styledUnitSources": {
     "Warrior-Bannor": "units/human-loyalists/royalguard.png",
     "Warrior-Clan of Embers": "units/orcs/grunt.png",
-    "Warrior-Ljosalfar": "units/elves-wood/fighter.png",
+    "Warrior-Ljosalfar": "units/elves-wood/fighter/fighter.png",
     "Scout-Ljosalfar": "units/elves-wood/scout/scout.png",
     "Archer-Ljosalfar": "units/elves-wood/archer.png",
     "Worker-Ljosalfar": "units/elves-wood/lady.png",
