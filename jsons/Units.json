@@ -55,8 +55,8 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 3,
-    "cost": 90,
-    "requiredTech": "Knowledge of the Ether",
+    "cost": 12,
+    "requiredTech": "Agriculture",
     "promotions": [
       "Channeling I"
     ],
@@ -93,8 +93,8 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 4,
-    "cost": 120,
-    "requiredTech": "Sorcery",
+    "cost": 12,
+    "requiredTech": "Agriculture",
     "promotions": [
       "Channeling I",
       "Channeling II",
@@ -130,8 +130,8 @@
     "strength": 5,
     "rangedStrength": 7,
     "range": 2,
-    "cost": 120,
-    "requiredTech": "Bowyers",
+    "cost": 12,
+    "requiredTech": "Agriculture",
     "promotions": [
       "Fire I",
       "Channeling II"
@@ -152,22 +152,51 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 5,
-    "cost": 480,
-    "requiredTech": "Arcane Lore",
+    "cost": 12,
+    "requiredTech": "Agriculture",
     "promotions": [
       "Channeling I",
       "Channeling II",
       "Channeling III",
       "Hero"
     ],
-    "uniques": [
-      "Limited to [1] per Civilization",
-      "Cannot be purchased"
+    "uniques": [],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "ARTWORK PREVIEW ONLY: Govannon is cheap and deliberately unrestricted so you can inspect his sprite. Unique-hero restrictions and teaching will return in the final ruleset."
+      }
+    ]
+  },
+  {
+    "name": "Assassin",
+    "unitType": "Recon",
+    "movement": 2,
+    "strength": 5,
+    "cost": 120,
+    "requiredTech": "Poisons",
+    "promotions": [
+      "Marksman"
+    ],
+    "attackSound": "nonmetalhit"
+  },
+  {
+    "name": "Chanter",
+    "uniqueTo": "Amurites",
+    "replaces": "Assassin",
+    "unitType": "Recon",
+    "movement": 2,
+    "strength": 5,
+    "cost": 12,
+    "requiredTech": "Agriculture",
+    "promotions": [
+      "Marksman",
+      "Dimensional I"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Amurite arcane hero. Original ExtraModMod cost 480, strength 5, and grants Channeling I–III and Hero. His teaching of arcane promotions, spellcasting and mana node actions are not yet implemented."
+        "text": "Amurite Assassin replacement from ExtraModMod. Full Dimensional magic and special stealth interactions are pending."
       }
     ]
   }
