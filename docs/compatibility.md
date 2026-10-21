@@ -16,7 +16,7 @@ Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 | Civics and FfH happiness | Not implemented | Unciv city economy remains |
 | AI / long games / victory | Untested | Domination victory included |
 
-Static source checks have been performed; the official Unciv `mod-ci` result has not been independently confirmed for the latest commit. The user has verified the starting rosters, faction palaces and earlier leader effects on Android. New raiding and Science economics and multi-turn AI/regression games remain unverified.
+Static source checks have been performed; the official Unciv `mod-ci` result has not been independently confirmed for the latest commit. The user has verified the starting rosters, faction palaces and earlier leader effects on Android. Raider pillage income and Doviello Science have also been user-tested and accepted as verified for now. Multi-turn AI/regression games remain unverified.
 
 Progression conversion details: [promotions, upgrades and resources](promotions-upgrades-resources.md).
 
@@ -26,7 +26,7 @@ All 19 normal EMM civilization palaces have source-derived Production, Happiness
 
 ### Raiding and barbarian economics — October 21, 2026
 
-Hippus and Svartalfar receive double Gold from improvements pillaged (source Raiders +100% pillage Gold; native Unciv `100% Yield from pillaging tiles`), while Doviello receives -10% Science from the Barbarian trait. Enemy-road Commando behavior, free first strikes and barbarian alliances are not native equivalents and remain deferred. See [economic trait coverage](economic-traits.md). The user confirmed the prior palace and leader effects in gameplay; these new economics remain to be tested.
+Hippus and Svartalfar receive double Gold from improvements pillaged (source Raiders +100% pillage Gold; native Unciv `100% Yield from pillaging tiles`), while Doviello receives -10% Science from the Barbarian trait. Enemy-road Commando behavior, free first strikes and barbarian alliances are not native equivalents and remain deferred. See [economic trait coverage](economic-traits.md). The user confirmed the palace and earlier leader effects, and on October 21, 2026 reported that both corrected Raider pillage income and Doviello Science appear to work as expected. Treat the economic effects as gameplay-verified provisionally; the user will report any later issues.
 
 ### Economic percentage regression (October 21, 2026)
 
