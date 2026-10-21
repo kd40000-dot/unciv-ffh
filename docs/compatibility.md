@@ -1,18 +1,19 @@
 # Compatibility ledger
 
-Status vocabulary: **unassessed**, **native**, **approximated**, **requires engine work**, **implemented/tested**. Do not classify a feature as native until its exact Unciv version and supported effect have been confirmed.
+Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 
-| Mechanic | Status | Notes |
+| Mechanic | Status | Details |
 | --- | --- | --- |
-| Factions and leaders | unassessed | Need source inventory and Unciv JSON mapping. |
-| Technology tree | unassessed | Need prerequisite and cost mapping. |
-| Units, promotions, buildings | unassessed | Verify all effects individually. |
-| Religions and alignment | unassessed | Verify FfH2-specific mechanics. |
-| Mana nodes and sphere magic | unassessed | Separate resource and spell-action feasibility. |
-| Heroes and world spells | unassessed | Check uniqueness and one-use limits. |
-| Armageddon Counter | unassessed | Global custom state may require engine code. |
-| Lairs, events, and exploration | unassessed | Evaluate ruins/events and spawning rules. |
-| Civics, economy, and happiness | unassessed | Significant Civ IV vs Civ V ruleset differences. |
-| AI and victory conditions | unassessed | Needs game testing. |
+| Four nations, leaders, cities | Implemented, untested | Names and cities sourced from EMM XML |
+| Early technology branches | Implemented, untested | 13 techs, source costs; OR prereqs simplified |
+| Basic economic and combat loop | Approximated, untested | 12 units; 12 buildings; provisional stats |
+| Resources, improvements and terrain | Approximated, untested | Unciv terrain/map compatibility scaffold |
+| Hero units and world spells | Not implemented | Later milestone |
+| Mana nodes, spells, caster progression | Not implemented | Adept has provisional ranged combat only |
+| Religions and alignment | Not implemented | Later milestone |
+| Armageddon Counter | Not implemented | Engine feasibility unknown |
+| Lairs and random events | Approximated | Two generic ruins rewards |
+| Civics and FfH happiness | Not implemented | Unciv city economy remains |
+| AI / long games / victory | Untested | Domination victory included |
 
-Reference: https://github.com/yairm210/Unciv/blob/master/docs/Modders/Mods.md
+Static authoring checks completed; in-game ruleset validator and multi-turn game tests pending.

@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Amurites",
+    "leaderName": "Valledia the Even",
+    "adjective": [
+      "Amurite"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      67,
+      47,
+      139
+    ],
+    "innerColor": [
+      240,
+      219,
+      255
+    ],
+    "uniqueName": "Foundations (prototype)",
+    "startIntroPart1": "The Amurites emerge as the Age of Rebirth begins.",
+    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Cevedes",
+      "Udenarat",
+      "Nimarail",
+      "Ciriail",
+      "Glorairine",
+      "Enaillellion",
+      "Orrondhuir",
+      "Sierundirel",
+      "Coranttilli",
+      "Seaneriel",
+      "Angostendil",
+      "Wendar",
+      "Kevar",
+      "Sylvair",
+      "Doriath",
+      "Surewatch",
+      "Baamor",
+      "Korrigan"
+    ]
+  },
+  {
+    "name": "Bannor",
+    "leaderName": "Sabathiel",
+    "adjective": [
+      "Bannor"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      230,
+      222,
+      213
+    ],
+    "innerColor": [
+      107,
+      33,
+      33
+    ],
+    "uniqueName": "Foundations (prototype)",
+    "startIntroPart1": "The Bannor emerge as the Age of Rebirth begins.",
+    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Torrolerial",
+      "Vallus",
+      "Trinity",
+      "Tentatio-onis",
+      "Astrum",
+      "Caelestis",
+      "Ventry",
+      "Corona",
+      "Solium",
+      "Censura",
+      "Domus Novus",
+      "Fides",
+      "Judicium",
+      "Vis Vires",
+      "Pactum",
+      "Re Vera",
+      "Barak-Tor",
+      "Clar Manaul",
+      "Athel Maraya",
+      "Ithmariar"
+    ]
+  },
+  {
+    "name": "Clan of Embers",
+    "leaderName": "Jonas Endain",
+    "adjective": [
+      "Clan"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      84,
+      43,
+      29
+    ],
+    "innerColor": [
+      242,
+      151,
+      52
+    ],
+    "uniqueName": "Foundations (prototype)",
+    "startIntroPart1": "The Clan of Embers emerge as the Age of Rebirth begins.",
+    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Braduk the Burning",
+      "Renegade Hill",
+      "Shazak",
+      "Hezic'kul",
+      "Sorodh",
+      "Pain",
+      "Ah'roog",
+      "Belphemon",
+      "Death Fort",
+      "Nezhev",
+      "Naga's Tail",
+      "Shavraim",
+      "Dark Sky",
+      "Ator",
+      "Baal",
+      "Gurr'ash",
+      "Mephisto",
+      "Wallara",
+      "Deep Dark",
+      "Shahav"
+    ]
+  },
+  {
+    "name": "Ljosalfar",
+    "leaderName": "Arendel Phaedra",
+    "adjective": [
+      "Ljosalfar"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      52,
+      110,
+      63
+    ],
+    "innerColor": [
+      245,
+      240,
+      174
+    ],
+    "uniqueName": "Foundations (prototype)",
+    "startIntroPart1": "The Ljosalfar emerge as the Age of Rebirth begins.",
+    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Evermore",
+      "Hyll",
+      "Bruti",
+      "Yonna",
+      "Dendrom",
+      "Eaca",
+      "Eodd",
+      "Berk",
+      "Khandar",
+      "Idul",
+      "Elendiwe",
+      "Helion",
+      "Gon Gatha",
+      "Mazenshire",
+      "Tivix",
+      "Lan Neual",
+      "Wispolen",
+      "Cerrolan",
+      "Pauleun",
+      "Organum"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ],
+    "uniques": [
+      "Can only heal by pillaging",
+      "Excluded from map editor",
+      "[Water] units gain the [Unable to pillage tiles] promotion"
+    ]
+  }
+]

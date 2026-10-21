@@ -1,0 +1,122 @@
+[
+  {
+    "columnNumber": 0,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Agriculture",
+        "row": 2,
+        "cost": 80
+      },
+      {
+        "name": "Exploration",
+        "row": 7,
+        "cost": 80
+      },
+      {
+        "name": "Ancient Chants",
+        "row": 28,
+        "cost": 80
+      },
+      {
+        "name": "Crafting",
+        "row": 13,
+        "cost": 120
+      }
+    ]
+  },
+  {
+    "columnNumber": 1,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Hunting",
+        "row": 9,
+        "cost": 300,
+        "prerequisites": [
+          "Exploration"
+        ]
+      },
+      {
+        "name": "Mining",
+        "row": 12,
+        "cost": 200,
+        "prerequisites": [
+          "Crafting"
+        ]
+      },
+      {
+        "name": "Mysticism",
+        "row": 36,
+        "cost": 200,
+        "prerequisites": [
+          "Ancient Chants"
+        ]
+      },
+      {
+        "name": "Education",
+        "row": 19,
+        "cost": 280,
+        "prerequisites": [
+          "Agriculture",
+          "Ancient Chants"
+        ]
+      },
+      {
+        "name": "Calendar",
+        "row": 1,
+        "cost": 160,
+        "prerequisites": [
+          "Agriculture"
+        ]
+      },
+      {
+        "name": "Fishing",
+        "row": 5,
+        "cost": 160,
+        "prerequisites": [
+          "Exploration"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Age of Rebirth",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Knowledge of the Ether",
+        "row": 27,
+        "cost": 360,
+        "prerequisites": [
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Bronze Working",
+        "row": 13,
+        "cost": 400,
+        "prerequisites": [
+          "Mining"
+        ]
+      },
+      {
+        "name": "Archery",
+        "row": 11,
+        "cost": 300,
+        "prerequisites": [
+          "Hunting"
+        ]
+      }
+    ]
+  }
+]

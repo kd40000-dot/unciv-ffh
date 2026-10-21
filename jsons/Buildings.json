@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Palace",
+    "isNationalWonder": true,
+    "production": 3,
+    "science": 3,
+    "gold": 3,
+    "culture": 1,
+    "cityStrength": 2,
+    "cost": 0,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Elder Council",
+    "cost": 65,
+    "science": 2,
+    "maintenance": 1,
+    "requiredTech": "Ancient Chants"
+  },
+  {
+    "name": "Granary",
+    "cost": 65,
+    "food": 2,
+    "maintenance": 1,
+    "requiredTech": "Agriculture"
+  },
+  {
+    "name": "Training Yard",
+    "cost": 70,
+    "production": 1,
+    "maintenance": 1,
+    "requiredTech": "Crafting"
+  },
+  {
+    "name": "Market",
+    "cost": 90,
+    "gold": 2,
+    "maintenance": 1,
+    "requiredTech": "Education"
+  },
+  {
+    "name": "Palisade",
+    "cost": 65,
+    "cityStrength": 5,
+    "maintenance": 1,
+    "requiredTech": "Exploration"
+  },
+  {
+    "name": "Mage Guild",
+    "cost": 100,
+    "science": 3,
+    "maintenance": 2,
+    "requiredTech": "Knowledge of the Ether"
+  },
+  {
+    "name": "Pagan Temple",
+    "cost": 75,
+    "culture": 2,
+    "maintenance": 1,
+    "requiredTech": "Mysticism"
+  },
+  {
+    "name": "Warrens",
+    "cost": 80,
+    "production": 2,
+    "maintenance": 1,
+    "requiredTech": "Crafting",
+    "uniqueTo": "Clan of Embers"
+  },
+  {
+    "name": "Cave of Ancestors",
+    "cost": 90,
+    "science": 2,
+    "culture": 1,
+    "maintenance": 1,
+    "requiredTech": "Mysticism",
+    "uniqueTo": "Amurites"
+  },
+  {
+    "name": "Bannor Barracks",
+    "cost": 70,
+    "production": 2,
+    "maintenance": 1,
+    "requiredTech": "Crafting",
+    "uniqueTo": "Bannor"
+  },
+  {
+    "name": "Elven Grove",
+    "cost": 70,
+    "food": 1,
+    "culture": 2,
+    "maintenance": 1,
+    "requiredTech": "Hunting",
+    "uniqueTo": "Ljosalfar"
+  }
+]

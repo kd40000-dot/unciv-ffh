@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Warlord",
+    "baseHappiness": 12,
+    "extraHappinessPerLuxury": 1,
+    "researchCostModifier": 1,
+    "unitCostModifier": 1,
+    "unitSupplyBase": 7,
+    "unitSupplyPerCity": 2,
+    "buildingCostModifier": 1,
+    "policyCostModifier": 1,
+    "unhappinessModifier": 0.9,
+    "barbarianBonus": 0.4,
+    "barbarianSpawnDelay": 3,
+    "turnBarbariansCanEnterPlayerTiles": 20,
+    "clearBarbarianCampReward": 30
+  }
+]

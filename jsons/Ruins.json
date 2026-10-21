@@ -1,0 +1,18 @@
+[
+  {
+    "name": "find lost scrolls",
+    "notification": "Scrolls preserved before the Age of Ice reveal forgotten ideas. (+20 Science)",
+    "uniques": [
+      "Gain [20] [Science]"
+    ],
+    "color": "#a8d5f1"
+  },
+  {
+    "name": "find lost gold",
+    "notification": "A forgotten cache contained 20 Gold",
+    "uniques": [
+      "Gain [20] [Gold]"
+    ],
+    "color": "#f0d66e"
+  }
+]

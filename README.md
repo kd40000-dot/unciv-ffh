@@ -1,28 +1,17 @@
 # Fall from Heaven — Unciv
 
-An independent project to recreate **ExtraModMod Continued** (Fall from Heaven II for Civilization IV) as a **standalone Unciv base-ruleset mod**.
+A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as the authoritative target.
 
-## Status
+## First early-game slice
 
-Planning and source research. **There is not yet a playable ruleset.**
+Includes **Amurites, Bannor, Clan of Embers and Ljosalfar**, thirteen EMM-sourced early technologies, units, buildings, terrain, resources and improvements. This is **not a complete or yet game-tested port**.
 
-## Reference sources
+Install with Unciv → Mods → Download mod from URL:
 
-- ExtraModMod Continued: https://github.com/bewlay/extramodmod
-- Maintainer's discussion and releases: https://forums.civfanatics.com/threads/extramodmod-continued.646778/
-- Unciv modding documentation: https://github.com/yairm210/Unciv/tree/master/docs/Modders
-- Unciv engine: https://github.com/yairm210/Unciv
+`https://github.com/kd40000-dot/unciv-ffh`
 
-## Goals
+See [test steps and limitations](docs/first-playable-slice.md), [development plan](docs/implementation-plan.md), and [compatibility ledger](docs/compatibility.md).
 
-1. Prefer the source data and logic of ExtraModMod Continued over memories or summaries.
-2. Preserve the original mechanics, factions, and progression as far as Unciv supports.
-3. Prefer an ordinary installable Unciv mod over a custom APK or engine fork.
-4. Track approximations and unsupported features explicitly rather than silently deleting them.
-5. Build and validate a small playable vertical slice before expanding the full ruleset.
+Pinned authoritative game source: [EMM Continued](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610).
 
-See [implementation plan](docs/implementation-plan.md) and [compatibility ledger](docs/compatibility.md).
-
-## Historical work
-
-The earlier repository state is preserved on the `archive/pre-reset-2026-10-21` branch and is not part of this implementation.
+Old pre-reset implementation remains archived in `archive/pre-reset-2026-10-21` and was **not reused**.
