@@ -414,7 +414,8 @@
     "cost": 30,
     "requiredTech": "Fishing",
     "uniques": [
-      "Can build [Water] improvements on tiles"
+      "Can build [Water] improvements on tiles",
+      "Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>"
     ]
   },
   {
