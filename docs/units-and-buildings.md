@@ -77,3 +77,7 @@ The CI workflow checks source-derived values and runs Unciv's official `mod-ci` 
 ## Subsequent progression update
 
 The roster now contains **50 units**, including Mage, Archmage and the Amurite Wizard. Promotion trees, source-derived unit upgrades and supported resource requirements are tracked in [the progression milestone](promotions-upgrades-resources.md). The Mage/Archmage minimum-level restrictions remain approximated; several upgrade destinations remain deferred.
+
+## Civilization expansion
+
+The full normal civilization roster has **100** unit definitions and **50** buildings. See the [faction source ledger](data/emm-civilizations.json) for added faction objects and deferred classes.

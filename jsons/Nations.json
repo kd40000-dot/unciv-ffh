@@ -7,18 +7,19 @@
     ],
     "preferredVictoryType": "Domination",
     "outerColor": [
-      67,
-      47,
-      139
+      176,
+      0,
+      97
     ],
     "innerColor": [
-      240,
-      219,
-      255
+      33,
+      33,
+      33
     ],
-    "uniqueName": "Foundations (prototype)",
-    "startIntroPart1": "The Amurites emerge as the Age of Rebirth begins.",
-    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "uniqueName": "Arcane, Ingenuity, Organized",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Amurites enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
     "declaringWar": "Our banners are raised against you.",
     "attacked": "You shall pay for this trespass.",
     "defeated": "Our people will remember.",
@@ -45,6 +46,67 @@
       "Surewatch",
       "Baamor",
       "Korrigan"
+    ],
+    "uniques": [
+      "[-50]% Gold cost of upgrading",
+      "Starts with [Ancient Chants]"
+    ]
+  },
+  {
+    "name": "Balseraphs",
+    "leaderName": "Perpentach",
+    "adjective": [
+      "Balseraphs"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      247,
+      191,
+      0
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Arcane, Charismatic, Creative, Insane",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Balseraphs enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Jubilee",
+      "Coombe View",
+      "Hexam",
+      "Argenteria",
+      "Gaudium",
+      "Guell",
+      "Ocells",
+      "Vincon",
+      "Miro",
+      "Umbracle",
+      "Drassanes",
+      "Sant Mapfre",
+      "Nouveau",
+      "Girona",
+      "Horta",
+      "Tapas",
+      "Manresa",
+      "Ciutat",
+      "Bispe",
+      "Torre Paisos"
+    ],
+    "uniques": [
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]",
+      "[+2 Culture] [in all cities]",
+      "Starts with [Agriculture]"
     ]
   },
   {
@@ -55,18 +117,19 @@
     ],
     "preferredVictoryType": "Domination",
     "outerColor": [
-      230,
-      222,
-      213
+      18,
+      204,
+      245
     ],
     "innerColor": [
-      107,
-      33,
-      33
+      230,
+      230,
+      230
     ],
-    "uniqueName": "Foundations (prototype)",
-    "startIntroPart1": "The Bannor emerge as the Age of Rebirth begins.",
-    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "uniqueName": "Charismatic, Organized",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Bannor enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
     "declaringWar": "Our banners are raised against you.",
     "attacked": "You shall pay for this trespass.",
     "defeated": "Our people will remember.",
@@ -94,7 +157,66 @@
       "Barak-Tor",
       "Clar Manaul",
       "Athel Maraya",
-      "Ithmariar"
+      "Ithmariar",
+      "Chaend"
+    ],
+    "uniques": [
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]",
+      "Starts with [Exploration]"
+    ]
+  },
+  {
+    "name": "Calabim",
+    "leaderName": "Alexis",
+    "adjective": [
+      "Calabim"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      158,
+      0,
+      0
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Aggressive, Financial",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Calabim enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Prespur",
+      "Nubia",
+      "Acaia",
+      "Morr'ta'nar",
+      "Adonias",
+      "San'ta'ron",
+      "Pavu'nar",
+      "Krinera",
+      "Itos",
+      "Maron",
+      "Pina'dom",
+      "Amapia",
+      "Kasava",
+      "Pevas",
+      "Anaea",
+      "Strages"
+    ],
+    "uniques": [
+      "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
+      "Starts with [Exploration]"
     ]
   },
   {
@@ -105,18 +227,19 @@
     ],
     "preferredVictoryType": "Domination",
     "outerColor": [
-      84,
-      43,
-      29
+      252,
+      89,
+      0
     ],
     "innerColor": [
-      242,
-      151,
-      52
+      158,
+      0,
+      0
     ],
-    "uniqueName": "Foundations (prototype)",
-    "startIntroPart1": "The Clan of Embers emerge as the Age of Rebirth begins.",
-    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "uniqueName": "Expansive, Spiritual",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Clan of Embers enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
     "declaringWar": "Our banners are raised against you.",
     "attacked": "You shall pay for this trespass.",
     "defeated": "Our people will remember.",
@@ -144,10 +267,484 @@
       "Mephisto",
       "Wallara",
       "Deep Dark",
-      "Shahav"
+      "Shahav",
+      "Ghouls Touch",
+      "Cay",
+      "Heaven's Bane",
+      "Tu'eth",
+      "Death's Head",
+      "Dark Heart"
     ],
     "uniques": [
       "All newly-trained [{Military} {Land}] units [in all cities] receive the [Orc] promotion"
+    ]
+  },
+  {
+    "name": "Doviello",
+    "leaderName": "Charadon",
+    "adjective": [
+      "Doviello"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      0,
+      138,
+      140
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Aggressive, Barbarian, Charismatic",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Doviello enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Urslo",
+      "Fjirgard",
+      "Mortensholm",
+      "Heimseter",
+      "Suderholm",
+      "Olricstaad",
+      "Stavgard",
+      "Finnsvik",
+      "Thorshafn",
+      "Hyttaholm",
+      "Bjarkavig",
+      "Vidarheim",
+      "Aesirvig",
+      "Volsbaek",
+      "Rotundvig",
+      "Volpirsvig",
+      "Gnistvag",
+      "Bjarkoy",
+      "Ildelver",
+      "Urgathastad",
+      "Iskvard",
+      "Grottiburg",
+      "Tongurstad",
+      "Graelingvig",
+      "Steinvik"
+    ],
+    "uniques": [
+      "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]"
+    ]
+  },
+  {
+    "name": "Elohim",
+    "leaderName": "Ethne the White",
+    "adjective": [
+      "Elohim"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      54,
+      102,
+      255
+    ],
+    "innerColor": [
+      230,
+      230,
+      230
+    ],
+    "uniqueName": "Creative, Organized",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Elohim enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Cahir Abbey",
+      "Glens of Killybegs",
+      "Inishbofin",
+      "Slane",
+      "Garryvoe",
+      "Cafes",
+      "Ballinasloe",
+      "Warrenpoint",
+      "Niveus",
+      "Ring of Sion",
+      "Glencar Lough",
+      "Foxford",
+      "Einions Hold",
+      "Drogheda Oratory",
+      "Oriel",
+      "Rosguill",
+      "Valentia",
+      "Achill",
+      "Inishmaan",
+      "Sapientia"
+    ],
+    "uniques": [
+      "[+2 Culture] [in all cities]",
+      "Starts with [Ancient Chants]"
+    ]
+  },
+  {
+    "name": "Grigori",
+    "leaderName": "Cassiel",
+    "adjective": [
+      "Grigori"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      153,
+      125,
+      0
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Adaptive, Charismatic, Philosophical",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Grigori enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Midgar",
+      "Junon",
+      "Kalm",
+      "Edge",
+      "Corel",
+      "Costa del Sol",
+      "Gongaga",
+      "Nibelheim",
+      "Wutai",
+      "Mideel",
+      "North Corel",
+      "Fort Condor",
+      "Bon Birejji",
+      "Wasuraruru To",
+      "Nemuri no Mori",
+      "Aishikuru Rojji",
+      "Daihyoga",
+      "Gaia no Zeppeki",
+      "Tatsumaki no Meikyu",
+      "Kita no Daikudo",
+      "Saboten Airando",
+      "Misuriru Main",
+      "Gorudo Sosa",
+      "Roketto Mura",
+      "Materia Dokutsu",
+      "Midiru"
+    ],
+    "uniques": [
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]",
+      "[+100]% Great Person generation [in all cities]",
+      "Starts with [Crafting]"
+    ]
+  },
+  {
+    "name": "Hippus",
+    "leaderName": "Tasunke",
+    "adjective": [
+      "Hippus"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      125,
+      224,
+      0
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Aggressive, Raiders",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Hippus enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Altheriol-ta-Mealthiel",
+      "Conrond Mor",
+      "Radonnor",
+      "Feiss Mabdon",
+      "Murousbane",
+      "Clar Marrachir",
+      "Urgortheth",
+      "Gaene",
+      "Ihara",
+      "Kaselorne",
+      "Ukanevar",
+      "Glorairmor",
+      "Drathastine",
+      "Manar Gandar",
+      "Enekandril",
+      "Caranaad",
+      "Nimharuan",
+      "Iosichaard",
+      "Mengostlox",
+      "Lamistuis",
+      "Ard'ien",
+      "Clar Nasacar",
+      "Khanec"
+    ],
+    "uniques": [
+      "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
+      "Starts with [Agriculture]"
+    ]
+  },
+  {
+    "name": "Illians",
+    "leaderName": "Auric Ulvin",
+    "adjective": [
+      "Illians"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      179,
+      230,
+      255
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Charismatic, Arcane",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Illians enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Garduk",
+      "Lakis",
+      "Tolero",
+      "Gostai",
+      "Sopor",
+      "Hooplak",
+      "Sliktor",
+      "Ashtuk",
+      "Gigno",
+      "Suspiro",
+      "Drakon",
+      "Rorkat",
+      "Latkor",
+      "Tarkar",
+      "Tenura",
+      "Gelu",
+      "Roxar",
+      "Caltakk",
+      "Retlan",
+      "Telkar"
+    ],
+    "uniques": [
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]",
+      "Starts with [Exploration]"
+    ]
+  },
+  {
+    "name": "Khazad",
+    "leaderName": "Arturus Thorne",
+    "adjective": [
+      "Khazad"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      230,
+      166,
+      82
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Aggressive, Industrious",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Khazad enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Khazak",
+      "Halowell",
+      "Riylod",
+      "Kadar",
+      "Glulynn",
+      "Stoville",
+      "Wercer",
+      "Rockhomme",
+      "Deep Well",
+      "Boulder Falls",
+      "Granite Village",
+      "Namp'o",
+      "Gridmok",
+      "Eruo",
+      "Earlwin",
+      "Hulraden",
+      "Tiros",
+      "Roil'n'boil",
+      "Sher",
+      "Shorisy",
+      "Lonkris",
+      "Boradon",
+      "Arkran"
+    ],
+    "uniques": [
+      "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
+      "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
+      "[+50]% Production when constructing [All] wonders [in all cities]",
+      "Starts with [Crafting]",
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion"
+    ]
+  },
+  {
+    "name": "Kuriotates",
+    "leaderName": "Cardith Lorda",
+    "adjective": [
+      "Kuriotates"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      196,
+      87,
+      255
+    ],
+    "innerColor": [
+      255,
+      255,
+      43
+    ],
+    "uniqueName": "Adaptive, Expansive, Philosophical",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Kuriotates enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Kwythellar",
+      "Naggarond",
+      "Avelorn",
+      "Karond Kar",
+      "Caledor",
+      "Clar Karond",
+      "Lothern",
+      "Har Ganeth",
+      "Hag Graef",
+      "Ghrond",
+      "Tiranoc",
+      "Pax",
+      "Ghaba Ghanaf",
+      "Cairn Lotherl",
+      "Nagarythe",
+      "Maledor",
+      "Sith Rionnasc",
+      "Khaef Korrond",
+      "Anlec",
+      "Calith",
+      "Argond",
+      "Giaf Gabh Dion",
+      "Shathirob"
+    ],
+    "uniques": [
+      "[+100]% Great Person generation [in all cities]",
+      "Starts with [Agriculture]"
+    ]
+  },
+  {
+    "name": "Lanun",
+    "leaderName": "Falamar",
+    "adjective": [
+      "Lanun"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      41,
+      0,
+      163
+    ],
+    "innerColor": [
+      230,
+      230,
+      230
+    ],
+    "uniqueName": "Charismatic, Expansive",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Lanun enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Innsmouth",
+      "Dunwich",
+      "Kingsport",
+      "Aylesbury",
+      "Paradera",
+      "Bolans",
+      "Seroe Vakas",
+      "Bathsheba",
+      "Oistins",
+      "Boscobelle",
+      "Speightstown",
+      "Willikies",
+      "Garrislyr",
+      "Villanon",
+      "Undertow",
+      "Bren Bagage"
+    ],
+    "uniques": [
+      "[-25]% XP required for promotions",
+      "[+1 Happiness] [in all cities]"
     ]
   },
   {
@@ -158,18 +755,19 @@
     ],
     "preferredVictoryType": "Domination",
     "outerColor": [
-      52,
-      110,
-      63
+      0,
+      99,
+      0
     ],
     "innerColor": [
-      245,
-      240,
-      174
+      255,
+      255,
+      43
     ],
-    "uniqueName": "Foundations (prototype)",
-    "startIntroPart1": "The Ljosalfar emerge as the Age of Rebirth begins.",
-    "startIntroPart2": "Explore Erebus, found settlements, and develop the ancient arts.",
+    "uniqueName": "Creative, Spiritual",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Ljosalfar enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
     "declaringWar": "Our banners are raised against you.",
     "attacked": "You shall pay for this trespass.",
     "defeated": "Our people will remember.",
@@ -197,10 +795,290 @@
       "Wispolen",
       "Cerrolan",
       "Pauleun",
-      "Organum"
+      "Organum",
+      "Kalos",
+      "Camena",
+      "Natura"
     ],
     "uniques": [
-      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Elf] promotion"
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Elf] promotion",
+      "[+2 Culture] [in all cities]",
+      "Starts with [Exploration]"
+    ]
+  },
+  {
+    "name": "Luchuirp",
+    "leaderName": "Garrim Gyr",
+    "adjective": [
+      "Luchuirp"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      99,
+      61,
+      0
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Arcane, Financial",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Luchuirp enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Ithralia",
+      "Mutanbo",
+      "Tia'ran",
+      "Morr'tebio",
+      "Val'ron",
+      "Tia'na'dom",
+      "Nubilar",
+      "Aborlenia",
+      "Tia'minar",
+      "Sil'ron",
+      "Sha'na'ron",
+      "Vinubar",
+      "Ashi'marr",
+      "Atenia",
+      "Leticia",
+      "Su'minar",
+      "Manaus",
+      "Ithis",
+      "Para'dom"
+    ],
+    "uniques": [
+      "Starts with [Crafting]",
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion"
+    ]
+  },
+  {
+    "name": "Malakim",
+    "leaderName": "Varn Gosam",
+    "adjective": [
+      "Malakim"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      255,
+      255,
+      43
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Adaptive, Creative, Spiritual",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Malakim enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Golden Leane",
+      "Timberling",
+      "Balderham",
+      "Lodente",
+      "Froihk",
+      "Bryn",
+      "Belerien",
+      "Tiriyn",
+      "Stormgul",
+      "Udgul",
+      "Uros",
+      "Grison",
+      "Minolow",
+      "Chish",
+      "Adihaniel",
+      "Shotaka"
+    ],
+    "uniques": [
+      "[+2 Culture] [in all cities]",
+      "Starts with [Ancient Chants]"
+    ]
+  },
+  {
+    "name": "Sheaim",
+    "leaderName": "Tebryn Arbandi",
+    "adjective": [
+      "Sheaim"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      115,
+      0,
+      125
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Arcane, Summoner",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Sheaim enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Galveholm",
+      "Grottiburg",
+      "Tongurstad",
+      "Graelingvig",
+      "Steinvik",
+      "Kuldevind",
+      "Vargstad",
+      "Skadistad",
+      "Nidhoggstad",
+      "Bjoernlingburg",
+      "Morkurburg",
+      "Jordekburg",
+      "Stromstad",
+      "Frost",
+      "Lade",
+      "Skeggi",
+      "Kvellig",
+      "Aghol",
+      "Raunvake",
+      "Sjoktraken"
+    ],
+    "uniques": [
+      "Starts with [Ancient Chants]"
+    ]
+  },
+  {
+    "name": "Sidar",
+    "leaderName": "Sandalphon",
+    "adjective": [
+      "Sidar"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      94,
+      94,
+      94
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Philosophical, Industrious",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Sidar enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Celo",
+      "Vetus",
+      "Zarlra",
+      "Skarlas",
+      "Latito",
+      "Stakrus",
+      "Velius",
+      "Shadow Mist",
+      "Senectus",
+      "Kartlost",
+      "Provectus",
+      "Priscus",
+      "Bogz",
+      "Verminaard",
+      "Sark",
+      "Rrackon",
+      "Asrassiv",
+      "Varza",
+      "Zratos",
+      "Drakor"
+    ],
+    "uniques": [
+      "[+100]% Great Person generation [in all cities]",
+      "[+50]% Production when constructing [All] wonders [in all cities]",
+      "Starts with [Ancient Chants]"
+    ]
+  },
+  {
+    "name": "Svartalfar",
+    "leaderName": "Faeryl Viconia",
+    "adjective": [
+      "Svartalfar"
+    ],
+    "preferredVictoryType": "Domination",
+    "outerColor": [
+      179,
+      179,
+      179
+    ],
+    "innerColor": [
+      33,
+      33,
+      33
+    ],
+    "uniqueName": "Arcane, Raiders",
+    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "startIntroPart1": "Svartalfar enters the Age of Rebirth.",
+    "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
+    "declaringWar": "Our banners are raised against you.",
+    "attacked": "You shall pay for this trespass.",
+    "defeated": "Our people will remember.",
+    "introduction": "We greet you in the name of our people.",
+    "neutralHello": "Greetings.",
+    "hateHello": "Speak quickly.",
+    "tradeRequest": "Will you consider this exchange?",
+    "cities": [
+      "Thariss",
+      "Gereth Minar",
+      "Nameless Tower",
+      "Idris",
+      "Brakkah",
+      "Enoreth",
+      "Geron",
+      "Aeleris's Pits",
+      "Drax Tallen",
+      "Geffron",
+      "Malor",
+      "Avien",
+      "Essuria",
+      "Lothenar",
+      "Crepusculum",
+      "Black Axe",
+      "Wolf Claw",
+      "Evil Eye",
+      "Beast Clan",
+      "Goathorns",
+      "Tarka",
+      "Helshaven",
+      "Terror",
+      "Herath",
+      "Sickly Mist"
+    ],
+    "uniques": [
+      "Starts with [Agriculture]",
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dark Elf] promotion"
     ]
   },
   {

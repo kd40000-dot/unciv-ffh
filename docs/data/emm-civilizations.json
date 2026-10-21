@@ -1,0 +1,3630 @@
+{
+  "sourceRepo": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourceFiles": [
+    "XML/Civilizations/CIV4CivilizationInfos.xml",
+    "XML/Civilizations/CIV4LeaderHeadInfos.xml",
+    "XML/Text/Civilizations.xml",
+    "XML/Interface/CIV4PlayerColorInfos.xml",
+    "XML/Interface/CIV4ColorVals.xml"
+  ],
+  "civilizations": [
+    {
+      "id": "CIVILIZATION_AMURITES",
+      "name": "Amurites",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Cevedes",
+        "Udenarat",
+        "Nimarail",
+        "Ciriail",
+        "Glorairine",
+        "Enaillellion",
+        "Orrondhuir",
+        "Sierundirel",
+        "Coranttilli",
+        "Seaneriel",
+        "Angostendil",
+        "Wendar",
+        "Kevar",
+        "Sylvair",
+        "Doriath",
+        "Surewatch",
+        "Baamor",
+        "Korrigan"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_VALLEDIA",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_INGENUITY",
+            "TRAIT_ORGANIZED"
+          ]
+        },
+        {
+          "id": "LEADER_DAIN",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_TYA_EXTRA",
+          "traits": [
+            "TRAIT_SAGE",
+            "TRAIT_SPIRITUAL"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_VALLEDIA",
+      "startingTech": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          176,
+          0,
+          97
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_AMURITES",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_MAGE",
+          "sourceId": "UNIT_WIZARD"
+        },
+        {
+          "classId": "UNITCLASS_LONGBOWMAN",
+          "sourceId": "UNIT_FIREBOW"
+        },
+        {
+          "classId": "UNITCLASS_ASSASSIN",
+          "sourceId": "UNIT_CHANTER"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PAGAN_TEMPLE",
+          "sourceId": "BUILDING_CAVE_OF_ANCESTORS"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_AMURITES"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_BALSERAPHS",
+      "name": "Balseraphs",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Jubilee",
+        "Coombe View",
+        "Hexam",
+        "Argenteria",
+        "Gaudium",
+        "Guell",
+        "Ocells",
+        "Vincon",
+        "Miro",
+        "Umbracle",
+        "Drassanes",
+        "Sant Mapfre",
+        "Nouveau",
+        "Girona",
+        "Horta",
+        "Tapas",
+        "Manresa",
+        "Ciutat",
+        "Bispe",
+        "Torre Paisos"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_PERPENTACH",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_CHARISMATIC",
+            "TRAIT_CREATIVE",
+            "TRAIT_INSANE"
+          ]
+        },
+        {
+          "id": "LEADER_KEELYN",
+          "traits": [
+            "TRAIT_CREATIVE",
+            "TRAIT_INGENUITY",
+            "TRAIT_SUMMONER"
+          ]
+        },
+        {
+          "id": "LEADER_FURIA_EXTRA",
+          "traits": [
+            "TRAIT_FINANCIAL",
+            "TRAIT_SAGE"
+          ]
+        },
+        {
+          "id": "LEADER_MELISANDRE_EXTRA",
+          "traits": [
+            "TRAIT_INDUSTRIOUS",
+            "TRAIT_EXPANSIVE"
+          ]
+        },
+        {
+          "id": "LEADER_WEEVIL_EXTRA",
+          "traits": [
+            "TRAIT_BARBARIAN",
+            "TRAIT_CHARISMATIC",
+            "TRAIT_SLAVER"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_PERPENTACH",
+      "startingTech": [
+        "TECH_AGRICULTURE"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          247,
+          191,
+          0
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_BALSERAPHS",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_MIMIC"
+        },
+        {
+          "classId": "UNITCLASS_RANGER",
+          "sourceId": "UNIT_HARLEQUIN"
+        },
+        {
+          "classId": "UNITCLASS_ASSASSIN",
+          "sourceId": "UNIT_TASKMASTER"
+        },
+        {
+          "classId": "UNITCLASS_SHADOW",
+          "sourceId": "UNIT_COURTESAN"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_BALSERAPHS"
+        },
+        {
+          "classId": "BUILDINGCLASS_TRAINING_YARD",
+          "sourceId": "BUILDING_ARENA"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_FREAK_SHOW"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING2",
+          "sourceId": "BUILDING_HALL_OF_MIRRORS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_BANNOR",
+      "name": "Bannor",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Torrolerial",
+        "Vallus",
+        "Trinity",
+        "Tentatio-onis",
+        "Astrum",
+        "Caelestis",
+        "Ventry",
+        "Corona",
+        "Solium",
+        "Censura",
+        "Domus Novus",
+        "Fides",
+        "Judicium",
+        "Vis Vires",
+        "Pactum",
+        "Re Vera",
+        "Barak-Tor",
+        "Clar Manaul",
+        "Athel Maraya",
+        "Ithmariar",
+        "Chaend"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_SABATHIEL",
+          "traits": [
+            "TRAIT_CHARISMATIC",
+            "TRAIT_ORGANIZED"
+          ]
+        },
+        {
+          "id": "LEADER_CAPRIA",
+          "traits": [
+            "TRAIT_SPIRITUAL",
+            "TRAIT_INDUSTRIOUS"
+          ]
+        },
+        {
+          "id": "LEADER_DECIUS_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_RAIDERS",
+            "TRAIT_TOLERANT"
+          ]
+        },
+        {
+          "id": "LEADER_TETHIRA_EXTRA",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_EXPANSIVE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_SABATHIEL",
+      "startingTech": [
+        "TECH_EXPLORATION"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          18,
+          204,
+          245
+        ],
+        "inner": [
+          230,
+          230,
+          230
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_BANNOR",
+      "unitReplace": [],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_BANNOR"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_CALABIM",
+      "name": "Calabim",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Prespur",
+        "Nubia",
+        "Acaia",
+        "Morr'ta'nar",
+        "Adonias",
+        "San'ta'ron",
+        "Pavu'nar",
+        "Krinera",
+        "Itos",
+        "Maron",
+        "Pina'dom",
+        "Amapia",
+        "Kasava",
+        "Pevas",
+        "Anaea",
+        "Strages"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_ALEXIS",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_FINANCIAL"
+          ]
+        },
+        {
+          "id": "LEADER_FLAUROS",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_DECIUS_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_RAIDERS",
+            "TRAIT_TOLERANT"
+          ]
+        },
+        {
+          "id": "LEADER_MAHON_EXTRA",
+          "traits": [
+            "TRAIT_AGRARIAN",
+            "TRAIT_SAVAGE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_ALEXIS",
+      "startingTech": [
+        "TECH_EXPLORATION"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          158,
+          0,
+          0
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_CALABIM",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_WARRIOR",
+          "sourceId": "UNIT_BLOODPET"
+        },
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_MOROI"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_VAMPIRE"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "UNIT_BRUJAH"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "UNIT_VAMPIRE_LORD"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_ALCHEMY_LAB",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_ELDER_COUNCIL",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_CALABIM"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_BREEDING_PIT"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING2",
+          "sourceId": "BUILDING_GOVERNORS_MANOR"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_CLAN_OF_EMBERS",
+      "name": "Clan of Embers",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Braduk the Burning",
+        "Renegade Hill",
+        "Shazak",
+        "Hezic'kul",
+        "Sorodh",
+        "Pain",
+        "Ah'roog",
+        "Belphemon",
+        "Death Fort",
+        "Nezhev",
+        "Naga's Tail",
+        "Shavraim",
+        "Dark Sky",
+        "Ator",
+        "Baal",
+        "Gurr'ash",
+        "Mephisto",
+        "Wallara",
+        "Deep Dark",
+        "Shahav",
+        "Ghouls Touch",
+        "Cay",
+        "Heaven's Bane",
+        "Tu'eth",
+        "Death's Head",
+        "Dark Heart"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_JONAS",
+          "traits": [
+            "TRAIT_EXPANSIVE",
+            "TRAIT_SPIRITUAL"
+          ]
+        },
+        {
+          "id": "LEADER_SHEELBA",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_ORGANIZED"
+          ]
+        },
+        {
+          "id": "LEADER_HAFGAN_EXTRA",
+          "traits": [
+            "TRAIT_CHARISMATIC",
+            "TRAIT_RAIDERS"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_JONAS",
+      "startingTech": [],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "PROMOTION_ORC",
+      "colors": {
+        "outer": [
+          252,
+          89,
+          0
+        ],
+        "inner": [
+          158,
+          0,
+          0
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_CLAN_OF_EMBERS",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_SCOUT",
+          "sourceId": "UNIT_GOBLIN"
+        },
+        {
+          "classId": "UNITCLASS_ADEPT",
+          "sourceId": "UNIT_SHAMAN"
+        },
+        {
+          "classId": "UNITCLASS_HORSEMAN",
+          "sourceId": "UNIT_WOLF_RIDER"
+        },
+        {
+          "classId": "UNITCLASS_HUNTER",
+          "sourceId": "UNIT_LIZARDMAN"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_OGRE"
+        },
+        {
+          "classId": "UNITCLASS_RANGER",
+          "sourceId": "UNIT_LIZARDMAN_RANGER"
+        },
+        {
+          "classId": "UNITCLASS_ASSASSIN",
+          "sourceId": "UNIT_LIZARDMAN_ASSASSIN"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BEASTMASTER",
+          "sourceId": "UNIT_LIZARDMAN_BEASTMASTER"
+        },
+        {
+          "classId": "UNITCLASS_DRUID",
+          "sourceId": "UNIT_LIZARDMAN_DRUID"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "UNIT_OGRE_WARCHIEF"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_PHALANX",
+          "sourceId": "UNIT_STONESKIN_OGRE"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_ALCHEMY_LAB",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_LIBRARY",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_MAGE_GUILD",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_CLAN_OF_EMBERS"
+        },
+        {
+          "classId": "BUILDINGCLASS_STABLE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_WARRENS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_DOVIELLO",
+      "name": "Doviello",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Urslo",
+        "Fjirgard",
+        "Mortensholm",
+        "Heimseter",
+        "Suderholm",
+        "Olricstaad",
+        "Stavgard",
+        "Finnsvik",
+        "Thorshafn",
+        "Hyttaholm",
+        "Bjarkavig",
+        "Vidarheim",
+        "Aesirvig",
+        "Volsbaek",
+        "Rotundvig",
+        "Volpirsvig",
+        "Gnistvag",
+        "Bjarkoy",
+        "Ildelver",
+        "Urgathastad",
+        "Iskvard",
+        "Grottiburg",
+        "Tongurstad",
+        "Graelingvig",
+        "Steinvik"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_CHARADON",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_BARBARIAN",
+            "TRAIT_CHARISMATIC"
+          ]
+        },
+        {
+          "id": "LEADER_MAHALA",
+          "traits": [
+            "TRAIT_EXPANSIVE",
+            "TRAIT_INGENUITY",
+            "TRAIT_RAIDERS"
+          ]
+        },
+        {
+          "id": "LEADER_DUIN_EXTRA",
+          "traits": [
+            "TRAIT_IMPERIALISTIC",
+            "TRAIT_MAGIC_RESISTANT",
+            "TRAIT_SLAVER"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_CHARADON",
+      "startingTech": [],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_LUCIAN",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          0,
+          138,
+          140
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_DOVIELLO",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_WARRIOR",
+          "sourceId": "UNIT_BEASTMAN"
+        },
+        {
+          "classId": "UNITCLASS_ADEPT",
+          "sourceId": "UNIT_SHAMAN"
+        },
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SONS_OF_ASENA"
+        },
+        {
+          "classId": "UNITCLASS_ARCHER",
+          "sourceId": "UNIT_JAVELIN_THROWER"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_BATTLEMASTER"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "UNIT_CIRCLE_OF_URD"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "UNIT_SKULD"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_BISON_RIDER"
+        },
+        {
+          "classId": "UNITCLASS_MARKSMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_PHALANX",
+          "sourceId": "UNIT_VERDANDI"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_ALCHEMY_LAB",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_LIBRARY",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_MAGE_GUILD",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_DOVIELLO"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_ELOHIM",
+      "name": "Elohim",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Cahir Abbey",
+        "Glens of Killybegs",
+        "Inishbofin",
+        "Slane",
+        "Garryvoe",
+        "Cafes",
+        "Ballinasloe",
+        "Warrenpoint",
+        "Niveus",
+        "Ring of Sion",
+        "Glencar Lough",
+        "Foxford",
+        "Einions Hold",
+        "Drogheda Oratory",
+        "Oriel",
+        "Rosguill",
+        "Valentia",
+        "Achill",
+        "Inishmaan",
+        "Sapientia"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_ETHNE",
+          "traits": [
+            "TRAIT_CREATIVE",
+            "TRAIT_ORGANIZED"
+          ]
+        },
+        {
+          "id": "LEADER_EINION",
+          "traits": [
+            "TRAIT_SPIRITUAL",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_THESSALONICA_EXTRA",
+          "traits": [
+            "TRAIT_CHARISMATIC",
+            "TRAIT_INDUSTRIOUS"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_ETHNE",
+      "startingTech": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          54,
+          102,
+          255
+        ],
+        "inner": [
+          230,
+          230,
+          230
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_ELOHIM",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_ASSASSIN",
+          "sourceId": "UNIT_DEVOUT"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_MONUMENT",
+          "sourceId": "BUILDING_RELIQUARY"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_ELOHIM"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_CHANCEL_OF_GUARDIANS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_GRIGORI",
+      "name": "Grigori",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Midgar",
+        "Junon",
+        "Kalm",
+        "Edge",
+        "Corel",
+        "Costa del Sol",
+        "Gongaga",
+        "Nibelheim",
+        "Wutai",
+        "Mideel",
+        "North Corel",
+        "Fort Condor",
+        "Bon Birejji",
+        "Wasuraruru To",
+        "Nemuri no Mori",
+        "Aishikuru Rojji",
+        "Daihyoga",
+        "Gaia no Zeppeki",
+        "Tatsumaki no Meikyu",
+        "Kita no Daikudo",
+        "Saboten Airando",
+        "Misuriru Main",
+        "Gorudo Sosa",
+        "Roketto Mura",
+        "Materia Dokutsu",
+        "Midiru"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_CASSIEL",
+          "traits": [
+            "TRAIT_ADAPTIVE",
+            "TRAIT_CHARISMATIC",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_KOUN_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_SAGE",
+            "TRAIT_TOLERANT"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_CASSIEL",
+      "startingTech": [
+        "TECH_CRAFTING"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          153,
+          125,
+          0
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_GRIGORI",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_DRAGON_SLAYER"
+        },
+        {
+          "classId": "UNITCLASS_DRUID",
+          "sourceId": "UNIT_LUONNOTAR"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PAGAN_TEMPLE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_MERCURIAN_GATE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_GRIGORI"
+        },
+        {
+          "classId": "BUILDINGCLASS_TAVERN",
+          "sourceId": "BUILDING_TAVERN_GRIGORI"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_KILMORPH",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_LEAVES",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_THE_EMPYREAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_THE_ORDER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_THE_OVERLORDS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_TEMPLE_OF_THE_VEIL",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_ADVENTURERS_GUILD"
+        },
+        {
+          "classId": "BUILDINGCLASS_COURTHOUSE",
+          "sourceId": "BUILDING_FORUM"
+        },
+        {
+          "classId": "BUILDINGCLASS_MUSEUM",
+          "sourceId": "BUILDING_MUSEUM"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_HIPPUS",
+      "name": "Hippus",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Altheriol-ta-Mealthiel",
+        "Conrond Mor",
+        "Radonnor",
+        "Feiss Mabdon",
+        "Murousbane",
+        "Clar Marrachir",
+        "Urgortheth",
+        "Gaene",
+        "Ihara",
+        "Kaselorne",
+        "Ukanevar",
+        "Glorairmor",
+        "Drathastine",
+        "Manar Gandar",
+        "Enekandril",
+        "Caranaad",
+        "Nimharuan",
+        "Iosichaard",
+        "Mengostlox",
+        "Lamistuis",
+        "Ard'ien",
+        "Clar Nasacar",
+        "Khanec"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_TASUNKE",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_RAIDERS"
+          ]
+        },
+        {
+          "id": "LEADER_RHOANNA",
+          "traits": [
+            "TRAIT_EXPANSIVE",
+            "TRAIT_FINANCIAL"
+          ]
+        },
+        {
+          "id": "LEADER_OSTANES_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_SLAVER"
+          ]
+        },
+        {
+          "id": "LEADER_ULDANOR_EXTRA",
+          "traits": [
+            "TRAIT_BARBARIAN",
+            "TRAIT_CHARISMATIC",
+            "TRAIT_CREATIVE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_TASUNKE",
+      "startingTech": [
+        "TECH_AGRICULTURE"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          125,
+          224,
+          0
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_HIPPUS",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_MERCENARY",
+          "sourceId": "UNIT_MERCENARY_MOUNTED"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_ALCHEMY_LAB",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_HIPPUS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_ILLIANS",
+      "name": "Illians",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Garduk",
+        "Lakis",
+        "Tolero",
+        "Gostai",
+        "Sopor",
+        "Hooplak",
+        "Sliktor",
+        "Ashtuk",
+        "Gigno",
+        "Suspiro",
+        "Drakon",
+        "Rorkat",
+        "Latkor",
+        "Tarkar",
+        "Tenura",
+        "Gelu",
+        "Roxar",
+        "Caltakk",
+        "Retlan",
+        "Telkar"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_AURIC",
+          "traits": [
+            "TRAIT_CHARISMATIC",
+            "TRAIT_ARCANE"
+          ]
+        },
+        {
+          "id": "LEADER_ANAGANTIOS_EXTRA",
+          "traits": [
+            "TRAIT_IMPERIALISTIC",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_BRAEDEN_EXTRA",
+          "traits": [
+            "TRAIT_DEFENDER",
+            "TRAIT_ORGANIZED",
+            "TRAIT_SAVAGE"
+          ]
+        },
+        {
+          "id": "LEADER_DUMANNIOS_EXTRA",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_SAGE"
+          ]
+        },
+        {
+          "id": "LEADER_RIUROS_EXTRA",
+          "traits": [
+            "TRAIT_FINANCIAL",
+            "TRAIT_SPIRITUAL"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_AURIC",
+      "startingTech": [
+        "TECH_EXPLORATION"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          179,
+          230,
+          255
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_ILLIANS",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_ARCHER",
+          "sourceId": "UNIT_JAVELIN_THROWER"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PAGAN_TEMPLE",
+          "sourceId": "BUILDING_TEMPLE_OF_THE_HAND"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_ILLIANS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_INFERNAL",
+      "name": "Infernal",
+      "playable": false,
+      "aiPlayable": false,
+      "cityNames": [
+        "Dis",
+        "Despero",
+        "Poena",
+        "Bastradam",
+        "Raglame",
+        "Kador",
+        "Longrud",
+        "Patior",
+        "Ordstone",
+        "Astori",
+        "Utomach",
+        "Heradh",
+        "Defalos",
+        "Charack",
+        "Phobas",
+        "Krakatorum",
+        "Linkbone",
+        "Draed",
+        "Astrakan",
+        "Hic Jacet",
+        "Locus Desperatus",
+        "Felo de se",
+        "Diligere Errorem",
+        "Interfice Errantem",
+        "Uxor",
+        "Peccavi",
+        "Tacet",
+        "Abuti",
+        "Lachryma",
+        "Dies Irae"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_HYBOREM",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_BARBARIAN",
+            "TRAIT_SUMMONER"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_HYBOREM",
+      "startingTech": [
+        "TECH_CRAFTING",
+        "TECH_INFERNAL_PACT"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "PROMOTION_DEMON",
+      "colors": {
+        "outer": [
+          26,
+          0,
+          0
+        ],
+        "inner": [
+          219,
+          5,
+          5
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_INFERNAL",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_ADEPT",
+          "sourceId": "UNIT_IMP"
+        },
+        {
+          "classId": "UNITCLASS_HUNTER",
+          "sourceId": "UNIT_HELLHOUND"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "UNIT_BALOR"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_DEATH_KNIGHT"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_AQUEDUCT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_GRANARY",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_HERBALIST",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_INFIRMARY",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_INFERNAL"
+        },
+        {
+          "classId": "BUILDINGCLASS_PUBLIC_BATHS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_SMOKEHOUSE",
+          "sourceId": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_KHAZAD",
+      "name": "Khazad",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Khazak",
+        "Halowell",
+        "Riylod",
+        "Kadar",
+        "Glulynn",
+        "Stoville",
+        "Wercer",
+        "Rockhomme",
+        "Deep Well",
+        "Boulder Falls",
+        "Granite Village",
+        "Namp'o",
+        "Gridmok",
+        "Eruo",
+        "Earlwin",
+        "Hulraden",
+        "Tiros",
+        "Roil'n'boil",
+        "Sher",
+        "Shorisy",
+        "Lonkris",
+        "Boradon",
+        "Arkran"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_ARTURUS",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_INDUSTRIOUS"
+          ]
+        },
+        {
+          "id": "LEADER_KANDROS",
+          "traits": [
+            "TRAIT_FINANCIAL",
+            "TRAIT_ORGANIZED"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_ARTURUS",
+      "startingTech": [
+        "TECH_CRAFTING"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 2
+        }
+      ],
+      "race": "PROMOTION_DWARF",
+      "colors": {
+        "outer": [
+          230,
+          166,
+          82
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_KHAZAD",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_ARCHER",
+          "sourceId": "UNIT_DWARVEN_SLINGER"
+        },
+        {
+          "classId": "UNITCLASS_HORSEMAN",
+          "sourceId": "UNIT_BOAR_RIDER"
+        },
+        {
+          "classId": "UNITCLASS_MAGE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_LONGBOWMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_RANGER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CATAPULT",
+          "sourceId": "UNIT_TREBUCHET"
+        },
+        {
+          "classId": "UNITCLASS_ARCHMAGE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BEASTMASTER",
+          "sourceId": "UNIT_MYCONID"
+        },
+        {
+          "classId": "UNITCLASS_DRUID",
+          "sourceId": "UNIT_DWARVEN_DRUID"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_HORNGUARD"
+        },
+        {
+          "classId": "UNITCLASS_MARKSMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_SHADOW",
+          "sourceId": "UNIT_DWARVEN_SHADOW"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "UNIT_DWARVEN_CANNON"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_FORGE",
+          "sourceId": "BUILDING_DWARVEN_SMITHY"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_KHAZAD"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_KURIOTATES",
+      "name": "Kuriotates",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Kwythellar",
+        "Naggarond",
+        "Avelorn",
+        "Karond Kar",
+        "Caledor",
+        "Clar Karond",
+        "Lothern",
+        "Har Ganeth",
+        "Hag Graef",
+        "Ghrond",
+        "Tiranoc",
+        "Pax",
+        "Ghaba Ghanaf",
+        "Cairn Lotherl",
+        "Nagarythe",
+        "Maledor",
+        "Sith Rionnasc",
+        "Khaef Korrond",
+        "Anlec",
+        "Calith",
+        "Argond",
+        "Giaf Gabh Dion",
+        "Shathirob"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_CARDITH",
+          "traits": [
+            "TRAIT_ADAPTIVE",
+            "TRAIT_EXPANSIVE",
+            "TRAIT_PHILOSOPHICAL"
+          ]
+        },
+        {
+          "id": "LEADER_CHERON_EXTRA",
+          "traits": [
+            "TRAIT_AGRARIAN",
+            "TRAIT_IMPERIALISTIC",
+            "TRAIT_DEFENDER"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_CARDITH",
+      "startingTech": [
+        "TECH_AGRICULTURE"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          196,
+          87,
+          255
+        ],
+        "inner": [
+          255,
+          255,
+          43
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_KURIOTATES",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_HORSEMAN",
+          "sourceId": "UNIT_CENTAUR"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "UNIT_CENTAUR_ARCHER"
+        },
+        {
+          "classId": "UNITCLASS_CHARIOT",
+          "sourceId": "UNIT_CENTAUR_CHARGER"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_CENTAUR_LANCER"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_KURIOTATES"
+        },
+        {
+          "classId": "BUILDINGCLASS_STABLE",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_TAILOR"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING2",
+          "sourceId": "BUILDING_JEWELER"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_LANUN",
+      "name": "Lanun",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Innsmouth",
+        "Dunwich",
+        "Kingsport",
+        "Aylesbury",
+        "Paradera",
+        "Bolans",
+        "Seroe Vakas",
+        "Bathsheba",
+        "Oistins",
+        "Boscobelle",
+        "Speightstown",
+        "Willikies",
+        "Garrislyr",
+        "Villanon",
+        "Undertow",
+        "Bren Bagage"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_FALAMAR",
+          "traits": [
+            "TRAIT_CHARISMATIC",
+            "TRAIT_EXPANSIVE"
+          ]
+        },
+        {
+          "id": "LEADER_HANNAH",
+          "traits": [
+            "TRAIT_FINANCIAL",
+            "TRAIT_RAIDERS"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_FALAMAR",
+      "startingTech": [
+        "TECH_SEAFARING"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          41,
+          0,
+          163
+        ],
+        "inner": [
+          230,
+          230,
+          230
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_LANUN",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_BOARDING_PARTY"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_WAR_TORTOISE"
+        },
+        {
+          "classId": "UNITCLASS_PRIVATEER",
+          "sourceId": "UNIT_PIRATE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_HARBOR",
+          "sourceId": "BUILDING_HARBOR_LANUN"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_LANUN"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_LJOSALFAR",
+      "name": "Ljosalfar",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Evermore",
+        "Hyll",
+        "Bruti",
+        "Yonna",
+        "Dendrom",
+        "Eaca",
+        "Eodd",
+        "Berk",
+        "Khandar",
+        "Idul",
+        "Elendiwe",
+        "Helion",
+        "Gon Gatha",
+        "Mazenshire",
+        "Tivix",
+        "Lan Neual",
+        "Wispolen",
+        "Cerrolan",
+        "Pauleun",
+        "Organum",
+        "Kalos",
+        "Camena",
+        "Natura"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_AMELANCHIER",
+          "traits": [
+            "TRAIT_PHILOSOPHICAL",
+            "TRAIT_RAIDERS"
+          ]
+        },
+        {
+          "id": "LEADER_ARENDEL",
+          "traits": [
+            "TRAIT_CREATIVE",
+            "TRAIT_SPIRITUAL"
+          ]
+        },
+        {
+          "id": "LEADER_THESSA",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_EXPANSIVE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_ARENDEL",
+      "startingTech": [
+        "TECH_EXPLORATION"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 2
+        }
+      ],
+      "race": "PROMOTION_ELF",
+      "colors": {
+        "outer": [
+          0,
+          99,
+          0
+        ],
+        "inner": [
+          255,
+          255,
+          43
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_LJOSALFAR",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_CROSSBOWMAN",
+          "sourceId": "UNIT_FLURRY"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "UNIT_FYRDWELL"
+        },
+        {
+          "classId": "UNITCLASS_CHARIOT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CATAPULT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_LJOSALFAR"
+        },
+        {
+          "classId": "BUILDINGCLASS_SIEGE_WORKSHOP",
+          "sourceId": "NONE"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_LUCHUIRP",
+      "name": "Luchuirp",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Ithralia",
+        "Mutanbo",
+        "Tia'ran",
+        "Morr'tebio",
+        "Val'ron",
+        "Tia'na'dom",
+        "Nubilar",
+        "Aborlenia",
+        "Tia'minar",
+        "Sil'ron",
+        "Sha'na'ron",
+        "Vinubar",
+        "Ashi'marr",
+        "Atenia",
+        "Leticia",
+        "Su'minar",
+        "Manaus",
+        "Ithis",
+        "Para'dom"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_GARRIM",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_FINANCIAL"
+          ]
+        },
+        {
+          "id": "LEADER_BEERI",
+          "traits": [
+            "TRAIT_FINANCIAL",
+            "TRAIT_INDUSTRIOUS"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_GARRIM",
+      "startingTech": [
+        "TECH_CRAFTING"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "PROMOTION_DWARF",
+      "colors": {
+        "outer": [
+          99,
+          61,
+          0
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_LUCHUIRP",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_WORKER",
+          "sourceId": "UNIT_MUD_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_WOOD_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_ARCHER",
+          "sourceId": "UNIT_DWARVEN_SLINGER"
+        },
+        {
+          "classId": "UNITCLASS_HORSEMAN",
+          "sourceId": "UNIT_BOAR_RIDER"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "UNIT_IRON_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_LONGBOWMAN",
+          "sourceId": "UNIT_GARGOYLE"
+        },
+        {
+          "classId": "UNITCLASS_RANGER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BEASTMASTER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "UNIT_CLOCKWORK_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_DRUID",
+          "sourceId": "UNIT_DWARVEN_DRUID"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "UNIT_BONE_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "UNIT_HORNGUARD"
+        },
+        {
+          "classId": "UNITCLASS_MARKSMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_PHALANX",
+          "sourceId": "UNIT_NULLSTONE_GOLEM"
+        },
+        {
+          "classId": "UNITCLASS_SHADOW",
+          "sourceId": "UNIT_DWARVEN_SHADOW"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_LUCHUIRP"
+        },
+        {
+          "classId": "BUILDINGCLASS_TRAINING_YARD",
+          "sourceId": "BUILDING_SCULPTORS_STUDIO"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_BLASTING_WORKSHOP"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING2",
+          "sourceId": "BUILDING_PALLENS_ENGINE"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING3",
+          "sourceId": "BUILDING_ADULARIA_CHAMBER"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_MALAKIM",
+      "name": "Malakim",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Golden Leane",
+        "Timberling",
+        "Balderham",
+        "Lodente",
+        "Froihk",
+        "Bryn",
+        "Belerien",
+        "Tiriyn",
+        "Stormgul",
+        "Udgul",
+        "Uros",
+        "Grison",
+        "Minolow",
+        "Chish",
+        "Adihaniel",
+        "Shotaka"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_VARN",
+          "traits": [
+            "TRAIT_ADAPTIVE",
+            "TRAIT_CREATIVE",
+            "TRAIT_SPIRITUAL"
+          ]
+        },
+        {
+          "id": "LEADER_DECIUS_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_RAIDERS",
+            "TRAIT_TOLERANT"
+          ]
+        },
+        {
+          "id": "LEADER_KANE_EXTRA",
+          "traits": [
+            "TRAIT_AGRARIAN",
+            "TRAIT_BARBARIAN",
+            "TRAIT_FINANCIAL"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_VARN",
+      "startingTech": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_LIGHTBRINGER",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          255,
+          255,
+          43
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_MALAKIM",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "UNIT_CAMEL_ARCHER"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PAGAN_TEMPLE",
+          "sourceId": "BUILDING_DESERT_SHRINE"
+        },
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_MALAKIM"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_CITADEL_OF_LIGHT"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_MERCURIANS",
+      "name": "Mercurians",
+      "playable": false,
+      "aiPlayable": false,
+      "cityNames": [
+        "Bourne the Gleaming",
+        "Gap of Lond",
+        "Spera",
+        "High Clere",
+        "Ranelagh Cres",
+        "Vigilo",
+        "Locks",
+        "Priory Hold",
+        "Warrage",
+        "Newell Green",
+        "Kennet Carn",
+        "Swidon",
+        "Aldworth",
+        "Ains Field",
+        "Llangar",
+        "Lammas Mead",
+        "Bulpit"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_BASIUM",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_INGENUITY",
+            "TRAIT_RAIDERS"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_BASIUM",
+      "startingTech": [
+        "TECH_CRAFTING"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          230,
+          230,
+          230
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_MERCURIANS",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_WARRIOR",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_SCOUT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CROSSBOWMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BEASTMASTER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_KNIGHT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_MARKSMAN",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_PHALANX",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_MERCURIANS"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_SHEAIM",
+      "name": "Sheaim",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Galveholm",
+        "Grottiburg",
+        "Tongurstad",
+        "Graelingvig",
+        "Steinvik",
+        "Kuldevind",
+        "Vargstad",
+        "Skadistad",
+        "Nidhoggstad",
+        "Bjoernlingburg",
+        "Morkurburg",
+        "Jordekburg",
+        "Stromstad",
+        "Frost",
+        "Lade",
+        "Skeggi",
+        "Kvellig",
+        "Aghol",
+        "Raunvake",
+        "Sjoktraken"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_TEBRYN",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_SUMMONER"
+          ]
+        },
+        {
+          "id": "LEADER_OS-GABELLA",
+          "traits": [
+            "TRAIT_SPIRITUAL",
+            "TRAIT_SUMMONER"
+          ]
+        },
+        {
+          "id": "LEADER_AVERAX_EXTRA",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_BARBARIAN",
+            "TRAIT_IMPERIALISTIC"
+          ]
+        },
+        {
+          "id": "LEADER_GOSEA_EXTRA",
+          "traits": [
+            "TRAIT_PHILOSOPHICAL",
+            "TRAIT_SLAVER"
+          ]
+        },
+        {
+          "id": "LEADER_MALCHAVIC_EXTRA",
+          "traits": [
+            "TRAIT_EXPANSIVE",
+            "TRAIT_SAGE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_TEBRYN",
+      "startingTech": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          115,
+          0,
+          125
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_SHEAIM",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_PYRE_ZOMBIE"
+        },
+        {
+          "classId": "UNITCLASS_CHAMPION",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_ARCHMAGE",
+          "sourceId": "UNIT_EATER_OF_DREAMS"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_IMMORTAL",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_PHALANX",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_SHEAIM"
+        },
+        {
+          "classId": "BUILDINGCLASS_TRAINING_YARD",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "BUILDINGCLASS_CIV_BUILDING1",
+          "sourceId": "BUILDING_PLANAR_GATE"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_SIDAR",
+      "name": "Sidar",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Celo",
+        "Vetus",
+        "Zarlra",
+        "Skarlas",
+        "Latito",
+        "Stakrus",
+        "Velius",
+        "Shadow Mist",
+        "Senectus",
+        "Kartlost",
+        "Provectus",
+        "Priscus",
+        "Bogz",
+        "Verminaard",
+        "Sark",
+        "Rrackon",
+        "Asrassiv",
+        "Varza",
+        "Zratos",
+        "Drakor"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_SANDALPHON",
+          "traits": [
+            "TRAIT_PHILOSOPHICAL",
+            "TRAIT_INDUSTRIOUS"
+          ]
+        },
+        {
+          "id": "LEADER_SHEKINAH_EXTRA",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_CREATIVE"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_SANDALPHON",
+      "startingTech": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "NONE",
+      "colors": {
+        "outer": [
+          94,
+          94,
+          94
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_SIDAR",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_HUNTER",
+          "sourceId": "UNIT_DIVIDED_SOUL"
+        },
+        {
+          "classId": "UNITCLASS_ASSASSIN",
+          "sourceId": "UNIT_GHOST"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_SIDAR"
+        }
+      ]
+    },
+    {
+      "id": "CIVILIZATION_SVARTALFAR",
+      "name": "Svartalfar",
+      "playable": true,
+      "aiPlayable": true,
+      "cityNames": [
+        "Thariss",
+        "Gereth Minar",
+        "Nameless Tower",
+        "Idris",
+        "Brakkah",
+        "Enoreth",
+        "Geron",
+        "Aeleris's Pits",
+        "Drax Tallen",
+        "Geffron",
+        "Malor",
+        "Avien",
+        "Essuria",
+        "Lothenar",
+        "Crepusculum",
+        "Black Axe",
+        "Wolf Claw",
+        "Evil Eye",
+        "Beast Clan",
+        "Goathorns",
+        "Tarka",
+        "Helshaven",
+        "Terror",
+        "Herath",
+        "Sickly Mist"
+      ],
+      "leaders": [
+        {
+          "id": "LEADER_FAERYL",
+          "traits": [
+            "TRAIT_ARCANE",
+            "TRAIT_RAIDERS"
+          ]
+        },
+        {
+          "id": "LEADER_RIVANNA_EXTRA",
+          "traits": [
+            "TRAIT_ORGANIZED",
+            "TRAIT_SUMMONER"
+          ]
+        },
+        {
+          "id": "LEADER_VOLANNA_EXTRA",
+          "traits": [
+            "TRAIT_AGGRESSIVE",
+            "TRAIT_SPIRITUAL"
+          ]
+        }
+      ],
+      "chosenLeader": "LEADER_FAERYL",
+      "startingTech": [
+        "TECH_AGRICULTURE"
+      ],
+      "startingUnits": [
+        {
+          "id": "UNITCLASS_SETTLER",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_WARRIOR",
+          "count": 1
+        },
+        {
+          "id": "UNITCLASS_SCOUT",
+          "count": 1
+        }
+      ],
+      "race": "PROMOTION_DARK_ELF",
+      "colors": {
+        "outer": [
+          179,
+          179,
+          179
+        ],
+        "inner": [
+          33,
+          33,
+          33
+        ]
+      },
+      "sourceColor": "PLAYERCOLOR_SVARTALFAR",
+      "unitReplace": [
+        {
+          "classId": "UNITCLASS_AXEMAN",
+          "sourceId": "UNIT_SWORDSMAN"
+        },
+        {
+          "classId": "UNITCLASS_MAGE",
+          "sourceId": "UNIT_ILLUSIONIST"
+        },
+        {
+          "classId": "UNITCLASS_HORSE_ARCHER",
+          "sourceId": "UNIT_NYXKIN"
+        },
+        {
+          "classId": "UNITCLASS_CHARIOT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CATAPULT",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_ARQUEBUS",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_BERSERKER",
+          "sourceId": "NONE"
+        },
+        {
+          "classId": "UNITCLASS_CANNON",
+          "sourceId": "NONE"
+        }
+      ],
+      "buildingReplace": [
+        {
+          "classId": "BUILDINGCLASS_PALACE",
+          "sourceId": "BUILDING_PALACE_SVARTALFAR"
+        },
+        {
+          "classId": "BUILDINGCLASS_SIEGE_WORKSHOP",
+          "sourceId": "NONE"
+        }
+      ]
+    }
+  ],
+  "leaderSelections": [
+    {
+      "civilization": "Amurites",
+      "chosenLeader": "LEADER_VALLEDIA",
+      "traits": [
+        "TRAIT_ARCANE",
+        "TRAIT_INGENUITY",
+        "TRAIT_ORGANIZED"
+      ],
+      "implementedTraits": [
+        "TRAIT_INGENUITY"
+      ]
+    },
+    {
+      "civilization": "Balseraphs",
+      "chosenLeader": "LEADER_PERPENTACH",
+      "traits": [
+        "TRAIT_ARCANE",
+        "TRAIT_CHARISMATIC",
+        "TRAIT_CREATIVE",
+        "TRAIT_INSANE"
+      ],
+      "implementedTraits": [
+        "TRAIT_CHARISMATIC",
+        "TRAIT_CREATIVE"
+      ]
+    },
+    {
+      "civilization": "Bannor",
+      "chosenLeader": "LEADER_SABATHIEL",
+      "traits": [
+        "TRAIT_CHARISMATIC",
+        "TRAIT_ORGANIZED"
+      ],
+      "implementedTraits": [
+        "TRAIT_CHARISMATIC"
+      ]
+    },
+    {
+      "civilization": "Calabim",
+      "chosenLeader": "LEADER_ALEXIS",
+      "traits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_FINANCIAL"
+      ],
+      "implementedTraits": [
+        "TRAIT_AGGRESSIVE"
+      ]
+    },
+    {
+      "civilization": "Clan of Embers",
+      "chosenLeader": "LEADER_JONAS",
+      "traits": [
+        "TRAIT_EXPANSIVE",
+        "TRAIT_SPIRITUAL"
+      ],
+      "implementedTraits": []
+    },
+    {
+      "civilization": "Doviello",
+      "chosenLeader": "LEADER_CHARADON",
+      "traits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_BARBARIAN",
+        "TRAIT_CHARISMATIC"
+      ],
+      "implementedTraits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_CHARISMATIC"
+      ]
+    },
+    {
+      "civilization": "Elohim",
+      "chosenLeader": "LEADER_ETHNE",
+      "traits": [
+        "TRAIT_CREATIVE",
+        "TRAIT_ORGANIZED"
+      ],
+      "implementedTraits": [
+        "TRAIT_CREATIVE"
+      ]
+    },
+    {
+      "civilization": "Grigori",
+      "chosenLeader": "LEADER_CASSIEL",
+      "traits": [
+        "TRAIT_ADAPTIVE",
+        "TRAIT_CHARISMATIC",
+        "TRAIT_PHILOSOPHICAL"
+      ],
+      "implementedTraits": [
+        "TRAIT_CHARISMATIC",
+        "TRAIT_PHILOSOPHICAL"
+      ]
+    },
+    {
+      "civilization": "Hippus",
+      "chosenLeader": "LEADER_TASUNKE",
+      "traits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_RAIDERS"
+      ],
+      "implementedTraits": [
+        "TRAIT_AGGRESSIVE"
+      ]
+    },
+    {
+      "civilization": "Illians",
+      "chosenLeader": "LEADER_AURIC",
+      "traits": [
+        "TRAIT_CHARISMATIC",
+        "TRAIT_ARCANE"
+      ],
+      "implementedTraits": [
+        "TRAIT_CHARISMATIC"
+      ]
+    },
+    {
+      "civilization": "Khazad",
+      "chosenLeader": "LEADER_ARTURUS",
+      "traits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_INDUSTRIOUS"
+      ],
+      "implementedTraits": [
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_INDUSTRIOUS"
+      ]
+    },
+    {
+      "civilization": "Kuriotates",
+      "chosenLeader": "LEADER_CARDITH",
+      "traits": [
+        "TRAIT_ADAPTIVE",
+        "TRAIT_EXPANSIVE",
+        "TRAIT_PHILOSOPHICAL"
+      ],
+      "implementedTraits": [
+        "TRAIT_PHILOSOPHICAL"
+      ]
+    },
+    {
+      "civilization": "Lanun",
+      "chosenLeader": "LEADER_FALAMAR",
+      "traits": [
+        "TRAIT_CHARISMATIC",
+        "TRAIT_EXPANSIVE"
+      ],
+      "implementedTraits": [
+        "TRAIT_CHARISMATIC"
+      ]
+    },
+    {
+      "civilization": "Ljosalfar",
+      "chosenLeader": "LEADER_ARENDEL",
+      "traits": [
+        "TRAIT_CREATIVE",
+        "TRAIT_SPIRITUAL"
+      ],
+      "implementedTraits": [
+        "TRAIT_CREATIVE"
+      ]
+    },
+    {
+      "civilization": "Luchuirp",
+      "chosenLeader": "LEADER_GARRIM",
+      "traits": [
+        "TRAIT_ARCANE",
+        "TRAIT_FINANCIAL"
+      ],
+      "implementedTraits": []
+    },
+    {
+      "civilization": "Malakim",
+      "chosenLeader": "LEADER_VARN",
+      "traits": [
+        "TRAIT_ADAPTIVE",
+        "TRAIT_CREATIVE",
+        "TRAIT_SPIRITUAL"
+      ],
+      "implementedTraits": [
+        "TRAIT_CREATIVE"
+      ]
+    },
+    {
+      "civilization": "Sheaim",
+      "chosenLeader": "LEADER_TEBRYN",
+      "traits": [
+        "TRAIT_ARCANE",
+        "TRAIT_SUMMONER"
+      ],
+      "implementedTraits": []
+    },
+    {
+      "civilization": "Sidar",
+      "chosenLeader": "LEADER_SANDALPHON",
+      "traits": [
+        "TRAIT_PHILOSOPHICAL",
+        "TRAIT_INDUSTRIOUS"
+      ],
+      "implementedTraits": [
+        "TRAIT_PHILOSOPHICAL",
+        "TRAIT_INDUSTRIOUS"
+      ]
+    },
+    {
+      "civilization": "Svartalfar",
+      "chosenLeader": "LEADER_FAERYL",
+      "traits": [
+        "TRAIT_ARCANE",
+        "TRAIT_RAIDERS"
+      ],
+      "implementedTraits": []
+    }
+  ],
+  "unhandledStartingTechnologies": [
+    {
+      "name": "Lanun",
+      "technology": "TECH_SEAFARING"
+    }
+  ],
+  "addedUnits": [
+    {
+      "civilization": "Balseraphs",
+      "name": "Balseraphs Swordsman",
+      "sourceId": "UNIT_SWORDSMAN",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Balseraphs",
+      "name": "Mimic",
+      "sourceId": "UNIT_MIMIC",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Balseraphs",
+      "name": "Harlequin",
+      "sourceId": "UNIT_HARLEQUIN",
+      "replaces": "Ranger"
+    },
+    {
+      "civilization": "Balseraphs",
+      "name": "Taskmaster",
+      "sourceId": "UNIT_TASKMASTER",
+      "replaces": "Assassin"
+    },
+    {
+      "civilization": "Calabim",
+      "name": "Bloodpet",
+      "sourceId": "UNIT_BLOODPET",
+      "replaces": "Warrior"
+    },
+    {
+      "civilization": "Calabim",
+      "name": "Moroi",
+      "sourceId": "UNIT_MOROI",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Calabim",
+      "name": "Vampire",
+      "sourceId": "UNIT_VAMPIRE",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Calabim",
+      "name": "Brujah",
+      "sourceId": "UNIT_BRUJAH",
+      "replaces": "Berserker"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Beastman",
+      "sourceId": "UNIT_BEASTMAN",
+      "replaces": "Warrior"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Doviello Shaman",
+      "sourceId": "UNIT_SHAMAN",
+      "replaces": "Adept"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Sons Of Asena",
+      "sourceId": "UNIT_SONS_OF_ASENA",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Javelin Thrower",
+      "sourceId": "UNIT_JAVELIN_THROWER",
+      "replaces": "Archer"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Battlemaster",
+      "sourceId": "UNIT_BATTLEMASTER",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Circle Of Urd",
+      "sourceId": "UNIT_CIRCLE_OF_URD",
+      "replaces": "Berserker"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Bison Rider",
+      "sourceId": "UNIT_BISON_RIDER",
+      "replaces": "Knight"
+    },
+    {
+      "civilization": "Doviello",
+      "name": "Verdandi",
+      "sourceId": "UNIT_VERDANDI",
+      "replaces": "Phalanx"
+    },
+    {
+      "civilization": "Elohim",
+      "name": "Devout",
+      "sourceId": "UNIT_DEVOUT",
+      "replaces": "Assassin"
+    },
+    {
+      "civilization": "Grigori",
+      "name": "Dragon Slayer",
+      "sourceId": "UNIT_DRAGON_SLAYER",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Illians",
+      "name": "Illians Javelin Thrower",
+      "sourceId": "UNIT_JAVELIN_THROWER",
+      "replaces": "Archer"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Dwarven Slinger",
+      "sourceId": "UNIT_DWARVEN_SLINGER",
+      "replaces": "Archer"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Boar Rider",
+      "sourceId": "UNIT_BOAR_RIDER",
+      "replaces": "Horseman"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Trebuchet",
+      "sourceId": "UNIT_TREBUCHET",
+      "replaces": "Catapult"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Myconid",
+      "sourceId": "UNIT_MYCONID",
+      "replaces": "Beastmaster"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Hornguard",
+      "sourceId": "UNIT_HORNGUARD",
+      "replaces": "Knight"
+    },
+    {
+      "civilization": "Kuriotates",
+      "name": "Kuriotates Swordsman",
+      "sourceId": "UNIT_SWORDSMAN",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Kuriotates",
+      "name": "Centaur",
+      "sourceId": "UNIT_CENTAUR",
+      "replaces": "Horseman"
+    },
+    {
+      "civilization": "Kuriotates",
+      "name": "Centaur Archer",
+      "sourceId": "UNIT_CENTAUR_ARCHER",
+      "replaces": "Horse Archer"
+    },
+    {
+      "civilization": "Kuriotates",
+      "name": "Centaur Charger",
+      "sourceId": "UNIT_CENTAUR_CHARGER",
+      "replaces": "Chariot"
+    },
+    {
+      "civilization": "Kuriotates",
+      "name": "Centaur Lancer",
+      "sourceId": "UNIT_CENTAUR_LANCER",
+      "replaces": "Knight"
+    },
+    {
+      "civilization": "Lanun",
+      "name": "Lanun Swordsman",
+      "sourceId": "UNIT_SWORDSMAN",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Lanun",
+      "name": "Boarding Party",
+      "sourceId": "UNIT_BOARDING_PARTY",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Lanun",
+      "name": "War Tortoise",
+      "sourceId": "UNIT_WAR_TORTOISE",
+      "replaces": "Knight"
+    },
+    {
+      "civilization": "Lanun",
+      "name": "Pirate",
+      "sourceId": "UNIT_PIRATE",
+      "replaces": "Privateer"
+    },
+    {
+      "civilization": "Ljosalfar",
+      "name": "Fyrdwell",
+      "sourceId": "UNIT_FYRDWELL",
+      "replaces": "Horse Archer"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Mud Golem",
+      "sourceId": "UNIT_MUD_GOLEM",
+      "replaces": "Worker"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Wood Golem",
+      "sourceId": "UNIT_WOOD_GOLEM",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Luchuirp Dwarven Slinger",
+      "sourceId": "UNIT_DWARVEN_SLINGER",
+      "replaces": "Archer"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Luchuirp Boar Rider",
+      "sourceId": "UNIT_BOAR_RIDER",
+      "replaces": "Horseman"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Iron Golem",
+      "sourceId": "UNIT_IRON_GOLEM",
+      "replaces": "Champion"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Gargoyle",
+      "sourceId": "UNIT_GARGOYLE",
+      "replaces": "Longbowman"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Clockwork Golem",
+      "sourceId": "UNIT_CLOCKWORK_GOLEM",
+      "replaces": "Berserker"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Luchuirp Hornguard",
+      "sourceId": "UNIT_HORNGUARD",
+      "replaces": "Knight"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Nullstone Golem",
+      "sourceId": "UNIT_NULLSTONE_GOLEM",
+      "replaces": "Phalanx"
+    },
+    {
+      "civilization": "Malakim",
+      "name": "Malakim Swordsman",
+      "sourceId": "UNIT_SWORDSMAN",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Malakim",
+      "name": "Camel Archer",
+      "sourceId": "UNIT_CAMEL_ARCHER",
+      "replaces": "Horse Archer"
+    },
+    {
+      "civilization": "Sheaim",
+      "name": "Pyre Zombie",
+      "sourceId": "UNIT_PYRE_ZOMBIE",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Sidar",
+      "name": "Divided Soul",
+      "sourceId": "UNIT_DIVIDED_SOUL",
+      "replaces": "Hunter"
+    },
+    {
+      "civilization": "Sidar",
+      "name": "Ghost",
+      "sourceId": "UNIT_GHOST",
+      "replaces": "Assassin"
+    },
+    {
+      "civilization": "Svartalfar",
+      "name": "Svartalfar Swordsman",
+      "sourceId": "UNIT_SWORDSMAN",
+      "replaces": "Axeman"
+    },
+    {
+      "civilization": "Svartalfar",
+      "name": "Nyxkin",
+      "sourceId": "UNIT_NYXKIN",
+      "replaces": "Horse Archer"
+    }
+  ],
+  "addedBuildings": [
+    {
+      "civilization": "Balseraphs",
+      "name": "Arena",
+      "sourceId": "BUILDING_ARENA",
+      "replaces": "Training Yard"
+    },
+    {
+      "civilization": "Elohim",
+      "name": "Reliquary",
+      "sourceId": "BUILDING_RELIQUARY",
+      "replaces": "Monument"
+    },
+    {
+      "civilization": "Grigori",
+      "name": "Tavern Grigori",
+      "sourceId": "BUILDING_TAVERN_GRIGORI",
+      "replaces": "Tavern"
+    },
+    {
+      "civilization": "Grigori",
+      "name": "Forum",
+      "sourceId": "BUILDING_FORUM",
+      "replaces": "Courthouse"
+    },
+    {
+      "civilization": "Grigori",
+      "name": "Grigori Museum",
+      "sourceId": "BUILDING_MUSEUM",
+      "replaces": "Museum"
+    },
+    {
+      "civilization": "Illians",
+      "name": "Temple Of The Hand",
+      "sourceId": "BUILDING_TEMPLE_OF_THE_HAND",
+      "replaces": "Pagan Temple"
+    },
+    {
+      "civilization": "Khazad",
+      "name": "Dwarven Smithy",
+      "sourceId": "BUILDING_DWARVEN_SMITHY",
+      "replaces": "Forge"
+    },
+    {
+      "civilization": "Lanun",
+      "name": "Harbor Lanun",
+      "sourceId": "BUILDING_HARBOR_LANUN",
+      "replaces": "Harbor"
+    },
+    {
+      "civilization": "Luchuirp",
+      "name": "Sculptors Studio",
+      "sourceId": "BUILDING_SCULPTORS_STUDIO",
+      "replaces": "Training Yard"
+    },
+    {
+      "civilization": "Malakim",
+      "name": "Desert Shrine",
+      "sourceId": "BUILDING_DESERT_SHRINE",
+      "replaces": "Pagan Temple"
+    }
+  ],
+  "classProhibitions": [
+    {
+      "civ": "Calabim",
+      "type": "building",
+      "name": "Alchemy Lab"
+    },
+    {
+      "civ": "Calabim",
+      "type": "building",
+      "name": "Elder Council"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "unit",
+      "name": "Horse Archer"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "unit",
+      "name": "Knight"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "building",
+      "name": "Alchemy Lab"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "building",
+      "name": "Library"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "building",
+      "name": "Mage Guild"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "building",
+      "name": "Stable"
+    },
+    {
+      "civ": "Doviello",
+      "type": "unit",
+      "name": "Marksman"
+    },
+    {
+      "civ": "Doviello",
+      "type": "building",
+      "name": "Alchemy Lab"
+    },
+    {
+      "civ": "Doviello",
+      "type": "building",
+      "name": "Library"
+    },
+    {
+      "civ": "Doviello",
+      "type": "building",
+      "name": "Mage Guild"
+    },
+    {
+      "civ": "Grigori",
+      "type": "building",
+      "name": "Pagan Temple"
+    },
+    {
+      "civ": "Hippus",
+      "type": "building",
+      "name": "Alchemy Lab"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Mage"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Longbowman"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Ranger"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Horse Archer"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Archmage"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "name": "Marksman"
+    },
+    {
+      "civ": "Kuriotates",
+      "type": "building",
+      "name": "Stable"
+    },
+    {
+      "civ": "Ljosalfar",
+      "type": "unit",
+      "name": "Chariot"
+    },
+    {
+      "civ": "Ljosalfar",
+      "type": "unit",
+      "name": "Catapult"
+    },
+    {
+      "civ": "Ljosalfar",
+      "type": "unit",
+      "name": "Berserker"
+    },
+    {
+      "civ": "Ljosalfar",
+      "type": "building",
+      "name": "Siege Workshop"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "name": "Ranger"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "name": "Horse Archer"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "name": "Beastmaster"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "name": "Marksman"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "unit",
+      "name": "Champion"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "unit",
+      "name": "Berserker"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "unit",
+      "name": "Phalanx"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "building",
+      "name": "Training Yard"
+    },
+    {
+      "civ": "Svartalfar",
+      "type": "unit",
+      "name": "Chariot"
+    },
+    {
+      "civ": "Svartalfar",
+      "type": "unit",
+      "name": "Catapult"
+    },
+    {
+      "civ": "Svartalfar",
+      "type": "unit",
+      "name": "Berserker"
+    },
+    {
+      "civ": "Svartalfar",
+      "type": "building",
+      "name": "Siege Workshop"
+    }
+  ],
+  "deferredFactionReplacements": [
+    {
+      "civ": "Balseraphs",
+      "type": "unit",
+      "id": "UNIT_COURTESAN",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Balseraphs",
+      "type": "building",
+      "id": "BUILDING_FREAK_SHOW",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Balseraphs",
+      "type": "building",
+      "id": "BUILDING_HALL_OF_MIRRORS",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Calabim",
+      "type": "unit",
+      "id": "UNIT_VAMPIRE_LORD",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Calabim",
+      "type": "building",
+      "id": "BUILDING_BREEDING_PIT",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Calabim",
+      "type": "building",
+      "id": "BUILDING_GOVERNORS_MANOR",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "unit",
+      "id": "UNIT_LIZARDMAN_DRUID",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "unit",
+      "id": "UNIT_OGRE_WARCHIEF",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Clan of Embers",
+      "type": "building",
+      "id": "BUILDING_WARRENS",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Doviello",
+      "type": "unit",
+      "id": "UNIT_SKULD",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Elohim",
+      "type": "building",
+      "id": "BUILDING_CHANCEL_OF_GUARDIANS",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Grigori",
+      "type": "unit",
+      "id": "UNIT_LUONNOTAR",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Grigori",
+      "type": "building",
+      "id": "BUILDING_ADVENTURERS_GUILD",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Hippus",
+      "type": "unit",
+      "id": "UNIT_MERCENARY_MOUNTED",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "id": "UNIT_DWARVEN_DRUID",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "id": "UNIT_DWARVEN_SHADOW",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Khazad",
+      "type": "unit",
+      "id": "UNIT_DWARVEN_CANNON",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Kuriotates",
+      "type": "building",
+      "id": "BUILDING_TAILOR",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Kuriotates",
+      "type": "building",
+      "id": "BUILDING_JEWELER",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "id": "UNIT_DWARVEN_DRUID",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "id": "UNIT_BONE_GOLEM",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "unit",
+      "id": "UNIT_DWARVEN_SHADOW",
+      "reason": "missing base unit"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "building",
+      "id": "BUILDING_BLASTING_WORKSHOP",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "building",
+      "id": "BUILDING_PALLENS_ENGINE",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Luchuirp",
+      "type": "building",
+      "id": "BUILDING_ADULARIA_CHAMBER",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Malakim",
+      "type": "building",
+      "id": "BUILDING_CITADEL_OF_LIGHT",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "unit",
+      "id": "UNIT_EATER_OF_DREAMS",
+      "reason": "source gate or special unit"
+    },
+    {
+      "civ": "Sheaim",
+      "type": "building",
+      "id": "BUILDING_PLANAR_GATE",
+      "reason": "missing base building"
+    },
+    {
+      "civ": "Svartalfar",
+      "type": "unit",
+      "id": "UNIT_ILLUSIONIST",
+      "reason": "source gate or special unit"
+    }
+  ]
+}

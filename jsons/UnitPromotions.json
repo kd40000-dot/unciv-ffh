@@ -354,5 +354,20 @@
     "uniques": [
       "Not shown on world screen"
     ]
+  },
+  {
+    "name": "Dwarf",
+    "unitTypes": [],
+    "uniques": [
+      "Double movement in [Hill]"
+    ]
+  },
+  {
+    "name": "Dark Elf",
+    "unitTypes": [],
+    "uniques": [
+      "Double movement in [Forest]",
+      "[+10]% Strength <when fighting in [Forest] tiles> <when attacking>"
+    ]
   }
 ]

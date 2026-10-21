@@ -16,6 +16,9 @@ types={x["name"] for x in load("jsons/UnitTypes.json")}
 byid={r["id"]:r for r in source["units"]}
 bbid={r["id"]:r for r in source["buildings"]}
 rename=lambda s:s.removeprefix("UNIT_").removeprefix("BUILDING_").lower().replace("_"," ").title()
+factions=load("docs/data/emm-civilizations.json")
+unit_aliases={r["name"]:r["sourceId"] for r in factions["addedUnits"]}
+building_aliases={r["name"]:r["sourceId"] for r in factions["addedBuildings"]}
 assert len({x["name"] for x in units})==len(units)
 assert len({x["name"] for x in buildings})==len(buildings)
 byname={x["name"]:x for x in units}
@@ -26,7 +29,7 @@ for item in units:
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
     assert item["replaces"] in byname if "replaces" in item else True,item["name"]
     alias=item["name"].removeprefix("Ljosalfar ").removeprefix("Amurites ")
-    rec=next((r for r in source["units"] if rename(r["id"])==alias),None)
+    rec=byid.get(unit_aliases[item["name"]]) if item["name"] in unit_aliases else next((r for r in source["units"] if rename(r["id"])==alias),None)
     assert rec is not None,("No EMM unit source",item["name"])
     assert item["cost"]==rec["cost"],("Incorrect unit cost",item["name"])
     assert item["movement"]==rec["moves"],("Incorrect unit movement",item["name"])
@@ -37,7 +40,7 @@ for item in buildings:
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
     assert item["replaces"] in bnames if "replaces" in item else True,item["name"]
     if item["name"]=="Palace":continue
-    rec=next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None)
+    rec=bbid.get(building_aliases[item["name"]]) if item["name"] in building_aliases else next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None)
     if rec is None and item["name"]=="Cave of Ancestors":
         rec=bbid["BUILDING_CAVE_OF_ANCESTORS"]
     assert rec is not None,("No EMM building source",item["name"])

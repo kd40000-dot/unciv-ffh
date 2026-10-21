@@ -21,7 +21,10 @@
       "science": 25
     },
     "uniques": [
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Only available <for [non-[Calabim]] Civilizations>",
+      "Only available <for [non-[Doviello]] Civilizations>",
+      "Only available <for [non-[Hippus]] Civilizations>"
     ]
   },
   {
@@ -63,7 +66,10 @@
     "name": "Elder Council",
     "cost": 60,
     "requiredTech": "Mysticism",
-    "science": 2
+    "science": 2,
+    "uniques": [
+      "Only available <for [non-[Calabim]] Civilizations>"
+    ]
   },
   {
     "name": "Forge",
@@ -128,7 +134,8 @@
       "science": 25
     },
     "uniques": [
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Only available <for [non-[Doviello]] Civilizations>"
     ]
   },
   {
@@ -144,7 +151,8 @@
     "cost": 120,
     "requiredTech": "Knowledge of the Ether",
     "uniques": [
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Only available <for [non-[Doviello]] Civilizations>"
     ]
   },
   {
@@ -178,7 +186,10 @@
     "requiredTech": "Mysticism",
     "percentStatBonus": {
       "culture": 10
-    }
+    },
+    "uniques": [
+      "Only available <for [non-[Grigori]] Civilizations>"
+    ]
   },
   {
     "name": "Palisade",
@@ -204,7 +215,8 @@
     "cost": 120,
     "requiredTech": "Construction",
     "uniques": [
-      "Only available <for [non-[Ljosalfar]] Civilizations>"
+      "Only available <for [non-[Ljosalfar]] Civilizations>",
+      "Only available <for [non-[Svartalfar]] Civilizations>"
     ]
   },
   {
@@ -220,7 +232,8 @@
     "cost": 100,
     "requiredTech": "Horseback Riding",
     "uniques": [
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Only available <for [non-[Kuriotates]] Civilizations>"
     ]
   },
   {
@@ -245,7 +258,10 @@
   {
     "name": "Training Yard",
     "cost": 100,
-    "requiredTech": "Bronze Working"
+    "requiredTech": "Bronze Working",
+    "uniques": [
+      "Only available <for [non-[Sheaim]] Civilizations>"
+    ]
   },
   {
     "name": "Walls",
@@ -276,5 +292,87 @@
     "cost": 180,
     "requiredTech": "Masonry",
     "uniqueTo": "Clan of Embers"
+  },
+  {
+    "name": "Arena",
+    "cost": 100,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Training Yard"
+  },
+  {
+    "name": "Reliquary",
+    "cost": 45,
+    "requiredTech": "Ancient Chants",
+    "uniqueTo": "Elohim",
+    "replaces": "Monument"
+  },
+  {
+    "name": "Tavern Grigori",
+    "cost": 150,
+    "requiredTech": "Mercantilism",
+    "uniqueTo": "Grigori",
+    "replaces": "Tavern"
+  },
+  {
+    "name": "Forum",
+    "cost": 200,
+    "requiredTech": "Code of Laws",
+    "uniqueTo": "Grigori",
+    "replaces": "Courthouse"
+  },
+  {
+    "name": "Grigori Museum",
+    "cost": 120,
+    "requiredTech": "Education",
+    "uniqueTo": "Grigori",
+    "replaces": "Museum",
+    "percentStatBonus": {
+      "culture": 20
+    }
+  },
+  {
+    "name": "Temple Of The Hand",
+    "cost": 100,
+    "requiredTech": "Mysticism",
+    "uniqueTo": "Illians",
+    "replaces": "Pagan Temple",
+    "percentStatBonus": {
+      "culture": 10
+    }
+  },
+  {
+    "name": "Dwarven Smithy",
+    "cost": 250,
+    "requiredTech": "Smelting",
+    "uniqueTo": "Khazad",
+    "replaces": "Forge",
+    "percentStatBonus": {
+      "production": 20
+    }
+  },
+  {
+    "name": "Harbor Lanun",
+    "cost": 90,
+    "requiredTech": "Fishing",
+    "uniqueTo": "Lanun",
+    "replaces": "Harbor"
+  },
+  {
+    "name": "Sculptors Studio",
+    "cost": 90,
+    "requiredTech": "Construction",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Training Yard"
+  },
+  {
+    "name": "Desert Shrine",
+    "cost": 100,
+    "requiredTech": "Mysticism",
+    "uniqueTo": "Malakim",
+    "replaces": "Pagan Temple",
+    "percentStatBonus": {
+      "culture": 10
+    }
   }
 ]

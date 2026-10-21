@@ -63,7 +63,8 @@
     "strength": 14,
     "requiredTech": "Animal Mastery",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Only available <for [non-[Luchuirp]] Civilizations>"
     ]
   },
   {
@@ -77,7 +78,9 @@
       "[-55]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization",
-      "Only available <for [non-[Ljosalfar]] Civilizations>"
+      "Only available <for [non-[Ljosalfar]] Civilizations>",
+      "Only available <for [non-[Sheaim]] Civilizations>",
+      "Only available <for [non-[Svartalfar]] Civilizations>"
     ]
   },
   {
@@ -100,7 +103,8 @@
     "requiredTech": "Construction",
     "uniques": [
       "[-25]% Strength <when defending>",
-      "Only available <for [non-[Ljosalfar]] Civilizations>"
+      "Only available <for [non-[Ljosalfar]] Civilizations>",
+      "Only available <for [non-[Svartalfar]] Civilizations>"
     ]
   },
   {
@@ -115,7 +119,8 @@
       "Can upgrade to [Phalanx]",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "Only available <for [non-[Sheaim]] Civilizations>"
     ],
     "upgradesTo": "Berserker"
   },
@@ -129,7 +134,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Only available <for [non-[Ljosalfar]] Civilizations>",
-      "Can only be built <with [Horses]>"
+      "Can only be built <with [Horses]>",
+      "Only available <for [non-[Svartalfar]] Civilizations>"
     ],
     "upgradesTo": "Knight"
   },
@@ -210,7 +216,9 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>",
       "Only available <for [non-[Clan of Embers]] Civilizations>",
-      "Can only be built <with [Horses]>"
+      "Can only be built <with [Horses]>",
+      "Only available <for [non-[Khazad]] Civilizations>",
+      "Only available <for [non-[Luchuirp]] Civilizations>"
     ],
     "upgradesTo": "Knight"
   },
@@ -265,7 +273,8 @@
     "uniques": [
       "[+40]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>",
-      "Can upgrade to [Marksman]"
+      "Can upgrade to [Marksman]",
+      "Only available <for [non-[Khazad]] Civilizations>"
     ],
     "upgradesTo": "Crossbowman"
   },
@@ -278,7 +287,10 @@
     "requiredTech": "Precision",
     "uniques": [
       "Can only be built <in cities with a [Archery Range]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Only available <for [non-[Doviello]] Civilizations>",
+      "Only available <for [non-[Khazad]] Civilizations>",
+      "Only available <for [non-[Luchuirp]] Civilizations>"
     ]
   },
   {
@@ -302,7 +314,8 @@
     "requiredTech": "Mithril Working",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Only available <for [non-[Sheaim]] Civilizations>"
     ]
   },
   {
@@ -335,7 +348,9 @@
     "strength": 7,
     "requiredTech": "Feral Bond",
     "uniques": [
-      "Can only be built <in cities with a [Hunting Lodge]>"
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "Only available <for [non-[Khazad]] Civilizations>",
+      "Only available <for [non-[Luchuirp]] Civilizations>"
     ],
     "upgradesTo": "Beastmaster"
   },
@@ -632,7 +647,10 @@
       "Channeling I",
       "Channeling II"
     ],
-    "upgradesTo": "Archmage"
+    "upgradesTo": "Archmage",
+    "uniques": [
+      "Only available <for [non-[Khazad]] Civilizations>"
+    ]
   },
   {
     "name": "Archmage",
@@ -647,7 +665,8 @@
       "Channeling III"
     ],
     "uniques": [
-      "Can only be built <with [Reagents]>"
+      "Can only be built <with [Reagents]>",
+      "Only available <for [non-[Khazad]] Civilizations>"
     ]
   },
   {
@@ -664,5 +683,668 @@
       "Channeling II"
     ],
     "upgradesTo": "Archmage"
+  },
+  {
+    "name": "Balseraphs Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Mimic",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Champion",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Harlequin",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 150,
+    "strength": 6,
+    "requiredTech": "Feral Bond",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Ranger"
+  },
+  {
+    "name": "Taskmaster",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Assassin",
+    "uniques": [
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Bloodpet",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 25,
+    "strength": 3,
+    "uniqueTo": "Calabim",
+    "replaces": "Warrior"
+  },
+  {
+    "name": "Moroi",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Calabim",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Vampire",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 180,
+    "strength": 5,
+    "requiredTech": "Feudalism",
+    "uniqueTo": "Calabim",
+    "replaces": "Champion",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Brujah",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Rage",
+    "uniqueTo": "Calabim",
+    "replaces": "Berserker",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "uniques": [
+      "[-55]% Strength <when defending>",
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Beastman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 25,
+    "strength": 3,
+    "uniqueTo": "Doviello",
+    "replaces": "Warrior"
+  },
+  {
+    "name": "Doviello Shaman",
+    "unitType": "Magic",
+    "movement": 1,
+    "cost": 90,
+    "strength": 3,
+    "requiredTech": "Knowledge of the Ether",
+    "uniqueTo": "Doviello",
+    "replaces": "Adept",
+    "promotions": [
+      "Channeling I"
+    ]
+  },
+  {
+    "name": "Sons Of Asena",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Doviello",
+    "replaces": "Axeman"
+  },
+  {
+    "name": "Javelin Thrower",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Archery",
+    "uniqueTo": "Doviello",
+    "replaces": "Archer"
+  },
+  {
+    "name": "Battlemaster",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Doviello",
+    "replaces": "Champion"
+  },
+  {
+    "name": "Circle Of Urd",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Rage",
+    "uniqueTo": "Doviello",
+    "replaces": "Berserker",
+    "uniques": [
+      "[-55]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Bison Rider",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Warhorses",
+    "uniqueTo": "Doviello",
+    "replaces": "Knight",
+    "uniques": [
+      "[-17]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Verdandi",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Mithril Working",
+    "uniqueTo": "Doviello",
+    "replaces": "Phalanx",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Devout",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniqueTo": "Elohim",
+    "replaces": "Assassin",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Dragon Slayer",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Grigori",
+    "replaces": "Champion",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Illians Javelin Thrower",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Archery",
+    "uniqueTo": "Illians",
+    "replaces": "Archer"
+  },
+  {
+    "name": "Dwarven Slinger",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 45,
+    "strength": 3,
+    "requiredTech": "Archery",
+    "uniqueTo": "Khazad",
+    "replaces": "Archer",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "[+67]% Strength <when defending>",
+      "Can only be built <in cities with a [Archery Range]>"
+    ]
+  },
+  {
+    "name": "Boar Rider",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Horseback Riding",
+    "uniqueTo": "Khazad",
+    "replaces": "Horseman",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
+  },
+  {
+    "name": "Trebuchet",
+    "unitType": "Siege",
+    "movement": 1,
+    "cost": 90,
+    "strength": 6,
+    "requiredTech": "Construction",
+    "uniqueTo": "Khazad",
+    "replaces": "Catapult",
+    "uniques": [
+      "[-33]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Myconid",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 240,
+    "strength": 14,
+    "requiredTech": "Animal Mastery",
+    "uniqueTo": "Khazad",
+    "replaces": "Beastmaster",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Hornguard",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Warhorses",
+    "uniqueTo": "Khazad",
+    "replaces": "Knight",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "[-33]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Kuriotates Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Centaur",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Horseback Riding",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Horseman"
+  },
+  {
+    "name": "Centaur Archer",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Stirrups",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Horse Archer"
+  },
+  {
+    "name": "Centaur Charger",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Horseback Riding",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Chariot",
+    "uniques": [
+      "[-40]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Centaur Lancer",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Warhorses",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Knight",
+    "uniques": [
+      "[-36]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Lanun Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Lanun",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Boarding Party",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Lanun",
+    "replaces": "Champion",
+    "uniques": [
+      "Can only be built <in cities with a [Harbor]>"
+    ]
+  },
+  {
+    "name": "War Tortoise",
+    "unitType": "Mounted",
+    "movement": 1,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Warhorses",
+    "uniqueTo": "Lanun",
+    "replaces": "Knight",
+    "uniques": [
+      "[+73]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Pirate",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "cost": 100,
+    "strength": 8,
+    "requiredTech": "Optics",
+    "uniqueTo": "Lanun",
+    "replaces": "Privateer",
+    "uniques": [
+      "Can only be built <with [Iron]>"
+    ]
+  },
+  {
+    "name": "Fyrdwell",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Stirrups",
+    "uniqueTo": "Ljosalfar",
+    "replaces": "Horse Archer",
+    "promotions": [
+      "Elf"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>",
+      "Can only be built <with [Deer]>"
+    ]
+  },
+  {
+    "name": "Mud Golem",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 75,
+    "uniqueTo": "Luchuirp",
+    "replaces": "Worker"
+  },
+  {
+    "name": "Wood Golem",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 6,
+    "requiredTech": "Construction",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Axeman"
+  },
+  {
+    "name": "Luchuirp Dwarven Slinger",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 45,
+    "strength": 3,
+    "requiredTech": "Archery",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Archer",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "[+67]% Strength <when defending>",
+      "Can only be built <in cities with a [Archery Range]>"
+    ]
+  },
+  {
+    "name": "Luchuirp Boar Rider",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Horseback Riding",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Horseman",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
+  },
+  {
+    "name": "Iron Golem",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 10,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Champion",
+    "uniques": [
+      "Can only be built <in cities with a [Forge]>",
+      "Can only be built <with [Iron]>"
+    ]
+  },
+  {
+    "name": "Gargoyle",
+    "unitType": "Archery",
+    "movement": 2,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Engineering",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Longbowman",
+    "uniques": [
+      "[+33]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Clockwork Golem",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 15,
+    "requiredTech": "Machinery",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Berserker",
+    "uniques": [
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Luchuirp Hornguard",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Warhorses",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Knight",
+    "promotions": [
+      "Dwarf"
+    ],
+    "uniques": [
+      "[-33]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Nullstone Golem",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 13,
+    "requiredTech": "Mithril Working",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Phalanx",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Malakim Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Malakim",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Camel Archer",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Stirrups",
+    "uniqueTo": "Malakim",
+    "replaces": "Horse Archer",
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
+  },
+  {
+    "name": "Pyre Zombie",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 60,
+    "strength": 3,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Sheaim",
+    "replaces": "Axeman"
+  },
+  {
+    "name": "Divided Soul",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Hunting",
+    "uniqueTo": "Sidar",
+    "replaces": "Hunter",
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Ghost",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniqueTo": "Sidar",
+    "replaces": "Assassin",
+    "uniques": [
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Svartalfar Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Svartalfar",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Nyxkin",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Stirrups",
+    "uniqueTo": "Svartalfar",
+    "replaces": "Horse Archer",
+    "promotions": [
+      "Dark Elf"
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
   }
 ]
