@@ -10,6 +10,9 @@
     "cityStrength": 2,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "The seat of government, symbol of national identity and center of administration."
     ]
   },
   {
@@ -25,18 +28,27 @@
       "Only available <for [non-[Calabim]] Civilizations>",
       "Only available <for [non-[Doviello]] Civilizations>",
       "Only available <for [non-[Hippus]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "An alchemical workshop where experiment and magical theory inform advanced scholarship."
     ]
   },
   {
     "name": "Aqueduct",
     "cost": 100,
-    "requiredTech": "Sanitation"
+    "requiredTech": "Sanitation",
+    "civilopediaText": [
+      "Channels and conduits bring clean water into a growing city."
+    ]
   },
   {
     "name": "Archery Range",
     "cost": 100,
     "requiredTech": "Archery",
-    "cityStrength": 5
+    "cityStrength": 5,
+    "civilopediaText": [
+      "A training ground where bowmen refine their aim."
+    ]
   },
   {
     "name": "Carnival",
@@ -45,22 +57,34 @@
     "happiness": 1,
     "percentStatBonus": {
       "culture": 20
-    }
+    },
+    "civilopediaText": [
+      "A gathering of entertainers, traders and visitors."
+    ]
   },
   {
     "name": "Command Post",
     "cost": 120,
-    "requiredTech": "Military Strategy"
+    "requiredTech": "Military Strategy",
+    "civilopediaText": [
+      "A headquarters that coordinates military training and operations."
+    ]
   },
   {
     "name": "Courthouse",
     "cost": 120,
-    "requiredTech": "Code of Laws"
+    "requiredTech": "Code of Laws",
+    "civilopediaText": [
+      "An institution for settling disputes and administering law."
+    ]
   },
   {
     "name": "Dungeon",
     "cost": 160,
-    "requiredTech": "Masonry"
+    "requiredTech": "Masonry",
+    "civilopediaText": [
+      "A fortified prison for enemies and criminals."
+    ]
   },
   {
     "name": "Elder Council",
@@ -69,6 +93,9 @@
     "science": 2,
     "uniques": [
       "Only available <for [non-[Calabim]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A gathering of experienced advisers who preserve civic knowledge."
     ]
   },
   {
@@ -77,13 +104,19 @@
     "requiredTech": "Smelting",
     "percentStatBonus": {
       "production": 25
-    }
+    },
+    "civilopediaText": [
+      "A workshop where metal is shaped into useful tools and weapons."
+    ]
   },
   {
     "name": "Gambling House",
     "cost": 200,
     "requiredTech": "Mathematics",
-    "gold": 3
+    "gold": 3,
+    "civilopediaText": [
+      "A house of wagers and risky entertainments."
+    ]
   },
   {
     "name": "Granary",
@@ -91,12 +124,18 @@
     "requiredTech": "Agriculture",
     "uniques": [
       "[20]% Food is carried over after population increases [in this city]"
+    ],
+    "civilopediaText": [
+      "Stored grain protects the city against lean harvests."
     ]
   },
   {
     "name": "Grove",
     "cost": 300,
-    "requiredTech": "Commune with Nature"
+    "requiredTech": "Commune with Nature",
+    "civilopediaText": [
+      "A protected natural sanctuary tied to woodland traditions."
+    ]
   },
   {
     "name": "Harbor",
@@ -104,27 +143,42 @@
     "requiredTech": "Fishing",
     "uniques": [
       "Must be next to [Coast]"
+    ],
+    "civilopediaText": [
+      "Docks and warehouses connect the city to maritime trade."
     ]
   },
   {
     "name": "Herbalist",
     "cost": 90,
-    "requiredTech": "Agriculture"
+    "requiredTech": "Agriculture",
+    "civilopediaText": [
+      "A practitioner of traditional remedies and medicinal plants."
+    ]
   },
   {
     "name": "Hunting Lodge",
     "cost": 100,
-    "requiredTech": "Hunting"
+    "requiredTech": "Hunting",
+    "civilopediaText": [
+      "A base for trackers and hunters operating in the surrounding wilderness."
+    ]
   },
   {
     "name": "Infirmary",
     "cost": 175,
-    "requiredTech": "Medicine"
+    "requiredTech": "Medicine",
+    "civilopediaText": [
+      "A center for the care of the sick and wounded."
+    ]
   },
   {
     "name": "Inn",
     "cost": 110,
-    "requiredTech": "Trade"
+    "requiredTech": "Trade",
+    "civilopediaText": [
+      "Lodgings where visitors and travelers can rest."
+    ]
   },
   {
     "name": "Library",
@@ -136,6 +190,9 @@
     "uniques": [
       "Only available <for [non-[Clan of Embers]] Civilizations>",
       "Only available <for [non-[Doviello]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A collection of written knowledge available to scholars."
     ]
   },
   {
@@ -144,6 +201,9 @@
     "requiredTech": "Sailing",
     "uniques": [
       "Must be next to [Coast]"
+    ],
+    "civilopediaText": [
+      "A beacon guiding ships toward safer coastal passage."
     ]
   },
   {
@@ -153,6 +213,9 @@
     "uniques": [
       "Only available <for [non-[Clan of Embers]] Civilizations>",
       "Only available <for [non-[Doviello]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "An institution where arcane apprentices receive formal instruction."
     ]
   },
   {
@@ -160,7 +223,10 @@
     "cost": 60,
     "requiredTech": "Festivals",
     "gold": 3,
-    "science": -1
+    "science": -1,
+    "civilopediaText": [
+      "A center of trade where merchants and residents exchange goods."
+    ]
   },
   {
     "name": "Moneychanger",
@@ -168,17 +234,26 @@
     "requiredTech": "Currency",
     "percentStatBonus": {
       "gold": 25
-    }
+    },
+    "civilopediaText": [
+      "A financial house that supports commerce across different currencies."
+    ]
   },
   {
     "name": "Monument",
     "cost": 60,
-    "requiredTech": "Ancient Chants"
+    "requiredTech": "Ancient Chants",
+    "civilopediaText": [
+      "A public landmark commemorating the nation's achievements."
+    ]
   },
   {
     "name": "Obsidian Gate",
     "cost": 300,
-    "requiredTech": "Pass Through the Ether"
+    "requiredTech": "Pass Through the Ether",
+    "civilopediaText": [
+      "A mysterious arcane gateway associated with the Amurites."
+    ]
   },
   {
     "name": "Pagan Temple",
@@ -189,18 +264,27 @@
     },
     "uniques": [
       "Only available <for [non-[Grigori]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A shrine preserving local rites and the oldest forms of worship."
     ]
   },
   {
     "name": "Palisade",
     "cost": 40,
-    "cityStrength": 2
+    "cityStrength": 2,
+    "civilopediaText": [
+      "A timber defensive barrier surrounding vulnerable ground."
+    ]
   },
   {
     "name": "Public Baths",
     "cost": 150,
     "requiredTech": "Sanitation",
-    "happiness": 3
+    "happiness": 3,
+    "civilopediaText": [
+      "A civic space devoted to bathing and public life."
+    ]
   },
   {
     "name": "Shipyard",
@@ -208,6 +292,9 @@
     "requiredTech": "Iron Working",
     "uniques": [
       "Must be next to [Coast]"
+    ],
+    "civilopediaText": [
+      "Workshops and slips for the construction of vessels."
     ]
   },
   {
@@ -217,6 +304,9 @@
     "uniques": [
       "Only available <for [non-[Ljosalfar]] Civilizations>",
       "Only available <for [non-[Svartalfar]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "An arsenal producing engines for attacking fortifications."
     ]
   },
   {
@@ -225,6 +315,9 @@
     "requiredTech": "Animal Husbandry",
     "uniques": [
       "[20]% Food is carried over after population increases [in this city]"
+    ],
+    "civilopediaText": [
+      "A facility for preserving food for future use."
     ]
   },
   {
@@ -234,12 +327,18 @@
     "uniques": [
       "Only available <for [non-[Clan of Embers]] Civilizations>",
       "Only available <for [non-[Kuriotates]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Buildings and handlers supporting the breeding and care of mounts."
     ]
   },
   {
     "name": "Tavern",
     "cost": 150,
-    "requiredTech": "Mercantilism"
+    "requiredTech": "Mercantilism",
+    "civilopediaText": [
+      "A meeting place for drink, news and travelers."
+    ]
   },
   {
     "name": "Tax Office",
@@ -248,12 +347,18 @@
     "happiness": -1,
     "percentStatBonus": {
       "gold": 25
-    }
+    },
+    "civilopediaText": [
+      "An office that collects and administers civic revenue."
+    ]
   },
   {
     "name": "Theatre",
     "cost": 150,
-    "requiredTech": "Drama"
+    "requiredTech": "Drama",
+    "civilopediaText": [
+      "A stage for dramatic performances and cultural gatherings."
+    ]
   },
   {
     "name": "Training Yard",
@@ -261,13 +366,19 @@
     "requiredTech": "Bronze Working",
     "uniques": [
       "Only available <for [non-[Sheaim]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A drill ground where soldiers practice weapons and formations."
     ]
   },
   {
     "name": "Walls",
     "cost": 120,
     "requiredTech": "Masonry",
-    "cityStrength": 5
+    "cityStrength": 5,
+    "civilopediaText": [
+      "Stone fortifications that protect the city against assault."
+    ]
   },
   {
     "name": "Museum",
@@ -275,7 +386,10 @@
     "requiredTech": "Education",
     "percentStatBonus": {
       "culture": 20
-    }
+    },
+    "civilopediaText": [
+      "A repository of cultural artifacts and historical treasures."
+    ]
   },
   {
     "name": "Cave of Ancestors",
@@ -285,41 +399,59 @@
     "replaces": "Pagan Temple",
     "percentStatBonus": {
       "culture": 10
-    }
+    },
+    "civilopediaText": [
+      "An Amurite site where the wisdom of earlier generations informs magical study."
+    ]
   },
   {
     "name": "Warrens",
     "cost": 180,
     "requiredTech": "Masonry",
-    "uniqueTo": "Clan of Embers"
+    "uniqueTo": "Clan of Embers",
+    "civilopediaText": [
+      "The Clan of Embers uses sprawling warrens to support its growing population and armies."
+    ]
   },
   {
     "name": "Arena",
     "cost": 100,
     "requiredTech": "Bronze Working",
     "uniqueTo": "Balseraphs",
-    "replaces": "Training Yard"
+    "replaces": "Training Yard",
+    "civilopediaText": [
+      "The Balseraphs turn public combat and entertainment into a spectacle of power."
+    ]
   },
   {
     "name": "Reliquary",
     "cost": 45,
     "requiredTech": "Ancient Chants",
     "uniqueTo": "Elohim",
-    "replaces": "Monument"
+    "replaces": "Monument",
+    "civilopediaText": [
+      "A sacred storehouse preserving objects of deep religious significance."
+    ]
   },
   {
     "name": "Tavern Grigori",
     "cost": 150,
     "requiredTech": "Mercantilism",
     "uniqueTo": "Grigori",
-    "replaces": "Tavern"
+    "replaces": "Tavern",
+    "civilopediaText": [
+      "A Grigori gathering place where travelers and independent minds share stories."
+    ]
   },
   {
     "name": "Forum",
     "cost": 200,
     "requiredTech": "Code of Laws",
     "uniqueTo": "Grigori",
-    "replaces": "Courthouse"
+    "replaces": "Courthouse",
+    "civilopediaText": [
+      "A public space for debate and the affairs of citizens."
+    ]
   },
   {
     "name": "Grigori Museum",
@@ -329,7 +461,10 @@
     "replaces": "Museum",
     "percentStatBonus": {
       "culture": 20
-    }
+    },
+    "civilopediaText": [
+      "A collection celebrating mortal accomplishment and history."
+    ]
   },
   {
     "name": "Temple Of The Hand",
@@ -339,7 +474,10 @@
     "replaces": "Pagan Temple",
     "percentStatBonus": {
       "culture": 10
-    }
+    },
+    "civilopediaText": [
+      "An Illian shrine celebrating winter and the legacy of Mulcarn."
+    ]
   },
   {
     "name": "Dwarven Smithy",
@@ -349,21 +487,30 @@
     "replaces": "Forge",
     "percentStatBonus": {
       "production": 20
-    }
+    },
+    "civilopediaText": [
+      "Khazad metalworkers draw upon an enduring tradition of exceptional craft."
+    ]
   },
   {
     "name": "Harbor Lanun",
     "cost": 90,
     "requiredTech": "Fishing",
     "uniqueTo": "Lanun",
-    "replaces": "Harbor"
+    "replaces": "Harbor",
+    "civilopediaText": [
+      "Lanun coastal infrastructure sustains merchants, sailors and privateers."
+    ]
   },
   {
     "name": "Sculptors Studio",
     "cost": 90,
     "requiredTech": "Construction",
     "uniqueTo": "Luchuirp",
-    "replaces": "Training Yard"
+    "replaces": "Training Yard",
+    "civilopediaText": [
+      "Luchuirp artisans transform design and craftsmanship into animated constructions."
+    ]
   },
   {
     "name": "Desert Shrine",
@@ -373,7 +520,10 @@
     "replaces": "Pagan Temple",
     "percentStatBonus": {
       "culture": 10
-    }
+    },
+    "civilopediaText": [
+      "A Malakim holy place grounded in the spiritual life of the desert."
+    ]
   },
   {
     "name": "Amurites Palace",
@@ -387,6 +537,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Amurites royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -401,6 +554,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Balseraphs royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -415,6 +571,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Bannor royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -429,6 +588,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Calabim royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -443,6 +605,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Clan of Embers royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -457,6 +622,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Doviello royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -471,6 +639,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Elohim royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -485,6 +656,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Grigori royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -499,6 +673,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Hippus royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -513,6 +690,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Illians royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -527,6 +707,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Khazad royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -541,6 +724,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Kuriotates royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -555,6 +741,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Lanun royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -569,6 +758,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Ljosalfar royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -583,6 +775,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Luchuirp royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -597,6 +792,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Malakim royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -611,6 +809,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Sheaim royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -625,6 +826,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Sidar royal seat, expressing the traditions and character of its civilization."
     ]
   },
   {
@@ -639,6 +843,9 @@
     "happiness": 1,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      "Svartalfar royal seat, expressing the traditions and character of its civilization."
     ]
   }
 ]
