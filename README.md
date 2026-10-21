@@ -10,9 +10,9 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 **All 19 leader portraits have now been imported from the user's supplied artwork archive** as 256×256 PNGs in `Images/LeaderIcons/`, matching the exact Unciv leader names. See [portrait mappings, source and gameplay QA](docs/original-leader-portraits.md). **Portraits did not appear in the first Android test because the mod lacked packed image atlases; this is now addressed with `game.atlas`/`game.png`. **Verified in Unciv on Android by user (October 21, 2026): portraits display correctly after atlas fix.****
 
-## Civilization emblems
+## Civilization emblems — original transparent FfH2 flags
 
-All 19 playable civilizations now have their user-supplied, full-color faction emblems in `Images.Emblems/NationPortraits/`, with a separately packed `emblems.atlas`/`emblems.png` loaded via `Atlases.json` alongside the existing leader portraits. [Source/format and testing](docs/civilization-emblems.md). The circular-border cleanup is committed; The user confirmed the updated circular emblems look good in Unciv on October 21, 2026.
+All 19 playable civilizations now use **the original transparent faction symbols** from the `art/interface/teamcolor/*flag.dds` files in the user's extracted `pak0.fpk` (`assets.zip`). These are native `NationIcons`: Unciv draws its standard faction-colored circular background and tints the symbols, without any second disc, square badge or border. The dedicated `emblems.png`/`emblems.atlas` is included in `Atlases.json`, preserving the previously gameplay-verified leader portraits. [Original DDS provenance, exceptions and testing](docs/civilization-emblems.md). **Android gameplay test of this replacement version pending.** The previous cleaned circular-button emblems were gameplay-verified before the original-flag replacement.
 
 ## First early-game slice
 
