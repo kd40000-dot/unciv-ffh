@@ -23,7 +23,7 @@ Ancient-era source starting-unit classes/counts now use native one-time nation t
 
 Lanun starts with source-only special `TECH_SEAFARING`, which remains unavailable in our regular research tree, so the source starting bonus is deferred rather than replaced with Fishing.
 
-Faction palace variants, unique spells, alignment, religion, civics, leader personality and several unique-unit effects need future work. Most EMM leader traits are not yet executable equivalents.
+The 19 normal faction palaces now have source-derived production, happiness and a documented approximation of EMM commerce. Arcane and Spiritual traits are still only partly functional; faction mana grants, religions, alignment and scripted civilization mechanics remain deferred.
 
 ## Checks
 CI verifies source data, source-derived unit stats and costs, technology references, nation names, starting techs, race grants, unique replacements and Unciv mod-ci output. Android playtesting is still outstanding.
@@ -43,3 +43,7 @@ Ancient-era starting units now use the source EMM classes and counts, including 
 ## Ancient-era starting rosters
 
 All 19 normal civilizations now have source-defined starting units through Unciv's one-time game-initialization nation triggers, including class-based unique replacements. See [starting-unit conversion and limits](starting-units.md). Android gameplay validation is pending.
+
+## Native trait and palace audit (October 21, 2026)
+
+Native Unciv effects now cover Financial (+25% Gold), Creative (+10% Culture in addition to +2 flat Culture), Ingenuity (+50 starting Gold), and additional Aggressive Combat I categories. Arcane and Spiritual grant Mobility I to newly trained Magic/Disciple units; source Potency and Favored effects remain deferred. All 19 normal palace building variants have source-defined cost 160, +1 Production, +1 Happiness, and an explicitly approximate 4 Science + 4 Gold conversion of the source's 8 flexible commerce. Full details: [leader and palace fidelity ledger](leader-palace-fidelity.md). Android gameplay remains to be tested.
