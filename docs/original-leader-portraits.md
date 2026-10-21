@@ -1,6 +1,6 @@
 # Original FfH2 leader portraits — source mapping and import preparation
 
-**Status: All 19 portraits imported from the user's supplied image archive into `Images/LeaderIcons/` (October 21, 2026). Filename and image-format validation complete; **Android gameplay verification pending**.**
+**Status: All 19 portraits imported and the missing Unciv runtime atlas now provided (`game.png`, `game.atlas`, `Atlases.json`). Android retest pending.**
 
 ## Verified Unciv asset format
 
@@ -47,3 +47,11 @@ Kael encouraged modding FfH, but some original FfH2 2D art was contributed by or
 5. Confirm the game's normal effects (Khazad Vaults, Lanun Pirate Cove, diplomacy strings, etc.) are unchanged.
 
 **Next dependency:** Android gameplay verification of the 19 installed images in first contact, diplomacy, Civilopedia and nation selection. If any portrait mismatches the intended leader or differs from the desired original DDS art, it can be replaced individually.
+
+## Android portrait-loading fix — October 21, 2026
+
+The user reported that portraits did not appear in nation selection, first contact or diplomacy after the first image-only commit. We traced this to **absent packed texture atlas files**, not the leader names. On Android, Unciv reads the mod's packed texture atlas, not the individual source PNGs; a desktop Unciv installation can generate the atlas, but Android cannot.
+
+This repository now includes a `game.atlas` defining **19** `LeaderIcons/<leaderName>` regions, the accompanying `game.png` texture page and `Atlases.json` containing `["game"]`. A 1024×1024 RGBA page contains 19 160×160 sprites with padding; source images stay at 256×256 in `Images/LeaderIcons/`. The image identifiers match `Nation.leaderName` exactly and are loaded automatically by `ImageGetter.loadModAtlases()`.
+
+To rebuild on a computer: `python3 -m pip install Pillow && python3 tools/pack_leader_atlas.py`. CI runs `python3 tools/verify_leader_atlas.py` to ensure the texture page is valid and all expected leader names occur in the atlas. **In-game success must still be confirmed after updating the mod.**
