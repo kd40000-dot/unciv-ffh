@@ -18,109 +18,341 @@
     ]
   },
   {
-    "name": "Heal Instantly",
-    "uniques": [
-      "[This Unit] heals [50] HP",
-      "Doing so will consume this opportunity to choose a Promotion"
-    ],
+    "name": "Combat i",
     "unitTypes": [
-      "Sword",
+      "Magic",
+      "Archery",
       "Scout",
-      "Archery"
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
     ],
-    "innerColor": [
-      195,
-      53,
-      43
-    ],
-    "outerColor": [
-      253,
-      236,
-      234
-    ]
-  },
-  {
-    "name": "Shock I",
     "uniques": [
-      "[+15]% Strength <when fighting in [Open terrain] tiles>"
-    ],
-    "unitTypes": [
-      "Sword"
+      "[+20]% Strength"
     ]
   },
   {
-    "name": "Shock II",
+    "name": "Combat ii",
+    "unitTypes": [
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
+    ],
     "prerequisites": [
-      "Shock I"
+      "Combat i"
     ],
     "uniques": [
-      "[+15]% Strength <when fighting in [Open terrain] tiles>"
-    ],
-    "unitTypes": [
-      "Sword"
+      "[+20]% Strength"
     ]
   },
   {
-    "name": "Drill I",
-    "uniques": [
-      "[+15]% Strength <when fighting in [Rough terrain] tiles>"
-    ],
+    "name": "Combat iii",
     "unitTypes": [
-      "Sword"
-    ]
-  },
-  {
-    "name": "Drill II",
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
+    ],
     "prerequisites": [
-      "Drill I"
+      "Combat ii"
     ],
     "uniques": [
-      "[+15]% Strength <when fighting in [Rough terrain] tiles>"
-    ],
+      "[+20]% Strength"
+    ]
+  },
+  {
+    "name": "Combat iv",
     "unitTypes": [
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
+    ],
+    "prerequisites": [
+      "Combat iii"
+    ],
+    "uniques": [
+      "[+20]% Strength"
+    ]
+  },
+  {
+    "name": "Combat v",
+    "unitTypes": [
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
+    ],
+    "prerequisites": [
+      "Combat iv"
+    ],
+    "uniques": [
+      "[+20]% Strength"
+    ]
+  },
+  {
+    "name": "City Raider I",
+    "unitTypes": [
+      "Scout",
       "Sword"
-    ]
-  },
-  {
-    "name": "Accuracy I",
-    "uniques": [
-      "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
     ],
-    "unitTypes": [
-      "Archery"
+    "uniques": [
+      "Only available <after discovering [Warfare]>",
+      "[+30]% Strength <vs cities>"
     ]
   },
   {
-    "name": "Accuracy II",
+    "name": "City Raider II",
+    "unitTypes": [
+      "Scout",
+      "Sword"
+    ],
     "prerequisites": [
-      "Accuracy I"
+      "City Raider I"
     ],
     "uniques": [
-      "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
-    ],
-    "unitTypes": [
-      "Archery"
+      "[+30]% Strength <vs cities>"
     ]
   },
   {
-    "name": "Barrage I",
-    "uniques": [
-      "[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
-    ],
+    "name": "City Raider III",
     "unitTypes": [
-      "Archery"
-    ]
-  },
-  {
-    "name": "Barrage II",
+      "Scout",
+      "Sword"
+    ],
     "prerequisites": [
-      "Barrage I"
+      "City Raider II"
     ],
     "uniques": [
-      "[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+      "[+30]% Strength <vs cities>",
+      "[+20]% Strength <vs [Sword] units>"
+    ]
+  },
+  {
+    "name": "City Garrison I",
+    "unitTypes": [
+      "Archery",
+      "Sword"
     ],
+    "uniques": [
+      "Only available <after discovering [Warfare]>",
+      "[+30]% Strength <when fighting in [City center] tiles> <when defending>"
+    ]
+  },
+  {
+    "name": "City Garrison II",
     "unitTypes": [
       "Archery"
+    ],
+    "prerequisites": [
+      "City Garrison I"
+    ],
+    "uniques": [
+      "[+30]% Strength <when fighting in [City center] tiles> <when defending>"
+    ]
+  },
+  {
+    "name": "City Garrison III",
+    "unitTypes": [
+      "Archery"
+    ],
+    "prerequisites": [
+      "City Garrison II"
+    ],
+    "uniques": [
+      "[+30]% Strength <when fighting in [City center] tiles> <when defending>",
+      "[+20]% Strength <vs [Sword] units>"
+    ]
+  },
+  {
+    "name": "Shock",
+    "unitTypes": [
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted"
+    ],
+    "prerequisites": [
+      "Combat i"
+    ],
+    "uniques": [
+      "[+40]% Strength <vs [Sword] units>"
+    ]
+  },
+  {
+    "name": "Cover",
+    "unitTypes": [
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted"
+    ],
+    "prerequisites": [
+      "Combat i"
+    ],
+    "uniques": [
+      "[+40]% Strength <vs [Archery] units>"
+    ]
+  },
+  {
+    "name": "Formation",
+    "unitTypes": [
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted"
+    ],
+    "prerequisites": [
+      "Combat ii"
+    ],
+    "uniques": [
+      "[+40]% Strength <vs [Mounted] units>"
+    ]
+  },
+  {
+    "name": "Woodsman I",
+    "unitTypes": [
+      "Scout",
+      "Sword"
+    ],
+    "uniques": [
+      "[+30]% Strength <when fighting in [Jungle] tiles> <when attacking>",
+      "[+30]% Strength <when fighting in [Forest] tiles> <when attacking>"
+    ]
+  },
+  {
+    "name": "Woodsman II",
+    "unitTypes": [
+      "Scout"
+    ],
+    "prerequisites": [
+      "Woodsman I"
+    ],
+    "uniques": [
+      "Only available <after discovering [Hidden Paths]>",
+      "[+30]% Strength <when fighting in [Jungle] tiles> <when attacking>",
+      "[+30]% Strength <when fighting in [Forest] tiles> <when attacking>"
+    ]
+  },
+  {
+    "name": "Mobility I",
+    "unitTypes": [
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Siege"
+    ],
+    "uniques": [
+      "Only available <after discovering [Horseback Riding]>",
+      "[+1] Movement"
+    ]
+  },
+  {
+    "name": "Mobility II",
+    "unitTypes": [
+      "Mounted",
+      "Scout"
+    ],
+    "prerequisites": [
+      "Mobility I"
+    ],
+    "uniques": [
+      "[+1] Movement"
+    ]
+  },
+  {
+    "name": "Sentry",
+    "unitTypes": [
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Melee Water",
+      "Siege"
+    ],
+    "prerequisites": [
+      "Combat iii"
+    ],
+    "uniques": [
+      "[+1] Sight"
+    ]
+  },
+  {
+    "name": "Sentry II",
+    "unitTypes": [
+      "Archery",
+      "Scout"
+    ],
+    "prerequisites": [
+      "Sentry"
+    ],
+    "uniques": [
+      "[+1] Sight"
+    ]
+  },
+  {
+    "name": "March",
+    "unitTypes": [
+      "Scout",
+      "Sword"
+    ],
+    "prerequisites": [
+      "Combat iii"
+    ],
+    "uniques": [
+      "Unit will heal every turn, even if it performs an action"
+    ]
+  },
+  {
+    "name": "Orc",
+    "unitTypes": [],
+    "uniques": [
+      "[+10]% Strength <when fighting in [Jungle] tiles> <when attacking>"
+    ]
+  },
+  {
+    "name": "Elf",
+    "unitTypes": [],
+    "uniques": [
+      "[+10]% Strength <when fighting in [Forest] tiles> <when attacking>",
+      "Double movement in [Forest]"
+    ]
+  },
+  {
+    "name": "Channeling I",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Channeling II",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Channeling III",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
     ]
   }
 ]

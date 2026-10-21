@@ -8,7 +8,11 @@
     "requiredTech": "Knowledge of the Ether",
     "uniques": [
       "Can only be built <in cities with a [Mage Guild]>"
-    ]
+    ],
+    "promotions": [
+      "Channeling I"
+    ],
+    "upgradesTo": "Mage"
   },
   {
     "name": "Archer",
@@ -19,8 +23,11 @@
     "requiredTech": "Archery",
     "uniques": [
       "[+67]% Strength <when defending>",
-      "Can only be built <in cities with a [Archery Range]>"
-    ]
+      "Can only be built <in cities with a [Archery Range]>",
+      "Can upgrade to [Crossbowman]",
+      "Can upgrade to [Horse Archer]"
+    ],
+    "upgradesTo": "Longbowman"
   },
   {
     "name": "Assassin",
@@ -32,7 +39,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Marksman"
   },
   {
     "name": "Axeman",
@@ -42,8 +50,10 @@
     "strength": 4,
     "requiredTech": "Bronze Working",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Beastmaster",
@@ -76,7 +86,10 @@
     "movement": 5,
     "cost": 100,
     "strength": 4,
-    "requiredTech": "Optics"
+    "requiredTech": "Optics",
+    "promotions": [
+      "Sentry"
+    ]
   },
   {
     "name": "Catapult",
@@ -98,8 +111,13 @@
     "strength": 6,
     "requiredTech": "Iron Working",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Phalanx]",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ],
+    "upgradesTo": "Berserker"
   },
   {
     "name": "Chariot",
@@ -110,8 +128,10 @@
     "requiredTech": "Horseback Riding",
     "uniques": [
       "[-40]% Strength <when defending>",
-      "Only available <for [non-[Ljosalfar]] Civilizations>"
-    ]
+      "Only available <for [non-[Ljosalfar]] Civilizations>",
+      "Can only be built <with [Horses]>"
+    ],
+    "upgradesTo": "Knight"
   },
   {
     "name": "Crossbowman",
@@ -134,7 +154,11 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Can only be built <with [Iron]>"
+    ],
+    "promotions": [
+      "March"
     ]
   },
   {
@@ -143,7 +167,10 @@
     "movement": 4,
     "cost": 150,
     "strength": 10,
-    "requiredTech": "Optics"
+    "requiredTech": "Optics",
+    "uniques": [
+      "Can only be built <with [Iron]>"
+    ]
   },
   {
     "name": "Galleon",
@@ -151,7 +178,11 @@
     "movement": 4,
     "cost": 150,
     "strength": 6,
-    "requiredTech": "Astronomy"
+    "requiredTech": "Astronomy",
+    "upgradesTo": "Queen Of The Line",
+    "uniques": [
+      "Can only be built <with [Iron]>"
+    ]
   },
   {
     "name": "Galley",
@@ -159,7 +190,15 @@
     "movement": 2,
     "cost": 50,
     "strength": 4,
-    "requiredTech": "Sailing"
+    "requiredTech": "Sailing",
+    "upgradesTo": "Caravel",
+    "promotions": [
+      "Sentry"
+    ],
+    "uniques": [
+      "Can upgrade to [Galleon]",
+      "Can upgrade to [Queen Of The Line]"
+    ]
   },
   {
     "name": "Horse Archer",
@@ -170,8 +209,10 @@
     "requiredTech": "Stirrups",
     "uniques": [
       "Can only be built <in cities with a [Stable]>",
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
-    ]
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Can only be built <with [Horses]>"
+    ],
+    "upgradesTo": "Knight"
   },
   {
     "name": "Horseman",
@@ -181,8 +222,11 @@
     "strength": 4,
     "requiredTech": "Horseback Riding",
     "uniques": [
-      "Can only be built <in cities with a [Stable]>"
-    ]
+      "Can only be built <in cities with a [Stable]>",
+      "Can upgrade to [Chariot]",
+      "Can only be built <with [Horses]>"
+    ],
+    "upgradesTo": "Horse Archer"
   },
   {
     "name": "Hunter",
@@ -192,8 +236,10 @@
     "strength": 4,
     "requiredTech": "Hunting",
     "uniques": [
-      "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "Can upgrade to [Assassin]"
+    ],
+    "upgradesTo": "Ranger"
   },
   {
     "name": "Knight",
@@ -205,7 +251,8 @@
     "uniques": [
       "[-36]% Strength <when defending>",
       "Limited to [4] per Civilization",
-      "Only available <for [non-[Clan of Embers]] Civilizations>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>",
+      "Can only be built <with [Horses]>"
     ]
   },
   {
@@ -217,8 +264,10 @@
     "requiredTech": "Bowyers",
     "uniques": [
       "[+40]% Strength <when defending>",
-      "Can only be built <in cities with a [Archery Range]>"
-    ]
+      "Can only be built <in cities with a [Archery Range]>",
+      "Can upgrade to [Marksman]"
+    ],
+    "upgradesTo": "Crossbowman"
   },
   {
     "name": "Marksman",
@@ -240,7 +289,8 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Can only be built <with [Iron]>"
     ]
   },
   {
@@ -261,7 +311,10 @@
     "movement": 4,
     "cost": 100,
     "strength": 8,
-    "requiredTech": "Optics"
+    "requiredTech": "Optics",
+    "uniques": [
+      "Can only be built <with [Iron]>"
+    ]
   },
   {
     "name": "Queen Of The Line",
@@ -269,7 +322,10 @@
     "movement": 3,
     "cost": 225,
     "strength": 16,
-    "requiredTech": "Astronomy"
+    "requiredTech": "Astronomy",
+    "uniques": [
+      "Can only be built <with [Iron]>"
+    ]
   },
   {
     "name": "Ranger",
@@ -280,14 +336,19 @@
     "requiredTech": "Feral Bond",
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Beastmaster"
   },
   {
     "name": "Scout",
     "unitType": "Scout",
     "movement": 2,
     "cost": 25,
-    "strength": 2
+    "strength": 2,
+    "upgradesTo": "Hunter",
+    "uniques": [
+      "Can upgrade to [Horseman]"
+    ]
   },
   {
     "name": "Settler",
@@ -306,7 +367,11 @@
     "movement": 3,
     "cost": 75,
     "strength": 7,
-    "requiredTech": "Sailing"
+    "requiredTech": "Sailing",
+    "upgradesTo": "Privateer",
+    "uniques": [
+      "Can upgrade to [Frigate]"
+    ]
   },
   {
     "name": "War Elephant",
@@ -321,7 +386,11 @@
     "unitType": "Sword",
     "movement": 1,
     "cost": 25,
-    "strength": 3
+    "strength": 3,
+    "upgradesTo": "Archer",
+    "uniques": [
+      "Can upgrade to [Axeman]"
+    ]
   },
   {
     "name": "Workboat",
@@ -352,8 +421,10 @@
     "uniqueTo": "Amurites",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Firebow",
@@ -365,7 +436,12 @@
     "uniqueTo": "Amurites",
     "replaces": "Longbowman",
     "uniques": [
-      "Can only be built <in cities with a [Archery Range]>"
+      "Can only be built <in cities with a [Archery Range]>",
+      "Can upgrade to [Marksman]"
+    ],
+    "upgradesTo": "Crossbowman",
+    "promotions": [
+      "Channeling II"
     ]
   },
   {
@@ -380,7 +456,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Marksman"
   },
   {
     "name": "Goblin",
@@ -389,7 +466,11 @@
     "cost": 15,
     "strength": 2,
     "uniqueTo": "Clan of Embers",
-    "replaces": "Scout"
+    "replaces": "Scout",
+    "upgradesTo": "Horseman",
+    "promotions": [
+      "Orc"
+    ]
   },
   {
     "name": "Shaman",
@@ -399,7 +480,11 @@
     "strength": 3,
     "requiredTech": "Knowledge of the Ether",
     "uniqueTo": "Clan of Embers",
-    "replaces": "Adept"
+    "replaces": "Adept",
+    "promotions": [
+      "Channeling I"
+    ],
+    "upgradesTo": "Mage"
   },
   {
     "name": "Wolf Rider",
@@ -409,7 +494,11 @@
     "strength": 4,
     "requiredTech": "Horseback Riding",
     "uniqueTo": "Clan of Embers",
-    "replaces": "Horseman"
+    "replaces": "Horseman",
+    "upgradesTo": "Chariot",
+    "promotions": [
+      "Orc"
+    ]
   },
   {
     "name": "Lizardman",
@@ -421,8 +510,10 @@
     "uniqueTo": "Clan of Embers",
     "replaces": "Hunter",
     "uniques": [
-      "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "Can upgrade to [Assassin]"
+    ],
+    "upgradesTo": "Ranger"
   },
   {
     "name": "Ogre",
@@ -434,7 +525,12 @@
     "uniqueTo": "Clan of Embers",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Phalanx]"
+    ],
+    "upgradesTo": "Berserker",
+    "promotions": [
+      "Orc"
     ]
   },
   {
@@ -448,7 +544,8 @@
     "replaces": "Ranger",
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Beastmaster"
   },
   {
     "name": "Lizardman Assassin",
@@ -462,7 +559,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Marksman"
   },
   {
     "name": "Lizardman Beastmaster",
@@ -489,6 +587,9 @@
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization"
+    ],
+    "promotions": [
+      "Orc"
     ]
   },
   {
@@ -501,8 +602,10 @@
     "uniqueTo": "Ljosalfar",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Flurry",
@@ -517,5 +620,49 @@
       "Can only be built <in cities with a [Archery Range]>",
       "Limited to [4] per Civilization"
     ]
+  },
+  {
+    "name": "Mage",
+    "unitType": "Magic",
+    "strength": 4,
+    "movement": 1,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "upgradesTo": "Archmage"
+  },
+  {
+    "name": "Archmage",
+    "unitType": "Magic",
+    "strength": 5,
+    "movement": 1,
+    "cost": 240,
+    "requiredTech": "Strength of Will",
+    "promotions": [
+      "Channeling I",
+      "Channeling II",
+      "Channeling III"
+    ],
+    "uniques": [
+      "Can only be built <with [Reagents]>"
+    ]
+  },
+  {
+    "name": "Wizard",
+    "unitType": "Magic",
+    "strength": 4,
+    "movement": 1,
+    "cost": 120,
+    "requiredTech": "Sorcery",
+    "uniqueTo": "Amurites",
+    "replaces": "Mage",
+    "promotions": [
+      "Channeling I",
+      "Channeling II"
+    ],
+    "upgradesTo": "Archmage"
   }
 ]

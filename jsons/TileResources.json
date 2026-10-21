@@ -129,7 +129,8 @@
       "sparse": 1,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "revealedBy": "Animal Husbandry"
   },
   {
     "name": "Iron",
@@ -158,7 +159,8 @@
       "sparse": 1,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "revealedBy": "Smelting"
   },
   {
     "name": "Cotton",
@@ -234,5 +236,82 @@
       "gold": 1
     },
     "uniques": []
+  },
+  {
+    "name": "Copper",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Hill"
+    ],
+    "production": 1,
+    "improvement": "Mine",
+    "revealedBy": "Mining",
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 4,
+      "abundant": 6
+    },
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 2,
+      "abundant": 2
+    },
+    "uniques": [
+      "Generated on every [30] tiles <in [Hill] tiles>"
+    ]
+  },
+  {
+    "name": "Mithril",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Hill"
+    ],
+    "production": 2,
+    "improvement": "Mine",
+    "revealedBy": "Mithril Working",
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 3,
+      "abundant": 4
+    },
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "uniques": [
+      "Generated on every [65] tiles <in [Hill] tiles>"
+    ]
+  },
+  {
+    "name": "Reagents",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert"
+    ],
+    "gold": 1,
+    "improvement": "Plantation",
+    "majorDepositAmount": {
+      "sparse": 1,
+      "default": 2,
+      "abundant": 3
+    },
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "uniques": [
+      "Generated on every [50] tiles <in [Grassland] tiles>"
+    ]
   }
 ]

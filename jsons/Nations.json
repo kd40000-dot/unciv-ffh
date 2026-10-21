@@ -145,6 +145,9 @@
       "Wallara",
       "Deep Dark",
       "Shahav"
+    ],
+    "uniques": [
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Orc] promotion"
     ]
   },
   {
@@ -195,6 +198,9 @@
       "Cerrolan",
       "Pauleun",
       "Organum"
+    ],
+    "uniques": [
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Elf] promotion"
     ]
   },
   {
