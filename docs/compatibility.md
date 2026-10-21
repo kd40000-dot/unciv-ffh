@@ -6,9 +6,9 @@ Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 | --- | --- | --- |
 | Four nations, leaders, cities | Implemented, untested | Names and cities sourced from EMM XML |
 | Complete researchable technology tree | Implemented, engine-validated | 82 EMM technologies, source costs and rows/columns; 11 OR prerequisites approximated; 2 column-era exceptions, 2 special nonresearchable techs inventoried |
-| Basic economic and combat loop | Approximated, untested | 12 units; 12 buildings; provisional stats |
-| Resources, improvements and terrain | Approximated, untested | Unciv terrain/map compatibility scaffold |
-| Hero units and world spells | Not implemented | Later milestone |
+| Source-derived units and buildings | Implemented, untested | 47 buildable unit entries and 40 buildings from EMM source; no invented faction units; tech/cost/combat/movement traced to source |
+| Resources, improvements and terrain | Approximated | Initial Unciv terrain scaffold; source-specific bonuses and mana not yet modeled |
+| Hero units and world spells | Deferred | 356 total unit records inventoried; nonbuildable/hero entries not ported into gameplay yet |
 | Mana nodes, spells, caster progression | Not implemented | Adept has provisional ranged combat only |
 | Religions and alignment | Not implemented | Later milestone |
 | Armageddon Counter | Not implemented | Engine feasibility unknown |

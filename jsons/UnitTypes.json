@@ -14,5 +14,25 @@
   {
     "name": "Scout",
     "movementType": "Land"
+  },
+  {
+    "name": "Mounted",
+    "movementType": "Land"
+  },
+  {
+    "name": "Melee Water",
+    "movementType": "Water"
+  },
+  {
+    "name": "Civilian Water",
+    "movementType": "Water"
+  },
+  {
+    "name": "Magic",
+    "movementType": "Land"
+  },
+  {
+    "name": "Siege",
+    "movementType": "Land"
   }
 ]

@@ -2,97 +2,264 @@
   {
     "name": "Palace",
     "isNationalWonder": true,
+    "cost": 0,
     "production": 3,
     "science": 3,
     "gold": 3,
     "culture": 1,
     "cityStrength": 2,
-    "cost": 0,
     "uniques": [
       "Indicates the capital city"
     ]
   },
   {
+    "name": "Alchemy Lab",
+    "cost": 250,
+    "requiredTech": "Sorcery",
+    "science": 4,
+    "uniques": [
+      "[+25]% Science [in this city]"
+    ]
+  },
+  {
+    "name": "Aqueduct",
+    "cost": 100,
+    "requiredTech": "Sanitation"
+  },
+  {
+    "name": "Archery Range",
+    "cost": 100,
+    "requiredTech": "Archery",
+    "cityStrength": 5
+  },
+  {
+    "name": "Carnival",
+    "cost": 120,
+    "requiredTech": "Festivals",
+    "happiness": 1,
+    "uniques": [
+      "[+20]% Culture [in this city]"
+    ]
+  },
+  {
+    "name": "Command Post",
+    "cost": 120,
+    "requiredTech": "Military Strategy"
+  },
+  {
+    "name": "Courthouse",
+    "cost": 120,
+    "requiredTech": "Code of Laws"
+  },
+  {
+    "name": "Dungeon",
+    "cost": 160,
+    "requiredTech": "Masonry"
+  },
+  {
     "name": "Elder Council",
-    "cost": 65,
-    "science": 2,
-    "maintenance": 1,
-    "requiredTech": "Ancient Chants"
+    "cost": 60,
+    "requiredTech": "Mysticism",
+    "science": 2
+  },
+  {
+    "name": "Forge",
+    "cost": 250,
+    "requiredTech": "Smelting",
+    "uniques": [
+      "[+25]% Production [in this city]"
+    ]
+  },
+  {
+    "name": "Gambling House",
+    "cost": 200,
+    "requiredTech": "Mathematics",
+    "gold": 3
   },
   {
     "name": "Granary",
-    "cost": 65,
-    "food": 2,
-    "maintenance": 1,
+    "cost": 100,
+    "requiredTech": "Agriculture",
+    "uniques": [
+      "[20]% Food is carried over after population increases [in this city]"
+    ]
+  },
+  {
+    "name": "Grove",
+    "cost": 300,
+    "requiredTech": "Commune with Nature"
+  },
+  {
+    "name": "Harbor",
+    "cost": 120,
+    "requiredTech": "Fishing",
+    "uniques": [
+      "Must be next to [Coast]"
+    ]
+  },
+  {
+    "name": "Herbalist",
+    "cost": 90,
     "requiredTech": "Agriculture"
   },
   {
-    "name": "Training Yard",
-    "cost": 70,
-    "production": 1,
-    "maintenance": 1,
-    "requiredTech": "Crafting"
+    "name": "Hunting Lodge",
+    "cost": 100,
+    "requiredTech": "Hunting"
   },
   {
-    "name": "Market",
-    "cost": 90,
-    "gold": 2,
-    "maintenance": 1,
-    "requiredTech": "Education"
+    "name": "Infirmary",
+    "cost": 175,
+    "requiredTech": "Medicine"
   },
   {
-    "name": "Palisade",
-    "cost": 65,
-    "cityStrength": 5,
-    "maintenance": 1,
-    "requiredTech": "Exploration"
+    "name": "Inn",
+    "cost": 110,
+    "requiredTech": "Trade"
+  },
+  {
+    "name": "Library",
+    "cost": 120,
+    "requiredTech": "Writing",
+    "uniques": [
+      "[+25]% Science [in this city]"
+    ]
+  },
+  {
+    "name": "Lighthouse",
+    "cost": 120,
+    "requiredTech": "Sailing",
+    "uniques": [
+      "Must be next to [Coast]"
+    ]
   },
   {
     "name": "Mage Guild",
-    "cost": 100,
-    "science": 3,
-    "maintenance": 2,
+    "cost": 120,
     "requiredTech": "Knowledge of the Ether"
   },
   {
+    "name": "Market",
+    "cost": 60,
+    "requiredTech": "Festivals",
+    "gold": 3,
+    "science": -1
+  },
+  {
+    "name": "Moneychanger",
+    "cost": 250,
+    "requiredTech": "Currency",
+    "uniques": [
+      "[+25]% Gold [in this city]"
+    ]
+  },
+  {
+    "name": "Monument",
+    "cost": 60,
+    "requiredTech": "Ancient Chants"
+  },
+  {
+    "name": "Obsidian Gate",
+    "cost": 300,
+    "requiredTech": "Pass Through the Ether"
+  },
+  {
     "name": "Pagan Temple",
-    "cost": 75,
-    "culture": 2,
-    "maintenance": 1,
-    "requiredTech": "Mysticism"
+    "cost": 100,
+    "requiredTech": "Mysticism",
+    "uniques": [
+      "[+10]% Culture [in this city]"
+    ]
+  },
+  {
+    "name": "Palisade",
+    "cost": 40,
+    "cityStrength": 2
+  },
+  {
+    "name": "Public Baths",
+    "cost": 150,
+    "requiredTech": "Sanitation",
+    "happiness": 3
+  },
+  {
+    "name": "Shipyard",
+    "cost": 200,
+    "requiredTech": "Iron Working",
+    "uniques": [
+      "Must be next to [Coast]"
+    ]
+  },
+  {
+    "name": "Siege Workshop",
+    "cost": 120,
+    "requiredTech": "Construction"
+  },
+  {
+    "name": "Smokehouse",
+    "cost": 100,
+    "requiredTech": "Animal Husbandry",
+    "uniques": [
+      "[20]% Food is carried over after population increases [in this city]"
+    ]
+  },
+  {
+    "name": "Stable",
+    "cost": 100,
+    "requiredTech": "Horseback Riding"
+  },
+  {
+    "name": "Tavern",
+    "cost": 150,
+    "requiredTech": "Mercantilism"
+  },
+  {
+    "name": "Tax Office",
+    "cost": 200,
+    "requiredTech": "Taxation",
+    "happiness": -1,
+    "uniques": [
+      "[+25]% Gold [in this city]"
+    ]
+  },
+  {
+    "name": "Theatre",
+    "cost": 150,
+    "requiredTech": "Drama"
+  },
+  {
+    "name": "Training Yard",
+    "cost": 100,
+    "requiredTech": "Bronze Working"
+  },
+  {
+    "name": "Walls",
+    "cost": 120,
+    "requiredTech": "Masonry",
+    "cityStrength": 5
+  },
+  {
+    "name": "Museum",
+    "cost": 120,
+    "requiredTech": "Education",
+    "uniques": [
+      "[+20]% Culture [in this city]"
+    ]
+  },
+  {
+    "name": "Cave Of Ancestors",
+    "cost": 100,
+    "requiredTech": "Mysticism",
+    "uniqueTo": "Amurites",
+    "replaces": "Pagan Temple",
+    "uniques": [
+      "[+10]% Culture [in this city]"
+    ]
   },
   {
     "name": "Warrens",
-    "cost": 80,
-    "production": 2,
-    "maintenance": 1,
-    "requiredTech": "Crafting",
+    "cost": 180,
+    "requiredTech": "Masonry",
     "uniqueTo": "Clan of Embers"
-  },
-  {
-    "name": "Cave of Ancestors",
-    "cost": 90,
-    "science": 2,
-    "culture": 1,
-    "maintenance": 1,
-    "requiredTech": "Mysticism",
-    "uniqueTo": "Amurites"
-  },
-  {
-    "name": "Bannor Barracks",
-    "cost": 70,
-    "production": 2,
-    "maintenance": 1,
-    "requiredTech": "Crafting",
-    "uniqueTo": "Bannor"
-  },
-  {
-    "name": "Elven Grove",
-    "cost": 70,
-    "food": 1,
-    "culture": 2,
-    "maintenance": 1,
-    "requiredTech": "Hunting",
-    "uniqueTo": "Ljosalfar"
   }
 ]

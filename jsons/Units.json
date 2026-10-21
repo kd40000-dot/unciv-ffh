@@ -1,9 +1,294 @@
 [
   {
+    "name": "Adept",
+    "unitType": "Magic",
+    "movement": 1,
+    "cost": 90,
+    "strength": 3,
+    "requiredTech": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built <in cities with a [Mage Guild]>"
+    ]
+  },
+  {
+    "name": "Archer",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 45,
+    "strength": 3,
+    "requiredTech": "Archery",
+    "uniques": [
+      "[+67]% Strength <when defending>",
+      "Can only be built <in cities with a [Archery Range]>"
+    ]
+  },
+  {
+    "name": "Assassin",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniques": [
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Axeman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Beastmaster",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 240,
+    "strength": 14,
+    "requiredTech": "Animal Mastery",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Berserker",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Rage",
+    "uniques": [
+      "[-55]% Strength <when defending>",
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Caravel",
+    "unitType": "Melee Water",
+    "movement": 5,
+    "cost": 100,
+    "strength": 4,
+    "requiredTech": "Optics"
+  },
+  {
+    "name": "Catapult",
+    "unitType": "Siege",
+    "movement": 1,
+    "cost": 90,
+    "strength": 4,
+    "requiredTech": "Construction",
+    "uniques": [
+      "[-25]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Champion",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Iron Working",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Chariot",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Horseback Riding",
+    "uniques": [
+      "[-40]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Crossbowman",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 240,
+    "strength": 9,
+    "requiredTech": "Machinery",
+    "uniques": [
+      "[+44]% Strength <when defending>",
+      "Can only be built <in cities with a [Archery Range]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Eidolon",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 8,
+    "requiredTech": "Fanaticism",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Frigate",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "cost": 150,
+    "strength": 10,
+    "requiredTech": "Optics"
+  },
+  {
+    "name": "Galleon",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "cost": 150,
+    "strength": 6,
+    "requiredTech": "Astronomy"
+  },
+  {
+    "name": "Galley",
+    "unitType": "Melee Water",
+    "movement": 2,
+    "cost": 50,
+    "strength": 4,
+    "requiredTech": "Sailing"
+  },
+  {
+    "name": "Horse Archer",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 120,
+    "strength": 6,
+    "requiredTech": "Stirrups",
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
+  },
+  {
+    "name": "Horseman",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Horseback Riding",
+    "uniques": [
+      "Can only be built <in cities with a [Stable]>"
+    ]
+  },
+  {
+    "name": "Hunter",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Hunting",
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Knight",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Warhorses",
+    "uniques": [
+      "[-36]% Strength <when defending>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Longbowman",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Bowyers",
+    "uniques": [
+      "[+40]% Strength <when defending>",
+      "Can only be built <in cities with a [Archery Range]>"
+    ]
+  },
+  {
+    "name": "Marksman",
+    "unitType": "Archery",
+    "movement": 1,
+    "cost": 240,
+    "strength": 11,
+    "requiredTech": "Precision",
+    "uniques": [
+      "Can only be built <in cities with a [Archery Range]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Paladin",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 8,
+    "requiredTech": "Fanaticism",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Phalanx",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Mithril Working",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Privateer",
+    "unitType": "Melee Water",
+    "movement": 4,
+    "cost": 100,
+    "strength": 8,
+    "requiredTech": "Optics"
+  },
+  {
+    "name": "Queen Of The Line",
+    "unitType": "Melee Water",
+    "movement": 3,
+    "cost": 225,
+    "strength": 16,
+    "requiredTech": "Astronomy"
+  },
+  {
+    "name": "Ranger",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 150,
+    "strength": 7,
+    "requiredTech": "Feral Bond",
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Scout",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 25,
+    "strength": 2
+  },
+  {
     "name": "Settler",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 110,
+    "cost": 120,
     "uniques": [
       "Founds a new city <by consuming this unit>",
       "Excess Food converted to Production when under construction",
@@ -11,112 +296,221 @@
     ]
   },
   {
+    "name": "Trireme",
+    "unitType": "Melee Water",
+    "movement": 3,
+    "cost": 75,
+    "strength": 7,
+    "requiredTech": "Sailing"
+  },
+  {
+    "name": "War Elephant",
+    "unitType": "Mounted",
+    "movement": 2,
+    "cost": 90,
+    "strength": 7,
+    "requiredTech": "Animal Handling"
+  },
+  {
+    "name": "Warrior",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 25,
+    "strength": 3
+  },
+  {
+    "name": "Workboat",
+    "unitType": "Civilian Water",
+    "movement": 2,
+    "cost": 30,
+    "requiredTech": "Fishing",
+    "uniques": [
+      "Can build [Water] improvements on tiles"
+    ]
+  },
+  {
     "name": "Worker",
     "unitType": "Civilian",
     "movement": 2,
-    "cost": 70,
+    "cost": 75,
     "uniques": [
       "Can build [Land] improvements on tiles"
     ]
   },
   {
-    "name": "Scout",
-    "unitType": "Scout",
-    "movement": 2,
+    "name": "Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
     "strength": 4,
-    "cost": 30,
-    "requiredTech": "Exploration",
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Amurites",
+    "replaces": "Axeman",
     "uniques": [
-      "Never appears as a Barbarian unit"
+      "Can only be built <in cities with a [Training Yard]>"
     ]
   },
   {
-    "name": "Warrior",
-    "unitType": "Sword",
-    "movement": 2,
-    "strength": 6,
-    "cost": 40
-  },
-  {
-    "name": "Archer",
+    "name": "Firebow",
     "unitType": "Archery",
-    "movement": 2,
-    "strength": 4,
-    "rangedStrength": 7,
-    "range": 2,
-    "cost": 65,
-    "requiredTech": "Archery"
+    "movement": 1,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Bowyers",
+    "uniqueTo": "Amurites",
+    "replaces": "Longbowman",
+    "uniques": [
+      "Can only be built <in cities with a [Archery Range]>"
+    ]
   },
   {
-    "name": "Axeman",
-    "unitType": "Sword",
-    "movement": 2,
-    "strength": 9,
-    "cost": 80,
-    "requiredTech": "Bronze Working"
-  },
-  {
-    "name": "Hunter",
+    "name": "Chanter",
     "unitType": "Scout",
     "movement": 2,
-    "strength": 7,
-    "cost": 75,
-    "requiredTech": "Hunting"
-  },
-  {
-    "name": "Adept",
-    "unitType": "Archery",
-    "movement": 2,
-    "strength": 3,
-    "rangedStrength": 5,
-    "range": 2,
-    "cost": 85,
-    "requiredTech": "Knowledge of the Ether",
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniqueTo": "Amurites",
+    "replaces": "Assassin",
     "uniques": [
-      "Never appears as a Barbarian unit"
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Hunting Lodge]>"
     ]
   },
   {
     "name": "Goblin",
-    "unitType": "Sword",
-    "movement": 2,
-    "strength": 5,
-    "cost": 30,
+    "unitType": "Scout",
+    "movement": 1,
+    "cost": 15,
+    "strength": 2,
     "uniqueTo": "Clan of Embers",
-    "replaces": "Warrior"
+    "replaces": "Scout"
   },
   {
-    "name": "Bannor Guardsman",
-    "unitType": "Sword",
-    "movement": 2,
-    "strength": 7,
-    "cost": 45,
-    "uniqueTo": "Bannor",
-    "replaces": "Warrior"
+    "name": "Shaman",
+    "unitType": "Magic",
+    "movement": 1,
+    "cost": 90,
+    "strength": 3,
+    "requiredTech": "Knowledge of the Ether",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Adept"
   },
   {
-    "name": "Elven Scout",
+    "name": "Wolf Rider",
+    "unitType": "Mounted",
+    "movement": 3,
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Horseback Riding",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Horseman"
+  },
+  {
+    "name": "Lizardman",
     "unitType": "Scout",
     "movement": 2,
-    "strength": 5,
-    "cost": 35,
-    "requiredTech": "Exploration",
-    "uniqueTo": "Ljosalfar",
-    "replaces": "Scout",
-    "promotions": [
-      "Ignore terrain cost"
+    "cost": 60,
+    "strength": 4,
+    "requiredTech": "Hunting",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Hunter",
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
     ]
   },
   {
-    "name": "Amurite Initiate",
+    "name": "Ogre",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 180,
+    "strength": 8,
+    "requiredTech": "Iron Working",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Champion",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Lizardman Ranger",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 150,
+    "strength": 7,
+    "requiredTech": "Feral Bond",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Ranger",
+    "uniques": [
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Lizardman Assassin",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 120,
+    "strength": 5,
+    "requiredTech": "Poisons",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Assassin",
+    "uniques": [
+      "[-40]% Strength <when defending>",
+      "Can only be built <in cities with a [Hunting Lodge]>"
+    ]
+  },
+  {
+    "name": "Lizardman Beastmaster",
+    "unitType": "Scout",
+    "movement": 2,
+    "cost": 240,
+    "strength": 14,
+    "requiredTech": "Animal Mastery",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Beastmaster",
+    "uniques": [
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Stoneskin Ogre",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 240,
+    "strength": 14,
+    "requiredTech": "Mithril Working",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Phalanx",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>",
+      "Limited to [4] per Civilization"
+    ]
+  },
+  {
+    "name": "Ljosalfar Swordsman",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 45,
+    "strength": 4,
+    "requiredTech": "Bronze Working",
+    "uniqueTo": "Ljosalfar",
+    "replaces": "Axeman",
+    "uniques": [
+      "Can only be built <in cities with a [Training Yard]>"
+    ]
+  },
+  {
+    "name": "Flurry",
     "unitType": "Archery",
     "movement": 2,
-    "strength": 3,
-    "rangedStrength": 6,
-    "range": 2,
-    "cost": 85,
-    "requiredTech": "Knowledge of the Ether",
-    "uniqueTo": "Amurites",
-    "replaces": "Adept"
+    "cost": 240,
+    "strength": 12,
+    "requiredTech": "Machinery",
+    "uniqueTo": "Ljosalfar",
+    "replaces": "Crossbowman",
+    "uniques": [
+      "Can only be built <in cities with a [Archery Range]>",
+      "Limited to [4] per Civilization"
+    ]
   }
 ]
