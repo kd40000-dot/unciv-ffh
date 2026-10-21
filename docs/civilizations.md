@@ -67,3 +67,7 @@ Seven EMM gold-per-city vault stages are now functional through Unciv conditiona
 ### Leader-specific Erebus diplomacy (October 21, 2026)
 
 The 19 normal playable leaders have seven individually authored lore-inspired dialogue lines apiece; the generic shared introductions and diplomacy strings have been replaced. These are not claimed to be original FfH/EMM quotes because the pinned source's accessible diplomacy file lacks custom leader greetings. Source/provenance and Android checks: [Erebus diplomacy](erebus-diplomacy.md).
+
+### Civilization emblems (October 21, 2026)
+
+19 playable faction emblems from the supplied `CivIcons.zip` are imported as full-color Unciv `NationPortraits`, stored in a separate packed atlas that retains all previously verified leader images. [Provenance and gameplay QA](civilization-emblems.md). Android verification pending.
