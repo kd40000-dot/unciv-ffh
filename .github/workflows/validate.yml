@@ -1,0 +1,31 @@
+name: Unciv ruleset validation
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Check JSON syntax
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          for path in sorted(pathlib.Path("jsons").glob("*.json")):
+              with path.open(encoding="utf-8") as f:
+                  json.load(f)
+              print("Valid JSON:", path)
+          PY
+      - name: Validate using the official Unciv mod-ci command
+        run: |
+          curl -fsSL https://api.github.com/repos/yairm210/Unciv/releases/latest -o /tmp/unciv-release.json
+          UNCIV_URL="$(python3 -c 'import json; r=json.load(open("/tmp/unciv-release.json")); print(next(a["browser_download_url"] for a in r["assets"] if a["name"]=="Unciv.jar"))')"
+          curl -fL --retry 3 "$UNCIV_URL" -o Unciv.jar
+          java -jar Unciv.jar mod-ci
