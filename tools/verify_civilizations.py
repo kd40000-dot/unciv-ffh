@@ -46,4 +46,44 @@ for selection in catalog["leaderSelections"]:
         assert "[-25]% XP required for promotions" in nation.get("uniques",[]),nation["name"]
     if "TRAIT_CREATIVE" in selection["traits"]:
         assert "[+2 Culture] [in all cities]" in nation.get("uniques",[]),nation["name"]
-print("OK: 19 normal EMM civilizations, 2 special event civilizations deferred,",len(catalog["addedUnits"]),"faction units,",len(catalog["addedBuildings"]),"faction buildings; city names and colors exact")
+
+# Source-faithful faction upgrade chains, including faction-specific class bans.
+# EMM upgrades point to *classes*: resolve to their ordinary Unciv unit names so
+# native civilization replacement resolution can select the correct faction unit.
+progression = data("docs/data/emm-promotions-upgrades-resources.json")
+source_by_id = {u["id"]: u for u in progression["unitProgression"]}
+base_by_class = {}
+for u in units:
+    if u.get("uniqueTo"):
+        continue
+    source_id = "UNIT_" + u["name"].upper().replace(" ", "_")
+    if source_id not in source_by_id:
+        continue
+    unit_class = source_by_id[source_id]["classId"]
+    assert unit_class not in base_by_class, (unit_class, u["name"])
+    base_by_class[unit_class] = u["name"]
+forbidden = {(b["civ"], b["name"]) for b in catalog["classProhibitions"] if b["type"] == "unit"}
+added_routes = 0
+unimplemented_routes = 0
+prohibited_routes = 0
+for item in catalog["addedUnits"]:
+    source = source_by_id[item["sourceId"]]
+    expected = []
+    for target_class in source["upgrades"]:
+        if target_class not in base_by_class:
+            unimplemented_routes += 1
+            continue
+        target_name = base_by_class[target_class]
+        if (item["civilization"], target_name) in forbidden:
+            prohibited_routes += 1
+            continue
+        expected.append(target_name)
+    unit = byUnit[item["name"]]
+    actual = ([unit["upgradesTo"]] if unit.get("upgradesTo") else [])
+    actual += [u[len("Can upgrade to ["):-1] for u in unit.get("uniques", [])
+               if u.startswith("Can upgrade to [") and u.endswith("]")]
+    assert actual == expected, (item["name"], actual, expected)
+    added_routes += len(expected)
+assert added_routes == 63 and unimplemented_routes == 14 and prohibited_routes == 1
+
+print("OK: 19 normal EMM civilizations, 2 special event civilizations deferred,",len(catalog["addedUnits"]),"faction units,",len(catalog["addedBuildings"]),"faction buildings; city names and colors exact;",added_routes,"faction upgrade routes verified")
