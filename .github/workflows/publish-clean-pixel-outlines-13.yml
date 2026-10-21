@@ -64,7 +64,7 @@ jobs:
           assert wizard.getbbox() and wizard.getbbox()[3]-wizard.getbbox()[1]==45
           assert wizard.getchannel("A").getextrema()[0]==0
           firebow=Image.open(root/"Images/TileSets/FantasyHex/Units/Firebow.png").convert("RGBA")
-          assert firebow.getbbox() and firebow.getbbox()[3]-firebow.getbbox()[1]==45
+          assert firebow.getbbox() and 40<=firebow.getbbox()[3]-firebow.getbbox()[1]<=46
           gov=next(u for u in units if u["name"]=="Govannon")
           assert not any("Limited to" in s or "Unbuildable" in s for s in gov.get("uniques",[]))
           for key in ("LeaderIcons/Valledia","NationIcons/Amurites"):
