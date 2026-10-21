@@ -22,7 +22,8 @@ assert len(res_names)==len(resources)
 assert {"Copper","Mithril","Reagents","Horses","Iron"} <= res_names
 assert {"Combat I","Combat II","Combat III","Combat IV","Combat V","City Raider I","Shock","Cover","Orc","Elf","Channeling I"} <= prom_names
 source_by_id={x["id"]:x for x in d["unitProgression"]}
-name_for=lambda n:"UNIT_"+n.removeprefix("Ljosalfar ").removeprefix("Amurites ").upper().replace(" ","_")
+aliases={r["name"]:r["sourceId"] for r in load("docs/data/emm-civilizations.json")["addedUnits"]}
+name_for=lambda n:aliases.get(n,"UNIT_"+n.removeprefix("Ljosalfar ").removeprefix("Amurites ").upper().replace(" ","_"))
 for u in units:
     assert u["unitType"] in type_names,u["name"]
     source=source_by_id[name_for(u["name"])]
