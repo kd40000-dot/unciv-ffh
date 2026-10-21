@@ -3,7 +3,7 @@
   "sourceDescription": "User-supplied 19 full-color 64x64 WEBP FfH civilization emblems (appearance inspected; exact original EMM DDS identity not independently certified)",
   "sourceEMMRevision": "60b0ec3740083162aaab7bf8491761a54a65a610",
   "engineType": "NationPortraits",
-  "reason": "Preserves original colorful square icons without the faction tint applied to NationIcons.",
+  "reason": "Use color-preserving nation portraits; circular crop removes the source image's old square border and fits Unciv's circular UI slot.",
   "inputDimensions": [
     64,
     64
@@ -12,7 +12,7 @@
     96,
     96
   ],
-  "outputTransparentPaddingPixels": 16,
+  "outputTransparentPaddingPixels": 0,
   "atlasName": "emblems",
   "atlasImage": "emblems.png",
   "atlasMetadata": "emblems.atlas",
@@ -113,5 +113,18 @@
       "sourceArchiveFile": "Svartalfar.webp",
       "output": "Images.Emblems/NationPortraits/Svartalfar.png"
     }
-  ]
+  ],
+  "presentationRevision": {
+    "date": "2026-10-21",
+    "reason": "User requested removal of the rounded-square source border and increased emblem fill of the circular UI slot.",
+    "technique": "Crop each original 64x64 WebP source to inner (5,5)-(59,59), resample to 96x96 using Lanczos, alpha-mask to a 96x96 circle. Preserves flat background color and entire faction symbol rather than making destructive chroma-key guesses.",
+    "originalFilenamesPreserved": true,
+    "outputDimensions": [
+      96,
+      96
+    ],
+    "transparentCorners": true,
+    "regeneratedAndroidAtlas": "emblems.png",
+    "leaderPortraitAtlasUnchanged": true
+  }
 }
