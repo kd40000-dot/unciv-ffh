@@ -39,4 +39,4 @@ The pinned Raider trait gives `iPillagingGold=100`, meaning **100% extra Gold** 
 
 Charadon's Doviello also receive the source Barbarian trait's `commerceModifiers=[0,-10,0]` as `[-10]% Science [in all cities]`, approximating the research-commerce penalty while retaining a separate ledger entry for missing barbarian alliance. Other factions receive neither effect.
 
-The user has verified that the prior source-derived palaces and leader effects behave as expected in gameplay. These two **new** economic effects still need live testing.
+The user has verified that the prior source-derived palaces and leader effects behave as expected in gameplay. The user tested these economic effects after the Raider multiplier correction and reported that both appear to work as expected (October 21, 2026). They are considered gameplay-verified for now; any subsequent issues will be reported and addressed.
