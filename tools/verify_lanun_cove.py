@@ -35,7 +35,7 @@ assert workboat.get("uniques",[]).count(ability)==1
 assert len([u for u in units if any("construct a [Pirate Cove]" in v for v in u.get("uniques",[]))])==1
 cove=byimprovement["Pirate Cove"]
 assert cove["terrainsCanBeBuiltOn"]==["Coast"]
-assert cove["uniqueTo"]=="Lanun" and cove["turnsToBuild"]==0
+assert cove["uniqueTo"]=="Lanun" and cove["turnsToBuild"]==-1
 assert cove.get("gold")==source["conversion"]["uncivGold"]==1
 assert cove.get("science")==source["conversion"]["uncivScience"]==1
 assert "production" not in cove and "food" not in cove
