@@ -40,7 +40,7 @@ The engine's `unimproved` filter may treat a pillaged improvement as unimproved,
 5. Check that the action is unavailable on Ocean, on a resource tile, on a tile outside Lanun borders, and on a coastal tile that is not next to land.
 6. A Cove will **not** automatically upgrade to Harbor or Port in this milestone; this is a known omission, not a newly introduced regression.
 
-**Verification status:** Source values, target unique templates, placement-condition logic and the source ledger were inspected against the preserved Unciv engine and pinned EMM code. The user reports the new Pirate Cove works in gameplay (October 21, 2026). First-stage creation is marked gameplay-verified, with later issues to be reported if found. Automatic Harbor/Port progression remains deferred. Automated `tools/verify_lanun_cove.py` runs in GitHub Actions along with the other ruleset checks.
+**Verification status:** Source values, target unique templates, placement-condition logic and the source ledger were inspected against the preserved Unciv engine and pinned EMM code. The user reports the new Pirate Cove works in gameplay (October 21, 2026). The user subsequently confirmed all implemented Lanun Cove functionality is fully gameplay-verified within the known Unciv engine limitations. This includes the supported Cove behavior; it does not imply that the unimplemented Harbor/Port maturation or 5-by-5 spacing rules work. Automatic Harbor/Port progression remains deferred. Automated `tools/verify_lanun_cove.py` runs in GitHub Actions along with the other ruleset checks.
 
 ## Next implementation dependency
 
