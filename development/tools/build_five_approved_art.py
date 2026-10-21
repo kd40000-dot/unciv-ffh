@@ -257,6 +257,18 @@ def make_mana_art()->list[str]:
             save_icon("TileSets/FantasyHex/Tiles/"+name,build_mana_icon(name))
         else:
             save_icon("UnitPromotionIcons/"+name.replace(" Mana",""),build_mana_icon(name))
+    # Promotion icons are essential for seeing the magic progression in
+    # Unciv's upgrade picker. Multi-rank promotions (I/II/III) reuse one icon.
+    symbols={
+        "Channeling":"Raw Mana",
+        "Hastened":"Body Mana",
+        "Spellstaff":"Raw Mana",
+        "Hero":"Fire Mana",
+        "Marksman":"Fire Mana",
+        "Dimensional":"Mind Mana",
+    }
+    for name,palette in symbols.items():
+        save_icon("UnitPromotionIcons/"+name,build_mana_icon(palette))
     for sphere in MANA_SPHERES:
         key=sphere+" Node"
         icon=build_mana_icon(sphere+" Mana","improvement")
