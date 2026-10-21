@@ -47,3 +47,7 @@ All 19 normal civilizations now have source-defined starting units through Unciv
 ## Native trait and palace audit (October 21, 2026)
 
 Native Unciv effects now cover Financial (+25% Gold), Creative (+10% Culture in addition to +2 flat Culture), Ingenuity (+50 starting Gold), and additional Aggressive Combat I categories. Arcane and Spiritual grant Mobility I to newly trained Magic/Disciple units; source Potency and Favored effects remain deferred. All 19 normal palace building variants have source-defined cost 160, +1 Production, +1 Happiness, and an explicitly approximate 4 Science + 4 Gold conversion of the source's 8 flexible commerce. Full details: [leader and palace fidelity ledger](leader-palace-fidelity.md). Android gameplay remains to be tested.
+
+## Economic traits and raiding (October 21, 2026)
+
+Hippus and Svartalfar now receive the +100% pillage Gold element of their Raiders trait using Unciv's `200% Yield from pillaging tiles` multiplier; this works on Gold-only loot in the current mod. Doviello's Barbarian trait now applies the EMM -10% research modifier as -10% Science. Commando first strikes/enemy routes and barbarian diplomacy remain deferred. [Economic trait audit](economic-traits.md).
