@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 manifest = json.loads((ROOT/"docs/data/emm-leader-portraits.json").read_text(encoding="utf-8"))
 expect = {f'LeaderIcons/{e["leaderName"]}' for e in manifest["entries"]}
 assert len(expect) == 19
-assert json.loads((ROOT/"Atlases.json").read_text(encoding="utf-8")) == ["game"]
+assert "game" in json.loads((ROOT/"Atlases.json").read_text(encoding="utf-8")), "Existing leader atlas must remain registered"
 
 atlas = (ROOT/"game.atlas").read_text(encoding="utf-8")
 lines = atlas.splitlines()
