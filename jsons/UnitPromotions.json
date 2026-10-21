@@ -216,7 +216,8 @@
   {
     "name": "City Garrison II",
     "unitTypes": [
-      "Archery"
+      "Archery",
+      "Sword"
     ],
     "prerequisites": [
       "City Garrison I"
@@ -233,7 +234,8 @@
   {
     "name": "City Garrison III",
     "unitTypes": [
-      "Archery"
+      "Archery",
+      "Sword"
     ],
     "prerequisites": [
       "City Garrison II"
@@ -327,7 +329,8 @@
   {
     "name": "Woodsman II",
     "unitTypes": [
-      "Scout"
+      "Scout",
+      "Sword"
     ],
     "prerequisites": [
       "Woodsman I"
