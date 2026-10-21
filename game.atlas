@@ -193,58 +193,100 @@ UnitPromotionIcons/Death
   orig: 64, 64
   offset: 0, 0
   index: -1
-ImprovementIcons/Body Node
+UnitPromotionIcons/Channeling
   rotate: false
   xy: 412, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Body Node
+UnitPromotionIcons/Hastened
   rotate: false
   xy: 480, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-ImprovementIcons/Fire Node
+UnitPromotionIcons/Spellstaff
   rotate: false
   xy: 548, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Fire Node
+UnitPromotionIcons/Hero
   rotate: false
   xy: 616, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-ImprovementIcons/Mind Node
+UnitPromotionIcons/Marksman
   rotate: false
   xy: 684, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Mind Node
+UnitPromotionIcons/Dimensional
   rotate: false
   xy: 752, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-ImprovementIcons/Death Node
+ImprovementIcons/Body Node
   rotate: false
   xy: 820, 352
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Death Node
+TileSets/FantasyHex/Tiles/Body Node
   rotate: false
   xy: 888, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Fire Node
+  rotate: false
+  xy: 956, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Fire Node
+  rotate: false
+  xy: 4, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Mind Node
+  rotate: false
+  xy: 72, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Mind Node
+  rotate: false
+  xy: 140, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Death Node
+  rotate: false
+  xy: 208, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Death Node
+  rotate: false
+  xy: 276, 420
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
