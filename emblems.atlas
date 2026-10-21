@@ -98,3 +98,42 @@ NationIcons/Lanun
 NationIcons/Ljosalfar
   rotate: false
   xy: 820, 140
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Luchuirp
+  rotate: false
+  xy: 4, 276
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Malakim
+  rotate: false
+  xy: 140, 276
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Sheaim
+  rotate: false
+  xy: 276, 276
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Sidar
+  rotate: false
+  xy: 412, 276
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Svartalfar
+  rotate: false
+  xy: 548, 276
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
