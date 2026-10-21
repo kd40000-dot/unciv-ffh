@@ -2761,7 +2761,9 @@
         "TRAIT_AGGRESSIVE",
         "TRAIT_CHARISMATIC"
       ],
-      "partialTraits": []
+      "partialTraits": [
+        "TRAIT_BARBARIAN"
+      ]
     },
     {
       "civilization": "Elohim",
@@ -2799,7 +2801,9 @@
       "implementedTraits": [
         "TRAIT_AGGRESSIVE"
       ],
-      "partialTraits": []
+      "partialTraits": [
+        "TRAIT_RAIDERS"
+      ]
     },
     {
       "civilization": "Illians",
@@ -2930,7 +2934,8 @@
       ],
       "implementedTraits": [],
       "partialTraits": [
-        "TRAIT_ARCANE"
+        "TRAIT_ARCANE",
+        "TRAIT_RAIDERS"
       ]
     }
   ],
