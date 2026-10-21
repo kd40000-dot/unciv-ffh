@@ -17,8 +17,11 @@
     "cost": 250,
     "requiredTech": "Sorcery",
     "science": 4,
+    "percentStatBonus": {
+      "science": 25
+    },
     "uniques": [
-      "[+25]% Science [in this city]"
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
     ]
   },
   {
@@ -37,9 +40,9 @@
     "cost": 120,
     "requiredTech": "Festivals",
     "happiness": 1,
-    "uniques": [
-      "[+20]% Culture [in this city]"
-    ]
+    "percentStatBonus": {
+      "culture": 20
+    }
   },
   {
     "name": "Command Post",
@@ -66,9 +69,9 @@
     "name": "Forge",
     "cost": 250,
     "requiredTech": "Smelting",
-    "uniques": [
-      "[+25]% Production [in this city]"
-    ]
+    "percentStatBonus": {
+      "production": 25
+    }
   },
   {
     "name": "Gambling House",
@@ -121,8 +124,11 @@
     "name": "Library",
     "cost": 120,
     "requiredTech": "Writing",
+    "percentStatBonus": {
+      "science": 25
+    },
     "uniques": [
-      "[+25]% Science [in this city]"
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
     ]
   },
   {
@@ -136,7 +142,10 @@
   {
     "name": "Mage Guild",
     "cost": 120,
-    "requiredTech": "Knowledge of the Ether"
+    "requiredTech": "Knowledge of the Ether",
+    "uniques": [
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
+    ]
   },
   {
     "name": "Market",
@@ -149,9 +158,9 @@
     "name": "Moneychanger",
     "cost": 250,
     "requiredTech": "Currency",
-    "uniques": [
-      "[+25]% Gold [in this city]"
-    ]
+    "percentStatBonus": {
+      "gold": 25
+    }
   },
   {
     "name": "Monument",
@@ -167,9 +176,9 @@
     "name": "Pagan Temple",
     "cost": 100,
     "requiredTech": "Mysticism",
-    "uniques": [
-      "[+10]% Culture [in this city]"
-    ]
+    "percentStatBonus": {
+      "culture": 10
+    }
   },
   {
     "name": "Palisade",
@@ -193,7 +202,10 @@
   {
     "name": "Siege Workshop",
     "cost": 120,
-    "requiredTech": "Construction"
+    "requiredTech": "Construction",
+    "uniques": [
+      "Only available <for [non-[Ljosalfar]] Civilizations>"
+    ]
   },
   {
     "name": "Smokehouse",
@@ -206,7 +218,10 @@
   {
     "name": "Stable",
     "cost": 100,
-    "requiredTech": "Horseback Riding"
+    "requiredTech": "Horseback Riding",
+    "uniques": [
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
+    ]
   },
   {
     "name": "Tavern",
@@ -218,9 +233,9 @@
     "cost": 200,
     "requiredTech": "Taxation",
     "happiness": -1,
-    "uniques": [
-      "[+25]% Gold [in this city]"
-    ]
+    "percentStatBonus": {
+      "gold": 25
+    }
   },
   {
     "name": "Theatre",
@@ -242,19 +257,19 @@
     "name": "Museum",
     "cost": 120,
     "requiredTech": "Education",
-    "uniques": [
-      "[+20]% Culture [in this city]"
-    ]
+    "percentStatBonus": {
+      "culture": 20
+    }
   },
   {
-    "name": "Cave Of Ancestors",
+    "name": "Cave of Ancestors",
     "cost": 100,
     "requiredTech": "Mysticism",
     "uniqueTo": "Amurites",
     "replaces": "Pagan Temple",
-    "uniques": [
-      "[+10]% Culture [in this city]"
-    ]
+    "percentStatBonus": {
+      "culture": 10
+    }
   },
   {
     "name": "Warrens",

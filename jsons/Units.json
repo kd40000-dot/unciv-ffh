@@ -66,7 +66,8 @@
     "uniques": [
       "[-55]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Only available <for [non-[Ljosalfar]] Civilizations>"
     ]
   },
   {
@@ -85,7 +86,8 @@
     "strength": 4,
     "requiredTech": "Construction",
     "uniques": [
-      "[-25]% Strength <when defending>"
+      "[-25]% Strength <when defending>",
+      "Only available <for [non-[Ljosalfar]] Civilizations>"
     ]
   },
   {
@@ -107,7 +109,8 @@
     "strength": 5,
     "requiredTech": "Horseback Riding",
     "uniques": [
-      "[-40]% Strength <when defending>"
+      "[-40]% Strength <when defending>",
+      "Only available <for [non-[Ljosalfar]] Civilizations>"
     ]
   },
   {
@@ -166,7 +169,8 @@
     "strength": 6,
     "requiredTech": "Stirrups",
     "uniques": [
-      "Can only be built <in cities with a [Stable]>"
+      "Can only be built <in cities with a [Stable]>",
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
     ]
   },
   {
@@ -200,7 +204,8 @@
     "requiredTech": "Warhorses",
     "uniques": [
       "[-36]% Strength <when defending>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
     ]
   },
   {

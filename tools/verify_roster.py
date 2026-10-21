@@ -38,6 +38,8 @@ for item in buildings:
     assert item["replaces"] in bnames if "replaces" in item else True,item["name"]
     if item["name"]=="Palace":continue
     rec=next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None)
+    if rec is None and item["name"]=="Cave of Ancestors":
+        rec=bbid["BUILDING_CAVE_OF_ANCESTORS"]
     assert rec is not None,("No EMM building source",item["name"])
     assert item["cost"]==rec["cost"],("Incorrect building cost",item["name"])
 print(f"OK: {len(units)} units and {len(buildings)} buildings traced to the EMM inventory; costs, movement, combat and references verified.")
