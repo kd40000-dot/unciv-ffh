@@ -50,4 +50,8 @@ Native Unciv effects now cover Financial (+25% Gold), Creative (+10% Culture in 
 
 ## Economic traits and raiding (October 21, 2026)
 
-Hippus and Svartalfar now receive the +100% pillage Gold element of their Raiders trait using Unciv's `200% Yield from pillaging tiles` multiplier; this works on Gold-only loot in the current mod. Doviello's Barbarian trait now applies the EMM -10% research modifier as -10% Science. Commando first strikes/enemy routes and barbarian diplomacy remain deferred. [Economic trait audit](economic-traits.md).
+Hippus and Svartalfar now receive the +100% pillage Gold element of their Raiders trait using Unciv's `100% Yield from pillaging tiles` multiplier; this works on Gold-only loot in the current mod. Doviello's Barbarian trait now applies the EMM -10% research modifier as -10% Science. Commando first strikes/enemy routes and barbarian diplomacy remain deferred. [Economic trait audit](economic-traits.md).
+
+### Raiders multiplier correction
+
+In-game calculation audit identified a percentage semantics bug: native Unciv `toPercent()` interprets 100% as a 2× total multiplier and 200% as 3×. Hippus and Svartalfar now use the correct `100% Yield from pillaging tiles`; see the [test protocol](economic-test-protocol.md) for the expected Gold distribution. Doviello's -10% Science remained correct.
