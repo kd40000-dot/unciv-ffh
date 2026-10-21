@@ -1,6 +1,6 @@
 # Erebus diplomacy flavor — Phase 3.5
 
-**Status:** Written and integrated for all 19 playable leaders; gameplay verification pending. No gameplay balance changes.
+**Status:** First-contact greeting dialogue gameplay-verified by user on October 21, 2026. All 19 leaders have seven fields implemented; war, defeat, trade and other untested dialogue contexts remain pending. No gameplay balance changes.
 
 ## What was changed
 
@@ -23,6 +23,10 @@ All **133 lines** are distinct across the 19 leaders; existing roster, mechanics
 These are **new FfH-themed, lore-inspired lines authored for this port**, **not original verbatim dialogue from FfH2 or ExtraModMod Continued**. We searched the pinned [EMM Continued revision](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610). Its `XML/Text/CIV4DiplomacyText.xml` contains generic Civilization IV first-contact lines for standard BtS leaders (not the 19 selected Erebus leaders), and `XML/Text/CIV4GameText_FFH2.xml` is empty in the pinned snapshot. We cannot currently authenticate original bespoke FfH dialogue for this roster. We therefore **did not fabricate source attributions** or put unverified quotes in the mod.
 
 The complete text, leader-to-civilization assignment, and source notes are preserved in [the machine-readable dialogue ledger](data/erebus-diplomacy-dialogue.json), allowing individual lines to be replaced with source-authentic quotes if recovered.
+
+## Gameplay verification — October 21, 2026
+
+The user updated Unciv, met leaders in-game, and confirmed that the **new leader-specific first-contact greetings display correctly**. This confirms the tested introduction path, not that each of the 19 leaders or all seven individual dialogue contexts has been exercised. Other diplomatic interactions remain unverified until reported.
 
 ## Gameplay tests
 
