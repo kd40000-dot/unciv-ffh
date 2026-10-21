@@ -23,3 +23,7 @@ Progression conversion details: [promotions, upgrades and resources](promotions-
 ### Leader and palace effects (October 21, 2026)
 
 All 19 normal EMM civilization palaces have source-derived Production, Happiness and costs; the original 8 flexible Commerce is approximated as +4 Science and +4 Gold because Unciv does not have Civ IV's commerce slider. Source-linked native trait effects now include Financial, Creative, Ingenuity and expanded Aggressive. Arcane and Spiritual are partially mapped through Mobility I; Organized's civic upkeep, Expansive's health, Raider's special promotions, Adaptive, Barbarian, Summoner and Insane remain deferred. See [the source and limitation ledger](leader-palace-fidelity.md).
+
+### Raiding and barbarian economics — October 21, 2026
+
+Hippus and Svartalfar receive double Gold from improvements pillaged (source Raiders +100% pillage Gold; native Unciv `200% Yield from pillaging tiles`), while Doviello receives -10% Science from the Barbarian trait. Enemy-road Commando behavior, free first strikes and barbarian alliances are not native equivalents and remain deferred. See [economic trait coverage](economic-traits.md). The user confirmed the prior palace and leader effects in gameplay; these new economics remain to be tested.
