@@ -1,6 +1,6 @@
 # First early-game ruleset slice
 
-> **Historical milestone snapshot:** The counts and limited nation list below describe the original four-civilization prototype. The latest mod now has **19 normal EMM civilizations, 100 units, 50 buildings and 31 promotions**. See the [current civilization conversion](civilizations.md) and [repository README](../README.md).
+> **Historical milestone snapshot:** The counts and limited nation list below describe the original four-civilization prototype. The latest mod now has **19 normal EMM civilizations, 102 units, 50 buildings and 31 promotions**. See the [current civilization conversion](civilizations.md) and [repository README](../README.md).
 
 This standalone Unciv **base ruleset** is an early **unplaytested gameplay candidate**, not a completed EMM Continued port.
 
