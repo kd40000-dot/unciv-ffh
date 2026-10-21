@@ -18,7 +18,7 @@
     ]
   },
   {
-    "name": "Combat i",
+    "name": "Combat I",
     "unitTypes": [
       "Magic",
       "Archery",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "name": "Combat ii",
+    "name": "Combat II",
     "unitTypes": [
       "Magic",
       "Archery",
@@ -44,14 +44,14 @@
       "Siege"
     ],
     "prerequisites": [
-      "Combat i"
+      "Combat I"
     ],
     "uniques": [
       "[+20]% Strength"
     ]
   },
   {
-    "name": "Combat iii",
+    "name": "Combat III",
     "unitTypes": [
       "Magic",
       "Archery",
@@ -62,14 +62,14 @@
       "Siege"
     ],
     "prerequisites": [
-      "Combat ii"
+      "Combat II"
     ],
     "uniques": [
       "[+20]% Strength"
     ]
   },
   {
-    "name": "Combat iv",
+    "name": "Combat IV",
     "unitTypes": [
       "Magic",
       "Archery",
@@ -80,14 +80,14 @@
       "Siege"
     ],
     "prerequisites": [
-      "Combat iii"
+      "Combat III"
     ],
     "uniques": [
       "[+20]% Strength"
     ]
   },
   {
-    "name": "Combat v",
+    "name": "Combat V",
     "unitTypes": [
       "Magic",
       "Archery",
@@ -98,7 +98,7 @@
       "Siege"
     ],
     "prerequisites": [
-      "Combat iv"
+      "Combat IV"
     ],
     "uniques": [
       "[+20]% Strength"
@@ -187,7 +187,7 @@
       "Mounted"
     ],
     "prerequisites": [
-      "Combat i"
+      "Combat I"
     ],
     "uniques": [
       "[+40]% Strength <vs [Sword] units>"
@@ -202,7 +202,7 @@
       "Mounted"
     ],
     "prerequisites": [
-      "Combat i"
+      "Combat I"
     ],
     "uniques": [
       "[+40]% Strength <vs [Archery] units>"
@@ -217,7 +217,7 @@
       "Mounted"
     ],
     "prerequisites": [
-      "Combat ii"
+      "Combat II"
     ],
     "uniques": [
       "[+40]% Strength <vs [Mounted] units>"
@@ -287,7 +287,7 @@
       "Siege"
     ],
     "prerequisites": [
-      "Combat iii"
+      "Combat III"
     ],
     "uniques": [
       "[+1] Sight"
@@ -313,7 +313,7 @@
       "Sword"
     ],
     "prerequisites": [
-      "Combat iii"
+      "Combat III"
     ],
     "uniques": [
       "Unit will heal every turn, even if it performs an action"
