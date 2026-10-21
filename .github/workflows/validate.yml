@@ -45,6 +45,8 @@ jobs:
         run: python3 tools/verify_erebus_diplomacy.py
       - name: Verify EMM leader portrait source mappings
         run: python3 tools/verify_leader_portraits.py --require-art
+      - name: Verify 19 colored Erebus civilization emblems and separate atlas
+        run: python3 tools/verify_civilization_emblems.py
       - name: Verify packed leader portrait texture atlas
         run: python3 tools/verify_leader_atlas.py
       - name: Validate using the official Unciv mod-ci command
