@@ -2690,6 +2690,9 @@
       ],
       "implementedTraits": [
         "TRAIT_INGENUITY"
+      ],
+      "partialTraits": [
+        "TRAIT_ARCANE"
       ]
     },
     {
@@ -2704,6 +2707,9 @@
       "implementedTraits": [
         "TRAIT_CHARISMATIC",
         "TRAIT_CREATIVE"
+      ],
+      "partialTraits": [
+        "TRAIT_ARCANE"
       ]
     },
     {
@@ -2715,7 +2721,8 @@
       ],
       "implementedTraits": [
         "TRAIT_CHARISMATIC"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Calabim",
@@ -2725,8 +2732,10 @@
         "TRAIT_FINANCIAL"
       ],
       "implementedTraits": [
-        "TRAIT_AGGRESSIVE"
-      ]
+        "TRAIT_AGGRESSIVE",
+        "TRAIT_FINANCIAL"
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Clan of Embers",
@@ -2735,7 +2744,10 @@
         "TRAIT_EXPANSIVE",
         "TRAIT_SPIRITUAL"
       ],
-      "implementedTraits": []
+      "implementedTraits": [],
+      "partialTraits": [
+        "TRAIT_SPIRITUAL"
+      ]
     },
     {
       "civilization": "Doviello",
@@ -2748,7 +2760,8 @@
       "implementedTraits": [
         "TRAIT_AGGRESSIVE",
         "TRAIT_CHARISMATIC"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Elohim",
@@ -2759,7 +2772,8 @@
       ],
       "implementedTraits": [
         "TRAIT_CREATIVE"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Grigori",
@@ -2772,7 +2786,8 @@
       "implementedTraits": [
         "TRAIT_CHARISMATIC",
         "TRAIT_PHILOSOPHICAL"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Hippus",
@@ -2783,7 +2798,8 @@
       ],
       "implementedTraits": [
         "TRAIT_AGGRESSIVE"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Illians",
@@ -2794,6 +2810,9 @@
       ],
       "implementedTraits": [
         "TRAIT_CHARISMATIC"
+      ],
+      "partialTraits": [
+        "TRAIT_ARCANE"
       ]
     },
     {
@@ -2806,7 +2825,8 @@
       "implementedTraits": [
         "TRAIT_AGGRESSIVE",
         "TRAIT_INDUSTRIOUS"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Kuriotates",
@@ -2818,7 +2838,8 @@
       ],
       "implementedTraits": [
         "TRAIT_PHILOSOPHICAL"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Lanun",
@@ -2829,7 +2850,8 @@
       ],
       "implementedTraits": [
         "TRAIT_CHARISMATIC"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Ljosalfar",
@@ -2840,6 +2862,9 @@
       ],
       "implementedTraits": [
         "TRAIT_CREATIVE"
+      ],
+      "partialTraits": [
+        "TRAIT_SPIRITUAL"
       ]
     },
     {
@@ -2849,7 +2874,12 @@
         "TRAIT_ARCANE",
         "TRAIT_FINANCIAL"
       ],
-      "implementedTraits": []
+      "implementedTraits": [
+        "TRAIT_FINANCIAL"
+      ],
+      "partialTraits": [
+        "TRAIT_ARCANE"
+      ]
     },
     {
       "civilization": "Malakim",
@@ -2861,6 +2891,9 @@
       ],
       "implementedTraits": [
         "TRAIT_CREATIVE"
+      ],
+      "partialTraits": [
+        "TRAIT_SPIRITUAL"
       ]
     },
     {
@@ -2870,7 +2903,10 @@
         "TRAIT_ARCANE",
         "TRAIT_SUMMONER"
       ],
-      "implementedTraits": []
+      "implementedTraits": [],
+      "partialTraits": [
+        "TRAIT_ARCANE"
+      ]
     },
     {
       "civilization": "Sidar",
@@ -2882,7 +2918,8 @@
       "implementedTraits": [
         "TRAIT_PHILOSOPHICAL",
         "TRAIT_INDUSTRIOUS"
-      ]
+      ],
+      "partialTraits": []
     },
     {
       "civilization": "Svartalfar",
@@ -2891,7 +2928,10 @@
         "TRAIT_ARCANE",
         "TRAIT_RAIDERS"
       ],
-      "implementedTraits": []
+      "implementedTraits": [],
+      "partialTraits": [
+        "TRAIT_ARCANE"
+      ]
     }
   ],
   "unhandledStartingTechnologies": [
