@@ -1,7 +1,7 @@
 [
   {
     "columnNumber": 0,
-    "era": "Age of Rebirth",
+    "era": "Ancient era",
     "techCost": 100,
     "buildingCost": 65,
     "wonderCost": 200,
@@ -17,24 +17,61 @@
         "cost": 80
       },
       {
-        "name": "Ancient Chants",
-        "row": 28,
-        "cost": 80
-      },
-      {
         "name": "Crafting",
         "row": 13,
         "cost": 120
+      },
+      {
+        "name": "Ancient Chants",
+        "row": 28,
+        "cost": 80
       }
     ]
   },
   {
     "columnNumber": 1,
-    "era": "Age of Rebirth",
+    "era": "Ancient era",
     "techCost": 100,
     "buildingCost": 65,
     "wonderCost": 200,
     "techs": [
+      {
+        "name": "Calendar",
+        "row": 1,
+        "cost": 160,
+        "prerequisites": [
+          "Agriculture"
+        ]
+      },
+      {
+        "name": "Animal Husbandry",
+        "row": 3,
+        "cost": 180,
+        "prerequisites": [
+          "Agriculture"
+        ]
+      },
+      {
+        "name": "Fishing",
+        "row": 5,
+        "cost": 160,
+        "prerequisites": [
+          "Exploration"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Exploration, Seafaring; this prototype currently requires Exploration."
+          }
+        ]
+      },
+      {
+        "name": "Cartography",
+        "row": 7,
+        "cost": 200,
+        "prerequisites": [
+          "Exploration"
+        ]
+      },
       {
         "name": "Hunting",
         "row": 9,
@@ -52,11 +89,11 @@
         ]
       },
       {
-        "name": "Mysticism",
-        "row": 36,
-        "cost": 200,
+        "name": "Masonry",
+        "row": 15,
+        "cost": 140,
         "prerequisites": [
-          "Ancient Chants"
+          "Crafting"
         ]
       },
       {
@@ -69,36 +106,62 @@
         ]
       },
       {
-        "name": "Calendar",
-        "row": 1,
-        "cost": 160,
+        "name": "Mysticism",
+        "row": 36,
+        "cost": 200,
         "prerequisites": [
-          "Agriculture"
-        ]
-      },
-      {
-        "name": "Fishing",
-        "row": 5,
-        "cost": 160,
-        "prerequisites": [
-          "Exploration"
+          "Ancient Chants"
         ]
       }
     ]
   },
   {
     "columnNumber": 2,
-    "era": "Age of Rebirth",
+    "era": "Classical era",
     "techCost": 100,
     "buildingCost": 65,
     "wonderCost": 200,
     "techs": [
       {
-        "name": "Knowledge of the Ether",
-        "row": 27,
-        "cost": 360,
+        "name": "Festivals",
+        "row": 1,
+        "cost": 180,
         "prerequisites": [
-          "Mysticism"
+          "Calendar"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued classifies this technology as ancient; Unciv assigns a single era to each technology column."
+          }
+        ]
+      },
+      {
+        "name": "Horseback Riding",
+        "row": 3,
+        "cost": 400,
+        "prerequisites": [
+          "Animal Husbandry"
+        ]
+      },
+      {
+        "name": "Sailing",
+        "row": 5,
+        "cost": 320,
+        "prerequisites": [
+          "Fishing"
+        ]
+      },
+      {
+        "name": "Archery",
+        "row": 11,
+        "cost": 300,
+        "prerequisites": [
+          "Hunting"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Hunting, Mining; this prototype currently requires Hunting."
+          }
         ]
       },
       {
@@ -110,11 +173,653 @@
         ]
       },
       {
-        "name": "Archery",
-        "row": 11,
+        "name": "Construction",
+        "row": 15,
+        "cost": 400,
+        "prerequisites": [
+          "Masonry"
+        ]
+      },
+      {
+        "name": "Writing",
+        "row": 17,
+        "cost": 380,
+        "prerequisites": [
+          "Education"
+        ]
+      },
+      {
+        "name": "Warfare",
+        "row": 19,
+        "cost": 320,
+        "prerequisites": [
+          "Education"
+        ]
+      },
+      {
+        "name": "Code of Laws",
+        "row": 21,
+        "cost": 320,
+        "prerequisites": [
+          "Education"
+        ]
+      },
+      {
+        "name": "Knowledge of the Ether",
+        "row": 27,
+        "cost": 360,
+        "prerequisites": [
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Way of the Forests",
+        "row": 32,
+        "cost": 400,
+        "prerequisites": [
+          "Hunting",
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Way of the Earthmother",
+        "row": 34,
+        "cost": 400,
+        "prerequisites": [
+          "Mining",
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Philosophy",
+        "row": 39,
         "cost": 300,
         "prerequisites": [
+          "Mysticism"
+        ]
+      },
+      {
+        "name": "Message from the Deep",
+        "row": 44,
+        "cost": 400,
+        "prerequisites": [
+          "Fishing",
+          "Mysticism"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Classical era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Trade",
+        "row": 3,
+        "cost": 450,
+        "prerequisites": [
+          "Writing",
+          "Horseback Riding"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Horseback Riding, Sailing; this prototype currently requires Horseback Riding."
+          }
+        ]
+      },
+      {
+        "name": "Optics",
+        "row": 5,
+        "cost": 720,
+        "prerequisites": [
+          "Sailing"
+        ]
+      },
+      {
+        "name": "Poisons",
+        "row": 7,
+        "cost": 1000,
+        "prerequisites": [
           "Hunting"
+        ]
+      },
+      {
+        "name": "Animal Handling",
+        "row": 9,
+        "cost": 600,
+        "prerequisites": [
+          "Animal Husbandry",
+          "Hunting"
+        ]
+      },
+      {
+        "name": "Smelting",
+        "row": 13,
+        "cost": 800,
+        "prerequisites": [
+          "Bronze Working"
+        ]
+      },
+      {
+        "name": "Sanitation",
+        "row": 15,
+        "cost": 640,
+        "prerequisites": [
+          "Construction"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Construction, Bronze Working; this prototype currently requires Construction."
+          }
+        ]
+      },
+      {
+        "name": "Mathematics",
+        "row": 17,
+        "cost": 950,
+        "prerequisites": [
+          "Writing"
+        ]
+      },
+      {
+        "name": "Military Strategy",
+        "row": 19,
+        "cost": 480,
+        "prerequisites": [
+          "Philosophy",
+          "Warfare"
+        ]
+      },
+      {
+        "name": "Currency",
+        "row": 22,
+        "cost": 900,
+        "prerequisites": [
+          "Code of Laws"
+        ]
+      },
+      {
+        "name": "Necromancy",
+        "row": 24,
+        "cost": 640,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ]
+      },
+      {
+        "name": "Elementalism",
+        "row": 26,
+        "cost": 640,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ]
+      },
+      {
+        "name": "Divination",
+        "row": 28,
+        "cost": 640,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ]
+      },
+      {
+        "name": "Alteration",
+        "row": 30,
+        "cost": 640,
+        "prerequisites": [
+          "Knowledge of the Ether"
+        ]
+      },
+      {
+        "name": "Hidden Paths",
+        "row": 32,
+        "cost": 640,
+        "prerequisites": [
+          "Way of the Forests"
+        ]
+      },
+      {
+        "name": "Arete",
+        "row": 34,
+        "cost": 640,
+        "prerequisites": [
+          "Way of the Earthmother"
+        ]
+      },
+      {
+        "name": "Priesthood",
+        "row": 36,
+        "cost": 800,
+        "prerequisites": [
+          "Education",
+          "Philosophy"
+        ]
+      },
+      {
+        "name": "Orders from Heaven",
+        "row": 38,
+        "cost": 1080,
+        "prerequisites": [
+          "Code of Laws",
+          "Philosophy"
+        ]
+      },
+      {
+        "name": "Honor",
+        "row": 40,
+        "cost": 980,
+        "prerequisites": [
+          "Trade",
+          "Philosophy"
+        ]
+      },
+      {
+        "name": "Corruption of Spirit",
+        "row": 42,
+        "cost": 1500,
+        "prerequisites": [
+          "Knowledge of the Ether",
+          "Philosophy"
+        ]
+      },
+      {
+        "name": "Mind Stapling",
+        "row": 44,
+        "cost": 800,
+        "prerequisites": [
+          "Message from the Deep"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Classical era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Drama",
+        "row": 1,
+        "cost": 600,
+        "prerequisites": [
+          "Education",
+          "Festivals"
+        ]
+      },
+      {
+        "name": "Deception",
+        "row": 3,
+        "cost": 980,
+        "prerequisites": [
+          "Philosophy",
+          "Trade"
+        ]
+      },
+      {
+        "name": "Astronomy",
+        "row": 5,
+        "cost": 1500,
+        "prerequisites": [
+          "Mathematics",
+          "Optics"
+        ]
+      },
+      {
+        "name": "Feral Bond",
+        "row": 7,
+        "cost": 1000,
+        "prerequisites": [
+          "Animal Handling"
+        ]
+      },
+      {
+        "name": "Stirrups",
+        "row": 9,
+        "cost": 1000,
+        "prerequisites": [
+          "Horseback Riding",
+          "Archery"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Archery, Animal Handling; this prototype currently requires Archery."
+          }
+        ]
+      },
+      {
+        "name": "Bowyers",
+        "row": 11,
+        "cost": 1400,
+        "prerequisites": [
+          "Archery"
+        ]
+      },
+      {
+        "name": "Iron Working",
+        "row": 13,
+        "cost": 1800,
+        "prerequisites": [
+          "Warfare",
+          "Smelting"
+        ]
+      },
+      {
+        "name": "Medicine",
+        "row": 15,
+        "cost": 1000,
+        "prerequisites": [
+          "Education",
+          "Sanitation"
+        ]
+      },
+      {
+        "name": "Engineering",
+        "row": 17,
+        "cost": 2200,
+        "prerequisites": [
+          "Construction",
+          "Mathematics"
+        ]
+      },
+      {
+        "name": "Feudalism",
+        "row": 20,
+        "cost": 1400,
+        "prerequisites": [
+          "Trade",
+          "Code of Laws"
+        ]
+      },
+      {
+        "name": "Taxation",
+        "row": 22,
+        "cost": 1600,
+        "prerequisites": [
+          "Mathematics",
+          "Currency"
+        ]
+      },
+      {
+        "name": "Sorcery",
+        "row": 27,
+        "cost": 2000,
+        "prerequisites": [
+          "Writing",
+          "Alteration"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Alteration, Divination, Elementalism, Necromancy; this prototype currently requires Alteration."
+          }
+        ]
+      },
+      {
+        "name": "Fanaticism",
+        "row": 35,
+        "cost": 1800,
+        "prerequisites": [
+          "Code of Laws",
+          "Priesthood"
+        ]
+      },
+      {
+        "name": "Religious Law",
+        "row": 37,
+        "cost": 2400,
+        "prerequisites": [
+          "Code of Laws",
+          "Priesthood"
+        ]
+      },
+      {
+        "name": "Infernal Pact",
+        "row": 42,
+        "cost": 1500,
+        "prerequisites": [
+          "Corruption of Spirit"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued classifies this technology as medieval; Unciv assigns a single era to each technology column."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Medieval era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Animal Mastery",
+        "row": 7,
+        "cost": 1800,
+        "prerequisites": [
+          "Military Strategy",
+          "Feral Bond"
+        ]
+      },
+      {
+        "name": "Warhorses",
+        "row": 9,
+        "cost": 2000,
+        "prerequisites": [
+          "Military Strategy",
+          "Feudalism",
+          "Stirrups"
+        ]
+      },
+      {
+        "name": "Precision",
+        "row": 11,
+        "cost": 2000,
+        "prerequisites": [
+          "Military Strategy",
+          "Bowyers"
+        ]
+      },
+      {
+        "name": "Mithril Working",
+        "row": 13,
+        "cost": 2400,
+        "prerequisites": [
+          "Engineering",
+          "Military Strategy",
+          "Iron Working"
+        ]
+      },
+      {
+        "name": "Machinery",
+        "row": 16,
+        "cost": 3300,
+        "prerequisites": [
+          "Bowyers",
+          "Engineering"
+        ]
+      },
+      {
+        "name": "Blasting Powder",
+        "row": 18,
+        "cost": 5400,
+        "prerequisites": [
+          "Iron Working",
+          "Engineering"
+        ]
+      },
+      {
+        "name": "Mercantilism",
+        "row": 21,
+        "cost": 3400,
+        "prerequisites": [
+          "Taxation"
+        ]
+      },
+      {
+        "name": "Guilds",
+        "row": 23,
+        "cost": 3200,
+        "prerequisites": [
+          "Taxation"
+        ]
+      },
+      {
+        "name": "Arcane Lore",
+        "row": 27,
+        "cost": 3600,
+        "prerequisites": [
+          "Sorcery"
+        ]
+      },
+      {
+        "name": "Commune with Nature",
+        "row": 33,
+        "cost": 4420,
+        "prerequisites": [
+          "Priesthood",
+          "Hidden Paths"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Hidden Paths, Arete, Fanaticism; this prototype currently requires Hidden Paths."
+          }
+        ]
+      },
+      {
+        "name": "Rage",
+        "row": 35,
+        "cost": 4420,
+        "prerequisites": [
+          "Fanaticism"
+        ]
+      },
+      {
+        "name": "Theology",
+        "row": 37,
+        "cost": 4940,
+        "prerequisites": [
+          "Religious Law"
+        ]
+      },
+      {
+        "name": "Righteousness",
+        "row": 39,
+        "cost": 4810,
+        "prerequisites": [
+          "Orders from Heaven"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Orders from Heaven, Honor; this prototype currently requires Orders from Heaven."
+          }
+        ]
+      },
+      {
+        "name": "Malevolent Designs",
+        "row": 43,
+        "cost": 4810,
+        "prerequisites": [
+          "Infernal Pact"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Infernal Pact, Mind Stapling; this prototype currently requires Infernal Pact."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 6,
+    "era": "Medieval era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Mithril Weapons",
+        "row": 13,
+        "cost": 7000,
+        "prerequisites": [
+          "Mithril Working"
+        ]
+      },
+      {
+        "name": "Strength of Will",
+        "row": 26,
+        "cost": 8800,
+        "prerequisites": [
+          "Arcane Lore"
+        ]
+      },
+      {
+        "name": "Pass Through the Ether",
+        "row": 28,
+        "cost": 8000,
+        "prerequisites": [
+          "Arcane Lore"
+        ]
+      },
+      {
+        "name": "Divine Essence",
+        "row": 38,
+        "cost": 9000,
+        "prerequisites": [
+          "Commune with Nature"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Commune with Nature, Theology, Righteousness, Malevolent Designs, Rage; this prototype currently requires Commune with Nature."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 7,
+    "era": "Medieval era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Omniscience",
+        "row": 33,
+        "cost": 9600,
+        "prerequisites": [
+          "Strength of Will"
+        ],
+        "civilopediaText": [
+          {
+            "text": "EMM Continued allows ANY of Strength of Will, Pass Through the Ether, Divine Essence; this prototype currently requires Strength of Will."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 8,
+    "era": "Medieval era",
+    "techCost": 100,
+    "buildingCost": 65,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Future Tech",
+        "row": 33,
+        "cost": 10000,
+        "prerequisites": [
+          "Omniscience"
+        ],
+        "uniques": [
+          "Can be continually researched"
         ]
       }
     ]

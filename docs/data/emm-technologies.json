@@ -1,0 +1,1336 @@
+{
+  "upstream": "https://github.com/bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourcePath": "XML/Technologies/CIV4TechInfos.xml",
+  "extractionNotes": "Full source data including non-researchable special technologies. orPrerequisites means at least one listed technology; andPrerequisites means every listed technology.",
+  "technologies": [
+    {
+      "sourceId": "TECH_AGRICULTURE",
+      "descriptionKey": "TXT_KEY_TECH_AGRICULTURE",
+      "researchCost": 80,
+      "gridX": 1,
+      "gridY": 2,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Agriculture"
+    },
+    {
+      "sourceId": "TECH_ALTERATION",
+      "descriptionKey": "TXT_KEY_TECH_ALTERATION",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 30,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_KNOWLEDGE_OF_THE_ETHER"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Alteration"
+    },
+    {
+      "sourceId": "TECH_ANCIENT_CHANTS",
+      "descriptionKey": "TXT_KEY_TECH_ANCIENT_CHANTS",
+      "researchCost": 80,
+      "gridX": 1,
+      "gridY": 28,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Ancient Chants"
+    },
+    {
+      "sourceId": "TECH_ANIMAL_HANDLING",
+      "descriptionKey": "TXT_KEY_TECH_ANIMAL_HANDLING",
+      "researchCost": 600,
+      "gridX": 4,
+      "gridY": 9,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_HUNTING"
+      ],
+      "andPrerequisites": [
+        "TECH_ANIMAL_HUSBANDRY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Animal Handling"
+    },
+    {
+      "sourceId": "TECH_ANIMAL_HUSBANDRY",
+      "descriptionKey": "TXT_KEY_TECH_ANIMAL_HUSBANDRY",
+      "researchCost": 180,
+      "gridX": 2,
+      "gridY": 3,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_AGRICULTURE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Animal Husbandry"
+    },
+    {
+      "sourceId": "TECH_ANIMAL_MASTERY",
+      "descriptionKey": "TXT_KEY_TECH_ANIMAL_MASTERY",
+      "researchCost": 1800,
+      "gridX": 6,
+      "gridY": 7,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_FERAL_BOND"
+      ],
+      "andPrerequisites": [
+        "TECH_MILITARY_STRATEGY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Animal Mastery"
+    },
+    {
+      "sourceId": "TECH_ARCANE_LORE",
+      "descriptionKey": "TXT_KEY_TECH_ARCANE_LORE",
+      "researchCost": 3600,
+      "gridX": 6,
+      "gridY": 27,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_SORCERY"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Arcane Lore"
+    },
+    {
+      "sourceId": "TECH_ARCHERY",
+      "descriptionKey": "TXT_KEY_TECH_ARCHERY",
+      "researchCost": 300,
+      "gridX": 3,
+      "gridY": 11,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_HUNTING",
+        "TECH_MINING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Archery"
+    },
+    {
+      "sourceId": "TECH_ARETE",
+      "descriptionKey": "TXT_KEY_TECH_ARETE",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 34,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_WAY_OF_THE_EARTHMOTHER"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Arete"
+    },
+    {
+      "sourceId": "TECH_ASTRONOMY",
+      "descriptionKey": "TXT_KEY_TECH_ASTRONOMY",
+      "researchCost": 1500,
+      "gridX": 5,
+      "gridY": 5,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_OPTICS"
+      ],
+      "andPrerequisites": [
+        "TECH_MATHEMATICS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Astronomy"
+    },
+    {
+      "sourceId": "TECH_BLASTING_POWDER",
+      "descriptionKey": "TXT_KEY_TECH_BLASTING_POWDER",
+      "researchCost": 5400,
+      "gridX": 6,
+      "gridY": 18,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_ENGINEERING"
+      ],
+      "andPrerequisites": [
+        "TECH_IRON_WORKING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Blasting Powder"
+    },
+    {
+      "sourceId": "TECH_BOWYERS",
+      "descriptionKey": "TXT_KEY_TECH_BOWYERS",
+      "researchCost": 1400,
+      "gridX": 5,
+      "gridY": 11,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_ARCHERY"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Bowyers"
+    },
+    {
+      "sourceId": "TECH_BRONZE_WORKING",
+      "descriptionKey": "TXT_KEY_TECH_BRONZE_WORKING",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 13,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MINING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Bronze Working"
+    },
+    {
+      "sourceId": "TECH_CALENDAR",
+      "descriptionKey": "TXT_KEY_TECH_CALENDAR",
+      "researchCost": 160,
+      "gridX": 2,
+      "gridY": 1,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_AGRICULTURE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Calendar"
+    },
+    {
+      "sourceId": "TECH_CARTOGRAPHY",
+      "descriptionKey": "TXT_KEY_TECH_CARTOGRAPHY",
+      "researchCost": 200,
+      "gridX": 2,
+      "gridY": 7,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_EXPLORATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Cartography"
+    },
+    {
+      "sourceId": "TECH_CODE_OF_LAWS",
+      "descriptionKey": "TXT_KEY_TECH_CODE_OF_LAWS",
+      "researchCost": 320,
+      "gridX": 3,
+      "gridY": 21,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Code of Laws"
+    },
+    {
+      "sourceId": "TECH_COMMUNE_WITH_NATURE",
+      "descriptionKey": "TXT_KEY_TECH_COMMUNE_WITH_NATURE",
+      "researchCost": 4420,
+      "gridX": 6,
+      "gridY": 33,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_HIDDEN_PATHS",
+        "TECH_ARETE",
+        "TECH_FANATICISM"
+      ],
+      "andPrerequisites": [
+        "TECH_PRIESTHOOD"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Commune with Nature"
+    },
+    {
+      "sourceId": "TECH_CONSTRUCTION",
+      "descriptionKey": "TXT_KEY_TECH_CONSTRUCTION",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 15,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MASONRY"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Construction"
+    },
+    {
+      "sourceId": "TECH_CORRUPTION_OF_SPIRIT",
+      "descriptionKey": "TXT_KEY_TECH_CORRUPTION_OF_SPIRIT",
+      "researchCost": 1500,
+      "gridX": 4,
+      "gridY": 42,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "andPrerequisites": [
+        "TECH_KNOWLEDGE_OF_THE_ETHER"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Corruption of Spirit"
+    },
+    {
+      "sourceId": "TECH_CRAFTING",
+      "descriptionKey": "TXT_KEY_TECH_CRAFTING",
+      "researchCost": 120,
+      "gridX": 1,
+      "gridY": 13,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Crafting"
+    },
+    {
+      "sourceId": "TECH_CURRENCY",
+      "descriptionKey": "TXT_KEY_TECH_CURRENCY",
+      "researchCost": 900,
+      "gridX": 4,
+      "gridY": 22,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_CODE_OF_LAWS"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Currency"
+    },
+    {
+      "sourceId": "TECH_DECEPTION",
+      "descriptionKey": "TXT_KEY_TECH_DECEPTION",
+      "researchCost": 980,
+      "gridX": 5,
+      "gridY": 3,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_TRADE"
+      ],
+      "andPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Deception"
+    },
+    {
+      "sourceId": "TECH_DIVINATION",
+      "descriptionKey": "TXT_KEY_TECH_DIVINATION",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 28,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_KNOWLEDGE_OF_THE_ETHER"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Divination"
+    },
+    {
+      "sourceId": "TECH_DIVINE_ESSENCE",
+      "descriptionKey": "TXT_KEY_TECH_DIVINE_ESSENCE",
+      "researchCost": 9000,
+      "gridX": 7,
+      "gridY": 38,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_COMMUNE_WITH_NATURE",
+        "TECH_THEOLOGY",
+        "TECH_RIGHTEOUSNESS",
+        "TECH_MALEVOLENT_DESIGNS",
+        "TECH_RAGE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Divine Essence"
+    },
+    {
+      "sourceId": "TECH_DRAMA",
+      "descriptionKey": "TXT_KEY_TECH_DRAMA",
+      "researchCost": 600,
+      "gridX": 5,
+      "gridY": 1,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_FESTIVALS"
+      ],
+      "andPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Drama"
+    },
+    {
+      "sourceId": "TECH_EDUCATION",
+      "descriptionKey": "TXT_KEY_TECH_EDUCATION",
+      "researchCost": 280,
+      "gridX": 2,
+      "gridY": 19,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "andPrerequisites": [
+        "TECH_AGRICULTURE"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Education"
+    },
+    {
+      "sourceId": "TECH_ELEMENTALISM",
+      "descriptionKey": "TXT_KEY_TECH_ELEMENTALISM",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 26,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_KNOWLEDGE_OF_THE_ETHER"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Elementalism"
+    },
+    {
+      "sourceId": "TECH_ENGINEERING",
+      "descriptionKey": "TXT_KEY_TECH_ENGINEERING",
+      "researchCost": 2200,
+      "gridX": 5,
+      "gridY": 17,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MATHEMATICS"
+      ],
+      "andPrerequisites": [
+        "TECH_CONSTRUCTION"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Engineering"
+    },
+    {
+      "sourceId": "TECH_EXPLORATION",
+      "descriptionKey": "TXT_KEY_TECH_EXPLORATION",
+      "researchCost": 80,
+      "gridX": 1,
+      "gridY": 7,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Exploration"
+    },
+    {
+      "sourceId": "TECH_FANATICISM",
+      "descriptionKey": "TXT_KEY_TECH_FANATICISM",
+      "researchCost": 1800,
+      "gridX": 5,
+      "gridY": 35,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PRIESTHOOD"
+      ],
+      "andPrerequisites": [
+        "TECH_CODE_OF_LAWS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Fanaticism"
+    },
+    {
+      "sourceId": "TECH_FERAL_BOND",
+      "descriptionKey": "TXT_KEY_TECH_FERAL_BOND",
+      "researchCost": 1000,
+      "gridX": 5,
+      "gridY": 7,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_ANIMAL_HANDLING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Feral Bond"
+    },
+    {
+      "sourceId": "TECH_FESTIVALS",
+      "descriptionKey": "TXT_KEY_TECH_FESTIVALS",
+      "researchCost": 180,
+      "gridX": 3,
+      "gridY": 1,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_CALENDAR"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Festivals"
+    },
+    {
+      "sourceId": "TECH_FEUDALISM",
+      "descriptionKey": "TXT_KEY_TECH_FEUDALISM",
+      "researchCost": 1400,
+      "gridX": 5,
+      "gridY": 20,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_CODE_OF_LAWS"
+      ],
+      "andPrerequisites": [
+        "TECH_TRADE"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Feudalism"
+    },
+    {
+      "sourceId": "TECH_FISHING",
+      "descriptionKey": "TXT_KEY_TECH_FISHING",
+      "researchCost": 160,
+      "gridX": 2,
+      "gridY": 5,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_EXPLORATION",
+        "TECH_SEAFARING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Fishing"
+    },
+    {
+      "sourceId": "TECH_FUTURE_TECH",
+      "descriptionKey": "TXT_KEY_TECH_FUTURE_TECH",
+      "researchCost": 10000,
+      "gridX": 9,
+      "gridY": 33,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_OMNISCIENCE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": true,
+      "disabled": false,
+      "name": "Future Tech"
+    },
+    {
+      "sourceId": "TECH_GUILDS",
+      "descriptionKey": "TXT_KEY_TECH_GUILDS",
+      "researchCost": 3200,
+      "gridX": 6,
+      "gridY": 23,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_TAXATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Guilds"
+    },
+    {
+      "sourceId": "TECH_HIDDEN_PATHS",
+      "descriptionKey": "TXT_KEY_TECH_HIDDEN_PATHS",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 32,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_WAY_OF_THE_FORESTS"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Hidden Paths"
+    },
+    {
+      "sourceId": "TECH_HONOR",
+      "descriptionKey": "TXT_KEY_TECH_HONOR",
+      "researchCost": 980,
+      "gridX": 4,
+      "gridY": 40,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "andPrerequisites": [
+        "TECH_TRADE"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Honor"
+    },
+    {
+      "sourceId": "TECH_HORSEBACK_RIDING",
+      "descriptionKey": "TXT_KEY_TECH_HORSEBACK_RIDING",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 3,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_ANIMAL_HUSBANDRY"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Horseback Riding"
+    },
+    {
+      "sourceId": "TECH_HUNTING",
+      "descriptionKey": "TXT_KEY_TECH_HUNTING",
+      "researchCost": 300,
+      "gridX": 2,
+      "gridY": 9,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_EXPLORATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Hunting"
+    },
+    {
+      "sourceId": "TECH_INFERNAL_PACT",
+      "descriptionKey": "TXT_KEY_TECH_INFERNAL_PACT",
+      "researchCost": 1500,
+      "gridX": 5,
+      "gridY": 42,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_CORRUPTION_OF_SPIRIT"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Infernal Pact"
+    },
+    {
+      "sourceId": "TECH_IRON_WORKING",
+      "descriptionKey": "TXT_KEY_TECH_IRON_WORKING",
+      "researchCost": 1800,
+      "gridX": 5,
+      "gridY": 13,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_SMELTING"
+      ],
+      "andPrerequisites": [
+        "TECH_WARFARE"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Iron Working"
+    },
+    {
+      "sourceId": "TECH_KNOWLEDGE_OF_THE_ETHER",
+      "descriptionKey": "TXT_KEY_TECH_KNOWLEDGE_OF_THE_ETHER",
+      "researchCost": 360,
+      "gridX": 3,
+      "gridY": 27,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MYSTICISM"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Knowledge of the Ether"
+    },
+    {
+      "sourceId": "TECH_MACHINERY",
+      "descriptionKey": "TXT_KEY_TECH_MACHINERY",
+      "researchCost": 3300,
+      "gridX": 6,
+      "gridY": 16,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_ENGINEERING"
+      ],
+      "andPrerequisites": [
+        "TECH_BOWYERS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Machinery"
+    },
+    {
+      "sourceId": "TECH_MALEVOLENT_DESIGNS",
+      "descriptionKey": "TXT_KEY_TECH_MALEVOLENT_DESIGNS",
+      "researchCost": 4810,
+      "gridX": 6,
+      "gridY": 43,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_INFERNAL_PACT",
+        "TECH_MIND_STAPLING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Malevolent Designs"
+    },
+    {
+      "sourceId": "TECH_MASONRY",
+      "descriptionKey": "TXT_KEY_TECH_MASONRY",
+      "researchCost": 140,
+      "gridX": 2,
+      "gridY": 15,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_CRAFTING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Masonry"
+    },
+    {
+      "sourceId": "TECH_MATHEMATICS",
+      "descriptionKey": "TXT_KEY_TECH_MATHEMATICS",
+      "researchCost": 950,
+      "gridX": 4,
+      "gridY": 17,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_WRITING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mathematics"
+    },
+    {
+      "sourceId": "TECH_MEDICINE",
+      "descriptionKey": "TXT_KEY_TECH_MEDICINE",
+      "researchCost": 1000,
+      "gridX": 5,
+      "gridY": 15,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_SANITATION"
+      ],
+      "andPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Medicine"
+    },
+    {
+      "sourceId": "TECH_MERCANTILISM",
+      "descriptionKey": "TXT_KEY_TECH_MERCANTILISM",
+      "researchCost": 3400,
+      "gridX": 6,
+      "gridY": 21,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_TAXATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mercantilism"
+    },
+    {
+      "sourceId": "TECH_MESSAGE_FROM_THE_DEEP",
+      "descriptionKey": "TXT_KEY_TECH_MESSAGE_FROM_THE_DEEP",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 44,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MYSTICISM"
+      ],
+      "andPrerequisites": [
+        "TECH_FISHING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Message from the Deep"
+    },
+    {
+      "sourceId": "TECH_MILITARY_STRATEGY",
+      "descriptionKey": "TXT_KEY_TECH_MILITARY_STRATEGY",
+      "researchCost": 480,
+      "gridX": 4,
+      "gridY": 19,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_WARFARE"
+      ],
+      "andPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Military Strategy"
+    },
+    {
+      "sourceId": "TECH_MIND_STAPLING",
+      "descriptionKey": "TXT_KEY_TECH_MIND_STAPLING",
+      "researchCost": 800,
+      "gridX": 4,
+      "gridY": 44,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MESSAGE_FROM_THE_DEEP"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mind Stapling"
+    },
+    {
+      "sourceId": "TECH_MINING",
+      "descriptionKey": "TXT_KEY_TECH_MINING",
+      "researchCost": 200,
+      "gridX": 2,
+      "gridY": 12,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_CRAFTING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mining"
+    },
+    {
+      "sourceId": "TECH_MITHRIL_WEAPONS",
+      "descriptionKey": "TXT_KEY_TECH_MITHRIL_WEAPONS",
+      "researchCost": 7000,
+      "gridX": 7,
+      "gridY": 13,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_MITHRIL_WORKING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mithril Weapons"
+    },
+    {
+      "sourceId": "TECH_MITHRIL_WORKING",
+      "descriptionKey": "TXT_KEY_TECH_MITHRIL_WORKING",
+      "researchCost": 2400,
+      "gridX": 6,
+      "gridY": 13,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_IRON_WORKING"
+      ],
+      "andPrerequisites": [
+        "TECH_ENGINEERING",
+        "TECH_MILITARY_STRATEGY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mithril Working"
+    },
+    {
+      "sourceId": "TECH_MYSTICISM",
+      "descriptionKey": "TXT_KEY_TECH_MYSTICISM",
+      "researchCost": 200,
+      "gridX": 2,
+      "gridY": 36,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [
+        "TECH_ANCIENT_CHANTS"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Mysticism"
+    },
+    {
+      "sourceId": "TECH_NECROMANCY",
+      "descriptionKey": "TXT_KEY_TECH_NECROMANCY",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 24,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_KNOWLEDGE_OF_THE_ETHER"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Necromancy"
+    },
+    {
+      "sourceId": "TECH_NEVER",
+      "descriptionKey": "TXT_KEY_TECH_NEVER",
+      "researchCost": -1,
+      "gridX": 1,
+      "gridY": -1,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": true,
+      "name": "Never"
+    },
+    {
+      "sourceId": "TECH_OMNISCIENCE",
+      "descriptionKey": "TXT_KEY_TECH_OMNISCIENCE",
+      "researchCost": 9600,
+      "gridX": 8,
+      "gridY": 33,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_STRENGTH_OF_WILL",
+        "TECH_PASS_THROUGH_THE_ETHER",
+        "TECH_DIVINE_ESSENCE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Omniscience"
+    },
+    {
+      "sourceId": "TECH_OPTICS",
+      "descriptionKey": "TXT_KEY_TECH_OPTICS",
+      "researchCost": 720,
+      "gridX": 4,
+      "gridY": 5,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_SAILING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Optics"
+    },
+    {
+      "sourceId": "TECH_ORDERS_FROM_HEAVEN",
+      "descriptionKey": "TXT_KEY_TECH_ORDERS_FROM_HEAVEN",
+      "researchCost": 1080,
+      "gridX": 4,
+      "gridY": 38,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "andPrerequisites": [
+        "TECH_CODE_OF_LAWS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Orders from Heaven"
+    },
+    {
+      "sourceId": "TECH_PASS_THROUGH_THE_ETHER",
+      "descriptionKey": "TXT_KEY_TECH_PASS_THROUGH_THE_ETHER",
+      "researchCost": 8000,
+      "gridX": 7,
+      "gridY": 28,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_ARCANE_LORE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Pass Through the Ether"
+    },
+    {
+      "sourceId": "TECH_PHILOSOPHY",
+      "descriptionKey": "TXT_KEY_TECH_PHILOSOPHY",
+      "researchCost": 300,
+      "gridX": 3,
+      "gridY": 39,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MYSTICISM"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Philosophy"
+    },
+    {
+      "sourceId": "TECH_POISONS",
+      "descriptionKey": "TXT_KEY_TECH_POISONS",
+      "researchCost": 1000,
+      "gridX": 4,
+      "gridY": 7,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_HUNTING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Poisons"
+    },
+    {
+      "sourceId": "TECH_PRECISION",
+      "descriptionKey": "TXT_KEY_TECH_PRECISION",
+      "researchCost": 2000,
+      "gridX": 6,
+      "gridY": 11,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_BOWYERS"
+      ],
+      "andPrerequisites": [
+        "TECH_MILITARY_STRATEGY"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Precision"
+    },
+    {
+      "sourceId": "TECH_PRIESTHOOD",
+      "descriptionKey": "TXT_KEY_TECH_PRIESTHOOD",
+      "researchCost": 800,
+      "gridX": 4,
+      "gridY": 36,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PHILOSOPHY"
+      ],
+      "andPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Priesthood"
+    },
+    {
+      "sourceId": "TECH_RAGE",
+      "descriptionKey": "TXT_KEY_TECH_RAGE",
+      "researchCost": 4420,
+      "gridX": 6,
+      "gridY": 35,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_FANATICISM"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Rage"
+    },
+    {
+      "sourceId": "TECH_RELIGIOUS_LAW",
+      "descriptionKey": "TXT_KEY_TECH_RELIGIOUS_LAW",
+      "researchCost": 2400,
+      "gridX": 5,
+      "gridY": 37,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_PRIESTHOOD"
+      ],
+      "andPrerequisites": [
+        "TECH_CODE_OF_LAWS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Religious Law"
+    },
+    {
+      "sourceId": "TECH_RIGHTEOUSNESS",
+      "descriptionKey": "TXT_KEY_TECH_RIGHTEOUSNESS",
+      "researchCost": 4810,
+      "gridX": 6,
+      "gridY": 39,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_ORDERS_FROM_HEAVEN",
+        "TECH_HONOR"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Righteousness"
+    },
+    {
+      "sourceId": "TECH_SAILING",
+      "descriptionKey": "TXT_KEY_TECH_SAILING",
+      "researchCost": 320,
+      "gridX": 3,
+      "gridY": 5,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_FISHING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Sailing"
+    },
+    {
+      "sourceId": "TECH_SANITATION",
+      "descriptionKey": "TXT_KEY_TECH_SANITATION",
+      "researchCost": 640,
+      "gridX": 4,
+      "gridY": 15,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_CONSTRUCTION",
+        "TECH_BRONZE_WORKING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Sanitation"
+    },
+    {
+      "sourceId": "TECH_SEAFARING",
+      "descriptionKey": "TXT_KEY_TECH_SEAFARING",
+      "researchCost": -1,
+      "gridX": 1,
+      "gridY": 5,
+      "sourceEra": "ERA_ANCIENT",
+      "orPrerequisites": [],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Seafaring"
+    },
+    {
+      "sourceId": "TECH_SMELTING",
+      "descriptionKey": "TXT_KEY_TECH_SMELTING",
+      "researchCost": 800,
+      "gridX": 4,
+      "gridY": 13,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_BRONZE_WORKING"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Smelting"
+    },
+    {
+      "sourceId": "TECH_SORCERY",
+      "descriptionKey": "TXT_KEY_TECH_SORCERY",
+      "researchCost": 2000,
+      "gridX": 5,
+      "gridY": 27,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_ALTERATION",
+        "TECH_DIVINATION",
+        "TECH_ELEMENTALISM",
+        "TECH_NECROMANCY"
+      ],
+      "andPrerequisites": [
+        "TECH_WRITING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Sorcery"
+    },
+    {
+      "sourceId": "TECH_STIRRUPS",
+      "descriptionKey": "TXT_KEY_TECH_STIRRUPS",
+      "researchCost": 1000,
+      "gridX": 5,
+      "gridY": 9,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_ARCHERY",
+        "TECH_ANIMAL_HANDLING"
+      ],
+      "andPrerequisites": [
+        "TECH_HORSEBACK_RIDING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Stirrups"
+    },
+    {
+      "sourceId": "TECH_STRENGTH_OF_WILL",
+      "descriptionKey": "TXT_KEY_TECH_STRENGTH_OF_WILL",
+      "researchCost": 8800,
+      "gridX": 7,
+      "gridY": 26,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_ARCANE_LORE"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Strength of Will"
+    },
+    {
+      "sourceId": "TECH_TAXATION",
+      "descriptionKey": "TXT_KEY_TECH_TAXATION",
+      "researchCost": 1600,
+      "gridX": 5,
+      "gridY": 22,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_CURRENCY"
+      ],
+      "andPrerequisites": [
+        "TECH_MATHEMATICS"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Taxation"
+    },
+    {
+      "sourceId": "TECH_THEOLOGY",
+      "descriptionKey": "TXT_KEY_TECH_THEOLOGY",
+      "researchCost": 4940,
+      "gridX": 6,
+      "gridY": 37,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_RELIGIOUS_LAW"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Theology"
+    },
+    {
+      "sourceId": "TECH_TRADE",
+      "descriptionKey": "TXT_KEY_TECH_TRADE",
+      "researchCost": 450,
+      "gridX": 4,
+      "gridY": 3,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_HORSEBACK_RIDING",
+        "TECH_SAILING"
+      ],
+      "andPrerequisites": [
+        "TECH_WRITING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Trade"
+    },
+    {
+      "sourceId": "TECH_WARFARE",
+      "descriptionKey": "TXT_KEY_TECH_WARFARE",
+      "researchCost": 320,
+      "gridX": 3,
+      "gridY": 19,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Warfare"
+    },
+    {
+      "sourceId": "TECH_WARHORSES",
+      "descriptionKey": "TXT_KEY_TECH_WARHORSES",
+      "researchCost": 2000,
+      "gridX": 6,
+      "gridY": 9,
+      "sourceEra": "ERA_MEDIEVAL",
+      "orPrerequisites": [
+        "TECH_STIRRUPS"
+      ],
+      "andPrerequisites": [
+        "TECH_MILITARY_STRATEGY",
+        "TECH_FEUDALISM"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Warhorses"
+    },
+    {
+      "sourceId": "TECH_WAY_OF_THE_EARTHMOTHER",
+      "descriptionKey": "TXT_KEY_TECH_WAY_OF_THE_EARTHMOTHER",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 34,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MYSTICISM"
+      ],
+      "andPrerequisites": [
+        "TECH_MINING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Way of the Earthmother"
+    },
+    {
+      "sourceId": "TECH_WAY_OF_THE_FORESTS",
+      "descriptionKey": "TXT_KEY_TECH_WAY_OF_THE_FORESTS",
+      "researchCost": 400,
+      "gridX": 3,
+      "gridY": 32,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_MYSTICISM"
+      ],
+      "andPrerequisites": [
+        "TECH_HUNTING"
+      ],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Way of the Forests"
+    },
+    {
+      "sourceId": "TECH_WRITING",
+      "descriptionKey": "TXT_KEY_TECH_WRITING",
+      "researchCost": 380,
+      "gridX": 3,
+      "gridY": 17,
+      "sourceEra": "ERA_CLASSICAL",
+      "orPrerequisites": [
+        "TECH_EDUCATION"
+      ],
+      "andPrerequisites": [],
+      "repeatable": false,
+      "disabled": false,
+      "name": "Writing"
+    }
+  ]
+}

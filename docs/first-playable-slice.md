@@ -5,7 +5,7 @@ This standalone Unciv **base ruleset** is an early **unplaytested gameplay candi
 ## Included
 
 - 4 EMM nations: Amurites, Bannor, Clan of Embers, Ljosalfar. Leaders and ordered English city names sourced from EMM XML.
-- 13 early EMM technologies, retaining source names and research costs. **OR prerequisite groups** are reduced to the first supported alternative for Unciv's AND-only tech tree.
+- 82 EMM researchable technologies, retaining source names, costs and original tree positions. See [complete technology tree conversion](technology-tree.md) for the 11 OR dependency approximations and 2 special excluded tech entries.
 - 12 prototype units, 12 prototype buildings, 13 resources, 20 improvements, and 29 Unciv terrain entries for map generation.
 - Domination victory and early exploration ruins.
 
