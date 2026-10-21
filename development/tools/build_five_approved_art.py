@@ -13,11 +13,11 @@ import base64
 import hashlib
 from io import BytesIO
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageDraw
 
 ROOT=Path(__file__).resolve().parents[2]
 NAMES=("Firebow","Wizard","Chanter","Adept","Govannon")
-W,H,PAD=1024,512,4
+W,H,PAD=1024,1024,4
 SOURCES=[ROOT/"development"/"assets"/f"approved_part{i}.b64" for i in range(4)]
 EXPECTED_SHA256="2c8f9a9dfa1d2aceba729cf9a52ae5e4c7afb3226953958a401f63771c9cc63b"
 
@@ -213,6 +213,57 @@ def apply_simple_badges_and_sprite_offsets()->None:
             assert canvas.getbbox()[3]-canvas.getbbox()[1]==43
     print("Installed simple weapon/flame badges and aligned five 43px figures")
 
+# Native icon entries for the first gameplay-capable mana system. The art is
+# deliberately simple: distinct resource/Improvement icons and small map gems.
+MANA_COLORS={
+    "Raw Mana":(158,119,209),
+    "Body Mana":(92,190,100),
+    "Fire Mana":(231,117,60),
+    "Mind Mana":(106,164,227),
+    "Death Mana":(173,155,211),
+}
+MANA_SPHERES=("Body","Fire","Mind","Death")
+
+def build_mana_icon(name:str,kind:str="resource")->Image.Image:
+    """Draw a tiny pixelated crystal, not a photorealistic tile icon."""
+    rgb=MANA_COLORS[name]
+    im=Image.new("RGBA",(32,32))
+    d=ImageDraw.Draw(im)
+    dark=(30,29,45,255)
+    base=tuple(rgb)+(255,)
+    light=tuple(min(255,c+52) for c in rgb)+(255,)
+    shadow=tuple(max(0,c-53) for c in rgb)+(255,)
+    if kind=="improvement":
+        d.ellipse((4,22,27,29),fill=dark)
+        d.rectangle((9,15,22,24),fill=(69,65,83,255),outline=dark)
+        d.rectangle((12,18,19,24),fill=(110,104,129,255))
+    d.polygon([(16,3),(25,12),(21,24),(11,26),(6,14)],fill=dark)
+    d.polygon([(16,5),(23,13),(19,22),(12,24),(8,14)],fill=base)
+    d.polygon([(16,5),(16,20),(8,14)],fill=light)
+    d.polygon([(16,20),(19,22),(12,24)],fill=shadow)
+    d.rectangle((14,8,15,10),fill=(254,253,243,255))
+    return im.resize((64,64),Image.Resampling.NEAREST)
+
+def make_mana_art()->list[str]:
+    names=[]
+    def save_icon(key,im):
+        path=ROOT/"Images"/(key+".png")
+        path.parent.mkdir(parents=True,exist_ok=True)
+        im.save(path,optimize=True)
+        names.append(key)
+    for name in MANA_COLORS:
+        save_icon("ResourceIcons/"+name,build_mana_icon(name))
+        if name=="Raw Mana":
+            save_icon("TileSets/FantasyHex/Tiles/"+name,build_mana_icon(name))
+        else:
+            save_icon("UnitPromotionIcons/"+name.replace(" Mana",""),build_mana_icon(name))
+    for sphere in MANA_SPHERES:
+        key=sphere+" Node"
+        icon=build_mana_icon(sphere+" Mana","improvement")
+        save_icon("ImprovementIcons/"+key,icon)
+        save_icon("TileSets/FantasyHex/Tiles/"+key,icon)
+    return names
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -228,6 +279,8 @@ def pack_atlas()->None:
         for name in NAMES:
             key=f"TileSets/{tileset}/Units/{name}"
             regions.append((key,Image.open(ROOT/"Images"/(key+".png")).convert("RGBA")))
+    for key in make_mana_art():
+        regions.append((key,Image.open(ROOT/"Images"/(key+".png")).convert("RGBA")))
     atlas=Image.new("RGBA",(W,H))
     lines=["","game.png",f"size: {W}, {H}","format: RGBA8888",
            "filter: MipMapLinearLinear, MipMapLinearLinear","repeat: none"]
