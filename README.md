@@ -12,7 +12,7 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 ## Civilization emblems
 
-All 19 playable civilizations now have their user-supplied, full-color faction emblems in `Images.Emblems/NationPortraits/`, with a separately packed `emblems.atlas`/`emblems.png` loaded via `Atlases.json` alongside the existing leader portraits. [Source/format and testing](docs/civilization-emblems.md). Android gameplay confirmation is pending.
+All 19 playable civilizations now have their user-supplied, full-color faction emblems in `Images.Emblems/NationPortraits/`, with a separately packed `emblems.atlas`/`emblems.png` loaded via `Atlases.json` alongside the existing leader portraits. [Source/format and testing](docs/civilization-emblems.md). The circular-border cleanup is committed; Android gameplay confirmation of the revised appearance is pending.
 
 ## First early-game slice
 
