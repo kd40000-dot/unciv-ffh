@@ -24,7 +24,7 @@ The Barbarian science penalty matches EMM's `commerceModifiers=[0,-10,0]` resear
 
 The CI verifier `tools/verify_economic_traits.py` compares every selected leader against the pinned trait data, checks all affected nation uniques and all improvement pillage payouts. Gameplay tests: (1) pillage the same Mine as Hippus or Svartalfar and another ordinary civilization at the same turn/difficulty; the Raiders payout should be doubled (allow for individual random rolls), (2) compare Doviello Science output with equivalent cities of a faction without a science trait. This test must not be mistaken for validating Commando or barbarian relations.
 
-The previous palace and leader-effect milestone was confirmed working by the user on October 21, 2026; the economic bonuses added here have not yet been gameplay-verified.
+**Gameplay status — verified (user-reported, October 21, 2026):** After testing the corrected Raiders multiplier and Doviello's Science penalty, the user reports that both appear to work as expected. The milestone is accepted as verified for now; the user will report any issues they find later. This does not validate Commando, barbarian alliances, or long-game edge cases.
 
 ## Regression correction and exact expectations (October 21, 2026)
 
