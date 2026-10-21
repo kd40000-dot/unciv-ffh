@@ -4,7 +4,7 @@ A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as
 
 ## First early-game slice
 
-Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces and earlier leader traits have received positive Android gameplay confirmation; other mechanics and long games still need testing.
+Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income and Doviello Science have received positive user gameplay verification; other mechanics and long games still need testing. The user will report any economic-trait issues found later.
 
 Install with Unciv → Mods → Download mod from URL:
 
