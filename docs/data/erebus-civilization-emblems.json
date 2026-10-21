@@ -1,0 +1,117 @@
+{
+  "sourceArchive": "CivIcons.zip",
+  "sourceDescription": "User-supplied 19 full-color 64x64 WEBP FfH civilization emblems (appearance inspected; exact original EMM DDS identity not independently certified)",
+  "sourceEMMRevision": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "engineType": "NationPortraits",
+  "reason": "Preserves original colorful square icons without the faction tint applied to NationIcons.",
+  "inputDimensions": [
+    64,
+    64
+  ],
+  "outputDimensions": [
+    96,
+    96
+  ],
+  "outputTransparentPaddingPixels": 16,
+  "atlasName": "emblems",
+  "atlasImage": "emblems.png",
+  "atlasMetadata": "emblems.atlas",
+  "retainExistingLeaderAtlas": true,
+  "nations": [
+    {
+      "name": "Amurites",
+      "sourceArchiveFile": "Amurites.webp",
+      "output": "Images.Emblems/NationPortraits/Amurites.png"
+    },
+    {
+      "name": "Balseraphs",
+      "sourceArchiveFile": "Balseraphs.webp",
+      "output": "Images.Emblems/NationPortraits/Balseraphs.png"
+    },
+    {
+      "name": "Bannor",
+      "sourceArchiveFile": "Bannorflag.webp",
+      "output": "Images.Emblems/NationPortraits/Bannor.png"
+    },
+    {
+      "name": "Calabim",
+      "sourceArchiveFile": "Calabim.webp",
+      "output": "Images.Emblems/NationPortraits/Calabim.png"
+    },
+    {
+      "name": "Clan of Embers",
+      "sourceArchiveFile": "ClanofEmbers.webp",
+      "output": "Images.Emblems/NationPortraits/Clan of Embers.png"
+    },
+    {
+      "name": "Doviello",
+      "sourceArchiveFile": "Doviello.webp",
+      "output": "Images.Emblems/NationPortraits/Doviello.png"
+    },
+    {
+      "name": "Elohim",
+      "sourceArchiveFile": "Elohim.webp",
+      "output": "Images.Emblems/NationPortraits/Elohim.png"
+    },
+    {
+      "name": "Grigori",
+      "sourceArchiveFile": "Grigori.webp",
+      "output": "Images.Emblems/NationPortraits/Grigori.png"
+    },
+    {
+      "name": "Hippus",
+      "sourceArchiveFile": "Hippus.webp",
+      "output": "Images.Emblems/NationPortraits/Hippus.png"
+    },
+    {
+      "name": "Illians",
+      "sourceArchiveFile": "Illians.webp",
+      "output": "Images.Emblems/NationPortraits/Illians.png"
+    },
+    {
+      "name": "Khazad",
+      "sourceArchiveFile": "Khazad.webp",
+      "output": "Images.Emblems/NationPortraits/Khazad.png"
+    },
+    {
+      "name": "Kuriotates",
+      "sourceArchiveFile": "Kuriotates.webp",
+      "output": "Images.Emblems/NationPortraits/Kuriotates.png"
+    },
+    {
+      "name": "Lanun",
+      "sourceArchiveFile": "Lanun.webp",
+      "output": "Images.Emblems/NationPortraits/Lanun.png"
+    },
+    {
+      "name": "Ljosalfar",
+      "sourceArchiveFile": "Ljosalfar.webp",
+      "output": "Images.Emblems/NationPortraits/Ljosalfar.png"
+    },
+    {
+      "name": "Luchuirp",
+      "sourceArchiveFile": "Luchuirp.webp",
+      "output": "Images.Emblems/NationPortraits/Luchuirp.png"
+    },
+    {
+      "name": "Malakim",
+      "sourceArchiveFile": "Malakim.webp",
+      "output": "Images.Emblems/NationPortraits/Malakim.png"
+    },
+    {
+      "name": "Sheaim",
+      "sourceArchiveFile": "Sheaim.webp",
+      "output": "Images.Emblems/NationPortraits/Sheaim.png"
+    },
+    {
+      "name": "Sidar",
+      "sourceArchiveFile": "Sidar.webp",
+      "output": "Images.Emblems/NationPortraits/Sidar.png"
+    },
+    {
+      "name": "Svartalfar",
+      "sourceArchiveFile": "Svartalfar.webp",
+      "output": "Images.Emblems/NationPortraits/Svartalfar.png"
+    }
+  ]
+}
