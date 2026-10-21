@@ -5,7 +5,9 @@
       "All healing effects doubled"
     ],
     "civilopediaText": [
-      "Rejuvenation represents specialized training, experience or innate talent."
+      {
+        "text": "Rejuvenation represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -14,7 +16,9 @@
       "Unable to pillage tiles"
     ],
     "civilopediaText": [
-      "Unable to pillage tiles represents specialized training, experience or innate talent."
+      {
+        "text": "Unable to pillage tiles represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -23,7 +27,9 @@
       "Ignores terrain cost"
     ],
     "civilopediaText": [
-      "Ignore terrain cost represents specialized training, experience or innate talent."
+      {
+        "text": "Ignore terrain cost represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -41,7 +47,9 @@
       "[+20]% Strength"
     ],
     "civilopediaText": [
-      "Combat I represents specialized training, experience or innate talent."
+      {
+        "text": "Combat I represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -62,7 +70,9 @@
       "[+20]% Strength"
     ],
     "civilopediaText": [
-      "Combat II represents specialized training, experience or innate talent."
+      {
+        "text": "Combat II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -83,7 +93,9 @@
       "[+20]% Strength"
     ],
     "civilopediaText": [
-      "Combat III represents specialized training, experience or innate talent."
+      {
+        "text": "Combat III represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -104,7 +116,9 @@
       "[+20]% Strength"
     ],
     "civilopediaText": [
-      "Combat IV represents specialized training, experience or innate talent."
+      {
+        "text": "Combat IV represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -125,7 +139,9 @@
       "[+20]% Strength"
     ],
     "civilopediaText": [
-      "Combat V represents specialized training, experience or innate talent."
+      {
+        "text": "Combat V represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -139,7 +155,9 @@
       "[+30]% Strength <vs cities>"
     ],
     "civilopediaText": [
-      "City Raider I represents specialized training, experience or innate talent."
+      {
+        "text": "City Raider I represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -155,7 +173,9 @@
       "[+30]% Strength <vs cities>"
     ],
     "civilopediaText": [
-      "City Raider II represents specialized training, experience or innate talent."
+      {
+        "text": "City Raider II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -172,7 +192,9 @@
       "[+20]% Strength <vs [Sword] units>"
     ],
     "civilopediaText": [
-      "City Raider III represents specialized training, experience or innate talent."
+      {
+        "text": "City Raider III represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -186,7 +208,9 @@
       "[+30]% Strength <when fighting in [City center] tiles> <when defending>"
     ],
     "civilopediaText": [
-      "City Garrison I represents specialized training, experience or innate talent."
+      {
+        "text": "City Garrison I represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -201,7 +225,9 @@
       "[+30]% Strength <when fighting in [City center] tiles> <when defending>"
     ],
     "civilopediaText": [
-      "City Garrison II represents specialized training, experience or innate talent."
+      {
+        "text": "City Garrison II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -217,7 +243,9 @@
       "[+20]% Strength <vs [Sword] units>"
     ],
     "civilopediaText": [
-      "City Garrison III represents specialized training, experience or innate talent."
+      {
+        "text": "City Garrison III represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -235,7 +263,9 @@
       "[+40]% Strength <vs [Sword] units>"
     ],
     "civilopediaText": [
-      "Shock represents specialized training, experience or innate talent."
+      {
+        "text": "Shock represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -253,7 +283,9 @@
       "[+40]% Strength <vs [Archery] units>"
     ],
     "civilopediaText": [
-      "Cover represents specialized training, experience or innate talent."
+      {
+        "text": "Cover represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -271,7 +303,9 @@
       "[+40]% Strength <vs [Mounted] units>"
     ],
     "civilopediaText": [
-      "Formation represents specialized training, experience or innate talent."
+      {
+        "text": "Formation represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -285,7 +319,9 @@
       "[+30]% Strength <when fighting in [Forest] tiles> <when attacking>"
     ],
     "civilopediaText": [
-      "Woodsman I represents specialized training, experience or innate talent."
+      {
+        "text": "Woodsman I represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -302,7 +338,9 @@
       "[+30]% Strength <when fighting in [Forest] tiles> <when attacking>"
     ],
     "civilopediaText": [
-      "Woodsman II represents specialized training, experience or innate talent."
+      {
+        "text": "Woodsman II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -321,7 +359,9 @@
       "[+1] Movement"
     ],
     "civilopediaText": [
-      "Mobility I represents specialized training, experience or innate talent."
+      {
+        "text": "Mobility I represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -337,7 +377,9 @@
       "[+1] Movement"
     ],
     "civilopediaText": [
-      "Mobility II represents specialized training, experience or innate talent."
+      {
+        "text": "Mobility II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -358,7 +400,9 @@
       "[+1] Sight"
     ],
     "civilopediaText": [
-      "Sentry represents specialized training, experience or innate talent."
+      {
+        "text": "Sentry represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -374,7 +418,9 @@
       "[+1] Sight"
     ],
     "civilopediaText": [
-      "Sentry II represents specialized training, experience or innate talent."
+      {
+        "text": "Sentry II represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -390,7 +436,9 @@
       "Unit will heal every turn, even if it performs an action"
     ],
     "civilopediaText": [
-      "March represents specialized training, experience or innate talent."
+      {
+        "text": "March represents specialized training, experience or innate talent."
+      }
     ]
   },
   {
@@ -400,7 +448,9 @@
       "[+10]% Strength <when fighting in [Jungle] tiles> <when attacking>"
     ],
     "civilopediaText": [
-      "The mark of orcish heritage."
+      {
+        "text": "The mark of orcish heritage."
+      }
     ]
   },
   {
@@ -411,7 +461,9 @@
       "Double movement in [Forest]"
     ],
     "civilopediaText": [
-      "The mark of elven heritage."
+      {
+        "text": "The mark of elven heritage."
+      }
     ]
   },
   {
@@ -421,7 +473,9 @@
       "Not shown on world screen"
     ],
     "civilopediaText": [
-      "The first level of arcane channeling."
+      {
+        "text": "The first level of arcane channeling."
+      }
     ]
   },
   {
@@ -431,7 +485,9 @@
       "Not shown on world screen"
     ],
     "civilopediaText": [
-      "Advanced command of magical energies."
+      {
+        "text": "Advanced command of magical energies."
+      }
     ]
   },
   {
@@ -441,7 +497,9 @@
       "Not shown on world screen"
     ],
     "civilopediaText": [
-      "Mastery of the highest level of arcane channeling."
+      {
+        "text": "Mastery of the highest level of arcane channeling."
+      }
     ]
   },
   {
@@ -451,7 +509,9 @@
       "Double movement in [Hill]"
     ],
     "civilopediaText": [
-      "The mark of dwarven heritage."
+      {
+        "text": "The mark of dwarven heritage."
+      }
     ]
   },
   {
@@ -462,7 +522,9 @@
       "[+10]% Strength <when fighting in [Forest] tiles> <when attacking>"
     ],
     "civilopediaText": [
-      "The mark of Svartalfar heritage."
+      {
+        "text": "The mark of Svartalfar heritage."
+      }
     ]
   }
 ]
