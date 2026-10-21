@@ -15,7 +15,7 @@ barbarian=source["traits"]["TRAIT_BARBARIAN"]
 assert raider["iPillagingGold"]==100
 assert raider["freePromotions"]==["PROMOTION_COMMANDO"]
 assert barbarian["commerceModifiers"]==[0,-10,0]
-RAIDER="200% Yield from pillaging tiles"
+RAIDER="100% Yield from pillaging tiles"
 BARBARIAN="[-10]% Science [in all cities]"
 selected=civdata["leaderSelections"]
 assert len(selected)==19
@@ -37,7 +37,20 @@ for improvement in improvements:
             pillage.append((improvement["name"],unique))
             assert re.fullmatch(r"Pillaging this improvement yields (?:approximately )?\[\+\d+ Gold\]",unique),improvement["name"]
 assert len(pillage)>=8,pillage
-# PercentYieldFromPillaging applies the number as a multiplier (200% -> 2x);
-# never use 100% for the EMM '100% EXTRA pillage Gold' modifier.
-assert RAIDER.startswith("200%") and len(raiders)==2 and len(barbarians)==1
+# The actual Unciv percent parser is String.toPercent() -> 1 + percent/100.
+# UnitActionsPillage.pillageLooting then multiplies loot by that factor.
+# A 100% bonus gives 2x. The previously used 200% was a BUG (3x).
+def unciv_to_percent(raw_number):
+    return 1.0 + raw_number / 100.0
+assert unciv_to_percent(int(RAIDER.split("%")[0])) == 2.0
+assert unciv_to_percent(int(BARBARIAN.split("]")[0].removeprefix("[").replace("%",""))) == 0.9
+for raw_gold in (0, 1, 7, 20, 37, 40):
+    assert raw_gold * unciv_to_percent(100) == raw_gold * 2
+for base_science in (5.0, 10.0, 20.0):
+    assert abs(base_science * unciv_to_percent(-10) - base_science * 0.9) < 1e-8
+# Mine's '+20' random loot is two uniformly random 0..20 draws.
+# Thus one normal pillage yields 0..40 (mean 20), Raiders 0..80 (mean 40).
+assert 2 * 20 * unciv_to_percent(100) == 80
+assert 20 * unciv_to_percent(100) == 40
+assert len(raiders) == 2 and len(barbarians) == 1
 print(f"OK: {len(selected)} selected EMM leaders, {len(pillage)} Gold-only pillage sources, 2 Raider factions and Doviello Barbarian economic penalty")
