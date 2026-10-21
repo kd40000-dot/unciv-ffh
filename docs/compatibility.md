@@ -51,3 +51,7 @@ All 19 selected playable leader names have exact original art path mappings from
 ### Packed leader-portrait atlas fix — October 21, 2026
 
 The user reported that none of the newly installed leader portraits appeared in the nation picker, first contact or diplomacy. We identified the missing **LibGDX texture atlas** as the cause: Unciv on Android does not pack source PNG files automatically. The missing runtime files `game.png`, `game.atlas` and `Atlases.json` are now included. All 19 `LeaderIcons/<leaderName>` atlas entries are validated against the source roster. The user confirmed that the leader images now display correctly on Android after this fix (October 21, 2026). Mark the corrected atlas/portrait display **gameplay-verified**; the fidelity of every supplied image to original FfH DDS artwork remains separately unverified. See [leader portrait packaging](original-leader-portraits.md).
+
+### Civilization emblem flavor — October 21, 2026
+
+Added 19 full-color user-supplied FfH nation emblems, including `Bannorflag.webp` and `ClanofEmbers.webp`, mapped to their exact 19 Unciv nation names. Emblems are rendered as `NationPortraits` to preserve source colors rather than being tinted as `NationIcons`. They are packed into a separate `emblems.atlas`/`emblems.png` and added to `Atlases.json` alongside the existing `game` atlas, preserving verified leader portraits. Exact identity with the original EMM DDS art is not independently established. Android gameplay confirmation pending. See [civilization emblems](civilization-emblems.md).
