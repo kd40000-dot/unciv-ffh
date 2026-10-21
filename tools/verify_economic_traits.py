@@ -30,6 +30,8 @@ for leader in selected:
     assert ("TRAIT_RAIDERS" in leader.get("partialTraits",[]))==(leader["civilization"] in raiders)
     assert ("TRAIT_BARBARIAN" in leader.get("partialTraits",[]))==(leader["civilization"] in barbarians)
     assert n["uniques"].count(RAIDER)<=1 and n["uniques"].count(BARBARIAN)<=1
+    all_pillage_modifiers=[u for u in n["uniques"] if u.endswith("Yield from pillaging tiles")]
+    assert all_pillage_modifiers==([RAIDER] if leader["civilization"] in raiders else []), (leader["civilization"],all_pillage_modifiers)
 pillage=[]
 for improvement in improvements:
     for unique in improvement.get("uniques",[]):
