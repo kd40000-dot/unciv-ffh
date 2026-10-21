@@ -26,4 +26,8 @@ All 19 normal EMM civilization palaces have source-derived Production, Happiness
 
 ### Raiding and barbarian economics — October 21, 2026
 
-Hippus and Svartalfar receive double Gold from improvements pillaged (source Raiders +100% pillage Gold; native Unciv `200% Yield from pillaging tiles`), while Doviello receives -10% Science from the Barbarian trait. Enemy-road Commando behavior, free first strikes and barbarian alliances are not native equivalents and remain deferred. See [economic trait coverage](economic-traits.md). The user confirmed the prior palace and leader effects in gameplay; these new economics remain to be tested.
+Hippus and Svartalfar receive double Gold from improvements pillaged (source Raiders +100% pillage Gold; native Unciv `100% Yield from pillaging tiles`), while Doviello receives -10% Science from the Barbarian trait. Enemy-road Commando behavior, free first strikes and barbarian alliances are not native equivalents and remain deferred. See [economic trait coverage](economic-traits.md). The user confirmed the prior palace and leader effects in gameplay; these new economics remain to be tested.
+
+### Economic percentage regression (October 21, 2026)
+
+Native Unciv defines `Float.toPercent()` as `1 + value/100`; therefore `100% Yield from pillaging tiles` correctly grants +100% Raider Gold (2× loot). A previously committed `200%` bonus instead produced 3× loot. The engine-derived correction and sample numeric expectations are included in [economic regression protocol](economic-test-protocol.md) and checked in `tools/verify_economic_traits.py`. Doviello's -10% Science correctly scales to 90% of the city's unmodified Science.
