@@ -48,4 +48,23 @@ for r in resources:
         techs={t["name"] for c in load("jsons/Techs.json") for t in c["techs"]}
         assert r["revealedBy"] in techs,r["name"]
 assert len(d["implementedPromotionIds"])==26
+
+# Check major EMM combat promotion numeric effects, not just their names and references.
+by_promotion={p["name"]:p for p in proms}
+source_promotions={p["id"]:p for p in d["promotions"]}
+for i in range(1,6):
+    name="Combat "+("I","II","III","IV","V")[i-1]
+    p=by_promotion[name]
+    assert "[+20]% Strength" in p["uniques"],name
+    assert source_promotions[f"PROMOTION_COMBAT{i}"]["combat"]==20,name
+for i in (1,2,3):
+    name="City Raider "+("I","II","III")[i-1]
+    p=by_promotion[name]
+    assert "[+30]% Strength <vs cities>" in p["uniques"],name
+    assert source_promotions[f"PROMOTION_CITY_RAIDER{i}"]["cityAttack"]==30,name
+assert "[+1] Movement" in by_promotion["Mobility I"]["uniques"]
+assert "[+1] Sight" in by_promotion["Sentry"]["uniques"]
+for civ,promotion in (("Clan of Embers","Orc"),("Ljosalfar","Elf")):
+    n=next(n for n in nations if n["name"]==civ)
+    assert any("receive the ["+promotion+"] promotion" in v for v in n.get("uniques",[])),civ
 print(f"OK: {len(proms)} promotions, {len(units)} source-derived units, {len(res_names)} resources; EMM upgrade and promotion references verified.")

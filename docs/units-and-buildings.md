@@ -8,7 +8,7 @@ EMM Continued source commit: [`60b0ec3740083162aaab7bf8491761a54a65a610`](https:
 | --- | ---: |
 | Units inventoried | 356 |
 | Building types inventoried | 189 |
-| Units implemented in this slice | 47 |
+| Units implemented in this slice | 50 |
 | Buildings implemented, including the temporary shared Palace | 40 |
 | Four-faction unique-unit replacements implemented | 14 |
 | Buildings specific to the four factions implemented | 2 |
@@ -25,7 +25,7 @@ Units with required building classes use **Can only be built in cities with [Bui
 
 **Deferred:** unbuildable/summoned units, heroes, spell effects, religions, mana-dependent units, civic-dependent units, and world/national wonder systems. Unaffiliated but faction-gated content is not exposed globally.
 
-**Temporary omissions:** Unit upgrading and obsolescence, city training conditions absent from Unciv, nation-specific palace powers, race-based promotion logic, and full economic effects. This conversion is not a complete FfH2 experience.
+**Temporary omissions:** some source unit upgrade branches (others are now implemented) and obsolescence, city training conditions absent from Unciv, nation-specific palace powers, race-based promotion logic, and full economic effects. This conversion is not a complete FfH2 experience.
 
 ### Corrected early definitions
 
@@ -73,3 +73,7 @@ The normal units or buildings listed below are explicitly prohibited for the sta
 4. Address differences between Civ IV's health, happiness, city defense and Unciv's rules.
 
 The CI workflow checks source-derived values and runs Unciv's official `mod-ci` validation. All reported ruleset warnings are treated as CI failures. Full Android gameplay testing has not been performed.
+
+## Subsequent progression update
+
+The roster now contains **50 units**, including Mage, Archmage and the Amurite Wizard. Promotion trees, source-derived unit upgrades and supported resource requirements are tracked in [the progression milestone](promotions-upgrades-resources.md). The Mage/Archmage minimum-level restrictions remain approximated; several upgrade destinations remain deferred.

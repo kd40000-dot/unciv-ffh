@@ -6,10 +6,10 @@ This standalone Unciv **base ruleset** is an early **unplaytested gameplay candi
 
 - 4 EMM nations: Amurites, Bannor, Clan of Embers, Ljosalfar. Leaders and ordered English city names sourced from EMM XML.
 - 82 EMM researchable technologies, source-derived costs and original tree positions; see [technology conversion](technology-tree.md).
-- 47 source-derived units and 40 buildings; see [conversion report](units-and-buildings.md).
+- 50 source-derived units and 40 buildings; see [conversion report](units-and-buildings.md).
 - Domination victory and early exploration ruins.
 
-Unit and building research prerequisites, production costs, movement and basic combat values now come from EMM XML. Spells and many unique effects are still unimplemented.
+Unit and building research prerequisites, production costs, movement and basic combat values now come from EMM XML. Combat promotions, upgrades and selected strategic resource requirements are now implemented, with documented limits. Spells and many unique effects are still unimplemented.
 
 ## Install and test
 

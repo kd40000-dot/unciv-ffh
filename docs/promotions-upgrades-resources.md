@@ -43,3 +43,7 @@ The CI pipeline checks source counts and translation traceability, checks techno
 - EMM resource requirements do not consume strategic resources in the same way as Unciv; our current `Can only be built` gates approximate resource ownership. The full source alternatives are catalogued.
 - Source XP/level requirements for Mage/Archmage are not yet gated.
 - Some source upgrades point to units not yet implemented and are intentionally omitted rather than redirecting to unrelated units.
+
+### Validation details
+
+The source-fidelity test also compares Combat I–V, City Raider I–III, Mobility I and Sentry bonuses against the original XML and checks the two faction default-race grants. These are static/engine checks, not proof that every effect behaves identically to Civ IV in a played game.
