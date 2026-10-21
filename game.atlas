@@ -1,6 +1,6 @@
 
 game.png
-size: 1024, 512
+size: 1024, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
@@ -121,5 +121,131 @@ TileSets/AbsoluteUnits/Units/Govannon
   xy: 620, 264
   size: 84, 84
   orig: 84, 84
+  offset: 0, 0
+  index: -1
+ResourceIcons/Raw Mana
+  rotate: false
+  xy: 708, 264
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Raw Mana
+  rotate: false
+  xy: 776, 264
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Body Mana
+  rotate: false
+  xy: 844, 264
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Body
+  rotate: false
+  xy: 912, 264
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Fire Mana
+  rotate: false
+  xy: 4, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Fire
+  rotate: false
+  xy: 72, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Mind Mana
+  rotate: false
+  xy: 140, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Mind
+  rotate: false
+  xy: 208, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Death Mana
+  rotate: false
+  xy: 276, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Death
+  rotate: false
+  xy: 344, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Body Node
+  rotate: false
+  xy: 412, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Body Node
+  rotate: false
+  xy: 480, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Fire Node
+  rotate: false
+  xy: 548, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Fire Node
+  rotate: false
+  xy: 616, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Mind Node
+  rotate: false
+  xy: 684, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Mind Node
+  rotate: false
+  xy: 752, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Death Node
+  rotate: false
+  xy: 820, 352
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Death Node
+  rotate: false
+  xy: 888, 352
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1
