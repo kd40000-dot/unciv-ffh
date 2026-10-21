@@ -110,7 +110,7 @@
       "Coast"
     ],
     "uniqueTo": "Lanun",
-    "turnsToBuild": 0,
+    "turnsToBuild": -1,
     "science": 1,
     "gold": 1,
     "uniques": [
