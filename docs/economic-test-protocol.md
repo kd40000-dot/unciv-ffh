@@ -49,4 +49,4 @@ For each pillage, capture **civilization; improved tile; game speed; turn; Gold 
 - **Source review:** Complete. Unciv percentage semantics, pillage payout calculation and city Science modifier consumption all confirmed in preserved engine source.
 - **Mod rule change:** Corrected from 200% to 100% Raiders bonus.
 - **Static regression:** Numeric percentage assertions and source-to-nation consistency checks added to CI.
-- **Live Android gameplay:** Still requires a played session, or reproducible screenshots/saves. No Android playthrough was performed by the author of this document.
+- **Gameplay verification (user-reported, October 21, 2026):** Hippus/Svartalfar pillage income and Doviello Science were tested by the user after the percentage fix, and both appeared to work as expected. Treat this milestone as **verified for current playtesting purposes**. The user will report any issues if they are found. This is not exhaustive verification of all map speeds, game states or future engine updates.
