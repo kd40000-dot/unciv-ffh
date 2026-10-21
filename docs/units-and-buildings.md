@@ -1,6 +1,6 @@
 # Units and buildings — source-derived first conversion
 
-> **Historical conversion snapshot:** The early roster tables below describe the first four factions. The current mod has **100 unit entries and 50 buildings** across **19 playable civilizations**. Refer to the [full civilization milestone](civilizations.md) and its [source ledger](data/emm-civilizations.json) for the additions.
+> **Historical conversion snapshot:** The early roster tables below describe the first four factions. The current mod has **102 unit entries and 50 buildings** across **19 playable civilizations**. Refer to the [full civilization milestone](civilizations.md) and its [source ledger](data/emm-civilizations.json) for the additions.
 
 EMM Continued source commit: [`60b0ec3740083162aaab7bf8491761a54a65a610`](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610).
 
@@ -82,4 +82,4 @@ The roster now contains **50 units**, including Mage, Archmage and the Amurite W
 
 ## Civilization expansion
 
-The full normal civilization roster has **100** unit definitions and **50** buildings. See the [faction source ledger](data/emm-civilizations.json) for added faction objects and deferred classes.
+The full normal civilization roster has **102** unit definitions (including new Lucian and Lightbringer start units) and **50** buildings. See the [faction source ledger](data/emm-civilizations.json) for added faction objects and deferred classes.
