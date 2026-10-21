@@ -1,6 +1,6 @@
 # EMM Continued promotions, upgrades and resources — initial implementation
 
-> **Historical progression snapshot:** The counts below describe the earlier 50-unit milestone. The current roster contains **100 units and 31 promotions**, including new Dwarf and Dark Elf racial promotions. The 50 added faction units now have 63 source-backed upgrade routes; see the faction upgrade-chain audit below. See [civilization expansion](civilizations.md).
+> **Historical progression snapshot:** The counts below describe the earlier 50-unit milestone. The current roster contains **102 units and 31 promotions**, including new Dwarf and Dark Elf racial promotions. The 50 added faction units now have 63 source-backed upgrade routes; see the faction upgrade-chain audit below. See [civilization expansion](civilizations.md).
 
 **Pinned reference:** [bewlay/extramodmod at 60b0ec3740083162aaab7bf8491761a54a65a610](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610).
 [Full machine-readable source and porting ledger](data/emm-promotions-upgrades-resources.json).
