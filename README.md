@@ -10,6 +10,10 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 **All 19 leader portraits have now been imported from the user's supplied artwork archive** as 256×256 PNGs in `Images/LeaderIcons/`, matching the exact Unciv leader names. See [portrait mappings, source and gameplay QA](docs/original-leader-portraits.md). **Portraits did not appear in the first Android test because the mod lacked packed image atlases; this is now addressed with `game.atlas`/`game.png`. **Verified in Unciv on Android by user (October 21, 2026): portraits display correctly after atlas fix.****
 
+## Civilization emblems
+
+All 19 playable civilizations now have their user-supplied, full-color faction emblems in `Images.Emblems/NationPortraits/`, with a separately packed `emblems.atlas`/`emblems.png` loaded via `Atlases.json` alongside the existing leader portraits. [Source/format and testing](docs/civilization-emblems.md). Android gameplay confirmation is pending.
+
 ## First early-game slice
 
 Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
