@@ -28,6 +28,14 @@ Faction palace variants, unique spells, alignment, religion, civics, leader pers
 ## Checks
 CI verifies source data, source-derived unit stats and costs, technology references, nation names, starting techs, race grants, unique replacements and Unciv mod-ci output. Android playtesting is still outstanding.
 
-### Remaining fidelity audit
+### Faction upgrade-chain audit (October 21, 2026)
 
-The 50 newly added faction replacements currently carry their source costs, strength, movement, requirements and basic adapted effects, but most **do not yet carry complete class upgrade chains**. Native Unciv replacements work for supported base-unit upgrades; upgrades originating from newly added unique units still need to be ported individually. Starting units are still supplied through shared Era definitions.
+The 50 added faction units were compared against the pinned EMM unit-class upgrade definitions. **63 source-backed routes** across **31 faction units** now use native Unciv upgrades: the first available destination via `upgradesTo`, additional destinations via `Can upgrade to [unit]`. Destinations use generic class names so Unciv can resolve each faction's own replacement, for example Moroi → Champion (Calabim Vampire) and Centaur Archer → Knight (Kuriotates Centaur Lancer).
+
+Of the source upgrade links, **14** lead to classes absent from this ruleset (notably Immortal, Shadow, Druid, Cannon and religious priest classes). One otherwise present destination is intentionally omitted: Svartalfar Swordsman → Chariot, because the Svartalfar prohibit Chariots. These paths will only be added when their prerequisite units/systems are ported or the source restrictions can be represented. A source unit with no upgrade targets is not given a fictional route.
+
+The civilization verifier now compares every added unit's full destination list with pinned EMM source data and applies class bans. **Gameplay verification remains outstanding**, including confirming faction-replacement resolution for actual upgraded units on Android.
+
+### Other remaining fidelity work
+
+Starting units still come from shared Era definitions rather than each civilization's source starting configuration. This particularly affects Khazad, Ljosalfar, Doviello and Malakim. Palace bonuses, leader traits, religion/alignment and many unique mechanics remain incomplete.
