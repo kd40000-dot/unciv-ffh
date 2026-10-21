@@ -11,7 +11,9 @@
         "row": 2,
         "cost": 80,
         "civilopediaText": [
-          "Cultivation and settled food production support growing settlements."
+          {
+            "text": "Cultivation and settled food production support growing settlements."
+          }
         ]
       },
       {
@@ -19,7 +21,9 @@
         "row": 7,
         "cost": 80,
         "civilopediaText": [
-          "Scouts and explorers venture into unknown lands, mapping dangers and opportunities."
+          {
+            "text": "Scouts and explorers venture into unknown lands, mapping dangers and opportunities."
+          }
         ]
       },
       {
@@ -27,7 +31,9 @@
         "row": 13,
         "cost": 120,
         "civilopediaText": [
-          "Basic tools and trained artisans allow communities to shape raw materials."
+          {
+            "text": "Basic tools and trained artisans allow communities to shape raw materials."
+          }
         ]
       },
       {
@@ -35,7 +41,9 @@
         "row": 28,
         "cost": 80,
         "civilopediaText": [
-          "The oldest rites preserve memories of a world still touched by divine and arcane power."
+          {
+            "text": "The oldest rites preserve memories of a world still touched by divine and arcane power."
+          }
         ]
       }
     ]
@@ -55,7 +63,9 @@
           "Agriculture"
         ],
         "civilopediaText": [
-          "Seasonal knowledge gives order to planting, gathering and civic life."
+          {
+            "text": "Seasonal knowledge gives order to planting, gathering and civic life."
+          }
         ]
       },
       {
@@ -66,7 +76,9 @@
           "Agriculture"
         ],
         "civilopediaText": [
-          "Domesticated animals provide labor, food and mounts."
+          {
+            "text": "Domesticated animals provide labor, food and mounts."
+          }
         ]
       },
       {
@@ -77,7 +89,9 @@
           "Exploration"
         ],
         "civilopediaText": [
-          "Coastal communities learn to draw a dependable livelihood from the water."
+          {
+            "text": "Coastal communities learn to draw a dependable livelihood from the water."
+          }
         ]
       },
       {
@@ -88,7 +102,9 @@
           "Exploration"
         ],
         "civilopediaText": [
-          "Reliable maps allow distant journeys and more ambitious seafaring."
+          {
+            "text": "Reliable maps allow distant journeys and more ambitious seafaring."
+          }
         ]
       },
       {
@@ -99,7 +115,9 @@
           "Exploration"
         ],
         "civilopediaText": [
-          "Trackers and hunters master wilderness survival."
+          {
+            "text": "Trackers and hunters master wilderness survival."
+          }
         ]
       },
       {
@@ -110,7 +128,9 @@
           "Crafting"
         ],
         "civilopediaText": [
-          "Miners extract stone and metals from the earth."
+          {
+            "text": "Miners extract stone and metals from the earth."
+          }
         ]
       },
       {
@@ -121,7 +141,9 @@
           "Crafting"
         ],
         "civilopediaText": [
-          "Stoneworking makes sturdier buildings and defenses possible."
+          {
+            "text": "Stoneworking makes sturdier buildings and defenses possible."
+          }
         ]
       },
       {
@@ -133,7 +155,9 @@
           "Ancient Chants"
         ],
         "civilopediaText": [
-          "The systematic transmission of knowledge prepares new generations of scholars."
+          {
+            "text": "The systematic transmission of knowledge prepares new generations of scholars."
+          }
         ]
       },
       {
@@ -144,7 +168,9 @@
           "Ancient Chants"
         ],
         "civilopediaText": [
-          "Ritual and contemplation open the path toward organized spiritual traditions."
+          {
+            "text": "Ritual and contemplation open the path toward organized spiritual traditions."
+          }
         ]
       }
     ]
@@ -164,7 +190,9 @@
           "Calendar"
         ],
         "civilopediaText": [
-          "Public ceremonies and celebrations bind communities together."
+          {
+            "text": "Public ceremonies and celebrations bind communities together."
+          }
         ]
       },
       {
@@ -175,7 +203,9 @@
           "Animal Husbandry"
         ],
         "civilopediaText": [
-          "Mounted travel changes the reach of scouts and armies."
+          {
+            "text": "Mounted travel changes the reach of scouts and armies."
+          }
         ]
       },
       {
@@ -186,7 +216,9 @@
           "Fishing"
         ],
         "civilopediaText": [
-          "Ships make coastal travel and trade practical."
+          {
+            "text": "Ships make coastal travel and trade practical."
+          }
         ]
       },
       {
@@ -197,7 +229,9 @@
           "Hunting"
         ],
         "civilopediaText": [
-          "Trained bowmen bring ranged weapons to organized warfare."
+          {
+            "text": "Trained bowmen bring ranged weapons to organized warfare."
+          }
         ]
       },
       {
@@ -208,7 +242,9 @@
           "Mining"
         ],
         "civilopediaText": [
-          "Bronze tools and weapons improve early industry and military equipment."
+          {
+            "text": "Bronze tools and weapons improve early industry and military equipment."
+          }
         ]
       },
       {
@@ -219,7 +255,9 @@
           "Masonry"
         ],
         "civilopediaText": [
-          "Engineering techniques support larger structures and organized works."
+          {
+            "text": "Engineering techniques support larger structures and organized works."
+          }
         ]
       },
       {
@@ -230,7 +268,9 @@
           "Education"
         ],
         "civilopediaText": [
-          "Records, scholarship and administration endure beyond living memory."
+          {
+            "text": "Records, scholarship and administration endure beyond living memory."
+          }
         ]
       },
       {
@@ -241,7 +281,9 @@
           "Education"
         ],
         "civilopediaText": [
-          "Organized military training allows stronger armies to take the field."
+          {
+            "text": "Organized military training allows stronger armies to take the field."
+          }
         ]
       },
       {
@@ -252,7 +294,9 @@
           "Education"
         ],
         "civilopediaText": [
-          "Formal laws define institutions, obligations and civic order."
+          {
+            "text": "Formal laws define institutions, obligations and civic order."
+          }
         ]
       },
       {
@@ -263,7 +307,9 @@
           "Mysticism"
         ],
         "civilopediaText": [
-          "Students of magic learn to perceive and channel the unseen currents of the Ether."
+          {
+            "text": "Students of magic learn to perceive and channel the unseen currents of the Ether."
+          }
         ]
       },
       {
@@ -275,7 +321,9 @@
           "Mysticism"
         ],
         "civilopediaText": [
-          "A spiritual path teaches reverence for living forests and the Fellowship of Leaves."
+          {
+            "text": "A spiritual path teaches reverence for living forests and the Fellowship of Leaves."
+          }
         ]
       },
       {
@@ -287,7 +335,9 @@
           "Mysticism"
         ],
         "civilopediaText": [
-          "The worship of Kilmorph honors stone, labor and the hidden riches of the earth."
+          {
+            "text": "The worship of Kilmorph honors stone, labor and the hidden riches of the earth."
+          }
         ]
       },
       {
@@ -298,7 +348,9 @@
           "Mysticism"
         ],
         "civilopediaText": [
-          "Inquiry into ethics and existence shapes the beliefs of nations."
+          {
+            "text": "Inquiry into ethics and existence shapes the beliefs of nations."
+          }
         ]
       },
       {
@@ -310,7 +362,9 @@
           "Mysticism"
         ],
         "civilopediaText": [
-          "Whispers from beneath the waves lead worshippers toward the Octopus Overlords."
+          {
+            "text": "Whispers from beneath the waves lead worshippers toward the Octopus Overlords."
+          }
         ]
       }
     ]
@@ -331,7 +385,9 @@
           "Horseback Riding"
         ],
         "civilopediaText": [
-          "Merchants and markets connect settlements through exchange."
+          {
+            "text": "Merchants and markets connect settlements through exchange."
+          }
         ]
       },
       {
@@ -342,7 +398,9 @@
           "Sailing"
         ],
         "civilopediaText": [
-          "Improved observation and navigation widen the horizon for seafarers."
+          {
+            "text": "Improved observation and navigation widen the horizon for seafarers."
+          }
         ]
       },
       {
@@ -353,7 +411,9 @@
           "Hunting"
         ],
         "civilopediaText": [
-          "Subtle toxins become weapons for hunters, spies and assassins."
+          {
+            "text": "Subtle toxins become weapons for hunters, spies and assassins."
+          }
         ]
       },
       {
@@ -365,7 +425,9 @@
           "Hunting"
         ],
         "civilopediaText": [
-          "Skilled handlers bring powerful creatures under human or allied guidance."
+          {
+            "text": "Skilled handlers bring powerful creatures under human or allied guidance."
+          }
         ]
       },
       {
@@ -376,7 +438,9 @@
           "Bronze Working"
         ],
         "civilopediaText": [
-          "Ore is refined into workable metal for craftsmen and soldiers."
+          {
+            "text": "Ore is refined into workable metal for craftsmen and soldiers."
+          }
         ]
       },
       {
@@ -387,7 +451,9 @@
           "Construction"
         ],
         "civilopediaText": [
-          "Health and cleanliness become matters of urban organization."
+          {
+            "text": "Health and cleanliness become matters of urban organization."
+          }
         ]
       },
       {
@@ -398,7 +464,9 @@
           "Writing"
         ],
         "civilopediaText": [
-          "Formal calculation strengthens administration, engineering and advanced study."
+          {
+            "text": "Formal calculation strengthens administration, engineering and advanced study."
+          }
         ]
       },
       {
@@ -410,7 +478,9 @@
           "Warfare"
         ],
         "civilopediaText": [
-          "Commanders learn to coordinate armies beyond the individual battlefield."
+          {
+            "text": "Commanders learn to coordinate armies beyond the individual battlefield."
+          }
         ]
       },
       {
@@ -421,7 +491,9 @@
           "Code of Laws"
         ],
         "civilopediaText": [
-          "Standardized money expands trade and taxation."
+          {
+            "text": "Standardized money expands trade and taxation."
+          }
         ]
       },
       {
@@ -432,7 +504,9 @@
           "Knowledge of the Ether"
         ],
         "civilopediaText": [
-          "The dark study of death seeks to bind or exploit powers beyond the grave."
+          {
+            "text": "The dark study of death seeks to bind or exploit powers beyond the grave."
+          }
         ]
       },
       {
@@ -443,7 +517,9 @@
           "Knowledge of the Ether"
         ],
         "civilopediaText": [
-          "Arcane scholars learn to call upon fire, air, water and earth."
+          {
+            "text": "Arcane scholars learn to call upon fire, air, water and earth."
+          }
         ]
       },
       {
@@ -454,7 +530,9 @@
           "Knowledge of the Ether"
         ],
         "civilopediaText": [
-          "The study of visions and hidden truths seeks knowledge unavailable to ordinary senses."
+          {
+            "text": "The study of visions and hidden truths seeks knowledge unavailable to ordinary senses."
+          }
         ]
       },
       {
@@ -465,7 +543,9 @@
           "Knowledge of the Ether"
         ],
         "civilopediaText": [
-          "Magic reshapes the properties of bodies, objects and the surrounding world."
+          {
+            "text": "Magic reshapes the properties of bodies, objects and the surrounding world."
+          }
         ]
       },
       {
@@ -476,7 +556,9 @@
           "Way of the Forests"
         ],
         "civilopediaText": [
-          "Secret woodland routes and teachings lead initiates deeper into the Fellowship of Leaves."
+          {
+            "text": "Secret woodland routes and teachings lead initiates deeper into the Fellowship of Leaves."
+          }
         ]
       },
       {
@@ -487,7 +569,9 @@
           "Way of the Earthmother"
         ],
         "civilopediaText": [
-          "The Runes of Kilmorph teach excellence through discipline, craft and devotion."
+          {
+            "text": "The Runes of Kilmorph teach excellence through discipline, craft and devotion."
+          }
         ]
       },
       {
@@ -499,7 +583,9 @@
           "Philosophy"
         ],
         "civilopediaText": [
-          "Organized clergy carry sacred traditions into the affairs of nations."
+          {
+            "text": "Organized clergy carry sacred traditions into the affairs of nations."
+          }
         ]
       },
       {
@@ -511,7 +597,9 @@
           "Philosophy"
         ],
         "civilopediaText": [
-          "The Order calls its followers to justice, discipline and devotion to Junil."
+          {
+            "text": "The Order calls its followers to justice, discipline and devotion to Junil."
+          }
         ]
       },
       {
@@ -523,7 +611,9 @@
           "Philosophy"
         ],
         "civilopediaText": [
-          "Codes of duty shape warriors and the societies they defend."
+          {
+            "text": "Codes of duty shape warriors and the societies they defend."
+          }
         ]
       },
       {
@@ -535,7 +625,9 @@
           "Philosophy"
         ],
         "civilopediaText": [
-          "The Ashen Veil twists devotion toward demonic and destructive ends."
+          {
+            "text": "The Ashen Veil twists devotion toward demonic and destructive ends."
+          }
         ]
       },
       {
@@ -546,7 +638,9 @@
           "Message from the Deep"
         ],
         "civilopediaText": [
-          "Forbidden techniques seek to bind the minds and wills of others."
+          {
+            "text": "Forbidden techniques seek to bind the minds and wills of others."
+          }
         ]
       }
     ]
@@ -567,7 +661,9 @@
           "Festivals"
         ],
         "civilopediaText": [
-          "Performance and public storytelling become instruments of culture and influence."
+          {
+            "text": "Performance and public storytelling become instruments of culture and influence."
+          }
         ]
       },
       {
@@ -579,7 +675,9 @@
           "Trade"
         ],
         "civilopediaText": [
-          "False appearances and concealed intentions make intrigue a practiced art."
+          {
+            "text": "False appearances and concealed intentions make intrigue a practiced art."
+          }
         ]
       },
       {
@@ -591,7 +689,9 @@
           "Optics"
         ],
         "civilopediaText": [
-          "The movements of the heavens offer knowledge to scholars and navigators."
+          {
+            "text": "The movements of the heavens offer knowledge to scholars and navigators."
+          }
         ]
       },
       {
@@ -602,7 +702,9 @@
           "Animal Handling"
         ],
         "civilopediaText": [
-          "A deep connection with wild beasts permits unusual alliances."
+          {
+            "text": "A deep connection with wild beasts permits unusual alliances."
+          }
         ]
       },
       {
@@ -614,7 +716,9 @@
           "Archery"
         ],
         "civilopediaText": [
-          "Improved riding equipment makes mounted warfare more effective."
+          {
+            "text": "Improved riding equipment makes mounted warfare more effective."
+          }
         ]
       },
       {
@@ -625,7 +729,9 @@
           "Archery"
         ],
         "civilopediaText": [
-          "Specialist bowmakers improve weapons for dedicated archers."
+          {
+            "text": "Specialist bowmakers improve weapons for dedicated archers."
+          }
         ]
       },
       {
@@ -637,7 +743,9 @@
           "Smelting"
         ],
         "civilopediaText": [
-          "Iron equipment gives artisans and armies access to stronger materials."
+          {
+            "text": "Iron equipment gives artisans and armies access to stronger materials."
+          }
         ]
       },
       {
@@ -649,7 +757,9 @@
           "Sanitation"
         ],
         "civilopediaText": [
-          "Healers develop more systematic treatments for injury and disease."
+          {
+            "text": "Healers develop more systematic treatments for injury and disease."
+          }
         ]
       },
       {
@@ -661,7 +771,9 @@
           "Mathematics"
         ],
         "civilopediaText": [
-          "Sophisticated machines and structures expand the scale of construction."
+          {
+            "text": "Sophisticated machines and structures expand the scale of construction."
+          }
         ]
       },
       {
@@ -673,7 +785,9 @@
           "Code of Laws"
         ],
         "civilopediaText": [
-          "Networks of lords and obligations reorganize land and military service."
+          {
+            "text": "Networks of lords and obligations reorganize land and military service."
+          }
         ]
       },
       {
@@ -685,7 +799,9 @@
           "Currency"
         ],
         "civilopediaText": [
-          "Government revenue is organized through regular assessments and collection."
+          {
+            "text": "Government revenue is organized through regular assessments and collection."
+          }
         ]
       },
       {
@@ -697,7 +813,9 @@
           "Alteration"
         ],
         "civilopediaText": [
-          "Experienced mages employ increasingly powerful arcane disciplines."
+          {
+            "text": "Experienced mages employ increasingly powerful arcane disciplines."
+          }
         ]
       },
       {
@@ -709,7 +827,9 @@
           "Priesthood"
         ],
         "civilopediaText": [
-          "Absolute conviction inspires zealots and uncompromising causes."
+          {
+            "text": "Absolute conviction inspires zealots and uncompromising causes."
+          }
         ]
       },
       {
@@ -721,7 +841,9 @@
           "Priesthood"
         ],
         "civilopediaText": [
-          "Sacred doctrine is translated into institutions and enforceable rules."
+          {
+            "text": "Sacred doctrine is translated into institutions and enforceable rules."
+          }
         ]
       },
       {
@@ -732,7 +854,9 @@
           "Corruption of Spirit"
         ],
         "civilopediaText": [
-          "Desperate mortals bargain with powers from the infernal realms."
+          {
+            "text": "Desperate mortals bargain with powers from the infernal realms."
+          }
         ]
       }
     ]
@@ -753,7 +877,9 @@
           "Feral Bond"
         ],
         "civilopediaText": [
-          "Exceptional beast-handlers command creatures beyond ordinary livestock."
+          {
+            "text": "Exceptional beast-handlers command creatures beyond ordinary livestock."
+          }
         ]
       },
       {
@@ -766,7 +892,9 @@
           "Stirrups"
         ],
         "civilopediaText": [
-          "Breeding and training produce mounts fit for elite cavalry."
+          {
+            "text": "Breeding and training produce mounts fit for elite cavalry."
+          }
         ]
       },
       {
@@ -778,7 +906,9 @@
           "Bowyers"
         ],
         "civilopediaText": [
-          "Specialized military discipline rewards careful aim and exact execution."
+          {
+            "text": "Specialized military discipline rewards careful aim and exact execution."
+          }
         ]
       },
       {
@@ -791,7 +921,9 @@
           "Iron Working"
         ],
         "civilopediaText": [
-          "Rare mithril can be forged into equipment of extraordinary quality."
+          {
+            "text": "Rare mithril can be forged into equipment of extraordinary quality."
+          }
         ]
       },
       {
@@ -803,7 +935,9 @@
           "Engineering"
         ],
         "civilopediaText": [
-          "Complex mechanical systems increase the power of craft and war."
+          {
+            "text": "Complex mechanical systems increase the power of craft and war."
+          }
         ]
       },
       {
@@ -815,7 +949,9 @@
           "Engineering"
         ],
         "civilopediaText": [
-          "Explosive mixtures change mining, siegecraft and warfare."
+          {
+            "text": "Explosive mixtures change mining, siegecraft and warfare."
+          }
         ]
       },
       {
@@ -826,7 +962,9 @@
           "Taxation"
         ],
         "civilopediaText": [
-          "Merchant interests and state policy become deeply intertwined."
+          {
+            "text": "Merchant interests and state policy become deeply intertwined."
+          }
         ]
       },
       {
@@ -837,7 +975,9 @@
           "Taxation"
         ],
         "civilopediaText": [
-          "Specialized trades establish enduring institutions of craft and commerce."
+          {
+            "text": "Specialized trades establish enduring institutions of craft and commerce."
+          }
         ]
       },
       {
@@ -848,7 +988,9 @@
           "Sorcery"
         ],
         "civilopediaText": [
-          "The deeper secrets of spellcraft become subjects of advanced scholarly mastery."
+          {
+            "text": "The deeper secrets of spellcraft become subjects of advanced scholarly mastery."
+          }
         ]
       },
       {
@@ -860,7 +1002,9 @@
           "Hidden Paths"
         ],
         "civilopediaText": [
-          "Druids and devotees seek harmony with the living world."
+          {
+            "text": "Druids and devotees seek harmony with the living world."
+          }
         ]
       },
       {
@@ -871,7 +1015,9 @@
           "Fanaticism"
         ],
         "civilopediaText": [
-          "Unrestrained fury turns warriors into terrible engines of battle."
+          {
+            "text": "Unrestrained fury turns warriors into terrible engines of battle."
+          }
         ]
       },
       {
@@ -882,7 +1028,9 @@
           "Religious Law"
         ],
         "civilopediaText": [
-          "The study of divinity shapes sophisticated religious doctrine."
+          {
+            "text": "The study of divinity shapes sophisticated religious doctrine."
+          }
         ]
       },
       {
@@ -893,7 +1041,9 @@
           "Orders from Heaven"
         ],
         "civilopediaText": [
-          "Unyielding commitment to a holy cause inspires acts of faith and war."
+          {
+            "text": "Unyielding commitment to a holy cause inspires acts of faith and war."
+          }
         ]
       },
       {
@@ -904,7 +1054,9 @@
           "Infernal Pact"
         ],
         "civilopediaText": [
-          "Schemes of ruin bring dark ambitions closer to fulfillment."
+          {
+            "text": "Schemes of ruin bring dark ambitions closer to fulfillment."
+          }
         ]
       }
     ]
@@ -924,7 +1076,9 @@
           "Mithril Working"
         ],
         "civilopediaText": [
-          "Legendary metalworking places mithril blades and arms in the hands of soldiers."
+          {
+            "text": "Legendary metalworking places mithril blades and arms in the hands of soldiers."
+          }
         ]
       },
       {
@@ -935,7 +1089,9 @@
           "Arcane Lore"
         ],
         "civilopediaText": [
-          "Supreme discipline allows the mind to command powers that defeat lesser practitioners."
+          {
+            "text": "Supreme discipline allows the mind to command powers that defeat lesser practitioners."
+          }
         ]
       },
       {
@@ -946,7 +1102,9 @@
           "Arcane Lore"
         ],
         "civilopediaText": [
-          "Advanced magic explores passage beyond ordinary physical boundaries."
+          {
+            "text": "Advanced magic explores passage beyond ordinary physical boundaries."
+          }
         ]
       },
       {
@@ -957,7 +1115,9 @@
           "Commune with Nature"
         ],
         "civilopediaText": [
-          "Sacred power is pursued at the boundary between the mortal and divine."
+          {
+            "text": "Sacred power is pursued at the boundary between the mortal and divine."
+          }
         ]
       }
     ]
@@ -977,7 +1137,9 @@
           "Strength of Will"
         ],
         "civilopediaText": [
-          "The final ambition of scholarship is knowledge without limit."
+          {
+            "text": "The final ambition of scholarship is knowledge without limit."
+          }
         ]
       }
     ]
@@ -1000,7 +1162,9 @@
           "Can be continually researched"
         ],
         "civilopediaText": [
-          "Beyond known discoveries lies an open horizon of technological invention."
+          {
+            "text": "Beyond known discoveries lies an open horizon of technological invention."
+          }
         ]
       }
     ]
