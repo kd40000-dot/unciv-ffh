@@ -1,0 +1,139 @@
+
+game.png
+size: 1024, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+LeaderIcons/Alexis
+  rotate: false
+  xy: 4, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Arendel Phaedra
+  rotate: false
+  xy: 172, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Arturus Thorne
+  rotate: false
+  xy: 340, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Auric Ulvin
+  rotate: false
+  xy: 508, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Cardith Lorda
+  rotate: false
+  xy: 676, 4
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Cassiel
+  rotate: false
+  xy: 4, 172
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Charadon
+  rotate: false
+  xy: 172, 172
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Ethne the White
+  rotate: false
+  xy: 340, 172
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Faeryl Viconia
+  rotate: false
+  xy: 508, 172
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Falamar
+  rotate: false
+  xy: 676, 172
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Garrim Gyr
+  rotate: false
+  xy: 4, 340
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Jonas Endain
+  rotate: false
+  xy: 172, 340
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Perpentach
+  rotate: false
+  xy: 340, 340
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Sabathiel
+  rotate: false
+  xy: 508, 340
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Sandalphon
+  rotate: false
+  xy: 676, 340
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Tasunke
+  rotate: false
+  xy: 4, 508
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Tebryn Arbandi
+  rotate: false
+  xy: 172, 508
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Valledia the Even
+  rotate: false
+  xy: 340, 508
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+LeaderIcons/Varn Gosam
+  rotate: false
+  xy: 508, 508
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
