@@ -1,130 +1,168 @@
 {
-  "sourceArchive": "CivIcons.zip",
-  "sourceDescription": "User-supplied 19 full-color 64x64 WEBP FfH civilization emblems (appearance inspected; exact original EMM DDS identity not independently certified)",
+  "sourceArchive": "assets.zip (extracted from pak0.fpk)",
+  "sourceDescription": "User-provided extracted FfH2 pak0.fpk archive; 19 original Civilization IV team-color flag DDS textures. Art paths correspond to pinned ExtraModMod Continued CivilizationArtInfo mapping, but matching exact DDS revisions is not independently guaranteed.",
   "sourceEMMRevision": "60b0ec3740083162aaab7bf8491761a54a65a610",
-  "engineType": "NationPortraits",
-  "reason": "Use color-preserving nation portraits; circular crop removes the source image's old square border and fits Unciv's circular UI slot.",
+  "sourcePathBase": "art/interface/teamcolor/",
+  "engineType": "NationIcons",
+  "reason": "Original flags contain white alpha-masked emblems; native Unciv NationIcons tint each transparent white glyph according to nation innerColor while drawing the stock faction-color circular background. This avoids a second baked background or border.",
   "inputDimensions": [
-    64,
-    64
+    128,
+    128
   ],
   "outputDimensions": [
-    96,
-    96
+    128,
+    128
   ],
-  "outputTransparentPaddingPixels": 0,
+  "colorChannels": "white RGB with original DDS mask-driven alpha, rendered in nation innerColor by Unciv",
+  "glyphScale": "nontransparent bounding box fit into 120x120 area of 128x128 image, preserving aspect ratio",
   "atlasName": "emblems",
   "atlasImage": "emblems.png",
   "atlasMetadata": "emblems.atlas",
+  "atlasDimensions": [
+    1024,
+    512
+  ],
   "retainExistingLeaderAtlas": true,
+  "generationCommand": "python3 tools/pack_original_civ_emblems.py /path/to/assets.zip",
+  "specialMaskFixes": {
+    "Calabim": "Invert DDS alpha to recover actual glyph (original flag alpha is opaque background).",
+    "Illians": "Invert DDS alpha to recover actual glyph (original flag alpha is opaque background).",
+    "Elohim": "Remove 16px opaque strips at top and bottom before glyph extraction."
+  },
   "nations": [
     {
       "name": "Amurites",
-      "sourceArchiveFile": "Amurites.webp",
-      "output": "Images.Emblems/NationPortraits/Amurites.png"
+      "originalSourcePath": "art/interface/teamcolor/amuritesflag.dds",
+      "sourceSha256": "cc37b544c5ff3a1c17c471885e979030392ab7d205b7a08b68cb1430a2dc6001",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Amurites.png"
     },
     {
       "name": "Balseraphs",
-      "sourceArchiveFile": "Balseraphs.webp",
-      "output": "Images.Emblems/NationPortraits/Balseraphs.png"
+      "originalSourcePath": "art/interface/teamcolor/balseraphsflag.dds",
+      "sourceSha256": "fb13c7e697dd7c64c37f4c58c5a78204475fa7a355803af7ce09d8bcce571b80",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Balseraphs.png"
     },
     {
       "name": "Bannor",
-      "sourceArchiveFile": "Bannorflag.webp",
-      "output": "Images.Emblems/NationPortraits/Bannor.png"
+      "originalSourcePath": "art/interface/teamcolor/bannorflag.dds",
+      "sourceSha256": "22559ab638a8fc0dff4155e0b167320dc41c7fc0629859b6469ae51ed7535642",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Bannor.png"
     },
     {
       "name": "Calabim",
-      "sourceArchiveFile": "Calabim.webp",
-      "output": "Images.Emblems/NationPortraits/Calabim.png"
+      "originalSourcePath": "art/interface/teamcolor/calabimflag.dds",
+      "sourceSha256": "bdd70faa6008e138c57dac6182e255fb8489148aa95e7680f2921597a4d73eef",
+      "sourceMask": "inverted",
+      "output": "Images.Emblems/NationIcons/Calabim.png"
     },
     {
       "name": "Clan of Embers",
-      "sourceArchiveFile": "ClanofEmbers.webp",
-      "output": "Images.Emblems/NationPortraits/Clan of Embers.png"
+      "originalSourcePath": "art/interface/teamcolor/clanofembersflag.dds",
+      "sourceSha256": "39c7c245389c155a2833ba26f6fc22a022c65d39b10c42665e6470f2a77ca6b5",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Clan of Embers.png"
     },
     {
       "name": "Doviello",
-      "sourceArchiveFile": "Doviello.webp",
-      "output": "Images.Emblems/NationPortraits/Doviello.png"
+      "originalSourcePath": "art/interface/teamcolor/dovielloflag.dds",
+      "sourceSha256": "cdb920892935ae07896f6fab2566d66fcdcccc7fb00e73e94d8ffa3dadb7f0bd",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Doviello.png"
     },
     {
       "name": "Elohim",
-      "sourceArchiveFile": "Elohim.webp",
-      "output": "Images.Emblems/NationPortraits/Elohim.png"
+      "originalSourcePath": "art/interface/teamcolor/elohimflag.dds",
+      "sourceSha256": "de0178ef341bcaa2c914ee58a9c14cd30d4d5ff5c4b83fc136c12a6d63c61fab",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Elohim.png"
     },
     {
       "name": "Grigori",
-      "sourceArchiveFile": "Grigori.webp",
-      "output": "Images.Emblems/NationPortraits/Grigori.png"
+      "originalSourcePath": "art/interface/teamcolor/grigoriflag.dds",
+      "sourceSha256": "78a137da49dcbd2b3fd9a98545bee71c52e3e85fb5ec566ff2ed666f1b5bec88",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Grigori.png"
     },
     {
       "name": "Hippus",
-      "sourceArchiveFile": "Hippus.webp",
-      "output": "Images.Emblems/NationPortraits/Hippus.png"
+      "originalSourcePath": "art/interface/teamcolor/hippusflag.dds",
+      "sourceSha256": "33d20009fdc005c595011057bec4dc0e0b631d49d276de0ecaf17a58983a2d79",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Hippus.png"
     },
     {
       "name": "Illians",
-      "sourceArchiveFile": "Illians.webp",
-      "output": "Images.Emblems/NationPortraits/Illians.png"
+      "originalSourcePath": "art/interface/teamcolor/illiansflag.dds",
+      "sourceSha256": "2739e7a5aa1520949d9ed64fd5d963d9a3025790f954532614669f573704b464",
+      "sourceMask": "inverted",
+      "output": "Images.Emblems/NationIcons/Illians.png"
     },
     {
       "name": "Khazad",
-      "sourceArchiveFile": "Khazad.webp",
-      "output": "Images.Emblems/NationPortraits/Khazad.png"
+      "originalSourcePath": "art/interface/teamcolor/khazadflag.dds",
+      "sourceSha256": "303ef8fd239f335a7c4c51bd70c1d2ba78c20e21a2245705d0ff7f523e9a22da",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Khazad.png"
     },
     {
       "name": "Kuriotates",
-      "sourceArchiveFile": "Kuriotates.webp",
-      "output": "Images.Emblems/NationPortraits/Kuriotates.png"
+      "originalSourcePath": "art/interface/teamcolor/kuriotatesflag.dds",
+      "sourceSha256": "8a6b36b7f4a62a8659f5fcc9c9781fbbf1e5377ae3a65088ba1e675e5e853ca0",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Kuriotates.png"
     },
     {
       "name": "Lanun",
-      "sourceArchiveFile": "Lanun.webp",
-      "output": "Images.Emblems/NationPortraits/Lanun.png"
+      "originalSourcePath": "art/interface/teamcolor/lanunflag.dds",
+      "sourceSha256": "9108a17fc523c3a98118c3def4a8f1f5db3667be291645f7f9157f994101802c",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Lanun.png"
     },
     {
       "name": "Ljosalfar",
-      "sourceArchiveFile": "Ljosalfar.webp",
-      "output": "Images.Emblems/NationPortraits/Ljosalfar.png"
+      "originalSourcePath": "art/interface/teamcolor/ljosalfarflag.dds",
+      "sourceSha256": "ca16391aeae25ba786b640deb331b791f2ff25c84c4428710f26be19b12e94ab",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Ljosalfar.png"
     },
     {
       "name": "Luchuirp",
-      "sourceArchiveFile": "Luchuirp.webp",
-      "output": "Images.Emblems/NationPortraits/Luchuirp.png"
+      "originalSourcePath": "art/interface/teamcolor/luchuirpflag.dds",
+      "sourceSha256": "e6906dba1aee71fd9892f1328dbf9b48e74db7ffdc34e6a5b2a275770689be24",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Luchuirp.png"
     },
     {
       "name": "Malakim",
-      "sourceArchiveFile": "Malakim.webp",
-      "output": "Images.Emblems/NationPortraits/Malakim.png"
+      "originalSourcePath": "art/interface/teamcolor/malakimflag.dds",
+      "sourceSha256": "5e3a333f77927e6eb1da2db5b5b76816f4a0371f0f35f22ddacef63156d1086f",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Malakim.png"
     },
     {
       "name": "Sheaim",
-      "sourceArchiveFile": "Sheaim.webp",
-      "output": "Images.Emblems/NationPortraits/Sheaim.png"
+      "originalSourcePath": "art/interface/teamcolor/sheaimflag.dds",
+      "sourceSha256": "c6a78b6be2d6ba2703272dd4fa714f79742ee2d9e4956c69d659065856997d0f",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Sheaim.png"
     },
     {
       "name": "Sidar",
-      "sourceArchiveFile": "Sidar.webp",
-      "output": "Images.Emblems/NationPortraits/Sidar.png"
+      "originalSourcePath": "art/interface/teamcolor/sidarflag.dds",
+      "sourceSha256": "1b62730ce5ae8897793d2c14735a57aed99c711852602193d235d896174668d3",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Sidar.png"
     },
     {
       "name": "Svartalfar",
-      "sourceArchiveFile": "Svartalfar.webp",
-      "output": "Images.Emblems/NationPortraits/Svartalfar.png"
+      "originalSourcePath": "art/interface/teamcolor/svartalfarflag.dds",
+      "sourceSha256": "be3e898ae22a2ab484f84bd310dd3a0c17e18ee8ff2bd125d807318bd165a8d8",
+      "sourceMask": "original",
+      "output": "Images.Emblems/NationIcons/Svartalfar.png"
     }
   ],
-  "presentationRevision": {
-    "date": "2026-10-21",
-    "reason": "User requested removal of the rounded-square source border and increased emblem fill of the circular UI slot.",
-    "technique": "Crop each original 64x64 WebP source to inner (5,5)-(59,59), resample to 96x96 using Lanczos, alpha-mask to a 96x96 circle. Preserves flat background color and entire faction symbol rather than making destructive chroma-key guesses.",
-    "originalFilenamesPreserved": true,
-    "outputDimensions": [
-      96,
-      96
-    ],
-    "transparentCorners": true,
-    "regeneratedAndroidAtlas": "emblems.png",
-    "leaderPortraitAtlasUnchanged": true
-  }
+  "previousArt": "Earlier circular cropped icons from the user-provided CivIcons.zip, verified in-game 2026-10-21, replaced with original flag glyphs on 2026-10-21; new version not yet tested on Android."
 }
