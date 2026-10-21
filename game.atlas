@@ -291,3 +291,52 @@ TileSets/FantasyHex/Tiles/Death Node
   orig: 64, 64
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Skeleton
+  rotate: false
+  xy: 344, 420
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Skeleton
+  rotate: false
+  xy: 432, 420
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+UnitIcons/Skeleton
+  rotate: false
+  xy: 520, 420
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Undead
+  rotate: false
+  xy: 620, 420
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Smoke
+  rotate: false
+  xy: 720, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Smoke
+  rotate: false
+  xy: 788, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Tiles/Smoke
+  rotate: false
+  xy: 856, 420
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
