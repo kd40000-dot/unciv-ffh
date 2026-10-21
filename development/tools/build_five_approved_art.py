@@ -213,6 +213,34 @@ def apply_simple_badges_and_sprite_offsets()->None:
             assert canvas.getbbox()[3]-canvas.getbbox()[1]==43
     print("Installed simple weapon/flame badges and aligned five 43px figures")
 
+def clean_five_unit_outlines()->None:
+    """Keep existing approved figures, removing jagged alpha halos and stray pixels.
+
+    All work is done at native 84x84 resolution. Never resample with
+    bilinear/bicubic filters, which create colored edge halos.
+    """
+    from PIL import ImageFilter
+    for name in NAMES:
+        for tileset in ("FantasyHex","AbsoluteUnits"):
+            path=ROOT/"Images"/"TileSets"/tileset/"Units"/f"{name}.png"
+            im=Image.open(path).convert("RGBA")
+            a=im.getchannel("A")
+            # Enforce binary alpha so there are no translucent stray pixels.
+            a=a.point(lambda v: 255 if v>=128 else 0)
+            # One-pixel exterior silhouette: dark neutral outline, no bright
+            # halos. Preserve the interior pixel colors and details.
+            grown=a.filter(ImageFilter.MaxFilter(3))
+            outer=Image.new("RGBA",im.size,(23,17,19,255))
+            outer.putalpha(grown)
+            im.putalpha(a)
+            outer.alpha_composite(im)
+            # Prevent outline from touching the 84x84 texture border.
+            bounds=outer.getbbox()
+            if bounds and (bounds[0]==0 or bounds[1]==0 or bounds[2]==84 or bounds[3]==84):
+                raise ValueError(f"{name} sprite reaches texture edge: {bounds}")
+            outer.save(path,optimize=True)
+    print("Cleaned five unit silhouettes without changing their interior art")
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -261,4 +289,5 @@ if __name__=="__main__":
     apply_wizard_front_sprite()
     apply_firebow_pixel_sprite()
     apply_simple_badges_and_sprite_offsets()
+    clean_five_unit_outlines()
     pack_atlas()
