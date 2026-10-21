@@ -179,7 +179,6 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Only available <for [non-[Ljosalfar]] Civilizations>",
-      "Can only be built <with [Horses]>",
       "Only available <for [non-[Svartalfar]] Civilizations>"
     ],
     "upgradesTo": "Knight",
@@ -187,7 +186,8 @@
       {
         "text": "Chariot: A mobile combatant who exploits speed and maneuver."
       }
-    ]
+    ],
+    "requiredResource": "Horses"
   },
   {
     "name": "Crossbowman",
@@ -215,8 +215,7 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization",
-      "Can only be built <with [Iron]>"
+      "Limited to [4] per Civilization"
     ],
     "promotions": [
       "March"
@@ -225,7 +224,8 @@
       {
         "text": "Eidolon: A military unit serving the armies and settlements of Erebus."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Frigate",
@@ -234,14 +234,12 @@
     "cost": 150,
     "strength": 10,
     "requiredTech": "Optics",
-    "uniques": [
-      "Can only be built <with [Iron]>"
-    ],
     "civilopediaText": [
       {
         "text": "Frigate: A naval vessel built for travel and war at sea."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Galleon",
@@ -251,14 +249,12 @@
     "strength": 6,
     "requiredTech": "Astronomy",
     "upgradesTo": "Queen Of The Line",
-    "uniques": [
-      "Can only be built <with [Iron]>"
-    ],
     "civilopediaText": [
       {
         "text": "Galleon: A naval vessel built for travel and war at sea."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Galley",
@@ -291,7 +287,6 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>",
       "Only available <for [non-[Clan of Embers]] Civilizations>",
-      "Can only be built <with [Horses]>",
       "Only available <for [non-[Khazad]] Civilizations>",
       "Only available <for [non-[Luchuirp]] Civilizations>"
     ],
@@ -300,7 +295,8 @@
       {
         "text": "Horse Archer: A ranged warrior who engages the enemy from a distance."
       }
-    ]
+    ],
+    "requiredResource": "Horses"
   },
   {
     "name": "Horseman",
@@ -311,15 +307,15 @@
     "requiredTech": "Horseback Riding",
     "uniques": [
       "Can only be built <in cities with a [Stable]>",
-      "Can upgrade to [Chariot]",
-      "Can only be built <with [Horses]>"
+      "Can upgrade to [Chariot]"
     ],
     "upgradesTo": "Horse Archer",
     "civilopediaText": [
       {
         "text": "Horseman: A mobile combatant who exploits speed and maneuver."
       }
-    ]
+    ],
+    "requiredResource": "Horses"
   },
   {
     "name": "Hunter",
@@ -349,14 +345,14 @@
     "uniques": [
       "[-36]% Strength <when defending>",
       "Limited to [4] per Civilization",
-      "Only available <for [non-[Clan of Embers]] Civilizations>",
-      "Can only be built <with [Horses]>"
+      "Only available <for [non-[Clan of Embers]] Civilizations>"
     ],
     "civilopediaText": [
       {
         "text": "Knight: A mobile combatant who exploits speed and maneuver."
       }
-    ]
+    ],
+    "requiredResource": "Horses"
   },
   {
     "name": "Longbowman",
@@ -406,14 +402,14 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization",
-      "Can only be built <with [Iron]>"
+      "Limited to [4] per Civilization"
     ],
     "civilopediaText": [
       {
         "text": "Paladin: A military unit serving the armies and settlements of Erebus."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Phalanx",
@@ -440,14 +436,12 @@
     "cost": 100,
     "strength": 8,
     "requiredTech": "Optics",
-    "uniques": [
-      "Can only be built <with [Iron]>"
-    ],
     "civilopediaText": [
       {
         "text": "A deniable raider that threatens maritime trade."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Queen Of The Line",
@@ -456,14 +450,12 @@
     "cost": 225,
     "strength": 16,
     "requiredTech": "Astronomy",
-    "uniques": [
-      "Can only be built <with [Iron]>"
-    ],
     "civilopediaText": [
       {
         "text": "A formidable capital ship commanding the sea lanes."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Ranger",
@@ -906,14 +898,14 @@
       "Channeling III"
     ],
     "uniques": [
-      "Can only be built <with [Reagents]>",
       "Only available <for [non-[Khazad]] Civilizations>"
     ],
     "civilopediaText": [
       {
         "text": "A master of arcane knowledge whose spells can alter the course of a war."
       }
-    ]
+    ],
+    "requiredResource": "Reagents"
   },
   {
     "name": "Wizard",
@@ -1585,14 +1577,12 @@
     "requiredTech": "Optics",
     "uniqueTo": "Lanun",
     "replaces": "Privateer",
-    "uniques": [
-      "Can only be built <with [Iron]>"
-    ],
     "civilopediaText": [
       {
         "text": "A maritime raider sustained by plunder and daring."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Fyrdwell",
@@ -1700,14 +1690,14 @@
     "uniqueTo": "Luchuirp",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Forge]>",
-      "Can only be built <with [Iron]>"
+      "Can only be built <in cities with a [Forge]>"
     ],
     "civilopediaText": [
       {
         "text": "A durable Luchuirp machine built for heavy fighting."
       }
-    ]
+    ],
+    "requiredResource": "Iron"
   },
   {
     "name": "Gargoyle",
