@@ -34,3 +34,9 @@ Current `requiredResource` entries on 13 units are *stockpile-consuming* Unciv f
 - Use Unciv mod-ci / in-game 'Locate mod errors' on the proposed ruleset.
 - Verify representative combat promotions, magic actions and resource edge cases in an Android session.
 - A source inventory or schema-valid JSON file is not proof of equivalent gameplay.
+
+## Reference implementation to examine: Fantasia (Unciv)
+- Repository: https://github.com/amfauzn/Fantasia
+- Unciv ruleset with Mage, Monk and other fantasy classes, plus skills, monsters, dungeons and fantasy progression.
+- Before developing mana, spells and caster actions, inspect Fantasia's JSON uniques, unit promotions and available actions for patterns that Unciv actually supports; record compatibility with the target Unciv version.
+- Adapt only validated implementation techniques; retain ExtraModMod Continued as the source of gameplay semantics and balance. Fantasia's mechanics are not automatically equivalent to FFH2 magic.
