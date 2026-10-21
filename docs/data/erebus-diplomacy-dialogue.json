@@ -1,0 +1,213 @@
+{
+  "source": {
+    "repository": "bewlay/extramodmod",
+    "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+    "inspected": "XML/Text/CIV4DiplomacyText.xml",
+    "finding": "Contains generic Civilization IV diplomatic responses, not leader-specific first-contact entries for these 19 EMM/FfH leaders.",
+    "otherFile": "XML/Text/CIV4GameText_FFH2.xml",
+    "otherFileFinding": "Empty in the pinned repository snapshot. No original bespoke EMM/FfH dialogue sourced for the selected 19 leaders."
+  },
+  "adaptation": "Original lore-inspired dialogue written for this Unciv mod, NOT verbatim dialogue from Fall from Heaven II or ExtraModMod Continued. Do not present these as authentic quotations.",
+  "fields": [
+    "introduction",
+    "neutralHello",
+    "hateHello",
+    "declaringWar",
+    "attacked",
+    "defeated",
+    "tradeRequest"
+  ],
+  "leaderCount": 19,
+  "characters": {
+    "Amurites": {
+      "leader": "Valledia the Even",
+      "introduction": "I am Valledia the Even. The Amurites preserve the arts of magic, and we would learn what wisdom your people possess.",
+      "neutralHello": "Knowledge is worth sharing with those who respect it.",
+      "hateHello": "You mistake patience for ignorance. Make your point.",
+      "declaringWar": "You have shown that words will not keep dangerous power in check. The Amurites march.",
+      "attacked": "So. You would test your steel against our sorcery?",
+      "defeated": "Our libraries fall silent. May their knowledge survive us.",
+      "tradeRequest": "An exchange of knowledge and goods would benefit us both."
+    },
+    "Balseraphs": {
+      "leader": "Perpentach",
+      "introduction": "Welcome, welcome! Perpentach welcomes you to his grand performance. Do try not to leave before the final act.",
+      "neutralHello": "Another visitor! How deliciously unexpected.",
+      "hateHello": "Have you come to entertain me? You are doing a very poor job.",
+      "declaringWar": "The curtains rise! Our little war will be the finest show in Erebus.",
+      "attacked": "You mean to kill the performers? How terribly unsporting!",
+      "defeated": "The audience has gone home... but I can still hear their applause.",
+      "tradeRequest": "A bargain! Every wonderful show needs a surprise."
+    },
+    "Bannor": {
+      "leader": "Sabathiel",
+      "introduction": "I am Sabathiel of the Bannor. We stand for order and the righteous defense of our people.",
+      "neutralHello": "The Bannor honor those who keep their oaths.",
+      "hateHello": "State your business plainly. We have little patience for deceit.",
+      "declaringWar": "You leave us no honorable path but war. May our cause be just.",
+      "attacked": "Then the Bannor shall answer your aggression with steadfast resolve.",
+      "defeated": "Our walls have fallen, but our duty was never in vain.",
+      "tradeRequest": "Let us agree to terms both our peoples can uphold."
+    },
+    "Calabim": {
+      "leader": "Alexis",
+      "introduction": "I am Alexis, mistress of the Calabim. You may find our hospitality quite unforgettable.",
+      "neutralHello": "Come closer. There is much we might discuss.",
+      "hateHello": "Do not confuse my courtesy with an invitation to defy me.",
+      "declaringWar": "Your lands will nourish the Calabim. Be grateful for the honor.",
+      "attacked": "You bare your throat to a predator and call it courage?",
+      "defeated": "Even the oldest hunger must someday be stilled.",
+      "tradeRequest": "Every gift has a price. Shall we discuss yours?"
+    },
+    "Clan of Embers": {
+      "leader": "Jonas Endain",
+      "introduction": "Jonas Endain speaks for the Clan of Embers. Our fires burn bright, and we will not be driven away.",
+      "neutralHello": "Keep your warriors strong and your fires fed.",
+      "hateHello": "You talk too much for one who brings so little.",
+      "declaringWar": "The Clan gathers. Soon you will hear our war drums.",
+      "attacked": "You have called down the wrath of the Clan upon yourself.",
+      "defeated": "The last embers fade. Remember that we were never tame.",
+      "tradeRequest": "What will you offer the Clan in return?"
+    },
+    "Doviello": {
+      "leader": "Charadon",
+      "introduction": "I am Charadon. The Doviello survive by strength, not by hiding behind walls.",
+      "neutralHello": "If you have something worth saying, say it.",
+      "hateHello": "Weak words. Weak people. I have no need of either.",
+      "declaringWar": "My warriors hunger for battle. Your lands will serve.",
+      "attacked": "Good. Now we learn which of us is stronger.",
+      "defeated": "The pack is broken. Others will take its place.",
+      "tradeRequest": "A fair trade is one where both sides leave stronger."
+    },
+    "Elohim": {
+      "leader": "Ethne the White",
+      "introduction": "I am Ethne the White. The Elohim guard places that must not be forgotten. May we meet in peace.",
+      "neutralHello": "May your travels be peaceful and your burdens light.",
+      "hateHello": "You stand before one who has seen too much ruin. Do not bring more.",
+      "declaringWar": "We sought peace, but will defend those entrusted to our care.",
+      "attacked": "There is no glory in this bloodshed. We will endure it nonetheless.",
+      "defeated": "Our sanctuaries are lost. I pray their memory survives.",
+      "tradeRequest": "Let us make an agreement that spares both our peoples suffering."
+    },
+    "Grigori": {
+      "leader": "Cassiel",
+      "introduction": "I am Cassiel of the Grigori. Our fate belongs to mortals, not to gods who demand our obedience.",
+      "neutralHello": "You are welcome to speak freely here.",
+      "hateHello": "Keep your prophecies and threats. We answer to neither.",
+      "declaringWar": "No divine command sends us to war. We have judged this necessary ourselves.",
+      "attacked": "You will find the Grigori choose their own battles.",
+      "defeated": "At least our choices were our own.",
+      "tradeRequest": "Let us deal as equals, without oaths to unseen masters."
+    },
+    "Hippus": {
+      "leader": "Tasunke",
+      "introduction": "Tasunke leads the Hippus. Our riders have crossed a thousand leagues; perhaps our roads will meet in friendship.",
+      "neutralHello": "A good horse and an open road are fine company.",
+      "hateHello": "Stop wasting daylight. My riders have places to be.",
+      "declaringWar": "The Hippus ride to war. You will hear us before you see us.",
+      "attacked": "Then saddle your best warriors. We are ready.",
+      "defeated": "The last of our riders has fallen. The road goes on without us.",
+      "tradeRequest": "Name your price. The Hippus know the worth of a good bargain."
+    },
+    "Illians": {
+      "leader": "Auric Ulvin",
+      "introduction": "I am Auric Ulvin. The Illians endure where other peoples perish beneath the winter sky.",
+      "neutralHello": "The cold teaches patience.",
+      "hateHello": "You speak as though the winter could be bargained away.",
+      "declaringWar": "The age of ice draws nearer. You will not stand against it.",
+      "attacked": "Your armies will learn what it means to face the endless cold.",
+      "defeated": "Even winter yields, at last, to time.",
+      "tradeRequest": "I will consider an exchange, if it serves our purpose."
+    },
+    "Khazad": {
+      "leader": "Arturus Thorne",
+      "introduction": "Arturus Thorne greets you on behalf of the Khazad. Our halls run deep, and our word is as solid as stone.",
+      "neutralHello": "May your vaults be full and your foundations sound.",
+      "hateHello": "We have no patience for a bargain built on empty promises.",
+      "declaringWar": "You have struck at the roots of our kingdom. The Khazad answer with steel.",
+      "attacked": "Stone endures. Your assault will not break our resolve.",
+      "defeated": "Our halls are silent, but their foundations will outlast us.",
+      "tradeRequest": "Show me a fair price and we may have an agreement."
+    },
+    "Kuriotates": {
+      "leader": "Cardith Lorda",
+      "introduction": "I am Cardith Lorda of the Kuriotates. We seek a realm in which many peoples may prosper together.",
+      "neutralHello": "There is room in Erebus for a better future.",
+      "hateHello": "You would squander the peace we have worked to build?",
+      "declaringWar": "We will defend the promise of our realm against your aggression.",
+      "attacked": "The Kuriotates will not surrender their future to fear.",
+      "defeated": "Our dream passes into memory. Let others dream it anew.",
+      "tradeRequest": "Let us build prosperity through an honest exchange."
+    },
+    "Lanun": {
+      "leader": "Falamar",
+      "introduction": "Falamar, at your service. I speak for the Lanun, whose sails know more horizons than most kings.",
+      "neutralHello": "Fair winds to you, friend. What news from beyond the horizon?",
+      "hateHello": "Careful now. The sea has swallowed louder fools than you.",
+      "declaringWar": "Raise the sails and ready the guns. We have a quarrel to settle.",
+      "attacked": "You would hunt the Lanun on our own waters? Try your luck.",
+      "defeated": "The tide has turned against us. No captain sails forever.",
+      "tradeRequest": "Every cargo has a price. What do you bring to the table?"
+    },
+    "Ljosalfar": {
+      "leader": "Arendel Phaedra",
+      "introduction": "I am Arendel Phaedra of the Ljosalfar. May our meeting bring no harm to the living forests.",
+      "neutralHello": "The woods are peaceful today. Let us keep them so.",
+      "hateHello": "Do not mistake the quiet of the forest for weakness.",
+      "declaringWar": "You threaten what we have sworn to protect. Our bows are drawn.",
+      "attacked": "The forests have endured ages of fire. They will endure you.",
+      "defeated": "Our songs fade among the trees. Remember them kindly.",
+      "tradeRequest": "If our peoples can trade without harming the land, we shall listen."
+    },
+    "Luchuirp": {
+      "leader": "Garrim Gyr",
+      "introduction": "I am Garrim Gyr of the Luchuirp. With skilled hands and patient minds, even stone can be made to serve.",
+      "neutralHello": "A clever invention is always worth a conversation.",
+      "hateHello": "If you have nothing useful to add, step away from the workbench.",
+      "declaringWar": "You have broken what we built. Now you will see what else we can make.",
+      "attacked": "Our creations are ready to defend their makers.",
+      "defeated": "Our workshops grow still. Perhaps someone will finish what we began.",
+      "tradeRequest": "Bring honest materials and we may craft an honest bargain."
+    },
+    "Malakim": {
+      "leader": "Varn Gosam",
+      "introduction": "I am Varn Gosam of the Malakim. From the desert we have learned faith, endurance, and the value of clear sight.",
+      "neutralHello": "May the sun light the path before you.",
+      "hateHello": "The desert strips away false appearances. Your words will not conceal your intent.",
+      "declaringWar": "We march beneath the desert sun. Your injustice ends here.",
+      "attacked": "You have mistaken our restraint for frailty.",
+      "defeated": "The sands reclaim our cities. May wisdom outlive them.",
+      "tradeRequest": "May this exchange be fair beneath the same sun that shines on us both."
+    },
+    "Sheaim": {
+      "leader": "Tebryn Arbandi",
+      "introduction": "I am Tebryn Arbandi of the Sheaim. Some doors are better opened than left to rot upon their hinges.",
+      "neutralHello": "So many mysteries remain. Which shall we uncover today?",
+      "hateHello": "Your fear of forbidden knowledge grows tiresome.",
+      "declaringWar": "The world you cherish is already passing. We shall hasten its end.",
+      "attacked": "You strike at the Sheaim? Then you have yet to grasp what awaits.",
+      "defeated": "Even our designs can unravel. The end will find another path.",
+      "tradeRequest": "Power takes many forms. What might you offer in exchange?"
+    },
+    "Sidar": {
+      "leader": "Sandalphon",
+      "introduction": "I am Sandalphon of the Sidar. We have watched kingdoms rise and fade, and learned the strength of silence.",
+      "neutralHello": "Time reveals what hurried words conceal.",
+      "hateHello": "Your noise disturbs those who would rather remain unseen.",
+      "declaringWar": "You have left us no choice but to step from the shadows.",
+      "attacked": "The Sidar do not forget those who threaten them.",
+      "defeated": "Our shadows dissolve, as all things must.",
+      "tradeRequest": "We may exchange what you need for what we value."
+    },
+    "Svartalfar": {
+      "leader": "Faeryl Viconia",
+      "introduction": "I am Faeryl Viconia of the Svartalfar. We know the forests by moonlight, and we prefer our secrets kept.",
+      "neutralHello": "A whispered word often carries farther than a shout.",
+      "hateHello": "Speak carefully. In our forests, careless visitors disappear.",
+      "declaringWar": "The night belongs to us. You will learn what that means.",
+      "attacked": "You have entered the dark without knowing what watches you.",
+      "defeated": "The shadows close over our kingdom. Another will claim the night.",
+      "tradeRequest": "Perhaps we can arrange a discreet and profitable exchange."
+    }
+  }
+}
