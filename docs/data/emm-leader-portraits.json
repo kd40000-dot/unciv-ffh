@@ -9,7 +9,8 @@
     "Source art definitions are pointers, not embedded image assets.",
     "Original FfH2 portrait textures are packed in FPK archives; no artwork binary has been imported yet.",
     "Selected leader names exactly match jsons/Nations.json.",
-    "Retain attribution to original contributors; some FfH 2D artwork was sourced from third-party artists."
+    "Retain attribution to original contributors; some FfH 2D artwork was sourced from third-party artists.",
+    "2026-10-21: all 19 portrait PNG binaries added from user-supplied LeaderPortraits.zip; originals were WEBP, not FPK/DDS; source attribution/copyright should be retained from supplied art set."
   ],
   "entries": [
     {
@@ -19,7 +20,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Valledia.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Valledia button.dds",
       "targetPngPath": "Images/LeaderIcons/Valledia the Even.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "VallediatheEven.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Balseraphs",
@@ -28,7 +37,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Perpentach.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Perpentach button.dds",
       "targetPngPath": "Images/LeaderIcons/Perpentach.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Perpentach.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Bannor",
@@ -37,7 +54,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Sabathiel.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Sabathiel button.dds",
       "targetPngPath": "Images/LeaderIcons/Sabathiel.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Sabathiel.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Calabim",
@@ -46,7 +71,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Alexis.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Alexis button.dds",
       "targetPngPath": "Images/LeaderIcons/Alexis.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Alexis.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Clan of Embers",
@@ -55,7 +88,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Jonas.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Jonas button.dds",
       "targetPngPath": "Images/LeaderIcons/Jonas Endain.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "JonasEndain.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Doviello",
@@ -64,7 +105,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Charadon.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Charadon button.dds",
       "targetPngPath": "Images/LeaderIcons/Charadon.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Charadon.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Elohim",
@@ -73,7 +122,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Ethne.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Ethne button.dds",
       "targetPngPath": "Images/LeaderIcons/Ethne the White.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "EthnetheWhite.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Grigori",
@@ -82,7 +139,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Cassiel.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Cassiel button.dds",
       "targetPngPath": "Images/LeaderIcons/Cassiel.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Cassiel.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Hippus",
@@ -91,7 +156,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Tasunke.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Tasunke button.dds",
       "targetPngPath": "Images/LeaderIcons/Tasunke.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Tasunke.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Illians",
@@ -100,7 +173,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Auric.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Auric button.dds",
       "targetPngPath": "Images/LeaderIcons/Auric Ulvin.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "AuricUlvin.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Khazad",
@@ -109,7 +190,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Arturus.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Arturus button.dds",
       "targetPngPath": "Images/LeaderIcons/Arturus Thorne.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "ArturusThorne.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Kuriotates",
@@ -118,7 +207,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Cardith.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Cardith button.dds",
       "targetPngPath": "Images/LeaderIcons/Cardith Lorda.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "CardithLorda.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Lanun",
@@ -127,7 +224,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Falamar.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Falamar button.dds",
       "targetPngPath": "Images/LeaderIcons/Falamar.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Falamar.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Ljosalfar",
@@ -136,7 +241,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Arendel.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Arendel button.dds",
       "targetPngPath": "Images/LeaderIcons/Arendel Phaedra.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "ArendelPhaedra.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Luchuirp",
@@ -145,7 +258,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Garrim.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Garrim button.dds",
       "targetPngPath": "Images/LeaderIcons/Garrim Gyr.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "GarrimGyr.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Malakim",
@@ -154,7 +275,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Varn.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Varn button.dds",
       "targetPngPath": "Images/LeaderIcons/Varn Gosam.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "VarnGosam.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Sheaim",
@@ -163,7 +292,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Tebryn.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Tebryn button.dds",
       "targetPngPath": "Images/LeaderIcons/Tebryn Arbandi.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "TebrynArbandi.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Sidar",
@@ -172,7 +309,15 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Sandalphon.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Sandalphon button.dds",
       "targetPngPath": "Images/LeaderIcons/Sandalphon.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "Sandalphon.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     },
     {
       "civilization": "Svartalfar",
@@ -181,7 +326,16 @@
       "emmPortraitDdsPath": "art/interface/LeaderHeads/Faeryl.dds",
       "emmButtonDdsPath": "Art/interface/LeaderHeads/Faeryl button.dds",
       "targetPngPath": "Images/LeaderIcons/Faeryl Viconia.png",
-      "status": "source-not-yet-imported"
+      "status": "imported-user-supplied-art-2026-10-21",
+      "uploadedSourceFormat": "WEBP",
+      "uploadedArchive": "LeaderPortraits.zip",
+      "sourceFileName": "FaerylViconia.webp",
+      "convertedFormat": "PNG",
+      "convertedSize": [
+        256,
+        256
+      ]
     }
-  ]
+  ],
+  "sourceInput": "User uploaded LeaderPortraits.zip containing 19 named WEBP images (not FPK/DDS); identified by supplied filenames and visual review, not verified as pixel-identical to original DDS art."
 }
