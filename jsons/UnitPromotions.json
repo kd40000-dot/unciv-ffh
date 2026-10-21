@@ -284,7 +284,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "prerequisites": [
       "Combat III"
