@@ -31,3 +31,7 @@ Hippus and Svartalfar receive double Gold from improvements pillaged (source Rai
 ### Economic percentage regression (October 21, 2026)
 
 Native Unciv defines `Float.toPercent()` as `1 + value/100`; therefore `100% Yield from pillaging tiles` correctly grants +100% Raider Gold (2× loot). A previously committed `200%` bonus instead produced 3× loot. The engine-derived correction and sample numeric expectations are included in [economic regression protocol](economic-test-protocol.md) and checked in `tools/verify_economic_traits.py`. Doviello's -10% Science correctly scales to 90% of the city's unmodified Science.
+
+### Lanun Pirate Cove milestone — October 21, 2026
+
+The Lanun Workboat can now place a **Pirate Cove** on an unoccupied, un-improved, resource-free Coast tile owned by Lanun and next to land; it is consumed by the action. The Cove preserves the source +2 commerce through a +1 Science/+1 Gold fixed split, +10% defense and source 10 pillage Gold as Unciv's approximate loot. The source **Pirate Harbor/Port automatic maturation** (10 and 20 turns) and the **5×5 cove-spacing exclusion** are not supported natively and are explicitly deferred. No native engine-playtest result has yet been confirmed for the new action. See [Lanun Pirate Cove QA](lanun-pirate-cove.md).
