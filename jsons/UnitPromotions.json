@@ -44,11 +44,12 @@
       "Bow"
     ],
     "uniques": [
-      "Only available <with [Fire Mana]>"
+      "Only available <with [Fire Mana]>",
+      "Can instantly construct a [Smoke] improvement <for all movement>"
     ],
     "civilopediaText": [
       {
-        "text": "Fire sphere I. Fire damage and spells require the shared magic system."
+        "text": "Fire I, gated by Fire Mana when chosen. Cast Blaze to place Smoke on the caster's Forest/Jungle tile, spending all movement. ExtraModMod spreads fire and consumes forests; this smoke hazard is a simplified native-Unciv effect without spreading or automatic expiration."
       }
     ],
     "prerequisites": [
@@ -149,11 +150,12 @@
       "Arcane"
     ],
     "uniques": [
-      "Only available <with [Death Mana]>"
+      "Only available <with [Death Mana]>",
+      "Free [Skeleton] appears <for all movement>"
     ],
     "civilopediaText": [
       {
-        "text": "Death I. Death Mana permits selecting this sphere. Raise Skeleton is deferred until summon duration/caps can be represented reliably."
+        "text": "Death I, gated by Death Mana. Cast Raise Skeleton: summons a permanent combat-strength-2 Skeleton beside this caster, consuming all movement. The 3-per-civilization living cap is a temporary testing approximation, not ExtraModMod's caster-linked summon cap."
       }
     ]
   },

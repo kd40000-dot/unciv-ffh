@@ -167,5 +167,23 @@
         "text": "An attuned node converting raw mana into Death mana, unlocking Death sphere promotions. ExtraModMod has additional nodes and effects not implemented here."
       }
     ]
+  },
+  {
+    "name": "Smoke",
+    "terrainsCanBeBuiltOn": [
+      "Forest",
+      "Jungle"
+    ],
+    "turnsToBuild": 0,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Only available <for units with [Fire I]>",
+      "Adjacent enemy units ending their turn take [3] damage"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blaze creates smoke in a Forest or Jungle. This prototype smoke persists and damages adjacent enemy units for 3 HP per turn. In ExtraModMod, smoke can develop into spreading flames; such timed terrain changes are not yet implemented."
+      }
+    ]
   }
 ]

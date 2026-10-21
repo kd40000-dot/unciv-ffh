@@ -276,6 +276,85 @@ def make_mana_art()->list[str]:
         save_icon("TileSets/FantasyHex/Tiles/"+key,icon)
     return names
 
+def make_spell_asset_art()->list[str]:
+    """Pixel-native 84x84 Skeleton sprite and simple Smoke icon/overlay.
+
+    Kept separate from all five approved Amurite character sources.
+    Geometry uses deliberate flat-color pixel blocks; no lossy resampling.
+    """
+    generated=[]
+    def save(key:str,im:Image.Image):
+        path=ROOT/"Images"/(key+".png")
+        path.parent.mkdir(parents=True,exist_ok=True)
+        im.save(path,optimize=True)
+        generated.append(key)
+
+    # 22x22 pixel-art silhouette enlarged twice: ~44 actual sprite pixels.
+    sk=Image.new("RGBA",(22,22))
+    d=ImageDraw.Draw(sk)
+    outline=(24,25,33,255)
+    bone=(223,220,197,255)
+    shade=(152,151,135,255)
+    dark=(58,55,65,255)
+    leather=(100,76,67,255)
+    iron=(172,180,181,255)
+    d.ellipse((7,0,14,7),fill=outline)
+    d.rectangle((8,1,13,6),fill=bone)
+    d.rectangle((8,3,9,4),fill=dark)
+    d.rectangle((12,3,13,4),fill=dark)
+    d.rectangle((10,5,11,5),fill=shade)
+    d.rectangle((8,8,14,13),fill=outline)
+    d.rectangle((9,8,13,11),fill=bone)
+    for x in (10,12):
+        d.line((x,9,x,11),fill=shade,width=1)
+    d.rectangle((8,12,14,13),fill=leather)
+    d.line((7,8,5,13),fill=outline,width=3)
+    d.line((7,8,5,12),fill=bone,width=1)
+    d.line((14,8,17,13),fill=outline,width=3)
+    d.line((14,8,17,12),fill=bone,width=1)
+    d.rectangle((4,13,6,15),fill=bone)
+    d.rectangle((16,13,18,14),fill=bone)
+    d.line((9,14,8,19),fill=outline,width=3)
+    d.line((13,14,14,19),fill=outline,width=3)
+    d.line((9,14,8,18),fill=bone,width=1)
+    d.line((13,14,14,18),fill=bone,width=1)
+    d.line((6,19,9,20),fill=outline,width=2)
+    d.line((13,19,16,20),fill=outline,width=2)
+    # Worn short sword in right hand.
+    d.line((18,12,20,4),fill=dark,width=3)
+    d.line((18,12,20,4),fill=iron,width=1)
+    d.line((16,12,20,13),fill=leather,width=2)
+    doubled=sk.resize((44,44),Image.Resampling.NEAREST)
+    figure=doubled.crop(doubled.getbbox()).resize((34,43),Image.Resampling.NEAREST)
+    sprite=Image.new("RGBA",(84,84))
+    sprite.alpha_composite(figure,(49,36))
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        save(f"TileSets/{tileset}/Units/Skeleton",sprite)
+    icon=Image.new("RGBA",(96,96))
+    ic=ImageDraw.Draw(icon)
+    ic.ellipse((4,4,91,91),fill=(48,42,64,255),outline=(181,156,197,255),width=4)
+    skull=sk.crop((7,0,15,8)).resize((48,48),Image.Resampling.NEAREST)
+    icon.alpha_composite(skull,(24,20))
+    ic.line((32,77,64,77),fill=bone,width=8)
+    save("UnitIcons/Skeleton",icon)
+    save("UnitPromotionIcons/Undead",icon)
+
+    smoke=Image.new("RGBA",(32,32))
+    sm=ImageDraw.Draw(smoke)
+    smoke_dark=(61,58,71,245)
+    smoke_mid=(125,117,137,229)
+    smoke_light=(185,170,188,219)
+    sm.ellipse((7,17,27,29),fill=smoke_dark)
+    sm.ellipse((3,14,19,25),fill=smoke_mid)
+    sm.ellipse((10,8,26,22),fill=smoke_light)
+    sm.ellipse((4,4,16,15),fill=smoke_mid)
+    sm.ellipse((15,1,26,12),fill=smoke_dark)
+    smoke=smoke.resize((64,64),Image.Resampling.NEAREST)
+    save("ImprovementIcons/Smoke",smoke)
+    for tileset in ("FantasyHex","AbsoluteUnits"):
+        save(f"TileSets/{tileset}/Tiles/Smoke",smoke)
+    return generated
+
 def pack_atlas()->None:
     # Import installed portrait/art source unchanged; downscale only for
     # the texture atlas. Keep full-resolution originals in Images.
@@ -291,7 +370,7 @@ def pack_atlas()->None:
         for name in NAMES:
             key=f"TileSets/{tileset}/Units/{name}"
             regions.append((key,Image.open(ROOT/"Images"/(key+".png")).convert("RGBA")))
-    for key in make_mana_art():
+    for key in make_mana_art()+make_spell_asset_art():
         regions.append((key,Image.open(ROOT/"Images"/(key+".png")).convert("RGBA")))
     atlas=Image.new("RGBA",(W,H))
     lines=["","game.png",f"size: {W}, {H}","format: RGBA8888",

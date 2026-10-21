@@ -211,5 +211,23 @@
         "text": "Amurite Assassin replacement from ExtraModMod. Full Dimensional magic and special stealth interactions are pending."
       }
     ]
+  },
+  {
+    "name": "Skeleton",
+    "unitType": "Melee",
+    "movement": 1,
+    "strength": 2,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Limited to [3] per Civilization",
+      "Unable to pillage tiles"
+    ],
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "ExtraModMod Death I summon: a permanent undead warrior. Summon with an Adept or Wizard that has Death I. This early Unciv prototype caps skeletons at three living units per civilization instead of the canonical one-per-eligible-caster limit; summon inheritance and the graveyard triple-summon effect are not yet implemented."
+      }
+    ]
   }
 ]

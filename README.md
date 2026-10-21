@@ -6,6 +6,8 @@ This GitHub repository is **mod data only**. It does not contain or require a cu
 
 ## Which version should I install?
 
+- **Summons & Blaze 0.3 (new experimental magic test):** [download release](https://github.com/kd40000-dot/unciv-ffh/releases/tag/amurite-summons-blaze-03). Adds Death I Raise Skeleton and Fire I Blaze to the previously confirmed Haste baseline.
+
 - **Amurite Magic Foundation 0.2 (current gameplay test):** [download release](https://github.com/kd40000-dot/unciv-ffh/releases/tag/amurite-magic-foundation-02). Starts the actual mana economy and casting test.
 - **Firebow Repair preview 1.2 (preserved artwork comparison):** [download release](https://github.com/kd40000-dot/unciv-ffh/releases/tag/firebow-repair-art-12). Its five units all cost 12 production for visual testing and it does **not** represent the actual progression.
 - The `main` branch retains the earlier mod-only foundation. The rollback branch `playable-0.1a` has not been modified.
