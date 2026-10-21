@@ -59,3 +59,7 @@ In-game calculation audit identified a percentage semantics bug: native Unciv `t
 ### Lanun Pirate Cove ability — October 21, 2026
 
 Added a Lanun-only Workboat improvement action: create **Pirate Cove** on an eligible coastal tile and consume the Workboat. Native restrictions cover owned/coastal/empty/resource-free/next-to-land tiles. Cove yields +1 Gold and +1 Science (proxy for EMM's +2 flexible commerce), +10% defense and approximate 10 Gold pillage. Timed upgrades to Pirate Harbor and Pirate Port, and two-tile spacing, remain deferred pending engine support. [Mechanics and gameplay verification](lanun-pirate-cove.md).
+
+### Khazad dynamic Dwarven Vault economy — October 21, 2026
+
+Seven EMM gold-per-city vault stages are now functional through Unciv conditional arithmetic: Gold reserve divided by owned city count, floored. Their source Happiness and Production modifiers are tied exclusively to Khazad and can rise or fall with saved/spent Gold and city founding. The corresponding vault status buildings are not auto-inserted; only the economic bonuses are implemented. [Source thresholds and testing](khazad-vaults.md). Lanun Pirate Cove placement was user-tested and reported working.
