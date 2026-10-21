@@ -1421,5 +1421,29 @@
       "Can only be built <in cities with a [Stable]>"
     ],
     "upgradesTo": "Knight"
+  },
+  {
+    "name": "Lightbringer",
+    "unitType": "Disciple",
+    "movement": 1,
+    "cost": 60,
+    "strength": 2,
+    "uniqueTo": "Malakim",
+    "promotions": [
+      "Sentry"
+    ]
+  },
+  {
+    "name": "Lucian",
+    "unitType": "Sword",
+    "movement": 1,
+    "cost": 60,
+    "strength": 3,
+    "uniqueTo": "Doviello",
+    "uniques": [
+      "Unbuildable",
+      "Limited to [1] per Civilization",
+      "[+10]% Strength <vs cities>"
+    ]
   }
 ]
