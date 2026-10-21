@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Rejuvenation",
+    "uniques": [
+      "All healing effects doubled"
+    ]
+  },
+  {
+    "name": "Unable to pillage tiles",
+    "uniques": [
+      "Unable to pillage tiles"
+    ]
+  },
+  {
+    "name": "Ignore terrain cost",
+    "uniques": [
+      "Ignores terrain cost"
+    ]
+  },
+  {
+    "name": "Heal Instantly",
+    "uniques": [
+      "[This Unit] heals [50] HP",
+      "Doing so will consume this opportunity to choose a Promotion"
+    ],
+    "unitTypes": [
+      "Sword",
+      "Scout",
+      "Archery"
+    ],
+    "innerColor": [
+      195,
+      53,
+      43
+    ],
+    "outerColor": [
+      253,
+      236,
+      234
+    ]
+  },
+  {
+    "name": "Shock I",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Open terrain] tiles>"
+    ],
+    "unitTypes": [
+      "Sword"
+    ]
+  },
+  {
+    "name": "Shock II",
+    "prerequisites": [
+      "Shock I"
+    ],
+    "uniques": [
+      "[+15]% Strength <when fighting in [Open terrain] tiles>"
+    ],
+    "unitTypes": [
+      "Sword"
+    ]
+  },
+  {
+    "name": "Drill I",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Rough terrain] tiles>"
+    ],
+    "unitTypes": [
+      "Sword"
+    ]
+  },
+  {
+    "name": "Drill II",
+    "prerequisites": [
+      "Drill I"
+    ],
+    "uniques": [
+      "[+15]% Strength <when fighting in [Rough terrain] tiles>"
+    ],
+    "unitTypes": [
+      "Sword"
+    ]
+  },
+  {
+    "name": "Accuracy I",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
+    ],
+    "unitTypes": [
+      "Archery"
+    ]
+  },
+  {
+    "name": "Accuracy II",
+    "prerequisites": [
+      "Accuracy I"
+    ],
+    "uniques": [
+      "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
+    ],
+    "unitTypes": [
+      "Archery"
+    ]
+  },
+  {
+    "name": "Barrage I",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+    ],
+    "unitTypes": [
+      "Archery"
+    ]
+  },
+  {
+    "name": "Barrage II",
+    "prerequisites": [
+      "Barrage I"
+    ],
+    "uniques": [
+      "[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+    ],
+    "unitTypes": [
+      "Archery"
+    ]
+  }
+]

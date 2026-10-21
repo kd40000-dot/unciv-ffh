@@ -6,7 +6,7 @@ This standalone Unciv **base ruleset** is an early **unplaytested gameplay candi
 
 - 4 EMM nations: Amurites, Bannor, Clan of Embers, Ljosalfar. Leaders and ordered English city names sourced from EMM XML.
 - 13 early EMM technologies, retaining source names and research costs. **OR prerequisite groups** are reduced to the first supported alternative for Unciv's AND-only tech tree.
-- 12 prototype units, 12 prototype buildings, 13 resources, 13 improvements, and 29 Unciv terrain entries for map generation.
+- 12 prototype units, 12 prototype buildings, 13 resources, 20 improvements, and 29 Unciv terrain entries for map generation.
 - Domination victory and early exploration ruins.
 
 Unit and building combat/economic statistics and unique faction substitutions are **prototypes, not source-faithful EMM conversions**. Initial Adept has a ranged placeholder attack and **no spellcasting**.
@@ -26,6 +26,10 @@ Unit and building combat/economic statistics and unique faction substitutions ar
 - EMM Continued data: [bewlay/extramodmod](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610), `CIV4CivilizationInfos.xml`, `CIV4TechInfos.xml`, and `XML/Text/Civilizations.xml`.
 - Temporary map resource/terrain/improvement and barbarian scaffolding adapted from [Unciv Civ V - Vanilla](https://github.com/yairm210/Unciv/tree/master/android/assets/jsons/Civ%20V%20-%20Vanilla), [MPL-2.0](https://github.com/yairm210/Unciv/blob/master/LICENSE).
 - No original EMM art, binaries, or audio redistributed.
+
+## Engine validation
+
+Unciv `mod-ci` initially reported missing promotion and ruin references; these are now defined explicitly. An automated Unciv engine check runs on every push at [GitHub Actions](https://github.com/kd40000-dot/unciv-ffh/actions).
 
 ## Missing
 

@@ -16,4 +16,4 @@ Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 | Civics and FfH happiness | Not implemented | Unciv city economy remains |
 | AI / long games / victory | Untested | Domination victory included |
 
-Static authoring checks completed; in-game ruleset validator and multi-turn game tests pending.
+Static checks and Unciv command-line `mod-ci` checks completed. Android installation and multi-turn gameplay tests remain pending.

@@ -102,7 +102,10 @@
     "cost": 35,
     "requiredTech": "Exploration",
     "uniqueTo": "Ljosalfar",
-    "replaces": "Scout"
+    "replaces": "Scout",
+    "promotions": [
+      "Ignore terrain cost"
+    ]
   },
   {
     "name": "Amurite Initiate",
