@@ -31,8 +31,11 @@
     "science": 1,
     "civilopediaText": [
       {
-        "text": "Arcane guild needed to train Adepts after Knowledge of the Ether. Spell research and unit training are the foundation of the Amurite economy."
+        "text": "Required to train Adepts after Knowledge of the Ether. The current 10-XP bonus is a temporary Unciv proxy for ExtraModMod's free sphere-promotion choice; it is not the exact original Mage Guild XP effect."
       }
+    ],
+    "uniques": [
+      "New [Arcane] units start with [10] XP [in this city]"
     ]
   },
   {
