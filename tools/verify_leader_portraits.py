@@ -3,7 +3,6 @@
 import argparse
 import json
 from pathlib import Path
-from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
@@ -28,6 +27,7 @@ for item in entries:
     if not output.exists():
         missing.append(item["leaderName"])
         continue
+    from PIL import Image
     with Image.open(output) as image:
         image.verify()
     with Image.open(output) as image:
