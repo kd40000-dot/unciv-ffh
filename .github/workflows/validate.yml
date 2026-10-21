@@ -41,6 +41,8 @@ jobs:
         run: python3 tools/verify_lanun_cove.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
         run: python3 tools/verify_khazad_vaults.py
+      - name: Verify Erebus-specific diplomacy dialogue and provenance
+        run: python3 tools/verify_erebus_diplomacy.py
       - name: Validate using the official Unciv mod-ci command
         run: |
           curl -fsSL https://api.github.com/repos/yairm210/Unciv/releases/latest -o /tmp/unciv-release.json
