@@ -19,6 +19,7 @@ rename=lambda s:s.removeprefix("UNIT_").removeprefix("BUILDING_").lower().replac
 factions=load("docs/data/emm-civilizations.json")
 unit_aliases={r["name"]:r["sourceId"] for r in factions["addedUnits"]}
 building_aliases={r["name"]:r["sourceId"] for r in factions["addedBuildings"]}
+palace_aliases={r["civilization"]+" Palace":r["sourceId"] for r in load("docs/data/emm-leader-palace-fidelity.json")["palaceSources"]}
 assert len({x["name"] for x in units})==len(units)
 assert len({x["name"] for x in buildings})==len(buildings)
 byname={x["name"]:x for x in units}
@@ -44,7 +45,7 @@ for item in buildings:
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
     assert item["replaces"] in bnames if "replaces" in item else True,item["name"]
     if item["name"]=="Palace":continue
-    rec=bbid.get(building_aliases[item["name"]]) if item["name"] in building_aliases else next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None)
+    rec=bbid.get(palace_aliases[item["name"]]) if item["name"] in palace_aliases else (bbid.get(building_aliases[item["name"]]) if item["name"] in building_aliases else next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None))
     if rec is None and item["name"]=="Cave of Ancestors":
         rec=bbid["BUILDING_CAVE_OF_ANCESTORS"]
     assert rec is not None,("No EMM building source",item["name"])
