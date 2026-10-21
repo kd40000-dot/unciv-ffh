@@ -9,22 +9,34 @@
       {
         "name": "Agriculture",
         "row": 2,
-        "cost": 80
+        "cost": 80,
+        "civilopediaText": [
+          "Cultivation and settled food production support growing settlements."
+        ]
       },
       {
         "name": "Exploration",
         "row": 7,
-        "cost": 80
+        "cost": 80,
+        "civilopediaText": [
+          "Scouts and explorers venture into unknown lands, mapping dangers and opportunities."
+        ]
       },
       {
         "name": "Crafting",
         "row": 13,
-        "cost": 120
+        "cost": 120,
+        "civilopediaText": [
+          "Basic tools and trained artisans allow communities to shape raw materials."
+        ]
       },
       {
         "name": "Ancient Chants",
         "row": 28,
-        "cost": 80
+        "cost": 80,
+        "civilopediaText": [
+          "The oldest rites preserve memories of a world still touched by divine and arcane power."
+        ]
       }
     ]
   },
@@ -41,6 +53,9 @@
         "cost": 160,
         "prerequisites": [
           "Agriculture"
+        ],
+        "civilopediaText": [
+          "Seasonal knowledge gives order to planting, gathering and civic life."
         ]
       },
       {
@@ -49,6 +64,9 @@
         "cost": 180,
         "prerequisites": [
           "Agriculture"
+        ],
+        "civilopediaText": [
+          "Domesticated animals provide labor, food and mounts."
         ]
       },
       {
@@ -59,9 +77,7 @@
           "Exploration"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Exploration, Seafaring; this prototype currently requires Exploration."
-          }
+          "Coastal communities learn to draw a dependable livelihood from the water."
         ]
       },
       {
@@ -70,6 +86,9 @@
         "cost": 200,
         "prerequisites": [
           "Exploration"
+        ],
+        "civilopediaText": [
+          "Reliable maps allow distant journeys and more ambitious seafaring."
         ]
       },
       {
@@ -78,6 +97,9 @@
         "cost": 300,
         "prerequisites": [
           "Exploration"
+        ],
+        "civilopediaText": [
+          "Trackers and hunters master wilderness survival."
         ]
       },
       {
@@ -86,6 +108,9 @@
         "cost": 200,
         "prerequisites": [
           "Crafting"
+        ],
+        "civilopediaText": [
+          "Miners extract stone and metals from the earth."
         ]
       },
       {
@@ -94,6 +119,9 @@
         "cost": 140,
         "prerequisites": [
           "Crafting"
+        ],
+        "civilopediaText": [
+          "Stoneworking makes sturdier buildings and defenses possible."
         ]
       },
       {
@@ -103,6 +131,9 @@
         "prerequisites": [
           "Agriculture",
           "Ancient Chants"
+        ],
+        "civilopediaText": [
+          "The systematic transmission of knowledge prepares new generations of scholars."
         ]
       },
       {
@@ -111,6 +142,9 @@
         "cost": 200,
         "prerequisites": [
           "Ancient Chants"
+        ],
+        "civilopediaText": [
+          "Ritual and contemplation open the path toward organized spiritual traditions."
         ]
       }
     ]
@@ -130,9 +164,7 @@
           "Calendar"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued classifies this technology as ancient; Unciv assigns a single era to each technology column."
-          }
+          "Public ceremonies and celebrations bind communities together."
         ]
       },
       {
@@ -141,6 +173,9 @@
         "cost": 400,
         "prerequisites": [
           "Animal Husbandry"
+        ],
+        "civilopediaText": [
+          "Mounted travel changes the reach of scouts and armies."
         ]
       },
       {
@@ -149,6 +184,9 @@
         "cost": 320,
         "prerequisites": [
           "Fishing"
+        ],
+        "civilopediaText": [
+          "Ships make coastal travel and trade practical."
         ]
       },
       {
@@ -159,9 +197,7 @@
           "Hunting"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Hunting, Mining; this prototype currently requires Hunting."
-          }
+          "Trained bowmen bring ranged weapons to organized warfare."
         ]
       },
       {
@@ -170,6 +206,9 @@
         "cost": 400,
         "prerequisites": [
           "Mining"
+        ],
+        "civilopediaText": [
+          "Bronze tools and weapons improve early industry and military equipment."
         ]
       },
       {
@@ -178,6 +217,9 @@
         "cost": 400,
         "prerequisites": [
           "Masonry"
+        ],
+        "civilopediaText": [
+          "Engineering techniques support larger structures and organized works."
         ]
       },
       {
@@ -186,6 +228,9 @@
         "cost": 380,
         "prerequisites": [
           "Education"
+        ],
+        "civilopediaText": [
+          "Records, scholarship and administration endure beyond living memory."
         ]
       },
       {
@@ -194,6 +239,9 @@
         "cost": 320,
         "prerequisites": [
           "Education"
+        ],
+        "civilopediaText": [
+          "Organized military training allows stronger armies to take the field."
         ]
       },
       {
@@ -202,6 +250,9 @@
         "cost": 320,
         "prerequisites": [
           "Education"
+        ],
+        "civilopediaText": [
+          "Formal laws define institutions, obligations and civic order."
         ]
       },
       {
@@ -210,6 +261,9 @@
         "cost": 360,
         "prerequisites": [
           "Mysticism"
+        ],
+        "civilopediaText": [
+          "Students of magic learn to perceive and channel the unseen currents of the Ether."
         ]
       },
       {
@@ -219,6 +273,9 @@
         "prerequisites": [
           "Hunting",
           "Mysticism"
+        ],
+        "civilopediaText": [
+          "A spiritual path teaches reverence for living forests and the Fellowship of Leaves."
         ]
       },
       {
@@ -228,6 +285,9 @@
         "prerequisites": [
           "Mining",
           "Mysticism"
+        ],
+        "civilopediaText": [
+          "The worship of Kilmorph honors stone, labor and the hidden riches of the earth."
         ]
       },
       {
@@ -236,6 +296,9 @@
         "cost": 300,
         "prerequisites": [
           "Mysticism"
+        ],
+        "civilopediaText": [
+          "Inquiry into ethics and existence shapes the beliefs of nations."
         ]
       },
       {
@@ -245,6 +308,9 @@
         "prerequisites": [
           "Fishing",
           "Mysticism"
+        ],
+        "civilopediaText": [
+          "Whispers from beneath the waves lead worshippers toward the Octopus Overlords."
         ]
       }
     ]
@@ -265,9 +331,7 @@
           "Horseback Riding"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Horseback Riding, Sailing; this prototype currently requires Horseback Riding."
-          }
+          "Merchants and markets connect settlements through exchange."
         ]
       },
       {
@@ -276,6 +340,9 @@
         "cost": 720,
         "prerequisites": [
           "Sailing"
+        ],
+        "civilopediaText": [
+          "Improved observation and navigation widen the horizon for seafarers."
         ]
       },
       {
@@ -284,6 +351,9 @@
         "cost": 1000,
         "prerequisites": [
           "Hunting"
+        ],
+        "civilopediaText": [
+          "Subtle toxins become weapons for hunters, spies and assassins."
         ]
       },
       {
@@ -293,6 +363,9 @@
         "prerequisites": [
           "Animal Husbandry",
           "Hunting"
+        ],
+        "civilopediaText": [
+          "Skilled handlers bring powerful creatures under human or allied guidance."
         ]
       },
       {
@@ -301,6 +374,9 @@
         "cost": 800,
         "prerequisites": [
           "Bronze Working"
+        ],
+        "civilopediaText": [
+          "Ore is refined into workable metal for craftsmen and soldiers."
         ]
       },
       {
@@ -311,9 +387,7 @@
           "Construction"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Construction, Bronze Working; this prototype currently requires Construction."
-          }
+          "Health and cleanliness become matters of urban organization."
         ]
       },
       {
@@ -322,6 +396,9 @@
         "cost": 950,
         "prerequisites": [
           "Writing"
+        ],
+        "civilopediaText": [
+          "Formal calculation strengthens administration, engineering and advanced study."
         ]
       },
       {
@@ -331,6 +408,9 @@
         "prerequisites": [
           "Philosophy",
           "Warfare"
+        ],
+        "civilopediaText": [
+          "Commanders learn to coordinate armies beyond the individual battlefield."
         ]
       },
       {
@@ -339,6 +419,9 @@
         "cost": 900,
         "prerequisites": [
           "Code of Laws"
+        ],
+        "civilopediaText": [
+          "Standardized money expands trade and taxation."
         ]
       },
       {
@@ -347,6 +430,9 @@
         "cost": 640,
         "prerequisites": [
           "Knowledge of the Ether"
+        ],
+        "civilopediaText": [
+          "The dark study of death seeks to bind or exploit powers beyond the grave."
         ]
       },
       {
@@ -355,6 +441,9 @@
         "cost": 640,
         "prerequisites": [
           "Knowledge of the Ether"
+        ],
+        "civilopediaText": [
+          "Arcane scholars learn to call upon fire, air, water and earth."
         ]
       },
       {
@@ -363,6 +452,9 @@
         "cost": 640,
         "prerequisites": [
           "Knowledge of the Ether"
+        ],
+        "civilopediaText": [
+          "The study of visions and hidden truths seeks knowledge unavailable to ordinary senses."
         ]
       },
       {
@@ -371,6 +463,9 @@
         "cost": 640,
         "prerequisites": [
           "Knowledge of the Ether"
+        ],
+        "civilopediaText": [
+          "Magic reshapes the properties of bodies, objects and the surrounding world."
         ]
       },
       {
@@ -379,6 +474,9 @@
         "cost": 640,
         "prerequisites": [
           "Way of the Forests"
+        ],
+        "civilopediaText": [
+          "Secret woodland routes and teachings lead initiates deeper into the Fellowship of Leaves."
         ]
       },
       {
@@ -387,6 +485,9 @@
         "cost": 640,
         "prerequisites": [
           "Way of the Earthmother"
+        ],
+        "civilopediaText": [
+          "The Runes of Kilmorph teach excellence through discipline, craft and devotion."
         ]
       },
       {
@@ -396,6 +497,9 @@
         "prerequisites": [
           "Education",
           "Philosophy"
+        ],
+        "civilopediaText": [
+          "Organized clergy carry sacred traditions into the affairs of nations."
         ]
       },
       {
@@ -405,6 +509,9 @@
         "prerequisites": [
           "Code of Laws",
           "Philosophy"
+        ],
+        "civilopediaText": [
+          "The Order calls its followers to justice, discipline and devotion to Junil."
         ]
       },
       {
@@ -414,6 +521,9 @@
         "prerequisites": [
           "Trade",
           "Philosophy"
+        ],
+        "civilopediaText": [
+          "Codes of duty shape warriors and the societies they defend."
         ]
       },
       {
@@ -423,6 +533,9 @@
         "prerequisites": [
           "Knowledge of the Ether",
           "Philosophy"
+        ],
+        "civilopediaText": [
+          "The Ashen Veil twists devotion toward demonic and destructive ends."
         ]
       },
       {
@@ -431,6 +544,9 @@
         "cost": 800,
         "prerequisites": [
           "Message from the Deep"
+        ],
+        "civilopediaText": [
+          "Forbidden techniques seek to bind the minds and wills of others."
         ]
       }
     ]
@@ -449,6 +565,9 @@
         "prerequisites": [
           "Education",
           "Festivals"
+        ],
+        "civilopediaText": [
+          "Performance and public storytelling become instruments of culture and influence."
         ]
       },
       {
@@ -458,6 +577,9 @@
         "prerequisites": [
           "Philosophy",
           "Trade"
+        ],
+        "civilopediaText": [
+          "False appearances and concealed intentions make intrigue a practiced art."
         ]
       },
       {
@@ -467,6 +589,9 @@
         "prerequisites": [
           "Mathematics",
           "Optics"
+        ],
+        "civilopediaText": [
+          "The movements of the heavens offer knowledge to scholars and navigators."
         ]
       },
       {
@@ -475,6 +600,9 @@
         "cost": 1000,
         "prerequisites": [
           "Animal Handling"
+        ],
+        "civilopediaText": [
+          "A deep connection with wild beasts permits unusual alliances."
         ]
       },
       {
@@ -486,9 +614,7 @@
           "Archery"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Archery, Animal Handling; this prototype currently requires Archery."
-          }
+          "Improved riding equipment makes mounted warfare more effective."
         ]
       },
       {
@@ -497,6 +623,9 @@
         "cost": 1400,
         "prerequisites": [
           "Archery"
+        ],
+        "civilopediaText": [
+          "Specialist bowmakers improve weapons for dedicated archers."
         ]
       },
       {
@@ -506,6 +635,9 @@
         "prerequisites": [
           "Warfare",
           "Smelting"
+        ],
+        "civilopediaText": [
+          "Iron equipment gives artisans and armies access to stronger materials."
         ]
       },
       {
@@ -515,6 +647,9 @@
         "prerequisites": [
           "Education",
           "Sanitation"
+        ],
+        "civilopediaText": [
+          "Healers develop more systematic treatments for injury and disease."
         ]
       },
       {
@@ -524,6 +659,9 @@
         "prerequisites": [
           "Construction",
           "Mathematics"
+        ],
+        "civilopediaText": [
+          "Sophisticated machines and structures expand the scale of construction."
         ]
       },
       {
@@ -533,6 +671,9 @@
         "prerequisites": [
           "Trade",
           "Code of Laws"
+        ],
+        "civilopediaText": [
+          "Networks of lords and obligations reorganize land and military service."
         ]
       },
       {
@@ -542,6 +683,9 @@
         "prerequisites": [
           "Mathematics",
           "Currency"
+        ],
+        "civilopediaText": [
+          "Government revenue is organized through regular assessments and collection."
         ]
       },
       {
@@ -553,9 +697,7 @@
           "Alteration"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Alteration, Divination, Elementalism, Necromancy; this prototype currently requires Alteration."
-          }
+          "Experienced mages employ increasingly powerful arcane disciplines."
         ]
       },
       {
@@ -565,6 +707,9 @@
         "prerequisites": [
           "Code of Laws",
           "Priesthood"
+        ],
+        "civilopediaText": [
+          "Absolute conviction inspires zealots and uncompromising causes."
         ]
       },
       {
@@ -574,6 +719,9 @@
         "prerequisites": [
           "Code of Laws",
           "Priesthood"
+        ],
+        "civilopediaText": [
+          "Sacred doctrine is translated into institutions and enforceable rules."
         ]
       },
       {
@@ -584,9 +732,7 @@
           "Corruption of Spirit"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued classifies this technology as medieval; Unciv assigns a single era to each technology column."
-          }
+          "Desperate mortals bargain with powers from the infernal realms."
         ]
       }
     ]
@@ -605,6 +751,9 @@
         "prerequisites": [
           "Military Strategy",
           "Feral Bond"
+        ],
+        "civilopediaText": [
+          "Exceptional beast-handlers command creatures beyond ordinary livestock."
         ]
       },
       {
@@ -615,6 +764,9 @@
           "Military Strategy",
           "Feudalism",
           "Stirrups"
+        ],
+        "civilopediaText": [
+          "Breeding and training produce mounts fit for elite cavalry."
         ]
       },
       {
@@ -624,6 +776,9 @@
         "prerequisites": [
           "Military Strategy",
           "Bowyers"
+        ],
+        "civilopediaText": [
+          "Specialized military discipline rewards careful aim and exact execution."
         ]
       },
       {
@@ -634,6 +789,9 @@
           "Engineering",
           "Military Strategy",
           "Iron Working"
+        ],
+        "civilopediaText": [
+          "Rare mithril can be forged into equipment of extraordinary quality."
         ]
       },
       {
@@ -643,6 +801,9 @@
         "prerequisites": [
           "Bowyers",
           "Engineering"
+        ],
+        "civilopediaText": [
+          "Complex mechanical systems increase the power of craft and war."
         ]
       },
       {
@@ -652,6 +813,9 @@
         "prerequisites": [
           "Iron Working",
           "Engineering"
+        ],
+        "civilopediaText": [
+          "Explosive mixtures change mining, siegecraft and warfare."
         ]
       },
       {
@@ -660,6 +824,9 @@
         "cost": 3400,
         "prerequisites": [
           "Taxation"
+        ],
+        "civilopediaText": [
+          "Merchant interests and state policy become deeply intertwined."
         ]
       },
       {
@@ -668,6 +835,9 @@
         "cost": 3200,
         "prerequisites": [
           "Taxation"
+        ],
+        "civilopediaText": [
+          "Specialized trades establish enduring institutions of craft and commerce."
         ]
       },
       {
@@ -676,6 +846,9 @@
         "cost": 3600,
         "prerequisites": [
           "Sorcery"
+        ],
+        "civilopediaText": [
+          "The deeper secrets of spellcraft become subjects of advanced scholarly mastery."
         ]
       },
       {
@@ -687,9 +860,7 @@
           "Hidden Paths"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Hidden Paths, Arete, Fanaticism; this prototype currently requires Hidden Paths."
-          }
+          "Druids and devotees seek harmony with the living world."
         ]
       },
       {
@@ -698,6 +869,9 @@
         "cost": 4420,
         "prerequisites": [
           "Fanaticism"
+        ],
+        "civilopediaText": [
+          "Unrestrained fury turns warriors into terrible engines of battle."
         ]
       },
       {
@@ -706,6 +880,9 @@
         "cost": 4940,
         "prerequisites": [
           "Religious Law"
+        ],
+        "civilopediaText": [
+          "The study of divinity shapes sophisticated religious doctrine."
         ]
       },
       {
@@ -716,9 +893,7 @@
           "Orders from Heaven"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Orders from Heaven, Honor; this prototype currently requires Orders from Heaven."
-          }
+          "Unyielding commitment to a holy cause inspires acts of faith and war."
         ]
       },
       {
@@ -729,9 +904,7 @@
           "Infernal Pact"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Infernal Pact, Mind Stapling; this prototype currently requires Infernal Pact."
-          }
+          "Schemes of ruin bring dark ambitions closer to fulfillment."
         ]
       }
     ]
@@ -749,6 +922,9 @@
         "cost": 7000,
         "prerequisites": [
           "Mithril Working"
+        ],
+        "civilopediaText": [
+          "Legendary metalworking places mithril blades and arms in the hands of soldiers."
         ]
       },
       {
@@ -757,6 +933,9 @@
         "cost": 8800,
         "prerequisites": [
           "Arcane Lore"
+        ],
+        "civilopediaText": [
+          "Supreme discipline allows the mind to command powers that defeat lesser practitioners."
         ]
       },
       {
@@ -765,6 +944,9 @@
         "cost": 8000,
         "prerequisites": [
           "Arcane Lore"
+        ],
+        "civilopediaText": [
+          "Advanced magic explores passage beyond ordinary physical boundaries."
         ]
       },
       {
@@ -775,9 +957,7 @@
           "Commune with Nature"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Commune with Nature, Theology, Righteousness, Malevolent Designs, Rage; this prototype currently requires Commune with Nature."
-          }
+          "Sacred power is pursued at the boundary between the mortal and divine."
         ]
       }
     ]
@@ -797,9 +977,7 @@
           "Strength of Will"
         ],
         "civilopediaText": [
-          {
-            "text": "EMM Continued allows ANY of Strength of Will, Pass Through the Ether, Divine Essence; this prototype currently requires Strength of Will."
-          }
+          "The final ambition of scholarship is knowledge without limit."
         ]
       }
     ]
@@ -820,6 +998,9 @@
         ],
         "uniques": [
           "Can be continually researched"
+        ],
+        "civilopediaText": [
+          "Beyond known discoveries lies an open horizon of technological invention."
         ]
       }
     ]
