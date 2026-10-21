@@ -1,0 +1,108 @@
+{
+  "sourceRepo": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourceFiles": [
+    "python/FfH/FfHDefines.py",
+    "XML/Buildings/CIV4BuildingInfos.xml",
+    "python/Screens/CvMainInterface.py"
+  ],
+  "targetEngineRefs": [
+    "core/src/com/unciv/models/ruleset/unique/Countables.kt",
+    "core/src/com/unciv/models/ruleset/unique/expressions/Expressions.kt",
+    "core/src/com/unciv/models/ruleset/unique/expressions/Operator.kt",
+    "core/src/com/unciv/models/ruleset/unique/Conditionals.kt",
+    "core/src/com/unciv/logic/city/City.kt",
+    "core/src/com/unciv/logic/city/CityStats.kt"
+  ],
+  "goldPerCityExpression": "floor([Gold] / [Cities])",
+  "formula": "floor(goldTreasury / numberOfCities)",
+  "selectedCivilization": "Khazad",
+  "selectedLeader": "Arturus Thorne",
+  "tiers": [
+    {
+      "name": "Empty",
+      "sourceId": "BUILDING_DWARVEN_VAULT_EMPTY",
+      "minimumGoldPerCity": 0,
+      "maximumGoldPerCity": 24,
+      "happiness": -2,
+      "productionPercent": 0,
+      "uniques": [
+        "[-2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is less than [25]>"
+      ]
+    },
+    {
+      "name": "Low",
+      "sourceId": "BUILDING_DWARVEN_VAULT_LOW",
+      "minimumGoldPerCity": 25,
+      "maximumGoldPerCity": 49,
+      "happiness": -1,
+      "productionPercent": 0,
+      "uniques": [
+        "[-1 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [25] and [49]>"
+      ]
+    },
+    {
+      "name": "Normal",
+      "sourceId": "BUILDING_DWARVEN_VAULT",
+      "minimumGoldPerCity": 50,
+      "maximumGoldPerCity": 74,
+      "happiness": 0,
+      "productionPercent": 0,
+      "uniques": []
+    },
+    {
+      "name": "Stocked",
+      "sourceId": "BUILDING_DWARVEN_VAULT_STOCKED",
+      "minimumGoldPerCity": 75,
+      "maximumGoldPerCity": 99,
+      "happiness": 1,
+      "productionPercent": 0,
+      "uniques": [
+        "[+1 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [75] and [99]>"
+      ]
+    },
+    {
+      "name": "Abundant",
+      "sourceId": "BUILDING_DWARVEN_VAULT_ABUNDANT",
+      "minimumGoldPerCity": 100,
+      "maximumGoldPerCity": 149,
+      "happiness": 2,
+      "productionPercent": 10,
+      "uniques": [
+        "[+2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [100] and [149]>",
+        "[+10]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is between [100] and [149]>"
+      ]
+    },
+    {
+      "name": "Full",
+      "sourceId": "BUILDING_DWARVEN_VAULT_FULL",
+      "minimumGoldPerCity": 150,
+      "maximumGoldPerCity": 249,
+      "happiness": 2,
+      "productionPercent": 25,
+      "uniques": [
+        "[+2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [150] and [249]>",
+        "[+25]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is between [150] and [249]>"
+      ]
+    },
+    {
+      "name": "Overflowing",
+      "sourceId": "BUILDING_DWARVEN_VAULT_OVERFLOWING",
+      "minimumGoldPerCity": 250,
+      "maximumGoldPerCity": null,
+      "happiness": 3,
+      "productionPercent": 40,
+      "uniques": [
+        "[+3 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is more than [249]>",
+        "[+40]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is more than [249]>"
+      ]
+    }
+  ],
+  "limitations": [
+    "Unciv effects appear as conditional civilization bonuses rather than dynamically assigned city buildings.",
+    "Khazad Vault state labels are documented but not currently shown as city buildings.",
+    "Civ IV health/civic upkeep and other gameplay mechanics remain outside scope.",
+    "In-game timing of conditional stat recomputation on non-turn gold spending is not yet confirmed."
+  ],
+  "notes": "Countables Stats reads reserve, not per-turn income. Gold is civ-wide even in city game context; Cities counts civ-owned cities. floor() avoids expression roundToInt() falsely advancing stages. Each tier uses mutually exclusive numeric conditions and effects are per city."
+}
