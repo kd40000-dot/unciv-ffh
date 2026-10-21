@@ -8,7 +8,7 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 ## Leader portraits — import preparation
 
-The **19 original FfH2/EMM leader portrait paths are now mapped and a DDS-to-PNG importer is available**, but **the original image binaries have not been imported yet**; portraits will not appear in game until the source FPK/DDS assets are obtained and converted. See [portrait mapping, source limitations and importer](docs/original-leader-portraits.md). No substitute/AI artwork has been added.
+**All 19 leader portraits have now been imported from the user's supplied artwork archive** as 256×256 PNGs in `Images/LeaderIcons/`, matching the exact Unciv leader names. See [portrait mappings, source and gameplay QA](docs/original-leader-portraits.md). **In-game verification pending.**
 
 ## First early-game slice
 
