@@ -694,8 +694,10 @@
     "uniqueTo": "Balseraphs",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Mimic",
@@ -707,8 +709,13 @@
     "uniqueTo": "Balseraphs",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Phalanx]",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ],
+    "upgradesTo": "Berserker"
   },
   {
     "name": "Harlequin",
@@ -718,7 +725,8 @@
     "strength": 6,
     "requiredTech": "Feral Bond",
     "uniqueTo": "Balseraphs",
-    "replaces": "Ranger"
+    "replaces": "Ranger",
+    "upgradesTo": "Beastmaster"
   },
   {
     "name": "Taskmaster",
@@ -732,7 +740,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Marksman"
   },
   {
     "name": "Bloodpet",
@@ -741,7 +750,11 @@
     "cost": 25,
     "strength": 3,
     "uniqueTo": "Calabim",
-    "replaces": "Warrior"
+    "replaces": "Warrior",
+    "upgradesTo": "Archer",
+    "uniques": [
+      "Can upgrade to [Axeman]"
+    ]
   },
   {
     "name": "Moroi",
@@ -753,8 +766,10 @@
     "uniqueTo": "Calabim",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Vampire",
@@ -770,8 +785,12 @@
       "Channeling II"
     ],
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ],
+    "upgradesTo": "Berserker"
   },
   {
     "name": "Brujah",
@@ -799,7 +818,8 @@
     "cost": 25,
     "strength": 3,
     "uniqueTo": "Doviello",
-    "replaces": "Warrior"
+    "replaces": "Warrior",
+    "upgradesTo": "Axeman"
   },
   {
     "name": "Doviello Shaman",
@@ -812,7 +832,8 @@
     "replaces": "Adept",
     "promotions": [
       "Channeling I"
-    ]
+    ],
+    "upgradesTo": "Mage"
   },
   {
     "name": "Sons Of Asena",
@@ -822,7 +843,11 @@
     "strength": 4,
     "requiredTech": "Bronze Working",
     "uniqueTo": "Doviello",
-    "replaces": "Axeman"
+    "replaces": "Axeman",
+    "upgradesTo": "Champion",
+    "uniques": [
+      "Can upgrade to [Chariot]"
+    ]
   },
   {
     "name": "Javelin Thrower",
@@ -832,7 +857,12 @@
     "strength": 4,
     "requiredTech": "Archery",
     "uniqueTo": "Doviello",
-    "replaces": "Archer"
+    "replaces": "Archer",
+    "upgradesTo": "Longbowman",
+    "uniques": [
+      "Can upgrade to [Crossbowman]",
+      "Can upgrade to [Horse Archer]"
+    ]
   },
   {
     "name": "Battlemaster",
@@ -842,7 +872,14 @@
     "strength": 6,
     "requiredTech": "Iron Working",
     "uniqueTo": "Doviello",
-    "replaces": "Champion"
+    "replaces": "Champion",
+    "upgradesTo": "Berserker",
+    "uniques": [
+      "Can upgrade to [Phalanx]",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ]
   },
   {
     "name": "Circle Of Urd",
@@ -912,8 +949,13 @@
     "uniqueTo": "Grigori",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Phalanx]",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ],
+    "upgradesTo": "Berserker"
   },
   {
     "name": "Illians Javelin Thrower",
@@ -923,7 +965,12 @@
     "strength": 4,
     "requiredTech": "Archery",
     "uniqueTo": "Illians",
-    "replaces": "Archer"
+    "replaces": "Archer",
+    "upgradesTo": "Longbowman",
+    "uniques": [
+      "Can upgrade to [Crossbowman]",
+      "Can upgrade to [Horse Archer]"
+    ]
   },
   {
     "name": "Dwarven Slinger",
@@ -940,7 +987,8 @@
     "uniques": [
       "[+67]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>"
-    ]
+    ],
+    "upgradesTo": "Crossbowman"
   },
   {
     "name": "Boar Rider",
@@ -956,7 +1004,8 @@
     ],
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
-    ]
+    ],
+    "upgradesTo": "Chariot"
   },
   {
     "name": "Trebuchet",
@@ -1011,8 +1060,10 @@
     "uniqueTo": "Kuriotates",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Centaur",
@@ -1022,7 +1073,11 @@
     "strength": 4,
     "requiredTech": "Horseback Riding",
     "uniqueTo": "Kuriotates",
-    "replaces": "Horseman"
+    "replaces": "Horseman",
+    "upgradesTo": "Horse Archer",
+    "uniques": [
+      "Can upgrade to [Chariot]"
+    ]
   },
   {
     "name": "Centaur Archer",
@@ -1032,7 +1087,8 @@
     "strength": 6,
     "requiredTech": "Stirrups",
     "uniqueTo": "Kuriotates",
-    "replaces": "Horse Archer"
+    "replaces": "Horse Archer",
+    "upgradesTo": "Knight"
   },
   {
     "name": "Centaur Charger",
@@ -1045,7 +1101,8 @@
     "replaces": "Chariot",
     "uniques": [
       "[-40]% Strength <when defending>"
-    ]
+    ],
+    "upgradesTo": "Knight"
   },
   {
     "name": "Centaur Lancer",
@@ -1071,8 +1128,10 @@
     "uniqueTo": "Lanun",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Boarding Party",
@@ -1084,8 +1143,13 @@
     "uniqueTo": "Lanun",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Harbor]>"
-    ]
+      "Can only be built <in cities with a [Harbor]>",
+      "Can upgrade to [Phalanx]",
+      "Can upgrade to [Paladin]",
+      "Can upgrade to [Eidolon]",
+      "Can upgrade to [Knight]"
+    ],
+    "upgradesTo": "Berserker"
   },
   {
     "name": "War Tortoise",
@@ -1129,7 +1193,8 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>",
       "Can only be built <with [Deer]>"
-    ]
+    ],
+    "upgradesTo": "Knight"
   },
   {
     "name": "Mud Golem",
@@ -1164,7 +1229,8 @@
     "uniques": [
       "[+67]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>"
-    ]
+    ],
+    "upgradesTo": "Crossbowman"
   },
   {
     "name": "Luchuirp Boar Rider",
@@ -1180,7 +1246,8 @@
     ],
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
-    ]
+    ],
+    "upgradesTo": "Chariot"
   },
   {
     "name": "Iron Golem",
@@ -1265,8 +1332,10 @@
     "uniqueTo": "Malakim",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
-    ]
+      "Can only be built <in cities with a [Training Yard]>",
+      "Can upgrade to [Chariot]"
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Camel Archer",
@@ -1279,7 +1348,8 @@
     "replaces": "Horse Archer",
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
-    ]
+    ],
+    "upgradesTo": "Knight"
   },
   {
     "name": "Pyre Zombie",
@@ -1301,8 +1371,10 @@
     "uniqueTo": "Sidar",
     "replaces": "Hunter",
     "uniques": [
-      "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "Can upgrade to [Assassin]"
+    ],
+    "upgradesTo": "Ranger"
   },
   {
     "name": "Ghost",
@@ -1316,7 +1388,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
-    ]
+    ],
+    "upgradesTo": "Marksman"
   },
   {
     "name": "Svartalfar Swordsman",
@@ -1329,7 +1402,8 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>"
-    ]
+    ],
+    "upgradesTo": "Champion"
   },
   {
     "name": "Nyxkin",
@@ -1345,6 +1419,7 @@
     ],
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
-    ]
+    ],
+    "upgradesTo": "Knight"
   }
 ]
