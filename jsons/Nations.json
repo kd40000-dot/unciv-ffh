@@ -554,7 +554,7 @@
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion",
-      "200% Yield from pillaging tiles"
+      "100% Yield from pillaging tiles"
     ]
   },
   {
@@ -1146,7 +1146,7 @@
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion",
-      "200% Yield from pillaging tiles"
+      "100% Yield from pillaging tiles"
     ]
   },
   {
