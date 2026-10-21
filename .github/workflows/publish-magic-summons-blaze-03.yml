@@ -101,7 +101,7 @@ jobs:
           ]:
               assert (root/"Images"/(key+".png")).exists(),key
               assert Image.open(root/"Images"/(key+".png")).size==size,key
-              assert "\\n"+key+"\\n" in atlas,key
+              assert "\n"+key+"\n" in atlas,key
           gov=next(u for u in units if u["name"]=="Govannon")
           assert "Limited to [1] per Civilization" in gov.get("uniques",[])
           for key in ("LeaderIcons/Valledia","NationIcons/Amurites"):
@@ -180,12 +180,12 @@ jobs:
               shutil.copytree(name,dest/name)
           for name in ("game.png","game.atlas","Atlases.json","README.md"):
               shutil.copy2(name,dest/name)
-          (dest/"ARTWORK-PREVIEW.txt").write_text(
-              "AMURITE SUMMONS AND BLAZE 03 - VISUAL TEST ONLY\n"
-              "Five approved designs: Firebow, Wizard, Chanter, Adept, Govannon.\n"
-              "Cost 12 Production, requires Agriculture: test-only easy unlock.\n"
-              "Govannon is unrestricted in this visual test, not in main gameplay.\n"
-              "Choose Amurites and Valledia on a new game to inspect the units.\n"
+          (dest/"MAGIC-TEST-READ-ME.txt").write_text(
+              "AMURITE SUMMONS AND BLAZE 0.3 - GAMEPLAY TEST\\n"
+              "Haste is retained. Fire I -> Smoke on Forest/Jungle; Death I -> permanent Skeleton.\\n"
+              "Smoke damage/spread and Skeleton caps are prototypes, NOT full original EMM.\\n"
+              "Read docs/MAGIC_0.3.md for fidelity notes and Android test steps.\\n"
+              "Start a new game; keep your working 0.2 saves.\\n"
           )
           out=Path.cwd()/(folder+".zip")
           with zipfile.ZipFile(out,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=7) as z:
