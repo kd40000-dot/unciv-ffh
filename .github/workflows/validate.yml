@@ -32,4 +32,9 @@ jobs:
           curl -fsSL https://api.github.com/repos/yairm210/Unciv/releases/latest -o /tmp/unciv-release.json
           UNCIV_URL="$(python3 -c 'import json; r=json.load(open("/tmp/unciv-release.json")); print(next(a["browser_download_url"] for a in r["assets"] if a["name"]=="Unciv.jar"))')"
           curl -fL --retry 3 "$UNCIV_URL" -o Unciv.jar
-          java -jar Unciv.jar mod-ci
+          set -euo pipefail
+          java -jar Unciv.jar mod-ci | tee /tmp/unciv-mod-ci.log
+          if grep -q '^Warning:' /tmp/unciv-mod-ci.log; then
+            echo "Unciv reported ruleset warnings; failing validation"
+            exit 1
+          fi

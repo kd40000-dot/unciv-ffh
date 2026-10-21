@@ -19,11 +19,11 @@ Unit and building research prerequisites, production costs, movement and basic c
 4. Test generated maps, settler founding, research, worker improvements, recruitment, combat, turn progression and victory.
 5. Run **Options → Locate mod errors**, and report any engine validator errors.
 
-**Important:** Programmatic JSON syntax and reference checks have been run, but full Unciv engine validation and Android playtesting have not yet been completed.
+**Validation:** JSON syntax, source-fidelity scripts, and Unciv's official `mod-ci` ruleset validator passed without gameplay-definition warnings. **Android gameplay and multi-turn AI testing remain outstanding**.
 
 ## Provenance and licensing
 
-- EMM Continued data: [bewlay/extramodmod](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610), `CIV4CivilizationInfos.xml`, `CIV4TechInfos.xml`, and `XML/Text/Civilizations.xml`.
+- EMM Continued data: [bewlay/extramodmod](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610), `CIV4CivilizationInfos.xml`, `CIV4TechInfos.xml`, `CIV4UnitInfos.xml`, `CIV4BuildingInfos.xml`, relevant class XML, and `XML/Text/Civilizations.xml`.
 - Temporary map resource/terrain/improvement and barbarian scaffolding adapted from [Unciv Civ V - Vanilla](https://github.com/yairm210/Unciv/tree/master/android/assets/jsons/Civ%20V%20-%20Vanilla), [MPL-2.0](https://github.com/yairm210/Unciv/blob/master/LICENSE).
 - No original EMM art, binaries, or audio redistributed.
 

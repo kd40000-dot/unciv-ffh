@@ -72,4 +72,4 @@ The normal units or buildings listed below are explicitly prohibited for the sta
 3. Add religions, mana, spells, heroes and specialized construction conditions.
 4. Address differences between Civ IV's health, happiness, city defense and Unciv's rules.
 
-The CI workflow checks source-derived values and runs Unciv's official `mod-ci` validation. Full Android gameplay testing has not been performed.
+The CI workflow checks source-derived values and runs Unciv's official `mod-ci` validation. All reported ruleset warnings are treated as CI failures. Full Android gameplay testing has not been performed.
