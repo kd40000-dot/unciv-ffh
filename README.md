@@ -2,6 +2,10 @@
 
 A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as the authoritative target.
 
+## Erebus diplomacy flavor
+
+The **19 playable civilization leaders now have distinct introductions, neutral/hostile greetings, declarations of war, reactions to attacks, defeat lines and trade requests** (133 total lines). These are **new lore-inspired dialogue**, not quoted FfH2/EMM dialogue: the pinned source's accessible diplomacy text contains generic Civilization IV lines, not original custom greetings for these leaders. Provenance: [dialogue ledger](docs/data/erebus-diplomacy-dialogue.json), [implementation and QA](docs/erebus-diplomacy.md).
+
 ## First early-game slice
 
 Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
