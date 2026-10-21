@@ -6,6 +6,10 @@ A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as
 
 The **19 playable civilization leaders now have distinct introductions, neutral/hostile greetings, declarations of war, reactions to attacks, defeat lines and trade requests** (133 total lines). These are **new lore-inspired dialogue**, not quoted FfH2/EMM dialogue: the pinned source's accessible diplomacy text contains generic Civilization IV lines, not original custom greetings for these leaders. **First-contact greetings have passed user gameplay testing (October 21, 2026)**; other diplomatic triggers still await verification. Provenance: [dialogue ledger](docs/data/erebus-diplomacy-dialogue.json), [implementation and QA](docs/erebus-diplomacy.md).
 
+## Leader portraits — import preparation
+
+The **19 original FfH2/EMM leader portrait paths are now mapped and a DDS-to-PNG importer is available**, but **the original image binaries have not been imported yet**; portraits will not appear in game until the source FPK/DDS assets are obtained and converted. See [portrait mapping, source limitations and importer](docs/original-leader-portraits.md). No substitute/AI artwork has been added.
+
 ## First early-game slice
 
 Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
