@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "sourceRepository": "bewlay/extramodmod",
+  "sourceRevision": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourceArtDefinitions": "XML/Art/CIV4ArtDefines_Leaderhead.xml",
+  "targetPortraitDirectory": "Images/LeaderIcons",
+  "uncivDocumentation": "https://github.com/yairm210/Unciv/blob/master/docs/Modders/Images-and-Audio.md",
+  "notes": [
+    "Source art definitions are pointers, not embedded image assets.",
+    "Original FfH2 portrait textures are packed in FPK archives; no artwork binary has been imported yet.",
+    "Selected leader names exactly match jsons/Nations.json.",
+    "Retain attribution to original contributors; some FfH 2D artwork was sourced from third-party artists."
+  ],
+  "entries": [
+    {
+      "civilization": "Amurites",
+      "leaderName": "Valledia the Even",
+      "emmLeaderArtId": "ART_DEF_LEADER_VALLEDIA",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Valledia.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Valledia button.dds",
+      "targetPngPath": "Images/LeaderIcons/Valledia the Even.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Balseraphs",
+      "leaderName": "Perpentach",
+      "emmLeaderArtId": "ART_DEF_LEADER_PERPENTACH",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Perpentach.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Perpentach button.dds",
+      "targetPngPath": "Images/LeaderIcons/Perpentach.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Bannor",
+      "leaderName": "Sabathiel",
+      "emmLeaderArtId": "ART_DEF_LEADER_SABATHIEL",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Sabathiel.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Sabathiel button.dds",
+      "targetPngPath": "Images/LeaderIcons/Sabathiel.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Calabim",
+      "leaderName": "Alexis",
+      "emmLeaderArtId": "ART_DEF_LEADER_ALEXIS",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Alexis.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Alexis button.dds",
+      "targetPngPath": "Images/LeaderIcons/Alexis.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Clan of Embers",
+      "leaderName": "Jonas Endain",
+      "emmLeaderArtId": "ART_DEF_LEADER_JONAS",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Jonas.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Jonas button.dds",
+      "targetPngPath": "Images/LeaderIcons/Jonas Endain.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Doviello",
+      "leaderName": "Charadon",
+      "emmLeaderArtId": "ART_DEF_LEADER_CHARADON",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Charadon.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Charadon button.dds",
+      "targetPngPath": "Images/LeaderIcons/Charadon.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Elohim",
+      "leaderName": "Ethne the White",
+      "emmLeaderArtId": "ART_DEF_LEADER_ETHNE",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Ethne.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Ethne button.dds",
+      "targetPngPath": "Images/LeaderIcons/Ethne the White.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Grigori",
+      "leaderName": "Cassiel",
+      "emmLeaderArtId": "ART_DEF_LEADER_CASSIEL",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Cassiel.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Cassiel button.dds",
+      "targetPngPath": "Images/LeaderIcons/Cassiel.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Hippus",
+      "leaderName": "Tasunke",
+      "emmLeaderArtId": "ART_DEF_LEADER_TASUNKE",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Tasunke.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Tasunke button.dds",
+      "targetPngPath": "Images/LeaderIcons/Tasunke.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Illians",
+      "leaderName": "Auric Ulvin",
+      "emmLeaderArtId": "ART_DEF_LEADER_AURIC",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Auric.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Auric button.dds",
+      "targetPngPath": "Images/LeaderIcons/Auric Ulvin.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Khazad",
+      "leaderName": "Arturus Thorne",
+      "emmLeaderArtId": "ART_DEF_LEADER_ARTURUS",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Arturus.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Arturus button.dds",
+      "targetPngPath": "Images/LeaderIcons/Arturus Thorne.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Kuriotates",
+      "leaderName": "Cardith Lorda",
+      "emmLeaderArtId": "ART_DEF_LEADER_CARDITH",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Cardith.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Cardith button.dds",
+      "targetPngPath": "Images/LeaderIcons/Cardith Lorda.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Lanun",
+      "leaderName": "Falamar",
+      "emmLeaderArtId": "ART_DEF_LEADER_FALAMAR",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Falamar.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Falamar button.dds",
+      "targetPngPath": "Images/LeaderIcons/Falamar.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Ljosalfar",
+      "leaderName": "Arendel Phaedra",
+      "emmLeaderArtId": "ART_DEF_LEADER_ARENDEL",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Arendel.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Arendel button.dds",
+      "targetPngPath": "Images/LeaderIcons/Arendel Phaedra.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Luchuirp",
+      "leaderName": "Garrim Gyr",
+      "emmLeaderArtId": "ART_DEF_LEADER_GARRIM",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Garrim.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Garrim button.dds",
+      "targetPngPath": "Images/LeaderIcons/Garrim Gyr.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Malakim",
+      "leaderName": "Varn Gosam",
+      "emmLeaderArtId": "ART_DEF_LEADER_VARN",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Varn.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Varn button.dds",
+      "targetPngPath": "Images/LeaderIcons/Varn Gosam.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Sheaim",
+      "leaderName": "Tebryn Arbandi",
+      "emmLeaderArtId": "ART_DEF_LEADER_TEBRYN",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Tebryn.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Tebryn button.dds",
+      "targetPngPath": "Images/LeaderIcons/Tebryn Arbandi.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Sidar",
+      "leaderName": "Sandalphon",
+      "emmLeaderArtId": "ART_DEF_LEADER_SANDALPHON",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Sandalphon.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Sandalphon button.dds",
+      "targetPngPath": "Images/LeaderIcons/Sandalphon.png",
+      "status": "source-not-yet-imported"
+    },
+    {
+      "civilization": "Svartalfar",
+      "leaderName": "Faeryl Viconia",
+      "emmLeaderArtId": "ART_DEF_LEADER_FAERYL",
+      "emmPortraitDdsPath": "art/interface/LeaderHeads/Faeryl.dds",
+      "emmButtonDdsPath": "Art/interface/LeaderHeads/Faeryl button.dds",
+      "targetPngPath": "Images/LeaderIcons/Faeryl Viconia.png",
+      "status": "source-not-yet-imported"
+    }
+  ]
+}
