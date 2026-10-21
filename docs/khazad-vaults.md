@@ -1,6 +1,6 @@
 # Khazad Dwarven Vaults — dynamic Gold-per-city mechanics
 
-**Status:** Implemented in the base ruleset; source/static verification added to CI. **Gameplay confirmation pending.**
+**Status:** Implemented in the base ruleset; source/static verification added to CI. **Gameplay verification: passed in user testing (October 21, 2026).**
 
 **Pinned authoritative EMM Continued source:** [commit 60b0ec3740083162aaab7bf8491761a54a65a610](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610). EMM's `python/FfH/FfHDefines.py` provides vault thresholds [0,25,50,75,100,150,250] and chooses the highest threshold not exceeding treasury Gold divided by number of cities. `XML/Buildings/CIV4BuildingInfos.xml` defines the corresponding Happiness and Production effects. Machine-readable audit: [EMM Khazad Vaults source ledger](data/emm-khazad-vaults.json).
 
@@ -37,7 +37,7 @@ For example, Abundant uniquely grants:
 
 All bonuses are on **Khazad** `Nations.json` (not on a constructible vault building). Source vault buildings have production cost -1 and are script-provisioned; native Unciv does not have a mechanism for showing seven mutually exclusive auto-assigned city buildings. Representing their effects through dynamic civilization uniques is intentional and mechanically close but not UI-identical.
 
-**The conditions react to a changing treasury and city count when the engine refreshes city/civilization stats.** In-game tests should confirm that totals refresh immediately after changes or, at latest, on the following turn. The code paths were audited against preserved Unciv Kotlin sources; this statement is not a claim of completed Android testing.
+**The conditions react to a changing treasury and city count when the engine refreshes city/civilization stats.** In-game tests should confirm that totals refresh immediately after changes or, at latest, on the following turn. The code paths were audited against preserved Unciv Kotlin sources. On October 21, 2026, the user reported that the requested Vault tests yield the expected results. This verifies the exercised Gold-per-city thresholds and dynamic Happiness/Production bonuses in gameplay, rather than every possible edge case or engine version.
 
 ## Testing — first two-city and spending exercises
 
@@ -54,4 +54,4 @@ Report any mismatch with the **current treasury Gold**, **city count**, **city H
 
 CI runs `python3 tools/verify_khazad_vaults.py`: source-building values, seven stages, the nine required uniques, no effects on other nations, exact floor-vs-round boundary cases, founding/spending examples, and tens of thousands of city-count/Gold pairs.
 
-The seven named vault buildings are **not physically inserted into cities**; their effects are represented through Nation uniques instead. Source-accurate behavior also depends on the game's update cadence for stored-Gold conditionals, which still requires Android confirmation. Vault art and a dedicated UI badge/status display are deferred.
+The seven named vault buildings are **not physically inserted into cities**; their effects are represented through Nation uniques instead. Source-accurate behavior also depends on the game's update cadence for stored-Gold conditionals, for which the user has confirmed the prescribed gameplay tests behaved as expected. Further edge cases and future engine updates remain untested. Vault art and a dedicated UI badge/status display are deferred.
