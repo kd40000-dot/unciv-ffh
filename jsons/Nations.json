@@ -56,8 +56,12 @@
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Amurites seek to preserve and master the arcane arts in an age when magic can transform or destroy kingdoms.",
-      "Leader: Valledia the Even."
+      {
+        "text": "The Amurites seek to preserve and master the arcane arts in an age when magic can transform or destroy kingdoms."
+      },
+      {
+        "text": "Leader: Valledia the Even."
+      }
     ]
   },
   {
@@ -121,8 +125,12 @@
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Balseraphs turn spectacle, deception and madness into instruments of rule. Their courts make little distinction between performance and politics.",
-      "Leader: Perpentach."
+      {
+        "text": "The Balseraphs turn spectacle, deception and madness into instruments of rule. Their courts make little distinction between performance and politics."
+      },
+      {
+        "text": "Leader: Perpentach."
+      }
     ]
   },
   {
@@ -184,8 +192,12 @@
       "Free [Scout] appears <if starting in the [Ancient era]>"
     ],
     "civilopediaText": [
-      "The Bannor emerged from the Age of Ice with an uncompromising belief in order, discipline and righteous war.",
-      "Leader: Sabathiel."
+      {
+        "text": "The Bannor emerged from the Age of Ice with an uncompromising belief in order, discipline and righteous war."
+      },
+      {
+        "text": "Leader: Sabathiel."
+      }
     ]
   },
   {
@@ -247,8 +259,12 @@
       "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion"
     ],
     "civilopediaText": [
-      "The Calabim are a realm of vampires, where mortal populations sustain an immortal ruling caste.",
-      "Leader: Alexis."
+      {
+        "text": "The Calabim are a realm of vampires, where mortal populations sustain an immortal ruling caste."
+      },
+      {
+        "text": "Leader: Alexis."
+      }
     ]
   },
   {
@@ -314,8 +330,12 @@
       "All newly-trained [Disciple] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Clan of Embers unites orcish strength and tribal ferocity into an expanding civilization.",
-      "Leader: Jonas Endain."
+      {
+        "text": "The Clan of Embers unites orcish strength and tribal ferocity into an expanding civilization."
+      },
+      {
+        "text": "Leader: Jonas Endain."
+      }
     ]
   },
   {
@@ -388,8 +408,12 @@
       "[-10]% Science [in all cities]"
     ],
     "civilopediaText": [
-      "The Doviello survive through predation, mobility and fierce loyalty to their own packs.",
-      "Leader: Charadon."
+      {
+        "text": "The Doviello survive through predation, mobility and fierce loyalty to their own packs."
+      },
+      {
+        "text": "Leader: Charadon."
+      }
     ]
   },
   {
@@ -450,8 +474,12 @@
       "[+10]% Culture [in all cities]"
     ],
     "civilopediaText": [
-      "The Elohim guard ancient holy places and strive to keep Erebus from repeating its worst catastrophes.",
-      "Leader: Ethne the White."
+      {
+        "text": "The Elohim guard ancient holy places and strive to keep Erebus from repeating its worst catastrophes."
+      },
+      {
+        "text": "Leader: Ethne the White."
+      }
     ]
   },
   {
@@ -519,8 +547,12 @@
       "Free [Scout] appears <if starting in the [Ancient era]>"
     ],
     "civilopediaText": [
-      "The Grigori prize mortal freedom and independence, rejecting the demands of divine patrons.",
-      "Leader: Cassiel."
+      {
+        "text": "The Grigori prize mortal freedom and independence, rejecting the demands of divine patrons."
+      },
+      {
+        "text": "Leader: Cassiel."
+      }
     ]
   },
   {
@@ -589,8 +621,12 @@
       "100% Yield from pillaging tiles"
     ],
     "civilopediaText": [
-      "The Hippus are renowned as mounted fighters whose mercenary traditions make war a livelihood.",
-      "Leader: Tasunke."
+      {
+        "text": "The Hippus are renowned as mounted fighters whose mercenary traditions make war a livelihood."
+      },
+      {
+        "text": "Leader: Tasunke."
+      }
     ]
   },
   {
@@ -652,8 +688,12 @@
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Illians seek to restore the power of winter and the world that existed under Mulcarn.",
-      "Leader: Auric Ulvin."
+      {
+        "text": "The Illians seek to restore the power of winter and the world that existed under Mulcarn."
+      },
+      {
+        "text": "Leader: Auric Ulvin."
+      }
     ]
   },
   {
@@ -731,8 +771,12 @@
       "[+40]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is more than [249]>"
     ],
     "civilopediaText": [
-      "The Khazad build their fortunes beneath the mountains, where wealth, craft and security are inseparable.",
-      "Leader: Arturus Thorne."
+      {
+        "text": "The Khazad build their fortunes beneath the mountains, where wealth, craft and security are inseparable."
+      },
+      {
+        "text": "Leader: Arturus Thorne."
+      }
     ]
   },
   {
@@ -795,8 +839,12 @@
       "Free [Scout] appears <if starting in the [Ancient era]>"
     ],
     "civilopediaText": [
-      "The Kuriotates are a diverse realm united by a grand vision of cities, coexistence and shared prosperity.",
-      "Leader: Cardith Lorda."
+      {
+        "text": "The Kuriotates are a diverse realm united by a grand vision of cities, coexistence and shared prosperity."
+      },
+      {
+        "text": "Leader: Cardith Lorda."
+      }
     ]
   },
   {
@@ -852,8 +900,12 @@
       "Free [Scout] appears <if starting in the [Ancient era]>"
     ],
     "civilopediaText": [
-      "The Lanun prosper on the coasts through seamanship, trade and piracy.",
-      "Leader: Falamar."
+      {
+        "text": "The Lanun prosper on the coasts through seamanship, trade and piracy."
+      },
+      {
+        "text": "Leader: Falamar."
+      }
     ]
   },
   {
@@ -918,8 +970,12 @@
       "All newly-trained [Disciple] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Ljosalfar are the light elves, guardians of woodland realms and practitioners of ancient elven traditions.",
-      "Leader: Arendel Phaedra."
+      {
+        "text": "The Ljosalfar are the light elves, guardians of woodland realms and practitioners of ancient elven traditions."
+      },
+      {
+        "text": "Leader: Arendel Phaedra."
+      }
     ]
   },
   {
@@ -980,8 +1036,12 @@
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Luchuirp are ingenious dwarven artificers whose crafted golems supplement their living armies.",
-      "Leader: Garrim Gyr."
+      {
+        "text": "The Luchuirp are ingenious dwarven artificers whose crafted golems supplement their living armies."
+      },
+      {
+        "text": "Leader: Garrim Gyr."
+      }
     ]
   },
   {
@@ -1039,8 +1099,12 @@
       "All newly-trained [Disciple] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Malakim carry their faith and culture across the desert, drawing strength from desert life.",
-      "Leader: Varn Gosam."
+      {
+        "text": "The Malakim carry their faith and culture across the desert, drawing strength from desert life."
+      },
+      {
+        "text": "Leader: Varn Gosam."
+      }
     ]
   },
   {
@@ -1100,8 +1164,12 @@
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
-      "The Sheaim court apocalypse, forbidden sorcery and the powers that lie beyond the mortal world.",
-      "Leader: Tebryn Arbandi."
+      {
+        "text": "The Sheaim court apocalypse, forbidden sorcery and the powers that lie beyond the mortal world."
+      },
+      {
+        "text": "Leader: Tebryn Arbandi."
+      }
     ]
   },
   {
@@ -1162,8 +1230,12 @@
       "Free [Scout] appears <if starting in the [Ancient era]>"
     ],
     "civilopediaText": [
-      "The Sidar cultivate secrecy and withdrawal, seeking a shadowed path away from ordinary mortality.",
-      "Leader: Sandalphon."
+      {
+        "text": "The Sidar cultivate secrecy and withdrawal, seeking a shadowed path away from ordinary mortality."
+      },
+      {
+        "text": "Leader: Sandalphon."
+      }
     ]
   },
   {
@@ -1230,8 +1302,12 @@
       "100% Yield from pillaging tiles"
     ],
     "civilopediaText": [
-      "The Svartalfar are dark elves who rely on secrecy, intrigue and the dangerous shelter of forests.",
-      "Leader: Faeryl Viconia."
+      {
+        "text": "The Svartalfar are dark elves who rely on secrecy, intrigue and the dangerous shelter of forests."
+      },
+      {
+        "text": "Leader: Faeryl Viconia."
+      }
     ]
   },
   {
@@ -1252,7 +1328,9 @@
       "[Water] units gain the [Unable to pillage tiles] promotion"
     ],
     "civilopediaText": [
-      "Beyond the civilized realms, marauders, monsters and untamed powers threaten those who would rebuild Erebus."
+      {
+        "text": "Beyond the civilized realms, marauders, monsters and untamed powers threaten those who would rebuild Erebus."
+      }
     ]
   }
 ]
