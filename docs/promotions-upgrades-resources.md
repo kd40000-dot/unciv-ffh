@@ -1,6 +1,6 @@
 # EMM Continued promotions, upgrades and resources — initial implementation
 
-> **Historical progression snapshot:** The counts below describe the earlier 50-unit milestone. The current roster contains **100 units and 31 promotions**, including new Dwarf and Dark Elf racial promotions. The earlier 27 mapped upgrade routes remain the baseline, and newly added faction replacements still need a full upgrade-path audit. See [civilization expansion](civilizations.md).
+> **Historical progression snapshot:** The counts below describe the earlier 50-unit milestone. The current roster contains **100 units and 31 promotions**, including new Dwarf and Dark Elf racial promotions. The 50 added faction units now have 63 source-backed upgrade routes; see the faction upgrade-chain audit below. See [civilization expansion](civilizations.md).
 
 **Pinned reference:** [bewlay/extramodmod at 60b0ec3740083162aaab7bf8491761a54a65a610](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610).
 [Full machine-readable source and porting ledger](data/emm-promotions-upgrades-resources.json).
@@ -49,3 +49,11 @@ The CI pipeline checks source counts and translation traceability, checks techno
 ### Validation details
 
 The source-fidelity test also compares Combat I–V, City Raider I–III, Mobility I and Sentry bonuses against the original XML and checks the two faction default-race grants. These are static/engine checks, not proof that every effect behaves identically to Civ IV in a played game.
+
+## Faction-class upgrades (October 21, 2026)
+
+The expanded 19-civilization roster has **63 new source-backed upgrade routes across 31 of its 50 added faction units**. EMM's target classes are mapped to Unciv's base unit names, allowing the existing `replaces` mechanism to resolve the owning civilization's corresponding unique unit. The first target uses `upgradesTo`, subsequent targets use `Can upgrade to [unit]`.
+
+**14 source links are deferred** because their target classes are not yet present in the roster (such as Immortal, Shadow, Druid, Cannon and religion-specific priests). **One link is excluded** due to a faction restriction: the Svartalfar cannot build Chariots. Unciv's engine must still be playtested to verify availability rules, promotions and upgrade gold costs; neither this source check nor mod-ci proves gameplay equivalence.
+
+`tools/verify_civilizations.py` now validates every added faction upgrade path against the pinned EMM class reference and available unit types, including prohibited classes.
