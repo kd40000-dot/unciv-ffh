@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/publish-magic-foundation-02.yml'
       - 'jsons/**'
+      - 'docs/MAGIC_0.2.md'
+      - 'README.md'
       - 'development/tools/build_five_approved_art.py'
       - 'development/tools/build_five_approved_art.py'
       - 'development/assets/firebow-pixel-10.png.b64'
