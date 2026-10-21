@@ -105,6 +105,20 @@
     "shortcutKey": "F"
   },
   {
+    "name": "Pirate Cove",
+    "terrainsCanBeBuiltOn": [
+      "Coast"
+    ],
+    "uniqueTo": "Lanun",
+    "turnsToBuild": 0,
+    "science": 1,
+    "gold": 1,
+    "uniques": [
+      "Gives a defensive bonus of [10]%",
+      "Pillaging this improvement yields approximately [+10 Gold]"
+    ]
+  },
+  {
     "name": "Fort",
     "terrainsCanBeBuiltOn": [
       "Plains",
