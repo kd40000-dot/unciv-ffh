@@ -4,364 +4,364 @@ size: 1024, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-TechIcons/Exploration
+TechPortraits/Exploration
   rotate: false
   xy: 4, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Crafting
+TechPortraits/Crafting
   rotate: false
   xy: 76, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Ancient Chants
+TechPortraits/Ancient Chants
   rotate: false
   xy: 148, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Cartography
+TechPortraits/Cartography
   rotate: false
   xy: 220, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Festivals
+TechPortraits/Festivals
   rotate: false
   xy: 292, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Warfare
+TechPortraits/Warfare
   rotate: false
   xy: 364, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Knowledge of the Ether
+TechPortraits/Knowledge of the Ether
   rotate: false
   xy: 436, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Way of the Forests
+TechPortraits/Way of the Forests
   rotate: false
   xy: 508, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Way of the Earthmother
+TechPortraits/Way of the Earthmother
   rotate: false
   xy: 580, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Message from the Deep
+TechPortraits/Message from the Deep
   rotate: false
   xy: 652, 4
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Trade
+TechPortraits/Trade
   rotate: false
   xy: 4, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Poisons
+TechPortraits/Poisons
   rotate: false
   xy: 76, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Animal Handling
+TechPortraits/Animal Handling
   rotate: false
   xy: 148, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Smelting
+TechPortraits/Smelting
   rotate: false
   xy: 220, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Sanitation
+TechPortraits/Sanitation
   rotate: false
   xy: 292, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Military Strategy
+TechPortraits/Military Strategy
   rotate: false
   xy: 364, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Currency
+TechPortraits/Currency
   rotate: false
   xy: 436, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Necromancy
+TechPortraits/Necromancy
   rotate: false
   xy: 508, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Elementalism
+TechPortraits/Elementalism
   rotate: false
   xy: 580, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Divination
+TechPortraits/Divination
   rotate: false
   xy: 652, 76
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Alteration
+TechPortraits/Alteration
   rotate: false
   xy: 4, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Hidden Paths
+TechPortraits/Hidden Paths
   rotate: false
   xy: 76, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Arete
+TechPortraits/Arete
   rotate: false
   xy: 148, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Orders from Heaven
+TechPortraits/Orders from Heaven
   rotate: false
   xy: 220, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Honor
+TechPortraits/Honor
   rotate: false
   xy: 292, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Corruption of Spirit
+TechPortraits/Corruption of Spirit
   rotate: false
   xy: 364, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Mind Stapling
+TechPortraits/Mind Stapling
   rotate: false
   xy: 436, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Deception
+TechPortraits/Deception
   rotate: false
   xy: 508, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Feral Bond
+TechPortraits/Feral Bond
   rotate: false
   xy: 580, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Stirrups
+TechPortraits/Stirrups
   rotate: false
   xy: 652, 148
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Bowyers
+TechPortraits/Bowyers
   rotate: false
   xy: 4, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Engineering
+TechPortraits/Engineering
   rotate: false
   xy: 76, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Taxation
+TechPortraits/Taxation
   rotate: false
   xy: 148, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Sorcery
+TechPortraits/Sorcery
   rotate: false
   xy: 220, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Fanaticism
+TechPortraits/Fanaticism
   rotate: false
   xy: 292, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Infernal Pact
+TechPortraits/Infernal Pact
   rotate: false
   xy: 364, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Animal Mastery
+TechPortraits/Animal Mastery
   rotate: false
   xy: 436, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Warhorses
+TechPortraits/Warhorses
   rotate: false
   xy: 508, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Precision
+TechPortraits/Precision
   rotate: false
   xy: 580, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Mithril Working
+TechPortraits/Mithril Working
   rotate: false
   xy: 652, 220
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Mercantilism
+TechPortraits/Mercantilism
   rotate: false
   xy: 4, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Guilds
+TechPortraits/Guilds
   rotate: false
   xy: 76, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Arcane Lore
+TechPortraits/Arcane Lore
   rotate: false
   xy: 148, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Commune with Nature
+TechPortraits/Commune with Nature
   rotate: false
   xy: 220, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Rage
+TechPortraits/Rage
   rotate: false
   xy: 292, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Righteousness
+TechPortraits/Righteousness
   rotate: false
   xy: 364, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Malevolent Designs
+TechPortraits/Malevolent Designs
   rotate: false
   xy: 436, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Mithril Weapons
+TechPortraits/Mithril Weapons
   rotate: false
   xy: 508, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Strength of Will
+TechPortraits/Strength of Will
   rotate: false
   xy: 580, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Pass Through the Ether
+TechPortraits/Pass Through the Ether
   rotate: false
   xy: 652, 292
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Divine Essence
+TechPortraits/Divine Essence
   rotate: false
   xy: 4, 364
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-TechIcons/Omniscience
+TechPortraits/Omniscience
   rotate: false
   xy: 76, 364
   size: 64, 64
