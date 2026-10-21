@@ -55,3 +55,7 @@ Hippus and Svartalfar now receive the +100% pillage Gold element of their Raider
 ### Raiders multiplier correction
 
 In-game calculation audit identified a percentage semantics bug: native Unciv `toPercent()` interprets 100% as a 2× total multiplier and 200% as 3×. Hippus and Svartalfar now use the correct `100% Yield from pillaging tiles`; see the [test protocol](economic-test-protocol.md) for the expected Gold distribution. Doviello's -10% Science remained correct.
+
+### Lanun Pirate Cove ability — October 21, 2026
+
+Added a Lanun-only Workboat improvement action: create **Pirate Cove** on an eligible coastal tile and consume the Workboat. Native restrictions cover owned/coastal/empty/resource-free/next-to-land tiles. Cove yields +1 Gold and +1 Science (proxy for EMM's +2 flexible commerce), +10% defense and approximate 10 Gold pillage. Timed upgrades to Pirate Harbor and Pirate Port, and two-tile spacing, remain deferred pending engine support. [Mechanics and gameplay verification](lanun-pirate-cove.md).
