@@ -634,7 +634,7 @@
       33
     ],
     "uniqueName": "Aggressive, Industrious",
-    "uniqueText": "Partial EMM trait conversion; more civilization abilities to follow.",
+    "uniqueText": "Khazad Dwarven Vault bonuses scale dynamically with treasury Gold per city (0–24: −2 Happiness; 25–49: −1; 50–74: neutral; 75–99: +1; 100–149: +2 and +10% Production; 150–249: +2 and +25% Production; 250+: +3 and +40% Production).",
     "startIntroPart1": "Khazad enters the Age of Rebirth.",
     "startIntroPart2": "The civilizations of Erebus begin to rebuild.",
     "declaringWar": "Our banners are raised against you.",
@@ -679,7 +679,16 @@
       "[2] free [Warrior] units appear <if starting in the [Ancient era]>",
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
-      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion"
+      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion",
+      "[-2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is less than [25]>",
+      "[-1 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [25] and [49]>",
+      "[+1 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [75] and [99]>",
+      "[+2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [100] and [149]>",
+      "[+10]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is between [100] and [149]>",
+      "[+2 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is between [150] and [249]>",
+      "[+25]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is between [150] and [249]>",
+      "[+3 Happiness] [in all cities] <when number of [floor([Gold] / [Cities])] is more than [249]>",
+      "[+40]% Production [in all cities] <when number of [floor([Gold] / [Cities])] is more than [249]>"
     ]
   },
   {
