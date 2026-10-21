@@ -16,7 +16,7 @@ Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 | Civics and FfH happiness | Not implemented | Unciv city economy remains |
 | AI / long games / victory | Untested | Domination victory included |
 
-Static checks and Unciv command-line `mod-ci` checks completed. Android installation and multi-turn gameplay tests remain pending.
+Static source checks have been performed; the official Unciv `mod-ci` result has not been independently confirmed for the latest commit. The user has verified the starting rosters, faction palaces and earlier leader effects on Android. New raiding and Science economics and multi-turn AI/regression games remain unverified.
 
 Progression conversion details: [promotions, upgrades and resources](promotions-upgrades-resources.md).
 
