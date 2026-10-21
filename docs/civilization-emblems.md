@@ -1,6 +1,6 @@
 # Erebus civilization emblems — Phase 3.5
 
-**Status:** 19 full-color user-provided civilization emblems installed and packed for Android; revised to circular-cropped, borderless presentation on October 21, 2026. Gameplay test of revised appearance pending.
+**Status:** 19 full-color user-provided civilization emblems installed and packed for Android; revised to circular-cropped, borderless presentation on October 21, 2026. Revised circular appearance gameplay-verified by user on October 21, 2026.
 
 ## What was imported
 
@@ -28,4 +28,4 @@ Other gameplay mechanics and dialogue strings were not changed by this milestone
 
 The initial import put each source rounded-square button and its gray border inside Unciv's circular symbol slot. The user reported that the double-framing looked poor and asked to remove the border and fill the circle. Several attempts to isolate fully transparent glyphs by color segmentation damaged the emblem details, so the selected correction instead **crops the 64×64 source button inward by five pixels on all sides, scales to a 96×96 square, and applies an antialiased circular transparency mask**. This drops the exterior square border and shadow while retaining the intact full-color design and background inside a circular silhouette. It is explicitly not a transparent glyph-only extraction.
 
-All 19 `Images.Emblems/NationPortraits/*.png` assets and the separate `emblems.png` texture page were regenerated. The `emblems.atlas` coordinates and `Atlases.json` remain unchanged, as do `game.png`, `game.atlas`, the 19 leader portraits, and all game rules. Android appearance of this revision is pending user verification.
+All 19 `Images.Emblems/NationPortraits/*.png` assets and the separate `emblems.png` texture page were regenerated. The `emblems.atlas` coordinates and `Atlases.json` remain unchanged, as do `game.png`, `game.atlas`, the 19 leader portraits, and all game rules. The user confirmed the revised circular emblems display correctly and look good after updating on October 21, 2026. This verifies tested in-game appearance, not exhaustive pixel-level source equivalence.
