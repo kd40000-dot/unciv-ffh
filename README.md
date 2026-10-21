@@ -8,7 +8,7 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 ## Leader portraits — import preparation
 
-**All 19 leader portraits have now been imported from the user's supplied artwork archive** as 256×256 PNGs in `Images/LeaderIcons/`, matching the exact Unciv leader names. See [portrait mappings, source and gameplay QA](docs/original-leader-portraits.md). **In-game verification pending.**
+**All 19 leader portraits have now been imported from the user's supplied artwork archive** as 256×256 PNGs in `Images/LeaderIcons/`, matching the exact Unciv leader names. See [portrait mappings, source and gameplay QA](docs/original-leader-portraits.md). **Portraits did not appear in the first Android test because the mod lacked packed image atlases; this is now addressed with `game.atlas`/`game.png`. Retest pending.**
 
 ## First early-game slice
 
