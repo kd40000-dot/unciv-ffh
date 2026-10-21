@@ -23,5 +23,82 @@
     "uniques": [
       "Generated on every [18] tiles <in [Hill] tiles>"
     ]
+  },
+  {
+    "name": "Raw Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert"
+    ],
+    "revealedBy": "Knowledge of the Ether",
+    "improvedBy": [
+      "Body Node",
+      "Fire Node",
+      "Mind Node",
+      "Death Node"
+    ],
+    "uniques": [
+      "Generated on every [32] tiles <in [Land] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wild magical node. Improve it using a specialized mana node to gain a mana resource; this is the first mod-side Unciv approximation of ExtraModMod's mana node economy."
+      }
+    ]
+  },
+  {
+    "name": "Body Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Body sphere mana from an Amurite starting bonus or an improved node. Owned mana enables the matching sphere promotion."
+      }
+    ]
+  },
+  {
+    "name": "Fire Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire sphere mana from an Amurite starting bonus or an improved node. Owned mana enables the matching sphere promotion."
+      }
+    ]
+  },
+  {
+    "name": "Mind Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mind sphere mana from an Amurite starting bonus or an improved node. Owned mana enables the matching sphere promotion."
+      }
+    ]
+  },
+  {
+    "name": "Death Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Death sphere mana from an Amurite starting bonus or an improved node. Owned mana enables the matching sphere promotion."
+      }
+    ]
   }
 ]

@@ -31,7 +31,20 @@
     "science": 1,
     "civilopediaText": [
       {
-        "text": "A center for arcane study. The FFH2 Adept requires a Mage Guild; full prerequisite and training progression is being added in later magic milestones."
+        "text": "Arcane guild needed to train Adepts after Knowledge of the Ether. Spell research and unit training are the foundation of the Amurite economy."
+      }
+    ]
+  },
+  {
+    "name": "Archery Range",
+    "cost": 80,
+    "requiredTech": "Archery",
+    "uniques": [
+      "New [Bow] units start with [2] XP [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "ExtraModMod Firebow requires an Archery Range. Bonus training XP is a preliminary Unciv-compatible representation."
       }
     ]
   }

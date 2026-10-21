@@ -83,5 +83,89 @@
       "Excluded from map editor",
       "Marks a barbarian camp"
     ]
+  },
+  {
+    "name": "Body Node",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert"
+    ],
+    "turnsToBuild": 6,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Can only be built on [Raw Mana] tiles",
+      "Provides [1] [Body Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An attuned node converting raw mana into Body mana, unlocking Body sphere promotions. ExtraModMod has additional nodes and effects not implemented here."
+      }
+    ]
+  },
+  {
+    "name": "Fire Node",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert"
+    ],
+    "turnsToBuild": 6,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Can only be built on [Raw Mana] tiles",
+      "Provides [1] [Fire Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An attuned node converting raw mana into Fire mana, unlocking Fire sphere promotions. ExtraModMod has additional nodes and effects not implemented here."
+      }
+    ]
+  },
+  {
+    "name": "Mind Node",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert"
+    ],
+    "turnsToBuild": 6,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Can only be built on [Raw Mana] tiles",
+      "Provides [1] [Mind Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An attuned node converting raw mana into Mind mana, unlocking Mind sphere promotions. ExtraModMod has additional nodes and effects not implemented here."
+      }
+    ]
+  },
+  {
+    "name": "Death Node",
+    "terrainsCanBeBuiltOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert"
+    ],
+    "turnsToBuild": 6,
+    "techRequired": "Knowledge of the Ether",
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Can only be built on [Raw Mana] tiles",
+      "Provides [1] [Death Mana]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An attuned node converting raw mana into Death mana, unlocking Death sphere promotions. ExtraModMod has additional nodes and effects not implemented here."
+      }
+    ]
   }
 ]

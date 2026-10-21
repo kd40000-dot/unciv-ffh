@@ -55,8 +55,8 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 3,
-    "cost": 12,
-    "requiredTech": "Agriculture",
+    "cost": 90,
+    "requiredTech": "Knowledge of the Ether",
     "promotions": [
       "Channeling I"
     ],
@@ -64,8 +64,11 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "An apprentice spellcaster. The original FFH2 Adept starts with Channeling I; spellcasting awaits the shared magic ruleset."
+        "text": "FFH2/ExtraModMod: Adepts require Knowledge of the Ether and a Mage Guild. Gain experience, learn sphere promotions where you have the corresponding mana, and eventually upgrade to a Mage (Wizard for Amurites)."
       }
+    ],
+    "uniques": [
+      "Can only be built <in cities with a [Mage Guild]>"
     ]
   },
   {
@@ -82,8 +85,11 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Generic Mage class. The Amurites replace this with their Wizard."
+        "text": "Tier-three arcane unit. Train an Adept, research Sorcery, then upgrade it; direct construction is disabled. ExtraModMod's level-four upgrade restriction is not yet expressible with this Unciv mod's current rules."
       }
+    ],
+    "uniques": [
+      "Unbuildable"
     ]
   },
   {
@@ -93,8 +99,8 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 4,
-    "cost": 12,
-    "requiredTech": "Agriculture",
+    "cost": 120,
+    "requiredTech": "Sorcery",
     "promotions": [
       "Channeling I",
       "Channeling II",
@@ -103,8 +109,11 @@
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "Amurite replacement for the Mage, with Channeling I, Channeling II, and Spellstaff as in ExtraModMod. Their spell effects and exact level-gated upgrade requirements are not yet implemented."
+        "text": "Amurite Mage replacement. Train an Adept and upgrade after Sorcery. Spellstaff's additional-cast mechanic and original level-four requirement remain pending; the promotion currently preserves its original identity."
       }
+    ],
+    "uniques": [
+      "Unbuildable"
     ]
   },
   {
@@ -130,14 +139,15 @@
     "strength": 5,
     "rangedStrength": 7,
     "range": 2,
-    "cost": 12,
-    "requiredTech": "Agriculture",
+    "cost": 120,
+    "requiredTech": "Bowyers",
     "promotions": [
       "Fire I",
       "Channeling II"
     ],
     "uniques": [
-      "[+25]% Strength <when defending> <when fighting in [City center] tiles>"
+      "[+25]% Strength <when defending> <when fighting in [City center] tiles>",
+      "Can only be built <in cities with a [Archery Range]>"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
@@ -152,19 +162,21 @@
     "unitType": "Arcane",
     "movement": 2,
     "strength": 5,
-    "cost": 12,
-    "requiredTech": "Agriculture",
+    "cost": 480,
+    "requiredTech": "Arcane Lore",
     "promotions": [
       "Channeling I",
       "Channeling II",
       "Channeling III",
       "Hero"
     ],
-    "uniques": [],
+    "uniques": [
+      "Limited to [1] per Civilization"
+    ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
-        "text": "ARTWORK PREVIEW ONLY: Govannon is cheap and deliberately unrestricted so you can inspect his sprite. Unique-hero restrictions and teaching will return in the final ruleset."
+        "text": "Amurite hero from ExtraModMod: a powerful arcane teacher available with Arcane Lore. Limited to one active unit here; one-time-ever creation and spell teaching need additional native Unciv behavior."
       }
     ]
   },
@@ -187,8 +199,8 @@
     "unitType": "Recon",
     "movement": 2,
     "strength": 5,
-    "cost": 12,
-    "requiredTech": "Agriculture",
+    "cost": 120,
+    "requiredTech": "Poisons",
     "promotions": [
       "Marksman",
       "Dimensional I"

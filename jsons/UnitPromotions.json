@@ -3,7 +3,7 @@
     "name": "Channeling I",
     "unitTypes": [
       "Arcane",
-      "Archery"
+      "Bow"
     ],
     "uniques": [],
     "civilopediaText": [
@@ -16,7 +16,7 @@
     "name": "Channeling II",
     "unitTypes": [
       "Arcane",
-      "Archery"
+      "Bow"
     ],
     "uniques": [],
     "civilopediaText": [
@@ -41,13 +41,18 @@
     "name": "Fire I",
     "unitTypes": [
       "Arcane",
-      "Archery"
+      "Bow"
     ],
-    "uniques": [],
+    "uniques": [
+      "Only available <with [Fire Mana]>"
+    ],
     "civilopediaText": [
       {
         "text": "Fire sphere I. Fire damage and spells require the shared magic system."
       }
+    ],
+    "prerequisites": [
+      "Channeling I"
     ]
   },
   {
@@ -97,6 +102,75 @@
     "civilopediaText": [
       {
         "text": "Source-authentic Chanter promotion; dimensional spells are not yet represented."
+      }
+    ]
+  },
+  {
+    "name": "Body I",
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "unitTypes": [
+      "Arcane"
+    ],
+    "uniques": [
+      "Only available <with [Body Mana]>",
+      "[This Unit] gains the [Hastened] status for [2] turn(s) <for all movement>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Body I, gated by Body Mana. Cast a first native-Unciv Haste prototype: a temporary movement bonus on the caster, spending its movement. The original ExtraModMod spell affects qualifying friendly units nearby; area targeting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Mind I",
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "unitTypes": [
+      "Arcane"
+    ],
+    "uniques": [
+      "Only available <with [Mind Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mind I. Sphere access is tied to Mind Mana; Charm and other Mind spells are not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Death I",
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "unitTypes": [
+      "Arcane"
+    ],
+    "uniques": [
+      "Only available <with [Death Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Death I. Death Mana permits selecting this sphere. Raise Skeleton is deferred until summon duration/caps can be represented reliably."
+      }
+    ]
+  },
+  {
+    "name": "Hastened",
+    "unitTypes": [
+      "Arcane",
+      "Melee",
+      "Recon",
+      "Bow"
+    ],
+    "uniques": [
+      "[1] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary Haste status from Body I. Its status expires automatically. Unlike ExtraModMod's area Haste, the current action targets the caster only."
       }
     ]
   }
