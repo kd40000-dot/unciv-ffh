@@ -41,7 +41,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "uniques": [
       "[+20]% Strength"
@@ -61,7 +62,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "prerequisites": [
       "Combat I"
@@ -84,7 +86,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "prerequisites": [
       "Combat II"
@@ -107,7 +110,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "prerequisites": [
       "Combat III"
@@ -130,7 +134,8 @@
       "Sword",
       "Mounted",
       "Melee Water",
-      "Siege"
+      "Siege",
+      "Disciple"
     ],
     "prerequisites": [
       "Combat IV"
@@ -148,7 +153,8 @@
     "name": "City Raider I",
     "unitTypes": [
       "Scout",
-      "Sword"
+      "Sword",
+      "Disciple"
     ],
     "uniques": [
       "Only available <after discovering [Warfare]>",
