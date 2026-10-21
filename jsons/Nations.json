@@ -49,7 +49,9 @@
     ],
     "uniques": [
       "[-50]% Gold cost of upgrading",
-      "Starts with [Ancient Chants]"
+      "Starts with [Ancient Chants]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -106,7 +108,9 @@
       "[-25]% XP required for promotions",
       "[+1 Happiness] [in all cities]",
       "[+2 Culture] [in all cities]",
-      "Starts with [Agriculture]"
+      "Starts with [Agriculture]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -163,7 +167,9 @@
     "uniques": [
       "[-25]% XP required for promotions",
       "[+1 Happiness] [in all cities]",
-      "Starts with [Exploration]"
+      "Starts with [Exploration]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -216,7 +222,9 @@
       "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
-      "Starts with [Exploration]"
+      "Starts with [Exploration]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -276,7 +284,9 @@
       "Dark Heart"
     ],
     "uniques": [
-      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Orc] promotion"
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Orc] promotion",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -339,7 +349,10 @@
       "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
       "[-25]% XP required for promotions",
-      "[+1 Happiness] [in all cities]"
+      "[+1 Happiness] [in all cities]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>",
+      "Free [Lucian] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -394,7 +407,9 @@
     ],
     "uniques": [
       "[+2 Culture] [in all cities]",
-      "Starts with [Ancient Chants]"
+      "Starts with [Ancient Chants]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -457,7 +472,9 @@
       "[-25]% XP required for promotions",
       "[+1 Happiness] [in all cities]",
       "[+100]% Great Person generation [in all cities]",
-      "Starts with [Crafting]"
+      "Starts with [Crafting]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -517,7 +534,9 @@
       "All newly-trained [Sword] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Mounted] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
-      "Starts with [Agriculture]"
+      "Starts with [Agriculture]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -573,7 +592,9 @@
     "uniques": [
       "[-25]% XP required for promotions",
       "[+1 Happiness] [in all cities]",
-      "Starts with [Exploration]"
+      "Starts with [Exploration]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -635,7 +656,8 @@
       "All newly-trained [Scout] units [in all cities] receive the [Combat I] promotion",
       "[+50]% Production when constructing [All] wonders [in all cities]",
       "Starts with [Crafting]",
-      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion"
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion",
+      "[2] free [Warrior] units appear <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -693,7 +715,9 @@
     ],
     "uniques": [
       "[+100]% Great Person generation [in all cities]",
-      "Starts with [Agriculture]"
+      "Starts with [Agriculture]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -744,7 +768,9 @@
     ],
     "uniques": [
       "[-25]% XP required for promotions",
-      "[+1 Happiness] [in all cities]"
+      "[+1 Happiness] [in all cities]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -803,7 +829,8 @@
     "uniques": [
       "All newly-trained [{Military} {Land}] units [in all cities] receive the [Elf] promotion",
       "[+2 Culture] [in all cities]",
-      "Starts with [Exploration]"
+      "Starts with [Exploration]",
+      "[2] free [Scout] units appear <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -857,7 +884,9 @@
     ],
     "uniques": [
       "Starts with [Crafting]",
-      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion"
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -908,7 +937,9 @@
     ],
     "uniques": [
       "[+2 Culture] [in all cities]",
-      "Starts with [Ancient Chants]"
+      "Starts with [Ancient Chants]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Lightbringer] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -962,7 +993,9 @@
       "Sjoktraken"
     ],
     "uniques": [
-      "Starts with [Ancient Chants]"
+      "Starts with [Ancient Chants]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -1018,7 +1051,9 @@
     "uniques": [
       "[+100]% Great Person generation [in all cities]",
       "[+50]% Production when constructing [All] wonders [in all cities]",
-      "Starts with [Ancient Chants]"
+      "Starts with [Ancient Chants]",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
@@ -1078,7 +1113,9 @@
     ],
     "uniques": [
       "Starts with [Agriculture]",
-      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dark Elf] promotion"
+      "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dark Elf] promotion",
+      "Free [Warrior] appears <if starting in the [Ancient era]>",
+      "Free [Scout] appears <if starting in the [Ancient era]>"
     ]
   },
   {
