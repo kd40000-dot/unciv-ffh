@@ -364,7 +364,8 @@
       "Free [Lucian] appears <if starting in the [Ancient era]>",
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
-      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion"
+      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion",
+      "[-10]% Science [in all cities]"
     ]
   },
   {
@@ -552,7 +553,8 @@
       "Free [Scout] appears <if starting in the [Ancient era]>",
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
-      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion"
+      "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion",
+      "200% Yield from pillaging tiles"
     ]
   },
   {
@@ -1143,7 +1145,8 @@
       "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dark Elf] promotion",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
+      "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion",
+      "200% Yield from pillaging tiles"
     ]
   },
   {
