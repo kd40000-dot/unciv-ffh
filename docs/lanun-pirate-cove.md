@@ -6,7 +6,7 @@
 
 **Lanun Workboats** gain the native Unciv action **Create Pirate Cove**, using `Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>`. The Workboat is *the existing UNIT_WORKBOAT* (Fishing, cost 30, movement 2); no fictional unit type or free construction is created.
 
-The new `Pirate Cove` tile improvement is **uniqueTo: Lanun** and has **turnsToBuild: 0** (instant workboat placement only). It enforces these EMM source placement requirements using Unciv's improvement rules:
+The new `Pirate Cove` tile improvement is **uniqueTo: Lanun** and has **turnsToBuild: -1** (blocks normal worker construction; the separate consuming special action places it instantly). It enforces these EMM source placement requirements using Unciv's improvement rules:
 
 - Coast only
 - In the player's own territory (not outside borders)
