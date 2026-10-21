@@ -63,3 +63,7 @@ Added a Lanun-only Workboat improvement action: create **Pirate Cove** on an eli
 ### Khazad dynamic Dwarven Vault economy — October 21, 2026
 
 Seven EMM gold-per-city vault stages are now functional through Unciv conditional arithmetic: Gold reserve divided by owned city count, floored. Their source Happiness and Production modifiers are tied exclusively to Khazad and can rise or fall with saved/spent Gold and city founding. The corresponding vault status buildings are not auto-inserted; only the economic bonuses are implemented. [Source thresholds and testing](khazad-vaults.md). Lanun Pirate Cove placement and Khazad Vault threshold/bonus behavior were user-tested and reported working on October 21, 2026.
+
+### Leader-specific Erebus diplomacy (October 21, 2026)
+
+The 19 normal playable leaders have seven individually authored lore-inspired dialogue lines apiece; the generic shared introductions and diplomacy strings have been replaced. These are not claimed to be original FfH/EMM quotes because the pinned source's accessible diplomacy file lacks custom leader greetings. Source/provenance and Android checks: [Erebus diplomacy](erebus-diplomacy.md).
