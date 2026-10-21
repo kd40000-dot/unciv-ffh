@@ -12,8 +12,10 @@ Pinned source: [ExtraModMod Continued 60b0ec3740083162aaab7bf8491761a54a65a610](
 | Aggressive | Free Combat I for Adept, Archer, Disciple, Melee, Mounted and Recon | Grants on newly trained Magic, Archery, Disciple, Sword, Mounted and Scout units | Starting units are not newly trained; combat-class correspondence is approximate |
 | Arcane | Free Mobility I and Potency for Adepts | Free Mobility I for newly trained Magic units | Potency and spellcraft mechanics deferred |
 | Spiritual | Free Mobility I and Favored for Disciples | Free Mobility I for newly trained Disciple units | Favored effect and religion progression deferred |
+| Raiders | +100% pillage Gold, free Commando | 200% of normal pillage yields (currently all Gold) | Enemy-road movement and first strike not ported |
+| Barbarian | -10% Research, barbarian alliance | -10% Science in all cities | Barbarian alliance and Civ IV commerce slider not ported |
 
-Earlier traits retained as implemented: Charismatic, Industrious, Philosophical. **Organized** in EMM gives -50% *civic upkeep*, not a general Unciv unit, road, or building upkeep bonus, so it is intentionally deferred. **Expansive** grants +3 Civ IV health, which Unciv lacks. **Raiders** affects gold from pillaging and grants Commando on multiple unit classes; this is deferred until a comparable native promotion exists. **Adaptive**, **Insane**, **Barbarian** and **Summoner** require specialized functionality and remain deferred.
+Earlier traits retained as implemented: Charismatic, Industrious, Philosophical. **Organized** in EMM gives -50% *civic upkeep*, not a general Unciv unit, road, or building upkeep bonus, so it is intentionally deferred. **Expansive** grants +3 Civ IV health, which Unciv lacks. **Raiders** now doubles pillage Gold through native Unciv's `200% Yield from pillaging tiles`, but its free Commando promotion (enemy roads and first strike) remains deferred. **Barbarian** now gives its source -10% Research modifier as -10% Unciv Science, while its alliance with barbarian units remains deferred. **Adaptive**, **Insane** and **Summoner** still require specialized systems.
 
 ## Palaces: source data and approximation
 
@@ -30,3 +32,11 @@ The new buildings are named `<Faction> Palace`, have `uniqueTo`, `replaces: Pala
 Android playtests should confirm: (1) founding a first city gives the correct named faction palace automatically; (2) it grants +1 Production, +4 Science, +4 Gold and +1 Happiness; (3) a capital move handles the variant palace correctly; (4) each leader receives the correct added bonuses; (5) starting +50 Gold for Valledia is granted once only; and (6) newly trained Arcane/Spiritual/Aggressive eligible units receive their proper promotions.
 
 The static source check is **not** proof of those in-game outcomes. These remain untested until a gameplay session verifies them.
+
+## Economic and raiding update — October 21, 2026
+
+The pinned Raider trait gives `iPillagingGold=100`, meaning **100% extra Gold** rather than a total yield of 100%. Unciv's pillage loot calculator multiplies by the requested percentage *directly*: `200% Yield from pillaging tiles` produces a 2× payout. All currently configured pillageable improvements yield Gold only, making this source-faithful for existing improvements. The multiplier affects the unit's improvement pillage loot, not barbarian camp prizes. This bonus now applies to selected Hippus and Svartalfar leaders. The source Commando promotion includes `bEnemyRoute=1` and an extra first strike; we have **not** added a misleading replacement.
+
+Charadon's Doviello also receive the source Barbarian trait's `commerceModifiers=[0,-10,0]` as `[-10]% Science [in all cities]`, approximating the research-commerce penalty while retaining a separate ledger entry for missing barbarian alliance. Other factions receive neither effect.
+
+The user has verified that the prior source-derived palaces and leader effects behave as expected in gameplay. These two **new** economic effects still need live testing.
