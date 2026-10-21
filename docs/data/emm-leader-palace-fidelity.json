@@ -1,0 +1,583 @@
+{
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourceFiles": [
+    "XML/Civilizations/CIV4TraitInfos.xml",
+    "XML/Buildings/CIV4BuildingInfos.xml"
+  ],
+  "palaceCommerceProxy": {
+    "sourceCommerce": 8,
+    "uncivScience": 4,
+    "uncivGold": 4,
+    "comment": "EMM's 8 flexible commerce has no Unciv science/gold slider. A documented 4/4 fixed proxy; not a source-exact split."
+  },
+  "traits": {
+    "TRAIT_ARCANE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [
+        "PROMOTION_MOBILITY1",
+        "PROMOTION_POTENCY"
+      ],
+      "freeUnitCombats": [
+        "UNITCOMBAT_ADEPT"
+      ]
+    },
+    "TRAIT_INGENUITY": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 50,
+      "iUpgradeCostModifier": -50,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_ORGANIZED": {
+      "iUpkeepModifier": -50,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_CHARISMATIC": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": -25,
+      "iHappiness": 1,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_CREATIVE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [
+        0,
+        0,
+        2
+      ],
+      "commerceModifiers": [
+        0,
+        0,
+        10
+      ],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_INSANE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_AGGRESSIVE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [
+        "PROMOTION_COMBAT1"
+      ],
+      "freeUnitCombats": [
+        "UNITCOMBAT_ADEPT",
+        "UNITCOMBAT_ARCHER",
+        "UNITCOMBAT_DISCIPLE",
+        "UNITCOMBAT_MELEE",
+        "UNITCOMBAT_MOUNTED",
+        "UNITCOMBAT_RECON"
+      ]
+    },
+    "TRAIT_FINANCIAL": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [
+        0,
+        0,
+        0
+      ],
+      "commerceModifiers": [
+        25,
+        0,
+        0
+      ],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_EXPANSIVE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 3,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_SPIRITUAL": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [
+        "PROMOTION_MOBILITY1",
+        "PROMOTION_FAVORED"
+      ],
+      "freeUnitCombats": [
+        "UNITCOMBAT_DISCIPLE"
+      ]
+    },
+    "TRAIT_BARBARIAN": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [
+        0,
+        -10,
+        0
+      ],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_ADAPTIVE": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_PHILOSOPHICAL": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 100,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_RAIDERS": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 100,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [
+        "PROMOTION_COMMANDO"
+      ],
+      "freeUnitCombats": [
+        "UNITCOMBAT_ADEPT",
+        "UNITCOMBAT_ARCHER",
+        "UNITCOMBAT_DISCIPLE",
+        "UNITCOMBAT_MELEE",
+        "UNITCOMBAT_MOUNTED",
+        "UNITCOMBAT_RECON"
+      ]
+    },
+    "TRAIT_INDUSTRIOUS": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 50,
+      "iMaxTeamBuildingProductionModifier": 50,
+      "iMaxPlayerBuildingProductionModifier": 50,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [],
+      "freeUnitCombats": []
+    },
+    "TRAIT_SUMMONER": {
+      "iUpkeepModifier": 0,
+      "iLevelExperienceModifier": 0,
+      "iHappiness": 0,
+      "iHealth": 0,
+      "iStartingGold": 0,
+      "iUpgradeCostModifier": 0,
+      "iGreatPeopleRateModifier": 0,
+      "iMaxGlobalBuildingProductionModifier": 0,
+      "iMaxTeamBuildingProductionModifier": 0,
+      "iMaxPlayerBuildingProductionModifier": 0,
+      "iPillagingGold": 0,
+      "commerceChanges": [],
+      "commerceModifiers": [],
+      "freePromotions": [
+        "PROMOTION_SUMMONER",
+        "PROMOTION_EXTENSION1"
+      ],
+      "freeUnitCombats": [
+        "UNITCOMBAT_ADEPT"
+      ]
+    }
+  },
+  "palaceSources": [
+    {
+      "civilization": "Amurites",
+      "sourceId": "BUILDING_PALACE_AMURITES",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Balseraphs",
+      "sourceId": "BUILDING_PALACE_BALSERAPHS",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Bannor",
+      "sourceId": "BUILDING_PALACE_BANNOR",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Calabim",
+      "sourceId": "BUILDING_PALACE_CALABIM",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Clan of Embers",
+      "sourceId": "BUILDING_PALACE_CLAN_OF_EMBERS",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Doviello",
+      "sourceId": "BUILDING_PALACE_DOVIELLO",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Elohim",
+      "sourceId": "BUILDING_PALACE_ELOHIM",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Grigori",
+      "sourceId": "BUILDING_PALACE_GRIGORI",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Hippus",
+      "sourceId": "BUILDING_PALACE_HIPPUS",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Illians",
+      "sourceId": "BUILDING_PALACE_ILLIANS",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Khazad",
+      "sourceId": "BUILDING_PALACE_KHAZAD",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Kuriotates",
+      "sourceId": "BUILDING_PALACE_KURIOTATES",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Lanun",
+      "sourceId": "BUILDING_PALACE_LANUN",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Ljosalfar",
+      "sourceId": "BUILDING_PALACE_LJOSALFAR",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Luchuirp",
+      "sourceId": "BUILDING_PALACE_LUCHUIRP",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Malakim",
+      "sourceId": "BUILDING_PALACE_MALAKIM",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Sheaim",
+      "sourceId": "BUILDING_PALACE_SHEAIM",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Sidar",
+      "sourceId": "BUILDING_PALACE_SIDAR",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    },
+    {
+      "civilization": "Svartalfar",
+      "sourceId": "BUILDING_PALACE_SVARTALFAR",
+      "sourceCost": 160,
+      "sourceYieldChanges": [
+        0,
+        1,
+        8
+      ],
+      "sourceHappiness": 1,
+      "sourceDefense": 0
+    }
+  ],
+  "representedPartialTraits": [
+    "TRAIT_ARCANE",
+    "TRAIT_SPIRITUAL"
+  ],
+  "deferredTraits": [
+    "TRAIT_ORGANIZED",
+    "TRAIT_EXPANSIVE",
+    "TRAIT_RAIDERS",
+    "TRAIT_ADAPTIVE",
+    "TRAIT_SUMMONER",
+    "TRAIT_INSANE",
+    "TRAIT_BARBARIAN"
+  ]
+}
