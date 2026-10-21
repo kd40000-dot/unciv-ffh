@@ -12,10 +12,10 @@ Pinned source: [ExtraModMod Continued 60b0ec3740083162aaab7bf8491761a54a65a610](
 | Aggressive | Free Combat I for Adept, Archer, Disciple, Melee, Mounted and Recon | Grants on newly trained Magic, Archery, Disciple, Sword, Mounted and Scout units | Starting units are not newly trained; combat-class correspondence is approximate |
 | Arcane | Free Mobility I and Potency for Adepts | Free Mobility I for newly trained Magic units | Potency and spellcraft mechanics deferred |
 | Spiritual | Free Mobility I and Favored for Disciples | Free Mobility I for newly trained Disciple units | Favored effect and religion progression deferred |
-| Raiders | +100% pillage Gold, free Commando | 200% of normal pillage yields (currently all Gold) | Enemy-road movement and first strike not ported |
+| Raiders | +100% pillage Gold, free Commando | Double normal pillage yields (currently all Gold; `100%` Unciv bonus) | Enemy-road movement and first strike not ported |
 | Barbarian | -10% Research, barbarian alliance | -10% Science in all cities | Barbarian alliance and Civ IV commerce slider not ported |
 
-Earlier traits retained as implemented: Charismatic, Industrious, Philosophical. **Organized** in EMM gives -50% *civic upkeep*, not a general Unciv unit, road, or building upkeep bonus, so it is intentionally deferred. **Expansive** grants +3 Civ IV health, which Unciv lacks. **Raiders** now doubles pillage Gold through native Unciv's `200% Yield from pillaging tiles`, but its free Commando promotion (enemy roads and first strike) remains deferred. **Barbarian** now gives its source -10% Research modifier as -10% Unciv Science, while its alliance with barbarian units remains deferred. **Adaptive**, **Insane** and **Summoner** still require specialized systems.
+Earlier traits retained as implemented: Charismatic, Industrious, Philosophical. **Organized** in EMM gives -50% *civic upkeep*, not a general Unciv unit, road, or building upkeep bonus, so it is intentionally deferred. **Expansive** grants +3 Civ IV health, which Unciv lacks. **Raiders** now doubles pillage Gold through native Unciv's `100% Yield from pillaging tiles`, but its free Commando promotion (enemy roads and first strike) remains deferred. **Barbarian** now gives its source -10% Research modifier as -10% Unciv Science, while its alliance with barbarian units remains deferred. **Adaptive**, **Insane** and **Summoner** still require specialized systems.
 
 ## Palaces: source data and approximation
 
@@ -35,7 +35,7 @@ The static source check is **not** proof of those in-game outcomes. These remain
 
 ## Economic and raiding update — October 21, 2026
 
-The pinned Raider trait gives `iPillagingGold=100`, meaning **100% extra Gold** rather than a total yield of 100%. Unciv's pillage loot calculator multiplies by the requested percentage *directly*: `200% Yield from pillaging tiles` produces a 2× payout. All currently configured pillageable improvements yield Gold only, making this source-faithful for existing improvements. The multiplier affects the unit's improvement pillage loot, not barbarian camp prizes. This bonus now applies to selected Hippus and Svartalfar leaders. The source Commando promotion includes `bEnemyRoute=1` and an extra first strike; we have **not** added a misleading replacement.
+The pinned Raider trait gives `iPillagingGold=100`, meaning **100% extra Gold** rather than a total yield of 100%. Unciv's pillage loot calculator multiplies by `1 + percent/100`, meaning `100% Yield from pillaging tiles` produces a 2× payout. A previous `200%` value would have caused 3× loot and was corrected after engine-code verification. All currently configured pillageable improvements yield Gold only, making this source-faithful for existing improvements. The multiplier affects the unit's improvement pillage loot, not barbarian camp prizes. This bonus now applies to selected Hippus and Svartalfar leaders. The source Commando promotion includes `bEnemyRoute=1` and an extra first strike; we have **not** added a misleading replacement.
 
 Charadon's Doviello also receive the source Barbarian trait's `commerceModifiers=[0,-10,0]` as `[-10]% Science [in all cities]`, approximating the research-commerce penalty while retaining a separate ledger entry for missing barbarian alliance. Other factions receive neither effect.
 
