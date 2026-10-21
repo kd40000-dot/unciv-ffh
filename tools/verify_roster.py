@@ -34,7 +34,11 @@ for item in units:
     assert item["cost"]==rec["cost"],("Incorrect unit cost",item["name"])
     assert item["movement"]==rec["moves"],("Incorrect unit movement",item["name"])
     if rec["attack"]>0:assert item["strength"]==rec["attack"],("Incorrect combat",item["name"])
-    if rec["tech"]:assert item["requiredTech"] in techs,item["name"]
+    if rec["tech"] == "TECH_NEVER":
+        assert "Unbuildable" in item.get("uniques", []), item["name"]
+        assert "requiredTech" not in item, item["name"]
+    elif rec["tech"]:
+        assert item["requiredTech"] in techs, item["name"]
 for item in buildings:
     assert item["requiredTech"] in techs if "requiredTech" in item else True,item["name"]
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
