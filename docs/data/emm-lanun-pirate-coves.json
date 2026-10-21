@@ -1,0 +1,82 @@
+{
+  "sourceRepo": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sourceFiles": [
+    "XML/Terrain/CIV4ImprovementInfos.xml",
+    "XML/Units/CIV4SpellInfos.xml",
+    "python/entrypoints/CvSpellInterface.py"
+  ],
+  "spell": {
+    "sourceId": "SPELL_PIRATE_COVE",
+    "sourceUnit": "UNIT_WORKBOAT",
+    "civilization": "CIVILIZATION_LANUN",
+    "creates": "IMPROVEMENT_PIRATE_COVE",
+    "consumesCaster": true,
+    "requirements": [
+      "water tile",
+      "adjacent to land",
+      "within Lanun-owned territory",
+      "not a city",
+      "no existing improvement",
+      "no resource",
+      "no Pirate Cove/Harbor/Port in surrounding 5x5 coordinate box"
+    ]
+  },
+  "stages": [
+    {
+      "sourceId": "IMPROVEMENT_PIRATE_COVE",
+      "name": "Pirate Cove",
+      "sourceYields": [
+        0,
+        0,
+        2
+      ],
+      "upgradesTo": "IMPROVEMENT_PIRATE_HARBOR",
+      "upgradeTime": 10,
+      "defensePercent": 10,
+      "pillageGold": 10,
+      "sourceOutsideBorders": true,
+      "implemented": true
+    },
+    {
+      "sourceId": "IMPROVEMENT_PIRATE_HARBOR",
+      "name": "Pirate Harbor",
+      "sourceYields": [
+        1,
+        1,
+        3
+      ],
+      "upgradesTo": "IMPROVEMENT_PIRATE_PORT",
+      "upgradeTime": 20,
+      "defensePercent": 20,
+      "pillageGold": 10,
+      "sourceOutsideBorders": true,
+      "implemented": false
+    },
+    {
+      "sourceId": "IMPROVEMENT_PIRATE_PORT",
+      "name": "Pirate Port",
+      "sourceYields": [
+        2,
+        2,
+        4
+      ],
+      "upgradesTo": null,
+      "upgradeTime": 0,
+      "defensePercent": 30,
+      "pillageGold": 10,
+      "sourceOutsideBorders": true,
+      "implemented": false
+    }
+  ],
+  "conversion": {
+    "sourceCommerce": 2,
+    "uncivGold": 1,
+    "uncivScience": 1,
+    "sourceCoveDefensePercent": 10,
+    "sourcePillageGold": 10,
+    "sourceWorkboatCost": 30,
+    "sourceWorkboatMoves": 2,
+    "comments": "Commerce slider is absent; initial Cove uses 1 Gold + 1 Science. EMM source's outside-borders improvement flag does not override spell's owned-territory restriction. Further source stages are inventory only; Unciv has no automatic time-based improvement upgrade."
+  }
+}
