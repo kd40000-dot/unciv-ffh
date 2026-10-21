@@ -77,6 +77,7 @@
     "sourcePillageGold": 10,
     "sourceWorkboatCost": 30,
     "sourceWorkboatMoves": 2,
-    "comments": "Commerce slider is absent; initial Cove uses 1 Gold + 1 Science. EMM source's outside-borders improvement flag does not override spell's owned-territory restriction. Further source stages are inventory only; Unciv has no automatic time-based improvement upgrade."
+    "comments": "Commerce slider is absent; initial Cove uses 1 Gold + 1 Science. EMM source's outside-borders improvement flag does not override spell's owned-territory restriction. Further source stages are inventory only; Unciv has no automatic time-based improvement upgrade. Unciv MapUnit.canBuildImprovement explicitly rejects turnsToBuild -1 for ordinary build actions while ConstructImprovementInstantly uses the separate placement check.",
+    "uncivTurnsToBuild": -1
   }
 }
