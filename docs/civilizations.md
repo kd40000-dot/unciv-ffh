@@ -71,3 +71,7 @@ The 19 normal playable leaders have seven individually authored lore-inspired di
 ### Civilization emblems (October 21, 2026)
 
 19 playable faction emblems from the supplied `CivIcons.zip` are imported as full-color Unciv `NationPortraits`, stored in a separate packed atlas that retains all previously verified leader images. [Provenance and gameplay QA](civilization-emblems.md). Android verification pending.
+
+### Updated emblem implementation — October 21, 2026
+
+The original full-color `NationPortraits` button art has been replaced with the actual FfH2 `art/interface/teamcolor/*flag.dds` glyphs, packed as transparent `NationIcons` into a separate Android texture atlas. This uses Unciv's native nation-color circles and tint instead of a baked-in second circle or square border. See [source artwork provenance and the new Android test protocol](civilization-emblems.md). The preceding circular badges were gameplay-verified; the new transparent glyph set awaits user verification.
