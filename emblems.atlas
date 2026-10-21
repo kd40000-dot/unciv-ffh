@@ -1,139 +1,100 @@
 
 emblems.png
-size: 512, 512
+size: 1024, 512
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-NationPortraits/Amurites
+NationIcons/Amurites
   rotate: false
   xy: 4, 4
-  size: 96, 96
-  orig: 96, 96
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Balseraphs
+NationIcons/Balseraphs
   rotate: false
-  xy: 104, 4
-  size: 96, 96
-  orig: 96, 96
+  xy: 140, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Bannor
+NationIcons/Bannor
   rotate: false
-  xy: 204, 4
-  size: 96, 96
-  orig: 96, 96
+  xy: 276, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Calabim
+NationIcons/Calabim
   rotate: false
-  xy: 304, 4
-  size: 96, 96
-  orig: 96, 96
+  xy: 412, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Clan of Embers
+NationIcons/Clan of Embers
   rotate: false
-  xy: 404, 4
-  size: 96, 96
-  orig: 96, 96
+  xy: 548, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Doviello
+NationIcons/Doviello
   rotate: false
-  xy: 4, 104
-  size: 96, 96
-  orig: 96, 96
+  xy: 684, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Elohim
+NationIcons/Elohim
   rotate: false
-  xy: 104, 104
-  size: 96, 96
-  orig: 96, 96
+  xy: 820, 4
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Grigori
+NationIcons/Grigori
   rotate: false
-  xy: 204, 104
-  size: 96, 96
-  orig: 96, 96
+  xy: 4, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Hippus
+NationIcons/Hippus
   rotate: false
-  xy: 304, 104
-  size: 96, 96
-  orig: 96, 96
+  xy: 140, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Illians
+NationIcons/Illians
   rotate: false
-  xy: 404, 104
-  size: 96, 96
-  orig: 96, 96
+  xy: 276, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Khazad
+NationIcons/Khazad
   rotate: false
-  xy: 4, 204
-  size: 96, 96
-  orig: 96, 96
+  xy: 412, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Kuriotates
+NationIcons/Kuriotates
   rotate: false
-  xy: 104, 204
-  size: 96, 96
-  orig: 96, 96
+  xy: 548, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Lanun
+NationIcons/Lanun
   rotate: false
-  xy: 204, 204
-  size: 96, 96
-  orig: 96, 96
+  xy: 684, 140
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1
-NationPortraits/Ljosalfar
+NationIcons/Ljosalfar
   rotate: false
-  xy: 304, 204
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-NationPortraits/Luchuirp
-  rotate: false
-  xy: 404, 204
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-NationPortraits/Malakim
-  rotate: false
-  xy: 4, 304
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-NationPortraits/Sheaim
-  rotate: false
-  xy: 104, 304
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-NationPortraits/Sidar
-  rotate: false
-  xy: 204, 304
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-NationPortraits/Svartalfar
-  rotate: false
-  xy: 304, 304
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
+  xy: 820, 140
