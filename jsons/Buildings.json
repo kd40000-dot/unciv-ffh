@@ -374,5 +374,271 @@
     "percentStatBonus": {
       "culture": 10
     }
+  },
+  {
+    "name": "Amurites Palace",
+    "uniqueTo": "Amurites",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Balseraphs Palace",
+    "uniqueTo": "Balseraphs",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Bannor Palace",
+    "uniqueTo": "Bannor",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Calabim Palace",
+    "uniqueTo": "Calabim",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Clan of Embers Palace",
+    "uniqueTo": "Clan of Embers",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Doviello Palace",
+    "uniqueTo": "Doviello",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Elohim Palace",
+    "uniqueTo": "Elohim",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Grigori Palace",
+    "uniqueTo": "Grigori",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Hippus Palace",
+    "uniqueTo": "Hippus",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Illians Palace",
+    "uniqueTo": "Illians",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Khazad Palace",
+    "uniqueTo": "Khazad",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Kuriotates Palace",
+    "uniqueTo": "Kuriotates",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Lanun Palace",
+    "uniqueTo": "Lanun",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Ljosalfar Palace",
+    "uniqueTo": "Ljosalfar",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Luchuirp Palace",
+    "uniqueTo": "Luchuirp",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Malakim Palace",
+    "uniqueTo": "Malakim",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Sheaim Palace",
+    "uniqueTo": "Sheaim",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Sidar Palace",
+    "uniqueTo": "Sidar",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Svartalfar Palace",
+    "uniqueTo": "Svartalfar",
+    "replaces": "Palace",
+    "isNationalWonder": true,
+    "cost": 160,
+    "production": 1,
+    "science": 4,
+    "gold": 4,
+    "happiness": 1,
+    "uniques": [
+      "Indicates the capital city"
+    ]
   }
 ]
