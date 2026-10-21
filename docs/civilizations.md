@@ -5,7 +5,7 @@ Source: [ExtraModMod Continued `60b0ec3740083162aaab7bf8491761a54a65a610`](https
 ## Included
 - **19** normal source-playable civilizations, authentic ordered city-name lists and their EMM faction colors.
 - Actual EMM leader selection: one per Unciv nation; all leader IDs and trait sets are in [the source inventory](data/emm-civilizations.json).
-- **50** new unique faction units and **10** new faction buildings with supported base classes; **100** units and **50** buildings overall.
+- **50** new unique faction units and **10** new faction buildings with supported base classes; **102** units (including Lucian and Lightbringer) and **50** buildings overall.
 - **37** faction unit/building class bans where their source class default exists in this ruleset.
 - EMM starting technologies via `Starts with [tech]` except nonresearchable Seafaring for Lanun.
 
