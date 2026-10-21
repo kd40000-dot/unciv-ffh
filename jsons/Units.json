@@ -877,7 +877,8 @@
     ],
     "upgradesTo": "Archmage",
     "uniques": [
-      "Only available <for [non-[Khazad]] Civilizations>"
+      "Only available <for [non-[Khazad]] Civilizations>",
+      "[This Unit] heals [15] HP <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -898,7 +899,8 @@
       "Channeling III"
     ],
     "uniques": [
-      "Only available <for [non-[Khazad]] Civilizations>"
+      "Only available <for [non-[Khazad]] Civilizations>",
+      "[This Unit] heals [15] HP <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -925,6 +927,9 @@
       {
         "text": "An Amurite spellcaster raised in a culture devoted to magical study."
       }
+    ],
+    "uniques": [
+      "[This Unit] heals [15] HP <for all movement>"
     ]
   },
   {
