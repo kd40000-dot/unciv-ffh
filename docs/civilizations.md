@@ -27,3 +27,7 @@ Faction palace variants, unique spells, alignment, religion, civics, leader pers
 
 ## Checks
 CI verifies source data, source-derived unit stats and costs, technology references, nation names, starting techs, race grants, unique replacements and Unciv mod-ci output. Android playtesting is still outstanding.
+
+### Remaining fidelity audit
+
+The 50 newly added faction replacements currently carry their source costs, strength, movement, requirements and basic adapted effects, but most **do not yet carry complete class upgrade chains**. Native Unciv replacements work for supported base-unit upgrades; upgrades originating from newly added unique units still need to be ported individually. Starting units are still supplied through shared Era definitions.

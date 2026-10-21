@@ -32,4 +32,18 @@ for x in catalog["addedUnits"]:
 for x in catalog["addedBuildings"]:
     b=byBuilding[x["name"]]
     assert b["uniqueTo"]==x["civilization"] and b["replaces"]==x["replaces"] and b["replaces"] in byBuilding
+# Every source prohibition implemented in the ruleset must remain active.
+for ban in catalog["classProhibitions"]:
+    target=byUnit[ban["name"]] if ban["type"]=="unit" else byBuilding[ban["name"]]
+    effect="Only available <for [non-["+ban["civ"]+"]] Civilizations>"
+    assert effect in target.get("uniques",[]),(ban["civ"],ban["name"])
+# Ensure every mapped selected-leader trait remains present and tied to its selected leader.
+for selection in catalog["leaderSelections"]:
+    nation=byNation[selection["civilization"]]
+    for trait in selection["implementedTraits"]:
+        assert trait in selection["traits"],(nation["name"],trait)
+    if "TRAIT_CHARISMATIC" in selection["traits"]:
+        assert "[-25]% XP required for promotions" in nation.get("uniques",[]),nation["name"]
+    if "TRAIT_CREATIVE" in selection["traits"]:
+        assert "[+2 Culture] [in all cities]" in nation.get("uniques",[]),nation["name"]
 print("OK: 19 normal EMM civilizations, 2 special event civilizations deferred,",len(catalog["addedUnits"]),"faction units,",len(catalog["addedBuildings"]),"faction buildings; city names and colors exact")
