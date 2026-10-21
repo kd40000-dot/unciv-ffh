@@ -19,7 +19,7 @@ Other traits are named for identification but mechanically incomplete.
 ## Important incomplete mechanics
 **Infernal** and **Mercurians** are recorded as EMM source civilizations with `bPlayable=0` and `bAIPlayable=0`; they require event-based arrival, so neither is offered as a normal starting nation.
 
-EMM source starting units are recorded but not reproduced precisely, because this Unciv mod uses shared era starting units. This particularly affects Khazad, Ljosalfar, Doviello and Malakim.
+Ancient-era source starting-unit classes/counts now use native one-time nation triggers. Initial racial promotions, special hero powers, later-era starts and map-dependent unit placement still need testing.
 
 Lanun starts with source-only special `TECH_SEAFARING`, which remains unavailable in our regular research tree, so the source starting bonus is deferred rather than replaced with Fishing.
 
@@ -38,4 +38,8 @@ The civilization verifier now compares every added unit's full destination list 
 
 ### Other remaining fidelity work
 
-Starting units still come from shared Era definitions rather than each civilization's source starting configuration. This particularly affects Khazad, Ljosalfar, Doviello and Malakim. Palace bonuses, leader traits, religion/alignment and many unique mechanics remain incomplete.
+Ancient-era starting units now use the source EMM classes and counts, including Lucian and Lightbringer. Racial effects on initially granted units, hero specials and later-era starts remain incomplete. Palace bonuses, traits and religion/alignment still need work.
+
+## Ancient-era starting rosters
+
+All 19 normal civilizations now have source-defined starting units through Unciv's one-time game-initialization nation triggers, including class-based unique replacements. See [starting-unit conversion and limits](starting-units.md). Android gameplay validation is pending.
