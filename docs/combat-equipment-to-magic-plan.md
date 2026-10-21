@@ -40,3 +40,8 @@ Current `requiredResource` entries on 13 units are *stockpile-consuming* Unciv f
 - Unciv ruleset with Mage, Monk and other fantasy classes, plus skills, monsters, dungeons and fantasy progression.
 - Before developing mana, spells and caster actions, inspect Fantasia's JSON uniques, unit promotions and available actions for patterns that Unciv actually supports; record compatibility with the target Unciv version.
 - Adapt only validated implementation techniques; retain ExtraModMod Continued as the source of gameplay semantics and balance. Fantasia's mechanics are not automatically equivalent to FFH2 magic.
+
+## Provisional first functional caster action (2026-10-21)
+- Added `[This Unit] heals [15] HP <for all movement>` to Mage, Archmage and Amurite Wizard. This is a **test of Unciv's native unit-triggered action plumbing**, inspired by Fantasia's use of native magical unit/promotional abilities; it is not asserted to match a named EMM spell.
+- Verify the action appears for wounded casters, heals exactly 15 HP, consumes remaining movement, and is unavailable to Adepts. This is **not yet Android-tested**. The action is intentionally self-targeted; adjacent healing, spell spheres, mana requirements and cast limits remain future work.
+- Technical reference: https://github.com/amfauzn/Fantasia and https://yairm210.github.io/Unciv/Modders/uniques/ .
