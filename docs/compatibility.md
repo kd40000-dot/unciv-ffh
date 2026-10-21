@@ -55,3 +55,7 @@ The user reported that none of the newly installed leader portraits appeared in 
 ### Civilization emblem flavor — October 21, 2026
 
 Added 19 full-color user-supplied FfH nation emblems, including `Bannorflag.webp` and `ClanofEmbers.webp`, mapped to their exact 19 Unciv nation names. Emblems are rendered as `NationPortraits` to preserve source colors rather than being tinted as `NationIcons`. They are packed into a separate `emblems.atlas`/`emblems.png` and added to `Atlases.json` alongside the existing `game` atlas, preserving verified leader portraits. Exact identity with the original EMM DDS art is not independently established. Android gameplay confirmation pending. See [civilization emblems](civilization-emblems.md).
+
+### Circular emblem cleanup — October 21, 2026
+
+Following user feedback that the original square badges appeared cramped inside the circular Unciv faction slot, replaced all 19 emblem PNGs with full-circle versions cut from the supplied FfH icon art (inset crop, scaled up, circular alpha mask). The old rounded-square frame and shadow are removed without losing symbol detail. Regenerated the separate `emblems.png` runtime texture page. The original leader portrait atlas and all gameplay logic remain intact. User verification of the revised appearance is pending.
