@@ -4,7 +4,7 @@ A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as
 
 ## First early-game slice
 
-Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and first-stage Lanun Pirate Cove creation have received positive user gameplay verification. Khazad Vaults, other systems, and long games still need testing. The user will report any economic-trait issues found later.
+Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and first-stage Lanun Pirate Cove creation have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
 
 Install with Unciv → Mods → Download mod from URL:
 
