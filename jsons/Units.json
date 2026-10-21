@@ -12,7 +12,10 @@
     "promotions": [
       "Channeling I"
     ],
-    "upgradesTo": "Mage"
+    "upgradesTo": "Mage",
+    "civilopediaText": [
+      "An apprentice to the arcane disciplines, beginning the long path toward magecraft."
+    ]
   },
   {
     "name": "Archer",
@@ -27,7 +30,10 @@
       "Can upgrade to [Crossbowman]",
       "Can upgrade to [Horse Archer]"
     ],
-    "upgradesTo": "Longbowman"
+    "upgradesTo": "Longbowman",
+    "civilopediaText": [
+      "Archer: A ranged warrior who engages the enemy from a distance."
+    ]
   },
   {
     "name": "Assassin",
@@ -40,7 +46,10 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Marksman"
+    "upgradesTo": "Marksman",
+    "civilopediaText": [
+      "Assassin: A specialist trained to operate beyond the security of settled lands."
+    ]
   },
   {
     "name": "Axeman",
@@ -53,7 +62,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Axeman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Beastmaster",
@@ -65,6 +77,9 @@
     "uniques": [
       "Limited to [4] per Civilization",
       "Only available <for [non-[Luchuirp]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Beastmaster: A specialist trained to operate beyond the security of settled lands."
     ]
   },
   {
@@ -81,6 +96,9 @@
       "Only available <for [non-[Ljosalfar]] Civilizations>",
       "Only available <for [non-[Sheaim]] Civilizations>",
       "Only available <for [non-[Svartalfar]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Berserker: A front-line warrior trained for close combat."
     ]
   },
   {
@@ -92,6 +110,9 @@
     "requiredTech": "Optics",
     "promotions": [
       "Sentry"
+    ],
+    "civilopediaText": [
+      "Caravel: A naval vessel built for travel and war at sea."
     ]
   },
   {
@@ -105,6 +126,9 @@
       "[-25]% Strength <when defending>",
       "Only available <for [non-[Ljosalfar]] Civilizations>",
       "Only available <for [non-[Svartalfar]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Catapult: A siege engine serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -122,7 +146,10 @@
       "Can upgrade to [Knight]",
       "Only available <for [non-[Sheaim]] Civilizations>"
     ],
-    "upgradesTo": "Berserker"
+    "upgradesTo": "Berserker",
+    "civilopediaText": [
+      "Champion: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Chariot",
@@ -137,7 +164,10 @@
       "Can only be built <with [Horses]>",
       "Only available <for [non-[Svartalfar]] Civilizations>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "Chariot: A mobile combatant who exploits speed and maneuver."
+    ]
   },
   {
     "name": "Crossbowman",
@@ -150,6 +180,9 @@
       "[+44]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Crossbowman: A ranged combatant serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -165,6 +198,9 @@
     ],
     "promotions": [
       "March"
+    ],
+    "civilopediaText": [
+      "Eidolon: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -176,6 +212,9 @@
     "requiredTech": "Optics",
     "uniques": [
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "Frigate: A naval vessel built for travel and war at sea."
     ]
   },
   {
@@ -188,6 +227,9 @@
     "upgradesTo": "Queen Of The Line",
     "uniques": [
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "Galleon: A naval vessel built for travel and war at sea."
     ]
   },
   {
@@ -204,6 +246,9 @@
     "uniques": [
       "Can upgrade to [Galleon]",
       "Can upgrade to [Queen Of The Line]"
+    ],
+    "civilopediaText": [
+      "Galley: A naval vessel built for travel and war at sea."
     ]
   },
   {
@@ -220,7 +265,10 @@
       "Only available <for [non-[Khazad]] Civilizations>",
       "Only available <for [non-[Luchuirp]] Civilizations>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "Horse Archer: A ranged warrior who engages the enemy from a distance."
+    ]
   },
   {
     "name": "Horseman",
@@ -234,7 +282,10 @@
       "Can upgrade to [Chariot]",
       "Can only be built <with [Horses]>"
     ],
-    "upgradesTo": "Horse Archer"
+    "upgradesTo": "Horse Archer",
+    "civilopediaText": [
+      "Horseman: A mobile combatant who exploits speed and maneuver."
+    ]
   },
   {
     "name": "Hunter",
@@ -247,7 +298,10 @@
       "Can only be built <in cities with a [Hunting Lodge]>",
       "Can upgrade to [Assassin]"
     ],
-    "upgradesTo": "Ranger"
+    "upgradesTo": "Ranger",
+    "civilopediaText": [
+      "Hunter: A specialist trained to operate beyond the security of settled lands."
+    ]
   },
   {
     "name": "Knight",
@@ -261,6 +315,9 @@
       "Limited to [4] per Civilization",
       "Only available <for [non-[Clan of Embers]] Civilizations>",
       "Can only be built <with [Horses]>"
+    ],
+    "civilopediaText": [
+      "Knight: A mobile combatant who exploits speed and maneuver."
     ]
   },
   {
@@ -276,7 +333,10 @@
       "Can upgrade to [Marksman]",
       "Only available <for [non-[Khazad]] Civilizations>"
     ],
-    "upgradesTo": "Crossbowman"
+    "upgradesTo": "Crossbowman",
+    "civilopediaText": [
+      "Longbowman: A ranged combatant serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Marksman",
@@ -291,6 +351,9 @@
       "Only available <for [non-[Doviello]] Civilizations>",
       "Only available <for [non-[Khazad]] Civilizations>",
       "Only available <for [non-[Luchuirp]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Marksman: A specialist trained to operate beyond the security of settled lands."
     ]
   },
   {
@@ -303,6 +366,9 @@
     "uniques": [
       "Limited to [4] per Civilization",
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "Paladin: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -316,6 +382,9 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization",
       "Only available <for [non-[Sheaim]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "Phalanx: A front-line warrior trained for close combat."
     ]
   },
   {
@@ -327,6 +396,9 @@
     "requiredTech": "Optics",
     "uniques": [
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "A deniable raider that threatens maritime trade."
     ]
   },
   {
@@ -338,6 +410,9 @@
     "requiredTech": "Astronomy",
     "uniques": [
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "A formidable capital ship commanding the sea lanes."
     ]
   },
   {
@@ -352,7 +427,10 @@
       "Only available <for [non-[Khazad]] Civilizations>",
       "Only available <for [non-[Luchuirp]] Civilizations>"
     ],
-    "upgradesTo": "Beastmaster"
+    "upgradesTo": "Beastmaster",
+    "civilopediaText": [
+      "Ranger: A specialist trained to operate beyond the security of settled lands."
+    ]
   },
   {
     "name": "Scout",
@@ -363,6 +441,9 @@
     "upgradesTo": "Hunter",
     "uniques": [
       "Can upgrade to [Horseman]"
+    ],
+    "civilopediaText": [
+      "Scout: A specialist trained to operate beyond the security of settled lands."
     ]
   },
   {
@@ -374,6 +455,9 @@
       "Founds a new city <by consuming this unit>",
       "Excess Food converted to Production when under construction",
       "Requires at least [2] population"
+    ],
+    "civilopediaText": [
+      "A band of pioneers sent to establish a new city."
     ]
   },
   {
@@ -386,6 +470,9 @@
     "upgradesTo": "Privateer",
     "uniques": [
       "Can upgrade to [Frigate]"
+    ],
+    "civilopediaText": [
+      "Trireme: A naval vessel built for travel and war at sea."
     ]
   },
   {
@@ -394,7 +481,10 @@
     "movement": 2,
     "cost": 90,
     "strength": 7,
-    "requiredTech": "Animal Handling"
+    "requiredTech": "Animal Handling",
+    "civilopediaText": [
+      "War Elephant: A mounted warrior serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Warrior",
@@ -405,6 +495,9 @@
     "upgradesTo": "Archer",
     "uniques": [
       "Can upgrade to [Axeman]"
+    ],
+    "civilopediaText": [
+      "Warrior: A front-line warrior trained for close combat."
     ]
   },
   {
@@ -416,6 +509,9 @@
     "uniques": [
       "Can build [Water] improvements on tiles",
       "Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A small vessel used to improve coastal resources."
     ]
   },
   {
@@ -425,6 +521,9 @@
     "cost": 75,
     "uniques": [
       "Can build [Land] improvements on tiles"
+    ],
+    "civilopediaText": [
+      "Laborers who improve terrain and build the infrastructure of a civilization."
     ]
   },
   {
@@ -440,7 +539,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Firebow",
@@ -458,6 +560,9 @@
     "upgradesTo": "Crossbowman",
     "promotions": [
       "Channeling II"
+    ],
+    "civilopediaText": [
+      "Firebow: A ranged combatant serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -473,7 +578,10 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Marksman"
+    "upgradesTo": "Marksman",
+    "civilopediaText": [
+      "Chanter: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Goblin",
@@ -486,6 +594,9 @@
     "upgradesTo": "Horseman",
     "promotions": [
       "Orc"
+    ],
+    "civilopediaText": [
+      "Goblin: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -500,7 +611,10 @@
     "promotions": [
       "Channeling I"
     ],
-    "upgradesTo": "Mage"
+    "upgradesTo": "Mage",
+    "civilopediaText": [
+      "Shaman: A arcane spellcaster serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Wolf Rider",
@@ -514,6 +628,9 @@
     "upgradesTo": "Chariot",
     "promotions": [
       "Orc"
+    ],
+    "civilopediaText": [
+      "Wolf Rider: A mobile combatant who exploits speed and maneuver."
     ]
   },
   {
@@ -529,7 +646,10 @@
       "Can only be built <in cities with a [Hunting Lodge]>",
       "Can upgrade to [Assassin]"
     ],
-    "upgradesTo": "Ranger"
+    "upgradesTo": "Ranger",
+    "civilopediaText": [
+      "Lizardman: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Ogre",
@@ -547,6 +667,9 @@
     "upgradesTo": "Berserker",
     "promotions": [
       "Orc"
+    ],
+    "civilopediaText": [
+      "Ogre: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -561,7 +684,10 @@
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Beastmaster"
+    "upgradesTo": "Beastmaster",
+    "civilopediaText": [
+      "Lizardman Ranger: A specialist trained to operate beyond the security of settled lands."
+    ]
   },
   {
     "name": "Lizardman Assassin",
@@ -576,7 +702,10 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Marksman"
+    "upgradesTo": "Marksman",
+    "civilopediaText": [
+      "Lizardman Assassin: A specialist trained to operate beyond the security of settled lands."
+    ]
   },
   {
     "name": "Lizardman Beastmaster",
@@ -589,6 +718,9 @@
     "replaces": "Beastmaster",
     "uniques": [
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Lizardman Beastmaster: A specialist trained to operate beyond the security of settled lands."
     ]
   },
   {
@@ -606,6 +738,9 @@
     ],
     "promotions": [
       "Orc"
+    ],
+    "civilopediaText": [
+      "Stoneskin Ogre: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -621,7 +756,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Ljosalfar Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Flurry",
@@ -635,6 +773,9 @@
     "uniques": [
       "Can only be built <in cities with a [Archery Range]>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Flurry: A ranged combatant serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -651,6 +792,9 @@
     "upgradesTo": "Archmage",
     "uniques": [
       "Only available <for [non-[Khazad]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A practiced wielder of spells and the currents of the Ether."
     ]
   },
   {
@@ -668,6 +812,9 @@
     "uniques": [
       "Can only be built <with [Reagents]>",
       "Only available <for [non-[Khazad]] Civilizations>"
+    ],
+    "civilopediaText": [
+      "A master of arcane knowledge whose spells can alter the course of a war."
     ]
   },
   {
@@ -683,7 +830,10 @@
       "Channeling I",
       "Channeling II"
     ],
-    "upgradesTo": "Archmage"
+    "upgradesTo": "Archmage",
+    "civilopediaText": [
+      "An Amurite spellcaster raised in a culture devoted to magical study."
+    ]
   },
   {
     "name": "Balseraphs Swordsman",
@@ -698,7 +848,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Balseraphs Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Mimic",
@@ -716,7 +869,10 @@
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]"
     ],
-    "upgradesTo": "Berserker"
+    "upgradesTo": "Berserker",
+    "civilopediaText": [
+      "Mimic: A military unit serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Harlequin",
@@ -727,7 +883,10 @@
     "requiredTech": "Feral Bond",
     "uniqueTo": "Balseraphs",
     "replaces": "Ranger",
-    "upgradesTo": "Beastmaster"
+    "upgradesTo": "Beastmaster",
+    "civilopediaText": [
+      "Harlequin: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Taskmaster",
@@ -742,7 +901,10 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Marksman"
+    "upgradesTo": "Marksman",
+    "civilopediaText": [
+      "Taskmaster: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Bloodpet",
@@ -755,6 +917,9 @@
     "upgradesTo": "Archer",
     "uniques": [
       "Can upgrade to [Axeman]"
+    ],
+    "civilopediaText": [
+      "A mortal servant raised beneath the shadow of Calabim vampiric rule."
     ]
   },
   {
@@ -770,7 +935,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "A Calabim warrior bound to a culture of blood and ruthless service."
+    ]
   },
   {
     "name": "Vampire",
@@ -791,7 +959,10 @@
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]"
     ],
-    "upgradesTo": "Berserker"
+    "upgradesTo": "Berserker",
+    "civilopediaText": [
+      "A Calabim noble whose supernatural power rests upon mortal blood."
+    ]
   },
   {
     "name": "Brujah",
@@ -810,6 +981,9 @@
       "[-55]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "A formidable Calabim vampire warrior."
     ]
   },
   {
@@ -820,7 +994,10 @@
     "strength": 3,
     "uniqueTo": "Doviello",
     "replaces": "Warrior",
-    "upgradesTo": "Axeman"
+    "upgradesTo": "Axeman",
+    "civilopediaText": [
+      "Beastman: A military unit serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Doviello Shaman",
@@ -834,7 +1011,10 @@
     "promotions": [
       "Channeling I"
     ],
-    "upgradesTo": "Mage"
+    "upgradesTo": "Mage",
+    "civilopediaText": [
+      "Doviello Shaman: A arcane spellcaster serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Sons Of Asena",
@@ -848,6 +1028,9 @@
     "upgradesTo": "Champion",
     "uniques": [
       "Can upgrade to [Chariot]"
+    ],
+    "civilopediaText": [
+      "Sons Of Asena: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -863,6 +1046,9 @@
     "uniques": [
       "Can upgrade to [Crossbowman]",
       "Can upgrade to [Horse Archer]"
+    ],
+    "civilopediaText": [
+      "Javelin Thrower: A ranged warrior who engages the enemy from a distance."
     ]
   },
   {
@@ -880,6 +1066,9 @@
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]"
+    ],
+    "civilopediaText": [
+      "Battlemaster: A front-line warrior trained for close combat."
     ]
   },
   {
@@ -894,6 +1083,9 @@
     "uniques": [
       "[-55]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Circle Of Urd: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -908,6 +1100,9 @@
     "uniques": [
       "[-17]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Bison Rider: A mobile combatant who exploits speed and maneuver."
     ]
   },
   {
@@ -921,6 +1116,9 @@
     "replaces": "Phalanx",
     "uniques": [
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Verdandi: A military unit serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -938,6 +1136,9 @@
     ],
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>"
+    ],
+    "civilopediaText": [
+      "Devout: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -956,7 +1157,10 @@
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]"
     ],
-    "upgradesTo": "Berserker"
+    "upgradesTo": "Berserker",
+    "civilopediaText": [
+      "Dragon Slayer: A military unit serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Illians Javelin Thrower",
@@ -971,6 +1175,9 @@
     "uniques": [
       "Can upgrade to [Crossbowman]",
       "Can upgrade to [Horse Archer]"
+    ],
+    "civilopediaText": [
+      "Illians Javelin Thrower: A ranged warrior who engages the enemy from a distance."
     ]
   },
   {
@@ -989,7 +1196,10 @@
       "[+67]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>"
     ],
-    "upgradesTo": "Crossbowman"
+    "upgradesTo": "Crossbowman",
+    "civilopediaText": [
+      "Dwarven Slinger: A ranged warrior who engages the enemy from a distance."
+    ]
   },
   {
     "name": "Boar Rider",
@@ -1006,7 +1216,10 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
     ],
-    "upgradesTo": "Chariot"
+    "upgradesTo": "Chariot",
+    "civilopediaText": [
+      "Boar Rider: A mobile combatant who exploits speed and maneuver."
+    ]
   },
   {
     "name": "Trebuchet",
@@ -1019,6 +1232,9 @@
     "replaces": "Catapult",
     "uniques": [
       "[-33]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      "Trebuchet: A siege engine serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -1032,6 +1248,9 @@
     "replaces": "Beastmaster",
     "uniques": [
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Myconid: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -1049,6 +1268,9 @@
     "uniques": [
       "[-33]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Hornguard: A mounted warrior serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -1064,7 +1286,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Kuriotates Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Centaur",
@@ -1078,6 +1303,9 @@
     "upgradesTo": "Horse Archer",
     "uniques": [
       "Can upgrade to [Chariot]"
+    ],
+    "civilopediaText": [
+      "A horse-bodied warrior of the Kuriotate realm."
     ]
   },
   {
@@ -1089,7 +1317,10 @@
     "requiredTech": "Stirrups",
     "uniqueTo": "Kuriotates",
     "replaces": "Horse Archer",
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "A centaur combining swift movement with ranged attacks."
+    ]
   },
   {
     "name": "Centaur Charger",
@@ -1103,7 +1334,10 @@
     "uniques": [
       "[-40]% Strength <when defending>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "A centaur prepared for a crushing mounted assault."
+    ]
   },
   {
     "name": "Centaur Lancer",
@@ -1117,6 +1351,9 @@
     "uniques": [
       "[-36]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "An elite centaur trained for lance combat."
     ]
   },
   {
@@ -1132,7 +1369,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Lanun Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Boarding Party",
@@ -1150,7 +1390,10 @@
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]"
     ],
-    "upgradesTo": "Berserker"
+    "upgradesTo": "Berserker",
+    "civilopediaText": [
+      "Lanun sailors trained to seize enemy vessels in close combat."
+    ]
   },
   {
     "name": "War Tortoise",
@@ -1164,6 +1407,9 @@
     "uniques": [
       "[+73]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "A massive shelled creature adapted to Lanun warfare."
     ]
   },
   {
@@ -1177,6 +1423,9 @@
     "replaces": "Privateer",
     "uniques": [
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "A maritime raider sustained by plunder and daring."
     ]
   },
   {
@@ -1195,7 +1444,10 @@
       "Can only be built <in cities with a [Stable]>",
       "Can only be built <with [Deer]>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "Fyrdwell: A mounted warrior serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Mud Golem",
@@ -1203,7 +1455,10 @@
     "movement": 2,
     "cost": 75,
     "uniqueTo": "Luchuirp",
-    "replaces": "Worker"
+    "replaces": "Worker",
+    "civilopediaText": [
+      "A simple Luchuirp construct shaped from earth and craft."
+    ]
   },
   {
     "name": "Wood Golem",
@@ -1213,7 +1468,10 @@
     "strength": 6,
     "requiredTech": "Construction",
     "uniqueTo": "Luchuirp",
-    "replaces": "Axeman"
+    "replaces": "Axeman",
+    "civilopediaText": [
+      "A Luchuirp construct animated to serve its makers."
+    ]
   },
   {
     "name": "Luchuirp Dwarven Slinger",
@@ -1231,7 +1489,10 @@
       "[+67]% Strength <when defending>",
       "Can only be built <in cities with a [Archery Range]>"
     ],
-    "upgradesTo": "Crossbowman"
+    "upgradesTo": "Crossbowman",
+    "civilopediaText": [
+      "Luchuirp Dwarven Slinger: A ranged warrior who engages the enemy from a distance."
+    ]
   },
   {
     "name": "Luchuirp Boar Rider",
@@ -1248,7 +1509,10 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
     ],
-    "upgradesTo": "Chariot"
+    "upgradesTo": "Chariot",
+    "civilopediaText": [
+      "Luchuirp Boar Rider: A mobile combatant who exploits speed and maneuver."
+    ]
   },
   {
     "name": "Iron Golem",
@@ -1262,6 +1526,9 @@
     "uniques": [
       "Can only be built <in cities with a [Forge]>",
       "Can only be built <with [Iron]>"
+    ],
+    "civilopediaText": [
+      "A durable Luchuirp machine built for heavy fighting."
     ]
   },
   {
@@ -1275,6 +1542,9 @@
     "replaces": "Longbowman",
     "uniques": [
       "[+33]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      "A sculpted guardian animated by the Luchuirp."
     ]
   },
   {
@@ -1290,6 +1560,9 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "An intricate Luchuirp construct driven by advanced mechanisms."
     ]
   },
   {
@@ -1307,6 +1580,9 @@
     "uniques": [
       "[-33]% Strength <when defending>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "Luchuirp Hornguard: A mounted warrior serving the armies and settlements of Erebus."
     ]
   },
   {
@@ -1321,6 +1597,9 @@
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization"
+    ],
+    "civilopediaText": [
+      "A rare Luchuirp construct shaped from magic-resistant material."
     ]
   },
   {
@@ -1336,7 +1615,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Chariot]"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Malakim Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Camel Archer",
@@ -1350,7 +1632,10 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "Camel Archer: A ranged warrior who engages the enemy from a distance."
+    ]
   },
   {
     "name": "Pyre Zombie",
@@ -1360,7 +1645,10 @@
     "strength": 3,
     "requiredTech": "Bronze Working",
     "uniqueTo": "Sheaim",
-    "replaces": "Axeman"
+    "replaces": "Axeman",
+    "civilopediaText": [
+      "An undead abomination created through Sheaim necromancy and destructive magic."
+    ]
   },
   {
     "name": "Divided Soul",
@@ -1375,7 +1663,10 @@
       "Can only be built <in cities with a [Hunting Lodge]>",
       "Can upgrade to [Assassin]"
     ],
-    "upgradesTo": "Ranger"
+    "upgradesTo": "Ranger",
+    "civilopediaText": [
+      "A Sidar operative whose shadowed nature confounds ordinary enemies."
+    ]
   },
   {
     "name": "Ghost",
@@ -1390,7 +1681,10 @@
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>"
     ],
-    "upgradesTo": "Marksman"
+    "upgradesTo": "Marksman",
+    "civilopediaText": [
+      "A Sidar combatant whose path leads into shadow and secrecy."
+    ]
   },
   {
     "name": "Svartalfar Swordsman",
@@ -1404,7 +1698,10 @@
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>"
     ],
-    "upgradesTo": "Champion"
+    "upgradesTo": "Champion",
+    "civilopediaText": [
+      "Svartalfar Swordsman: A front-line warrior trained for close combat."
+    ]
   },
   {
     "name": "Nyxkin",
@@ -1421,7 +1718,10 @@
     "uniques": [
       "Can only be built <in cities with a [Stable]>"
     ],
-    "upgradesTo": "Knight"
+    "upgradesTo": "Knight",
+    "civilopediaText": [
+      "Nyxkin: A mounted warrior serving the armies and settlements of Erebus."
+    ]
   },
   {
     "name": "Lightbringer",
@@ -1432,6 +1732,9 @@
     "uniqueTo": "Malakim",
     "promotions": [
       "Sentry"
+    ],
+    "civilopediaText": [
+      "A religiously inspired Malakim initiate carrying light into dark places."
     ]
   },
   {
@@ -1445,6 +1748,9 @@
       "Unbuildable",
       "Limited to [1] per Civilization",
       "[+10]% Strength <vs cities>"
+    ],
+    "civilopediaText": [
+      "A legendary Doviello war leader, feared for his ruthlessness."
     ]
   }
 ]
