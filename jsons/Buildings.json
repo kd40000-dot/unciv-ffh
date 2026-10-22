@@ -552,7 +552,7 @@
     ],
     "uniques": [
       "New [Sword] units start with [2] XP [in this city]",
-      "Comment [Arena Battle (Melee, Scout, Slave): 50% chance of survival and 3 XP, or death; grants +1 empire Happiness for 3 turns. Winning Slaves become Warriors.]"
+      "Comment [Arena Battle: Sword, Scout or Slave units in this city may risk death. 50% victory: +3 XP and 25 damage; defeat: unit dies. Each battle grants +1 empire Happiness for 3 turns. Victorious Slaves become Warriors.]"
     ]
   },
   {
