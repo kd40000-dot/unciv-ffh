@@ -1,6 +1,6 @@
 # Warrens — training XP parity design (investigation 2026-10-22)
 
-**Status:** Source-code supported **design**, not yet implemented or gameplay-validated. No engine edits proposed. This is a prerequisite for the method-1 Warrens duplication experiment. The currently committed Warrens remains a +100% unit Production workaround.
+**Status updated 2026-10-22:** Implemented as a **JSON-only prototype** in `Buildings.json`, `UnitPromotions.json` and `UnitTypes.json` (no engine edits). Structure checked; **not gameplay-verified**. The former +100% Production workaround was removed. The authoritative current implementation and its specific edge cases are documented in [Warrens — true duplicate prototype](warrens-true-duplication.md).
 
 ## Original EMM behavior
 Pinned EMM commit `60b0ec3740083162aaab7bf8491761a54a65a610`, `python/CvEventManager.py` in `onUnitBuilt`: after checks for Warrens, non-world/non-national, non-mechanical and alive, `newUnit = pPlayer.initUnit(unit.getUnitType(), city.getX(), city.getY(), ...)` followed by `city.applyBuildEffects(newUnit)`. This last call is **essential**: the twin receives the city's training effects, including XP and free promotions. `mainFolder/emm_features.txt` also confirms +10% maintenance.
