@@ -1716,11 +1716,7 @@
         "text": "A Luchuirp construct animated to serve its makers."
       }
     ],
-    "uniques": [
-      "[+67]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
-      "[+33]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+17]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
-    ]
+    "uniques": []
   },
   {
     "name": "Luchuirp Dwarven Slinger",
@@ -1777,10 +1773,7 @@
     "uniqueTo": "Luchuirp",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Forge]>",
-      "[+40]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
-      "[+20]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+10]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "Can only be built <in cities with a [Forge]>"
     ],
     "civilopediaText": [
       {
@@ -1819,10 +1812,7 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization",
-      "[+27]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
-      "[+13]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+7]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "Limited to [4] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -1863,10 +1853,7 @@
     "replaces": "Phalanx",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization",
-      "[+31]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
-      "[+15]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+8]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "Limited to [4] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -1930,11 +1917,7 @@
         "text": "An undead abomination created through Sheaim necromancy and destructive magic."
       }
     ],
-    "uniques": [
-      "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
-      "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
-    ]
+    "uniques": []
   },
   {
     "name": "Divided Soul",
