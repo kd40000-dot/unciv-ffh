@@ -535,5 +535,16 @@
         "text": "The mark of Svartalfar heritage."
       }
     ]
+  },
+  {
+    "name": "Metal Weaponry",
+    "uniques": [
+      "This Promotion is free"
+    ],
+    "civilopediaText": [
+      {
+        "text": "This unit is eligible for metal weapon bonuses. Bronze Working and connected Copper grant roughly +1 strength; Iron Working and connected Iron grant roughly +2; Mithril Working and connected Mithril grant roughly +4. Only the best available tier applies. The icon marks equipment eligibility, not the metal currently equipped. Combat bonuses change dynamically with access to metals."
+      }
+    ]
   }
 ]
