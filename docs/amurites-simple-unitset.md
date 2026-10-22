@@ -38,3 +38,7 @@ The first eight are extracted from the corrected user-approved artwork sheet wit
 These 13 entries still use the existing AbsoluteUnits artwork via cross-referenced atlas page paths while the rest of the simple roster is developed; they include the other 11 Amurite designs and Goblin/Clan Warrior. Other units may display built-in fallback markers until dedicated art exists. No gameplay units, promotions, or stats are added by this asset-only change; Govannon still requires a gameplay unit definition.
 
 Static checks verified the atlas region keys and dimensions; live Unciv rendering still needs to be tested.
+
+## Compatibility fix (October 22, 2026)
+
+The first `AmuritesSimpleAtlas.png` was exported as an indexed-color PNG (color type 3), unlike the working high-detail Amurites PNGs. It has now been losslessly converted to a standard full-color RGBA PNG (color type 6), retaining every pixel, the 475×162 atlas layout, 95×81 subregions, alpha transparency, atlas keys, and nearest filtering. This is to address reports that the AmuritesSimple selection was present but the new sprite art did not appear. Verify in-game after updating; no gameplay or user unit-set preference was changed.
