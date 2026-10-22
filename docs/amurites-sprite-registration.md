@@ -1,18 +1,20 @@
-# Amurites unit sprite atlas registration
+# Amurites sprite atlas registration
 
-The original ten-page `amuritesunits.atlas` is no longer loaded. The ten 95×81 PNGs remain unchanged. Each is now registered through its own single-page LibGDX atlas, matching the working Goblin and Warrior sprite layout.
+Each Amurites sprite is packed as a standalone, single-page LibGDX atlas, following the working Goblin sprite registration.
 
-- `amuritesunit1.atlas` → `TileSets/AbsoluteUnits/Units/Adept-Amurites`
-- `amuritesunit2.atlas` → `TileSets/AbsoluteUnits/Units/Archer-Amurites`
-- `amuritesunit3.atlas` → `TileSets/AbsoluteUnits/Units/Archmage-Amurites`
-- `amuritesunit4.atlas` → `TileSets/AbsoluteUnits/Units/Beastmaster-Amurites`
-- `amuritesunit5.atlas` → `TileSets/AbsoluteUnits/Units/Champion-Amurites`
-- `amuritesunit6.atlas` → `TileSets/AbsoluteUnits/Units/Chanter`
-- `amuritesunit7.atlas` → `TileSets/AbsoluteUnits/Units/Chariot-Amurites`
-- `amuritesunit8.atlas` → `TileSets/AbsoluteUnits/Units/Crossbowman-Amurites`
-- `amuritesunit9.atlas` → `TileSets/AbsoluteUnits/Units/Firebow`
-- `amuritesunit10.atlas` → `TileSets/AbsoluteUnits/Units/Govannon`
+The ten originally registered atlas regions are in `amuritesunit1.atlas`–`amuritesunit10.atlas`. New atlases `amuritesunit11.atlas`–`amuritesunit20.atlas` map to the following image keys:
 
-Image lookup for standard units is civilization-specific by `<Unit>-Amurites`; the unique `Chanter` and `Firebow` units use their own exact names. `Govannon` artwork is registered but its ruleset unit remains unimplemented.
+- `amuritesunit11.atlas` → `TileSets/AbsoluteUnits/Units/Horseman-Amurites`
+- `amuritesunit12.atlas` → `TileSets/AbsoluteUnits/Units/Horse Archer-Amurites`
+- `amuritesunit13.atlas` → `TileSets/AbsoluteUnits/Units/Hunter-Amurites`
+- `amuritesunit14.atlas` → `TileSets/AbsoluteUnits/Units/Immortal-Amurites`
+- `amuritesunit15.atlas` → `TileSets/AbsoluteUnits/Units/Marksman-Amurites`
+- `amuritesunit16.atlas` → `TileSets/AbsoluteUnits/Units/Phalanx-Amurites`
+- `amuritesunit17.atlas` → `TileSets/AbsoluteUnits/Units/Ranger-Amurites`
+- `amuritesunit18.atlas` → `TileSets/AbsoluteUnits/Units/Scout-Amurites`
+- `amuritesunit19.atlas` → `TileSets/AbsoluteUnits/Units/Swordsman`
+- `amuritesunit20.atlas` → `TileSets/AbsoluteUnits/Units/Wizard`
 
-No gameplay changes, and no forced unit set. In-game verification pending.
+All atlas names are loaded by `Atlases.json`. Image dimensions are 95×81 and use nearest-neighbor filtering. Common units use the built-in `<Unit>-Amurites` civilization-specific lookup; `Swordsman` and `Wizard` are unique Amurites unit names. Govannon and Immortal need future unit definitions before they can appear as playable units.
+
+The `unitset` setting is not overridden, and gameplay remains unchanged.
