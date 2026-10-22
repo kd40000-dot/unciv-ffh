@@ -1,0 +1,116 @@
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_adept.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_archer.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_beastmaster.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Beastmaster-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_chanter.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Chanter
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_chariot.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Chariot-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_hunter.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Hunter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_scout.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Scout-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Amurite_wizard.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Wizard
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Registered_Govannon.png
+size: 1024, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Govannon
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
