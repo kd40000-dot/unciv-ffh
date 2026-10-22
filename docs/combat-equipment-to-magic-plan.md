@@ -45,3 +45,12 @@ Current `requiredResource` entries on 13 units are *stockpile-consuming* Unciv f
 - Added `[This Unit] heals [15] HP <for all movement>` to Mage, Archmage and Amurite Wizard. This is a **test of Unciv's native unit-triggered action plumbing**, inspired by Fantasia's use of native magical unit/promotional abilities; it is not asserted to match a named EMM spell.
 - Verify the action appears for wounded casters, heals exactly 15 HP, consumes remaining movement, and is unavailable to Adepts. This is **not yet Android-tested**. The action is intentionally self-targeted; adjacent healing, spell spheres, mana requirements and cast limits remain future work.
 - Technical reference: https://github.com/amfauzn/Fantasia and https://yairm210.github.io/Unciv/Modders/uniques/ .
+
+## First equipment implementation (2026-10-22)
+
+- Added **exclusive dynamic combat-strength proxies** for 28 selected melee/Sword units, based on civilization access to Copper, Iron or Mithril and the appropriate Bronze Working, Iron Working or Mithril Working technology.
+- EMM's reference values are Bronze +1, Iron +2, Mithril +4 *flat* combat strength. Stock Unciv uses percentage strength uniques, so each affected unit receives an integer-rounded percent relative to its base strength to approximate those values. For example a strength-4 Swordsman receives +25%, +50%, or +100%. Flat bonuses cannot be reproduced exactly for every unit in native Unciv JSON.
+- Only one tier activates at a time: Mithril supersedes Iron and Copper; Iron supersedes Copper. Effects update dynamically with resource availability (subject to game-engine evaluation). Unlike source equipment promotions, they do not require returning to a connected city for refitting. No combat-stat inflation from multiple tiers is intended.
+- Deliberately excludes Warrior, golem constructs and Pyre Zombie. Eligibility on all remaining source-specific units is **provisional**, pending a complete EMM `bUseWeaponTier` audit; mounted and other non-Sword types are not covered in this first pass.
+- This **does not** implement visible equipment promotions, original fixed-strength semantics, equipment-vs-equipment matchup modifiers, Rust removal/repair, a Forge refit requirement, or source-specific unit-by-unit weapon eligibility.
+- Gameplay validation pending: compare identical units with only Copper, then Iron, then Mithril connected; ensure one tier applies, loses strength when the resource is disconnected, and honors technology requirements. Run Unciv's *Locate mod errors* before longer games.
