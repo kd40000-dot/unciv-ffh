@@ -73,3 +73,7 @@ Supporting source:
 8. Future source parity: random 1–6 XP; damage *set* to 25; city-local nonstacking happiness timer; full Slave acquisition, activities and conversion; EMM AI selection criteria.
 
 **Validation:** Parsed mod JSON; source inspected for supported trigger, temporary-unique, upgrade and upgrade-copy semantics. **No Android gameplay test or ruleset validator run**.
+
+## 2026-10-22 follow-up: happiness and Slave conversion
+
+Implemented in main: Arena Battle now triggers `[+1 Happiness] <for [3] turns>` for either outcome. Added unbuildable `Slave` (Civilian) with a conditional `Can upgrade to [Warrior]` and Arena Battle access; victory triggers `[This Unit] upgrades for free` after XP and damage. Updated city-screen comment and Civilopedia. This is empire-wide temporary Happiness, not the original city happiness timer; multiple contests create independent timed effects rather than extending a city timer. Slaves have no normal acquisition path yet. In-game tests still required, especially free upgrade eligibility and action availability.
