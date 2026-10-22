@@ -10,7 +10,7 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Training Yard] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -18,7 +18,7 @@
     "movementType": "Land",
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -27,7 +27,7 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Hunting Lodge] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -36,7 +36,7 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Stable] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -57,7 +57,7 @@
     "movementType": "Land",
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -66,7 +66,7 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Siege Workshop] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
     ]
   },
   {
@@ -74,7 +74,7 @@
     "movementType": "Land",
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>",
       "[This Unit] gains the [Mobility I] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
     ]
   }
