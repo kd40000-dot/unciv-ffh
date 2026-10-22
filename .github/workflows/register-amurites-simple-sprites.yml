@@ -40,7 +40,7 @@ jobs:
               if bounds is None:
                   raise ValueError(f"Empty sprite: {filename}")
               art = art.crop(bounds)
-              art.thumbnail((300, 300), Image.Resampling.LANCZOS)
+              art.thumbnail((600, 600), Image.Resampling.LANCZOS)
               canvas = Image.new("RGBA", (1024, 1024), (0, 0, 0, 0))
               canvas.alpha_composite(art, ((1024-art.width)//2, (1024-art.height)//2))
               output = folder / ("Registered_" + filename)
