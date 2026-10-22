@@ -66,7 +66,10 @@
     "requiredTech": "Bronze Working",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -105,7 +108,10 @@
       "Limited to [4] per Civilization",
       "Only available <for [non-[Ljosalfar]] Civilizations>",
       "Only available <for [non-[Sheaim]] Civilizations>",
-      "Only available <for [non-[Svartalfar]] Civilizations>"
+      "Only available <for [non-[Svartalfar]] Civilizations>",
+      "[+36]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+18]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+9]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -160,7 +166,10 @@
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
       "Can upgrade to [Knight]",
-      "Only available <for [non-[Sheaim]] Civilizations>"
+      "Only available <for [non-[Sheaim]] Civilizations>",
+      "[+67]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+33]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+17]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "civilopediaText": [
@@ -215,7 +224,10 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+50]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+25]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+13]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "promotions": [
       "March"
@@ -402,7 +414,10 @@
     "strength": 8,
     "requiredTech": "Fanaticism",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+50]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+25]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+13]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -421,7 +436,10 @@
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
       "Limited to [4] per Civilization",
-      "Only available <for [non-[Sheaim]] Civilizations>"
+      "Only available <for [non-[Sheaim]] Civilizations>",
+      "[+33]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+17]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+8]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -595,7 +613,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -734,7 +755,10 @@
     "replaces": "Champion",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Phalanx]"
+      "Can upgrade to [Phalanx]",
+      "[+50]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+25]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+13]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "promotions": [
@@ -814,7 +838,10 @@
     "replaces": "Phalanx",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+29]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+14]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+7]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "promotions": [
       "Orc"
@@ -836,7 +863,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -943,7 +973,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -966,7 +999,10 @@
       "Can upgrade to [Phalanx]",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "[+80]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+40]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+20]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "civilopediaText": [
@@ -1021,7 +1057,10 @@
     "replaces": "Warrior",
     "upgradesTo": "Archer",
     "uniques": [
-      "Can upgrade to [Axeman]"
+      "Can upgrade to [Axeman]",
+      "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1040,7 +1079,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1066,7 +1108,10 @@
       "Can only be built <in cities with a [Training Yard]>",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "[+80]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+40]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+20]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "civilopediaText": [
@@ -1091,7 +1136,10 @@
     "uniques": [
       "[-55]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+36]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+18]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+9]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1112,6 +1160,11 @@
       {
         "text": "Beastman: A military unit serving the armies and settlements of Erebus."
       }
+    ],
+    "uniques": [
+      "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ]
   },
   {
@@ -1144,7 +1197,10 @@
     "replaces": "Axeman",
     "upgradesTo": "Champion",
     "uniques": [
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1186,7 +1242,10 @@
       "Can upgrade to [Phalanx]",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "[+67]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+33]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+17]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1205,7 +1264,10 @@
     "replaces": "Berserker",
     "uniques": [
       "[-55]% Strength <when defending>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+36]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+18]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+9]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1242,7 +1304,10 @@
     "uniqueTo": "Doviello",
     "replaces": "Phalanx",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+33]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+17]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+8]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1286,7 +1351,10 @@
       "Can upgrade to [Phalanx]",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "[+67]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+33]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+17]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "civilopediaText": [
@@ -1429,7 +1497,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1522,7 +1593,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1545,7 +1619,10 @@
       "Can upgrade to [Phalanx]",
       "Can upgrade to [Paladin]",
       "Can upgrade to [Eidolon]",
-      "Can upgrade to [Knight]"
+      "Can upgrade to [Knight]",
+      "[+80]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+40]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+20]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Berserker",
     "civilopediaText": [
@@ -1638,6 +1715,11 @@
       {
         "text": "A Luchuirp construct animated to serve its makers."
       }
+    ],
+    "uniques": [
+      "[+67]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+33]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+17]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ]
   },
   {
@@ -1695,7 +1777,10 @@
     "uniqueTo": "Luchuirp",
     "replaces": "Champion",
     "uniques": [
-      "Can only be built <in cities with a [Forge]>"
+      "Can only be built <in cities with a [Forge]>",
+      "[+40]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+20]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+10]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1734,7 +1819,10 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+27]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+13]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+7]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1775,7 +1863,10 @@
     "replaces": "Phalanx",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[+31]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+15]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+8]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
@@ -1794,7 +1885,10 @@
     "replaces": "Axeman",
     "uniques": [
       "Can only be built <in cities with a [Training Yard]>",
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1835,6 +1929,11 @@
       {
         "text": "An undead abomination created through Sheaim necromancy and destructive magic."
       }
+    ],
+    "uniques": [
+      "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ]
   },
   {
@@ -1887,7 +1986,10 @@
     "uniqueTo": "Svartalfar",
     "replaces": "Axeman",
     "uniques": [
-      "Can only be built <in cities with a [Training Yard]>"
+      "Can only be built <in cities with a [Training Yard]>",
+      "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1944,7 +2046,10 @@
     "uniques": [
       "Unbuildable",
       "Limited to [1] per Civilization",
-      "[+10]% Strength <vs cities>"
+      "[+10]% Strength <vs cities>",
+      "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
+      "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
     ],
     "civilopediaText": [
       {
