@@ -1,13 +1,13 @@
 
 Images/TileSets/AbsoluteUnits/Units/Goblin.png
-size: 48, 48
+size: 95, 81
 format: RGBA8888
 filter: Nearest, Nearest
 repeat: none
 TileSets/AbsoluteUnits/Units/Goblin
   rotate: false
   xy: 0, 0
-  size: 48, 48
-  orig: 48, 48
+  size: 95, 81
+  orig: 95, 81
   offset: 0, 0
   index: -1
