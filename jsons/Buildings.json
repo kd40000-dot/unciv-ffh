@@ -522,6 +522,9 @@
       {
         "text": "The Balseraphs turn public combat and entertainment into a spectacle of power."
       }
+    ],
+    "uniques": [
+      "New [Sword] units start with [2] XP [in this city]"
     ]
   },
   {
@@ -534,7 +537,8 @@
       {
         "text": "A sacred storehouse preserving objects of deep religious significance."
       }
-    ]
+    ],
+    "culture": 1
   },
   {
     "name": "Tavern Grigori",
@@ -558,7 +562,8 @@
       {
         "text": "A public space for debate and the affairs of citizens."
       }
-    ]
+    ],
+    "gold": 2
   },
   {
     "name": "Grigori Museum",
@@ -615,6 +620,10 @@
       {
         "text": "Lanun coastal infrastructure sustains merchants, sailors and privateers."
       }
+    ],
+    "gold": 1,
+    "uniques": [
+      "Must be next to [Coast]"
     ]
   },
   {
@@ -627,6 +636,9 @@
       {
         "text": "Luchuirp artisans transform design and craftsmanship into animated constructions."
       }
+    ],
+    "uniques": [
+      "New [Sword] units start with [2] XP [in this city]"
     ]
   },
   {
