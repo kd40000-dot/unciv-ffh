@@ -544,11 +544,15 @@
     "replaces": "Training Yard",
     "civilopediaText": [
       {
-        "text": "Balseraphs stage combat as public entertainment. Currently retains the Training Yard's military training benefits; its special arena effects remain unfinished."
+        "text": "The Arena is a Balseraph replacement for the Training Yard. Contestants face a deadly spectacle for the entertainment of the city's inhabitants. In ExtraModMod Continued, eligible melee, recon, and slave units may participate in Arena Battle: a 50% chance to survive with 1–6 XP and 25 damage, or die. Each battle also extends the city's happiness timer by three turns."
+      },
+      {
+        "text": "Unciv adaptation: the Arena retains the Training Yard's +2 starting XP for Sword units. The Arena Battle action currently grants 3 XP on victory instead of 1–6, and does not apply the original temporary city happiness or slave-to-warrior conversion. These differences remain open."
       }
     ],
     "uniques": [
-      "New [Sword] units start with [2] XP [in this city]"
+      "New [Sword] units start with [2] XP [in this city]",
+      "Comment [Eligible melee and recon units may fight in the Arena: 50% chance of 3 XP and 25 damage, otherwise death. Requires available movement.]"
     ]
   },
   {
