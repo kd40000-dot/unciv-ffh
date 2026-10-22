@@ -508,10 +508,14 @@
     "uniqueTo": "Clan of Embers",
     "civilopediaText": [
       {
-        "text": "Doubles the number of living units trained in this city, excluding heroes and national units. Increases maintenance costs by 10%. In this adaptation, the maintenance modifier applies to building upkeep rather than EMM's total city maintenance."
+        "text": "Beneath the Clan of Embers' settlements stretches a maze of crowded tunnels and rough-hewn chambers. Orcs and goblins emerge from these warrens in great numbers, allowing the Clan to raise armies far faster than its rivals. Every eligible living unit trained in a city with Warrens is accompanied by a second unit of the same type; heroes and national units, along with mechanical and nonliving units, do not benefit. The teeming warrens also strain the city's administration and upkeep."
+      },
+      {
+        "text": "Gameplay note: Warrens increase building maintenance by 10% and have 1 Gold base upkeep in this Unciv adaptation. ExtraModMod Continued instead increases overall city maintenance by 10%."
       }
     ],
     "uniques": [
+      "Comment [Doubles living units trained in this city (except heroes and national units)]",
       "All newly-trained [Archer] units [in this city] receive the [Warrens Birth - Archer] promotion <hidden from users>",
       "All newly-trained [Axeman] units [in this city] receive the [Warrens Birth - Axeman] promotion <hidden from users>",
       "All newly-trained [Chariot] units [in this city] receive the [Warrens Birth - Chariot] promotion <hidden from users>",
