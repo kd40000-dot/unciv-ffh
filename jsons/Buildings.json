@@ -508,14 +508,26 @@
     "uniqueTo": "Clan of Embers",
     "civilopediaText": [
       {
-        "text": "The Clan of Embers uses underground warrens to breed and equip warriors rapidly. In ExtraModMod Continued, Warrens can duplicate eligible produced units. This Unciv implementation instead grants +100% production toward Sword, Scout, Archery and Mounted units in this city, a temporary approximation that halves the production time rather than creating a second unit."
+        "text": "In ExtraModMod Continued, Warrens produce one additional copy of each eligible living unit trained here. World units, national units, mechanical units, and nonliving units are excluded. This Unciv implementation uses hidden training promotions to spawn a matching second unit and transfer applicable training bonuses. Warrens' original +10% maintenance is not yet implemented; exact unit placement and crowded-city cases require testing."
       }
     ],
     "uniques": [
-      "[+100]% Production when constructing [Sword] units [in this city]",
-      "[+100]% Production when constructing [Scout] units [in this city]",
-      "[+100]% Production when constructing [Archery] units [in this city]",
-      "[+100]% Production when constructing [Mounted] units [in this city]"
+      "All newly-trained [Archer] units [in this city] receive the [Warrens Birth - Archer] promotion",
+      "All newly-trained [Axeman] units [in this city] receive the [Warrens Birth - Axeman] promotion",
+      "All newly-trained [Chariot] units [in this city] receive the [Warrens Birth - Chariot] promotion",
+      "All newly-trained [Longbowman] units [in this city] receive the [Warrens Birth - Longbowman] promotion",
+      "All newly-trained [Settler] units [in this city] receive the [Warrens Birth - Settler] promotion",
+      "All newly-trained [War Elephant] units [in this city] receive the [Warrens Birth - War Elephant] promotion",
+      "All newly-trained [Warrior] units [in this city] receive the [Warrens Birth - Warrior] promotion",
+      "All newly-trained [Worker] units [in this city] receive the [Warrens Birth - Worker] promotion",
+      "All newly-trained [Goblin] units [in this city] receive the [Warrens Birth - Goblin] promotion",
+      "All newly-trained [Shaman] units [in this city] receive the [Warrens Birth - Shaman] promotion",
+      "All newly-trained [Wolf Rider] units [in this city] receive the [Warrens Birth - Wolf Rider] promotion",
+      "All newly-trained [Lizardman] units [in this city] receive the [Warrens Birth - Lizardman] promotion",
+      "All newly-trained [Ogre] units [in this city] receive the [Warrens Birth - Ogre] promotion",
+      "All newly-trained [Lizardman Ranger] units [in this city] receive the [Warrens Birth - Lizardman Ranger] promotion",
+      "All newly-trained [Lizardman Assassin] units [in this city] receive the [Warrens Birth - Lizardman Assassin] promotion",
+      "All newly-trained [Mage] units [in this city] receive the [Warrens Birth - Mage] promotion"
     ]
   },
   {
