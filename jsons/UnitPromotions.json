@@ -546,5 +546,406 @@
         "text": "This unit is eligible for metal weapon bonuses. Bronze Working and connected Copper grant roughly +1 strength; Iron Working and connected Iron grant roughly +2; Mithril Working and connected Mithril grant roughly +4. Only the best available tier applies. The icon marks equipment eligibility, not the metal currently equipped. Combat bonuses change dynamically with access to metals."
       }
     ]
+  },
+  {
+    "name": "Warrens Birth - Archer",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Archer] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Axeman",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Axeman] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Chariot",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Chariot] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Longbowman",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Longbowman] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Settler",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Settler] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - War Elephant",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [War Elephant] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Warrior",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Warrior] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Worker",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Worker] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Goblin",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Goblin] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Shaman",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Shaman] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Wolf Rider",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Wolf Rider] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Lizardman",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Lizardman] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Ogre",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Ogre] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Lizardman Ranger",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Lizardman Ranger] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Lizardman Assassin",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Lizardman Assassin] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Birth - Mage",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Warrens Parent] status for [1] turn(s)",
+      "[This Unit] gains the [Warrens XP - Command Post] status for [1] turn(s) <when [Military]> <in cities with a [Command Post]>",
+      "[This Unit] gains the [Warrens XP - Training Yard] status for [1] turn(s) <when [Sword]> <in cities with a [Training Yard]>",
+      "[This Unit] gains the [Warrens XP - Hunting Lodge] status for [1] turn(s) <when [Scout]> <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Warrens XP - Stable] status for [1] turn(s) <when [Mounted]> <in cities with a [Stable]>",
+      "[This Unit] gains the [Warrens XP - Siege Workshop] status for [1] turn(s) <when [Siege]> <in cities with a [Siege Workshop]>",
+      "[This Unit] gains the [Warrens XP - Shipyard] status for [1] turn(s) <when [Melee Water]> <in cities with a [Shipyard]>",
+      "Free [Mage] appears",
+      "[This Unit] loses the [Warrens XP - Command Post] status",
+      "[This Unit] loses the [Warrens XP - Training Yard] status",
+      "[This Unit] loses the [Warrens XP - Hunting Lodge] status",
+      "[This Unit] loses the [Warrens XP - Stable] status",
+      "[This Unit] loses the [Warrens XP - Siege Workshop] status",
+      "[This Unit] loses the [Warrens XP - Shipyard] status",
+      "[This Unit] loses the [Warrens Parent] status"
+    ]
+  },
+  {
+    "name": "Warrens Parent",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Command Post",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Training Yard",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Hunting Lodge",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Stable",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Siege Workshop",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Warrens XP - Shipyard",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
   }
 ]
