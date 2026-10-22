@@ -963,8 +963,9 @@
       "[This Unit] gains the [Arena Victory] status for [1] turn(s) <with [50]% chance>",
       "[This Unit] gains [3] XP <for units with [Arena Victory]>",
       "[This Unit] takes [25] damage <for units with [Arena Victory]>",
+      "[+1 Happiness] <for [3] turns>",
       "[This Unit] is destroyed <for units without [Arena Victory]>",
-      "[This Unit] loses the [Arena Victory] status"
+      "[This Unit] upgrades for free <for [Slave] units> <for units with [Arena Victory]>"
     ]
   }
 ]
