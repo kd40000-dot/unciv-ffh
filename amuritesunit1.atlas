@@ -1,0 +1,13 @@
+
+Images/TileSets/AbsoluteUnits/Units/Adept-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
