@@ -1,0 +1,75 @@
+name: Register AmuritesSimple unit sprites
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/register-amurites-simple-sprites.yml'
+permissions:
+  contents: write
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build game-ready sprite atlas
+        run: |
+          python -m pip install Pillow
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          import json
+          folder = Path("Images/TileSets/AmuritesSimple/Units")
+          mapping = {
+              "Amurite_adept.png": "Adept-Amurites",
+              "Amurite_archer.png": "Archer-Amurites",
+              "Amurite_beastmaster.png": "Beastmaster-Amurites",
+              "Amurite_chanter.png": "Chanter",
+              "Amurite_chariot.png": "Chariot-Amurites",
+              "Amurite_hunter.png": "Hunter-Amurites",
+              "Amurite_scout.png": "Scout-Amurites",
+              "Amurite_wizard.png": "Wizard",
+              "Govannon.png": "Govannon",
+          }
+          lines = []
+          for filename, region in mapping.items():
+              source = folder / filename
+              if not source.is_file():
+                  raise FileNotFoundError(source)
+              art = Image.open(source).convert("RGBA")
+              bounds = art.getchannel("A").getbbox()
+              if bounds is None:
+                  raise ValueError(f"Empty sprite: {filename}")
+              art = art.crop(bounds)
+              art.thumbnail((300, 300), Image.Resampling.LANCZOS)
+              canvas = Image.new("RGBA", (1024, 1024), (0, 0, 0, 0))
+              canvas.alpha_composite(art, ((1024-art.width)//2, (1024-art.height)//2))
+              output = folder / ("Registered_" + filename)
+              canvas.save(output)
+              lines.extend([
+                  str(output),
+                  "size: 1024, 1024",
+                  "format: RGBA8888",
+                  "filter: Linear, Linear",
+                  "repeat: none",
+                  "TileSets/AmuritesSimple/Units/" + region,
+                  "  rotate: false",
+                  "  xy: 0, 0",
+                  "  size: 1024, 1024",
+                  "  orig: 1024, 1024",
+                  "  offset: 0, 0",
+                  "  index: -1",
+                  "",
+              ])
+          Path("amurites-simple-new-sprites.atlas").write_text("\n".join(lines))
+          atlas_list = Path("Atlases.json")
+          names = json.loads(atlas_list.read_text())
+          if "amurites-simple-new-sprites" not in names:
+              names.append("amurites-simple-new-sprites")
+          atlas_list.write_text(json.dumps(names, separators=(",", ":")) + "\n")
+          PY
+      - name: Commit sprite registration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Atlases.json amurites-simple-new-sprites.atlas Images/TileSets/AmuritesSimple/Units/Registered_*.png
+          git diff --cached --quiet || (git commit -m "Register nine new AmuritesSimple unit sprites" && git push)
