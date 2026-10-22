@@ -10,7 +10,8 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Training Yard] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>",
+      "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>"
     ]
   },
   {
@@ -27,7 +28,8 @@
     "uniques": [
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
       "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Hunting Lodge] unit>",
-      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>"
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <when [Military]> <for [Clan of Embers] Civilizations>",
+      "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>"
     ]
   },
   {
