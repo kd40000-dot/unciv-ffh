@@ -2113,5 +2113,24 @@
     "promotions": [
       "Metal Weaponry"
     ]
+  },
+  {
+    "name": "Slave",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 60,
+    "uniques": [
+      "Unbuildable",
+      "Can upgrade to [Warrior] <for units with [Arena Victory]> <in cities with a [Arena]>",
+      "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A captive forced into service. If a Slave survives a Balseraph Arena Battle, it becomes a Warrior; the original ExtraModMod Continued mechanic also preserves the combatant's experience."
+      },
+      {
+        "text": "Slaves cannot currently be acquired through normal gameplay in this mod. Their capture and production mechanics remain to be implemented."
+      }
+    ]
   }
 ]
