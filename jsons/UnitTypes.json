@@ -1,42 +1,81 @@
 [
   {
     "name": "Civilian",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": []
   },
   {
     "name": "Sword",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Training Yard] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Archery",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Scout",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Hunting Lodge] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Mounted",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Stable] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Melee Water",
-    "movementType": "Water"
+    "movementType": "Water",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Shipyard] unit>"
+    ]
   },
   {
     "name": "Civilian Water",
-    "movementType": "Water"
+    "movementType": "Water",
+    "uniques": []
   },
   {
     "name": "Magic",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Siege",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Siege Workshop] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   },
   {
     "name": "Disciple",
-    "movementType": "Land"
+    "movementType": "Land",
+    "uniques": [
+      "[This Unit] gains [2] XP <when adjacent to a [Warrens XP - Command Post] unit>",
+      "[This Unit] gains the [Orc] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>",
+      "[This Unit] gains the [Mobility I] promotion <when adjacent to a [Warrens Parent] unit> <for [Clan of Embers] Civilizations>"
+    ]
   }
 ]
