@@ -1,0 +1,76 @@
+
+Images/TileSets/AmuritesSimple/Units/AmuritesSimpleAtlas.png
+size: 475, 162
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Archer-Amurites
+  rotate: false
+  xy: 95, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Archmage-Amurites
+  rotate: false
+  xy: 190, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Beastmaster-Amurites
+  rotate: false
+  xy: 285, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Champion-Amurites
+  rotate: false
+  xy: 380, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Chanter
+  rotate: false
+  xy: 0, 81
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Chariot-Amurites
+  rotate: false
+  xy: 95, 81
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Crossbowman-Amurites
+  rotate: false
+  xy: 190, 81
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Firebow
+  rotate: false
+  xy: 285, 81
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AmuritesSimple/Units/Govannon
+  rotate: false
+  xy: 380, 81
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1

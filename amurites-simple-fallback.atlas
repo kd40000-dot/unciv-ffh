@@ -1,0 +1,169 @@
+
+Images/TileSets/AbsoluteUnits/Units/Horse Archer-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Horse Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Horseman-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Horseman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Hunter-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Hunter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Immortal-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Immortal-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Marksman-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Marksman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Phalanx-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Phalanx-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Ranger-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Ranger-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Scout-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Scout-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Swordsman.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Swordsman
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Warrior-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Warrior-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Wizard.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Wizard
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Goblin.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Goblin
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Warrior-Clan of Embers.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AmuritesSimple/Units/Warrior-Clan of Embers
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
