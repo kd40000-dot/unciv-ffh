@@ -508,8 +508,14 @@
     "uniqueTo": "Clan of Embers",
     "civilopediaText": [
       {
-        "text": "The Clan of Embers uses sprawling warrens to support its growing population and armies."
+        "text": "The Clan of Embers uses underground warrens to breed and equip warriors rapidly. In ExtraModMod Continued, Warrens can duplicate eligible produced units. This Unciv implementation instead grants +100% production toward Sword, Scout, Archery and Mounted units in this city, a temporary approximation that halves the production time rather than creating a second unit."
       }
+    ],
+    "uniques": [
+      "[+100]% Production when constructing [Sword] units [in this city]",
+      "[+100]% Production when constructing [Scout] units [in this city]",
+      "[+100]% Production when constructing [Archery] units [in this city]",
+      "[+100]% Production when constructing [Mounted] units [in this city]"
     ]
   },
   {
