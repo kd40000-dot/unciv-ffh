@@ -1,3 +1,7 @@
+## Building Civilopedia import (2026-10-22)
+
+Imported original English background/history wording for 25 buildings from the pinned EMM `XML/Text/Buildings.xml`; 44 buildings did not have a matching PEDIA tag in that file and retain prior text. See [source audit](building-civilopedia-source-audit.md). This is a content-only update; no gameplay effects were changed.
+
 # Open fidelity gaps — living audit
 
 Last audited: 2026-10-22. Target: ExtraModMod Continued at `60b0ec3740083162aaab7bf8491761a54a65a610`.
