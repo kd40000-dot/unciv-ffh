@@ -947,5 +947,24 @@
     "uniques": [
       "Not shown on world screen"
     ]
+  },
+  {
+    "name": "Arena Victory",
+    "unitTypes": [],
+    "uniques": [
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Arena Battle",
+    "unitTypes": [],
+    "uniques": [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] gains the [Arena Victory] status for [1] turn(s) <with [50]% chance>",
+      "[This Unit] gains [3] XP <for units with [Arena Victory]>",
+      "[This Unit] takes [25] damage <for units with [Arena Victory]>",
+      "[This Unit] is destroyed <for units without [Arena Victory]>",
+      "[This Unit] loses the [Arena Victory] status"
+    ]
   }
 ]
