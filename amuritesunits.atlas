@@ -1,0 +1,130 @@
+
+Images/TileSets/AbsoluteUnits/Units/Adept-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Archer-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Archmage-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Archmage-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Beastmaster-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Beastmaster-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Champion-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Champion-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Chanter.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Chanter
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Chariot-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Chariot-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Crossbowman-Amurites.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Crossbowman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Firebow.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Firebow
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AbsoluteUnits/Units/Govannon.png
+size: 95, 81
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+TileSets/AbsoluteUnits/Units/Govannon
+  rotate: false
+  xy: 0, 0
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
