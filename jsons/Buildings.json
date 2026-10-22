@@ -33,7 +33,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "An alchemical workshop where experiment and magical theory inform advanced scholarship."
+        "text": "An alchemical workshop dedicated to the study of magical substances and advanced scholarship."
       }
     ]
   },
@@ -43,7 +43,7 @@
     "requiredTech": "Sanitation",
     "civilopediaText": [
       {
-        "text": "Channels and conduits bring clean water into a growing city."
+        "text": "Brings fresh water into the city, improving public health. Currently represented by a Food bonus until health is implemented."
       }
     ],
     "food": 1
@@ -55,7 +55,7 @@
     "cityStrength": 5,
     "civilopediaText": [
       {
-        "text": "A training ground where bowmen refine their aim."
+        "text": "Trains bowmen and supports the recruitment of archery units."
       }
     ]
   },
@@ -69,7 +69,7 @@
     },
     "civilopediaText": [
       {
-        "text": "A gathering of entertainers, traders and visitors."
+        "text": "A place of entertainment and celebration, drawing crowds to the city."
       }
     ]
   },
@@ -79,7 +79,7 @@
     "requiredTech": "Military Strategy",
     "civilopediaText": [
       {
-        "text": "A headquarters that coordinates military training and operations."
+        "text": "Coordinates military training. Newly trained military units gain 2 XP in this city."
       }
     ],
     "uniques": [
@@ -92,7 +92,7 @@
     "requiredTech": "Code of Laws",
     "civilopediaText": [
       {
-        "text": "An institution for settling disputes and administering law."
+        "text": "Reduces the cost of governing a city. Currently represented by a fixed Gold bonus rather than a reduction in city maintenance."
       }
     ],
     "gold": 2
@@ -103,7 +103,7 @@
     "requiredTech": "Masonry",
     "civilopediaText": [
       {
-        "text": "A fortified prison for enemies and criminals."
+        "text": "Holds prisoners and enemies of the city."
       }
     ]
   },
@@ -117,7 +117,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A gathering of experienced advisers who preserve civic knowledge."
+        "text": "Elders advise the city and preserve its accumulated knowledge."
       }
     ]
   },
@@ -130,7 +130,7 @@
     },
     "civilopediaText": [
       {
-        "text": "A workshop where metal is shaped into useful tools and weapons."
+        "text": "Smiths work iron and other metals into weapons, armor and tools."
       }
     ]
   },
@@ -154,7 +154,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Stored grain protects the city against lean harvests."
+        "text": "Stores food from plentiful harvests for leaner times."
       }
     ]
   },
@@ -177,7 +177,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Docks and warehouses connect the city to maritime trade."
+        "text": "A coastal port for merchants and sailors. Currently provides a Gold bonus in place of the full maritime trade system."
       }
     ],
     "gold": 1
@@ -188,7 +188,7 @@
     "requiredTech": "Agriculture",
     "civilopediaText": [
       {
-        "text": "A practitioner of traditional remedies and medicinal plants."
+        "text": "Uses herbs and medicinal knowledge to improve health. Currently represented by a Food bonus."
       }
     ],
     "food": 1
@@ -199,7 +199,7 @@
     "requiredTech": "Hunting",
     "civilopediaText": [
       {
-        "text": "A base for trackers and hunters operating in the surrounding wilderness."
+        "text": "Trains hunters and scouts to survive in the wilderness. Newly trained Scout units gain 2 XP here."
       }
     ],
     "uniques": [
@@ -212,7 +212,7 @@
     "requiredTech": "Medicine",
     "civilopediaText": [
       {
-        "text": "A center for the care of the sick and wounded."
+        "text": "Treats the sick and wounded. Currently represented by a Food bonus until city health is implemented."
       }
     ],
     "food": 2
@@ -223,7 +223,7 @@
     "requiredTech": "Trade",
     "civilopediaText": [
       {
-        "text": "Lodgings where visitors and travelers can rest."
+        "text": "Provides lodging and rest for travelers. Currently provides a modest Gold bonus."
       }
     ],
     "gold": 1
@@ -241,7 +241,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A collection of written knowledge available to scholars."
+        "text": "Stores and shares knowledge with the city's scholars."
       }
     ]
   },
@@ -254,7 +254,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A beacon guiding ships toward safer coastal passage."
+        "text": "Guides ships into harbor and supports life along the coast. Currently provides a Food bonus."
       }
     ],
     "food": 1
@@ -269,7 +269,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "An institution where arcane apprentices receive formal instruction."
+        "text": "A center of arcane study where apprentices can be trained."
       }
     ]
   },
@@ -304,7 +304,7 @@
     "requiredTech": "Ancient Chants",
     "civilopediaText": [
       {
-        "text": "A public landmark commemorating the nation's achievements."
+        "text": "Honors the city's history and traditions, inspiring its people. Currently produces 1 Culture."
       }
     ],
     "culture": 1
@@ -315,7 +315,7 @@
     "requiredTech": "Pass Through the Ether",
     "civilopediaText": [
       {
-        "text": "A mysterious arcane gateway associated with the Amurites."
+        "text": "An Amurite magical gateway. Its original teleportation abilities have not yet been reproduced."
       }
     ]
   },
@@ -366,7 +366,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Workshops and slips for the construction of vessels."
+        "text": "Builds and outfits ships. Newly trained Melee Water units gain 2 XP."
       }
     ]
   },
@@ -381,7 +381,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "An arsenal producing engines for attacking fortifications."
+        "text": "Constructs siege engines and supports their crews. Newly trained Siege units gain 2 XP."
       }
     ]
   },
@@ -409,7 +409,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Buildings and handlers supporting the breeding and care of mounts."
+        "text": "Breeds and trains mounts for war. Newly trained Mounted units gain 2 XP."
       }
     ]
   },
@@ -443,7 +443,7 @@
     "requiredTech": "Drama",
     "civilopediaText": [
       {
-        "text": "A stage for dramatic performances and cultural gatherings."
+        "text": "A place for drama, performance and public entertainment. Currently produces 3 Culture."
       }
     ],
     "culture": 3
@@ -458,7 +458,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A drill ground where soldiers practice weapons and formations."
+        "text": "Trains soldiers in weapons and tactics. Newly trained Sword units gain 2 XP."
       }
     ]
   },
@@ -497,7 +497,7 @@
     },
     "civilopediaText": [
       {
-        "text": "An Amurite site where the wisdom of earlier generations informs magical study."
+        "text": "The Amurites study the wisdom of their ancestors, strengthening magical traditions."
       }
     ]
   },
@@ -508,27 +508,29 @@
     "uniqueTo": "Clan of Embers",
     "civilopediaText": [
       {
-        "text": "In ExtraModMod Continued, Warrens produce one additional copy of each eligible living unit trained here. World units, national units, mechanical units, and nonliving units are excluded. This Unciv implementation uses hidden training promotions to spawn a matching second unit and transfer applicable training bonuses. Warrens' original +10% maintenance is not yet implemented; exact unit placement and crowded-city cases require testing."
+        "text": "Doubles the number of living units trained in this city, excluding heroes and national units. Increases maintenance costs by 10%. In this adaptation, the maintenance modifier applies to building upkeep rather than EMM's total city maintenance."
       }
     ],
     "uniques": [
-      "All newly-trained [Archer] units [in this city] receive the [Warrens Birth - Archer] promotion",
-      "All newly-trained [Axeman] units [in this city] receive the [Warrens Birth - Axeman] promotion",
-      "All newly-trained [Chariot] units [in this city] receive the [Warrens Birth - Chariot] promotion",
-      "All newly-trained [Longbowman] units [in this city] receive the [Warrens Birth - Longbowman] promotion",
-      "All newly-trained [Settler] units [in this city] receive the [Warrens Birth - Settler] promotion",
-      "All newly-trained [War Elephant] units [in this city] receive the [Warrens Birth - War Elephant] promotion",
-      "All newly-trained [Warrior] units [in this city] receive the [Warrens Birth - Warrior] promotion",
-      "All newly-trained [Worker] units [in this city] receive the [Warrens Birth - Worker] promotion",
-      "All newly-trained [Goblin] units [in this city] receive the [Warrens Birth - Goblin] promotion",
-      "All newly-trained [Shaman] units [in this city] receive the [Warrens Birth - Shaman] promotion",
-      "All newly-trained [Wolf Rider] units [in this city] receive the [Warrens Birth - Wolf Rider] promotion",
-      "All newly-trained [Lizardman] units [in this city] receive the [Warrens Birth - Lizardman] promotion",
-      "All newly-trained [Ogre] units [in this city] receive the [Warrens Birth - Ogre] promotion",
-      "All newly-trained [Lizardman Ranger] units [in this city] receive the [Warrens Birth - Lizardman Ranger] promotion",
-      "All newly-trained [Lizardman Assassin] units [in this city] receive the [Warrens Birth - Lizardman Assassin] promotion",
-      "All newly-trained [Mage] units [in this city] receive the [Warrens Birth - Mage] promotion"
-    ]
+      "All newly-trained [Archer] units [in this city] receive the [Warrens Birth - Archer] promotion <hidden from users>",
+      "All newly-trained [Axeman] units [in this city] receive the [Warrens Birth - Axeman] promotion <hidden from users>",
+      "All newly-trained [Chariot] units [in this city] receive the [Warrens Birth - Chariot] promotion <hidden from users>",
+      "All newly-trained [Longbowman] units [in this city] receive the [Warrens Birth - Longbowman] promotion <hidden from users>",
+      "All newly-trained [Settler] units [in this city] receive the [Warrens Birth - Settler] promotion <hidden from users>",
+      "All newly-trained [War Elephant] units [in this city] receive the [Warrens Birth - War Elephant] promotion <hidden from users>",
+      "All newly-trained [Warrior] units [in this city] receive the [Warrens Birth - Warrior] promotion <hidden from users>",
+      "All newly-trained [Worker] units [in this city] receive the [Warrens Birth - Worker] promotion <hidden from users>",
+      "All newly-trained [Goblin] units [in this city] receive the [Warrens Birth - Goblin] promotion <hidden from users>",
+      "All newly-trained [Shaman] units [in this city] receive the [Warrens Birth - Shaman] promotion <hidden from users>",
+      "All newly-trained [Wolf Rider] units [in this city] receive the [Warrens Birth - Wolf Rider] promotion <hidden from users>",
+      "All newly-trained [Lizardman] units [in this city] receive the [Warrens Birth - Lizardman] promotion <hidden from users>",
+      "All newly-trained [Ogre] units [in this city] receive the [Warrens Birth - Ogre] promotion <hidden from users>",
+      "All newly-trained [Lizardman Ranger] units [in this city] receive the [Warrens Birth - Lizardman Ranger] promotion <hidden from users>",
+      "All newly-trained [Lizardman Assassin] units [in this city] receive the [Warrens Birth - Lizardman Assassin] promotion <hidden from users>",
+      "All newly-trained [Mage] units [in this city] receive the [Warrens Birth - Mage] promotion <hidden from users>",
+      "[+10]% maintenance cost for [All] buildings [in this city]"
+    ],
+    "maintenance": 1
   },
   {
     "name": "Arena",
@@ -538,7 +540,7 @@
     "replaces": "Training Yard",
     "civilopediaText": [
       {
-        "text": "The Balseraphs turn public combat and entertainment into a spectacle of power."
+        "text": "Balseraphs stage combat as public entertainment. Currently retains the Training Yard's military training benefits; its special arena effects remain unfinished."
       }
     ],
     "uniques": [
@@ -553,7 +555,7 @@
     "replaces": "Monument",
     "civilopediaText": [
       {
-        "text": "A sacred storehouse preserving objects of deep religious significance."
+        "text": "The Elohim preserve sacred relics and ancient treasures here. Currently provides the Monument's Culture bonus; the original religious effects remain unfinished."
       }
     ],
     "culture": 1
@@ -566,7 +568,7 @@
     "replaces": "Tavern",
     "civilopediaText": [
       {
-        "text": "A Grigori gathering place where travelers and independent minds share stories."
+        "text": "A gathering place for Grigori travelers, adventurers and independent thinkers. Its special effects remain unfinished."
       }
     ]
   },
@@ -578,7 +580,7 @@
     "replaces": "Courthouse",
     "civilopediaText": [
       {
-        "text": "A public space for debate and the affairs of citizens."
+        "text": "The Grigori gather here to exchange ideas and administer civic affairs. Currently provides a Gold bonus in place of its maintenance reduction."
       }
     ],
     "gold": 2
@@ -609,7 +611,7 @@
     },
     "civilopediaText": [
       {
-        "text": "An Illian shrine celebrating winter and the legacy of Mulcarn."
+        "text": "An Illian shrine dedicated to winter and the legacy of Mulcarn. Its full terrain-changing effects remain unfinished."
       }
     ]
   },
@@ -624,7 +626,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Khazad metalworkers draw upon an enduring tradition of exceptional craft."
+        "text": "Khazad smiths practice master craftsmanship, improving the city's Production."
       }
     ]
   },
@@ -636,7 +638,7 @@
     "replaces": "Harbor",
     "civilopediaText": [
       {
-        "text": "Lanun coastal infrastructure sustains merchants, sailors and privateers."
+        "text": "The Lanun prosper through shipping and coastal trade. Currently provides the Harbor's Gold bonus; its distinct trade and maintenance effects remain unfinished."
       }
     ],
     "gold": 1,
@@ -652,7 +654,7 @@
     "replaces": "Training Yard",
     "civilopediaText": [
       {
-        "text": "Luchuirp artisans transform design and craftsmanship into animated constructions."
+        "text": "Luchuirp artisans shape the constructs that defend their cities. Currently retains the Training Yard's training bonus; special golem effects remain unfinished."
       }
     ],
     "uniques": [
@@ -670,7 +672,7 @@
     },
     "civilopediaText": [
       {
-        "text": "A Malakim holy place grounded in the spiritual life of the desert."
+        "text": "A Malakim place of worship rooted in the traditions of the desert."
       }
     ]
   },
@@ -689,7 +691,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Amurites royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Amurites, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -708,7 +710,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Balseraphs royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Balseraphs, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -727,7 +729,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bannor royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Bannor, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -746,7 +748,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Calabim royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Calabim, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -765,7 +767,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Clan of Embers royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Clan of Embers, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -784,7 +786,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Doviello royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Doviello, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -803,7 +805,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Elohim royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Elohim, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -822,7 +824,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Grigori royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Grigori, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -841,7 +843,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Hippus royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Hippus, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -860,7 +862,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Illians royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Illians, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -879,7 +881,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Khazad royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Khazad, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -898,7 +900,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Kuriotates royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Kuriotates, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -917,7 +919,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Lanun royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Lanun, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -936,7 +938,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ljosalfar royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Ljosalfar, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -955,7 +957,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Luchuirp royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Luchuirp, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -974,7 +976,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Malakim royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Malakim, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -993,7 +995,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sheaim royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Sheaim, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -1012,7 +1014,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sidar royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Sidar, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   },
@@ -1031,7 +1033,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Svartalfar royal seat, expressing the traditions and character of its civilization."
+        "text": "The palace of the Svartalfar, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
   }
