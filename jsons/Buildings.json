@@ -45,7 +45,8 @@
       {
         "text": "Channels and conduits bring clean water into a growing city."
       }
-    ]
+    ],
+    "food": 1
   },
   {
     "name": "Archery Range",
@@ -80,6 +81,9 @@
       {
         "text": "A headquarters that coordinates military training and operations."
       }
+    ],
+    "uniques": [
+      "New [Military] units start with [2] XP [in this city]"
     ]
   },
   {
@@ -90,7 +94,8 @@
       {
         "text": "An institution for settling disputes and administering law."
       }
-    ]
+    ],
+    "gold": 2
   },
   {
     "name": "Dungeon",
@@ -174,7 +179,8 @@
       {
         "text": "Docks and warehouses connect the city to maritime trade."
       }
-    ]
+    ],
+    "gold": 1
   },
   {
     "name": "Herbalist",
@@ -184,7 +190,8 @@
       {
         "text": "A practitioner of traditional remedies and medicinal plants."
       }
-    ]
+    ],
+    "food": 1
   },
   {
     "name": "Hunting Lodge",
@@ -194,6 +201,9 @@
       {
         "text": "A base for trackers and hunters operating in the surrounding wilderness."
       }
+    ],
+    "uniques": [
+      "New [Scout] units start with [2] XP [in this city]"
     ]
   },
   {
@@ -204,7 +214,8 @@
       {
         "text": "A center for the care of the sick and wounded."
       }
-    ]
+    ],
+    "food": 2
   },
   {
     "name": "Inn",
@@ -214,7 +225,8 @@
       {
         "text": "Lodgings where visitors and travelers can rest."
       }
-    ]
+    ],
+    "gold": 1
   },
   {
     "name": "Library",
@@ -244,7 +256,8 @@
       {
         "text": "A beacon guiding ships toward safer coastal passage."
       }
-    ]
+    ],
+    "food": 1
   },
   {
     "name": "Mage Guild",
@@ -293,7 +306,8 @@
       {
         "text": "A public landmark commemorating the nation's achievements."
       }
-    ]
+    ],
+    "culture": 1
   },
   {
     "name": "Obsidian Gate",
@@ -347,7 +361,8 @@
     "cost": 200,
     "requiredTech": "Iron Working",
     "uniques": [
-      "Must be next to [Coast]"
+      "Must be next to [Coast]",
+      "New [Melee Water] units start with [2] XP [in this city]"
     ],
     "civilopediaText": [
       {
@@ -361,7 +376,8 @@
     "requiredTech": "Construction",
     "uniques": [
       "Only available <for [non-[Ljosalfar]] Civilizations>",
-      "Only available <for [non-[Svartalfar]] Civilizations>"
+      "Only available <for [non-[Svartalfar]] Civilizations>",
+      "New [Siege] units start with [2] XP [in this city]"
     ],
     "civilopediaText": [
       {
@@ -388,7 +404,8 @@
     "requiredTech": "Horseback Riding",
     "uniques": [
       "Only available <for [non-[Clan of Embers]] Civilizations>",
-      "Only available <for [non-[Kuriotates]] Civilizations>"
+      "Only available <for [non-[Kuriotates]] Civilizations>",
+      "New [Mounted] units start with [2] XP [in this city]"
     ],
     "civilopediaText": [
       {
@@ -428,14 +445,16 @@
       {
         "text": "A stage for dramatic performances and cultural gatherings."
       }
-    ]
+    ],
+    "culture": 3
   },
   {
     "name": "Training Yard",
     "cost": 100,
     "requiredTech": "Bronze Working",
     "uniques": [
-      "Only available <for [non-[Sheaim]] Civilizations>"
+      "Only available <for [non-[Sheaim]] Civilizations>",
+      "New [Sword] units start with [2] XP [in this city]"
     ],
     "civilopediaText": [
       {
