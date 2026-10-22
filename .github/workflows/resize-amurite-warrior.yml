@@ -23,7 +23,7 @@ jobs:
           if not bbox:
               raise RuntimeError("Warrior image is fully transparent")
           image = image.crop(bbox)
-          image.thumbnail((300, 300), Image.Resampling.LANCZOS)
+          image.thumbnail((600, 600), Image.Resampling.LANCZOS)
           canvas = Image.new("RGBA", (1024, 1024), (0, 0, 0, 0))
           canvas.alpha_composite(image, ((1024-image.width)//2, (1024-image.height)//2))
           canvas.save(path)
