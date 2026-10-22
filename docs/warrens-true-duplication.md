@@ -1,6 +1,6 @@
 # Warrens — true duplicate prototype (2026-10-22)
 
-**Status:** Implemented in mod JSON and structurally validated, but **NOT tested in an actual Unciv game**. No engine source changes. Rollback: `checkpoint/pre-warrens-true-duplication-2026-10-22`.
+**Status:** Core Warrens unit duplication **gameplay-verified by user on 2026-10-22**. Specific XP parity, eligibility, placement, maintenance and persistence edge cases have not been separately verified. No engine source changes. Rollback: `checkpoint/pre-warrens-true-duplication-2026-10-22`.
 
 ## Source behavior (EMM Continued pinned commit)
 `python/CvEventManager.py` has `onUnitBuilt`: if the city contains Warrens, the new unit is not a world/national unit, is not mechanical, and `unit.isAlive()`, it calls `pPlayer.initUnit(unit.getUnitType(), city.getX(), city.getY(), ...)` and then `city.applyBuildEffects(newUnit)`. Original Warrens also has +10% city maintenance (EMM feature notes and source XML).
