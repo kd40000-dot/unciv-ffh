@@ -32,6 +32,23 @@ jobs:
               assert atlas.count(page)==1
           print("OK: 63 image pages, images present, complete atlas last")
           PY
+      - name: Check horizontal edge alignment and full visibility
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          files = sorted(Path("Images/TileSets/AmuritesSimple/Units/Generated").glob("*.png"))
+          assert len(files) == 63, len(files)
+          for path in files:
+              with Image.open(path) as im:
+                  assert im.size == (512, 512), (path, im.size)
+                  bbox = im.convert("RGBA").getchannel("A").getbbox()
+                  assert bbox, f"Empty sprite: {path}"
+                  left = path.stem.startswith(("Worker", "Settler"))
+                  assert (bbox[0] == 0 if left else bbox[2] == 512), (path, bbox)
+                  assert bbox[1] > 0 and bbox[3] < 512, (path, bbox)
+          print("OK: 21 Amurites shifted completely right; 42 civilian sprites completely left, with no clipping")
+          PY
       - name: Commit generated sprites and atlas
         run: |
           git config user.name "github-actions[bot]"
