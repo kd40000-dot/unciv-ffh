@@ -1,0 +1,26 @@
+name: Verify mana node foundations
+on:
+  push:
+    paths:
+      - 'jsons/TileResources.json'
+      - 'jsons/TileImprovements.json'
+      - 'jsons/Units.json'
+      - 'jsons/Techs.json'
+      - 'docs/data/emm-mana-nodes.json'
+      - 'tools/verify_mana_nodes.py'
+      - '.github/workflows/verify-mana-nodes.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON syntax and source-backed mana node constraints
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          for p in pathlib.Path("jsons").glob("*.json"):
+              json.loads(p.read_text(encoding="utf-8"))
+          print("All ruleset JSON files parse")
+          PY
+          python3 tools/verify_mana_nodes.py
