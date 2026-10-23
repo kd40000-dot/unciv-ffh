@@ -1044,5 +1044,139 @@
         "text": "The palace of the Svartalfar, seat of its government and source of royal authority. Its distinctive mana and other EMM palace effects remain unfinished."
       }
     ]
+  },
+  {
+    "name": "Dwarven Vault (Empty)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": -2,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The empty state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 0–24 Gold per city. Its effects are -2 Happiness. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Low)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": -1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The low state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 25–49 Gold per city. Its effects are -1 Happiness. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Normal)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The normal state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 50–74 Gold per city. Its effects are no Happiness modifier. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Stocked)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The stocked state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 75–99 Gold per city. Its effects are +1 Happiness. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Abundant)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": 2,
+    "percentStatBonus": {
+      "production": 10
+    },
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The abundant state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 100–149 Gold per city. Its effects are +2 Happiness and +10% Production. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Full)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": 2,
+    "percentStatBonus": {
+      "production": 25
+    },
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The full state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 150–249 Gold per city. Its effects are +2 Happiness and +25% Production. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
+  },
+  {
+    "name": "Dwarven Vault (Overflowing)",
+    "uniqueTo": "Khazad",
+    "cost": 0,
+    "maintenance": 0,
+    "happiness": 3,
+    "percentStatBonus": {
+      "production": 40
+    },
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Unsellable",
+      "Destroyed when city captured"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The overflowing state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 250+ Gold per city. Its effects are +3 Happiness and +40% Production. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
+      }
+    ]
   }
 ]
