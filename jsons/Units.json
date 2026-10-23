@@ -596,11 +596,16 @@
     "requiredTech": "Fishing",
     "uniques": [
       "Can build [Water] improvements on tiles",
-      "Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>"
+      "Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>",
+      "Can instantly construct a [Pirate Harbor] improvement <by consuming this unit> <costs [100 Gold] stats> <for [Lanun] Civilizations>",
+      "Can instantly construct a [Pirate Port] improvement <by consuming this unit> <costs [200 Gold] stats> <for [Lanun] Civilizations>"
     ],
     "civilopediaText": [
       {
         "text": "A small vessel used to improve coastal resources."
+      },
+      {
+        "text": "Lanun can upgrade a Pirate Cove to a Pirate Harbor after Sailing (100 Gold and this Workboat), then a Pirate Harbor to a Pirate Port after Optics (200 Gold and another Workboat). Each action consumes the Workboat."
       }
     ]
   },
