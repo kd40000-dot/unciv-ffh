@@ -621,8 +621,8 @@
     "uniques": [
       "Can build [Water] improvements on tiles",
       "Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>",
-      "Can instantly construct a [Pirate Harbor] improvement <by consuming this unit> <costs [100 Gold] stats> <for [Lanun] Civilizations>",
-      "Can instantly construct a [Pirate Port] improvement <by consuming this unit> <costs [200 Gold] stats> <for [Lanun] Civilizations>"
+      "Can instantly construct a [Pirate Harbor] improvement <by consuming this unit> <costs [+100 Gold] stats> <for [Lanun] Civilizations>",
+      "Can instantly construct a [Pirate Port] improvement <by consuming this unit> <costs [+200 Gold] stats> <for [Lanun] Civilizations>"
     ],
     "civilopediaText": [
       {
