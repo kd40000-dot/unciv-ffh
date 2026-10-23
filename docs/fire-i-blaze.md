@@ -1,6 +1,6 @@
 # Fire I — Blaze (first playable spell)
 
-**Status:** First mod-only spell prototype committed October 23, 2026. **Not yet user gameplay-verified.** Validation at `tools/verify_fire_i.py`.
+**Status:** First mod-only spell prototype committed October 23, 2026. **User gameplay-verified on October 23, 2026:** Fire I promotion appears when Fire Mana is available; Create Smoke works on eligible terrain; caster survives and movement is consumed. Enemy adjacency damage and other edge cases have not been separately confirmed. Validation at `tools/verify_fire_i.py`.
 
 Source: ExtraModMod Continued commit `60b0ec3740083162aaab7bf8491761a54a65a610`. `XML/Units/CIV4PromotionInfos.xml` defines `PROMOTION_FIRE1` with Fire Mana prerequisite and Channeling I. `XML/Units/CIV4SpellInfos.xml` defines `SPELL_BLAZE`, Channeling I + Fire I, `IMPROVEMENT_SMOKE` creation on the caster's plot. `python/entrypoints/CvSpellInterface.py` specifies that Blaze requires Forest/Ancient Forest/Jungle and not already smoking/burning.
 
