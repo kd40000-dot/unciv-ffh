@@ -7,7 +7,28 @@
     "strength": 3,
     "requiredTech": "Knowledge of the Ether",
     "uniques": [
-      "Can only be built <in cities with a [Mage Guild]>"
+      "Can only be built <in cities with a [Mage Guild]>",
+      "Can build [Air Node] improvements on tiles",
+      "Can build [Body Node] improvements on tiles",
+      "Can build [Chaos Node] improvements on tiles",
+      "Can build [Creation Node] improvements on tiles",
+      "Can build [Death Node] improvements on tiles",
+      "Can build [Dimensional Node] improvements on tiles",
+      "Can build [Earth Node] improvements on tiles",
+      "Can build [Enchantment Node] improvements on tiles",
+      "Can build [Entropy Node] improvements on tiles",
+      "Can build [Fire Node] improvements on tiles",
+      "Can build [Force Node] improvements on tiles",
+      "Can build [Ice Node] improvements on tiles",
+      "Can build [Law Node] improvements on tiles",
+      "Can build [Life Node] improvements on tiles",
+      "Can build [Metamagic Node] improvements on tiles",
+      "Can build [Mind Node] improvements on tiles",
+      "Can build [Nature Node] improvements on tiles",
+      "Can build [Spirit Node] improvements on tiles",
+      "Can build [Water Node] improvements on tiles",
+      "Can build [Shadow Node] improvements on tiles",
+      "Can build [Sun Node] improvements on tiles"
     ],
     "promotions": [
       "Channeling I"
@@ -16,6 +37,9 @@
     "civilopediaText": [
       {
         "text": "An apprentice to the arcane disciplines, beginning the long path toward magecraft."
+      },
+      {
+        "text": "Adepts can attune unimproved Raw Mana to any of 21 spell spheres by constructing the corresponding Mana Node improvement. Each school requires its EMM technology prerequisite. A Node supplies one strategic sphere Mana; spells are a later milestone."
       }
     ]
   },
