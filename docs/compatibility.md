@@ -9,7 +9,7 @@ Reference EMM Continued commit: `60b0ec3740083162aaab7bf8491761a54a65a610`.
 | Source-derived units and buildings | Partial, untested | 102 units and 69 buildings; 63 faction upgrade routes mapped from source, 14 missing-class routes deferred, 1 civ-prohibited route omitted |
 | Resources, improvements and terrain | Approximated | Added Copper, Mithril, Reagents; basic EMM source resource gates; terrain and rates approximate |
 | Hero units and world spells | Partial, untested | Lucian added as Doviello's starting hero; hero powers and world spells still deferred |
-| Mana nodes, spells, caster progression | Partial, untested | Channeling marker promotions; Adept → Mage → Archmage upgrade; no spells or mana magic |
+| Mana nodes, spells, caster progression | Partial, node gameplay pending | Raw Mana and 21 EMM-source sphere Mana resources/nodes now defined with school tech gates; Adepts build sphere nodes; Adept → Mage → Archmage present; spellcasting and sphere promotions deferred |
 | Religions and alignment | Not implemented | Later milestone |
 | Armageddon Counter | Not implemented | Engine feasibility unknown |
 | Lairs and random events | Approximated | Two generic ruins rewards |
@@ -65,3 +65,7 @@ Following user feedback that the original square badges appeared cramped inside 
 ### Original flag-based transparent civilization emblems — October 21, 2026
 
 Replaced the 19 previously gameplay-verified color-backed circular civilization button portraits with original FfH2 **team-color flag symbols** extracted from user-supplied `assets.zip` (`pak0.fpk`). Each source `art/interface/teamcolor/<civ>flag.dds` is listed with its SHA-256 in [the emblem provenance ledger](data/erebus-civilization-emblems.json). Calabim and Illians required inverse-alpha correction; Elohim required removing opaque strips. The final icons are transparent white `Images.Emblems/NationIcons/<nation>.png` rendered by Unciv with the nation's inner-color tint and native outer-color circle. All old `NationPortraits` emblems were deleted. The separate Android atlas was regenerated; the leader atlas and gameplay rules remain unchanged. **New artwork pending user Android verification**; earlier cleaned circular buttons were user-verified.
+
+### Mana node foundation — October 23, 2026
+
+Added sparse Raw Mana map resource, all 21 EMM-source mana types (non-spawning strategic resources), 21 matching buildable sphere nodes, and Adept construction actions. Each node requires the source school technology and an unimproved Raw Mana tile, and produces one strategic sphere Mana through Unciv's improvement resource-supply unique. Source technology mapping, 17-turn approximate construction time, and static verification are documented in [mana node QA](mana-nodes.md). This has not yet been Android gameplay-verified; spells, mana-to-promotion unlocks, and EMM node conversion are still deferred.
