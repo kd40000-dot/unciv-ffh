@@ -14,6 +14,10 @@ The **19 playable civilization leaders now have distinct introductions, neutral/
 
 All 19 playable civilizations now use **the original transparent faction symbols** from the `art/interface/teamcolor/*flag.dds` files in the user's extracted `pak0.fpk` (`assets.zip`). These are native `NationIcons`: Unciv draws its standard faction-colored circular background and tints the symbols, without any second disc, square badge or border. The dedicated `emblems.png`/`emblems.atlas` is included in `Atlases.json`, preserving the previously gameplay-verified leader portraits. [Original DDS provenance, exceptions and testing](docs/civilization-emblems.md). **Android gameplay test of this replacement version pending.** The previous cleaned circular-button emblems were gameplay-verified before the original-flag replacement.
 
+## Mana-node foundation (October 23, 2026)
+
+Added Raw Mana map deposits, all **21** EMM sphere Mana resources and improvements, and source-technology-gated **Adept** node construction. Each finished node supplies one sphere Mana resource to the owning empire; spell effects and sphere promotions remain the next milestones. Native Unciv `mod-ci` and source-mapping checks passed; Android gameplay test pending. See [mana-node mechanics and QA](docs/mana-nodes.md).
+
 ## First early-game slice
 
 Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
