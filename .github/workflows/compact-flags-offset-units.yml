@@ -1,6 +1,9 @@
 name: Compact flags and offset AmuritesSimple units
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/compact-flags-offset-units.yml'
 permissions:
   contents: write
 jobs:
