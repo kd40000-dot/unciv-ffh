@@ -1066,5 +1066,36 @@
         "text": "Requires Channeling I and Enchantment Mana. Cast Enchanted Blade to grant the caster a 2-turn aura that gives friendly Sword-class troops within one tile +20% combat Strength. Casting costs all movement; the caster survives. This is a deliberately temporary proximity-based approximation, not EMM's permanent melee-unit Enchanted Blade promotion or Rusted removal."
       }
     ]
+  },
+  {
+    "name": "Treetop Tactics",
+    "unitTypes": [],
+    "uniques": [
+      "[+10]% Strength <when fighting in [Forest] tiles>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary forest-combat enhancement granted by Nature I. +10% Strength when fighting in Forest tiles. EMM additionally grants withdrawal chance, boosts Ancient Forest fighting more strongly, and can benefit other valid friendly units; these are not simulated in the current mod-only implementation."
+      }
+    ]
+  },
+  {
+    "name": "Nature I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Nature Mana]>",
+      "[This Unit] gains the [Treetop Tactics] status for [2] turn(s) <for all movement> <with [Nature Mana]> <in [Forest] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Requires Channeling I and Nature Mana. Cast Treetop Tactics while standing in Forest to gain a two-turn temporary +10% Strength bonus when fighting on Forest tiles. Casting consumes all movement but not the caster or Mana. This is a self-cast approximation of EMM's forest-limited Treetop Tactics spell."
+      }
+    ]
   }
 ]
