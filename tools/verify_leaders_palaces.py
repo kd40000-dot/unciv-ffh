@@ -15,9 +15,9 @@ assert ref["commit"]==civs["commit"]==source["commit"]=="60b0ec3740083162aaab7bf
 traits=ref["traits"]
 assert len(ref["palaceSources"])==19 and len(buildings)==76 and len(nations)==20
 effects={
-    "TRAIT_FINANCIAL":["[+25]% Gold [in all cities]"],
-    "TRAIT_CREATIVE":["[+2 Culture] [in all cities]","[+10]% Culture [in all cities]"],
-    "TRAIT_INGENUITY":["[-50]% Gold cost of upgrading","Gain [50] Gold"],
+    "TRAIT_FINANCIAL":["[+25]% [Gold] [in all cities]"],
+    "TRAIT_CREATIVE":["[+2 Culture] [in all cities]","[+10]% [Culture] [in all cities]"],
+    "TRAIT_INGENUITY":["[-50]% Gold cost of upgrading","Gain [50] [Gold]"],
     "TRAIT_AGGRESSIVE":[f"All newly-trained [{category}] units [in all cities] receive the [Combat I] promotion"
       for category in ("Sword","Mounted","Scout","Magic","Archery","Disciple")],
     "TRAIT_ARCANE":["All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"],
