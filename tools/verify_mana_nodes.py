@@ -36,9 +36,9 @@ for sphere in ledger["spheres"]:
         "Can only be built to improve a resource",
         "Can only be built on [Raw Mana] tiles",
         "Can only be built on [your] tiles",
-        "Can only be built on [unimproved] tiles",
         f"Provides [1] [{name} Mana]",
     }
+    assert "Can only be built on [unimproved] tiles" not in improvement["uniques"]  # enables direct 17-turn node-to-node replacement
     assert improvement["name"] in raw["improvedBy"]
     assert f"Can build [{name} Node] improvements on tiles" in adept["uniques"]
 assert len([u for u in adept["uniques"] if u.startswith("Can build [") and u.endswith(" Node] improvements on tiles")])==21
@@ -46,4 +46,4 @@ assert [name for name in resources if name.endswith(" Mana") and name!="Raw Mana
     f'{s["name"]} Mana' for s in ledger["spheres"]]
 assert all(not any("Can build ["+s["name"]+" Node]" in u for u in units["Workboat"]["uniques"])
            for s in ledger["spheres"])
-print("OK: 21 EMM sphere prerequisites, Raw Mana placement, 21 exclusive nodes, strategic resource outputs and Adept build abilities")
+print("OK: 21 EMM sphere prerequisites, Raw Mana placement, 21 retunable nodes, strategic resource outputs and Adept build abilities")
