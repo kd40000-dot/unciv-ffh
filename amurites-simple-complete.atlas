@@ -1,0 +1,1260 @@
+Images/TileSets/AmuritesSimple/Units/Generated/Adept-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Adept-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Archer-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Archmage-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Archmage-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Archmage-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Beastmaster-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Beastmaster-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Beastmaster-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Champion-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Champion-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Champion-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Chanter-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Chanter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Chanter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Chariot-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Chariot-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Chariot-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Crossbowman-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Crossbowman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Crossbowman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Firebow-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Firebow-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Firebow-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Horse Archer-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Horse Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Horse Archer-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Horseman-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Horseman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Horseman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Hunter-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Hunter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Hunter-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Immortal-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Immortal-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Marksman-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Marksman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Marksman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Phalanx-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Phalanx-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Phalanx-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Ranger-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Ranger-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Ranger-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Scout-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Scout-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Scout-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Swordsman-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Swordsman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Swordsman-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Warrior-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Warrior-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Warrior-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Wizard-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Wizard-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Govannon-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Govannon-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Govannon-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Balseraphs.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Balseraphs
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Balseraphs
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Bannor.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Bannor
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Bannor
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Calabim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Calabim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Calabim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Clan of Embers.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Clan of Embers
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Clan of Embers
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Doviello.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Doviello
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Doviello
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Elohim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Elohim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Elohim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Grigori.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Grigori
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Grigori
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Hippus.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Hippus
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Hippus
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Illians.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Illians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Illians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Khazad.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Khazad
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Khazad
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Kuriotates.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Kuriotates
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Kuriotates
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Lanun.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Lanun
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Lanun
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Ljosalfar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Ljosalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Ljosalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Luchuirp.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Luchuirp
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Luchuirp
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Malakim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Malakim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Malakim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Sheaim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Sheaim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Sheaim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Sidar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Sidar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Sidar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Svartalfar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Svartalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Svartalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Worker-Barbarians.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Worker-Barbarians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Worker-Barbarians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Amurites.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Amurites
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Balseraphs.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Balseraphs
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Balseraphs
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Bannor.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Bannor
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Bannor
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Calabim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Calabim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Calabim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Clan of Embers.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Clan of Embers
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Clan of Embers
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Doviello.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Doviello
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Doviello
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Elohim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Elohim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Elohim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Grigori.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Grigori
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Grigori
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Hippus.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Hippus
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Hippus
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Illians.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Illians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Illians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Khazad.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Khazad
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Khazad
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Kuriotates.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Kuriotates
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Kuriotates
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Lanun.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Lanun
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Lanun
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Ljosalfar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Ljosalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Ljosalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Luchuirp.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Luchuirp
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Luchuirp
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Malakim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Malakim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Malakim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Sheaim.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Sheaim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Sheaim
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Sidar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Sidar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Sidar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Svartalfar.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Svartalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Svartalfar
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Images/TileSets/AmuritesSimple/Units/Generated/Settler-Barbarians.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+TileSets/AmuritesSimple/Units/Settler-Barbarians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Settler-Barbarians
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
