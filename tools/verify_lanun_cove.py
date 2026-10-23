@@ -73,5 +73,5 @@ for name,previous,tech,price,food,production,gold,science,defense in tiers:
     assert workboat["uniques"].count(action)==1,(name,action)
     assert not any(action in u.get("uniques",[]) for u in units if u["name"]!="Workboat")
 assert len([u for u in workboat["uniques"] if "Can instantly construct a [Pirate" in u])==3
-assert len(improvements)==23 and len(units)==102
+assert len(improvements)==44 and len(units)==103
 print("OK: all 3 Lanun Cove upgrades verified: Workboat gold costs/consumption, Sailing/Optics gates, sequential existing-tile replacement, yields and defenses")
