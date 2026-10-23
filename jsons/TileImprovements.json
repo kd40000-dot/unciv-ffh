@@ -361,12 +361,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Air Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Air Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's AIR mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Air Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's AIR mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -379,12 +378,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Body Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Body Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's BODY mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Body Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's BODY mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -397,12 +395,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Chaos Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Chaos Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's CHAOS mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Chaos Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's CHAOS mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -415,12 +412,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Creation Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Creation Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's CREATION mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Creation Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's CREATION mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -433,12 +429,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Death Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Death Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DEATH mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Death Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DEATH mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -451,12 +446,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Dimensional Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Dimensional Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DIMENSIONAL mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Dimensional Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DIMENSIONAL mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -469,12 +463,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Earth Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Earth Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's EARTH mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Earth Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's EARTH mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -487,12 +480,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Enchantment Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Enchantment Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's ENCHANTMENT mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Enchantment Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's ENCHANTMENT mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -505,12 +497,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Entropy Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Entropy Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's ENTROPY mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Entropy Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's ENTROPY mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -523,12 +514,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Fire Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Fire Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's FIRE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Fire Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's FIRE mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -541,12 +531,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Force Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Force Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's FORCE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Force Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's FORCE mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -559,12 +548,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Ice Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Ice Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's ICE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Ice Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's ICE mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -577,12 +565,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Law Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Law Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's LAW mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Law Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's LAW mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -595,12 +582,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Life Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Life Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's LIFE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Life Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's LIFE mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -613,12 +599,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Metamagic Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Metamagic Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Sorcery. This represents EMM's METAMAGIC mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Metamagic Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Sorcery. This represents EMM's METAMAGIC mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -631,12 +616,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Mind Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Mind Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's MIND mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Mind Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's MIND mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -649,12 +633,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Nature Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Nature Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's NATURE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Nature Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's NATURE mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -667,12 +650,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Spirit Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Spirit Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SPIRIT mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Spirit Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SPIRIT mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -685,12 +667,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Water Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Water Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's WATER mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Water Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's WATER mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -703,12 +684,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Shadow Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Shadow Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's SHADOW mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Shadow Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's SHADOW mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
@@ -721,12 +701,11 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Can only be built on [unimproved] tiles",
       "Provides [1] [Sun Mana]"
     ],
     "civilopediaText": [
       {
-        "text": "Converts an unimproved Raw Mana source into one Sun Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SUN mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+        "text": "Attunes a Raw Mana source into one Sun Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SUN mana build (1200 construction units; compared to a 500-unit Farm). An Adept can replace an existing mana node by constructing this node on top of it. Only the final node's mana resource is produced."
       }
     ]
   },
