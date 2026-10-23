@@ -40,8 +40,12 @@ for sphere in ledger["spheres"]:
     }
     assert "Can only be built on [unimproved] tiles" not in improvement["uniques"]  # enables direct 17-turn node-to-node replacement
     assert improvement["name"] in raw["improvedBy"]
-    assert f"Can build [{name} Node] improvements on tiles" in adept["uniques"]
-assert len([u for u in adept["uniques"] if u.startswith("Can build [") and u.endswith(" Node] improvements on tiles")])==21
+    for caster_name in ("Adept", "Wizard", "Mage", "Archmage"):
+        assert f"Can build [{name} Node] improvements on tiles" in units[caster_name]["uniques"]
+for caster_name in ("Adept", "Wizard", "Mage", "Archmage"):
+    caster=units[caster_name]
+    assert caster["unitType"]=="Magic"
+    assert len([u for u in caster["uniques"] if u.startswith("Can build [") and u.endswith(" Node] improvements on tiles")])==21
 assert [name for name in resources if name.endswith(" Mana") and name!="Raw Mana"]==[
     f'{s["name"]} Mana' for s in ledger["spheres"]]
 assert all(not any("Can build ["+s["name"]+" Node]" in u for u in units["Workboat"]["uniques"])
