@@ -313,5 +313,322 @@
     "uniques": [
       "Generated on every [50] tiles <in [Grassland] tiles>"
     ]
+  },
+  {
+    "name": "Raw Mana",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Desert",
+      "Tundra",
+      "Snow",
+      "Hill",
+      "Marsh"
+    ],
+    "improvedBy": [
+      "Air Node",
+      "Body Node",
+      "Chaos Node",
+      "Creation Node",
+      "Death Node",
+      "Dimensional Node",
+      "Earth Node",
+      "Enchantment Node",
+      "Entropy Node",
+      "Fire Node",
+      "Force Node",
+      "Ice Node",
+      "Law Node",
+      "Life Node",
+      "Metamagic Node",
+      "Mind Node",
+      "Nature Node",
+      "Spirit Node",
+      "Water Node",
+      "Shadow Node",
+      "Sun Node"
+    ],
+    "uniques": [
+      "Generated on every [60] tiles <in [Hill] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Unfocused source of magical power. An Adept may attune this resource with a sphere-specific Mana Node improvement after learning the corresponding school of magic. The resulting improvement supplies one sphere Mana resource to your empire. Raw Mana does not itself grant a spell or sphere promotion."
+      }
+    ]
+  },
+  {
+    "name": "Air Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Air Mana is gathered from a Air Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Air sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Body Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Body Mana is gathered from a Body Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Body sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Chaos Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Chaos Mana is gathered from a Chaos Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Chaos sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Creation Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Creation Mana is gathered from a Creation Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Creation sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Death Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Death Mana is gathered from a Death Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Death sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dimensional Mana is gathered from a Dimensional Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Dimensional sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Earth Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth Mana is gathered from a Earth Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Earth sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment Mana is gathered from a Enchantment Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Enchantment sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Entropy Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Entropy Mana is gathered from a Entropy Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Entropy sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Fire Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire Mana is gathered from a Fire Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Fire sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Force Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Force Mana is gathered from a Force Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Force sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Ice Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Mana is gathered from a Ice Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Ice sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Law Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Law Mana is gathered from a Law Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Law sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Life Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Life Mana is gathered from a Life Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Life sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Metamagic Mana is gathered from a Metamagic Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Metamagic sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Mind Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mind Mana is gathered from a Mind Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Mind sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Nature Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nature Mana is gathered from a Nature Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Nature sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit Mana is gathered from a Spirit Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Spirit sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Water Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Mana is gathered from a Water Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Water sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow Mana is gathered from a Shadow Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Shadow sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
+  },
+  {
+    "name": "Sun Mana",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Doesn't generate naturally"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sun Mana is gathered from a Sun Node on an improved Raw Mana tile. It is an empire-wide strategic resource reserved for future Sun sphere spell and promotion requirements; merely owning it does not yet grant spells."
+      }
+    ]
   }
 ]
