@@ -33,6 +33,7 @@ for sphere in ledger["spheres"]:
     assert improvement["turnsToBuild"]==17
     assert improvement["terrainsCanBeBuiltOn"]==[]
     assert set(improvement["uniques"])=={
+        "Can only be built to improve a resource",
         "Can only be built on [Raw Mana] tiles",
         "Can only be built on [your] tiles",
         "Can only be built on [unimproved] tiles",
