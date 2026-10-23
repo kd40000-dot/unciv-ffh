@@ -1,6 +1,6 @@
 # Mana nodes — first playable magic foundation
 
-**Implementation date:** October 23, 2026. **Status:** Mod definitions committed, CI static verification pending, not yet user gameplay-verified.
+**Implementation date:** October 23, 2026. **Status:** Mod definitions committed, independent 21-sphere source verification passed and official Unciv `mod-ci` validation passed on October 23, 2026; not yet user gameplay-verified.
 
 **Pinned EMM Continued source:** [commit `60b0ec3740083162aaab7bf8491761a54a65a610`](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610). `XML/Terrain/CIV4BonusInfos.xml` contains the Raw Mana and 21 sphere Mana bonus IDs; `XML/Terrain/CIV4ImprovementInfos.xml` contains 21 sphere improvements; `XML/Units/CIV4BuildInfos.xml` contains their tech gates and iTime=1200 build cost. [Machine-readable fidelity ledger](data/emm-mana-nodes.json).
 
