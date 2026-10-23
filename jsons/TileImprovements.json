@@ -351,5 +351,383 @@
       "Excluded from map editor"
     ],
     "shortcutKey": "."
+  },
+  {
+    "name": "Air Node",
+    "techRequired": "Elementalism",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Air Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Air Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's AIR mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Body Node",
+    "techRequired": "Alteration",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Body Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Body Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's BODY mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Chaos Node",
+    "techRequired": "Necromancy",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Chaos Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Chaos Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's CHAOS mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Creation Node",
+    "techRequired": "Divination",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Creation Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Creation Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's CREATION mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Death Node",
+    "techRequired": "Necromancy",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Death Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Death Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DEATH mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional Node",
+    "techRequired": "Necromancy",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Dimensional Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Dimensional Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's DIMENSIONAL mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Earth Node",
+    "techRequired": "Elementalism",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Earth Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Earth Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's EARTH mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment Node",
+    "techRequired": "Alteration",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Enchantment Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Enchantment Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's ENCHANTMENT mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Entropy Node",
+    "techRequired": "Necromancy",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Entropy Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Entropy Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's ENTROPY mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Fire Node",
+    "techRequired": "Elementalism",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Fire Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Fire Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's FIRE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Force Node",
+    "techRequired": "Alteration",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Force Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Force Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's FORCE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Ice Node",
+    "techRequired": "Elementalism",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Ice Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Ice Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's ICE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Law Node",
+    "techRequired": "Divination",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Law Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Law Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's LAW mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Life Node",
+    "techRequired": "Alteration",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Life Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Life Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's LIFE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic Node",
+    "techRequired": "Sorcery",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Metamagic Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Metamagic Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Sorcery. This represents EMM's METAMAGIC mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Mind Node",
+    "techRequired": "Divination",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Mind Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Mind Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's MIND mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Nature Node",
+    "techRequired": "Alteration",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Nature Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Nature Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Alteration. This represents EMM's NATURE mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Node",
+    "techRequired": "Divination",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Spirit Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Spirit Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SPIRIT mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Water Node",
+    "techRequired": "Elementalism",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Water Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Water Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Elementalism. This represents EMM's WATER mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Node",
+    "techRequired": "Necromancy",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Shadow Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Shadow Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Necromancy. This represents EMM's SHADOW mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Sun Node",
+    "techRequired": "Divination",
+    "turnsToBuild": 17,
+    "terrainsCanBeBuiltOn": [],
+    "uniques": [
+      "Can only be built on [Raw Mana] tiles",
+      "Can only be built on [your] tiles",
+      "Can only be built on [unimproved] tiles",
+      "Provides [1] [Sun Mana]",
+      "Pillaging this improvement yields approximately [+0 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Converts an unimproved Raw Mana source into one Sun Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SUN mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
+      }
+    ]
   }
 ]
