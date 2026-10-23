@@ -16,7 +16,7 @@ assert [x["sourceId"] for x in source["stages"]]==[
 assert [x["sourceYields"] for x in source["stages"]]==[[0,0,2],[1,1,3],[2,2,4]]
 assert [x["upgradeTime"] for x in source["stages"]]==[10,20,0]
 assert [x["defensePercent"] for x in source["stages"]]==[10,20,30]
-assert [x["implemented"] for x in source["stages"]]==[True,False,False]
+assert [x["implemented"] for x in source["stages"]]==[True,True,True]
 assert source["spell"]["sourceUnit"]=="UNIT_WORKBOAT"
 assert source["spell"]["civilization"]=="CIVILIZATION_LANUN"
 assert source["spell"]["creates"]=="IMPROVEMENT_PIRATE_COVE"
