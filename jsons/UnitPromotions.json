@@ -1016,5 +1016,24 @@
         "text": "Body I requires Channeling I and access to Body Mana when learning the promotion. Cast Haste to grant the caster the Hasted (+1 Movement) status for 2 turns by spending all current movement. Standard Unciv unit action targeting cannot reproduce EMM's group-wide friendly-unit Haste effect, nor automatic Slow removal."
       }
     ]
+  },
+  {
+    "name": "Water I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Water Mana]>",
+      "Turn this tile into a [Plains] tile <for all movement> <with [Water Mana]> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles> <in tiles without [Flood plains]>",
+      "Remove [Smoke] improvements from this tile <for all movement> <with [Water Mana]> <in [Smoke] tiles> <in [your] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water I (Channeling I; Water Mana required) grants Spring: on an owned unimproved Desert tile without Flood plains, use its terrain conversion action to turn the tile to Plains, spending all movement. It can also extinguish a Smoke improvement beneath the caster as a separate action. Unlike EMM's Spring, smoke removal does not extend to adjacent tiles; terrain-changing on improved, foreign, and Flood plains tiles is disabled for safety."
+      }
+    ]
   }
 ]
