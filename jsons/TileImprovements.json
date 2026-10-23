@@ -729,5 +729,24 @@
         "text": "Converts an unimproved Raw Mana source into one Sun Mana resource for your empire. An Adept must work on this node for 17 base turns after you research Divination. This represents EMM's SUN mana build (1200 construction units; compared to a 500-unit Farm). Mana spellcasting is not yet implemented."
       }
     ]
+  },
+  {
+    "name": "Smoke",
+    "terrainsCanBeBuiltOn": [
+      "Forest",
+      "Jungle"
+    ],
+    "turnsToBuild": -1,
+    "uniques": [
+      "Can only be built on [unimproved] tiles",
+      "Can only be built on [your] tiles",
+      "Adjacent enemy units ending their turn take [5] damage",
+      "Will not be replaced by automated units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Created by Blaze (Fire I): scorched smoke on an unimproved friendly forest or jungle tile. Enemy units ending a turn next to Smoke take 5 damage. This is a permanent battlefield-hazard approximation; EMM has spreading flames and smoke behavior which Unciv does not implement automatically. Replace Smoke with another improvement to remove it."
+      }
+    ]
   }
 ]
