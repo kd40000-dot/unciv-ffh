@@ -1,6 +1,6 @@
 # Water I → Spring — third playable level-I spell
 
-**Status:** Implemented October 23, 2026; static assertions and official Unciv `mod-ci` validation required; **not yet Android gameplay-verified**.
+**Status:** Implemented October 23, 2026; static assertions and official Unciv `mod-ci` validation passed; **gameplay-verified by user on October 23, 2026**.
 
 **Pinned source:** ExtraModMod Continued commit `60b0ec3740083162aaab7bf8491761a54a65a610`:
 - `XML/Units/CIV4PromotionInfos.xml`: `PROMOTION_WATER1` requires Channeling I and Water Mana.
