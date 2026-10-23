@@ -99,10 +99,9 @@
     }
   ],
   "limitations": [
-    "Unciv effects appear as conditional civilization bonuses rather than dynamically assigned city buildings.",
-    "Khazad Vault state labels are documented but not currently shown as city buildings.",
-    "Civ IV health/civic upkeep and other gameplay mechanics remain outside scope.",
-    "In-game timing of conditional stat recomputation on non-turn gold spending is not yet confirmed."
+    "Seven physical stage buildings now exist and swap at Khazad turn start and when founding a city; Gold spent or gained during a turn does not instantly replace the visible building.",
+    "Android gameplay verification of the new building swapping, city Happiness/Production attribution, save/reload, and conquest is outstanding.",
+    "Seven stage icons are original generated replacements, not original EMM DDS artwork."
   ],
-  "notes": "Countables Stats reads reserve, not per-turn income. Gold is civ-wide even in city game context; Cities counts civ-owned cities. floor() avoids expression roundToInt() falsely advancing stages. Each tier uses mutually exclusive numeric conditions and effects are per city."
+  "notes": "This JSON captures authoritative pinned EMM threshold/source values; its tiers[].uniques array records the previously proven conditional nation-level formula for reference, not effects still present on Khazad Nation. The current mod places exact source effects on seven city buildings and uses 38 complementary <upon turn start> / <upon founding a city> remove/grant uniques. See docs/khazad-vaults.md."
 }
