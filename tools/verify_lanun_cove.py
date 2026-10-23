@@ -49,6 +49,29 @@ expected={
 }
 assert set(cove.get("uniques",[]))==expected
 assert "Lanun" in {n["name"] for n in nations}
-assert "Pirate Harbor" not in byimprovement and "Pirate Port" not in byimprovement
-assert len(improvements)==21 and len(units)==102
-print("OK: Lanun Workboat can create one source-derived, nation-locked Pirate Cove; 3 stage source ledgers preserved; unsupported upgrades deferred")
+# Native improvement actions are priced, consume their Workboat, and respect the
+# target improvement's required technology and immediate-previous-stage filter.
+tiers=[
+    ("Pirate Harbor","Pirate Cove","Sailing",100,1,1,2,1,20),
+    ("Pirate Port","Pirate Harbor","Optics",200,2,2,2,2,30)
+]
+for name,previous,tech,price,food,production,gold,science,defense in tiers:
+    imp=byimprovement[name]
+    assert imp["uniqueTo"]=="Lanun" and imp["terrainsCanBeBuiltOn"]==["Coast"]
+    assert imp["techRequired"]==tech and imp["turnsToBuild"]==-1
+    for field,expected_value in (("food",food),("production",production),("gold",gold),("science",science)):
+        assert imp[field]==expected_value,(name,field)
+    assert set(imp["uniques"]) == {
+        "Can only be built on [your] tiles",
+        "Cannot be built on [resource] tiles",
+        "Must be next to [Land]",
+        f"Can only be built on [{previous}] tiles",
+        f"Gives a defensive bonus of [{defense}]%",
+        "Pillaging this improvement yields approximately [+10 Gold]"
+    },name
+    action=f"Can instantly construct a [{name}] improvement <by consuming this unit> <costs [{price} Gold] stats> <for [Lanun] Civilizations>"
+    assert workboat["uniques"].count(action)==1,(name,action)
+    assert not any(action in u.get("uniques",[]) for u in units if u["name"]!="Workboat")
+assert len([u for u in workboat["uniques"] if "Can instantly construct a [Pirate" in u])==3
+assert len(improvements)==23 and len(units)==102
+print("OK: all 3 Lanun Cove upgrades verified: Workboat gold costs/consumption, Sailing/Optics gates, sequential existing-tile replacement, yields and defenses")
