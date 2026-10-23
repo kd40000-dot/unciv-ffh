@@ -8,9 +8,9 @@
 
 - **Raw Mana** is a map-generated Bonus resource, visible from the start, that marks a convertible arcane source. It is intended to occur sparsely on land, and is not itself a source of Sphere Mana or an executable spell.
 - **21 sphere Mana resources** (Air, Body, Chaos, Creation, Death, Dimensional, Earth, Enchantment, Entropy, Fire, Force, Ice, Law, Life, Metamagic, Mind, Nature, Spirit, Water, Shadow, Sun) are defined as Strategic resources. They never generate directly on the map.
-- **21 sphere Mana Node improvements** exist. Their only valid locations are **unimproved, owned Raw Mana tiles**. Each improvement provides **one unit of its own strategic Sphere Mana** to the empire with native `Provides [1] [Sphere Mana]` and `CityResources.getResourceFromUniqueImprovedTiles` mechanics. Unlike city-generated resources, the node does not need its tile to be worked to supply Mana.
+- **21 sphere Mana Node improvements** exist. Their only valid locations are **owned Raw Mana tiles**. Each improvement provides **one unit of its own strategic Sphere Mana** to the empire with native `Provides [1] [Sphere Mana]` and `CityResources.getResourceFromUniqueImprovedTiles` mechanics. Unlike city-generated resources, the node does not need its tile to be worked to supply Mana.
 - **Adepts** may construct all 21 nodes as normal tile improvements, using standard Unciv build actions and the appropriate technology. Each node takes **17 base turns**, scaled approximately from EMM's 1200 improvement construction points versus EMM's 500 for a Farm (currently Farm = 7 Unciv turns). These are *not* instant actions and do not consume the Adept.
-- **Mutual exclusion** is enforced by the improvement itself: nodes only build on `[unimproved]` raw Mana tiles, so a tile cannot stack multiple different nodes.
+- **One sphere per tile:** A tile has only one improvement at a time. Adepts may **retune** an existing node by building another sphere's node directly over it. The change takes the destination node's full 17-turn construction time and technology requirement. The old mana supply is replaced rather than duplicated; players do not need a remove-improvement action.
 
 ## Sphere-to-technology prerequisites
 
@@ -28,9 +28,9 @@ These are EMM-sourced prerequisites, not arbitrary tiers.
 
 1. Update the mod and **begin a new game**. Locate a **Raw Mana** resource on land (preferably on a Hill). Raw Mana is a new resource, so an older generated map may not have any.
 2. Take ownership of the tile and research **Knowledge of the Ether**, then produce an **Adept**.
-3. Research **Elementalism** and bring the Adept to an **unimproved Raw Mana tile**. It should offer **Fire Node**, **Water Node**, **Air Node**, **Earth Node**, or **Ice Node** as build actions.
+3. Research **Elementalism** and bring the Adept to an **Raw Mana tile**. It should offer **Fire Node**, **Water Node**, **Air Node**, **Earth Node**, or **Ice Node** as build actions.
 4. Choose **Fire Node**; finish the build (17 base turns). Check the tile improvement changes to Fire Node and the empire now has **1 Fire Mana**. The mana is supplied even when the tile isn't worked, but pillaging the node should remove its contribution.
-5. Check that the other four Elementalism spheres remain unbuilt, that Fire Node can't be placed on an ordinary tile, and that a second node cannot be placed atop the Fire Node.
+5. Check that the other four Elementalism spheres remain unbuilt, that Fire Node can't be placed on an ordinary tile, and that a **different** node can be constructed over the Fire Node after the required technology is researched, and the original Fire Mana disappears after replacement.
 6. Research **Alteration, Necromancy, Divination, Sorcery** in turn. Confirm the other 16 node types unlock only after their respective prerequisites and have the same Raw Mana placement rules.
 7. Build another node on a *different* Raw Mana tile and verify that both resource amounts are counted independently. Save/load and check persistence.
 
@@ -48,3 +48,9 @@ EMM sometimes pre-places typed sphere mana directly through civilization-specifi
 - Gameplay unverified: Build a **Body Node** after **Alteration**, ensure **Body Mana** count is 1, grant an Adept enough XP to choose **Body I**, cast the Hasted status action, verify the caster survives, movement is consumed and the temporary +1 Movement disappears after the effect expires. Test lost mana and repeated casts.
 
 See `tools/verify_body_i.py` for source/resource/promotion static assertions.
+
+## Retuning an existing mana node (October 23, 2026)
+
+After user gameplay testing confirmed Fire Node and Body I Haste work, a missing conversion path was reported: there was no way to remove one's own existing Mana Node. We removed the `[unimproved]` tile restriction **only from the 21 sphere Mana Nodes**, preserving their owned Raw Mana tile constraint and technology gates. Move an Adept onto the old node and select a *different* node improvement, such as Body Node over Fire Node. Finish the standard 17-turn construction. Unciv replaces the old improvement with the new one and automatically recalculates its resource supply (Fire Mana −1, Body Mana +1). This avoids a separate demolition action and is not a free/instant conversion.
+
+**Gameplay QA pending:** update the mod, visit your existing Fire Node with an Adept, research Alteration, construct Body Node on the same tile, and check that Fire Mana disappears and Body Mana appears. Verify the old node remains active during construction, that requirements still block locked spheres, and that no resource is duplicated. This changes no unrelated improvements or workers.
