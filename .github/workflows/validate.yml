@@ -47,6 +47,8 @@ jobs:
         run: python3 tools/verify_body_i.py
       - name: Verify Water I Spring spell terrain conversion and extinguishing
         run: python3 tools/verify_water_i.py
+      - name: Verify Enchantment I Enchanted Blade aura
+        run: python3 tools/verify_enchantment_i.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
         run: python3 tools/verify_khazad_vaults.py
       - name: Verify Erebus-specific diplomacy dialogue and provenance
