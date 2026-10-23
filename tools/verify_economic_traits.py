@@ -16,7 +16,7 @@ assert raider["iPillagingGold"]==100
 assert raider["freePromotions"]==["PROMOTION_COMMANDO"]
 assert barbarian["commerceModifiers"]==[0,-10,0]
 RAIDER="100% Yield from pillaging tiles"
-BARBARIAN="[-10]% Science [in all cities]"
+BARBARIAN="[-10]% [Science] [in all cities]"
 selected=civdata["leaderSelections"]
 assert len(selected)==19
 raiders={s["civilization"] for s in selected if "TRAIT_RAIDERS" in s["traits"]}
