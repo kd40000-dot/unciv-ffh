@@ -985,5 +985,36 @@
         "text": "Requires Channeling I and access to Fire Mana when learned. Allows Blaze: ignite an eligible unimproved forest or jungle tile by constructing Smoke on the caster's tile. Casting consumes all movement, but not the caster. Unlike EMM, Unciv does not simulate spreading fire or automatic Smoke expiration."
       }
     ]
+  },
+  {
+    "name": "Hasted",
+    "unitTypes": [],
+    "uniques": [
+      "[+1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary +1 movement status from Body I Haste. Its duration expires automatically. This effect is not a selectable promotion."
+      }
+    ]
+  },
+  {
+    "name": "Body I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Body Mana]>",
+      "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement> <with [Body Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Body I requires Channeling I and access to Body Mana when learning the promotion. Cast Haste to grant the caster the Hasted (+1 Movement) status for 2 turns by spending all current movement. Standard Unciv unit action targeting cannot reproduce EMM's group-wide friendly-unit Haste effect, nor automatic Slow removal."
+      }
+    ]
   }
 ]
