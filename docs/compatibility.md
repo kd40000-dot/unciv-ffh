@@ -38,7 +38,7 @@ The Lanun Workboat can now place a **Pirate Cove** on an unoccupied, un-improved
 
 ### Water I Spring — October 23, 2026
 
-Implemented Water I promotion gated by Water Mana and Channeling I, with two native spell-like trigger actions: transform owned unimproved Desert to Plains, or extinguish Smoke on the caster's tile. Each action consumes all current movement. This reproduces EMM's basic Desert→Plains terraforming and local Smoke extinguishing but **not** adjacent-tile extinguishing, spreading flames, or unrestricted terraforming. The terrain/Smoke interactions have passed static checks and Unciv mod-ci; Android gameplay confirmation is pending. See [Water I Spring details and QA](water-i-spring.md).
+Implemented Water I promotion gated by Water Mana and Channeling I, with two native spell-like trigger actions: transform owned unimproved Desert to Plains, or extinguish Smoke on the caster's tile. Each action consumes all current movement. This reproduces EMM's basic Desert→Plains terraforming and local Smoke extinguishing but **not** adjacent-tile extinguishing, spreading flames, or unrestricted terraforming. The terrain/Smoke interactions passed static checks and Unciv mod-ci; the user confirmed Spring works in-game on October 23, 2026. See [Water I Spring details and QA](water-i-spring.md).
 
 ### Khazad seven-stage Dwarven Vault buildings — October 23, 2026
 
