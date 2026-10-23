@@ -123,6 +123,58 @@
     ]
   },
   {
+    "name": "Pirate Harbor",
+    "terrainsCanBeBuiltOn": [
+      "Coast"
+    ],
+    "uniqueTo": "Lanun",
+    "techRequired": "Sailing",
+    "turnsToBuild": -1,
+    "food": 1,
+    "production": 1,
+    "gold": 2,
+    "science": 1,
+    "uniques": [
+      "Can only be built on [your] tiles",
+      "Cannot be built on [resource] tiles",
+      "Must be next to [Land]",
+      "Can only be built on [Pirate Cove] tiles",
+      "Gives a defensive bonus of [20]%",
+      "Pillaging this improvement yields approximately [+10 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lanun upgrade to an existing Pirate Cove. Requires Sailing, a new Workboat, and 100 Gold. It cannot be placed directly on empty coast. Replaces the Cove; +1 Food, +1 Production, +2 Gold, +1 Science, and +20% defensive bonus."
+      }
+    ]
+  },
+  {
+    "name": "Pirate Port",
+    "terrainsCanBeBuiltOn": [
+      "Coast"
+    ],
+    "uniqueTo": "Lanun",
+    "techRequired": "Optics",
+    "turnsToBuild": -1,
+    "food": 2,
+    "production": 2,
+    "gold": 2,
+    "science": 2,
+    "uniques": [
+      "Can only be built on [your] tiles",
+      "Cannot be built on [resource] tiles",
+      "Must be next to [Land]",
+      "Can only be built on [Pirate Harbor] tiles",
+      "Gives a defensive bonus of [30]%",
+      "Pillaging this improvement yields approximately [+10 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lanun upgrade to an existing Pirate Harbor. Requires Optics, a new Workboat, and 200 Gold. It cannot skip the Harbor stage. Replaces the Harbor; +2 Food, +2 Production, +2 Gold, +2 Science, and +30% defensive bonus."
+      }
+    ]
+  },
+  {
     "name": "Fort",
     "terrainsCanBeBuiltOn": [
       "Plains",
