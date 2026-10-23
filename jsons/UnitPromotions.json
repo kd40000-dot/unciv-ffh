@@ -1035,5 +1035,36 @@
         "text": "Water I (Channeling I; Water Mana required) grants Spring: on an owned unimproved Desert tile without Flood plains, use its terrain conversion action to turn the tile to Plains, spending all movement. It can also extinguish a Smoke improvement beneath the caster as a separate action. Unlike EMM's Spring, smoke removal does not extend to adjacent tiles; terrain-changing on improved, foreign, and Flood plains tiles is disabled for safety."
       }
     ]
+  },
+  {
+    "name": "Enchanted Blade Aura",
+    "unitTypes": [],
+    "uniques": [
+      "[20]% Strength bonus for [Sword] units within [1] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary Enchanted Blade approximation. Friendly Sword-class units within one tile of the caster receive +20% Strength while the aura is active; the bonus disappears when the status expires or they leave the area. EMM instead grants a removable lasting Enchanted Blade promotion to friendly melee units and cures Rusted."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Enchantment Mana]>",
+      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Requires Channeling I and Enchantment Mana. Cast Enchanted Blade to grant the caster a 2-turn aura that gives friendly Sword-class troops within one tile +20% combat Strength. Casting costs all movement; the caster survives. This is a deliberately temporary proximity-based approximation, not EMM's permanent melee-unit Enchanted Blade promotion or Rusted removal."
+      }
+    ]
   }
 ]
