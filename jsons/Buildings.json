@@ -1055,7 +1055,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1073,7 +1074,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1090,7 +1092,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1108,7 +1111,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1129,7 +1133,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1150,7 +1155,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
@@ -1171,7 +1177,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Unsellable",
-      "Destroyed when city captured"
+      "Destroyed when the city is captured",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
