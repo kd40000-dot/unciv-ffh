@@ -51,8 +51,9 @@ for stage in stages:
     assert built["cost"] == 0 and built.get("maintenance", 0) == 0
     assert built.get("happiness", 0) == stage["happiness"]
     assert built.get("percentStatBonus", {}).get("production", 0) == stage["productionPercent"]
-    for required_unique in ("Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when city captured"):
+    for required_unique in ("Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when the city is captured"):
         assert required_unique in built["uniques"], (stage["name"], required_unique)
+    assert "Suppress warning [is both granted free and could possibly be removed by triggers]" in built["uniques"]
     assert built["civilopediaText"], stage["name"]
 
 khazad = by_nation["Khazad"]
