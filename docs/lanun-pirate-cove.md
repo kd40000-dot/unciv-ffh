@@ -1,47 +1,48 @@
-# Lanun Pirate Cove: first playable faction improvement
+# Lanun Pirate Cove → Pirate Harbor → Pirate Port
 
-**Source:** [ExtraModMod Continued commit 60b0ec3740083162aaab7bf8491761a54a65a610](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610). Compared `XML/Units/CIV4SpellInfos.xml` (`SPELL_PIRATE_COVE`), `XML/Terrain/CIV4ImprovementInfos.xml` (all three Pirate stages), and `python/entrypoints/CvSpellInterface.py` (`reqPirateCove`). Detailed original values are in [the pinned source ledger](data/emm-lanun-pirate-coves.json).
+**Status (October 23, 2026):** All three improvements and the technology-locked, manual Workboat upgrades are implemented as a mod-only alternative to EMM's automatic per-tile maturation. **New upgrades are not yet confirmed in gameplay**, although basic Cove construction was previously user-verified.
 
-## Implemented in this milestone
+**EMM Continued source:** [pinned commit 60b0ec3740083162aaab7bf8491761a54a65a610](https://github.com/bewlay/extramodmod/tree/60b0ec3740083162aaab7bf8491761a54a65a610). Original spell in `XML/Units/CIV4SpellInfos.xml`, stages in `XML/Terrain/CIV4ImprovementInfos.xml`, placement in `python/entrypoints/CvSpellInterface.py`. [Machine-readable source ledger](data/emm-lanun-pirate-coves.json).
 
-**Lanun Workboats** gain the native Unciv action **Create Pirate Cove**, using `Can instantly construct a [Pirate Cove] improvement <by consuming this unit> <for [Lanun] Civilizations>`. The Workboat is *the existing UNIT_WORKBOAT* (Fishing, cost 30, movement 2); no fictional unit type or free construction is created.
+## Three distinct tile improvements
 
-The new `Pirate Cove` tile improvement is **uniqueTo: Lanun** and has **turnsToBuild: -1** (blocks normal worker construction; the separate consuming special action places it instantly). It enforces these EMM source placement requirements using Unciv's improvement rules:
+| Stage | Required technology | Action cost | Workboat consumed | Food | Production | Gold | Science | Defense |
+| --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| Pirate Cove | Fishing (for the Workboat) | 0 Gold | 1 | 0 | 0 | +1 | +1 | +10% |
+| Pirate Harbor | Sailing | 100 Gold | 1 | +1 | +1 | +2 | +1 | +20% |
+| Pirate Port | Optics | 200 Gold | 1 | +2 | +2 | +2 | +2 | +30% |
 
-- Coast only
-- In the player's own territory (not outside borders)
-- Empty/unimproved tile
-- No visible resource
-- Next to a land tile
-- The workboat is consumed by the special creation action
+All rows are **improvement yields in addition to base Coast yields**. EMM Commerce progression 2→3→4 becomes Gold+Science 1+1→2+1→2+2. These yield values match the original Food and Production. The upgrade costs and technology gates are intentional balance adjustments and **not** in the original EMM maturation system.
 
-The source Cove has yields [0 Food, 0 Production, 2 Commerce], +10% defense, and 10 pillage Gold. The Unciv Cove grants **+1 Gold and +1 Science**, a documented 50/50 proxy for the original adjustable Commerce; the +10% defense is direct, and pillage loot is approximately +10 Gold in Unciv's random-loot system.
+**Total investment for a Pirate Port starting from bare Coast: 300 Gold plus three Workboats (30 Production each, total 90 base Production), and research of Fishing, Sailing and Optics.**
 
-## Source-only follow-on stages (not active yet)
+## How the mod-only upgrade works
 
-| Stage | Original yields: Food / Production / Commerce | Defense | Upgrade after |
-| --- | --- | --- | --- |
-| Pirate Cove | 0 / 0 / 2 | +10% | 10 turns → Pirate Harbor |
-| Pirate Harbor | 1 / 1 / 3 | +20% | 20 turns → Pirate Port |
-| Pirate Port | 2 / 2 / 4 | +30% | Final stage |
+All three stages are distinct, Lanun-exclusive `TileImprovements.json` entries. A Workboat has three native `Can instantly construct a [stage] improvement` actions.
 
-EMM evolves these improvements automatically by time since **the tile improvement was constructed**. Stock Unciv lacks a JSON field implementing that per-tile timed upgrade, so only **Pirate Cove** is available in-game. The Harbor and Port are inventoried, not invented as buildable replacements; the lack of maturation significantly understates the late-game Lanun improvement economy.
+1. Build the original Cove on eligible owned Coast adjacent to Land and lacking a visible resource/improvement. This immediately consumes the first Workboat.
+2. After **Sailing**, bring a new Workboat **onto the existing Cove tile**. The special `Create Pirate Harbor` action requires `Can only be built on [Pirate Cove] tiles`. It deducts **100 Gold**, consumes the Workboat, and replaces the Cove with a Harbor.
+3. After **Optics**, bring another Workboat onto the **Pirate Harbor**. The `Create Pirate Port` action requires `Can only be built on [Pirate Harbor] tiles`, deducts **200 Gold**, consumes the Workboat, and replaces the Harbor with the final Port.
 
-EMM also checks every tile in a **5-by-5 coordinate square around the target** and blocks construction if another Pirate Cove, Harbor, or Port exists. Unciv has no verified `improvement within radius` placement restriction, so this spacing rule is **not enforced**. Avoid spamming multiple Coves close together if you want source-faithful play.
+No direct Cove→Port skip: `Pirate Port` explicitly requires the Harbor stage on that tile. No Harbor/Port can be placed on empty Coast. All three stages use `turnsToBuild: -1` so regular build commands cannot manufacture them; the Workboat's instant-build action is what places them. All actions are Lanun-only.
 
-The engine's `unimproved` filter may treat a pillaged improvement as unimproved, whereas EMM rejects tiles with an improvement already present. Replacing a pillaged improvement is therefore another known edge-case limitation.
+Unciv's implementation of `ConstructImprovementInstantly` checks the improvement's required technology and its tile placement rules, then `UnitActionModifiers` checks/deducts the `<costs [N Gold] stats>` action fee. The `<by consuming this unit>` modifier destroys the Workboat. `TileImprovementFunctions.setImprovement()` installs the new improvement, replacing the prior stage.
 
-## Game test (Android / desktop)
+## Known differences from EMM and open QA
 
-1. Update the mod and **start a fresh game** as **Lanun** with coastal access.
-2. Research **Fishing**, build a **Workboat** (30 Production) and move into a **coastal water tile owned by Lanun** next to land, without a resource or improvement.
-3. Select the Workboat and choose **Create Pirate Cove**. Check that the Workboat is **consumed** and a **Pirate Cove** appears. When a city works the tile, confirm it provides **+1 Science and +1 Gold** above the Coast base tile yield, plus the original +10% defensive bonus.
-4. Confirm **non-Lanun Workboats** do not have the Pirate Cove action.
-5. Check that the action is unavailable on Ocean, on a resource tile, on a tile outside Lanun borders, and on a coastal tile that is not next to land.
-6. A Cove will **not** automatically upgrade to Harbor or Port in this milestone; this is a known omission, not a newly introduced regression.
+- EMM automatically matured an individual Cove after 10 turns and an individual Harbor after another 20 turns. This port **requires paid, manual upgrades**.
+- No native mod-only 5-by-5 exclusion radius for nearby Coves/Harbors/Ports. Their spacing restriction is unimplemented.
+- Sea tile placement, pillaging and upgrades should be checked in-game, particularly whether the new special actions appear correctly on occupied Coast and whether the Gold cost is displayed and enforced.
+- The appearance of Harbor and Port uses Unciv's normal improvement fallback art until dedicated per-stage assets are supplied; we have not claimed original EMM graphics.
+- The existing `Pirate Cove` placement rules and consumption are unchanged.
 
-**Verification status:** Source values, target unique templates, placement-condition logic and the source ledger were inspected against the preserved Unciv engine and pinned EMM code. The user reports the new Pirate Cove works in gameplay (October 21, 2026). The user subsequently confirmed all implemented Lanun Cove functionality is fully gameplay-verified within the known Unciv engine limitations. This includes the supported Cove behavior; it does not imply that the unimplemented Harbor/Port maturation or 5-by-5 spacing rules work. Automatic Harbor/Port progression remains deferred. Automated `tools/verify_lanun_cove.py` runs in GitHub Actions along with the other ruleset checks.
+## Test the new mechanic in Unciv
 
-## Next implementation dependency
+1. Update the mod and start a fresh **Lanun** game; research Fishing, build a Workboat, and make a Cove on eligible coast. Check +1 Gold/+1 Science.
+2. Research **Sailing**, keep **at least 100 Gold**, build a second Workboat, move it onto the existing Cove, and choose `Create Pirate Harbor`. Check the unit disappears, treasury drops 100, and the tile is **Pirate Harbor** with +1 Food/+1 Production/+2 Gold/+1 Science, +20% Defense.
+3. Verify Harbor cannot be created with **under 100 Gold**, before researching Sailing, or on an empty coastal tile.
+4. Research **Optics**, keep **at least 200 Gold**, bring a third Workboat to the Harbor, and choose `Create Pirate Port`. Confirm an additional 200 Gold deducted, unit consumed, and the resulting +2 Food/+2 Production/+2 Gold/+2 Science, +30% Defense.
+5. Test the Port action on a Cove tile, before Optics, below 200 Gold, and on empty Coast: it must not be usable.
+6. Check non-Lanun workboats, save/load, and repairing pillaged Coves/Harbors.
 
-To complete the Lanun line, we need an engine-side or officially supported Unciv ruleset mechanic for **time-since-improvement-construction upgrades** and the **cove spacing radius**. Neither is claimed to be implemented here.
+**CI check:** `python3 tools/verify_lanun_cove.py` statically validates all three improvement definitions, proper predecessor filters, tech requirements, Gold costs, Workboat consumption and source yields. Static verification does not replace in-game testing.
