@@ -69,7 +69,7 @@ for name,previous,tech,price,food,production,gold,science,defense in tiers:
         f"Gives a defensive bonus of [{defense}]%",
         "Pillaging this improvement yields approximately [+10 Gold]"
     },name
-    action=f"Can instantly construct a [{name}] improvement <by consuming this unit> <costs [{price} Gold] stats> <for [Lanun] Civilizations>"
+    action=f"Can instantly construct a [{name}] improvement <by consuming this unit> <costs [+{price} Gold] stats> <for [Lanun] Civilizations>"
     assert workboat["uniques"].count(action)==1,(name,action)
     assert not any(action in u.get("uniques",[]) for u in units if u["name"]!="Workboat")
 assert len([u for u in workboat["uniques"] if "Can instantly construct a [Pirate" in u])==3
