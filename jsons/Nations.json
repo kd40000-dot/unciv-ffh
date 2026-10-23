@@ -52,7 +52,7 @@
       "Starts with [Ancient Chants]",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "Gain [50] Gold",
+      "Gain [50] [Gold]",
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
@@ -121,7 +121,7 @@
       "Starts with [Agriculture]",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "[+10]% Culture [in all cities]",
+      "[+10]% [Culture] [in all cities]",
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
@@ -253,7 +253,7 @@
       "Starts with [Exploration]",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "[+25]% Gold [in all cities]",
+      "[+25]% [Gold] [in all cities]",
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion"
@@ -405,7 +405,7 @@
       "All newly-trained [Magic] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Archery] units [in all cities] receive the [Combat I] promotion",
       "All newly-trained [Disciple] units [in all cities] receive the [Combat I] promotion",
-      "[-10]% Science [in all cities]"
+      "[-10]% [Science] [in all cities]"
     ],
     "civilopediaText": [
       {
@@ -471,7 +471,7 @@
       "Starts with [Ancient Chants]",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "[+10]% Culture [in all cities]"
+      "[+10]% [Culture] [in all cities]"
     ],
     "civilopediaText": [
       {
@@ -995,7 +995,7 @@
       "[+2 Culture] [in all cities]",
       "Starts with [Exploration]",
       "[2] free [Scout] units appear <if starting in the [Ancient era]>",
-      "[+10]% Culture [in all cities]",
+      "[+10]% [Culture] [in all cities]",
       "All newly-trained [Disciple] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
@@ -1061,7 +1061,7 @@
       "All newly-trained [{Military} {Land}] units [in all cities] receive the [Dwarf] promotion",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Scout] appears <if starting in the [Ancient era]>",
-      "[+25]% Gold [in all cities]",
+      "[+25]% [Gold] [in all cities]",
       "All newly-trained [Magic] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
@@ -1124,7 +1124,7 @@
       "Starts with [Ancient Chants]",
       "Free [Warrior] appears <if starting in the [Ancient era]>",
       "Free [Lightbringer] appears <if starting in the [Ancient era]>",
-      "[+10]% Culture [in all cities]",
+      "[+10]% [Culture] [in all cities]",
       "All newly-trained [Disciple] units [in all cities] receive the [Mobility I] promotion"
     ],
     "civilopediaText": [
