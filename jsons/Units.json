@@ -961,11 +961,35 @@
     "upgradesTo": "Archmage",
     "uniques": [
       "Only available <for [non-[Khazad]] Civilizations>",
-      "[This Unit] heals [15] HP <for all movement>"
+      "[This Unit] heals [15] HP <for all movement>",
+      "Can build [Air Node] improvements on tiles",
+      "Can build [Body Node] improvements on tiles",
+      "Can build [Chaos Node] improvements on tiles",
+      "Can build [Creation Node] improvements on tiles",
+      "Can build [Death Node] improvements on tiles",
+      "Can build [Dimensional Node] improvements on tiles",
+      "Can build [Earth Node] improvements on tiles",
+      "Can build [Enchantment Node] improvements on tiles",
+      "Can build [Entropy Node] improvements on tiles",
+      "Can build [Fire Node] improvements on tiles",
+      "Can build [Force Node] improvements on tiles",
+      "Can build [Ice Node] improvements on tiles",
+      "Can build [Law Node] improvements on tiles",
+      "Can build [Life Node] improvements on tiles",
+      "Can build [Metamagic Node] improvements on tiles",
+      "Can build [Mind Node] improvements on tiles",
+      "Can build [Nature Node] improvements on tiles",
+      "Can build [Spirit Node] improvements on tiles",
+      "Can build [Water Node] improvements on tiles",
+      "Can build [Shadow Node] improvements on tiles",
+      "Can build [Sun Node] improvements on tiles"
     ],
     "civilopediaText": [
       {
         "text": "A practiced wielder of spells and the currents of the Ether."
+      },
+      {
+        "text": "Can construct and retune all 21 sphere Mana Nodes on owned Raw Mana tiles, subject to each sphere's technology requirement. Constructing a node takes 17 base turns."
       }
     ]
   },
@@ -983,11 +1007,35 @@
     ],
     "uniques": [
       "Only available <for [non-[Khazad]] Civilizations>",
-      "[This Unit] heals [15] HP <for all movement>"
+      "[This Unit] heals [15] HP <for all movement>",
+      "Can build [Air Node] improvements on tiles",
+      "Can build [Body Node] improvements on tiles",
+      "Can build [Chaos Node] improvements on tiles",
+      "Can build [Creation Node] improvements on tiles",
+      "Can build [Death Node] improvements on tiles",
+      "Can build [Dimensional Node] improvements on tiles",
+      "Can build [Earth Node] improvements on tiles",
+      "Can build [Enchantment Node] improvements on tiles",
+      "Can build [Entropy Node] improvements on tiles",
+      "Can build [Fire Node] improvements on tiles",
+      "Can build [Force Node] improvements on tiles",
+      "Can build [Ice Node] improvements on tiles",
+      "Can build [Law Node] improvements on tiles",
+      "Can build [Life Node] improvements on tiles",
+      "Can build [Metamagic Node] improvements on tiles",
+      "Can build [Mind Node] improvements on tiles",
+      "Can build [Nature Node] improvements on tiles",
+      "Can build [Spirit Node] improvements on tiles",
+      "Can build [Water Node] improvements on tiles",
+      "Can build [Shadow Node] improvements on tiles",
+      "Can build [Sun Node] improvements on tiles"
     ],
     "civilopediaText": [
       {
         "text": "A master of arcane knowledge whose spells can alter the course of a war."
+      },
+      {
+        "text": "Can construct and retune all 21 sphere Mana Nodes on owned Raw Mana tiles, subject to each sphere's technology requirement. Constructing a node takes 17 base turns."
       }
     ],
     "requiredResource": "Reagents"
@@ -1009,10 +1057,34 @@
     "civilopediaText": [
       {
         "text": "An Amurite spellcaster raised in a culture devoted to magical study."
+      },
+      {
+        "text": "Can construct and retune all 21 sphere Mana Nodes on owned Raw Mana tiles, subject to each sphere's technology requirement. Constructing a node takes 17 base turns."
       }
     ],
     "uniques": [
-      "[This Unit] heals [15] HP <for all movement>"
+      "[This Unit] heals [15] HP <for all movement>",
+      "Can build [Air Node] improvements on tiles",
+      "Can build [Body Node] improvements on tiles",
+      "Can build [Chaos Node] improvements on tiles",
+      "Can build [Creation Node] improvements on tiles",
+      "Can build [Death Node] improvements on tiles",
+      "Can build [Dimensional Node] improvements on tiles",
+      "Can build [Earth Node] improvements on tiles",
+      "Can build [Enchantment Node] improvements on tiles",
+      "Can build [Entropy Node] improvements on tiles",
+      "Can build [Fire Node] improvements on tiles",
+      "Can build [Force Node] improvements on tiles",
+      "Can build [Ice Node] improvements on tiles",
+      "Can build [Law Node] improvements on tiles",
+      "Can build [Life Node] improvements on tiles",
+      "Can build [Metamagic Node] improvements on tiles",
+      "Can build [Mind Node] improvements on tiles",
+      "Can build [Nature Node] improvements on tiles",
+      "Can build [Spirit Node] improvements on tiles",
+      "Can build [Water Node] improvements on tiles",
+      "Can build [Shadow Node] improvements on tiles",
+      "Can build [Sun Node] improvements on tiles"
     ]
   },
   {
