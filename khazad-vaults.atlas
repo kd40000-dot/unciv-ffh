@@ -1,0 +1,90 @@
+Images/BuildingIcons/Dwarven Vault (Empty).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Empty)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Low).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Low)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Normal).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Normal)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Stocked).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Stocked)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Abundant).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Abundant)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Full).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Full)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+
+Images/BuildingIcons/Dwarven Vault (Overflowing).png
+size: 160, 160
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BuildingIcons/Dwarven Vault (Overflowing)
+  rotate: false
+  xy: 0, 0
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
