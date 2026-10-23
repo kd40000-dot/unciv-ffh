@@ -967,5 +967,23 @@
       "[This Unit] is destroyed <for units without [Arena Victory]>",
       "[This Unit] upgrades for free <for [Slave] units> <for units with [Arena Victory]>"
     ]
+  },
+  {
+    "name": "Fire I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Fire Mana]>",
+      "Can instantly construct a [Smoke] improvement <for all movement> <with [Fire Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Requires Channeling I and access to Fire Mana when learned. Allows Blaze: ignite an eligible unimproved forest or jungle tile by constructing Smoke on the caster's tile. Casting consumes all movement, but not the caster. Unlike EMM, Unciv does not simulate spreading fire or automatic Smoke expiration."
+      }
+    ]
   }
 ]
