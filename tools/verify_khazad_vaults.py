@@ -32,30 +32,70 @@ def condition(t):
         return f"<when number of [{expression}] is more than [249]>"
     return f'<when number of [{expression}] is between [{t["minimumGoldPerCity"]}] and [{t["maximumGoldPerCity"]}]>'
 
-all_effects = []
-for stage in source["tiers"]:
-    building = by_source[stage["sourceId"]]
-    assert building["happiness"] == stage["happiness"], stage["name"]
-    assert (building["yieldModifiers"][1] if building["yieldModifiers"] else 0) == stage["productionPercent"], stage["name"]
-    assert building["cost"] == -1, stage["name"]
-    assert not building["yieldChanges"] and not building["commerceChanges"], stage["name"]
+stages = source["tiers"]
+buildings = load("jsons/Buildings.json")
+by_building = {b["name"]: b for b in buildings}
+vault_names = [f'Dwarven Vault ({stage["name"]})' for stage in stages]
+assert all(name in by_building for name in vault_names)
+assert len(vault_names) == len(set(vault_names)) == 7
 
-    expected = []
-    if stage["happiness"] != 0:
-        modifier = f'{stage["happiness"]:+d}'
-        expected.append(f"[{modifier} Happiness] [in all cities] {condition(stage)}")
-    if stage["productionPercent"]:
-        expected.append(f'[+{stage["productionPercent"]}]% Production [in all cities] {condition(stage)}')
-    assert stage["uniques"] == expected, stage["name"]
-    all_effects.extend(expected)
+for stage in stages:
+    source_building = by_source[stage["sourceId"]]
+    assert source_building["happiness"] == stage["happiness"], stage["name"]
+    assert (source_building["yieldModifiers"][1] if source_building["yieldModifiers"] else 0) == stage["productionPercent"], stage["name"]
+    assert source_building["cost"] == -1, stage["name"]
+    assert not source_building["yieldChanges"] and not source_building["commerceChanges"], stage["name"]
+
+    built = by_building[f'Dwarven Vault ({stage["name"]})']
+    assert built["uniqueTo"] == "Khazad"
+    assert built["cost"] == 0 and built.get("maintenance", 0) == 0
+    assert built.get("happiness", 0) == stage["happiness"]
+    assert built.get("percentStatBonus", {}).get("production", 0) == stage["productionPercent"]
+    for required_unique in ("Unbuildable", "Cannot be purchased", "Unsellable", "Destroyed when city captured"):
+        assert required_unique in built["uniques"], (stage["name"], required_unique)
+    assert built["civilopediaText"], stage["name"]
 
 khazad = by_nation["Khazad"]
-actual = [u for u in khazad["uniques"] if "when number of [floor([Gold] / [Cities])]" in u]
-assert actual == all_effects
-assert len(actual) == len(set(actual)) == 9
-for nation in nations:
-    if nation["name"] != "Khazad":
-        assert not any("when number of [floor([Gold] / [Cities])]" in u for u in nation.get("uniques",[])), nation["name"]
+assert not any("when number of [floor([Gold] / [Cities])]" in u
+               and ("Happiness" in u or "Production" in u)
+               for u in khazad["uniques"]), "Old nation-wide bonuses must not stack with building effects"
+assert not any("Dwarven Vault (" in u for n in nations if n["name"] != "Khazad"
+               for u in n.get("uniques", []))
+
+def condition_for_stage(stage):
+    expr=source["goldPerCityExpression"]
+    if stage["name"] == "Empty":
+        return f"<when number of [{expr}] is less than [25]>"
+    if stage["name"] == "Overflowing":
+        return f"<when number of [{expr}] is more than [249]>"
+    return (f'<when number of [{expr}] is between '
+            f'[{stage["minimumGoldPerCity"]}] and [{stage["maximumGoldPerCity"]}]>')
+
+def expected_event_uniques(event):
+    expr=source["goldPerCityExpression"]
+    actions=[]
+    # First remove only currently incorrect stages, then grant the correct stage.
+    for stage in stages:
+        name=f'Dwarven Vault ({stage["name"]})'
+        minimum,maximum=stage["minimumGoldPerCity"],stage["maximumGoldPerCity"]
+        if minimum > 0:
+            actions.append(f'Remove [{name}] [in all cities] <{event}> '
+                           f'<when number of [{expr}] is less than [{minimum}]>')
+        if maximum is not None:
+            actions.append(f'Remove [{name}] [in all cities] <{event}> '
+                           f'<when number of [{expr}] is more than [{maximum}]>')
+    for stage in stages:
+        name=f'Dwarven Vault ({stage["name"]})'
+        actions.append(f'Gain a free [{name}] [in all cities] <{event}> {condition_for_stage(stage)}')
+    return actions
+
+all_events = ["upon turn start", "upon founding a city"]
+all_actions = [action for event in all_events for action in expected_event_uniques(event)]
+actual_actions = [u for u in khazad["uniques"]
+                  if u.startswith("Remove [Dwarven Vault (")
+                  or u.startswith("Gain a free [Dwarven Vault (")]
+assert actual_actions == all_actions, "Missing, misordered, or extra Vault synchronization actions"
+assert len(all_actions) == 38 == len(set(all_actions))
 
 def stage_for(gold, cities):
     assert cities >= 1
@@ -101,4 +141,20 @@ for cities in range(1,13):
         tests+=1
 
 assert "Dwarven Vault" in khazad["uniqueText"]
-print(f"OK: {len(source['tiers'])} source-backed vault levels, {len(all_effects)} exclusive Khazad uniques, {len(cases)} boundary/spending/founding cases, {tests} city/treasury combinations")
+
+# Simulate an event on every possible treasury/city combination to prove
+# both directions of stage switching, recovery from stale stages, and no stacking.
+def reconcile(before, target):
+    selected=stage_for(*target)["name"]
+    result={name for name in before if name == selected}
+    result.add(selected)
+    return result
+
+for old in stages:
+    for gold,cities,_ in cases:
+        target=(gold,cities)
+        assert reconcile({old["name"]},target) == {stage_for(gold,cities)["name"]}
+assert reconcile({s["name"] for s in stages},(100,1)) == {"Abundant"}
+
+print(f"OK: {len(stages)} source-backed actual buildings, {len(all_actions)} synchronized triggers, "
+      f"{len(cases)} boundary/spending/founding cases, {tests} city/treasury combinations")
