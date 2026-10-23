@@ -39,6 +39,8 @@ jobs:
         run: python3 tools/verify_economic_traits.py
       - name: Verify Lanun Pirate Cove and workboat source conversion
         run: python3 tools/verify_lanun_cove.py
+      - name: Verify EMM mana-node sources and all 21 buildable sphere improvements
+        run: python3 tools/verify_mana_nodes.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
         run: python3 tools/verify_khazad_vaults.py
       - name: Verify Erebus-specific diplomacy dialogue and provenance
