@@ -45,15 +45,36 @@ AMURITES = {
     "Govannon.png": "Govannon",
 }
 
-def fit_sprite(source: Image.Image) -> Image.Image:
+def fit_sprite(source: Image.Image, *, align: str = "right") -> Image.Image:
+    """Place visible pixels against the chosen horizontal edge without clipping.
+
+    Alignment is applied AFTER proportional sizing, using the actual post-resize
+    alpha bounding box. The top/bottom remain centered as before.
+    No pixel of the character is cropped or modified by the translation.
+    """
     art = source.convert("RGBA")
     bbox = art.getchannel("A").getbbox()
     if bbox is None:
         raise ValueError("Completely transparent source sprite")
     art = art.crop(bbox)
     art.thumbnail((MAX_FIGURE, MAX_FIGURE), Image.Resampling.LANCZOS)
+    # LANCZOS can introduce a transparent outer rim: use the real visible bounds.
+    bounds = art.getchannel("A").getbbox()
+    if bounds is None:
+        raise ValueError("Empty sprite after scaling")
+    art = art.crop(bounds)
+    if align == "left":
+        left = 0
+    elif align == "right":
+        left = CANVAS - art.width
+    else:
+        raise ValueError(f"Unsupported horizontal alignment: {align}")
+    top = (CANVAS - art.height) // 2
     canvas = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
-    canvas.alpha_composite(art, ((CANVAS-art.width)//2, (CANVAS-art.height)//2))
+    canvas.alpha_composite(art, (left, top))
+    visible = canvas.getchannel("A").getbbox()
+    assert visible is not None
+    assert (visible[0] == 0 if align == "left" else visible[2] == CANVAS), (align, visible)
     return canvas
 
 def sash_mask(source: Image.Image) -> np.ndarray:
@@ -149,7 +170,7 @@ def main() -> None:
         mask = sash_mask(src)
         print(f"SASH {unit}: {int(mask.sum())} purple pixels isolated")
         default_name = unit + ".png"
-        fit_sprite(src).save(GENERATED/default_name, optimize=True)
+        fit_sprite(src, align="left").save(GENERATED/default_name, optimize=True)
         page(lines, default_name, [
             f"TileSets/AmuritesSimple/Units/{unit}",
             f"TileSets/AbsoluteUnits/Units/{unit}",
@@ -159,7 +180,7 @@ def main() -> None:
             target = list(nation["outerColor"])
             if max(target) < 38:  # Barbarians have black outerColor; use their red innerColor.
                 target = list(nation["innerColor"])
-            img = fit_sprite(recolor_sash(src, mask, target))
+            img = fit_sprite(recolor_sash(src, mask, target), align="left")
             name = f"{unit}-{civ}.png"
             img.save(GENERATED/name, optimize=True)
             page(lines, name, [
