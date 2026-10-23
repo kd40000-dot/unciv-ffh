@@ -41,6 +41,8 @@ jobs:
         run: python3 tools/verify_lanun_cove.py
       - name: Verify EMM mana-node sources and all 21 buildable sphere improvements
         run: python3 tools/verify_mana_nodes.py
+      - name: Verify mana-powered Fire I Blaze spell prototype
+        run: python3 tools/verify_fire_i.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
         run: python3 tools/verify_khazad_vaults.py
       - name: Verify Erebus-specific diplomacy dialogue and provenance
