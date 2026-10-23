@@ -1,0 +1,60 @@
+name: Verify Khazad Vault building stages
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'jsons/Buildings.json'
+      - 'jsons/Nations.json'
+      - 'tools/verify_khazad_vaults.py'
+      - 'tools/verify_roster.py'
+      - 'Images/BuildingIcons/**'
+      - 'khazad-vaults.atlas'
+      - 'Atlases.json'
+      - '.github/workflows/verify-khazad-vaults.yml'
+jobs:
+  vault-static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source buildings and full ruleset JSON syntax
+        run: |
+          python3 - <<'PY'
+          import json,pathlib
+          for p in pathlib.Path('jsons').glob('*.json'):json.loads(p.read_text())
+          PY
+          python3 tools/verify_roster.py
+      - name: Verify all Khazad Vault thresholds, building definitions and trigger pairs
+        run: python3 tools/verify_khazad_vaults.py
+      - name: Check complete atlas registration
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          assert 'khazad-vaults' in json.loads(Path('Atlases.json').read_text())
+          atlas=Path('khazad-vaults.atlas').read_text()
+          for tier in ('Empty','Low','Normal','Stocked','Abundant','Full','Overflowing'):
+              img=Path(f'Images/BuildingIcons/Dwarven Vault ({tier}).png')
+              assert img.is_file(),img
+              assert f'BuildingIcons/Dwarven Vault ({tier})' in atlas
+          print('OK: all seven icons registered')
+          PY
+  unciv-mod-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Validate complete Unciv mod with current official mod-ci
+        run: |
+          curl -fsSL https://api.github.com/repos/yairm210/Unciv/releases/latest -o /tmp/unciv-release.json
+          UNCIV_URL="$(python3 -c 'import json; r=json.load(open("/tmp/unciv-release.json")); print(next(a["browser_download_url"] for a in r["assets"] if a["name"]=="Unciv.jar"))')"
+          curl -fL --retry 3 "$UNCIV_URL" -o Unciv.jar
+          set -euo pipefail
+          java -jar Unciv.jar mod-ci | tee /tmp/unciv-vault-mod-ci.log
+          if grep -q '^Warning:' /tmp/unciv-vault-mod-ci.log; then
+            echo "Mod-ci reported warnings"
+            exit 1
+          fi
