@@ -39,3 +39,12 @@ These are EMM-sourced prerequisites, not arbitrary tiers.
 **Do not confuse the new resource layer with a complete magic system.** Sphere Mana resources do **not yet** unlock promotions, spells, summoning, or Amurite-specific magical effects. Next steps are to map EMM's sphere promotion requirements and implement a few real spell actions using Unciv's supported unit-action uniques.
 
 EMM sometimes pre-places typed sphere mana directly through civilization-specific buildings/nodes and has additional Dispel Magic / node transformation rules. Those mechanics are **not implemented** here. Mana from the existing palaces remains incomplete. Raw Mana generation frequency/terrain distribution is an approximation, since Unciv map generation differs from EMM. The current pipeline also does not yet include custom Mana Node art; Unciv will use its fallback improvement visuals. Do not claim this milestone is fully working until an Adept creates a node and the strategic resource count changes in game.
+
+## Body I → Haste prototype (October 23, 2026)
+
+- Added **Body I**: Magic-unit promotion requiring Channeling I and an available **Body Mana** resource, using Unciv's native promotion availability condition.
+- **Haste** action: `[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement> <with [Body Mana]>`. The status temporarily grants `[+1] Movement`; casting costs all caster movement. Recasting refreshes the timer instead of stacking multiple extra movement bonuses.
+- This is a **self-cast-only** conversion. EMM's Haste applies to friendly living units on the caster's tile and removes Slow. Neither group targeting nor Slow removal is implemented. Unciv's temporary status lasts two turns under its own turn-counting semantics, and does not require custom engine changes.
+- Gameplay unverified: Build a **Body Node** after **Alteration**, ensure **Body Mana** count is 1, grant an Adept enough XP to choose **Body I**, cast the Hasted status action, verify the caster survives, movement is consumed and the temporary +1 Movement disappears after the effect expires. Test lost mana and repeated casts.
+
+See `tools/verify_body_i.py` for source/resource/promotion static assertions.
