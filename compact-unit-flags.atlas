@@ -1,0 +1,116 @@
+Images/UnitFlagIcons/UnitFlag.png
+size: 256, 256
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlag
+  rotate: false
+  xy: 0, 0
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagCivilian.png
+size: 178, 217
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagCivilian
+  rotate: false
+  xy: 0, 0
+  size: 178, 217
+  orig: 178, 217
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagCivilianInner.png
+size: 178, 217
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagCivilianInner
+  rotate: false
+  xy: 0, 0
+  size: 178, 217
+  orig: 178, 217
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagEmbark.png
+size: 178, 210
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagEmbark
+  rotate: false
+  xy: 0, 0
+  size: 178, 210
+  orig: 178, 210
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagFortify.png
+size: 178, 178
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagFortify
+  rotate: false
+  xy: 0, 0
+  size: 178, 178
+  orig: 178, 178
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagSelection.png
+size: 178, 178
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagSelection
+  rotate: false
+  xy: 0, 0
+  size: 178, 178
+  orig: 178, 178
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagSelectionCivilian.png
+size: 157, 170
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagSelectionCivilian
+  rotate: false
+  xy: 0, 0
+  size: 157, 170
+  orig: 157, 170
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagSelectionEmbark.png
+size: 178, 210
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagSelectionEmbark
+  rotate: false
+  xy: 0, 0
+  size: 178, 210
+  orig: 178, 210
+  offset: 0, 0
+  index: -1
+
+Images/UnitFlagIcons/UnitFlagSelectionFortify.png
+size: 178, 178
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+UnitFlagIcons/UnitFlagSelectionFortify
+  rotate: false
+  xy: 0, 0
+  size: 178, 178
+  orig: 178, 178
+  offset: 0, 0
+  index: -1
