@@ -39,6 +39,13 @@ object EmmSpellEngine {
             "ENEMY" -> if (!caster.civ.isAtWarWith(other.civ)) return false
             else -> return false
         }
+        if (spell.eligibleUnitTypes.isNotEmpty() || spell.eligibleNameContains.isNotEmpty()) {
+            val typeMatch = other.baseUnit.unitType in spell.eligibleUnitTypes
+            val nameMatch = spell.eligibleNameContains.any {
+                other.baseUnit.name.contains(it, ignoreCase = true)
+            }
+            if (!typeMatch && !nameMatch) return false
+        }
         if (spell.militaryOnly && !other.isMilitary()) return false
         if (spell.landOnly && (other.baseUnit.unitType !in landMilitaryTypes || other.isEmbarked())) return false
         if (spell.livingOnly && !isLiving(other)) return false
@@ -79,7 +86,11 @@ object EmmSpellEngine {
         if (caster.getMatchingUniques(UniqueType.EmmSpell).none { it.params[0] == name }) return false
         return when (spell.effect) {
             "SUMMON" -> spell.summonUnit.isNotEmpty() &&
-                caster.civ.gameInfo.ruleset.units.containsKey(spell.summonUnit)
+                caster.civ.gameInfo.ruleset.units.containsKey(spell.summonUnit) &&
+                (spell.maxActivePerCaster <= 0 ||
+                 caster.civ.units.getCivUnits().count {
+                     it.name == spell.summonUnit && it.emmSummonerId == caster.id
+                 } < spell.maxActivePerCaster)
             "STATUS", "DAMAGE", "HEAL" -> targets(caster, spell).any { wouldChange(it, spell) }
             else -> false
         }
@@ -99,6 +110,7 @@ object EmmSpellEngine {
             if (summoned != null) {
                 summoned.emmSummonerId = caster.id
                 summoned.emmSummonTurnsLeft = spell.summonDuration
+                if (spell.immobileOnCreate) summoned.currentMovement = 0f
                 applied = true
             }
         } else {
