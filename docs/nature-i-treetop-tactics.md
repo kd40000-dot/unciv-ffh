@@ -1,6 +1,6 @@
 # Nature I — Treetop Tactics
 
-**Implemented:** October 23, 2026. **Gameplay status:** Awaiting Android verification.
+**Implemented:** October 23, 2026. **Gameplay status:** Gameplay-verified by user.
 
 ## Original EMM Continued source
 
@@ -25,4 +25,8 @@ Pinned commit `60b0ec3740083162aaab7bf8491761a54a65a610` in `bewlay/extramodmod`
 5. Check the status expires after two turns. The action should not appear outside Forest.
 6. Reload a save and check that terrain restrictions and the status persist correctly.
 
-**Validation:** `tools/verify_nature_i.py` and official Unciv mod-ci; gameplay verification remains pending.
+**Validation:** `tools/verify_nature_i.py` and official Unciv mod-ci; gameplay verified by user.
+
+## Gameplay confirmation and visibility TODO (October 24, 2026)
+
+The user confirmed the combat bonuses work in-game for both Enchanted Blade Aura and Treetop Tactics, including seeing the modifier in the combat preview. Keep the current implementation unchanged. **Deferred UI improvement:** consider a clearer active spell indicator on the caster and/or visibly showing which nearby units benefit from Enchanted Blade Aura. Do not prioritize until the user asks to revisit it.
