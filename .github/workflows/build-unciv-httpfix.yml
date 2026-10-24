@@ -1,0 +1,65 @@
+name: Build Unciv HTTP downloader fix APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/patch_unciv_download_client.py'
+      - '.github/workflows/build-unciv-httpfix.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  android-httpfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - name: Checkout patch scripts
+        uses: actions/checkout@v4
+      - name: Checkout pinned official Unciv source
+        uses: actions/checkout@v4
+        with:
+          repository: yairm210/Unciv
+          ref: fce8c9895f604be0e26b4213f8692b7356cbe4b8
+          path: upstream-unciv
+          persist-credentials: false
+      - name: Apply HTTP engine fix
+        run: python3 tools/patch_unciv_download_client.py upstream-unciv
+      - name: Confirm patch scope
+        working-directory: upstream-unciv
+        run: git diff --check && git diff -- core/src/com/unciv/logic/UncivKtor.kt gradle/libs.versions.toml android/build.gradle.kts
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools'
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Build side-by-side test APK
+        working-directory: upstream-unciv
+        run: ./gradlew :android:assembleDebug --no-daemon --stacktrace
+      - name: Check APK exists and includes AndroidLauncher
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="$(find upstream-unciv/android/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -s "$APK"
+          mkdir /tmp/unciv-dex
+          unzip -oq "$APK" 'classes*.dex' -d /tmp/unciv-dex
+          grep -alq AndroidLauncher /tmp/unciv-dex/classes*.dex
+          cp "$APK" Unciv-HTTP-Fix-Test.apk
+          sha256sum Unciv-HTTP-Fix-Test.apk
+      - name: Publish APK for testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unciv-HTTP-Fix-Test-APK
+          path: Unciv-HTTP-Fix-Test.apk
+          if-no-files-found: error
+          retention-days: 30
