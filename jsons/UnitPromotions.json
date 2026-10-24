@@ -1187,11 +1187,12 @@
       "Air I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Maelstrom (Spell)] status for [2] turn(s) <for all movement> <with [Air Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Air sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Air sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Maelstrom substituted with two-turn adjacent enemy attack/defense weakness."
       }
     ]
   },
@@ -1221,11 +1222,12 @@
       "Body I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement> <with [Body Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Body sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Body sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Regeneration: caster only, 2-turn healing."
       }
     ]
   },
@@ -1273,11 +1275,12 @@
       "Chaos I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Mutation (Spell)] status for [2] turn(s) <for all movement> <with [Chaos Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Chaos sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Chaos sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Mutation proxy is deterministic, not randomized."
       }
     ]
   },
@@ -1325,11 +1328,12 @@
       "Creation I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Gain a free [Fertility (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Creation sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Creation sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Fertility installs +2 Food city building; EMM city-population and/or terrain functionality not reproduced."
       }
     ]
   },
@@ -1377,11 +1381,12 @@
       "Death I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Spectre (Summoned)] appears <for all movement> <with [Death Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Death sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Death sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Spectre creates a persistent limited-strength unit; EMM summons expire."
       }
     ]
   },
@@ -1429,11 +1434,12 @@
       "Dimensional I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Can instantly construct a [Labyrinth (Spell)] improvement <for all movement> <with [Dimensional Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Dimensional sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Dimensional sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Labyrinth is a lasting on-tile improvement and doesn't teleport/confuse units like EMM."
       }
     ]
   },
@@ -1481,11 +1487,12 @@
       "Earth I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Stoneskin (Spell)] status for [2] turn(s) <for all movement> <with [Earth Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Earth sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Earth sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Stoneskin grants caster defensive strength, not first strikes."
       }
     ]
   },
@@ -1515,11 +1522,12 @@
       "Enchantment I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Flaming Arrows (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Enchantment sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Enchantment sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Flaming Arrows uses proximity strength instead of permanent fire promotion."
       }
     ]
   },
@@ -1566,11 +1574,12 @@
       "Entropy I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Pit Beast (Summoned)] appears <for all movement> <with [Entropy Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Entropy sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Entropy sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Pit Beast uses native spawn, no automatic duration."
       }
     ]
   },
@@ -1600,11 +1609,12 @@
       "Fire I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Fireball (Summoned)] appears <for all movement> <with [Fire Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Fire sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Fire sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Fireball uses an expendable ranged suicide unit; manual targeting rather than direct spell range."
       }
     ]
   },
@@ -1652,11 +1662,12 @@
       "Force I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Magic Missile (Summoned)] appears <for all movement> <with [Force Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Force sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Force sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Magic Missile uses a fragile expendable attack unit rather than instant spell attack."
       }
     ]
   },
@@ -1704,11 +1715,12 @@
       "Ice I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Ice Elemental (Summoned)] appears <for all movement> <with [Ice Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Ice sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Ice sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Ice Elemental uses permanent native unit, lacks EMM summon lifetime."
       }
     ]
   },
@@ -1756,11 +1768,12 @@
       "Law I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Free [Einherjar (Summoned)] appears <for all movement> <with [Law Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Law sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Law sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Einherjar uses native unit spawn with no automatic expiry."
       }
     ]
   },
@@ -1808,11 +1821,12 @@
       "Life I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Destroy Undead (Spell)] status for [2] turn(s) <for all movement> <with [Life Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Life sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Life sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Undead-targeted AoE damage is unavailable, replaced by caster's combat specialty vs Magic units."
       }
     ]
   },
@@ -1860,11 +1874,12 @@
       "Metamagic I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Remove [All] improvements from this tile <for all movement> <with [Metamagic Mana]> <in [Raw Mana] tiles> <in [your] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Metamagic sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Metamagic sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Dispel Magic can clear a node improvement on owned Raw Mana. It does not dispel other units' promotions or range-2 effects."
       }
     ]
   },
@@ -1894,11 +1909,12 @@
       "Mind I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Charm Person (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Mind sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Mind sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Charm is a local debuff, no actual mind control."
       }
     ]
   },
@@ -1928,11 +1944,12 @@
       "Nature I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Poisoned Blade (Spell)] status for [2] turn(s) <for all movement> <with [Nature Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Nature sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Nature sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Local strength proxy instead of lasting poison weapon."
       }
     ]
   },
@@ -1980,11 +1997,12 @@
       "Shadow I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Shadowwalk (Spell)] status for [2] turn(s) <for all movement> <with [Shadow Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Shadow sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Shadow sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Movement/city assault proxy; EMM ignores building defensive bonuses and expires randomly."
       }
     ]
   },
@@ -2014,11 +2032,12 @@
       "Spirit I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "Gain a free [Hope (Spell)] [in this city] <for all movement> <with [Spirit Mana]> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Spirit sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Spirit sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Hope generates persistent city Happiness/Culture proxy, not tied to caster alive/in city."
       }
     ]
   },
@@ -2066,11 +2085,12 @@
       "Sun I"
     ],
     "uniques": [
-      "Only available <for units with [Channeling II]>"
+      "Only available <for units with [Channeling II]>",
+      "[This Unit] gains the [Blinding Light (Spell)] status for [2] turn(s) <for all movement> <with [Sun Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Sun sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Sun sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Blind effect represented by lower adjacent enemy Strength, not immobility."
       }
     ]
   },
@@ -2214,6 +2234,139 @@
     "civilopediaText": [
       {
         "text": "Shadow I Blur defense proxy; source grants first-strike immunity to units in area, not +20% defense to caster."
+      }
+    ]
+  },
+  {
+    "name": "Maelstrom (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Air II Maelstrom proxy: enemy melee combat debuff around caster for two turns, NOT EMM ranged lightning damage."
+      }
+    ]
+  },
+  {
+    "name": "Regeneration (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[10] HP when healing",
+      "Unit will heal every turn, even if it performs an action",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Body II Regeneration temporary caster healing only; EMM buffs allied living targets on the caster tile."
+      }
+    ]
+  },
+  {
+    "name": "Mutation (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[-20]% Strength <when defending>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Chaos II Mutation: deterministic risky attacker (+20% attack/-20% defense) instead of EMM random mutation on targeted units."
+      }
+    ]
+  },
+  {
+    "name": "Stoneskin (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+40]% Strength <when defending>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth II Stoneskin: two-turn defense strength on caster. EMM Stoneskin also adds first strikes and magic resistance."
+      }
+    ]
+  },
+  {
+    "name": "Flaming Arrows (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+20]% Strength bonus for [Archery] units within [1] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment II Flaming Arrows: two-turn nearby Archery +20% Strength. EMM grants promotions with extra Fire damage, lasting independently of caster."
+      }
+    ]
+  },
+  {
+    "name": "Destroy Undead (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+50]% Strength <vs [Magic] units>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Life II Destroy Undead: +50% Strength against Magic units for 2 turns. EMM targets undead with AoE damage; Magic is NOT an undead classifier."
+      }
+    ]
+  },
+  {
+    "name": "Charm Person (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-15]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mind II Charm Person: adjacent enemy combat reduction; does NOT charm/convert or apply target resistance."
+      }
+    ]
+  },
+  {
+    "name": "Poisoned Blade (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+15]% Strength bonus for [Sword] units within [1] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nature II Poisoned Blade: adjacent Sword units +15% Strength for 2 turns. EMM grants weapon poisoning promotion; damage-over-time not reproduced."
+      }
+    ]
+  },
+  {
+    "name": "Shadowwalk (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "Ignores terrain cost",
+      "[+20]% Strength <vs cities>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow II Shadowwalk: self 2-turn ignores terrain cost and +20% city attack, approximates ignoring city defenses."
+      }
+    ]
+  },
+  {
+    "name": "Blinding Light (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sun II Blinding Light: 2-turn adjacent enemy combat debuff. EMM can immobilize/blind enemies, with resistance checks."
       }
     ]
   }
