@@ -16,7 +16,7 @@ Two new entries in `UnitPromotions.json`:
 - **Mind I:** a Magic-unit promotion, available only with Mind Mana and Channeling I. Casting action:
   `[This Unit] gains the [Inspiration (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]> <in [City center] tiles>`.
 - **Inspiration (Spell):** a non-learnable temporary status:
-  `Gain [2] Science <upon turn start> <in [City center] tiles> <with [Mind Mana]>`.
+  `Gain [2] [Science] <upon turn start> <in [City center] tiles> <with [Mind Mana]>`.
 
 The caster must stand on a city center when casting, spends all its movement, and remains alive. While its status lasts, **+2 Science is credited directly to the player's empire at turn start** if the unit remains on a city center and the empire retains Mind Mana. This is a city-occupancy conditional, not a permanent city building, and can be refreshed by recasting after the status expires. Moving out of the city stops the award.
 
