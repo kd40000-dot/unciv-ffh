@@ -982,7 +982,7 @@
     ],
     "uniques": [
       "Only available <with [Fire Mana]>",
-      "Can instantly construct a [Smoke] improvement <for all movement> <with [Fire Mana]>"
+      "Can instantly construct a [Smoke] improvement <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1013,7 +1013,7 @@
     ],
     "uniques": [
       "Only available <with [Body Mana]>",
-      "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement> <with [Body Mana]>"
+      "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1031,8 +1031,8 @@
     ],
     "uniques": [
       "Only available <with [Water Mana]>",
-      "Turn this tile into a [Plains] tile <for all movement> <with [Water Mana]> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles> <in tiles without [Flood plains]>",
-      "Remove [Smoke] improvements from this tile <for all movement> <with [Water Mana]> <in [Smoke] tiles> <in [your] tiles>"
+      "Turn this tile into a [Plains] tile <for all movement> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles> <in tiles without [Flood plains]>",
+      "Remove [Smoke] improvements from this tile <for all movement> <in [Smoke] tiles> <in [your] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1063,8 +1063,8 @@
     ],
     "uniques": [
       "Only available <with [Enchantment Mana]>",
-      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>",
-      "[This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]> <for units with [Dwarf]>"
+      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement>",
+      "[This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <for units with [Dwarf]>"
     ],
     "civilopediaText": [
       {
@@ -1095,7 +1095,7 @@
     ],
     "uniques": [
       "Only available <with [Nature Mana]>",
-      "[This Unit] gains the [Treetop Tactics] status for [2] turn(s) <for all movement> <with [Nature Mana]> <in [Forest] tiles>"
+      "[This Unit] gains the [Treetop Tactics] status for [2] turn(s) <for all movement> <in [Forest] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1107,7 +1107,7 @@
     "name": "Inspiration (Spell)",
     "unitTypes": [],
     "uniques": [
-      "Gain [2] [Science] <upon turn start> <in [City center] tiles> <with [Mind Mana]>",
+      "Gain [2] [Science] <upon turn start> <in [City center] tiles>",
       "Not shown on world screen"
     ],
     "civilopediaText": [
@@ -1126,7 +1126,7 @@
     ],
     "uniques": [
       "Only available <with [Mind Mana]>",
-      "[This Unit] gains the [Inspiration (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]> <in [City center] tiles>"
+      "[This Unit] gains the [Inspiration (Spell)] status for [2] turn(s) <for all movement> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1157,7 +1157,7 @@
     ],
     "uniques": [
       "Only available <with [Spirit Mana]>",
-      "[This Unit] gains the [Courage (Spell)] status for [2] turn(s) <for all movement> <with [Spirit Mana]>"
+      "[This Unit] gains the [Courage (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1175,7 +1175,7 @@
     ],
     "uniques": [
       "Only available <with [Air Mana]>",
-      "[This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement> <with [Air Mana]>"
+      "[This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1193,7 +1193,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Maelstrom (Spell)] status for [2] turn(s) <for all movement> <with [Air Mana]>"
+      "[This Unit] gains the [Maelstrom (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1211,7 +1211,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Air Elemental (Summoned)] appears <for all movement> <with [Air Mana]>"
+      "Free [Air Elemental (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1229,7 +1229,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement> <with [Body Mana]>"
+      "[This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1247,7 +1247,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Flesh Golem (Summoned)] appears <for all movement> <with [Body Mana]>"
+      "Free [Flesh Golem (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1265,7 +1265,7 @@
     ],
     "uniques": [
       "Only available <with [Chaos Mana]>",
-      "[This Unit] gains the [Dance of Blades (Spell)] status for [2] turn(s) <for all movement> <with [Chaos Mana]>"
+      "[This Unit] gains the [Dance of Blades (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1283,7 +1283,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Mutation (Spell)] status for [2] turn(s) <for all movement> <with [Chaos Mana]>"
+      "[This Unit] gains the [Mutation (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1301,7 +1301,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Gain [1]-[12] [Gold] <for all movement> <with [Chaos Mana]>"
+      "Gain [1]-[12] [Gold] <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1319,7 +1319,7 @@
     ],
     "uniques": [
       "Only available <with [Creation Mana]>",
-      "Gain a free [Growth (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
+      "Gain a free [Growth (Spell)] [in this city] <for all movement> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1337,7 +1337,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Add [Sheep] to this tile <for all movement> <with [Creation Mana]> <in [Cattle] tiles> <in [your] tiles>"
+      "Add [Sheep] to this tile <for all movement> <in [Cattle] tiles> <in [your] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1355,7 +1355,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Gain a free [Blessing (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
+      "Gain a free [Blessing (Spell)] [in this city] <for all movement> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1373,7 +1373,7 @@
     ],
     "uniques": [
       "Only available <with [Death Mana]>",
-      "Free [Skeleton (Summoned)] appears <for all movement> <with [Death Mana]>"
+      "Free [Skeleton (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1391,7 +1391,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Spectre (Summoned)] appears <for all movement> <with [Death Mana]>"
+      "Free [Spectre (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1409,8 +1409,8 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Wraith (Summoned)] appears <for all movement> <with [Death Mana]>",
-      "Can transform to [Lich] <for all movement> <after discovering [Divine Essence]> <with [Death Mana]>"
+      "Free [Wraith (Summoned)] appears <for all movement>",
+      "Can transform to [Lich] <for all movement> <after discovering [Divine Essence]>"
     ],
     "civilopediaText": [
       {
@@ -1428,7 +1428,7 @@
     ],
     "uniques": [
       "Only available <with [Dimensional Mana]>",
-      "[This Unit] gains the [Escape (Spell)] status for [2] turn(s) <for all movement> <with [Dimensional Mana]>"
+      "[This Unit] gains the [Escape (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1446,7 +1446,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Can instantly construct a [Labyrinth (Spell)] improvement <for all movement> <with [Dimensional Mana]>"
+      "Can instantly construct a [Labyrinth (Spell)] improvement <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1464,7 +1464,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Can instantly construct a [Rift (Spell)] improvement <for all movement> <with [Dimensional Mana]>"
+      "Can instantly construct a [Rift (Spell)] improvement <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1482,7 +1482,7 @@
     ],
     "uniques": [
       "Only available <with [Earth Mana]>",
-      "Gain a free [Wall of Stone (Spell)] [in this city] <for all movement> <with [Earth Mana]> <in [City center] tiles>"
+      "Gain a free [Wall of Stone (Spell)] [in this city] <for all movement> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1500,7 +1500,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Stoneskin (Spell)] status for [2] turn(s) <for all movement> <with [Earth Mana]>"
+      "[This Unit] gains the [Stoneskin (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1518,7 +1518,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Earth Elemental (Summoned)] appears <for all movement> <with [Earth Mana]>"
+      "Free [Earth Elemental (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1536,7 +1536,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Flaming Arrows (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
+      "[This Unit] gains the [Flaming Arrows (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1554,7 +1554,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Spellstaff (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
+      "[This Unit] gains the [Spellstaff (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1572,7 +1572,7 @@
     ],
     "uniques": [
       "Only available <with [Entropy Mana]>",
-      "[This Unit] gains the [Rusted (Spell)] status for [2] turn(s) <for all movement> <with [Entropy Mana]>"
+      "[This Unit] gains the [Rusted (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1590,7 +1590,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Pit Beast (Summoned)] appears <for all movement> <with [Entropy Mana]>"
+      "Free [Pit Beast (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1608,7 +1608,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Wither (Spell)] status for [2] turn(s) <for all movement> <with [Entropy Mana]>"
+      "[This Unit] gains the [Wither (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1626,7 +1626,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Fireball (Summoned)] appears <for all movement> <with [Fire Mana]>"
+      "Free [Fireball (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1644,7 +1644,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Fire Elemental (Summoned)] appears <for all movement> <with [Fire Mana]>"
+      "Free [Fire Elemental (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1662,7 +1662,7 @@
     ],
     "uniques": [
       "Only available <with [Force Mana]>",
-      "[This Unit] gains the [Temperance (Spell)] status for [2] turn(s) <for all movement> <with [Force Mana]>"
+      "[This Unit] gains the [Temperance (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1680,7 +1680,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Magic Missile (Summoned)] appears <for all movement> <with [Force Mana]>"
+      "Free [Magic Missile (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1698,7 +1698,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Runewyn (Summoned)] appears <for all movement> <with [Force Mana]>"
+      "Free [Runewyn (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1716,7 +1716,7 @@
     ],
     "uniques": [
       "Only available <with [Ice Mana]>",
-      "[This Unit] gains the [Chilling Presence (Spell)] status for [2] turn(s) <for all movement> <with [Ice Mana]>"
+      "[This Unit] gains the [Chilling Presence (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1734,7 +1734,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Ice Elemental (Summoned)] appears <for all movement> <with [Ice Mana]>"
+      "Free [Ice Elemental (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1752,7 +1752,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Snowfall (Spell)] status for [2] turn(s) <for all movement> <with [Ice Mana]>"
+      "[This Unit] gains the [Snowfall (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1770,7 +1770,7 @@
     ],
     "uniques": [
       "Only available <with [Law Mana]>",
-      "[This Unit] gains the [Loyalty (Spell)] status for [2] turn(s) <for all movement> <with [Law Mana]>"
+      "[This Unit] gains the [Loyalty (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1788,7 +1788,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Einherjar (Summoned)] appears <for all movement> <with [Law Mana]>"
+      "Free [Einherjar (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1806,7 +1806,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Valor (Spell)] status for [2] turn(s) <for all movement> <with [Law Mana]>"
+      "[This Unit] gains the [Valor (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1824,7 +1824,7 @@
     ],
     "uniques": [
       "Only available <with [Life Mana]>",
-      "Remove [Smoke] improvements from this tile <for all movement> <with [Life Mana]> <in [your] tiles> <in [Smoke] tiles>"
+      "Remove [Smoke] improvements from this tile <for all movement> <in [your] tiles> <in [Smoke] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1842,7 +1842,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Destroy Undead (Spell)] status for [2] turn(s) <for all movement> <with [Life Mana]>"
+      "[This Unit] gains the [Destroy Undead (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1860,7 +1860,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Returned Soul (Summoned)] appears <for all movement> <with [Life Mana]>"
+      "Free [Returned Soul (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1878,7 +1878,7 @@
     ],
     "uniques": [
       "Only available <with [Metamagic Mana]>",
-      "Free [Floating Eye (Summoned)] appears <for all movement> <with [Metamagic Mana]>"
+      "Free [Floating Eye (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1896,7 +1896,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Remove [All] improvements from this tile <for all movement> <with [Metamagic Mana]> <in [Raw Mana] tiles> <in [your] tiles>"
+      "Remove [All] improvements from this tile <for all movement> <in [Raw Mana] tiles> <in [your] tiles>"
     ],
     "civilopediaText": [
       {
@@ -1914,7 +1914,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Djinn (Summoned)] appears <for all movement> <with [Metamagic Mana]>"
+      "Free [Djinn (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1932,7 +1932,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Charm Person (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]>"
+      "[This Unit] gains the [Charm Person (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1950,7 +1950,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Domination (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]>"
+      "[This Unit] gains the [Domination (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1968,7 +1968,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Poisoned Blade (Spell)] status for [2] turn(s) <for all movement> <with [Nature Mana]>"
+      "[This Unit] gains the [Poisoned Blade (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1986,8 +1986,8 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Turn this tile into a [Grassland] tile <for all movement> <with [Nature Mana]> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>",
-      "Turn this tile into a [Plains] tile <for all movement> <with [Nature Mana]> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles>"
+      "Turn this tile into a [Grassland] tile <for all movement> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Plains] tile <for all movement> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
@@ -2005,7 +2005,7 @@
     ],
     "uniques": [
       "Only available <with [Shadow Mana]>",
-      "[This Unit] gains the [Blur (Spell)] status for [2] turn(s) <for all movement> <with [Shadow Mana]>"
+      "[This Unit] gains the [Blur (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2023,7 +2023,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Shadowwalk (Spell)] status for [2] turn(s) <for all movement> <with [Shadow Mana]>"
+      "[This Unit] gains the [Shadowwalk (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2041,7 +2041,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Mistform (Summoned)] appears <for all movement> <with [Shadow Mana]>"
+      "Free [Mistform (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2059,7 +2059,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Gain a free [Hope (Spell)] [in this city] <for all movement> <with [Spirit Mana]> <in [City center] tiles>"
+      "Gain a free [Hope (Spell)] [in this city] <for all movement> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
@@ -2077,8 +2077,8 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Gain a free [Illumination (Spell)] [in this city] <for all movement> <with [Spirit Mana]> <in [City center] tiles>",
-      "Gain [5] [Culture] <for all movement> <with [Spirit Mana]>"
+      "Gain a free [Illumination (Spell)] [in this city] <for all movement> <in [City center] tiles>",
+      "Gain [5] [Culture] <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2096,7 +2096,7 @@
     ],
     "uniques": [
       "Only available <with [Sun Mana]>",
-      "Turn this tile into a [Desert] tile <for all movement> <with [Sun Mana]> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>"
+      "Turn this tile into a [Desert] tile <for all movement> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
@@ -2114,7 +2114,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Blinding Light (Spell)] status for [2] turn(s) <for all movement> <with [Sun Mana]>"
+      "[This Unit] gains the [Blinding Light (Spell)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2132,7 +2132,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Aurealis (Summoned)] appears <for all movement> <with [Sun Mana]>"
+      "Free [Aurealis (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2167,7 +2167,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Water Elemental (Summoned)] appears <for all movement> <with [Water Mana]>"
+      "Free [Water Elemental (Summoned)] appears <for all movement>"
     ],
     "civilopediaText": [
       {
