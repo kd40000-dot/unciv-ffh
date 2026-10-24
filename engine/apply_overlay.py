@@ -70,6 +70,62 @@ def main():
     replace_once(root, base+"logic/map/mapunit/UnitTurnManager.kt",
         '        unit.attacksThisTurn = 0\n        unit.due = true',
         '        unit.attacksThisTurn = 0\n        unit.emmSpellsCastThisTurn = 0\n        unit.due = true')
+
+    # Engine ruleset extension: load the mod's EMMSpells.json with ordinary
+    # Unciv ruleset merge semantics, including base rulesets and combined mods.
+    replace_once(root, base+"models/ruleset/Ruleset.kt",
+        '    val unitPromotions = LinkedHashMap<String, Promotion>()',
+        '    val unitPromotions = LinkedHashMap<String, Promotion>()\n    val emmSpells = LinkedHashMap<String, EMMSpell>()')
+    replace_once(root, base+"models/ruleset/Ruleset.kt",
+        '        unitPromotions.putAll(ruleset.unitPromotions)',
+        '        unitPromotions.putAll(ruleset.unitPromotions)\n        emmSpells.putAll(ruleset.emmSpells)')
+    replace_once(root, base+"models/ruleset/Ruleset.kt",
+        '        if (promotionsFile.exists()) unitPromotions += createHashmap(json().fromJsonFile(Array<Promotion>::class.java, promotionsFile))',
+        '''        if (promotionsFile.exists()) unitPromotions += createHashmap(json().fromJsonFile(Array<Promotion>::class.java, promotionsFile))
+
+        val emmSpellsFile = folderHandle.child("EMMSpells.json")
+        if (emmSpellsFile.exists())
+            for (spell in json().fromJsonFile(Array<EMMSpell>::class.java, emmSpellsFile))
+                emmSpells[spell.name] = spell''')
+
+    # Summoned-unit expiration and links live on each unit and survive save/load.
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '    var emmSpellsCastThisTurn = 0',
+        '''    var emmSpellsCastThisTurn = 0
+    /** 0 = ordinary/permanent unit; positive counts down at owner's start turn. */
+    var emmSummonTurnsLeft = 0
+    /** Persistent summoner ID (used by later caster-death and summon-limit rules). */
+    var emmSummonerId = -1''')
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '        toReturn.abilityToTimesUsed = HashMap(abilityToTimesUsed)',
+        '''        toReturn.abilityToTimesUsed = HashMap(abilityToTimesUsed)
+        toReturn.emmSpellsCastThisTurn = emmSpellsCastThisTurn
+        toReturn.emmSummonTurnsLeft = emmSummonTurnsLeft
+        toReturn.emmSummonerId = emmSummonerId''')
+    replace_once(root, base+"logic/map/mapunit/UnitTurnManager.kt",
+        '    fun startTurn():Unit = timeThis("UnitTurnManager.startTurn") {\n        unit.movement.clearPathfindingCache()',
+        '''    fun startTurn():Unit = timeThis("UnitTurnManager.startTurn") {
+        if (unit.emmSummonTurnsLeft > 0) {
+            unit.emmSummonTurnsLeft--
+            if (unit.emmSummonTurnsLeft == 0) {
+                unit.destroy()
+                return@timeThis
+            }
+        }
+        unit.movement.clearPathfindingCache()''')
+
+    # Courage boosts natural per-turn healing of the actual recipient,
+    # not the original temporary caster's entire adjacent healing aura.
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '        else -> healingAmountForTile(getTile(), noTerrainDamage = true)',
+        '''        else -> healingAmountForTile(getTile(), noTerrainDamage = true).let { amount ->
+            if (amount > 0 && hasStatus("Courage (Spell)")) amount + 10 else amount
+        }''')
+    spellModel = root / base / "models/ruleset/EMMSpell.kt"
+    if spellModel.exists():
+        raise RuntimeError("EMMSpell.kt already exists; overlay should not be applied twice")
+    shutil.copy2(HERE/"overlay"/"EMMSpell.kt", spellModel)
+
     # Public SDK channel on CI currently exposes API 36; upstream has compileSdk 37.
     # Use API 36 for this prototype and remove this compatibility shim when API 37 is available.
     replace_once(root, "android/build.gradle.kts",
@@ -84,7 +140,7 @@ def main():
     if destination.exists():
         raise RuntimeError("EmmSpellEngine.kt already exists; overlay should not be applied twice")
     shutil.copy2(HERE/"overlay"/"EmmSpellEngine.kt", destination)
-    print("EMM overlay applied: Haste, persisted 1-cast budget, unique/action/UI integration.")
+    print("EMM overlay applied: data-driven EMM spell executor, statuses, direct damage, summoned lifetimes.")
     print("Source pin:", UPSTREAM)
 
 if __name__ == "__main__":
