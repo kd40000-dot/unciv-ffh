@@ -1554,11 +1554,11 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Spellstaff (Spell)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains [1] movement <for [0] movement> <once>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Enchantment sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Extra spell cast cannot be triggered; uses temporary extra movement, not true spellstaff mechanics."
+        "text": "EMM Enchant Spellstaff / Spellstaff use: a spellcaster stores the capacity for one additional cast. Unciv approximation grants one no-movement-cost +1 movement refresh action per caster, so it can cast a spell after spending its movement. It does NOT duplicate the EMM enchant/use cycle; verify that the action actually works from zero remaining movement and cannot be repeated."
       }
     ]
   },
@@ -2419,12 +2419,11 @@
     "name": "Spellstaff (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+1] Movement",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment III Spellstaff: EMM grants an expendable spellstaff enabling a second spell cast. Stock Unciv lacks a separate spell-cast resource; temporary extra movement is ONLY a tactical proxy, not an extra cast. This remains significantly different, with a 2-turn duration unlike source."
+        "text": "Superseded legacy temporary movement proxy. No longer granted. Enchantment III now grants a one-time movement refresh action, intended to reproduce one extra spell cast rather than changing unit speed."
       }
     ]
   },
