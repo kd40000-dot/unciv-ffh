@@ -1141,12 +1141,11 @@
     "name": "Courage (Spell)",
     "unitTypes": [],
     "uniques": [
-      "All adjacent units heal [10] HP when healing",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Spirit I Courage: EMM grants eligible living allied units on the caster tile a temporary promotion (+10 same-tile healing, fear immunity, +5 exploration result bonus). Unciv adjacent healing aura now only affects healing, with no fear/exploration protection, and expires after two turns."
+        "text": "Native EMM engine status: increases the recipient's normal end-of-turn healing by 10 while active. EMM applies Courage to same-stack living allies and adds fear immunity and exploration bonus; allied adjacent hexes substitute for stacked units."
       }
     ]
   },
@@ -1160,11 +1159,11 @@
     ],
     "uniques": [
       "Only available <with [Spirit Mana]>",
-      "[This Unit] gains the [Courage (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Courage]"
     ],
     "civilopediaText": [
       {
-        "text": "Cast Courage: a temporary two-turn healing aura on this caster, providing +10 healing to adjacent units while they heal. EMM applies an individually removable Courage promotion to units on the caster's tile instead. Mana is required to learn and cast; moving away from the caster loses the proxy aura."
+        "text": "Native EMM engine casts Courage on eligible living allies in this hex and its six neighbors, giving each a timed healing status. EMM additionally grants fear immunity/exploration result bonuses; these are not yet modeled."
       }
     ]
   },
@@ -1196,11 +1195,11 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Maelstrom (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Maelstrom]"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Air sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Maelstrom substituted with two-turn adjacent enemy attack/defense weakness."
+        "text": "Native EMM engine casts Maelstrom at enemy units within two hexes, dealing 15 lightning-equivalent damage up to 30 accumulated damage, matching source iRange/iDamage/iDamageLimit. Neutral target war declaration and elemental resistance are pending."
       }
     ]
   },
@@ -1376,11 +1375,11 @@
     ],
     "uniques": [
       "Only available <with [Death Mana]>",
-      "Free [Skeleton (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Raise Skeleton]"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Death sphere rank I. Requires Death Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Raise Skeleton creates a permanent capped Skeleton proxy; no corpse mechanics or duration."
+        "text": "Native EMM engine creates a permanent Skeleton (EMM bPermanentUnitCreate=1). The original Python skeleton cap and immobile-spawn nuances require further testing."
       }
     ]
   },
@@ -1647,11 +1646,11 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Fire Elemental (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Fire Elemental]"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Fire sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Fire Elemental spawn without source summon duration."
+        "text": "Native EMM engine creates a Fire Elemental linked to its summoner, with an automatic one-turn lifespan. EMM summoning modifiers and summon limit checks need verification."
       }
     ]
   },
