@@ -1,69 +1,122 @@
 package com.unciv.logic.map.mapunit.actions
 
 import com.unciv.logic.map.mapunit.MapUnit
+import com.unciv.models.ruleset.EMMSpell
+import com.unciv.models.ruleset.unique.UniqueType
+import kotlin.math.min
+import kotlin.math.max
 
 /**
- * First EMM-specific spell executor.
+ * EMM spell executor shared by ruleset-defined spells.
  *
- * This class intentionally lives in the engine fork, not the JSON mod: native Unciv uniques
- * cannot apply promotion effects to *other* individual units selected at cast time.
+ * The caster's action advertises a spell via the native "Can cast EMM spell [name]"
+ * unique. The actual effect and selection rules are loaded from EMMSpells.json.
  *
- * SOURCE: bewlay/extramodmod, CIV4SpellInfos.xml SPELL_HASTE, PROMOTION_HASTED.
- * Haste affects living friendly land units in the caster's stack, gives +1 movement,
- * removes Slow, and the promotion expires with 100% chance at its next eligible tick.
- *
- * HEX ADAPTATION: Unciv permits one military unit per tile rather than Civ IV's stacks,
- * so "friendly living stack members" becomes caster + adjacent friendly land units (radius 1).
- *
- * The base game already serializes statusMap and decrements statuses in UnitTurnManager.startTurn.
- * Two stored turns keep the buff through the next friendly turn before expiration.
+ * NOTE: Civ IV stacks cannot map exactly to Unciv one-military-unit hexes. For
+ * stack-targeting spells, radius 1 selects friendlies in the caster's hex and
+ * the immediately adjacent hexes. This is an explicit gameplay adaptation.
  */
 object EmmSpellEngine {
-    private val hasteUnitTypes = setOf("Sword", "Archery", "Scout", "Mounted", "Magic")
-    private val notLivingNames = listOf("Golem", "Elemental", "Skeleton", "Spectre", "Wraith", "Lich",
-        "Pyre Zombie", "Djinn", "Mistform")
+    private val landMilitaryTypes = setOf("Sword", "Archery", "Scout", "Mounted", "Magic")
+    private val notLivingNames = listOf(
+        "Golem", "Elemental", "Skeleton", "Spectre", "Wraith", "Lich",
+        "Pyre Zombie", "Djinn", "Mistform"
+    )
 
-    private fun canReceiveHaste(target: MapUnit, caster: MapUnit): Boolean {
-        if (target.isDestroyed || target.civ != caster.civ) return false
-        if (!target.isMilitary() || target.isEmbarked()) return false
-        if (target.baseUnit.unitType !in hasteUnitTypes) return false
-        if ("Undead" in target.promotions.promotions) return false
-        if (notLivingNames.any { target.baseUnit.name.contains(it, ignoreCase = true) }) return false
+    private fun definition(caster: MapUnit, name: String): EMMSpell? =
+        caster.civ.gameInfo.ruleset.emmSpells[name]
+
+    private fun isLiving(unit: MapUnit): Boolean =
+        "Undead" !in unit.promotions.promotions &&
+        "Construct" !in unit.promotions.promotions &&
+        notLivingNames.none { unit.baseUnit.name.contains(it, ignoreCase = true) }
+
+    private fun matchesTarget(caster: MapUnit, other: MapUnit, spell: EMMSpell): Boolean {
+        if (other.isDestroyed) return false
+        when (spell.target) {
+            "SELF" -> if (other !== caster) return false
+            "FRIENDLY" -> if (other.civ != caster.civ) return false
+            "ENEMY" -> if (!caster.civ.isAtWarWith(other.civ)) return false
+            else -> return false
+        }
+        if (spell.militaryOnly && !other.isMilitary()) return false
+        if (spell.landOnly && (other.baseUnit.unitType !in landMilitaryTypes || other.isEmbarked())) return false
+        if (spell.livingOnly && !isLiving(other)) return false
         return true
     }
 
-    private fun hasteTargets(caster: MapUnit): List<MapUnit> {
-        val tile = caster.getTile()
-        val nearbyTiles = sequenceOf(tile) + tile.neighbors.asSequence()
-        return nearbyTiles.flatMap { it.getUnits() }
-            .filter { canReceiveHaste(it, caster) }
+    private fun targets(caster: MapUnit, spell: EMMSpell): List<MapUnit> {
+        if (spell.target == "SELF") return listOf(caster).filter { matchesTarget(caster, it, spell) }
+        return caster.getTile().getTilesInDistance(spell.radius)
+            .flatMap { it.getUnits() }
+            .filter { matchesTarget(caster, it, spell) }
             .distinctBy { it.id }
             .toList()
     }
 
-    /** All restrictions enforced here, not merely when deciding whether to show a button. */
-    fun canCast(caster: MapUnit, spell: String): Boolean {
-        if (caster.isDestroyed || !caster.hasMovement() || caster.emmSpellsCastThisTurn >= 1) return false
-        return when (spell) {
-            "Haste" -> hasteTargets(caster).any { !it.hasStatus("Hasted") || it.hasStatus("Slowed") }
-            else -> false // An unsupported spell is deliberately unavailable, not a silent no-op.
+    private fun damageAllowed(target: MapUnit, spell: EMMSpell): Int {
+        // FfH2 iDamageLimit caps TOTAL accrued damage, not damage dealt per cast.
+        val remainingAllowed = spell.damageLimit - (100 - target.health)
+        return max(0, min(spell.amount, remainingAllowed))
+    }
+
+    private fun wouldChange(target: MapUnit, spell: EMMSpell): Boolean =
+        when (spell.effect) {
+            "STATUS" -> (!target.hasStatus(spell.status) ||
+                (spell.removeStatus.isNotEmpty() && target.hasStatus(spell.removeStatus)))
+            "DAMAGE" -> damageAllowed(target, spell) > 0
+            "HEAL" -> target.health < 100 && spell.amount > 0
+            else -> false
+        }
+
+    /** Rechecked at execution time: an available UI action may become stale. */
+    fun canCast(caster: MapUnit, name: String): Boolean {
+        if (caster.isDestroyed || !caster.hasMovement()) return false
+        val spell = definition(caster, name) ?: return false
+        if (spell.name.isBlank() || spell.sourceId.isBlank()) return false
+        if (caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn) return false
+        // Do not allow direct calls to bypass the real learned promotion/unique.
+        if (caster.getMatchingUniques(UniqueType.EmmSpell).none { it.params[0] == name }) return false
+        return when (spell.effect) {
+            "SUMMON" -> spell.summonUnit.isNotEmpty() &&
+                caster.civ.gameInfo.ruleset.units.containsKey(spell.summonUnit)
+            "STATUS", "DAMAGE", "HEAL" -> targets(caster, spell).any { wouldChange(it, spell) }
+            else -> false
         }
     }
 
-    fun cast(caster: MapUnit, spell: String) {
-        if (!canCast(caster, spell)) return
-        when (spell) {
-            "Haste" -> {
-                // Source removes PROMOTION_SLOW from eligible units when HASTE is cast.
-                // Unciv's corresponding unit state is a status. Does not confuse
-                // the old caster-wide "Slow (Spell)" damage proxy with actual Slowed.
-                for (target in hasteTargets(caster)) {
-                    target.removeStatus("Slowed")
-                    target.setStatus("Hasted", 2)
-                }
+    /**
+     * Cast once, applying independent effects per target and consuming movement
+     * only after a real state change. Old vanilla self-cast proxy actions are
+     * removed from the corresponding promotions in the EMM engine ruleset.
+     */
+    fun cast(caster: MapUnit, name: String) {
+        if (!canCast(caster, name)) return
+        val spell = definition(caster, name) ?: return
+        var applied = false
+        if (spell.effect == "SUMMON") {
+            val summoned = caster.civ.units.placeUnitNearTile(caster.getTile().position, spell.summonUnit)
+            if (summoned != null) {
+                summoned.emmSummonerId = caster.id
+                summoned.emmSummonTurnsLeft = spell.summonDuration
+                applied = true
             }
-            else -> return
+        } else {
+            // Snapshot targets before effects: kills can remove units from tiles.
+            for (target in targets(caster, spell)) {
+                if (!wouldChange(target, spell)) continue
+                when (spell.effect) {
+                    "STATUS" -> {
+                        if (spell.removeStatus.isNotEmpty()) target.removeStatus(spell.removeStatus)
+                        target.setStatus(spell.status, spell.duration)
+                    }
+                    "DAMAGE" -> target.takeDamage(damageAllowed(target, spell))
+                    "HEAL" -> target.healBy(spell.amount)
+                }
+                applied = true
+            }
         }
+        if (!applied) return
         caster.emmSpellsCastThisTurn++
         caster.useMovementPoints(caster.currentMovement)
     }
