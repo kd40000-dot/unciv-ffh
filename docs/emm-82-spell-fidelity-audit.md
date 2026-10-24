@@ -61,7 +61,7 @@ None established. Passing Unciv `mod-ci` is parser/ruleset validation, not proof
 | MAGIC MISSILE | summons MAGIC MISSILE | Free [Magic Missile (Summoned)] appears <for all movement> | Native expendable ranged projectile approximates summon; range, battle mechanics, duration and AI differ. |
 | MUTATION | grants MUTATED | [This Unit] gains the [Mutation (Spell)] status for [2] turn(s) <for all movement> | EMM randomly mutates eligible living units; mod deterministic +20% attack/-20% defense on caster. |
 | POISONED BLADE | grants POISONED BLADE | [This Unit] gains the [Poisoned Blade (Spell)] status for [2] turn(s) <for all movement> | EMM grants poisoned weapons to target units; mod proximity Sword Strength bonus without poison or lasting enchant. |
-| REGENERATION | grants REGENERATION | [This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement> | Corrected to +10 HP on normal healing; still only caster, 2 turns, instead of eligible allies with source expiration. |
+| REGENERATION | grants REGENERATION | [This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement> | Restored +10 HP healing and the ability to heal even after acting, both present in EMM. Still affects only caster for two turns instead of allied targets until fully healed. |
 | REPAIR | EMM Python action/condition | [This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> ; [This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <for units with [Dwarf]> | Source instant +20 healing to damaged constructs on caster tile by Dwarf caster; mod adjacent +20 to normal healing and not limited to constructs. |
 | RESSURECTION | EMM Python action/condition | Free [Returned Soul (Summoned)] appears <for all movement> | EMM raises a specific dead heroic unit after timed casting; mod spawns generic Returned Soul and does not restore history. |
 | RESSURECTION GRAVEYARD | EMM Python action/condition | Free [Returned Soul (Summoned)] appears <for all movement> | EMM graveyard-only Resurrection variant; mod has no separate graveyard-conditional casting action. |
@@ -110,7 +110,7 @@ None established. Passing Unciv `mod-ci` is parser/ruleset validation, not proof
 
 1. **Life II Destroy Undead:** applied Undead tags to Skeleton, Spectre, Wraith, Pyre Zombie and Lich, rather than counting all Magic units as undead; source direct AoE remains unimplemented.
 2. **Law III Valor:** replaced incorrect +50% XP/+10% attack with native +1 XP per combat; source resistance and buff targeting remain unavailable.
-3. **Body II Regeneration:** removed unconditional healing every turn; preserves +10 HP when healing.
+3. **Body II Regeneration:** restored the original `bAlwaysHeal=1` so the unit heals even when it acts, together with +10 HP when healing; source applies to allied living units until fully healed.
 4. **Earth II Stoneskin:** replaced +40% defending Strength with +2 flat defending Strength; EMM three first strikes and 50% resistances still missing.
 5. **Shadow II Shadowwalk:** removed unintended terrain-cost ignoring; retains a city-combat proxy for bypassing building defenses.
 6. **Enchantment III Spellstaff:** replaced temporary +1 maximum movement with one-time +1 movement restoration at zero movement cost, attempting an extra cast. **Android validation is essential** to check execution order and zero-movement availability.
