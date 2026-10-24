@@ -1159,5 +1159,957 @@
         "text": "Cast Courage: a temporary two-turn healing aura on this caster, providing +10 healing to adjacent units while they heal. EMM applies an individually removable Courage promotion to units on the caster's tile instead. Mana is required to learn and cast; moving away from the caster loses the proxy aura."
       }
     ]
+  },
+  {
+    "name": "Air I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Air Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Air sphere rank I. Requires Air Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Air II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Air I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Air sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Air III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Air II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Air sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Body II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Body I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Body sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Body III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Body II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Body sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Chaos I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Chaos Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Chaos sphere rank I. Requires Chaos Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Chaos II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Chaos I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Chaos sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Chaos III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Chaos II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Chaos sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Creation I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Creation Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Creation sphere rank I. Requires Creation Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Creation II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Creation I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Creation sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Creation III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Creation II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Creation sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Death I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Death Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Death sphere rank I. Requires Death Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Death II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Death I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Death sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Death III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Death II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Death sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Dimensional Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Dimensional sphere rank I. Requires Dimensional Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Dimensional I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Dimensional sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Dimensional III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Dimensional II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Dimensional sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Earth I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Earth Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Earth sphere rank I. Requires Earth Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Earth II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Earth I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Earth sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Earth III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Earth II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Earth sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Enchantment I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Enchantment sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Enchantment II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Enchantment sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Entropy I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Entropy Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Entropy sphere rank I. Requires Entropy Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Entropy II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Entropy I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Entropy sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Entropy III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Entropy II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Entropy sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Fire II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Fire I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Fire sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Fire III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Fire II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Fire sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Force I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Force Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Force sphere rank I. Requires Force Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Force II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Force I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Force sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Force III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Force II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Force sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Ice I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Ice Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Ice sphere rank I. Requires Ice Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Ice II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Ice I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Ice sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Ice III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Ice II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Ice sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Law I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Law Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Law sphere rank I. Requires Law Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Law II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Law I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Law sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Law III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Law II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Law sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Life I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Life Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Life sphere rank I. Requires Life Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Life II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Life I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Life sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Life III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Life II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Life sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Metamagic Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Metamagic sphere rank I. Requires Metamagic Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Metamagic I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Metamagic sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Metamagic II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Metamagic sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Mind II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Mind I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Mind sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Mind III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Mind II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Mind sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Nature II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Nature I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Nature sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Nature III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Nature II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Nature sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Shadow I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Shadow Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Shadow sphere rank I. Requires Shadow Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Shadow II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Shadow I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Shadow sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Shadow III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Shadow II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Shadow sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Spirit II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Spirit I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Spirit sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Spirit III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Spirit II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Spirit sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Sun I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Sun Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Sun sphere rank I. Requires Sun Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Sun II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Sun I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Sun sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Sun III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Sun II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Sun sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Water II",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Water I"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling II]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Water sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Water III",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Water II"
+    ],
+    "uniques": [
+      "Only available <for units with [Channeling III]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Water sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
   }
 ]
