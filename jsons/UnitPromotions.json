@@ -2294,6 +2294,7 @@
     "unitTypes": [],
     "uniques": [
       "All adjacent units heal [10] HP when healing",
+      "Unit will heal every turn, even if it performs an action",
       "[10] HP when healing",
       "Not shown on world screen"
     ],
