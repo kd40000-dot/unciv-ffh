@@ -2668,5 +2668,22 @@
       "Channeling II",
       "Channeling III"
     ]
+  },
+  {
+    "name": "Sand Lion (Summoned)",
+    "unitType": "Mounted",
+    "movement": 3,
+    "strength": 5,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Source EMM Sand Lion has 5 combat and 3 movement, summoned by Malakim rank-II arcane casters while in Desert. Native Unciv unit persists rather than expiring automatically; manual dismissal available."
+      }
+    ]
   }
 ]
