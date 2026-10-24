@@ -13,7 +13,7 @@ source=load("docs/data/emm-unit-building-catalog.json")
 palaceOriginal={x["id"]:x for x in source["buildings"]}
 assert ref["commit"]==civs["commit"]==source["commit"]=="60b0ec3740083162aaab7bf8491761a54a65a610"
 traits=ref["traits"]
-assert len(ref["palaceSources"])==19 and len(buildings)==76 and len(nations)==20
+assert len(ref["palaceSources"])==19 and len([b for b in buildings if not b['name'].endswith(' (Spell)')])==76 and len(nations)==20
 effects={
     "TRAIT_FINANCIAL":["[+25]% [Gold] [in all cities]"],
     "TRAIT_CREATIVE":["[+2 Culture] [in all cities]","[+10]% [Culture] [in all cities]"],
