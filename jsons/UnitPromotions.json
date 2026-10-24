@@ -1059,11 +1059,12 @@
     ],
     "uniques": [
       "Only available <with [Enchantment Mana]>",
-      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
+      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>",
+      "[This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]> <for units with [Dwarf]>"
     ],
     "civilopediaText": [
       {
-        "text": "Requires Channeling I and Enchantment Mana. Cast Enchanted Blade to grant the caster a 2-turn aura that gives friendly Sword-class troops within one tile +20% combat Strength. Casting costs all movement; the caster survives. This is a deliberately temporary proximity-based approximation, not EMM's permanent melee-unit Enchanted Blade promotion or Rusted removal."
+        "text": "Requires Channeling I and Enchantment Mana. Cast Enchanted Blade to grant the caster a 2-turn aura that gives friendly Sword-class troops within one tile +20% combat Strength. Casting costs all movement; the caster survives. This is a deliberately temporary proximity-based approximation, not EMM's permanent melee-unit Enchanted Blade promotion or Rusted removal. Repair is available only to Dwarf-promoted casters and gives adjacent +20 healing instead of EMM direct construct repair."
       }
     ]
   },
@@ -2471,6 +2472,19 @@
     "civilopediaText": [
       {
         "text": "Entropy I Rust approximation: temporary local debuff (-10% Strength) to nearby enemy Sword units. EMM applies a permanent Rusted debuff, removes Copper/Iron/Mithril equipment and checks spell resistance; stock Unciv does not allow targeted equipment removal."
+      }
+    ]
+  },
+  {
+    "name": "Repair (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [20] HP when healing",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dwarf-only Enchantment I Repair proxy: +20 HP healing assistance to adjacent units for two turns. EMM directly heals up to 20 HP from damaged golems/constructs on caster's tile; this Unciv effect neither restricts recipients to constructs nor grants instant healing."
       }
     ]
   }
