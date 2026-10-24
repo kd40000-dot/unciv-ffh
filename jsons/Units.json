@@ -2259,11 +2259,15 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "Invisible to non-adjacent units"
+      "Invisible to non-adjacent units",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2275,11 +2279,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2292,11 +2300,15 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "Self-destructs when attacking"
+      "Self-destructs when attacking",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ],
     "rangedStrength": 8,
@@ -2311,11 +2323,15 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "Self-destructs when attacking"
+      "Self-destructs when attacking",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ],
     "rangedStrength": 6,
@@ -2329,11 +2345,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2345,11 +2365,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2361,11 +2385,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2377,8 +2405,7 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased",
-      "Cannot move"
+      "Cannot be purchased"
     ],
     "civilopediaText": [
       {
@@ -2395,11 +2422,15 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "Invisible to non-adjacent units"
+      "Invisible to non-adjacent units",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2411,11 +2442,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2427,11 +2462,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2443,11 +2482,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2459,11 +2502,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2476,11 +2523,15 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "Invisible to non-adjacent units"
+      "Invisible to non-adjacent units",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2492,11 +2543,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2508,11 +2563,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2526,11 +2585,15 @@
       "Unbuildable",
       "Cannot be purchased",
       "Cannot attack",
-      "[+3] Sight"
+      "[+3] Sight",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2542,11 +2605,15 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      },
+      {
+        "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
     ]
   },
@@ -2558,7 +2625,8 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "Limited to [4] per Civilization"
     ],
     "civilopediaText": [
       {
