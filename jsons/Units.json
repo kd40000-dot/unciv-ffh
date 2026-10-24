@@ -2164,7 +2164,10 @@
         "text": "An undead abomination created through Sheaim necromancy and destructive magic."
       }
     ],
-    "uniques": []
+    "uniques": [],
+    "promotions": [
+      "Undead"
+    ]
   },
   {
     "name": "Divided Soul",
@@ -2343,6 +2346,9 @@
       {
         "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
       }
+    ],
+    "promotions": [
+      "Undead"
     ]
   },
   {
@@ -2755,7 +2761,8 @@
     "promotions": [
       "Channeling I",
       "Channeling II",
-      "Channeling III"
+      "Channeling III",
+      "Undead"
     ]
   },
   {
