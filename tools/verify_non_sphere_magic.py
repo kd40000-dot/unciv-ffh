@@ -25,7 +25,7 @@ assert "[+1] Strength" in promotions["Lucian Bronze Veteran"]["uniques"]
 assert "Stealth" in promotions
 assert promotions["Stealth"]["unitTypes"]==["Scout"]
 assert "[This Unit] gains the [Hidden (Spell)] status for [2] turn(s) <for all movement> <for units without [Hidden (Spell)]>" in promotions["Stealth"]["uniques"]
-assert "Invisible to non-adjacent units" in promotions["Hidden (Spell)"]["uniques"]
+assert "Invisible to others" in promotions["Hidden (Spell)"]["uniques"]
 s=units["Severed Soul (Summoned)"]
 assert s["movement"]==2 and s["strength"]==1 and s["unitType"]=="Scout"
 assert {"Unbuildable","Cannot be purchased","Cannot attack","Ignores terrain cost"} <= set(s["uniques"])
