@@ -2184,12 +2184,16 @@
     "name": "Fair Winds (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+1] Movement",
+      "[+20]% Strength bonus for [Melee Water] units within [1] tiles",
+      "[+20]% Strength bonus for [Civilian Water] units within [1] tiles",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Proxy for Air I Fair Winds: caster movement +1 for 2 turns. EMM grants Fair Winds to naval units including withdrawal chance; allied ship targeting and withdrawal are unsupported."
+      },
+      {
+        "text": "Audit: EMM Air I Fair Winds boosts movement and withdrawal for allied naval units on the caster tile. This revised native approximation at least affects nearby NAVAL units rather than incorrectly speeding up the LAND caster. It gives +20% ship combat strength, not movement/withdrawal; no direct native movement aura exists."
       }
     ]
   },
@@ -2289,13 +2293,16 @@
     "name": "Regeneration (Spell)",
     "unitTypes": [],
     "uniques": [
+      "All adjacent units heal [10] HP when healing",
       "[10] HP when healing",
-      "Unit will heal every turn, even if it performs an action",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Body II Regeneration: +10 HP when healing, including on turns after actions, based on EMM iFriendlyHealChange/iNeutralHealChange/iEnemyHealChange=10 and bAlwaysHeal=1. Missing EMM allied targeting and removal once completely healed."
+      },
+      {
+        "text": "Audit: EMM Body II Regeneration gives +10 healing per turn to living friendly units on caster tile. This native approximation provides +10 healing on caster and adjacent units; it cannot discriminate between living/friendly recipients as precisely, and EMM granted individual promotions rather than a proximity aura."
       }
     ]
   },
@@ -2349,6 +2356,9 @@
     "civilopediaText": [
       {
         "text": "Life II Destroy Undead: proxy combat bonus specifically against Undead promotion (not all Magic). EMM directly damages hostile Undead in a radius; native Unciv cannot perform that AoE spell targeting. Test the Undead tag on Lich and Spectre/Wraith, and verify non-undead magic units receive no penalty."
+      },
+      {
+        "text": "Audit: remove incorrect Magic-class target. EMM Life II damages nearby undead with magic resistance and damage caps. Native proxy grants temporary +50% caster combat effectiveness ONLY against Undead-tagged units, not AoE spell damage; absent EMM undead units cannot be targeted until ported."
       }
     ]
   },
