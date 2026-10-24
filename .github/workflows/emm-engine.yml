@@ -1,0 +1,67 @@
+name: EMM engine fork Android debug build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/emm-engine-2026-10-25
+    paths:
+      - "engine/**"
+      - "jsons/**"
+      - ".github/workflows/emm-engine.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out mod and engine overlay
+        uses: actions/checkout@v4
+        with:
+          path: ffh-mod
+      - name: Check out pinned upstream Unciv source
+        uses: actions/checkout@v4
+        with:
+          repository: yairm210/Unciv
+          ref: b5c4bccd2b038f49183338811dc30efec81cb105
+          path: unciv-source
+          submodules: recursive
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install Android 37 SDK platform
+        run: sdkmanager --install "platforms;android-37" "build-tools;37.0.0"
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Apply EMM Kotlin overlay
+        run: python3 ffh-mod/engine/apply_overlay.py unciv-source
+      - name: Verify engine DSL exists in mod
+        run: |
+          python3 - <<'PY'
+          import json
+          with open("ffh-mod/jsons/UnitPromotions.json",encoding="utf-8") as f:
+              p={x["name"]:x for x in json.load(f)}
+          assert "Can cast EMM spell [Haste]" in p["Body I"]["uniques"]
+          assert "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement>" not in p["Body I"]["uniques"]
+          print("OK: engine-backed Haste replaces old self-buff in the mod")
+          PY
+      - name: Compile patched Unciv core
+        working-directory: unciv-source
+        run: ./gradlew :core:compileKotlin --no-daemon --stacktrace
+      - name: Build separately installable EMM Android client
+        working-directory: unciv-source
+        run: ./gradlew :android:assembleDebug --no-daemon --stacktrace
+      - name: Publish test APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unciv-emm-engine-debug
+          path: unciv-source/android/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14
