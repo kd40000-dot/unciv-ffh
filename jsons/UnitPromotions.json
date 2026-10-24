@@ -1566,11 +1566,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Entropy Mana]>"
+      "Only available <with [Entropy Mana]>",
+      "[This Unit] gains the [Rusted (Spell)] status for [2] turn(s) <for all movement> <with [Entropy Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Entropy sphere rank I. Requires Entropy Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Entropy sphere rank I. Requires Entropy Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Rust is a temporary nearby enemy Sword debuff, not direct weapon destruction."
       }
     ]
   },
@@ -2457,6 +2458,19 @@
     "civilopediaText": [
       {
         "text": "Mind III Domination: local enemy debuff only; EMM captures a living enemy unit and checks spell resistance."
+      }
+    ]
+  },
+  {
+    "name": "Rusted (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-10]% Strength for enemy [Sword] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Entropy I Rust approximation: temporary local debuff (-10% Strength) to nearby enemy Sword units. EMM applies a permanent Rusted debuff, removes Copper/Iron/Mithril equipment and checks spell resistance; stock Unciv does not allow targeted equipment removal."
       }
     ]
   }
