@@ -1196,9 +1196,11 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Growth city building grants 10% food retained on population increases and +1 Health. Unciv reproduces food retention via native unique but cannot represent EMM Health; unlike EMM, this building persists when caster leaves/dies."
+        "text": "EMM Growth from Creation I: +2 Food, +1 Culture, 10% Food retained on population increase and +1 Health. The first three effects are represented here. Health and removal when the caster leaves/dies are unsupported; this structure persists indefinitely."
       }
-    ]
+    ],
+    "food": 2,
+    "culture": 1
   },
   {
     "name": "Blessing (Spell)",
@@ -1232,14 +1234,14 @@
     "name": "Hope (Spell)",
     "cost": 0,
     "happiness": 1,
-    "culture": 1,
+    "culture": 4,
     "uniques": [
       "Unbuildable",
       "Cannot be purchased"
     ],
     "civilopediaText": [
       {
-        "text": "Spirit II Hope +1 Happiness, +1 Culture; EMM original hope may remove building with caster."
+        "text": "EMM Spirit II Hope: +1 Happiness, +4 Culture (from ObsoleteSafeCommerceChanges), lowered revolution index and a promotion granted to moving units while the caster remains. Unciv reproduces the +1 Happiness and +4 Culture. It does not reproduce revolution index, free promotion or caster-linked disappearance."
       }
     ]
   },
