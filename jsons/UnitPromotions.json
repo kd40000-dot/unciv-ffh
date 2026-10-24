@@ -1205,11 +1205,12 @@
       "Air II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Air Elemental (Summoned)] appears <for all movement> <with [Air Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Air sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Air sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Air Elemental unit spawn; no duration/summon cap faithful to EMM."
       }
     ]
   },
@@ -1240,11 +1241,12 @@
       "Body II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Flesh Golem (Summoned)] appears <for all movement> <with [Body Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Body sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Body sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native permanent Flesh Golem proxy; EMM allows grafting other units into it."
       }
     ]
   },
@@ -1293,11 +1295,12 @@
       "Chaos II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Gain [1]-[12] [Gold] <for all movement> <with [Chaos Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Chaos sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Chaos sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Wonder unpredictable magic is not representable, instead a small random Gold reward (not source-equivalent)."
       }
     ]
   },
@@ -1346,11 +1349,12 @@
       "Creation II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Gain a free [Blessing (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Creation sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Creation sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Blessing creates permanent city Faith/Culture building in lieu of source-bound temporary building."
       }
     ]
   },
@@ -1399,11 +1403,13 @@
       "Death II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Wraith (Summoned)] appears <for all movement> <with [Death Mana]>",
+      "Can transform to [Lich] <for all movement> <after discovering [Divine Essence]> <with [Death Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Death sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Death sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Wraith spawn, no EMM summon expiration. Lichdom requires Divine Essence and transforms caster; limited roster/lifespan behavior not fully recreated."
       }
     ]
   },
@@ -1452,11 +1458,12 @@
       "Dimensional II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Can instantly construct a [Rift (Spell)] improvement <for all movement> <with [Dimensional Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Dimensional sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Dimensional sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Dimensional Rift creates an infrastructure proxy, but cannot teleport other units/transfer between rifts."
       }
     ]
   },
@@ -1505,11 +1512,12 @@
       "Earth II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Earth Elemental (Summoned)] appears <for all movement> <with [Earth Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Earth sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Earth sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Summon Earth Elemental: native spawn, no expiration."
       }
     ]
   },
@@ -1540,11 +1548,12 @@
       "Enchantment II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "[This Unit] gains the [Spellstaff (Spell)] status for [2] turn(s) <for all movement> <with [Enchantment Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Enchantment sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Enchantment sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Extra spell cast cannot be triggered; uses temporary extra movement, not true spellstaff mechanics."
       }
     ]
   },
@@ -1592,11 +1601,12 @@
       "Entropy II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "[This Unit] gains the [Wither (Spell)] status for [2] turn(s) <for all movement> <with [Entropy Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Entropy sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Entropy sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Enemy debuff aura, not targeted damaging Wither."
       }
     ]
   },
@@ -1627,11 +1637,12 @@
       "Fire II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Fire Elemental (Summoned)] appears <for all movement> <with [Fire Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Fire sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Fire sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Fire Elemental spawn without source summon duration."
       }
     ]
   },
@@ -1680,11 +1691,12 @@
       "Force II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Runewyn (Summoned)] appears <for all movement> <with [Force Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Force sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Force sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Runewyn appears as a normal spell-created unit and does not automatically expire."
       }
     ]
   },
@@ -1733,11 +1745,12 @@
       "Ice II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "[This Unit] gains the [Snowfall (Spell)] status for [2] turn(s) <for all movement> <with [Ice Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Ice sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Ice sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. No cold damage, source line-of-sight or city radius."
       }
     ]
   },
@@ -1786,11 +1799,12 @@
       "Law II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "[This Unit] gains the [Valor (Spell)] status for [2] turn(s) <for all movement> <with [Law Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Law sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Law sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Combat XP and attack strength proxy on caster."
       }
     ]
   },
@@ -1839,11 +1853,12 @@
       "Life II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Returned Soul (Summoned)] appears <for all movement> <with [Life Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Life sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Life sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Resurrection cannot locate a dead hero under JSON; this instead creates a modest proxy allied unit, NOT restoring specific fallen units."
       }
     ]
   },
@@ -1892,11 +1907,12 @@
       "Metamagic II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Djinn (Summoned)] appears <for all movement> <with [Metamagic Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Metamagic sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Metamagic sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Djinn spawn, no EMM lifetime."
       }
     ]
   },
@@ -1927,11 +1943,12 @@
       "Mind II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "[This Unit] gains the [Domination (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Mind sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Mind sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Temporary combat suppression only; cannot take control of hostile units."
       }
     ]
   },
@@ -1962,11 +1979,13 @@
       "Nature II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Turn this tile into a [Grassland] tile <for all movement> <with [Nature Mana]> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Plains] tile <for all movement> <with [Nature Mana]> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Nature sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Nature sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Vitalize upgrades owned unimproved Plains to Grassland; incomplete source landscape progression. Also upgrades desert to plains; no conversion of floodplains or forest tiles."
       }
     ]
   },
@@ -2015,11 +2034,12 @@
       "Shadow II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Mistform (Summoned)] appears <for all movement> <with [Shadow Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Shadow sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Shadow sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Mistform unit spawn; no temporary summon lifetime."
       }
     ]
   },
@@ -2050,11 +2070,13 @@
       "Spirit II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Gain a free [Illumination (Spell)] [in this city] <for all movement> <with [Spirit Mana]> <in [City center] tiles>",
+      "Gain [5] [Culture] <for all movement> <with [Spirit Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Spirit sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Spirit sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Illumination installs persistent Culture and Science city building; source caster-generated city effect differs. Trust's diplomatic effect is unsupported, this is a small symbolic Culture boon rather than actual AI treaty change."
       }
     ]
   },
@@ -2103,11 +2125,12 @@
       "Sun II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Aurealis (Summoned)] appears <for all movement> <with [Sun Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Sun sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Sun sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Aurealis sun elemental, permanent instead of source summoned duration."
       }
     ]
   },
@@ -2137,11 +2160,12 @@
       "Water II"
     ],
     "uniques": [
-      "Only available <for units with [Channeling III]>"
+      "Only available <for units with [Channeling III]>",
+      "Free [Water Elemental (Summoned)] appears <for all movement> <with [Water Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Water sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Water sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Water Elemental spawn without EMM lifetime."
       }
     ]
   },
@@ -2367,6 +2391,72 @@
     "civilopediaText": [
       {
         "text": "Sun II Blinding Light: 2-turn adjacent enemy combat debuff. EMM can immobilize/blind enemies, with resistance checks."
+      }
+    ]
+  },
+  {
+    "name": "Spellstaff (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment III Spellstaff approximation: temporary movement +1 so caster can reposition; EMM spellstaff grants an additional spell cast and can be consumed."
+      }
+    ]
+  },
+  {
+    "name": "Wither (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-25]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Entropy III Wither represented by 2-turn adjacent enemy Strength penalty; EMM inflicts direct damage plus Withered debuff with healing/XP penalties."
+      }
+    ]
+  },
+  {
+    "name": "Snowfall (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-30]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice III Snowfall is a 2-turn adjacent enemy Strength debuff, not EMM cold AoE damage or terrain effect."
+      }
+    ]
+  },
+  {
+    "name": "Valor (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+50]% XP gained from combat",
+      "[+10]% Strength <when attacking>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Law III Valor is a temporary self buff (+50% XP from combat, +10% attack), rather than EMM's lasting Valor promotion to allied units."
+      }
+    ]
+  },
+  {
+    "name": "Domination (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-35]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mind III Domination: local enemy debuff only; EMM captures a living enemy unit and checks spell resistance."
       }
     ]
   }
