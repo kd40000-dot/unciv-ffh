@@ -88,3 +88,13 @@ Pinned EMM Continued `CIV4SpellInfos.xml` source commit `60b0ec3740083162aaab7bf
 ## Non-sphere EMM spell records
 
 The separate [full 355-entry inventory](emm-full-spell-inventory.md) is authoritative for the 288 non-sphere records. They include equipment drop/take actions, religion/faction spells, world spells, automation and UI actions; **these are NOT implemented by the 63 sphere promotions**. Implement them only when the related EMM units, religions, artifacts, map features and engine mechanics have been ported. Track them as unresolved instead of treating placeholder promotions as functional.
+
+## EMM faction and unit spell proxies beyond the sphere catalog
+
+- [ ] **Moroi — Burning Blood**: Build a Calabim Moroi. Cast Burning Blood; confirm +20% Strength, +1 Movement, two-turn expiration, no extra empire-wide effects. EMM additionally gives Blitz, fear immunity, 20% betrayal chance and probabilistic expiry; not simulated.
+- [ ] **Centaur — Sprint**: Kuriotates Centaur, Centaur Archer, Centaur Charger and Centaur Lancer should each have Sprint; verify +1 Movement and -10% Strength for 2 turns, cast uses all current movement, no ability on non-centaur cavalry. EMM has separate Fatigue mechanics; this proxy can be refreshed rather than blocked while fatigued.
+- [ ] **Illians Assassin — Whiteout**: Test Assassin on Snow as Illians, verify temporary invisibility to non-adjacent enemies for 2 turns. Ensure unavailable off Snow and for other civilizations. EMM Hidden is a stronger invisibility effect that disappears after combat/casting.
+- [ ] **Myconid — Spores**: Test Khazad Myconid adjacent to enemy; verify its two-turn local -20% enemy Strength effect, absence beyond radius, and no friendly penalty. EMM instead inflicts resisted three-turn immobility; no full immobilization represented.
+- [ ] **Malakim arcane — Sand Lion**: On Desert, use Malakim Mage/Archmage with Channeling II; verify Sand Lion spawn (strength 5, movement 3) and manual dismissal. Ensure not available on Grassland or to non-Malakim casters. EMM also allows Burning Sands and expires summons automatically.
+
+**All test boxes are intentionally unchecked** until real Android confirmation.
