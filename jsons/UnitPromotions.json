@@ -2299,12 +2299,11 @@
     "unitTypes": [],
     "uniques": [
       "[10] HP when healing",
-      "Unit will heal every turn, even if it performs an action",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Body II Regeneration temporary caster healing only; EMM buffs allied living targets on the caster tile."
+        "text": "Body II Regeneration: +10 HP when this caster normally heals (matching EMM +10 friendly/neutral/enemy healing). EMM grants this promotion to living allied units, while the Unciv two-turn buff affects only the caster. Removed automatic every-turn healing because it is not part of EMM Regeneration."
       }
     ]
   },
@@ -2331,10 +2330,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Earth II Stoneskin: two-turn defense strength on caster. EMM Stoneskin also adds first strikes and magic resistance."
-      },
-      {
-        "text": "EMM Stoneskin grants +2 physical defense plus 3 first strikes and 50% magical resistances and wears off upon combat. Native Unciv can apply +2 defensive Strength but not these additional effects in one spell."
+        "text": "Earth II Stoneskin: +2 defensive Strength on caster for 2 turns, in place of EMM's +2 extra defense plus three first strikes and multiple 50% resistance bonuses. Stock Unciv cannot directly represent those first strikes/resistance channels here."
       }
     ]
   },
@@ -2462,15 +2458,12 @@
     "name": "Valor (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+1] XP gained from combat",
+      "[1] XP gained from combat",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Law III Valor is a temporary self buff (+50% XP from combat, +10% attack), rather than EMM's lasting Valor promotion to allied units."
-      },
-      {
-        "text": "Revised from +50% XP (incorrect) to EMM's exact +1 XP per combat. EMM also grants +10 magic resistance and +10 exploration result bonus and applies to allied units on tile; Unciv self-status only and does not reproduce those extras."
+        "text": "Law III Valor native proxy: +1 XP per combat (matching EMM iFreeXPFromCombat=1) for 2 turns on caster. EMM applies Valor to eligible living allied units for longer, plus 10 Magic Resistance and +10 exploration result bonus. The previous +50% XP and +10% attack modifiers were inaccurate and were removed."
       }
     ]
   },
