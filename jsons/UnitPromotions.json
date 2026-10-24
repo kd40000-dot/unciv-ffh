@@ -2487,5 +2487,59 @@
         "text": "Dwarf-only Enchantment I Repair proxy: +20 HP healing assistance to adjacent units for two turns. EMM directly heals up to 20 HP from damaged golems/constructs on caster's tile; this Unciv effect neither restricts recipients to constructs nor grants instant healing."
       }
     ]
+  },
+  {
+    "name": "Burning Blood (Ability)",
+    "unitTypes": [],
+    "uniques": [
+      "[+20]% Strength",
+      "[+1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moroi EMM Burning Blood: self +20% strength and +1 movement. EMM also grants Blitz, fear immunity, 20% betrayal chance, randomized expiry and removes Loyalty; unavailable in this two-turn timed proxy."
+      }
+    ]
+  },
+  {
+    "name": "Sprint Fatigue (Ability)",
+    "unitTypes": [],
+    "uniques": [
+      "[+1] Movement",
+      "[-10]% Strength",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kuriotates Centaur Sprint proxy: +1 movement but -10% Strength for two turns, representing EMM Hasted plus Fatigued. EMM has separate Haste/Fatigue random expiration and prevents sprinting while already fatigued."
+      }
+    ]
+  },
+  {
+    "name": "Whiteout (Ability)",
+    "unitTypes": [],
+    "uniques": [
+      "Invisible to non-adjacent units",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illians Assassin Whiteout proxy: two-turn partial invisibility in Snow. EMM Hidden unit is truly invisible until combat/casting; non-adjacent invisibility is Unciv approximation."
+      }
+    ]
+  },
+  {
+    "name": "Spores (Ability)",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Myconid Spores proxy: adjacent enemy Strength -20% for two turns rather than EMM's resistable three-turn immobility. Cannot directly target unit movement with a native caster aura."
+      }
+    ]
   }
 ]
