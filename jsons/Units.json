@@ -2336,7 +2336,8 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "Limited to [3] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2354,7 +2355,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Invisible to non-adjacent units",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2363,6 +2365,9 @@
       {
         "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
+    ],
+    "promotions": [
+      "Undead"
     ]
   },
   {
@@ -2374,7 +2379,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2395,7 +2401,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Self-destructs when attacking",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2418,7 +2425,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Self-destructs when attacking",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2440,7 +2448,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2460,7 +2469,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2480,7 +2490,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2499,7 +2510,8 @@
     "cost": 80,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "Limited to [2] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2517,7 +2529,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Invisible to non-adjacent units",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2526,6 +2539,9 @@
       {
         "text": "Manual dismissal is available to simulate the temporary summon's departure after the appropriate number of turns. Unciv does not automatically remove this unit on a timer."
       }
+    ],
+    "promotions": [
+      "Undead"
     ]
   },
   {
@@ -2537,7 +2553,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2557,7 +2574,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2577,7 +2595,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2597,7 +2616,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2618,7 +2638,8 @@
       "Unbuildable",
       "Cannot be purchased",
       "Invisible to non-adjacent units",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2638,7 +2659,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2658,7 +2680,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2680,7 +2703,8 @@
       "Cannot be purchased",
       "Cannot attack",
       "[+3] Sight",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2700,7 +2724,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2742,7 +2767,8 @@
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
@@ -2762,7 +2788,8 @@
       "Cannot attack",
       "Ignores terrain cost",
       "Invisible to others",
-      "[This Unit] is destroyed <for all movement>"
+      "[This Unit] is destroyed <for all movement>",
+      "Limited to [1] per Civilization"
     ],
     "civilopediaText": [
       {
