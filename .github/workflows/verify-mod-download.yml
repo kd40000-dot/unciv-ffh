@@ -1,0 +1,35 @@
+name: Verify Unciv downloadable mod archive
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/verify-mod-download.yml'
+permissions:
+  contents: read
+jobs:
+  verify-download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Download exactly the ZIP Unciv requests for main branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --retry 2 --fail --location --silent --show-error             --max-time 180             "https://github.com/kd40000-dot/unciv-ffh/archive/refs/heads/main.zip"             --output /tmp/unciv-mod.zip
+          ls -lh /tmp/unciv-mod.zip
+          unzip -tq /tmp/unciv-mod.zip
+          unzip -Z1 /tmp/unciv-mod.zip > /tmp/unciv-files.txt
+          grep -q '^unciv-ffh-main/jsons/ModOptions.json$' /tmp/unciv-files.txt
+          grep -q '^unciv-ffh-main/Atlases.json$' /tmp/unciv-files.txt
+          grep -q '^unciv-ffh-main/Images/' /tmp/unciv-files.txt
+          python3 - <<'PY'
+          import os, zipfile
+          p='/tmp/unciv-mod.zip'
+          with zipfile.ZipFile(p) as z:
+              names=z.namelist()
+              files=[x for x in names if not x.endswith('/')]
+              print('VALID: zip file bytes=',os.path.getsize(p))
+              print('VALID: members=',len(names),'files=',len(files))
+              print('VALID: unpacked bytes=',sum(x.file_size for x in z.infolist()))
+              print('VALID: single-root ZIP and Unciv mod structure')
+          PY
