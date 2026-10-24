@@ -51,6 +51,8 @@ jobs:
         run: python3 tools/verify_enchantment_i.py
       - name: Verify Nature I Treetop Tactics forest magic
         run: python3 tools/verify_nature_i.py
+      - name: Verify Mind I Inspiration city research magic
+        run: python3 tools/verify_mind_i.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
         run: python3 tools/verify_khazad_vaults.py
       - name: Verify Erebus-specific diplomacy dialogue and provenance
