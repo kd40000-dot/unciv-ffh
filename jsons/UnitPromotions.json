@@ -1102,7 +1102,7 @@
     "name": "Inspiration (Spell)",
     "unitTypes": [],
     "uniques": [
-      "Gain [2] Science <upon turn start> <in [City center] tiles> <with [Mind Mana]>",
+      "Gain [2] [Science] <upon turn start> <in [City center] tiles> <with [Mind Mana]>",
       "Not shown on world screen"
     ],
     "civilopediaText": [
