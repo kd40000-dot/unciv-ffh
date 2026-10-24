@@ -25,7 +25,7 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_BLOOM | PROMOTION_CHANNELING2 | PROMOTION_DIVINE | — | no | review XML | Deferred: religion, priest or non-sphere casting |
 | SPELL_BLUR | PROMOTION_SHADOW1 | PROMOTION_CHANNELING1 | — | no | buff | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_BREATH_FIRE | PROMOTION_DRAGON | PROMOTION_FEAR | — | no | summon | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
-| SPELL_BURNING_BLOOD | — | — | — | no | buff | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_BURNING_BLOOD | — | — | — | no | buff | Development branch: Moroi self-buff proxy (+20% Strength/+1 Movement; no betrayal/Blitz); Android unverified |
 | SPELL_CALL_BLIZZARD | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_CALL_BLIZZARD_HIGH_PRIEST | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_CALL_FORM | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
@@ -216,10 +216,10 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_SNOWFALL | PROMOTION_ICE3 | — | — | yes | review XML | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SNOWFALL_GREATER | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_SPELLSTAFF | PROMOTION_SPELLSTAFF | — | — | no | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
-| SPELL_SPORES | — | — | — | no | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_SPORES | — | — | — | no | review XML | Development branch: Myconid emits temporary adjacent enemy Strength penalty, not immobility; Android unverified |
 | SPELL_SPREAD_THE_COUNCIL_OF_ESUS | — | — | — | yes | review XML | Deferred: religion, priest or non-sphere casting |
 | SPELL_SPRING | PROMOTION_WATER1 | PROMOTION_CHANNELING1 | — | yes | review XML | Dev branch: action or explicitly marked proxy; static CI, Android pending |
-| SPELL_SPRINT | PROMOTION_CENTAUR | — | — | yes | buff | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_SPRINT | PROMOTION_CENTAUR | — | — | yes | buff | Development branch: four Kuriotates Centaurs gain +1 Movement/-10% Strength temporary self-status; Android unverified |
 | SPELL_STASIS | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_STEAL | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_STONESKIN | PROMOTION_EARTH2 | — | — | no | buff | Dev branch: action or explicitly marked proxy; static CI, Android pending |
@@ -235,7 +235,7 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_SUMMON_MISTFORM | PROMOTION_SHADOW3 | — | — | no | summon | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SUMMON_PIT_BEAST | PROMOTION_ENTROPY2 | — | — | no | summon | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SUMMON_RUNEWYN | PROMOTION_FORCE3 | — | — | no | summon | Dev branch: action or explicitly marked proxy; static CI, Android pending |
-| SPELL_SUMMON_SAND_LION | PROMOTION_CHANNELING2 | — | — | yes | summon | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_SUMMON_SAND_LION | PROMOTION_CHANNELING2 | — | — | yes | summon | Development branch: Malakim Channeling II casters on Desert summon persistent Sand Lion (manual dismissal); Android unverified |
 | SPELL_SUMMON_SPECTRE | PROMOTION_DEATH2 | — | — | no | summon | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SUMMON_TIGER | PROMOTION_CHANNELING2 | PROMOTION_DIVINE | — | no | summon | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_SUMMON_TREANT | — | — | — | no | summon | Deferred: religion, priest or non-sphere casting |
@@ -313,7 +313,7 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_WALL_OF_STONE | PROMOTION_EARTH1 | PROMOTION_CHANNELING1 | — | no | building | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_WANE | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_WARCRY | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
-| SPELL_WHITEOUT | — | — | — | yes | buff | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_WHITEOUT | — | — | — | yes | buff | Development branch: Illians Assassin on Snow gains temporary non-adjacent invisibility; Android unverified |
 | SPELL_WILD_HUNT | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_WITHER | PROMOTION_ENTROPY3 | — | — | no | buff | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_WONDER | PROMOTION_CHAOS3 | — | — | yes | review XML | Dev branch: action or explicitly marked proxy; static CI, Android pending |
