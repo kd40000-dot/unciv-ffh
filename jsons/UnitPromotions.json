@@ -1128,5 +1128,36 @@
         "text": "Requires Channeling I and Mind Mana. Cast Inspiration while stationed in any city center, spending all movement but keeping the caster. Inspiration grants a 2-turn status that produces +2 Science at turn start only while the caster remains in a city center; recast to maintain. Unlike EMM's sustained city building, its science is credited to the empire rather than listed as a city building yield, and Great Sage points are not generated."
       }
     ]
+  },
+  {
+    "name": "Courage (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "All adjacent units heal [10] HP when healing",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit I Courage approximation: for two turns, friendly adjacent units gain +10 HP when healing. EMM grants a Courage promotion to friendly eligible units on the caster's tile, with +10 same-tile healing, fear immunity and +5 exploration result bonus. Fear immunity, exploration bonus, same-tile targeting and EMM expiration chance are not reproduced."
+      }
+    ]
+  },
+  {
+    "name": "Spirit I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Spirit Mana]>",
+      "[This Unit] gains the [Courage (Spell)] status for [2] turn(s) <for all movement> <with [Spirit Mana]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cast Courage: a temporary two-turn healing aura on this caster, providing +10 healing to adjacent units while they heal. EMM applies an individually removable Courage promotion to units on the caster's tile instead. Mana is required to learn and cast; moving away from the caster loses the proxy aura."
+      }
+    ]
   }
 ]
