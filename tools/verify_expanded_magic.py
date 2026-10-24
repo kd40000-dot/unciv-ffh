@@ -57,4 +57,26 @@ for promo in p.values():
         for status in re.findall(r"gains the \[([^]]+)\] status",unique):
             if status not in p:missing.append(("status",promo["name"],status))
 assert not missing,missing
+# Faction-specific EMM abilities: all must remain bound to their correct unit/civ.
+for unit,ability in [
+    ("Moroi","Burning Blood (Ability)"),
+    ("Centaur","Sprint Fatigue (Ability)"),
+    ("Centaur Archer","Sprint Fatigue (Ability)"),
+    ("Centaur Charger","Sprint Fatigue (Ability)"),
+    ("Centaur Lancer","Sprint Fatigue (Ability)"),
+    ("Assassin","Whiteout (Ability)"),
+    ("Myconid","Spores (Ability)"),
+]:
+    assert ability in p,ability
+    assert any("gains the ["+ability+"] status" in unique for unique in u[unit].get("uniques",[])),(unit,ability)
+assert "[+20]% Strength" in p["Burning Blood (Ability)"]["uniques"]
+assert "[-10]% Strength" in p["Sprint Fatigue (Ability)"]["uniques"]
+assert "Invisible to non-adjacent units" in p["Whiteout (Ability)"]["uniques"]
+assert any("<in [Snow] tiles>" in x and "<for [Illians] Civilizations>" in x for x in u["Assassin"]["uniques"])
+assert "[-20]% Strength for enemy [All] units in adjacent [All] tiles" in p["Spores (Ability)"]["uniques"]
+assert "Sand Lion (Summoned)" in u
+assert u["Sand Lion (Summoned)"]["strength"] == 5
+assert u["Sand Lion (Summoned)"]["movement"] == 3
+assert any("Free [Sand Lion (Summoned)] appears" in x and "<for [Malakim] Civilizations>" in x and "<in [Desert] tiles>" in x for x in p["Channeling II"]["uniques"])
+# An unciv mod-ci pass checks the Unique grammar; in-game tests remain pending.
 print(f"OK: {len(spheres)*3} sphere ranks, {len(u)} units, {len(b)} buildings, {len(i)} improvements, linked spell action targets")
