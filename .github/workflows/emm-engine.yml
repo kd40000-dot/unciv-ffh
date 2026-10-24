@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - feature/emm-engine-2026-10-25
+      - feature/emm-engine-framework-2026-10-25
     paths:
       - "engine/**"
       - "jsons/**"
@@ -44,16 +45,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - name: Apply EMM Kotlin overlay
         run: python3 ffh-mod/engine/apply_overlay.py unciv-source
-      - name: Verify engine DSL exists in mod
+      - name: Validate EMM ruleset spell registry and engine overlays
         run: |
-          python3 - <<'PY'
-          import json
-          with open("ffh-mod/jsons/UnitPromotions.json",encoding="utf-8") as f:
-              p={x["name"]:x for x in json.load(f)}
-          assert "Can cast EMM spell [Haste]" in p["Body I"]["uniques"]
-          assert "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement>" not in p["Body I"]["uniques"]
-          print("OK: engine-backed Haste replaces old self-buff in the mod")
-          PY
+          python3 -m py_compile ffh-mod/engine/apply_overlay.py
+          python3 ffh-mod/engine/verify_spell_framework.py
+      - name: Check patch diff for whitespace errors
+        working-directory: unciv-source
+        run: git diff --check
       - name: Compile patched Unciv core
         working-directory: unciv-source
         run: ./gradlew :core:compileKotlin --no-daemon --stacktrace
