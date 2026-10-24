@@ -1013,11 +1013,14 @@
     ],
     "uniques": [
       "Only available <with [Body Mana]>",
-      "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Haste]"
     ],
     "civilopediaText": [
       {
         "text": "Body I requires Channeling I and access to Body Mana when learning the promotion. Cast Haste to grant the caster the Hasted (+1 Movement) status for 2 turns by spending all current movement. Standard Unciv unit action targeting cannot reproduce EMM's group-wide friendly-unit Haste effect, nor automatic Slow removal."
+      },
+      {
+        "text": "EMM engine: Haste affects allied living land units on this hex and adjacent hexes (Unciv adaptation for Civ IV's unit stacks). Adds +1 Movement via Hasted, removes Slowed, costs the caster its action, and respects a one-spell-per-turn budget. Requires EMM-enabled Unciv engine; vanilla Unciv does not recognize this unique."
       }
     ]
   },
