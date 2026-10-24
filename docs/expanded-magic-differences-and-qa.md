@@ -25,7 +25,7 @@ Working branch: `feature/expanded-magic-2026-10-24`. Rollback checkpoint: `check
 ## Compact batch QA procedure (not yet executed)
 
 - [ ] Run all `tools/verify_*.py` static checks on the **feature branch**.
-- [ ] Run official Unciv `mod-ci` on the feature branch; fix invalid unique types, filters and references.
+- [x] Run official Unciv `mod-ci` on the feature branch; address reported errors (GitHub Actions Unciv ruleset validation passed October 24, 2026).
 - [ ] Run Unciv **Locate mod errors**.
 - [ ] Confirm promotion unlock only with matching sphere Mana and Channeling I.
 - [ ] Confirm cast option appears only in intended location (friendly/enemy tiles, improvement state, terrain).
@@ -37,6 +37,33 @@ Working branch: `feature/expanded-magic-2026-10-24`. Rollback checkpoint: `check
 - [ ] Spirit I: Build a Spirit Node, learn promotion, measure wounded adjacent unit healing with and without active caster aura; verify it expires after 2 turns and doesn't boost a nonadjacent unit.
 - [ ] Water I: Verify Desert to Plains transformation and Smoke cleanup with the exact terrain and ownership restrictions.
 - [ ] Mind I: Verify accumulated Science **versus** ordinary Science-per-turn over both status turns; check expiration and no stacking.
+
+## Additional source-derived fixes and important proxy limitations (October 24, 2026)
+
+- **Creation II Fertility** rotates resources on a tile in the pinned EMM Python implementation, rather than adding Food in a city. Its current native action handles **Cattle → Sheep** on owned tiles only. Other resource cycles are missing because the base mod does not have all source resources. Verify the replacement actually happens; static `mod-ci` alone cannot prove resource overwriting.
+- **Creation I Growth** now uses a city building to retain 10% food after population growth, matching EMM's `iFoodKept=10`, but missing +1 Health and caster-dependent removal.
+- **Creation III Blessing** now grants +20% production to Land units, approximating source +20% production to living units but also benefiting some constructs; missing the free specialist and caster-dependent removal.
+- **Spirit III Illumination** grants +50% Great Person generation as in EMM; EMM's +2 Power and caster-dependent building lifetime are missing.
+- **Air II Maelstrom**, **Ice III Snowfall**, **Life II Destroy Undead**, **Mind II Charm Person**, **Mind III Domination**, **Sun II Blinding Light**, **Entropy III Wither**, **Entropy I Rust** are explicitly labelled combat proxy/status effects. They do not deliver EMM's direct targeted damage, spell resistance, enemy conversion, immobilization, permanent promotion changes or weapon-tier stripping.
+- **Creation III and Spirit II city spells** build ordinary persistent Unciv structures instead of EMM's caster-dependent magical buildings; their removal is not automatic.
+- **Death III Resurrection** cannot resurrect a specific dead EMM hero with a mere Unit-triggered native action. A generic Returned Soul appears; do not interpret that as faithful Resurrection.
+- **Death III Lichdom** transforms casters into a Lich proxy; EMM's source limits, unit inheritance and cost semantics still need in-game checking.
+- **Temporary summons** are currently persistent Unciv units; manual dismissal exists, but automatic lifetime/caster restrictions and EMM summoned promotion/elemental interactions are not reproduced. The created unit should not be considered balance-equivalent.
+- **Spirit III Trust**, **Chaos III Wonder**, and **Dimensional III Rifts** remain heavily reduced substitutes for EMM diplomacy, randomized multiple spellcasting and linked portal travel. Actual behavior is disclosed on the promotion, not hidden.
+- **Malakim Sand Lion** requires Channeling II, Malakim and Desert; **Moroi Burning Blood**, **Centaur Sprint**, **Illians Assassin Whiteout** and **Myconid Spores** are non-sphere special ability proxies. Separate test cases appear in the Android QA ledger.
+- **Civilopedia and action names:** native Unciv actions render generic descriptions (e.g. `Free [unit] appears`), not original spell cast UI names; animations and effects have not been ported.
+
+## Coverage and blockers for the other 288 XML records
+
+Those 288 entries are retained, individually classified in [the full spell inventory](emm-full-spell-inventory.md), not silently assumed complete. Major blockers:
+
+1. Religious miracles and priest spells require original EMM religions, divine promotions, religion-specific units and city conversions that the mod does not currently represent.
+2. Item pick-up/drop and named artifacts need physical transferable item instances and equipment binding, which stock Unciv has no native clone for.
+3. Lair/exploration events, terrain hell-state and Armageddon mechanics require a source-faithful map event/global state system.
+4. World spells need civilization-specific one-use cooldowns, global targeting, and faction-specific unit/city behaviors.
+5. EMM Python custom effects and AI targeting need dedicated engine-side mechanisms or explicitly limited native proxies.
+
+**Do not claim all 355 EMM spells are implemented.** The scope completed in native JSON is a full sphere-promotion foundation plus the 67 sphere-associated source spell actions/proxies, five added special spells and previously existing Arena/Lanun mechanics. Entire-system equivalence remains an open milestone.
 
 ## Future spells and unsupported effects
 
