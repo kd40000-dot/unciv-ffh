@@ -40,7 +40,8 @@
     "target": "SELF",
     "summonUnit": "Fire Elemental (Summoned)",
     "summonDuration": 1,
-    "maxCastsPerTurn": 1
+    "maxCastsPerTurn": 1,
+    "maxActivePerCaster": 1
   },
   {
     "name": "Raise Skeleton",
@@ -49,6 +50,24 @@
     "target": "SELF",
     "summonUnit": "Skeleton (Summoned)",
     "summonDuration": 0,
+    "maxCastsPerTurn": 1,
+    "immobileOnCreate": true
+  },
+  {
+    "name": "Repair",
+    "sourceId": "SPELL_REPAIR",
+    "target": "FRIENDLY",
+    "effect": "HEAL",
+    "radius": 1,
+    "amount": 20,
+    "eligibleUnitTypes": [
+      "Siege",
+      "Melee Water",
+      "Civilian Water"
+    ],
+    "eligibleNameContains": [
+      "Golem"
+    ],
     "maxCastsPerTurn": 1
   }
 ]
