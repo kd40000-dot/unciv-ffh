@@ -1216,11 +1216,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Air Elemental (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Air Elemental]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Air sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Air Elemental unit spawn; no duration/summon cap faithful to EMM."
+      },
+      {
+        "text": "Native EMM engine: Summon Air Elemental creates Air Elemental (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_AIR_ELEMENTAL. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1252,11 +1255,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Flesh Golem (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Graft Flesh]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Body sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native permanent Flesh Golem proxy; EMM allows grafting other units into it."
+      },
+      {
+        "text": "Native EMM engine: Graft Flesh creates Flesh Golem (Summoned), permanent unit, cannot move on its creation turn. EMM source SPELL_GRAFT_FLESH. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1396,11 +1402,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Spectre (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Spectre]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Death sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Spectre creates a persistent limited-strength unit; EMM summons expire."
+      },
+      {
+        "text": "Native EMM engine: Summon Spectre creates Spectre (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_SPECTRE. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1414,12 +1423,15 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Wraith (Summoned)] appears <for all movement>",
+      "Can cast EMM spell [Summon Wraith]",
       "Can transform to [Lich] <for all movement> <after discovering [Divine Essence]>"
     ],
     "civilopediaText": [
       {
         "text": "EMM Death sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Wraith spawn, no EMM summon expiration. Lichdom requires Divine Essence and transforms caster; limited roster/lifespan behavior not fully recreated."
+      },
+      {
+        "text": "Native EMM engine: Summon Wraith creates Wraith (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_WRAITH. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1523,11 +1535,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Earth Elemental (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Earth Elemental]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Earth sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Summon Earth Elemental: native spawn, no expiration."
+      },
+      {
+        "text": "Native EMM engine: Summon Earth Elemental creates Earth Elemental (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_EARTH_ELEMENTAL. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1595,11 +1610,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Pit Beast (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Pit Beast]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Entropy sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Pit Beast uses native spawn, no automatic duration."
+      },
+      {
+        "text": "Native EMM engine: Summon Pit Beast creates Pit Beast (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_PIT_BEAST. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1631,11 +1649,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Fireball (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Fireball]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Fire sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Fireball uses an expendable ranged suicide unit; manual targeting rather than direct spell range."
+      },
+      {
+        "text": "Native EMM engine: Fireball creates Fireball (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_FIREBALL. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1685,11 +1706,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Magic Missile (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Magic Missile]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Force sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Magic Missile uses a fragile expendable attack unit rather than instant spell attack."
+      },
+      {
+        "text": "Native EMM engine: Magic Missile creates Magic Missile (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_MAGIC_MISSILE. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1703,11 +1727,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Runewyn (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Runewyn]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Force sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Runewyn appears as a normal spell-created unit and does not automatically expire."
+      },
+      {
+        "text": "Native EMM engine: Summon Runewyn creates Runewyn (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_RUNEWYN. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1739,11 +1766,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Ice Elemental (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Ice Elemental]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Ice sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Ice Elemental uses permanent native unit, lacks EMM summon lifetime."
+      },
+      {
+        "text": "Native EMM engine: Summon Ice Elemental creates Ice Elemental (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_ICE_ELEMENTAL. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1793,11 +1823,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Free [Einherjar (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Einherjar]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Law sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Summon Einherjar uses native unit spawn with no automatic expiry."
+      },
+      {
+        "text": "Native EMM engine: Summon Einherjar creates Einherjar (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_EINHERJAR. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -1919,11 +1952,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Djinn (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Djinn]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Metamagic sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Djinn spawn, no EMM lifetime."
+      },
+      {
+        "text": "Native EMM engine: Summon Djinn creates Djinn (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_DJINN. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -2049,11 +2085,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Mistform (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Mistform]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Shadow sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Mistform unit spawn; no temporary summon lifetime."
+      },
+      {
+        "text": "Native EMM engine: Summon Mistform creates Mistform (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_MISTFORM. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -2142,11 +2181,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Aurealis (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Aurealis]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Sun sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Aurealis sun elemental, permanent instead of source summoned duration."
+      },
+      {
+        "text": "Native EMM engine: Summon Aurealis creates Aurealis (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_AUREALIS. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
@@ -2177,11 +2219,14 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Water Elemental (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Summon Water Elemental]"
     ],
     "civilopediaText": [
       {
         "text": "EMM Water sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Native Water Elemental spawn without EMM lifetime."
+      },
+      {
+        "text": "Native EMM engine: Summon Water Elemental creates Water Elemental (Summoned), automatically expires after its summon lifetime, may move on its creation turn. EMM source SPELL_SUMMON_WATER_ELEMENTAL. Summon enhancements and combat-category fidelity require Android tests."
       }
     ]
   },
