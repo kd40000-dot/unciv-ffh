@@ -2761,12 +2761,15 @@
       "Cannot be purchased",
       "Cannot attack",
       "Ignores terrain cost",
-      "Invisible to non-adjacent units",
+      "Invisible to others",
       "[This Unit] is destroyed <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Sidar Sever Soul creation. EMM: combat 1, movement 2, only defensive, truly invisible, ignores terrain cost, duration 3 turns and inherits selected promotions from its summoner. Unciv approximates with non-adjacent invisibility and manual dismissal; summoner-linked restrictions and promotion inheritance are unavailable."
+      },
+      {
+        "text": "This version uses Unciv's full 'Invisible to others' rule rather than visibility beyond adjacent tiles; unlike EMM, this does not automatically end after 3 turns."
       }
     ]
   }
