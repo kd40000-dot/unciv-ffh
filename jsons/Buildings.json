@@ -1185,5 +1185,92 @@
         "text": "The overflowing state of the Khazad Dwarven Vault. Each Khazad city automatically holds one vault, representing the civilization's treasury divided by its number of cities (rounded down). This stage applies at 250+ Gold per city. Its effects are +3 Happiness and +40% Production. The city's vault stage changes when the next turn begins or a new Khazad city is founded; saving or spending Gold during a turn may not immediately change the displayed building."
       }
     ]
+  },
+  {
+    "name": "Growth (Spell)",
+    "cost": 0,
+    "food": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Creation I Growth permanent +1 Food proxy; EMM creates a city-specific spell building."
+      }
+    ]
+  },
+  {
+    "name": "Fertility (Spell)",
+    "cost": 0,
+    "food": 2,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Creation II Fertility +2 Food city proxy; EMM changes city population/terrain differently."
+      }
+    ]
+  },
+  {
+    "name": "Blessing (Spell)",
+    "cost": 0,
+    "culture": 1,
+    "faith": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Creation III Blessing city +1 Culture and +1 Faith; no source caster ownership/death behavior."
+      }
+    ]
+  },
+  {
+    "name": "Wall of Stone (Spell)",
+    "cost": 0,
+    "cityStrength": 8,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth I Wall of Stone adds city defense; persists after caster leaves."
+      }
+    ]
+  },
+  {
+    "name": "Hope (Spell)",
+    "cost": 0,
+    "happiness": 1,
+    "culture": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit II Hope +1 Happiness, +1 Culture; EMM original hope may remove building with caster."
+      }
+    ]
+  },
+  {
+    "name": "Illumination (Spell)",
+    "cost": 0,
+    "culture": 2,
+    "science": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit III Illumination +2 Culture, +1 Science; does not simulate source alignment effects."
+      }
+    ]
   }
 ]
