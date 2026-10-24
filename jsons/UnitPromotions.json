@@ -1097,5 +1097,36 @@
         "text": "Requires Channeling I and Nature Mana. Cast Treetop Tactics while standing in Forest to gain a two-turn temporary +10% Strength bonus when fighting on Forest tiles. Casting consumes all movement but not the caster or Mana. This is a self-cast approximation of EMM's forest-limited Treetop Tactics spell."
       }
     ]
+  },
+  {
+    "name": "Inspiration (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "Gain [2] Science <upon turn start> <in [City center] tiles> <with [Mind Mana]>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary Inspiration effect, cast by a Mind I arcane unit. At the start of each turn, while this unit is stationed on a city-center tile and the civilization still has Mind Mana, gain 2 empire Science. No Science is gained while outside a city center. EMM instead creates a city building providing 2 beakers and 1 Great Sage point per turn; the Great Sage point is not represented in this mod-only implementation."
+      }
+    ]
+  },
+  {
+    "name": "Mind I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "prerequisites": [
+      "Channeling I"
+    ],
+    "uniques": [
+      "Only available <with [Mind Mana]>",
+      "[This Unit] gains the [Inspiration (Spell)] status for [2] turn(s) <for all movement> <with [Mind Mana]> <in [City center] tiles>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Requires Channeling I and Mind Mana. Cast Inspiration while stationed in any city center, spending all movement but keeping the caster. Inspiration grants a 2-turn status that produces +2 Science at turn start only while the caster remains in a city center; recast to maintain. Unlike EMM's sustained city building, its science is credited to the empire rather than listed as a city building yield, and Great Sage points are not generated."
+      }
+    ]
   }
 ]
