@@ -33,7 +33,7 @@ for civ in playable:
     assert expected==actual,(civ["name"],expected,actual)
     total+=sum(classCounts.values())
 assert total==39,total
-assert len(units)==103 and "Disciple" in types
+assert len([x for x in units if not x.endswith(" (Summoned)") and x!="Lich"])==103 and "Disciple" in types
 for name,civ,t in (("Lucian","Doviello","Sword"),("Lightbringer","Malakim","Disciple")):
     u=units[name];src=original["UNIT_"+name.upper()]
     assert u["uniqueTo"]==civ and u["unitType"]==t,(name,u)
