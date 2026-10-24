@@ -1201,20 +1201,6 @@
     ]
   },
   {
-    "name": "Fertility (Spell)",
-    "cost": 0,
-    "food": 2,
-    "uniques": [
-      "Unbuildable",
-      "Cannot be purchased"
-    ],
-    "civilopediaText": [
-      {
-        "text": "Creation II Fertility +2 Food city proxy; EMM changes city population/terrain differently."
-      }
-    ]
-  },
-  {
     "name": "Blessing (Spell)",
     "cost": 0,
     "culture": 1,
