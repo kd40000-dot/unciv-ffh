@@ -1196,7 +1196,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Growth from Creation I: +2 Food, +1 Culture, 10% Food retained on population increase and +1 Health. The first three effects are represented here. Health and removal when the caster leaves/dies are unsupported; this structure persists indefinitely."
+        "text": "EMM Creation I Growth grants +2 Food city yield, retains 10% food after growth and +1 Health. Unciv now reproduces +2 Food and 10% retention, but cannot reproduce +1 Health or automatic caster-linked removal; building persists."
       }
     ],
     "food": 2,
