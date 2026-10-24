@@ -98,3 +98,19 @@ The separate [full 355-entry inventory](emm-full-spell-inventory.md) is authorit
 - [ ] **Malakim arcane — Sand Lion**: On Desert, use Malakim Mage/Archmage with Channeling II; verify Sand Lion spawn (strength 5, movement 3) and manual dismissal. Ensure not available on Grassland or to non-Malakim casters. EMM also allows Burning Sands and expires summons automatically.
 
 **All test boxes are intentionally unchecked** until real Android confirmation.
+
+## New non-sphere spells: Doviello, Sidar, and Stealth (post-frozen-test build)
+
+These spells are on `feature/expanded-magic-2026-10-24`, **not** on the frozen `magic-test-2026-10-24` build. All tests remain pending.
+
+- [ ] **Doviello: Warrior/Beastman → Sons of Asena.** Research Bronze Working; with at least 30 Gold, select the Doviello unit and verify an available transform action costs exactly 30 Gold, retains appropriate promotions/XP, and creates Sons of Asena. Test zero Gold and a non-Doviello Warrior; they must not have usable actions.
+- [ ] **Doviello: Warrior/Beastman → Battlemaster.** Research Iron Working; verify 100 Gold cost, resulting Battlemaster and no free transformation. EMM doesn't require the building requirements of ordinary Unciv upgrades.
+- [ ] **Doviello: Sons of Asena/Axeman → Battlemaster.** After Iron Working, verify a 70 Gold transform; compare transformed unit and XP with direct recruitment/normal upgrades.
+- [ ] **Doviello: Worker or Slave → Beastman.** Test the 20 Gold conversion at any technology level; source allows it without tech prerequisite. Confirm the original Worker/Slave disappears and Beastman appears; check Gold cost and no ability for a non-Doviello Worker/Slave.
+- [ ] **Doviello: Lucian's Bronze Veteran.** After Bronze Working, with 80 Gold, grant permanent `Lucian Bronze Veteran` (+1 Strength) once. Verify identity, hero limit, XP/promotions and combat preview remain intact; action cannot be spammed. EMM actually converts Lucian into Sons of Asena and renames him Lucian; underlying unit class differences remain.
+- [ ] **Sidar: Sever Soul.** On Scout, Hunter, Ranger, Assassin, Beastmaster, Divided Soul or Ghost, summon a Severed Soul once. Verify strength 1, movement 2, cannot attack, ignores terrain cost, and invisibility beyond adjacency. No other civilization should see this action. EMM soul normally lasts 3 turns and can be renewed after expiry; Unciv has no linked summon expiry, so this implementation is one cast per caster and the soul can be manually dismissed.
+- [ ] **Stealth / Hide.** On a Scout-class unit promoted with Stealth, activate Hide; test temporary invisibility beyond adjacency, fixed two-turn duration, and no recasting while Hidden. EMM Hide is truly invisible and removed by combat or casting; Unciv does not emulate those triggers.
+- [ ] **Sprint regression.** A Centaur already suffering Sprint Fatigue must be unable to Sprint again until the two-turn status expires, corresponding to EMM's no-Sprint-while-Fatigued restriction.
+- [ ] **Whiteout regression.** An Illians Assassin on Snow must be unable to reapply Whiteout while already benefiting from its status.
+
+**Source references:** pinned ExtraModMod Continued `XML/Units/CIV4SpellInfos.xml`, `python/entrypoints/CvSpellInterface.py` and `XML/Units/CIV4UnitInfos.xml` at commit `60b0ec3740083162aaab7bf8491761a54a65a610`. Dynamic action syntax is validated with Unciv `mod-ci`, not yet verified by gameplay.
