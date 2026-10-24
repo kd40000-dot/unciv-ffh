@@ -1189,29 +1189,28 @@
   {
     "name": "Growth (Spell)",
     "cost": 0,
-    "food": 1,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[10]% Food is carried over after population increases [in this city]"
     ],
     "civilopediaText": [
       {
-        "text": "Creation I Growth permanent +1 Food proxy; EMM creates a city-specific spell building."
+        "text": "EMM Growth city building grants 10% food retained on population increases and +1 Health. Unciv reproduces food retention via native unique but cannot represent EMM Health; unlike EMM, this building persists when caster leaves/dies."
       }
     ]
   },
   {
     "name": "Blessing (Spell)",
     "cost": 0,
-    "culture": 1,
-    "faith": 1,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[+20]% Production when constructing [Land] units [in this city]"
     ],
     "civilopediaText": [
       {
-        "text": "Creation III Blessing city +1 Culture and +1 Faith; no source caster ownership/death behavior."
+        "text": "EMM Blessing gives +20% Living Unit production and a free specialist slot; Unciv approximates +20% production to Land units including some constructs, and cannot grant EMM special free specialist. Unlike source, building persists without caster."
       }
     ]
   },
@@ -1247,15 +1246,14 @@
   {
     "name": "Illumination (Spell)",
     "cost": 0,
-    "culture": 2,
-    "science": 1,
     "uniques": [
       "Unbuildable",
-      "Cannot be purchased"
+      "Cannot be purchased",
+      "[+50]% Great Person generation [in this city]"
     ],
     "civilopediaText": [
       {
-        "text": "Spirit III Illumination +2 Culture, +1 Science; does not simulate source alignment effects."
+        "text": "EMM Illumination grants +50% Great Person rate and 2 Power. Native Unciv reproduces +50% Great Person generation, but not EMM Power or caster-departure removal."
       }
     ]
   }
