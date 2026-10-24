@@ -1067,11 +1067,14 @@
     "uniques": [
       "Only available <with [Enchantment Mana]>",
       "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement>",
-      "[This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <for units with [Dwarf]>"
+      "Can cast EMM spell [Repair] <for units with [Dwarf]>"
     ],
     "civilopediaText": [
       {
         "text": "Requires Channeling I and Enchantment Mana. Cast Enchanted Blade to grant the caster a 2-turn aura that gives friendly Sword-class troops within one tile +20% combat Strength. Casting costs all movement; the caster survives. This is a deliberately temporary proximity-based approximation, not EMM's permanent melee-unit Enchanted Blade promotion or Rusted removal. Repair is available only to Dwarf-promoted casters and gives adjacent +20 healing instead of EMM direct construct repair."
+      },
+      {
+        "text": "EMM engine: Dwarf-only Repair now directly heals up to 20 HP on nearby friendly damaged Siege, Naval and Golem units (one-hex substitute for source same-stack targeting). EMM's exact golem promotion taxonomy is still represented by provisional name matching."
       }
     ]
   },
