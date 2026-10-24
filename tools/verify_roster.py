@@ -21,6 +21,11 @@ unit_aliases={r["name"]:r["sourceId"] for r in factions["addedUnits"]}
 building_aliases={r["name"]:r["sourceId"] for r in factions["addedBuildings"]}
 palace_aliases={r["civilization"]+" Palace":r["sourceId"] for r in load("docs/data/emm-leader-palace-fidelity.json")["palaceSources"]}
 vault_aliases={f'Dwarven Vault ({r["name"]})':r["sourceId"] for r in load("docs/data/emm-khazad-vaults.json")["tiers"]}
+# Magic units and on-cast buildings are explicit mod-only adaptations of EMM.
+# Their origin and proxy stats are checked in verify_expanded_magic.py rather
+# than incorrectly requiring their Unciv cost to equal EMM's unbuildable -1.
+magic_units={u["name"] for u in units if u["name"].endswith(" (Summoned)") or u["name"]=="Lich"}
+magic_buildings={b["name"] for b in buildings if b["name"].endswith(" (Spell)")}
 assert len({x["name"] for x in units})==len(units)
 assert len({x["name"] for x in buildings})==len(buildings)
 byname={x["name"]:x for x in units}
@@ -30,6 +35,9 @@ for item in units:
     assert item["requiredTech"] in techs if "requiredTech" in item else True,item["name"]
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
     assert item["replaces"] in byname if "replaces" in item else True,item["name"]
+    if item["name"] in magic_units:
+        assert "Unbuildable" in item.get("uniques", []), item["name"]
+        continue
     alias=item["name"].removeprefix("Ljosalfar ").removeprefix("Amurites ")
     rec=byid.get(unit_aliases[item["name"]]) if item["name"] in unit_aliases else next((r for r in source["units"] if rename(r["id"])==alias),None)
     assert rec is not None,("No EMM unit source",item["name"])
@@ -45,7 +53,7 @@ for item in buildings:
     assert item["requiredTech"] in techs if "requiredTech" in item else True,item["name"]
     assert item.get("uniqueTo") in nations if "uniqueTo" in item else True,item["name"]
     assert item["replaces"] in bnames if "replaces" in item else True,item["name"]
-    if item["name"]=="Palace":continue
+    if item["name"]=="Palace" or item["name"] in magic_buildings:continue
     rec=bbid.get(vault_aliases[item["name"]]) if item["name"] in vault_aliases else (bbid.get(palace_aliases[item["name"]]) if item["name"] in palace_aliases else (bbid.get(building_aliases[item["name"]]) if item["name"] in building_aliases else next((r for r in source["buildings"] if rename(r["id"])==item["name"]),None)))
     if rec is None and item["name"]=="Cave of Ancestors":
         rec=bbid["BUILDING_CAVE_OF_ANCESTORS"]
@@ -57,4 +65,4 @@ for item in buildings:
         assert "Unbuildable" in item["uniques"] and "Cannot be purchased" in item["uniques"]
     else:
         assert item["cost"]==rec["cost"],("Incorrect building cost",item["name"])
-print(f"OK: {len(units)} units and {len(buildings)} buildings traced to the EMM inventory; costs, movement, combat and references verified.")
+print(f"OK: {len(units)-len(magic_units)} standard units and {len(buildings)-len(magic_buildings)} standard buildings traced to EMM; {len(magic_units)} magic units and {len(magic_buildings)} spell buildings checked as explicit adaptations.")
