@@ -1987,11 +1987,17 @@
     "uniques": [
       "Only available <for units with [Channeling III]>",
       "Turn this tile into a [Grassland] tile <for all movement> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>",
-      "Turn this tile into a [Plains] tile <for all movement> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles>"
+      "Turn this tile into a [Plains] tile <for all movement> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Tundra] tile <for all movement> <in [Snow] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Plains] tile <for all movement> <in [Tundra] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Grassland] tile <for all movement> <in [Marsh] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
         "text": "EMM Nature sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Vitalize upgrades owned unimproved Plains to Grassland; incomplete source landscape progression. Also upgrades desert to plains; no conversion of floodplains or forest tiles."
+      },
+      {
+        "text": "Vitalize's full EMM base transitions are Snow→Tundra, Tundra→Plains, Desert→Plains, Plains→Grassland, and Marsh→Grassland; all five native Unciv options are now present on owned unimproved tiles. EMM Scrub removal and other feature/map constraints are not reproduced."
       }
     ]
   },
@@ -2096,11 +2102,16 @@
     ],
     "uniques": [
       "Only available <with [Sun Mana]>",
-      "Turn this tile into a [Desert] tile <for all movement> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>"
+      "Turn this tile into a [Desert] tile <for all movement> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Tundra] tile <for all movement> <in [Snow] tiles> <in [your] tiles> <in [unimproved] tiles>",
+      "Turn this tile into a [Plains] tile <for all movement> <in [Marsh] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
         "text": "EMM Sun sphere rank I. Requires Sun Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Scorch currently converts owned unimproved Plains to Desert; broader EMM map transformation is not reproduced."
+      },
+      {
+        "text": "Scorch EMM terrain transitions include Plains→Desert, Snow→Tundra, Marsh→Plains, and Fields of Perdition→Burning Sands (last transition absent because neither EMM-specific terrain exists here). The Unciv version requires owned/unimproved tiles and cannot trigger war against foreign owners."
       }
     ]
   },
@@ -2312,12 +2323,15 @@
     "name": "Stoneskin (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+40]% Strength <when defending>",
+      "[+2] Strength <when defending>",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Earth II Stoneskin: two-turn defense strength on caster. EMM Stoneskin also adds first strikes and magic resistance."
+      },
+      {
+        "text": "EMM Stoneskin grants +2 physical defense plus 3 first strikes and 50% magical resistances and wears off upon combat. Native Unciv can apply +2 defensive Strength but not these additional effects in one spell."
       }
     ]
   },
@@ -2524,12 +2538,15 @@
     "name": "Whiteout (Ability)",
     "unitTypes": [],
     "uniques": [
-      "Invisible to non-adjacent units",
+      "Invisible to others",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Illians Assassin Whiteout proxy: two-turn partial invisibility in Snow. EMM Hidden unit is truly invisible until combat/casting; non-adjacent invisibility is Unciv approximation."
+      },
+      {
+        "text": "Full native invisibility now models EMM's Hidden on snow. EMM removes this upon combat/casting; Unciv only times it out."
       }
     ]
   },
@@ -2562,12 +2579,15 @@
     "name": "Hidden (Spell)",
     "unitTypes": [],
     "uniques": [
-      "Invisible to non-adjacent units",
+      "Invisible to others",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Two-turn stealth status from the HIDE action. EMM Hidden provides full invisible status lost on combat/casting; Unciv approximates it with invisibility to nonadjacent units and fixed expiration."
+      },
+      {
+        "text": "Unciv's native full invisibility is closer to EMM's Hidden than the former non-adjacent proxy. EMM additionally removes Hidden after attacks or casting; Unciv retains it for 2 turns."
       }
     ]
   },
