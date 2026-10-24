@@ -25,6 +25,13 @@ class EMMSpell {
     /** 0 means a permanent EMM unit, positive values expire automatically. */
     var summonDuration: Int = 0
     var livingOnly: Boolean = false
+    /** Repair and similar spells accept a union of these unit types and name categories. */
+    var eligibleUnitTypes = ArrayList<String>()
+    var eligibleNameContains = ArrayList<String>()
+    /** EMM bImmobileUnitCreate: summoned unit cannot move in its creation turn. */
+    var immobileOnCreate: Boolean = false
+    /** 0 is unlimited; otherwise prevents one caster maintaining excess summons. */
+    var maxActivePerCaster: Int = 0
     var militaryOnly: Boolean = false
     var landOnly: Boolean = false
     var maxCastsPerTurn: Int = 1
