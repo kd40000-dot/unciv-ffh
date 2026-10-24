@@ -43,7 +43,7 @@ None established. Passing Unciv `mod-ci` is parser/ruleset validation, not proof
 | ENCHANT SPELLSTAFF | grants SPELLSTAFF | [This Unit] gains [1] movement <for [0] movement> <once> | Replaced movement-speed buff with a one-time no-cost movement refresh to approximate another spell cast; no separate stored staff/consume step. |
 | ENCHANTED BLADE | grants ENCHANTED BLADE | [This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement> ; [This Unit] gains the [Repair (Spell)] status for [2] turn(s) <for all movement> <for units with [Dwarf]> | Source permanently enchants eligible melee allies and removes Rust; mod gives brief caster-centered Sword Strength aura. |
 | ESCAPE | EMM Python action/condition | [This Unit] gains the [Escape (Spell)] status for [2] turn(s) <for all movement> | EMM teleports caster to capital; mod offers only movement/terrain-cost effects. |
-| FAIR WINDS | grants FAIR WINDS | [This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement> | Source buff to naval allies gives +1 movement and +25% withdrawal; mod instead grants caster +1 movement, including on land. |
+| FAIR WINDS | grants FAIR WINDS | [This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement> | Source buff to naval allies gives +1 movement and +25% withdrawal; reworked mod now grants an adjacent naval combat Strength aura instead, correctly restricting recipients to ships but not reproducing movement/withdrawal. |
 | FERTILITY | EMM Python action/condition | Add [Sheep] to this tile <for all movement> <in [Cattle] tiles> <in [your] tiles> | EMM resource-type cycling (several crops/animals); mod provides only owned Cattle → Sheep, dependent on resource replacement behavior. |
 | FIREBALL | summons FIREBALL | Free [Fireball (Summoned)] appears <for all movement> | Mod creates ranged sacrificial projectile, but combat math, ranged execution and turn-duration differ from EMM missile. |
 | FLAMING ARROWS | grants FLAMING ARROWS | [This Unit] gains the [Flaming Arrows (Spell)] status for [2] turn(s) <for all movement> | EMM individually enchants ranged allies with Fire damage, lasting beyond caster; mod gives two-turn Archery Strength aura. |
@@ -110,13 +110,15 @@ None established. Passing Unciv `mod-ci` is parser/ruleset validation, not proof
 
 1. **Life II Destroy Undead:** applied Undead tags to Skeleton, Spectre, Wraith, Pyre Zombie and Lich, rather than counting all Magic units as undead; source direct AoE remains unimplemented.
 2. **Law III Valor:** replaced incorrect +50% XP/+10% attack with native +1 XP per combat; source resistance and buff targeting remain unavailable.
-3. **Body II Regeneration:** restored the original `bAlwaysHeal=1` so the unit heals even when it acts, together with +10 HP when healing; source applies to allied living units until fully healed.
+3. **Body II Regeneration:** retained healing after acting, and now also grants adjacent units +10 HP when healing. Source grants individual Regeneration promotions to living co-located allies; the proximity mechanic and duration still differ.
 4. **Earth II Stoneskin:** replaced +40% defending Strength with +2 flat defending Strength; EMM three first strikes and 50% resistances still missing.
 5. **Shadow II Shadowwalk:** removed unintended terrain-cost ignoring; retains a city-combat proxy for bypassing building defenses.
 6. **Enchantment III Spellstaff:** replaced temporary +1 maximum movement with one-time +1 movement restoration at zero movement cost, attempting an extra cast. **Android validation is essential** to check execution order and zero-movement availability.
 7. **All summoned proxies:** one-at-a-time empire-wide cap for temporary creatures, maximum 3 Skeletons, maximum 2 Flesh Golems; manual dismiss remains, source caster-linked lifetime does not.
 8. **Growth city building:** restored EMM's +2 Food and +1 Culture city yields (alongside 10% food retained on growth); +1 Health and caster-linked building removal still missing.
 9. **Source-specific state:** existing higher-fidelity changes preserved, including Scorch three terrain conversions, Vitalize five terrain conversions, Full Hidden invisibility for Sidar/Whiteout and reduced Sprint recast exploits.
+
+10. **Air I Fair Winds:** moved the benefit from the land caster to adjacent naval units. Native +20% ship combat Strength is explicitly *not* a close equivalent of the source naval +1 Movement/+25% withdrawal bonus.
 
 ## Testing priority
 
