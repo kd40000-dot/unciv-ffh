@@ -102,7 +102,7 @@
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
       "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
-      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [+70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -633,8 +633,8 @@
     "upgradesTo": "Archer",
     "uniques": [
       "Can upgrade to [Axeman]",
-      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
-      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
+      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [+30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [+100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "civilopediaText": [
       {
@@ -676,7 +676,7 @@
     "cost": 75,
     "uniques": [
       "Can build [Land] improvements on tiles",
-      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [20 Gold] stats> <for all movement>"
+      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [+20 Gold] stats> <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -1354,8 +1354,8 @@
       "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
       "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
-      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
-      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
+      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [+30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [+100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "promotions": [
       "Metal Weaponry"
@@ -1395,7 +1395,7 @@
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
       "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
-      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [+70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "civilopediaText": [
       {
@@ -2291,7 +2291,7 @@
       "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
       "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
-      "[This Unit] gains the [Lucian Bronze Veteran] promotion <costs [80 Gold] stats> <for all movement> <after discovering [Bronze Working]> <once>"
+      "[This Unit] gains the [Lucian Bronze Veteran] promotion <costs [+80 Gold] stats> <for all movement> <after discovering [Bronze Working]> <once>"
     ],
     "civilopediaText": [
       {
@@ -2314,7 +2314,7 @@
       "Unbuildable",
       "Can upgrade to [Warrior] <for units with [Arena Victory]> <in cities with a [Arena]>",
       "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>",
-      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [20 Gold] stats> <for all movement>"
+      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [+20 Gold] stats> <for all movement>"
     ],
     "civilopediaText": [
       {
