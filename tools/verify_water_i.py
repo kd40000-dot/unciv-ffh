@@ -13,8 +13,8 @@ water=promotions["Water I"]
 assert water["unitTypes"]==["Magic"]
 assert water["prerequisites"]==["Channeling I"]
 assert "Only available <with [Water Mana]>" in water["uniques"]
-terraform="Turn this tile into a [Plains] tile <for all movement> <with [Water Mana]> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles> <in tiles without [Flood plains]>"
-extinguish="Remove [Smoke] improvements from this tile <for all movement> <with [Water Mana]> <in [Smoke] tiles> <in [your] tiles>"
+terraform="Turn this tile into a [Plains] tile <for all movement> <in [Desert] tiles> <in [your] tiles> <in [unimproved] tiles> <in tiles without [Flood plains]>"
+extinguish="Remove [Smoke] improvements from this tile <for all movement> <in [Smoke] tiles> <in [your] tiles>"
 assert terraform in water["uniques"]
 assert extinguish in water["uniques"]
 assert "Plains" in terrains and "Desert" in terrains and "Flood plains" in terrains
