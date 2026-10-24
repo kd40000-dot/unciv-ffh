@@ -40,6 +40,7 @@ sources = {
     "Maelstrom": ("Air II", "SPELL_MAELSTROM"),
     "Summon Fire Elemental": ("Fire III", "SPELL_SUMMON_FIRE_ELEMENTAL"),
     "Raise Skeleton": ("Death I", "SPELL_RAISE_SKELETON"),
+    "Repair": ("Enchantment I", "SPELL_REPAIR"),
 }
 for spell in spells:
     if spell["name"] not in sources:
@@ -53,6 +54,10 @@ assert by_name["Maelstrom"]["radius"] == 2
 assert by_name["Maelstrom"]["amount"] == 15
 assert by_name["Maelstrom"]["damageLimit"] == 30
 assert by_name["Raise Skeleton"]["summonDuration"] == 0
+assert by_name["Raise Skeleton"]["immobileOnCreate"]
+assert by_name["Repair"]["amount"] == 20
+assert by_name["Repair"]["eligibleUnitTypes"] == ["Siege", "Melee Water", "Civilian Water"]
+assert "Golem" in by_name["Repair"]["eligibleNameContains"]
 assert by_name["Summon Fire Elemental"]["summonDuration"] > 0
 assert promotions["Courage (Spell)"]["uniques"] == ["Not shown on world screen"]
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
