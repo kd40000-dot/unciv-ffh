@@ -72,12 +72,16 @@
     "requiredTech": "Poisons",
     "uniques": [
       "[-40]% Strength <when defending>",
-      "Can only be built <in cities with a [Hunting Lodge]>"
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "[This Unit] gains the [Whiteout (Ability)] status for [2] turn(s) <for all movement> <in [Snow] tiles> <for [Illians] Civilizations>"
     ],
     "upgradesTo": "Marksman",
     "civilopediaText": [
       {
         "text": "Assassin: A specialist trained to operate beyond the security of settled lands."
+      },
+      {
+        "text": "Whiteout applies only to an Illians Assassin on Snow. It is temporary partial invisibility; EMM true Hidden expires upon action/combat."
       }
     ]
   },
@@ -1216,12 +1220,16 @@
       "Can upgrade to [Chariot]",
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
+      "[This Unit] gains the [Burning Blood (Ability)] status for [2] turn(s) <for all movement>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
       {
         "text": "A Calabim warrior bound to a culture of blood and ruthless service."
+      },
+      {
+        "text": "Burning Blood is an optional Moroi tactical power. Proxy: +20% Strength and +1 Movement for two turns, no EMM Blitz/betrayal mechanism."
       }
     ],
     "promotions": [
@@ -1613,11 +1621,15 @@
     "uniqueTo": "Khazad",
     "replaces": "Beastmaster",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[This Unit] gains the [Spores (Ability)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Myconid: A mobile reconnaissance fighter serving the armies and settlements of Erebus."
+      },
+      {
+        "text": "Spores suppresses nearby enemies with a Strength penalty, not EMM's targeted movement immobilization."
       }
     ]
   },
@@ -1680,11 +1692,15 @@
     "replaces": "Horseman",
     "upgradesTo": "Horse Archer",
     "uniques": [
-      "Can upgrade to [Chariot]"
+      "Can upgrade to [Chariot]",
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "A horse-bodied warrior of the Kuriotate realm."
+      },
+      {
+        "text": "Sprint gains movement but takes a -10% strength fatigue penalty. EMM fatigue/haste have distinct expiry rules."
       }
     ]
   },
@@ -1701,7 +1717,13 @@
     "civilopediaText": [
       {
         "text": "A centaur combining swift movement with ranged attacks."
+      },
+      {
+        "text": "Sprint gains movement but takes a -10% strength fatigue penalty. EMM fatigue/haste have distinct expiry rules."
       }
+    ],
+    "uniques": [
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
     ]
   },
   {
@@ -1714,12 +1736,16 @@
     "uniqueTo": "Kuriotates",
     "replaces": "Chariot",
     "uniques": [
-      "[-40]% Strength <when defending>"
+      "[-40]% Strength <when defending>",
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
     ],
     "upgradesTo": "Knight",
     "civilopediaText": [
       {
         "text": "A centaur prepared for a crushing mounted assault."
+      },
+      {
+        "text": "Sprint gains movement but takes a -10% strength fatigue penalty. EMM fatigue/haste have distinct expiry rules."
       }
     ]
   },
@@ -1734,11 +1760,15 @@
     "replaces": "Knight",
     "uniques": [
       "[-36]% Strength <when defending>",
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "An elite centaur trained for lance combat."
+      },
+      {
+        "text": "Sprint gains movement but takes a -10% strength fatigue penalty. EMM fatigue/haste have distinct expiry rules."
       }
     ]
   },
