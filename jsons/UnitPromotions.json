@@ -2299,11 +2299,12 @@
     "unitTypes": [],
     "uniques": [
       "[10] HP when healing",
+      "Unit will heal every turn, even if it performs an action",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Body II Regeneration: +10 HP when this caster normally heals (matching EMM +10 friendly/neutral/enemy healing). EMM grants this promotion to living allied units, while the Unciv two-turn buff affects only the caster. Removed automatic every-turn healing because it is not part of EMM Regeneration."
+        "text": "EMM PROMOTION_REGENERATION contains bAlwaysHeal=1 and +10 HP healing on enemy/neutral/friendly tiles and disappears once fully healed. Stock Unciv restores +10 HP when healing and permits healing on turns when the caster acts, reproducing both main source effects on the caster. EMM casts on eligible living allies and expires on full healing; this implementation uses a two-turn caster-only status."
       }
     ]
   },
