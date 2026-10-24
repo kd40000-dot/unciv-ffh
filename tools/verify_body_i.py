@@ -15,7 +15,7 @@ assert i["Body Node"]["techRequired"]=="Alteration"
 assert p["Body I"]["unitTypes"]==["Magic"]
 assert p["Body I"]["prerequisites"]==["Channeling I"]
 assert "Only available <with [Body Mana]>" in p["Body I"]["uniques"]
-assert "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement> <with [Body Mana]>" in p["Body I"]["uniques"]
+assert "[This Unit] gains the [Hasted] status for [2] turn(s) <for all movement>" in p["Body I"]["uniques"]
 assert p["Hasted"]["unitTypes"]==[]
 assert "[+1] Movement" in p["Hasted"]["uniques"]
 assert "Not shown on world screen" in p["Hasted"]["uniques"]
