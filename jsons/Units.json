@@ -73,7 +73,8 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>",
-      "[This Unit] gains the [Whiteout (Ability)] status for [2] turn(s) <for all movement> <in [Snow] tiles> <for [Illians] Civilizations>"
+      "[This Unit] gains the [Whiteout (Ability)] status for [2] turn(s) <for all movement> <in [Snow] tiles> <for [Illians] Civilizations>",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Marksman",
     "civilopediaText": [
@@ -82,6 +83,9 @@
       },
       {
         "text": "Whiteout applies only to an Illians Assassin on Snow. It is temporary partial invisibility; EMM true Hidden expires upon action/combat."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -97,12 +101,16 @@
       "Can upgrade to [Chariot]",
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
       {
         "text": "Axeman: A front-line warrior trained for close combat."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Battlemaster for 70 Gold after Iron Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ],
     "promotions": [
@@ -118,11 +126,15 @@
     "requiredTech": "Animal Mastery",
     "uniques": [
       "Limited to [4] per Civilization",
-      "Only available <for [non-[Luchuirp]] Civilizations>"
+      "Only available <for [non-[Luchuirp]] Civilizations>",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "civilopediaText": [
       {
         "text": "Beastmaster: A specialist trained to operate beyond the security of settled lands."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -376,12 +388,16 @@
     "requiredTech": "Hunting",
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>",
-      "Can upgrade to [Assassin]"
+      "Can upgrade to [Assassin]",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Ranger",
     "civilopediaText": [
       {
         "text": "Hunter: A specialist trained to operate beyond the security of settled lands."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -529,12 +545,16 @@
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>",
       "Only available <for [non-[Khazad]] Civilizations>",
-      "Only available <for [non-[Luchuirp]] Civilizations>"
+      "Only available <for [non-[Luchuirp]] Civilizations>",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Beastmaster",
     "civilopediaText": [
       {
         "text": "Ranger: A specialist trained to operate beyond the security of settled lands."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -546,11 +566,15 @@
     "strength": 2,
     "upgradesTo": "Hunter",
     "uniques": [
-      "Can upgrade to [Horseman]"
+      "Can upgrade to [Horseman]",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "civilopediaText": [
       {
         "text": "Scout: A specialist trained to operate beyond the security of settled lands."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -608,11 +632,19 @@
     "strength": 3,
     "upgradesTo": "Archer",
     "uniques": [
-      "Can upgrade to [Axeman]"
+      "Can upgrade to [Axeman]",
+      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "civilopediaText": [
       {
         "text": "Warrior: A front-line warrior trained for close combat."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Sons Of Asena for 30 Gold after Bronze Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Battlemaster for 100 Gold after Iron Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ]
   },
@@ -643,11 +675,15 @@
     "movement": 2,
     "cost": 75,
     "uniques": [
-      "Can build [Land] improvements on tiles"
+      "Can build [Land] improvements on tiles",
+      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [20 Gold] stats> <for all movement>"
     ],
     "civilopediaText": [
       {
         "text": "Laborers who improve terrain and build the infrastructure of a civilization."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Beastman for 20 Gold. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ]
   },
@@ -1306,12 +1342,20 @@
     "civilopediaText": [
       {
         "text": "Beastman: A military unit serving the armies and settlements of Erebus."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Sons Of Asena for 30 Gold after Bronze Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Battlemaster for 100 Gold after Iron Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ],
     "uniques": [
       "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
+      "Can transform to [Sons Of Asena] <for [Doviello] Civilizations> <costs [30 Gold] stats> <for all movement> <after discovering [Bronze Working]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [100 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "promotions": [
       "Metal Weaponry"
@@ -1350,11 +1394,15 @@
       "Can upgrade to [Chariot]",
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
+      "Can transform to [Battlemaster] <for [Doviello] Civilizations> <costs [70 Gold] stats> <for all movement> <after discovering [Iron Working]>"
     ],
     "civilopediaText": [
       {
         "text": "Sons Of Asena: A military unit serving the armies and settlements of Erebus."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Battlemaster for 70 Gold after Iron Working. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ],
     "promotions": [
@@ -2129,12 +2177,16 @@
     "replaces": "Hunter",
     "uniques": [
       "Can only be built <in cities with a [Hunting Lodge]>",
-      "Can upgrade to [Assassin]"
+      "Can upgrade to [Assassin]",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Ranger",
     "civilopediaText": [
       {
         "text": "A Sidar operative whose shadowed nature confounds ordinary enemies."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -2149,12 +2201,16 @@
     "replaces": "Assassin",
     "uniques": [
       "[-40]% Strength <when defending>",
-      "Can only be built <in cities with a [Hunting Lodge]>"
+      "Can only be built <in cities with a [Hunting Lodge]>",
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Marksman",
     "civilopediaText": [
       {
         "text": "A Sidar combatant whose path leads into shadow and secrecy."
+      },
+      {
+        "text": "Sidar Sever Soul summons a fragile scouting soul (EMM combat 1, movement 2, true invisibility, 3-turn duration). One summon per source unit is permitted here to prevent permanent-summon spam; native Unciv does not track the original summoner or automatic expiry."
       }
     ]
   },
@@ -2234,11 +2290,15 @@
       "[+10]% Strength <vs cities>",
       "[+133]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+67]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
-      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>"
+      "[+33]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
+      "[This Unit] gains the [Lucian Bronze Veteran] promotion <costs [80 Gold] stats> <for all movement> <after discovering [Bronze Working]> <once>"
     ],
     "civilopediaText": [
       {
         "text": "A legendary Doviello war leader, feared for his ruthlessness."
+      },
+      {
+        "text": "EMM transforms Lucian into an upgraded Sons of Asena, retaining the hero's name and experience, for 80 Gold. Native proxy grants permanent +1 Strength once, keeping the original Lucian unit identity."
       }
     ],
     "promotions": [
@@ -2253,7 +2313,8 @@
     "uniques": [
       "Unbuildable",
       "Can upgrade to [Warrior] <for units with [Arena Victory]> <in cities with a [Arena]>",
-      "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>"
+      "[This Unit] gains the [Arena Battle] promotion <for all movement> <in cities with a [Arena]>",
+      "Can transform to [Beastman] <for [Doviello] Civilizations> <costs [20 Gold] stats> <for all movement>"
     ],
     "civilopediaText": [
       {
@@ -2261,6 +2322,9 @@
       },
       {
         "text": "Slaves cannot currently be acquired through normal gameplay in this mod. Their capture and production mechanics remain to be implemented."
+      },
+      {
+        "text": "EMM Doviello unit conversion: transform into Beastman for 20 Gold. The original spell uses the current unit's class and preserves conversion state. Unciv handles native transformation but some equipment/XP carryover may differ."
       }
     ]
   },
@@ -2683,6 +2747,26 @@
     "civilopediaText": [
       {
         "text": "Source EMM Sand Lion has 5 combat and 3 movement, summoned by Malakim rank-II arcane casters while in Desert. Native Unciv unit persists rather than expiring automatically; manual dismissal available."
+      }
+    ]
+  },
+  {
+    "name": "Severed Soul (Summoned)",
+    "unitType": "Scout",
+    "movement": 2,
+    "strength": 1,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Cannot attack",
+      "Ignores terrain cost",
+      "Invisible to non-adjacent units",
+      "[This Unit] is destroyed <for all movement>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sidar Sever Soul creation. EMM: combat 1, movement 2, only defensive, truly invisible, ignores terrain cost, duration 3 turns and inherits selected promotions from its summoner. Unciv approximates with non-adjacent invisibility and manual dismissal; summoner-linked restrictions and promotion inheritance are unavailable."
       }
     ]
   }
