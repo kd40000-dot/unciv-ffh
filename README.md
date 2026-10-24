@@ -2,6 +2,16 @@
 
 A **standalone Unciv base ruleset prototype**, with **ExtraModMod Continued** as the authoritative target.
 
+## Expanded magic source-backed test release (October 24, 2026)
+
+**Safety checkpoint:** [pre-full-magic-2026-10-24](https://github.com/kd40000-dot/unciv-ffh/tree/checkpoint/pre-full-magic-2026-10-24), commit `ae94e78090f2c80363e0856a5ebe2769b91c76e8`.
+
+This release contains **63 sphere-rank promotions** (21 EMM schools × three ranks), **67 sphere-associated spells** represented by native executable actions or carefully documented proxies, 21 pre-existing Mana Node resource conversions, 21 new spell-created units (including Malakim Sand Lion), five city-spell buildings, two dimensional improvements, and five additional EMM faction/unit spell proxies (Burning Blood, Sprint, Whiteout, Spores, Sand Lion). Of the **355** source spell definitions, **288** are non-sphere actions and not all are portable without the missing religion, faction, item, lair, world-spell and custom game-engine subsystems. Existing Arena and Lanun cove actions are already partially ported outside the magic framework.
+
+**Source-based and engine-validated, not gameplay-verified:** GitHub Actions official Unciv `mod-ci` and repository static checks have passed. Android action selection, combat balance, turn duration, unit expiration, city spell persistence, and AI still require the player's in-game tests. EMM units cast temporary summons that disappear automatically; stock Unciv's native unit creation leaves them persistent. Temporary summons therefore have a manual dismiss action but no faithful automatic expiration. Promotion aura and same-tile targeting, direct enemy damage, spell resistance, Great Sage point generation and EMM Python effects may also differ.
+
+Documents: [full 355-source inventory](docs/emm-full-spell-inventory.md), [individual spell Android checklist](docs/magic-spell-by-spell-android-qa.md), [detailed differences and test gates](docs/expanded-magic-differences-and-qa.md), [original mana node instructions](docs/mana-nodes.md).
+
 ## Erebus diplomacy flavor
 
 The **19 playable civilization leaders now have distinct introductions, neutral/hostile greetings, declarations of war, reactions to attacks, defeat lines and trade requests** (133 total lines). These are **new lore-inspired dialogue**, not quoted FfH2/EMM dialogue: the pinned source's accessible diplomacy text contains generic Civilization IV lines, not original custom greetings for these leaders. **First-contact greetings have passed user gameplay testing (October 21, 2026)**; other diplomatic triggers still await verification. Provenance: [dialogue ledger](docs/data/erebus-diplomacy-dialogue.json), [implementation and QA](docs/erebus-diplomacy.md).
@@ -16,11 +26,11 @@ All 19 playable civilizations now use **the original transparent faction symbols
 
 ## Mana-node foundation (October 23, 2026)
 
-Added Raw Mana map deposits, all **21** EMM sphere Mana resources and improvements, and source-technology-gated **Adept** node construction. Each finished node supplies one sphere Mana resource to the owning empire; spell effects and sphere promotions remain the next milestones. Native Unciv `mod-ci` and source-mapping checks passed; Android gameplay test pending. See [mana-node mechanics and QA](docs/mana-nodes.md).
+Added Raw Mana map deposits, all **21** EMM sphere Mana resources and improvements, and source-technology-gated **Adept** node construction. Each finished node supplies one sphere Mana resource to the owning empire; sphere rank promotions and spell actions are now under development and Android testing. Node construction/retuning have already been user-tested on Android; spell behavior still requires systematic verification. See [mana-node mechanics and QA](docs/mana-nodes.md).
 
 ## First early-game slice
 
-Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **102 units** and **69 buildings**, plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
+Includes **19 normally playable EMM civilizations**, the EMM-derived technology tree, **124 unit definitions** and **81 buildings** (including spell-created content), plus terrain, resources and improvements. This is **not yet a complete port**. Starting rosters, faction palaces, leader traits, Raider pillage income, Doviello Science, and Lanun Pirate Cove functionality within Unciv's supported limitations have received positive user gameplay verification. Khazad Vault Gold-per-city thresholds and bonuses have now also received positive gameplay verification; other systems and long games still need testing. The user will report any economic-trait issues found later.
 
 Install with Unciv → Mods → Download mod from URL:
 
