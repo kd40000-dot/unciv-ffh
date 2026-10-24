@@ -1994,10 +1994,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Nature sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger. Vitalize upgrades owned unimproved Plains to Grassland; incomplete source landscape progression. Also upgrades desert to plains; no conversion of floodplains or forest tiles."
-      },
-      {
-        "text": "Vitalize's full EMM base transitions are Snow→Tundra, Tundra→Plains, Desert→Plains, Plains→Grassland, and Marsh→Grassland; all five native Unciv options are now present on owned unimproved tiles. EMM Scrub removal and other feature/map constraints are not reproduced."
+        "text": "EMM Nature III Vitalize: supports owned unimproved Snow→Tundra, Tundra→Plains, Desert→Plains, Plains→Grassland, Marsh→Grassland. EMM allows more feature handling and removes Scrub; no source-equivalent terrain ownership generality."
       }
     ]
   },
@@ -2108,10 +2105,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Sun sphere rank I. Requires Sun Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Scorch currently converts owned unimproved Plains to Desert; broader EMM map transformation is not reproduced."
-      },
-      {
-        "text": "Scorch EMM terrain transitions include Plains→Desert, Snow→Tundra, Marsh→Plains, and Fields of Perdition→Burning Sands (last transition absent because neither EMM-specific terrain exists here). The Unciv version requires owned/unimproved tiles and cannot trigger war against foreign owners."
+        "text": "EMM Sun I Scorch: learns with Sun Mana and Channeling I. Cast can transform owned unimproved Plains→Desert, Snow→Tundra, and Marsh→Plains. EMM also has the absent Fields of Perdition→Burning Sands transition and human-owned hostile terrain/war rules."
       }
     ]
   },
@@ -2261,10 +2255,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Law I Loyalty proxy: adjacent Sword defenders +15% Strength; EMM prevents capture and removes Burning Blood."
-      },
-      {
-        "text": "Replaced unrelated +15% Sword combat aura with native Uncapturable, matching EMM's capture immunity on the buffed unit. Actual source applies a lasting loyalty promotion to eligible allies on the caster's tile and removes Burning Blood; Unciv applies two-turn protection to the caster only."
+        "text": "Law I Loyalty: 2-turn Uncapturable on caster, approximating EMM's capture-immunity promotion. EMM grants persistent capture protection to eligible co-located allies and removes Burning Blood; the temporary self-only Unciv action cannot replicate those targets or dispels."
       }
     ]
   },
@@ -2304,7 +2295,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM PROMOTION_REGENERATION contains bAlwaysHeal=1 and +10 HP healing on enemy/neutral/friendly tiles and disappears once fully healed. Stock Unciv restores +10 HP when healing and permits healing on turns when the caster acts, reproducing both main source effects on the caster. EMM casts on eligible living allies and expires on full healing; this implementation uses a two-turn caster-only status."
+        "text": "Body II Regeneration: +10 HP when healing, including on turns after actions, based on EMM iFriendlyHealChange/iNeutralHealChange/iEnemyHealChange=10 and bAlwaysHeal=1. Missing EMM allied targeting and removal once completely healed."
       }
     ]
   },
@@ -2463,7 +2454,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Law III Valor native proxy: +1 XP per combat (matching EMM iFreeXPFromCombat=1) for 2 turns on caster. EMM applies Valor to eligible living allied units for longer, plus 10 Magic Resistance and +10 exploration result bonus. The previous +50% XP and +10% attack modifiers were inaccurate and were removed."
+        "text": "Law III Valor: +1 XP gained from combat on caster for a temporary two-turn status; EMM applies a promotion to eligible co-located living units and also grants 10 magic resistance and +10 exploration outcome bonus."
       }
     ]
   },
@@ -2543,10 +2534,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Illians Assassin Whiteout proxy: two-turn partial invisibility in Snow. EMM Hidden unit is truly invisible until combat/casting; non-adjacent invisibility is Unciv approximation."
-      },
-      {
-        "text": "Full native invisibility now models EMM's Hidden on snow. EMM removes this upon combat/casting; Unciv only times it out."
+        "text": "Illians Assassin Whiteout: full native 'Invisible to others' when cast on Snow. EMM Hidden is removed by attacking/casting rather than after two turns."
       }
     ]
   },
@@ -2584,10 +2572,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Two-turn stealth status from the HIDE action. EMM Hidden provides full invisible status lost on combat/casting; Unciv approximates it with invisibility to nonadjacent units and fixed expiration."
-      },
-      {
-        "text": "Unciv's native full invisibility is closer to EMM's Hidden than the former non-adjacent proxy. EMM additionally removes Hidden after attacks or casting; Unciv retains it for 2 turns."
+        "text": "Stealth Hide: full native 'Invisible to others' for 2 turns. EMM Hidden lasts until attack/casting and can be dispelled instead of a fixed timer."
       }
     ]
   },
@@ -2601,7 +2586,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Stealth promotion grants HIDE. EMM HIDE gives true invisibility until combat/casting, and cannot cast twice while Hidden; native Unciv applies temporary non-adjacent invisibility and can refresh when recast."
+        "text": "EMM Stealth promotion unlocks Hide. Native full invisibility lasts two turns and cannot be recast until the status expires; EMM Hidden disappears on attack/cast instead."
       }
     ]
   },
