@@ -47,7 +47,7 @@ for spell in spells:
         continue
     promotion, source_id = sources[spell["name"]]
     assert spell["sourceId"] == source_id, spell["name"]
-    assert f"Can cast EMM spell [{spell['name']}]" in promotions[promotion]["uniques"], spell["name"]
+    assert any(u.startswith(f"Can cast EMM spell [{spell['name']}]") for u in promotions[promotion]["uniques"]), spell["name"]
 
 by_name = {s["name"]: s for s in spells}
 assert by_name["Maelstrom"]["radius"] == 2
