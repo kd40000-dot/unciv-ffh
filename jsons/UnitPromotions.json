@@ -2577,7 +2577,7 @@
       "Scout"
     ],
     "uniques": [
-      "[This Unit] gains the [Hidden (Spell)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Hidden (Spell)] status for [2] turn(s) <for all movement> <for units without [Hidden (Spell)]>"
     ],
     "civilopediaText": [
       {
