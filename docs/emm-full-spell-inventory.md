@@ -134,7 +134,7 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_HEALING_SALVE | PROMOTION_HEALING_SALVE | — | — | yes | review XML | Deferred: religion, priest or non-sphere casting |
 | SPELL_HELLFIRE | — | — | — | yes | improvement | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_HERALDS_CALL | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
-| SPELL_HIDE | PROMOTION_STEALTH | — | — | yes | buff | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_HIDE | PROMOTION_STEALTH | — | — | yes | buff | Proxy(dev): Stealth Scout Hide; two-turn non-adjacent invisibility instead of full source invisibility until combat/cast; Android unverified |
 | SPELL_ESUS_HIDE | — | — | — | yes | buff | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_HIRE_ARCHER | — | — | TECH_ARCHERY | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_HIRE_CHARIOT | — | — | TECH_TRADE | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
@@ -204,7 +204,7 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_SANCTIFY | PROMOTION_LIFE1 | PROMOTION_CHANNELING1 | — | yes | review XML | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SANCTUARY | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_SCORCH | PROMOTION_SUN1 | PROMOTION_CHANNELING1 | — | yes | review XML | Dev branch: action or explicitly marked proxy; static CI, Android pending |
-| SPELL_SEVER | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
+| SPELL_SEVER | — | — | — | yes | review XML | Proxy(dev): Sidar Scout recon Sever Soul; one cast per unit; summoned soul persists and can be dismissed, not automatic 3-turn duration; Android unverified |
 | SPELL_SHADOWWALK | PROMOTION_SHADOW2 | — | — | no | buff | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_SHIELD_OF_FAITH | PROMOTION_CHANNELING2 | PROMOTION_DIVINE | — | no | buff | Deferred: religion, priest or non-sphere casting |
 | SPELL_SING | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
@@ -300,12 +300,12 @@ Pinned source: `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65
 | SPELL_TSUNAMI | PROMOTION_CHANNELING2 | PROMOTION_DIVINE | — | yes | review XML | Deferred: religion, priest or non-sphere casting |
 | SPELL_UNYIELDING_ORDER | — | — | — | yes | building | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_UNYIELDING_ORDER_SPHENER | — | — | — | yes | building | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
-| SPELL_UPGRADE_DOVIELLO_AXEMAN | — | — | TECH_BRONZE_WORKING | no | review XML | Deferred: faction action or unit transformation rules |
-| SPELL_UPGRADE_DOVIELLO_AXEMAN_LUCIAN | — | — | TECH_BRONZE_WORKING | yes | review XML | Deferred: faction action or unit transformation rules |
-| SPELL_UPGRADE_DOVIELLO_BATTLEMASTER | — | — | TECH_IRON_WORKING | no | review XML | Deferred: faction action or unit transformation rules |
-| SPELL_UPGRADE_DOVIELLO_CHAMPION | — | — | TECH_IRON_WORKING | no | review XML | Deferred: faction action or unit transformation rules |
-| SPELL_UPGRADE_DOVIELLO_WARRIOR | — | — | — | yes | review XML | Deferred: faction action or unit transformation rules |
-| SPELL_UPGRADE_DOVIELLO_WARRIOR_SLAVE | — | — | — | yes | review XML | Deferred: faction action or unit transformation rules |
+| SPELL_UPGRADE_DOVIELLO_AXEMAN | — | — | TECH_BRONZE_WORKING | no | review XML | Implemented(dev): Doviello Warrior/Beastman to Sons of Asena; Bronze Working; 30 Gold; native transform; Android unverified |
+| SPELL_UPGRADE_DOVIELLO_AXEMAN_LUCIAN | — | — | TECH_BRONZE_WORKING | yes | review XML | Proxy(dev): Lucian permanently gains +1 Strength for 80 Gold; preserves identity; EMM transforms class and renames; Android unverified |
+| SPELL_UPGRADE_DOVIELLO_BATTLEMASTER | — | — | TECH_IRON_WORKING | no | review XML | Implemented(dev): Doviello Warrior/Beastman to Battlemaster; Iron Working; 100 Gold; Android unverified |
+| SPELL_UPGRADE_DOVIELLO_CHAMPION | — | — | TECH_IRON_WORKING | no | review XML | Implemented(dev): Doviello Sons of Asena/Axeman to Battlemaster; Iron Working; 70 Gold; Android unverified |
+| SPELL_UPGRADE_DOVIELLO_WARRIOR | — | — | — | yes | review XML | Implemented(dev): Doviello Worker to Beastman; 20 Gold; AI-specific source condition omitted; Android unverified |
+| SPELL_UPGRADE_DOVIELLO_WARRIOR_SLAVE | — | — | — | yes | review XML | Implemented(dev): Doviello Slave to Beastman; 20 Gold; AI-specific source condition omitted; Android unverified |
 | SPELL_UPGRADE_SPECTRE | — | — | TECH_SORCERY | no | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
 | SPELL_VALOR | PROMOTION_LAW3 | — | — | no | buff | Dev branch: action or explicitly marked proxy; static CI, Android pending |
 | SPELL_VEIL_OF_NIGHT | — | — | — | yes | review XML | Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed |
