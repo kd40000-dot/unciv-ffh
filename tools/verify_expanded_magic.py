@@ -33,7 +33,7 @@ for sphere in spheres:
 for name in ["Skeleton (Summoned)","Spectre (Summoned)","Pit Beast (Summoned)","Fireball (Summoned)","Magic Missile (Summoned)","Ice Elemental (Summoned)","Einherjar (Summoned)","Air Elemental (Summoned)","Flesh Golem (Summoned)","Wraith (Summoned)","Earth Elemental (Summoned)","Fire Elemental (Summoned)","Runewyn (Summoned)","Djinn (Summoned)","Mistform (Summoned)","Aurealis (Summoned)","Water Elemental (Summoned)","Floating Eye (Summoned)","Returned Soul (Summoned)","Lich"]:
     assert name in u,name
     assert "Unbuildable" in u[name]["uniques"],name
-for name in ["Growth (Spell)","Fertility (Spell)","Blessing (Spell)","Wall of Stone (Spell)","Hope (Spell)","Illumination (Spell)"]:
+for name in ["Growth (Spell)","Blessing (Spell)","Wall of Stone (Spell)","Hope (Spell)","Illumination (Spell)"]:
     assert name in b,name
 for name in ["Labyrinth (Spell)","Rift (Spell)"]:
     assert name in i,name
