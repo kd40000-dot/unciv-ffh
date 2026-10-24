@@ -2233,5 +2233,342 @@
         "text": "Slaves cannot currently be acquired through normal gameplay in this mod. Their capture and production mechanics remain to be implemented."
       }
     ]
+  },
+  {
+    "name": "Skeleton (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 2,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Spectre (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 3,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Invisible to non-adjacent units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Pit Beast (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 4,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Fireball (Summoned)",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 1,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Self-destructs when attacking"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ],
+    "rangedStrength": 8,
+    "range": 2
+  },
+  {
+    "name": "Magic Missile (Summoned)",
+    "unitType": "Archery",
+    "movement": 2,
+    "strength": 1,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Self-destructs when attacking"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ],
+    "rangedStrength": 6,
+    "range": 2
+  },
+  {
+    "name": "Ice Elemental (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 2,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Einherjar (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 3,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Air Elemental (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 5,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Flesh Golem (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Cannot move"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Wraith (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Invisible to non-adjacent units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Earth Elemental (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 11,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Fire Elemental (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Runewyn (Summoned)",
+    "unitType": "Magic",
+    "movement": 1,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Djinn (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 5,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Mistform (Summoned)",
+    "unitType": "Magic",
+    "movement": 2,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Invisible to non-adjacent units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Aurealis (Summoned)",
+    "unitType": "Magic",
+    "movement": 1,
+    "strength": 6,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Water Elemental (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 8,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Floating Eye (Summoned)",
+    "unitType": "Scout",
+    "movement": 3,
+    "strength": 1,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Cannot attack",
+      "[+3] Sight"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Returned Soul (Summoned)",
+    "unitType": "Sword",
+    "movement": 1,
+    "strength": 4,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. EMM nominal combat/movement attributes retained when available; Unciv combat rules are different. Native Unciv cannot expire this summon after EMM spell duration; the unit persists until killed, so limit summoning during test games."
+      }
+    ]
+  },
+  {
+    "name": "Lich",
+    "unitType": "Magic",
+    "movement": 1,
+    "strength": 5,
+    "cost": 80,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Magic-created unit prototype. Death III Lichdom creates a transformed permanent mage. "
+      }
+    ],
+    "promotions": [
+      "Channeling I",
+      "Channeling II",
+      "Channeling III"
+    ]
   }
 ]
