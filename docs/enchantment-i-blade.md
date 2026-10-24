@@ -1,6 +1,6 @@
 # Enchantment I → Enchanted Blade: localized buff proxy
 
-**Date:** October 23, 2026. **Status:** Committed, awaiting Android gameplay verification.
+**Date:** October 23, 2026. **Status:** Committed, gameplay-verified by user.
 
 **Pinned EMM source:** `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65a610`:
 - `XML/Units/CIV4PromotionInfos.xml`: `PROMOTION_ENCHANTMENT1` needs Channeling I + Enchantment Mana; `PROMOTION_ENCHANTED_BLADE` supplies +20% melee combat strength (attack and defense); `PROMOTION_RUSTED` penalizes melee combat.
@@ -26,3 +26,7 @@ Unciv does not support selecting specific friendly melee units for a triggered s
 6. Confirm Archery and Mounted units do not receive the Sword-filtered bonus. Save and reload to confirm the status remains consistent.
 
 **Validation:** `tools/verify_enchantment_i.py` plus official `Unciv.jar mod-ci` workflow.
+
+## Gameplay confirmation and visibility TODO (October 24, 2026)
+
+The user confirmed the combat bonuses work in-game for both Enchanted Blade Aura and Treetop Tactics, including seeing the modifier in the combat preview. Keep the current implementation unchanged. **Deferred UI improvement:** consider a clearer active spell indicator on the caster and/or visibly showing which nearby units benefit from Enchanted Blade Aura. Do not prioritize until the user asks to revisit it.
