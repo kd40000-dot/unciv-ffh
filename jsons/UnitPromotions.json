@@ -1169,11 +1169,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Air Mana]>"
+      "Only available <with [Air Mana]>",
+      "[This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement> <with [Air Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Air sphere rank I. Requires Air Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Air sphere rank I. Requires Air Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Fair Winds is a self movement proxy, not the EMM ship buff."
       }
     ]
   },
@@ -1254,11 +1255,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Chaos Mana]>"
+      "Only available <with [Chaos Mana]>",
+      "[This Unit] gains the [Dance of Blades (Spell)] status for [2] turn(s) <for all movement> <with [Chaos Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Chaos sphere rank I. Requires Chaos Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Chaos sphere rank I. Requires Chaos Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Dance of Blades substitutes attack strength for EMM first strike."
       }
     ]
   },
@@ -1305,11 +1307,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Creation Mana]>"
+      "Only available <with [Creation Mana]>",
+      "Gain a free [Growth (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Creation sphere rank I. Requires Creation Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Creation sphere rank I. Requires Creation Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Growth installs a persistent city building: unlike EMM, caster departure/death does not remove it."
       }
     ]
   },
@@ -1356,11 +1359,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Death Mana]>"
+      "Only available <with [Death Mana]>",
+      "Free [Skeleton (Summoned)] appears <for all movement> <with [Death Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Death sphere rank I. Requires Death Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Death sphere rank I. Requires Death Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Raise Skeleton creates a permanent capped Skeleton proxy; no corpse mechanics or duration."
       }
     ]
   },
@@ -1407,11 +1411,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Dimensional Mana]>"
+      "Only available <with [Dimensional Mana]>",
+      "[This Unit] gains the [Escape (Spell)] status for [2] turn(s) <for all movement> <with [Dimensional Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Dimensional sphere rank I. Requires Dimensional Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Dimensional sphere rank I. Requires Dimensional Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Escape cannot teleport under native Unciv; mobility proxy only."
       }
     ]
   },
@@ -1458,11 +1463,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Earth Mana]>"
+      "Only available <with [Earth Mana]>",
+      "Gain a free [Wall of Stone (Spell)] [in this city] <for all movement> <with [Earth Mana]> <in [City center] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Earth sphere rank I. Requires Earth Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Earth sphere rank I. Requires Earth Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Wall of Stone grants a city defense building, not removable by caster absence."
       }
     ]
   },
@@ -1628,11 +1634,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Force Mana]>"
+      "Only available <with [Force Mana]>",
+      "[This Unit] gains the [Temperance (Spell)] status for [2] turn(s) <for all movement> <with [Force Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Force sphere rank I. Requires Force Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Force sphere rank I. Requires Force Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Defensive combat bonus approximates EMM resistances."
       }
     ]
   },
@@ -1679,11 +1686,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Ice Mana]>"
+      "Only available <with [Ice Mana]>",
+      "[This Unit] gains the [Chilling Presence (Spell)] status for [2] turn(s) <for all movement> <with [Ice Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Ice sphere rank I. Requires Ice Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Ice sphere rank I. Requires Ice Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Slow is represented as a local debuff, not actual movement loss."
       }
     ]
   },
@@ -1730,11 +1738,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Law Mana]>"
+      "Only available <with [Law Mana]>",
+      "[This Unit] gains the [Loyalty (Spell)] status for [2] turn(s) <for all movement> <with [Law Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Law sphere rank I. Requires Law Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Law sphere rank I. Requires Law Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Combat aura stands in for EMM capture immunity."
       }
     ]
   },
@@ -1781,11 +1790,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Life Mana]>"
+      "Only available <with [Life Mana]>",
+      "Remove [Smoke] improvements from this tile <for all movement> <with [Life Mana]> <in [your] tiles> <in [Smoke] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Life sphere rank I. Requires Life Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Life sphere rank I. Requires Life Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Sanctify cleanses Smoke as a limited map proxy; EMM purges hell terrain/counter; cannot alter Armageddon Counter."
       }
     ]
   },
@@ -1832,11 +1842,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Metamagic Mana]>"
+      "Only available <with [Metamagic Mana]>",
+      "Free [Floating Eye (Summoned)] appears <for all movement> <with [Metamagic Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Metamagic sphere rank I. Requires Metamagic Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Metamagic sphere rank I. Requires Metamagic Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Floating Eye summons a fragile scout; remains instead of automatically expiring."
       }
     ]
   },
@@ -1951,11 +1962,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Shadow Mana]>"
+      "Only available <with [Shadow Mana]>",
+      "[This Unit] gains the [Blur (Spell)] status for [2] turn(s) <for all movement> <with [Shadow Mana]>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Shadow sphere rank I. Requires Shadow Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Shadow sphere rank I. Requires Shadow Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Blur protects only caster; immunity to first strikes not represented."
       }
     ]
   },
@@ -2036,11 +2048,12 @@
       "Channeling I"
     ],
     "uniques": [
-      "Only available <with [Sun Mana]>"
+      "Only available <with [Sun Mana]>",
+      "Turn this tile into a [Desert] tile <for all movement> <with [Sun Mana]> <in [Plains] tiles> <in [your] tiles> <in [unimproved] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Sun sphere rank I. Requires Sun Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger."
+        "text": "EMM Sun sphere rank I. Requires Sun Mana and Channeling I. Spell actions and source differences are documented in the magic test ledger. Scorch currently converts owned unimproved Plains to Desert; broader EMM map transformation is not reproduced."
       }
     ]
   },
@@ -2109,6 +2122,98 @@
     "civilopediaText": [
       {
         "text": "EMM Water sphere rank III. Requires rank 2 and Channeling III. Spell actions and source differences are documented in the magic test ledger."
+      }
+    ]
+  },
+  {
+    "name": "Fair Winds (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Proxy for Air I Fair Winds: caster movement +1 for 2 turns. EMM grants Fair Winds to naval units including withdrawal chance; allied ship targeting and withdrawal are unsupported."
+      }
+    ]
+  },
+  {
+    "name": "Dance of Blades (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Chaos I: +15% attacking Strength for two turns. EMM grants a first strike to eligible units; Unciv proxy is not a first strike."
+      }
+    ]
+  },
+  {
+    "name": "Escape (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "Ignores terrain cost",
+      "[+1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dimensional I Escape workaround: temporary +1 movement and ignores terrain costs, not teleportation to capital."
+      }
+    ]
+  },
+  {
+    "name": "Temperance (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+20]% Strength <when defending>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Force I Temperance proxy: 2-turn defensive strength; EMM provides elemental/magic resistance instead."
+      }
+    ]
+  },
+  {
+    "name": "Chilling Presence (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-15]% Strength for enemy [All] units in adjacent [All] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice I Slow proxy: 2-turn adjacent enemy combat debuff, NOT EMM movement slowing or Haste removal."
+      }
+    ]
+  },
+  {
+    "name": "Loyalty (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+15]% Strength bonus for [Sword] units within [1] tiles",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Law I Loyalty proxy: adjacent Sword defenders +15% Strength; EMM prevents capture and removes Burning Blood."
+      }
+    ]
+  },
+  {
+    "name": "Blur (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[+20]% Strength <when defending>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow I Blur defense proxy; source grants first-strike immunity to units in area, not +20% defense to caster."
       }
     ]
   }
