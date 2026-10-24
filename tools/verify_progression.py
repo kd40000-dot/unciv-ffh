@@ -26,6 +26,10 @@ aliases={r["name"]:r["sourceId"] for r in load("docs/data/emm-civilizations.json
 name_for=lambda n:aliases.get(n,"UNIT_"+n.removeprefix("Ljosalfar ").removeprefix("Amurites ").upper().replace(" ","_"))
 for u in units:
     assert u["unitType"] in type_names,u["name"]
+    if u["name"].endswith(" (Summoned)") or u["name"]=="Lich":
+        assert all(p in prom_names for p in u.get("promotions", [])),u["name"]
+        assert "Unbuildable" in u["uniques"],u["name"]
+        continue
     source=source_by_id[name_for(u["name"])]
     for p in u.get("promotions",[]):
         assert p in prom_names,(u["name"],p)
