@@ -1143,7 +1143,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Spirit I Courage approximation: for two turns, friendly adjacent units gain +10 HP when healing. EMM grants a Courage promotion to friendly eligible units on the caster's tile, with +10 same-tile healing, fear immunity and +5 exploration result bonus. Fear immunity, exploration bonus, same-tile targeting and EMM expiration chance are not reproduced."
+        "text": "Spirit I Courage: EMM grants eligible living allied units on the caster tile a temporary promotion (+10 same-tile healing, fear immunity, +5 exploration result bonus). Unciv adjacent healing aura now only affects healing, with no fear/exploration protection, and expires after two turns."
       }
     ]
   },
@@ -1846,7 +1846,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "EMM Life sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Undead-targeted AoE damage is unavailable, replaced by caster's combat specialty vs Magic units."
+        "text": "EMM Life sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Undead-targeted AoE damage is unavailable, replaced by caster's combat specialty vs Magic units. Refined to target Undead rather than all Magic units in the status bonus."
       }
     ]
   },
@@ -2352,12 +2352,12 @@
     "name": "Destroy Undead (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+50]% Strength <vs [Magic] units>",
+      "[+50]% Strength <vs [Undead] units>",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Life II Destroy Undead: +50% Strength against Magic units for 2 turns. EMM targets undead with AoE damage; Magic is NOT an undead classifier."
+        "text": "Life II Destroy Undead: proxy combat bonus specifically against Undead promotion (not all Magic). EMM directly damages hostile Undead in a radius; native Unciv cannot perform that AoE spell targeting. Test the Undead tag on Lich and Spectre/Wraith, and verify non-undead magic units receive no penalty."
       }
     ]
   },
@@ -2391,13 +2391,12 @@
     "name": "Shadowwalk (Spell)",
     "unitTypes": [],
     "uniques": [
-      "Ignores terrain cost",
       "[+20]% Strength <vs cities>",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Shadow II Shadowwalk: self 2-turn ignores terrain cost and +20% city attack, approximates ignoring city defenses."
+        "text": "Shadow II Shadowwalk: EMM ignores defensive city building bonuses, not terrain movement. Unciv uses +20% combat strength vs cities as a combat approximation; native parser cannot ignore only fortification/building defense through a timed spell. Missing defensive strike immunity."
       }
     ]
   },
@@ -2423,7 +2422,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment III Spellstaff approximation: temporary movement +1 so caster can reposition; EMM spellstaff grants an additional spell cast and can be consumed."
+        "text": "Enchantment III Spellstaff: EMM grants an expendable spellstaff enabling a second spell cast. Stock Unciv lacks a separate spell-cast resource; temporary extra movement is ONLY a tactical proxy, not an extra cast. This remains significantly different, with a 2-turn duration unlike source."
       }
     ]
   },
@@ -2602,6 +2601,16 @@
     "civilopediaText": [
       {
         "text": "EMM Stealth promotion grants HIDE. EMM HIDE gives true invisibility until combat/casting, and cannot cast twice while Hidden; native Unciv applies temporary non-adjacent invisibility and can refresh when recast."
+      }
+    ]
+  },
+  {
+    "name": "Undead",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Category tag for spell-created undead. Enables Life II effects to discriminate undead from ordinary arcane spellcasters. Native category bonus is not EMM's life-damage spell."
       }
     ]
   }
