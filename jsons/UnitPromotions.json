@@ -491,11 +491,15 @@
     "name": "Channeling II",
     "unitTypes": [],
     "uniques": [
-      "Not shown on world screen"
+      "Not shown on world screen",
+      "Free [Sand Lion (Summoned)] appears <for all movement> <for [Malakim] Civilizations> <in [Desert] tiles>"
     ],
     "civilopediaText": [
       {
         "text": "Advanced command of magical energies."
+      },
+      {
+        "text": "Special EMM Summon Sand Lion: available to Malakim rank-II magic casters on Desert; Burning Sands and summoned expiration not simulated."
       }
     ]
   },
