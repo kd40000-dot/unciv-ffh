@@ -15,7 +15,7 @@ fire=promotions["Fire I"]
 assert fire["unitTypes"]==["Magic"]
 assert fire["prerequisites"]==["Channeling I"]
 assert "Only available <with [Fire Mana]>" in fire["uniques"]
-assert "Can instantly construct a [Smoke] improvement <for all movement> <with [Fire Mana]>" in fire["uniques"]
+assert "Can instantly construct a [Smoke] improvement <for all movement>" in fire["uniques"]
 smoke=improvements["Smoke"]
 assert smoke["terrainsCanBeBuiltOn"]==["Forest","Jungle"]
 assert smoke["turnsToBuild"] == -1
