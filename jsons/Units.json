@@ -73,7 +73,7 @@
     "uniques": [
       "[-40]% Strength <when defending>",
       "Can only be built <in cities with a [Hunting Lodge]>",
-      "[This Unit] gains the [Whiteout (Ability)] status for [2] turn(s) <for all movement> <in [Snow] tiles> <for [Illians] Civilizations>",
+      "[This Unit] gains the [Whiteout (Ability)] status for [2] turn(s) <for all movement> <in [Snow] tiles> <for [Illians] Civilizations> <for units without [Whiteout (Ability)]>",
       "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
     ],
     "upgradesTo": "Marksman",
@@ -1741,7 +1741,7 @@
     "upgradesTo": "Horse Archer",
     "uniques": [
       "Can upgrade to [Chariot]",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
     ],
     "civilopediaText": [
       {
@@ -1771,7 +1771,7 @@
       }
     ],
     "uniques": [
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
     ]
   },
   {
@@ -1785,7 +1785,7 @@
     "replaces": "Chariot",
     "uniques": [
       "[-40]% Strength <when defending>",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
     ],
     "upgradesTo": "Knight",
     "civilopediaText": [
@@ -1809,7 +1809,7 @@
     "uniques": [
       "[-36]% Strength <when defending>",
       "Limited to [4] per Civilization",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
     ],
     "civilopediaText": [
       {
