@@ -1333,11 +1333,11 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Gain a free [Fertility (Spell)] [in this city] <for all movement> <with [Creation Mana]> <in [City center] tiles>"
+      "Add [Sheep] to this tile <for all movement> <with [Creation Mana]> <in [Cattle] tiles> <in [your] tiles>"
     ],
     "civilopediaText": [
       {
-        "text": "EMM Creation sphere rank II. Requires rank 1 and Channeling II. Spell actions and source differences are documented in the magic test ledger. Fertility installs +2 Food city building; EMM city-population and/or terrain functionality not reproduced."
+        "text": "Creation II Fertility: the pinned EMM Python cycles existing farm/livestock/plantation resources on owned tiles. Current Unciv implementation allows Cattle → Sheep on an owned Cattle resource tile, the only compatible animal transition in our current resource roster. EMM's other resource cycles and per-tile checks are not implemented. Test that Add Sheep replaces Cattle rather than creating two resources; if Unciv cannot overwrite a tile resource, this action needs an engine alternative."
       }
     ]
   },
