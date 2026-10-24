@@ -55,6 +55,8 @@ jobs:
         run: python3 tools/verify_mind_i.py
       - name: Verify expanded magic definitions and references
         run: python3 tools/verify_expanded_magic.py
+      - name: Verify 82-spell fidelity audit and source-derived values
+        run: python3 tools/verify_spell_parity_audit.py
       - name: Verify non-sphere EMM spell conversions
         run: python3 tools/verify_non_sphere_magic.py
       - name: Verify Khazad dynamic Dwarven Vault thresholds
