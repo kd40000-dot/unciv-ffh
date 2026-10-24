@@ -69,5 +69,170 @@
       "Golem"
     ],
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Fireball",
+    "sourceId": "SPELL_FIREBALL",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Fireball (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Graft Flesh",
+    "sourceId": "SPELL_GRAFT_FLESH",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Flesh Golem (Summoned)",
+    "summonDuration": 0,
+    "immobileOnCreate": true,
+    "maxActivePerCaster": 0,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Magic Missile",
+    "sourceId": "SPELL_MAGIC_MISSILE",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Magic Missile (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Air Elemental",
+    "sourceId": "SPELL_SUMMON_AIR_ELEMENTAL",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Air Elemental (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Aurealis",
+    "sourceId": "SPELL_SUMMON_AUREALIS",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Aurealis (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Djinn",
+    "sourceId": "SPELL_SUMMON_DJINN",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Djinn (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Earth Elemental",
+    "sourceId": "SPELL_SUMMON_EARTH_ELEMENTAL",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Earth Elemental (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Einherjar",
+    "sourceId": "SPELL_SUMMON_EINHERJAR",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Einherjar (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Ice Elemental",
+    "sourceId": "SPELL_SUMMON_ICE_ELEMENTAL",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Ice Elemental (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Mistform",
+    "sourceId": "SPELL_SUMMON_MISTFORM",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Mistform (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Pit Beast",
+    "sourceId": "SPELL_SUMMON_PIT_BEAST",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Pit Beast (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Runewyn",
+    "sourceId": "SPELL_SUMMON_RUNEWYN",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Runewyn (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Spectre",
+    "sourceId": "SPELL_SUMMON_SPECTRE",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Spectre (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Water Elemental",
+    "sourceId": "SPELL_SUMMON_WATER_ELEMENTAL",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Water Elemental (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Wraith",
+    "sourceId": "SPELL_SUMMON_WRAITH",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Wraith (Summoned)",
+    "summonDuration": 1,
+    "immobileOnCreate": false,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
   }
 ]
