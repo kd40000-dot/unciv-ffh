@@ -2256,12 +2256,15 @@
     "name": "Loyalty (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+15]% Strength bonus for [Sword] units within [1] tiles",
+      "Uncapturable",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Law I Loyalty proxy: adjacent Sword defenders +15% Strength; EMM prevents capture and removes Burning Blood."
+      },
+      {
+        "text": "Replaced unrelated +15% Sword combat aura with native Uncapturable, matching EMM's capture immunity on the buffed unit. Actual source applies a lasting loyalty promotion to eligible allies on the caster's tile and removes Burning Blood; Unciv applies two-turn protection to the caster only."
       }
     ]
   },
@@ -2397,6 +2400,9 @@
     "civilopediaText": [
       {
         "text": "Shadow II Shadowwalk: EMM ignores defensive city building bonuses, not terrain movement. Unciv uses +20% combat strength vs cities as a combat approximation; native parser cannot ignore only fortification/building defense through a timed spell. Missing defensive strike immunity."
+      },
+      {
+        "text": "Removed an unfaithful ignores-terrain-cost movement bonus. EMM Shadowwalk ignores city building defense and defensive strikes; temporary +20% Strength against cities remains the closest vanilla approximation, not exact wall-defense removal."
       }
     ]
   },
@@ -2456,13 +2462,15 @@
     "name": "Valor (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+50]% XP gained from combat",
-      "[+10]% Strength <when attacking>",
+      "[+1] XP gained from combat",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
         "text": "Law III Valor is a temporary self buff (+50% XP from combat, +10% attack), rather than EMM's lasting Valor promotion to allied units."
+      },
+      {
+        "text": "Revised from +50% XP (incorrect) to EMM's exact +1 XP per combat. EMM also grants +10 magic resistance and +10 exploration result bonus and applies to allied units on tile; Unciv self-status only and does not reproduce those extras."
       }
     ]
   },
