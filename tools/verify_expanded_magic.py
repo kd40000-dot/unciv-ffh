@@ -71,7 +71,7 @@ for unit,ability in [
     assert any("gains the ["+ability+"] status" in unique for unique in u[unit].get("uniques",[])),(unit,ability)
 assert "[+20]% Strength" in p["Burning Blood (Ability)"]["uniques"]
 assert "[-10]% Strength" in p["Sprint Fatigue (Ability)"]["uniques"]
-assert "Invisible to non-adjacent units" in p["Whiteout (Ability)"]["uniques"]
+assert "Invisible to others" in p["Whiteout (Ability)"]["uniques"]
 assert any("<in [Snow] tiles>" in x and "<for [Illians] Civilizations>" in x for x in u["Assassin"]["uniques"])
 assert "[-20]% Strength for enemy [All] units in adjacent [All] tiles" in p["Spores (Ability)"]["uniques"]
 assert "Sand Lion (Summoned)" in u
