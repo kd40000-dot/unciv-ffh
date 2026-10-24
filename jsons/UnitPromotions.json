@@ -2545,5 +2545,44 @@
         "text": "Myconid Spores proxy: adjacent enemy Strength -20% for two turns rather than EMM's resistable three-turn immobility. Cannot directly target unit movement with a native caster aura."
       }
     ]
+  },
+  {
+    "name": "Lucian Bronze Veteran",
+    "unitTypes": [],
+    "uniques": [
+      "[+1] Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Permanent, one-time Doviello Lucian Bronze upgrade. EMM pays 80 Gold to convert Lucian to Sons of Asena strength 4 while keeping the Lucian hero name. Unciv approximates the base-strength increase with +1 Strength to preserve identity and XP."
+      }
+    ]
+  },
+  {
+    "name": "Hidden (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "Invisible to non-adjacent units",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Two-turn stealth status from the HIDE action. EMM Hidden provides full invisible status lost on combat/casting; Unciv approximates it with invisibility to nonadjacent units and fixed expiration."
+      }
+    ]
+  },
+  {
+    "name": "Stealth",
+    "unitTypes": [
+      "Scout"
+    ],
+    "uniques": [
+      "[This Unit] gains the [Hidden (Spell)] status for [2] turn(s) <for all movement>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Stealth promotion grants HIDE. EMM HIDE gives true invisibility until combat/casting, and cannot cast twice while Hidden; native Unciv applies temporary non-adjacent invisibility and can refresh when recast."
+      }
+    ]
   }
 ]
