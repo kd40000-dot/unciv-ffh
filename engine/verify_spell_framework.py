@@ -15,7 +15,7 @@ spells = entries("EMMSpells.json")
 promotions = {x["name"]: x for x in entries("UnitPromotions.json")}
 units = {x["name"]: x for x in entries("Units.json")}
 
-assert spells and len({x["name"] for x in spells}) == len(spells)
+assert len(spells) >= 21 and len({x["name"] for x in spells}) == len(spells)
 valid_targets = {"SELF", "FRIENDLY", "ENEMY"}
 valid_effects = {"STATUS", "HEAL", "DAMAGE", "SUMMON"}
 for spell in spells:
@@ -25,6 +25,11 @@ for spell in spells:
     assert spell["effect"] in valid_effects, name
     assert spell.get("radius", 0) >= 0, name
     assert spell.get("maxCastsPerTurn", 1) >= 1, name
+    assert any(
+        u.startswith(f"Can cast EMM spell [{name}]")
+        for promotion in promotions.values()
+        for u in promotion.get("uniques", [])
+    ), f"No native cast action registered for {name}"
     if spell["effect"] == "STATUS":
         assert spell["status"] in promotions, name
         assert spell["duration"] >= 1, name
