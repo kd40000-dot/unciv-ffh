@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Haste",
+    "sourceId": "SPELL_HASTE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Hasted",
+    "removeStatus": "Slowed",
+    "duration": 2,
+    "livingOnly": true,
+    "landOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Courage",
+    "sourceId": "SPELL_COURAGE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Courage (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Maelstrom",
+    "sourceId": "SPELL_MAELSTROM",
+    "target": "ENEMY",
+    "effect": "DAMAGE",
+    "radius": 2,
+    "amount": 15,
+    "damageLimit": 30,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Fire Elemental",
+    "sourceId": "SPELL_SUMMON_FIRE_ELEMENTAL",
+    "effect": "SUMMON",
+    "target": "SELF",
+    "summonUnit": "Fire Elemental (Summoned)",
+    "summonDuration": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Raise Skeleton",
+    "sourceId": "SPELL_RAISE_SKELETON",
+    "effect": "SUMMON",
+    "target": "SELF",
+    "summonUnit": "Skeleton (Summoned)",
+    "summonDuration": 0,
+    "maxCastsPerTurn": 1
+  }
+]
