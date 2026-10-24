@@ -70,6 +70,11 @@ def main():
     replace_once(root, base+"logic/map/mapunit/UnitTurnManager.kt",
         '        unit.attacksThisTurn = 0\n        unit.due = true',
         '        unit.attacksThisTurn = 0\n        unit.emmSpellsCastThisTurn = 0\n        unit.due = true')
+    # Public SDK channel on CI currently exposes API 36; upstream has compileSdk 37.
+    # Use API 36 for this prototype and remove this compatibility shim when API 37 is available.
+    replace_once(root, "android/build.gradle.kts",
+        '    compileSdk = 37',
+        '    compileSdk = 36')
     # Independent Android application ID: keep upstream Unciv installed alongside the EMM test client.
     # Namespace is deliberately unchanged; Android manifest activities have fully-qualified class names.
     replace_once(root, "android/build.gradle.kts",
