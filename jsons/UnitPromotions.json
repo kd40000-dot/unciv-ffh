@@ -1237,7 +1237,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Regeneration (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Regeneration]"
     ],
     "civilopediaText": [
       {
@@ -1631,7 +1631,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Wither (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Wither]"
     ],
     "civilopediaText": [
       {
@@ -1787,7 +1787,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Snowfall (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Snowfall]"
     ],
     "civilopediaText": [
       {
@@ -2343,7 +2343,6 @@
     "name": "Regeneration (Spell)",
     "unitTypes": [],
     "uniques": [
-      "All adjacent units heal [10] HP when healing",
       "Unit will heal every turn, even if it performs an action",
       "[10] HP when healing",
       "Not shown on world screen"
@@ -2658,6 +2657,19 @@
     "civilopediaText": [
       {
         "text": "Category tag for spell-created undead. Enables Life II effects to discriminate undead from ordinary arcane spellcasters. Native category bonus is not EMM's life-damage spell."
+      }
+    ]
+  },
+  {
+    "name": "Withered (Spell)",
+    "unitTypes": [],
+    "uniques": [
+      "[-20]% Strength",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Temporary native Wither debuff on individual hostile living units. EMM Withered also modifies healing and experience; these aspects are not yet faithful."
       }
     ]
   }
