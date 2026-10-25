@@ -10,6 +10,7 @@ on:
       - checkpoint/emm-engine-safety-2026-10-25
       - checkpoint/emm-domination-2026-10-25
       - checkpoint/protect-mana-nodes-2026-10-25
+      - checkpoint/emm-city-health-dungeon-2026-10-25
     paths:
       - "engine/**"
       - "jsons/**"
@@ -55,6 +56,7 @@ jobs:
           python3 ffh-mod/engine/verify_spell_framework.py
           python3 ffh-mod/engine/verify_355_spell_wiring.py
           python3 ffh-mod/engine/verify_mana_node_protection.py
+          python3 ffh-mod/engine/verify_city_buildings.py
       - name: Check patch diff for whitespace errors
         working-directory: unciv-source
         run: git diff --check
