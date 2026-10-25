@@ -25,6 +25,9 @@ for spell in spells:
     assert spell["effect"] in valid_effects, name
     assert spell.get("radius", 0) >= 0, name
     assert spell.get("maxCastsPerTurn", 1) >= 1, name
+    assert spell.get("damageLimit", 100) in range(101), name
+    assert spell.get("maxActivePerCaster", 0) >= 0, name
+    assert spell.get("target", "SELF") in valid_targets, name
     assert any(
         u.startswith(f"Can cast EMM spell [{name}]")
         for promotion in promotions.values()
@@ -35,6 +38,8 @@ for spell in spells:
         assert spell["duration"] == -1 or spell["duration"] >= 1, name
     if spell["effect"] == "CLEANSE":
         assert spell.get("removeStatuses"), name
+        assert len(set(spell["removeStatuses"])) == len(spell["removeStatuses"]), name
+        assert not any(not status.strip() for status in spell["removeStatuses"]), name
         assert all(status in promotions for status in spell["removeStatuses"]), name
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
