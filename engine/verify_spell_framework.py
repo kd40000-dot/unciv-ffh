@@ -29,8 +29,8 @@ for spell in spells:
     assert spell.get("maxActivePerCaster", 0) >= 0, name
     assert any(
         u.startswith(f"Can cast EMM spell [{name}]")
-        for promotion in promotions.values()
-        for u in promotion.get("uniques", [])
+        for source in (*promotions.values(), *units.values())
+        for u in source.get("uniques", [])
     ), f"No native cast action registered for {name}"
     if spell.get("removeStatus"):
         assert spell["removeStatus"] in promotions, (name, spell["removeStatus"])
@@ -155,4 +155,9 @@ for promo, name, expected_unit in (
     assert by_name[name]["summonUnit"] == expected_unit, name
     assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[promo]["uniques"]), name
 assert any("<for [Malakim] Civilizations>" in u for u in promotions["Channeling II"]["uniques"] if "Summon Sand Lion" in u)
+assert any(u.startswith("Can cast EMM spell [Burning Blood]") for u in units["Moroi"]["uniques"])
+for centaur in ("Centaur", "Centaur Archer", "Centaur Charger", "Centaur Lancer"):
+    assert any(u.startswith("Can cast EMM spell [Sprint]") for u in units[centaur]["uniques"])
+assert by_name["Burning Blood"]["status"] == "Burning Blood (Ability)"
+assert by_name["Sprint"]["status"] == "Sprint Fatigue (Ability)"
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
