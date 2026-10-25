@@ -117,10 +117,12 @@ def main():
     # Source-inspired FfH/EMM war weariness. The original tracks a score
     # per opposing team and applies per-city percentage reductions.
     replace_once(root, base+"logic/civilization/Civilization.kt",
-        '    var civID = ""',
+        '    var civID = ""\\n\\n    var tech = TechManager()',
         '''    var civID = ""
     /** Scaled by 100, keyed by enemy civilization ID, saved with the game. */
-    var emmWarWearinessByEnemy = HashMap<String, Int>()''')
+    var emmWarWearinessByEnemy = HashMap<String, Int>()
+
+    var tech = TechManager()''')
     replace_once(root, base+"logic/battle/Battle.kt",
         '        val damageDealt = takeDamage(attacker, defender) + extraRangedAttackDamage',
         '''        val damageDealt = takeDamage(attacker, defender) + extraRangedAttackDamage
