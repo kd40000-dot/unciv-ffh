@@ -108,10 +108,14 @@ object EmmSpellEngine {
 
     /** Rechecked at execution time: an available UI action may become stale. */
     fun canCast(caster: MapUnit, name: String): Boolean {
-        if (caster.isDestroyed || !caster.hasMovement()) return false
+        if (caster.isDestroyed) return false
         val spell = definition(caster, name) ?: return false
         if (!validDefinition(spell, name)) return false
-        if (caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn) return false
+        val extraSpellstaffCast = caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn
+        // Spellstaff provides one banked extra cast, including after ordinary
+        // spellcasting consumed all movement. It is removed only on success.
+        if (extraSpellstaffCast && !caster.hasStatus("Spellstaff (Spell)")) return false
+        if (!extraSpellstaffCast && !caster.hasMovement()) return false
         val casterTile = caster.getTile()
         if (spell.requiredBaseTerrain.isNotBlank() && casterTile.baseTerrain != spell.requiredBaseTerrain) return false
         if (spell.requiredTerrainFeature.isNotBlank() && spell.requiredTerrainFeature !in casterTile.terrainFeatures) return false
@@ -171,7 +175,9 @@ object EmmSpellEngine {
             }
         }
         if (!applied) return
+        val spentSpellstaff = caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn
+        if (spentSpellstaff) caster.removeStatus("Spellstaff (Spell)")
         caster.emmSpellsCastThisTurn++
-        caster.useMovementPoints(caster.currentMovement)
+        if (caster.hasMovement()) caster.useMovementPoints(caster.currentMovement)
     }
 }
