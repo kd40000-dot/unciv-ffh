@@ -8,7 +8,8 @@ OUT.mkdir(parents=True,exist_ok=True)
 units=json.loads((ROOT/"jsons/Units.json").read_text())
 nations=json.loads((ROOT/"jsons/Nations.json").read_text())
 all_png={p.name for p in (ROOT/"Images").rglob("*.png")}
-created=[]
+previous_manifest=ROOT/'art/PLACEHOLDER_SPRITES.json'
+created=(json.loads(previous_manifest.read_text()).get('sprites',[]) if previous_manifest.exists() else [])
 D=384
 def shade(rgb,f):
     return tuple(max(0,min(255,int(v*f))) for v in rgb[:3])+(255,)
