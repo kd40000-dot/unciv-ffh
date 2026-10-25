@@ -43,3 +43,9 @@ Implement first-class effects for terrain/feature/improvement manipulation, city
 - This is **partial EMM functionality**, not full dispelling: original source effects on enemy beneficial promotions, mana nodes, summons and wider ranges still need faithful implementation, where applicable.
 - All 355 source entries still tracked; 32 have native effect definitions and promotion grants, 323 remain. Static registry consistency was checked through GitHub connector, but compilation and Android tests are not yet confirmed.
 - Negative status names not declared in `UnitPromotions.json` must not be inserted in `removeStatuses`; the schema validator now enforces this.
+
+## Runtime safety checkpoint on dedicated branch
+
+Branch `checkpoint/emm-engine-safety-2026-10-25` created from the previous 32-action checkpoint. Native `canCast` now rejects malformed definition names, targets, effect types, negative radii, invalid cast budgets and effect-specific required fields. The direct-damage execution path no longer calls `takeDamage(0)`; this prevents accidental side effects (including zero-damage Stoneskin removal) when damage has been reduced to zero by accumulated-damage caps. Schema assertions also reject duplicate cleanse targets and invalid damage caps.
+
+Connector-side registry reconciliation: 355 EMM source records; 32 definitions; 32 spell grants, all matched. Kotlin compilation, Android integration and on-device gameplay have not been verified for this checkpoint. The main playable branch is untouched.
