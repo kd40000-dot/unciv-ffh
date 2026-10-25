@@ -175,7 +175,13 @@
     "civilopediaText": [
       {
         "text": "Stores food from plentiful harvests for leaner times."
+      },
+      {
+        "text": "EMM conditional health: +1 city health for each available Wheat resource (uses resources in the current mod)."
       }
+    ],
+    "emmHealthResourceBonuses": [
+      "Wheat"
     ]
   },
   {
@@ -198,9 +204,15 @@
     "civilopediaText": [
       {
         "text": "What'cha doin' Otis?\n\"Sittin' in the mornin' sun.\"\n\"Got any plans for the day?\"\n\"I'll be sittin' when the evenin' come.\"\n\"Why is that, what's the appeal?\"\n\"Watching the ships roll in.\"\n\"But what about after that's done?\"\n\"Then I watch 'em roll out again.\"\n\"You must really like watching ships.\"\n\"I like not working today.\"\n\"What about when the ships are docked?\"\n\"Then I watch the tide roll away.\"\n\"Shouldn't you be getting to work?\"\n\"If you check back tomorrow I may.\"\n\"The foreman won't be happy to hear...\"\n\"What do you think he'll say?\"\n\n[song repeats]\n\nLanun rowing and drinking song, usually sung by two groups with one group singing the Otis part and the other the Urlman part."
+      },
+      {
+        "text": "EMM conditional health: +1 city health for each available Fish resource (uses resources in the current mod)."
       }
     ],
-    "gold": 1
+    "gold": 1,
+    "emmHealthResourceBonuses": [
+      "Fish"
+    ]
   },
   {
     "name": "Herbalist",
@@ -212,10 +224,16 @@
       },
       {
         "text": "EMM effect: units recover 10% faster while healing in this city."
+      },
+      {
+        "text": "EMM conditional health: +1 city health for each available Spices resource (uses resources in the current mod)."
       }
     ],
     "emmHealth": 1,
-    "emmCityHealingPercent": 10
+    "emmCityHealingPercent": 10,
+    "emmHealthResourceBonuses": [
+      "Spices"
+    ]
   },
   {
     "name": "Hunting Lodge",
@@ -442,7 +460,15 @@
     "civilopediaText": [
       {
         "text": "In the frozen tundra of the Age of Ice people rarely had to worry about preserving their meat for the future, for the incredibly low temperatures could keep most foodstuffs in stasis for an indefinite period. In the rare cases where hunters caught more meat than they could carry on their backs, they usually dug a hole a few feet deep and deposited it there, where the cold kept it fresh and several heavy boulders prevented scavengers. Once they lost this natural refrigeration in the Age of Rebirth though, they had to relearn how to properly treat meat against rot, generally by drying and smoking it as it hung from the rafters of a special smokehouse."
+      },
+      {
+        "text": "EMM conditional health: +1 city health for each available Cattle, Sheep, Deer resource (uses resources in the current mod)."
       }
+    ],
+    "emmHealthResourceBonuses": [
+      "Cattle",
+      "Sheep",
+      "Deer"
     ]
   },
   {
