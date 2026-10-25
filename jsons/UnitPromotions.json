@@ -1592,7 +1592,7 @@
     ],
     "uniques": [
       "Only available <with [Entropy Mana]>",
-      "[This Unit] gains the [Rusted (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Rust]"
     ],
     "civilopediaText": [
       {
@@ -2535,12 +2535,12 @@
     "name": "Rusted (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-10]% Strength for enemy [Sword] units in adjacent [All] tiles",
+      "[-10]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Entropy I Rust approximation: temporary local debuff (-10% Strength) to nearby enemy Sword units. EMM applies a permanent Rusted debuff, removes Copper/Iron/Mithril equipment and checks spell resistance; stock Unciv does not allow targeted equipment removal."
+        "text": "Native Rust recipient penalty, applied to enemy Sword-class units in a one-hex radius. EMM target/equipment conditions still require source audit."
       }
     ]
   },
