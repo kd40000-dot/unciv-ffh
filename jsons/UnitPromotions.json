@@ -1180,7 +1180,7 @@
     ],
     "uniques": [
       "Only available <with [Air Mana]>",
-      "[This Unit] gains the [Fair Winds (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Fair Winds]"
     ],
     "civilopediaText": [
       {
@@ -1880,7 +1880,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Destroy Undead (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Destroy Undead]"
     ],
     "civilopediaText": [
       {
@@ -1974,7 +1974,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Charm Person (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Charm Person]"
     ],
     "civilopediaText": [
       {
@@ -2164,7 +2164,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Blinding Light (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Blinding Light]"
     ],
     "civilopediaText": [
       {
@@ -2235,8 +2235,7 @@
     "name": "Fair Winds (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+20]% Strength bonus for [Melee Water] units within [1] tiles",
-      "[+20]% Strength bonus for [Civilian Water] units within [1] tiles",
+      "[+20]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
@@ -2417,7 +2416,7 @@
     "name": "Charm Person (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-15]% Strength for enemy [All] units in adjacent [All] tiles",
+      "[-15]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
@@ -2459,7 +2458,7 @@
     "name": "Blinding Light (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-20]% Strength for enemy [All] units in adjacent [All] tiles",
+      "[-20]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
