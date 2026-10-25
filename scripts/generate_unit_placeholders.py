@@ -10,6 +10,10 @@ DEST=ROOT/'Images/TileSets/AmuritesSimple/Units/Generated'
 ATLAS=ROOT/'amurites-simple-complete.atlas'
 MANIFEST=ROOT/'scripts/placeholder-manifest.json'
 SKIP={'Worker','Settler'}
+COMMON_VARIANTS={'Scout','Warrior','Archer','Hunter','Adept','Mage','Swordsman','Assassin','Champion','Axeman','Spearman','Horseman','Knight','Ranger'}
+VESSELS=('caravel','galleon','privateer','pirate','trireme','galley','ship','boat','frigate','queen of the line')
+CREATURES=('wolf','bear','lion','spider','griffon','dragon','elephant','tortoise','boar','horse','myconid')
+CONSTRUCTS=('golem','elemental','treant','skeleton','spectre','wraith','zombie')
 ROLE_VARIANTS={
  'archer':'bow','bow':'bow','crossbow':'bow','hunter':'bow','ranger':'bow',
  'assassin':'dagger','scout':'spear','spearman':'spear','phalanx':'spear','pikeman':'spear',
@@ -28,6 +32,7 @@ def shade(c,f):
  return '#%02x%02x%02x'%tuple(max(0,min(255,int(x*f))) for x in v)
 def generate(name,faction,colors):
  seed=int(hashlib.sha256(name.encode()).hexdigest()[:8],16)
+ if faction and name.endswith('-'+faction):name=name[:-(len(faction)+1)]
  accent=rgb(colors.get('outerColor'),'#8d293a')
  dark=shade(accent,.45); light=shade(accent,1.28)
  skin='#a89181' if faction=='Calabim' else '#7b9461' if faction=='Clan of Embers' else '#c8a58a'
@@ -60,6 +65,11 @@ def generate(name,faction,colors):
  def poly(coords,c,e='#241c25',w=3):p(q(coords),c,e,w)
  # unique widths and stances by name
  width=23+(seed%12); lean=(seed%13)-6
+ # Each civilization receives signature geometry, not merely a color swap.
+ banner = faction in ('Bannor','Elohim','Malakim')
+ sinister = faction in ('Calabim','Sheaim','Svartalfar')
+ sea = faction=='Lanun'
+ jester = faction=='Balseraphs'
  # cape, rear limbs and footgear
  poly([(259,260),(310,258),(329,295),(339,392),(315,382),(297,404),(277,385),(252,395),(248,313)],dark)
  poly([(263,286),(270,280),(264,383),(254,388)],accent,'none',0)
@@ -103,13 +113,32 @@ def generate(name,faction,colors):
  if clown:
   poly([(278,233),(287,230),(289,236),(282,241)],'#c42735','none',0)
   poly([(287,246),(295,245),(300,251),(286,254)],'#b83438','none',0)
+ # Hard distinctive silhouettes before headgear: Bannor tower shield, Calabim winged collar,
+ # Balseraph clown points, Clan tusks, Lanun tricorne, Khazad broad helm.
+ if banner:
+  poly([(324,303),(362,316),(358,390),(335,410),(316,386)],'#d1c2a0')
+  poly([(332,318),(351,327),(349,379),(336,391),(325,377)],accent,'none',0)
+  poly([(339,337),(345,338),(344,366),(338,365)],'#ece0c4','none',0)
+  poly([(331,348),(352,347),(350,354),(331,355)],'#ece0c4','none',0)
+ if sinister:
+  poly([(259,284),(245,243),(269,255),(277,273)],dark)
+  poly([(306,272),(322,247),(336,242),(321,288)],dark)
+ if sea:
+  poly([(247,217),(274,202),(316,204),(335,219),(297,215)],'#242934')
+  poly([(263,203),(287,181),(318,203)],accent)
+ if jester:
+  poly([(266,219),(254,190),(271,205),(284,187),(294,212),(313,185),(316,220)],accent)
+  for x,y in [(254,190),(284,187),(313,185)]: oval(x,y,5,5,'#e8d4a6')
+ if faction=='Khazad':
+  poly([(258,217),(265,194),(316,196),(324,217),(310,225),(274,223)],'#6b615a')
+  poly([(276,199),(300,195),(316,209),(274,208)],accent,'none',0)
  # class-specific headgear
- if r=='staff':
+ if r=='staff' and not (sea or jester or faction=='Khazad'):
   poly([(266,216),(293,175),(316,216),(305,224),(275,224)],shade(accent,.6))
   poly([(270,216),(291,186),(281,219)],accent,'none',0)
- elif r=='bow':
+ elif r=='bow' and not (sea or jester or faction=='Khazad'):
   poly([(267,222),(277,195),(306,191),(318,218),(303,211),(279,211)],dark)
- else:
+ elif not (sea or jester or faction=='Khazad'):
   poly([(267,218),(277,199),(296,195),(310,213),(303,218),(286,208),(277,226)],'#2b242c')
   poly([(279,203),(297,200),(303,209),(281,212)],accent,'none',0)
  if faction=='Khazad':
@@ -150,37 +179,93 @@ def generate(name,faction,colors):
  box=im.getchannel('A').getbbox()
  if not box or box[3]>492 or box[1]<65:raise ValueError((name,box))
  return im,box,len(parts)
+def generate_special(name,faction,colors,kind):
+ """Distinct creature, construct and vessel silhouettes; never humanoid stand-ins."""
+ accent=rgb(colors.get('outerColor'),'#7e3f35'); dark=shade(accent,.52)
+ shapes=[]
+ def poly(pts,fill,stroke='#24212b',sw=6):
+  shapes.append('<polygon points="'+ ' '.join(f'{x},{y}' for x,y in pts) +f'" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" stroke-linejoin="round"/>')
+ def path(d,fill='none',stroke='#24212b',sw=5):
+  shapes.append(f'<path d="{d}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" stroke-linejoin="round" stroke-linecap="round"/>')
+ if kind=='vessel':
+  poly([(150,346),(374,346),(344,416),(294,441),(205,436),(171,408)],'#553a33')
+  poly([(170,363),(351,363),(332,409),(204,415)],accent,'none',0)
+  path('M260 342 L260 174',stroke='#46352e',sw=9)
+  poly([(250,189),(259,190),(258,331),(164,322)],'#e4d2b6')
+  poly([(269,211),(349,306),(272,324)],'#c9b59f')
+  for x in (215,260,305):shapes.append(f'<circle cx="{x}" cy="378" r="10" fill="#24212b"/>')
+ elif kind=='creature':
+  poly([(157,334),(186,282),(302,272),(353,302),(375,337),(348,357),(298,337),(261,350),(202,356)],dark)
+  poly([(191,287),(268,264),(316,292),(274,314),(191,316)],accent,'none',0)
+  for x in (200,255,317,345):
+   poly([(x-10,338),(x+12,338),(x+5,418),(x-6,420)],'#3c3435')
+  poly([(341,298),(380,280),(398,306),(385,342),(355,339)],accent)
+  poly([(363,287),(365,259),(380,285)],dark)
+  poly([(383,291),(400,270),(402,309)],dark)
+  shapes.append('<circle cx="380" cy="310" r="5" fill="#f5e0bb"/>')
+  poly([(375,332),(391,347),(381,347)],'#e0cbac')
+  path('M164 314 Q129 284 145 260',stroke=dark,sw=12)
+ else:
+  poly([(249,185),(301,177),(326,228),(313,287),(279,309),(242,275),(225,228)],'#53565d')
+  poly([(243,195),(286,188),(301,230),(278,253),(235,232)],accent,'none',0)
+  poly([(232,273),(325,271),(345,361),(322,386),(247,389),(208,351)],dark)
+  poly([(237,297),(318,299),(327,351),(237,360)],accent,'none',0)
+  poly([(240,378),(277,378),(269,461),(228,460)],'#414149')
+  poly([(294,379),(330,377),(346,460),(305,462)],'#414149')
+  poly([(223,285),(243,304),(214,393),(188,385)],'#5c5356')
+  poly([(326,298),(347,286),(384,387),(355,397)],'#5c5356')
+  for x in (257,290):shapes.append(f'<circle cx="{x}" cy="232" r="5" fill="#ecd2ad"/>')
+ svg='<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">'+''.join(shapes)+'</svg>'
+ png=cairosvg.svg2png(bytestring=svg.encode(),output_width=1024,output_height=1024)
+ im=Image.open(io.BytesIO(png)).convert('RGBA').resize((512,512),Image.Resampling.LANCZOS)
+ return im,im.getchannel('A').getbbox(),len(shapes)
+
 def run():
  nations={x['name']:x for x in json.loads((ROOT/'jsons/Nations.json').read_text())}
  units=json.loads((ROOT/'jsons/Units.json').read_text())
  entries=ATLAS.read_text()
  existing=set(re.findall(r'^TileSets/AmuritesSimple/Units/(.+)$',entries,re.M))
  report={'created':[],'preserved':[],'excluded':[]}
+ # Existing approved Amurites, workers and settlers are never overwritten.
+ # Rebuild previously generated generic placeholders; their old design was rejected.
+ todo=[]
  for unit in units:
   name=unit['name']
-  if name in SKIP:continue
-  # Explicit per-nation units use -Civilization suffix if available.
-  faction=unit.get('replaces') and next((n for n in nations if n.lower() in name.lower()),None)
-  faction=faction or next((n for n in nations if name.endswith('-'+n)),None)
-  if faction is None: faction=next((n for n in nations if n in name),None)
-  if name in existing or (DEST/(name+'.png')).exists():
+  if name in SKIP or name.startswith(('Worker-','Settler-')) or name.endswith('-Amurites'):
    report['preserved'].append(name);continue
-  # preserve existing approved unmapped art even without atlas entries
-  if (DEST.parent/(name+'.png')).exists():
-   report['preserved'].append(name);continue
-  art=generate(name,faction,nations.get(faction,{}))
+  if name in COMMON_VARIANTS:
+   todo.extend((name+'-'+nation,nation,name) for nation in nations if nation!='Amurites')
+  faction=next((n for n in nations if name.endswith('-'+n) or name.startswith(n+' ')),None)
+  todo.append((name,faction,name))
+ seen=set()
+ for variant,faction,original in todo:
+  if variant in seen:continue
+  seen.add(variant)
+  lower=original.lower()
+  # Animals, vessels and constructs need dedicated silhouettes, not humans.
+  kind='vessel' if any(t in lower for t in VESSELS) else 'creature' if any(t in lower for t in CREATURES) else 'construct' if any(t in lower for t in CONSTRUCTS) else 'humanoid'
+  if kind!='humanoid':
+   art=generate_special(variant,faction,nations.get(faction,{}),kind)
+  else:
+   art=generate(variant,faction,nations.get(faction,{}))
   if art is None:
-   report['excluded'].append(name);continue
+   report['excluded'].append(variant);continue
+  # Do not replace curated PNGs outside Generated/; retain approved Amurite art.
+  if (DEST.parent/(variant+'.png')).exists():
+   report['preserved'].append(variant);continue
   image,box,count=art
-  target=DEST/(name+'.png');target.parent.mkdir(parents=True,exist_ok=True)
+  target=DEST/(variant+'.png');target.parent.mkdir(parents=True,exist_ok=True)
   image.save(target,optimize=True)
-  block=['',str(target.relative_to(ROOT)),'size: 512, 512','format: RGBA8888',
-   'filter: Linear, Linear','repeat: none']
-  for atlasname in ['TileSets/AmuritesSimple/Units/'+name,'TileSets/AbsoluteUnits/Units/'+name]:
-   block += [atlasname,'  rotate: false','  xy: 0, 0','  size: 512, 512',
-             '  orig: 512, 512','  offset: 0, 0','  index: -1']
-  entries+='\n'.join(block)+'\n'
-  report['created'].append({'unit':name,'faction':faction,'role':role(name),'bounds':list(box),'polygons':count})
+  # Add unique regions, while replacing only entries originating in Generated.
+  region='TileSets/AmuritesSimple/Units/'+variant
+  if region not in existing:
+   block=['',str(target.relative_to(ROOT)),'size: 512, 512','format: RGBA8888',
+    'filter: Linear, Linear','repeat: none']
+   for a in ['TileSets/AmuritesSimple/Units/'+variant,'TileSets/AbsoluteUnits/Units/'+variant]:
+    block += [a,'  rotate: false','  xy: 0, 0','  size: 512, 512',
+              '  orig: 512, 512','  offset: 0, 0','  index: -1']
+   entries+='\n'.join(block)+'\n'
+  report['created'].append({'unit':variant,'faction':faction,'kind':kind,'role':role(original),'bounds':list(box),'polygons':count})
  ATLAS.write_text(entries)
  MANIFEST.write_text(json.dumps(report,indent=2)+'\n')
  print('Generated:',len(report['created']),'preserved:',len(report['preserved']),'excluded:',len(report['excluded']))
