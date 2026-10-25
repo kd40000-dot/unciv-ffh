@@ -565,5 +565,105 @@
     "status": "Sprint Fatigue (Ability)",
     "duration": 2,
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Esus Blur",
+    "sourceId": "SPELL_ESUS_BLUR",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Blur (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Esus Haste",
+    "sourceId": "SPELL_ESUS_HASTE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Hasted",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Esus Poisoned Blade",
+    "sourceId": "SPELL_ESUS_POISONED_BLADE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Poisoned Blade (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Esus Regeneration",
+    "sourceId": "SPELL_ESUS_REGENERATION",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Regeneration (Spell)",
+    "duration": -1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Esus Shadowwalk",
+    "sourceId": "SPELL_ESUS_SHADOWWALK",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Shadowwalk (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Potion of Invisibility",
+    "sourceId": "SPELL_POTION_OF_INVISIBILITY",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Hidden (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Bless",
+    "sourceId": "SPELL_BLESS",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Bless (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Shield of Faith",
+    "sourceId": "SPELL_SHIELD_OF_FAITH",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Shield of Faith (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Enchant Spellstaff",
+    "sourceId": "SPELL_ENCHANT_SPELLSTAFF",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Spellstaff (Spell)",
+    "duration": -1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Resurrection",
+    "sourceId": "SPELL_RESSURECTION",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Returned Soul (Summoned)",
+    "summonDuration": 0,
+    "immobileOnCreate": true,
+    "maxCastsPerTurn": 1
   }
 ]
