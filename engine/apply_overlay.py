@@ -121,6 +121,8 @@ def main():
         '''    var maintenance = 0
     /** EMM health modifier; interpreted by CityStats, not as direct food. */
     var emmHealth = 0
+    /** +1 health for each available resource in this list. */
+    var emmHealthResourceBonuses = ArrayList<String>()
     /** Additional percentage of unit healing while inside the city. */
     var emmCityHealingPercent = 0
     /** EMM crime-rate modifier; pending crime-event integration. */
@@ -150,7 +152,11 @@ def main():
         // to city food yield. Natural health/resource components are still
         // pending source-accurate EMM porting.
         val buildingHealth = city.cityConstructions.builtBuildings.sumOf { buildingName ->
-            city.civ.gameInfo.ruleset.buildings[buildingName]?.emmHealth ?: 0
+            val building = city.civ.gameInfo.ruleset.buildings[buildingName]
+            (building?.emmHealth ?: 0) +
+                (building?.emmHealthResourceBonuses?.count { resource ->
+                    city.civ.getResourceAmount(resource) > 0
+                } ?: 0)
         }
         val populationUnhealth = (city.population.population - 5).coerceAtLeast(0)
         foodEaten += (populationUnhealth - buildingHealth).coerceAtLeast(0)
