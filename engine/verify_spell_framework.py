@@ -141,4 +141,12 @@ assert by_name["Slow"]["target"] == "ENEMY"
 assert by_name["Domination"]["target"] == "ENEMY"
 assert by_name["Hide"]["status"] == "Hidden (Spell)"
 assert by_name["Treetop Tactics"]["target"] == "SELF"
+for promo, name, expected_unit in (
+    ("Metamagic I", "Floating Eye", "Floating Eye (Summoned)"),
+    ("Channeling II", "Summon Sand Lion", "Sand Lion (Summoned)"),
+):
+    assert by_name[name]["effect"] == "SUMMON", name
+    assert by_name[name]["summonUnit"] == expected_unit, name
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[promo]["uniques"]), name
+assert any("<for [Malakim] Civilizations>" in u for u in promotions["Channeling II"]["uniques"] if "Summon Sand Lion" in u)
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
