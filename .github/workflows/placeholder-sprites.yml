@@ -5,6 +5,7 @@ on:
       - checkpoint/placeholder-sprites-2026-10-25
     paths:
       - 'art/generate_placeholders.py'
+      - 'art/redo_missing_103.py'
       - 'art/generate_object_placeholders.py'
       - 'jsons/Units.json'
       - 'jsons/Nations.json'
@@ -28,6 +29,7 @@ jobs:
         run: |
           python art/generate_placeholders.py
           python art/generate_object_placeholders.py
+          python art/redo_missing_103.py
           python - <<'PY'
           import json
           from pathlib import Path
@@ -38,7 +40,7 @@ jobs:
           for r in m['sprites'] + m['objects']:
               p=Path(r['path'])
               with Image.open(p) as im:
-                  assert im.mode=='RGBA' and im.size==(128,128), p
+                  assert im.mode=='RGBA' and im.size==((512,512) if r.get('revision')=='approved-art-derived-v2' else (128,128)), p
                   assert im.getpixel((0,0))[3]==0, p
           print('Checked',m['count'],'new transparent PNGs')
           PY
@@ -46,7 +48,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Images/TileSets/AmuritesSimple/Units/Generated Images/BuildingIcons Images/ImprovementIcons placeholder-generated.atlas placeholder-objects.atlas Atlases.json art/PLACEHOLDER_SPRITES.json art/PLACEHOLDER_SPRITES.md
+          git add Images/TileSets/AmuritesSimple/Units/Generated Images/BuildingIcons Images/ImprovementIcons placeholder-generated.atlas placeholder-objects.atlas Atlases.json art/PLACEHOLDER_SPRITES.json art/PLACEHOLDER_SPRITES.md art/REWORKED_103.md
           if ! git diff --cached --quiet; then
             git commit -m "Generate all missing race-aware and faction-colored unit placeholder PNGs"
             git push
