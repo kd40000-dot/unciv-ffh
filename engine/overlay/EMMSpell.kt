@@ -15,6 +15,9 @@ class EMMSpell {
     var target: String = "SELF"
     var effect: String = "STATUS"
     var radius: Int = 0
+    /** Optional caster tile prerequisites; empty means no such restriction. */
+    var requiredBaseTerrain: String = ""
+    var requiredTerrainFeature: String = ""
     var status: String = ""
     var removeStatus: String = ""
     /** Status names explicitly eligible for multi-status removal. */
