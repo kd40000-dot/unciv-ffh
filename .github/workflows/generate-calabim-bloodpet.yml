@@ -1,0 +1,163 @@
+name: Generate detailed Calabim Bloodpet
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/generate-calabim-bloodpet.yml'
+permissions:
+  contents: write
+jobs:
+  bloodpet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SVG renderer and Pillow
+        run: python -m pip install cairosvg Pillow
+      - name: Draw high-detail procedural Bloodpet and register atlas
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg, io
+          from PIL import Image
+          import json
+          # Deliberate handcrafted procedural polygon scene: no generative API, credits, or random blobs.
+          # 512x512 matches the existing *Generated* Amurite units. Baseline y=475.
+          # The figure is 290 px tall and right-of-center like the established Amurite placement.
+          W,H=512,512
+          elements=[]
+          def poly(points, fill, stroke='#21151d', sw=3):
+              p=' '.join(f'{x},{y}' for x,y in points)
+              elements.append(f'<polygon points="{p}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" stroke-linejoin="round"/>')
+          def line(points, color='#21151d', sw=3):
+              p=' '.join(f'{x},{y}' for x,y in points)
+              elements.append(f'<polyline points="{p}" fill="none" stroke="{color}" stroke-width="{sw}" stroke-linejoin="round" stroke-linecap="round"/>')
+          def ellipse(x,y,rx,ry,fill,stroke='#21151d',sw=2):
+              elements.append(f'<ellipse cx="{x}" cy="{y}" rx="{rx}" ry="{ry}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>')
+          # silhouette background: ragged hooded scarlet mantle
+          poly([(277,231),(251,241),(232,267),(229,335),(243,373),(252,355),(257,286),(272,261),(296,259),(312,293),(336,352),(340,364),(348,319),(335,263),(312,236)],'#301c28',sw=4)
+          poly([(254,246),(234,269),(235,315),(247,308),(258,272)],'#79232f',sw=1)
+          poly([(317,247),(338,268),(344,319),(333,310),(321,268)],'#861f32',sw=1)
+          # rear left leg
+          poly([(271,373),(300,372),(289,419),(278,460),(254,461),(261,412)],'#2b2732',sw=4)
+          poly([(263,407),(279,407),(271,447),(258,449)],'#494149',sw=1)
+          poly([(254,443),(278,443),(277,469),(249,474),(239,471),(245,460)],'#211d27',sw=4)
+          poly([(247,457),(268,454),(262,462),(243,468)],'#60464a',sw=1)
+          # right leg extended
+          poly([(297,369),(322,373),(321,417),(319,455),(293,458),(290,414)],'#29232e',sw=4)
+          poly([(303,389),(319,397),(314,438),(301,438)],'#48404a',sw=1)
+          poly([(296,445),(321,441),(329,467),(322,473),(289,473),(287,464)],'#211a26',sw=4)
+          poly([(298,454),(316,451),(322,464),(293,465)],'#533740',sw=1)
+          # ragged split tunic
+          poly([(253,315),(324,311),(333,381),(315,393),(297,381),(283,396),(265,382),(247,390)],'#4b2934',sw=4)
+          poly([(259,329),(279,327),(276,386),(257,378)],'#8e2837',sw=1)
+          poly([(283,330),(304,323),(306,375),(286,386)],'#6c2334',sw=1)
+          poly([(306,324),(323,323),(327,378),(308,374)],'#35242e',sw=1)
+          poly([(256,359),(275,363),(273,379),(251,386)],'#6e1c2d',sw=1)
+          poly([(309,375),(325,369),(335,382),(317,393)],'#5e1829',sw=1)
+          # chest torso and vest
+          poly([(263,269),(285,261),(310,266),(324,295),(319,345),(296,357),(261,344),(253,298)],'#38313a',sw=4)
+          poly([(266,283),(283,274),(286,327),(263,329)],'#6f3941',sw=1)
+          poly([(287,275),(311,282),(318,329),(294,331)],'#5a303b',sw=1)
+          poly([(281,280),(297,286),(290,319),(282,320)],'#c5b1a1',sw=1)
+          poly([(289,313),(300,289),(306,319),(295,341)],'#b7a091',sw=1)
+          poly([(260,328),(319,333),(322,347),(264,347)],'#201d25',sw=3)
+          poly([(273,334),(293,336),(294,343),(272,341)],'#a49a75',sw=1)
+          poly([(304,334),(312,336),(310,344),(303,343)],'#a49a75',sw=1)
+          poly([(290,333),(302,333),(304,348),(290,350)],'#b29a65',sw=2)
+          poly([(294,337),(300,337),(301,344),(295,344)],'#46202b',sw=1)
+          # boots shin buckles
+          line([(259,435),(275,437)],'#9e7361',2)
+          line([(300,436),(318,434)],'#9e7361',2)
+          # left ragged sleeve and thin pale arm
+          poly([(262,273),(246,284),(236,308),(244,328),(259,321),(267,297)],'#6d2935',sw=4)
+          poly([(245,292),(239,309),(249,315),(259,294)],'#962b3e',sw=1)
+          poly([(238,323),(251,319),(247,343),(239,363),(229,355)],'#b9a395',sw=3)
+          poly([(230,348),(241,355),(235,373),(225,369)],'#948173',sw=2)
+          # bony left claw
+          poly([(229,365),(237,368),(235,377),(232,387),(228,382),(225,392),(222,389),(224,370)],'#c5b1a2',sw=2)
+          line([(230,377),(228,386)],'#61505a',1.6)
+          # right sleeve and forearm
+          poly([(313,275),(327,281),(339,311),(330,333),(313,318),(304,299)],'#762637',sw=4)
+          poly([(322,289),(338,310),(329,320),(315,302)],'#b13946',sw=1)
+          poly([(326,324),(337,327),(345,345),(338,371),(328,370),(332,348)],'#b7a192',sw=3)
+          poly([(332,358),(342,359),(345,381),(337,386),(328,375)],'#aa8e83',sw=2)
+          # face neck and collar
+          poly([(277,249),(303,250),(308,278),(289,292),(274,277)],'#998176',sw=3)
+          poly([(279,269),(289,278),(285,292),(274,276)],'#c0a79a',sw=1)
+          poly([(293,275),(303,264),(306,277),(293,287)],'#66555a',sw=1)
+          poly([(266,268),(281,284),(286,300),(267,287),(257,276)],'#1e2029',sw=3)
+          poly([(307,264),(297,287),(293,299),(312,286),(320,271)],'#211e27',sw=3)
+          poly([(275,283),(281,299),(290,308),(299,296),(304,286),(288,295)],'#761e2e',sw=2)
+          poly([(287,289),(292,299),(287,302)],'#d0a98b',sw=0)
+          # elongated gaunt pale head
+          poly([(275,209),(285,199),(303,203),(311,221),(307,249),(295,264),(279,257),(269,241),(269,222)],'#b39c91',sw=4)
+          poly([(273,223),(283,212),(288,239),(281,256),(269,239)],'#dac0ae',sw=0)
+          poly([(291,211),(304,212),(307,230),(300,250),(289,255)],'#8b7976',sw=0)
+          poly([(277,238),(288,238),(292,245),(285,255),(277,249)],'#b09a91',sw=0)
+          # hood silhouette with pointed pulled-back cloth and black angular hair
+          poly([(268,231),(263,211),(272,193),(282,187),(299,193),(313,207),(317,226),(307,218),(304,206),(289,211),(279,210)],'#261d28',sw=4)
+          poly([(269,215),(282,194),(294,195),(282,209)],'#55232e',sw=1)
+          poly([(301,199),(314,211),(316,225),(307,217)],'#7d2437',sw=1)
+          poly([(267,230),(271,215),(275,239),(272,247)],'#3f2632',sw=1)
+          # angular thin brow eyes, shadowed sockets, blood-dark mouth
+          poly([(273,227),(283,225),(286,232),(276,232)],'#3f323a',sw=1)
+          poly([(293,226),(303,227),(302,235),(292,232)],'#3f323a',sw=1)
+          poly([(276,228),(283,228),(281,231),(277,231)],'#a92734',sw=0)
+          poly([(294,229),(301,230),(298,233),(294,232)],'#a92734',sw=0)
+          poly([(285,232),(289,237),(287,243),(282,239)],'#826e6d',sw=0)
+          poly([(282,248),(290,245),(297,249),(291,252),(287,251)],'#4c1f29',sw=0)
+          poly([(286,251),(288,251),(287,256)],'#ebe0d3',sw=0)
+          poly([(293,251),(295,249),(294,254)],'#ebe0d3',sw=0)
+          # chest stitchwork, rusted segmented plated shoulder
+          poly([(252,278),(267,270),(271,283),(251,296),(242,290)],'#4b3c42',sw=3)
+          poly([(246,284),(262,278),(266,284),(251,290)],'#9d8280',sw=1)
+          poly([(309,271),(323,277),(330,293),(314,296),(302,284)],'#493640',sw=3)
+          poly([(311,277),(323,283),(321,289),(310,288)],'#a48a82',sw=1)
+          for x,y in [(265,305),(268,316),(311,303),(314,317)]:
+              ellipse(x,y,2,2,'#b1a182','#352630',0.7)
+          # scarlet diagonal bloody sash
+          poly([(274,288),(280,289),(310,360),(303,371),(296,348)],'#a02433',sw=2)
+          poly([(276,294),(280,296),(306,358),(300,354)],'#e0444a',sw=0)
+          # left hand weapon: short chipped cleaver held low, crossing foreground
+          poly([(221,370),(228,372),(206,461),(200,459)],'#4b322e',sw=2)
+          poly([(205,428),(221,416),(233,425),(225,447),(211,459),(196,447)],'#737982',sw=3)
+          poly([(204,438),(219,423),(226,430),(213,450),(200,447)],'#aab0ac',sw=1)
+          poly([(214,427),(222,422),(228,429),(222,437)],'#d5d4c5',sw=0)
+          poly([(214,407),(222,412),(221,422),(213,420)],'#9f6f57',sw=2)
+          # right hand blood vial, simple red cue visible at map scale
+          poly([(333,379),(347,380),(347,400),(343,410),(332,406),(329,398)],'#302832',sw=2)
+          poly([(333,394),(344,394),(345,402),(339,407),(332,402)],'#a32034',sw=1)
+          poly([(335,378),(344,379),(344,387),(334,387)],'#bcb1a0',sw=1)
+          svg='<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">'+''.join(elements)+'</svg>'
+          dest=Path('Images/TileSets/AmuritesSimple/Units/Generated/Bloodpet.png')
+          dest.parent.mkdir(parents=True,exist_ok=True)
+          # Vector geometry and supersampling retain crisp polygon edges without aliasing.
+          raster=cairosvg.svg2png(bytestring=svg.encode(),output_width=2048,output_height=2048)
+          art=Image.open(io.BytesIO(raster)).convert('RGBA')
+          art=art.resize((512,512),Image.Resampling.LANCZOS)
+          art.save(dest,optimize=True)
+          bbox=art.getchannel('A').getbbox()
+          assert bbox and bbox[3]<=480 and bbox[1]>=175, f'Alignment outside bounds: {bbox}'
+          assert bbox[2]-bbox[0]<170, f'Figure too wide: {bbox}'
+          atlas=Path('amurites-simple-complete.atlas')
+          contents=atlas.read_text()
+          # Existing atlas uses standalone PNG page headers and alternate region aliases.
+          # Region must be unique so the game chooses this sprite deterministically.
+          region='TileSets/AmuritesSimple/Units/Bloodpet'
+          if region not in contents:
+              block=['',str(dest),'size: 512, 512','format: RGBA8888',
+                     'filter: Linear, Linear','repeat: none']
+              for name in [region,'TileSets/AbsoluteUnits/Units/Bloodpet']:
+                  block += [name,'  rotate: false','  xy: 0, 0','  size: 512, 512',
+                            '  orig: 512, 512','  offset: 0, 0','  index: -1']
+              atlas.write_text(contents.rstrip()+'\n'+'\n'.join(block)+'\n')
+          names=json.loads(Path('Atlases.json').read_text())
+          assert 'amurites-simple-complete' in names
+          print('Bloodpet bbox:',bbox,'polygon components:',len(elements))
+          PY
+      - name: Commit rendered sprite
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Images/TileSets/AmuritesSimple/Units/Generated/Bloodpet.png amurites-simple-complete.atlas
+          git diff --cached --quiet || (git commit -m "Render detailed Calabim Bloodpet with Amurite scale and baseline" && git push)
