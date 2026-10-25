@@ -1101,7 +1101,7 @@
     ],
     "uniques": [
       "Only available <with [Nature Mana]>",
-      "[This Unit] gains the [Treetop Tactics] status for [2] turn(s) <for all movement> <in [Forest] tiles>"
+      "Can cast EMM spell [Treetop Tactics]"
     ],
     "civilopediaText": [
       {
@@ -1445,7 +1445,7 @@
     ],
     "uniques": [
       "Only available <with [Dimensional Mana]>",
-      "[This Unit] gains the [Escape (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Escape]"
     ],
     "civilopediaText": [
       {
@@ -1748,7 +1748,7 @@
     ],
     "uniques": [
       "Only available <with [Ice Mana]>",
-      "[This Unit] gains the [Chilling Presence (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Slow]"
     ],
     "civilopediaText": [
       {
@@ -1844,7 +1844,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Valor (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Valor]"
     ],
     "civilopediaText": [
       {
@@ -1992,7 +1992,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains the [Domination (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Domination]"
     ],
     "civilopediaText": [
       {
@@ -2291,7 +2291,7 @@
     "name": "Chilling Presence (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-15]% Strength for enemy [All] units in adjacent [All] tiles",
+      "[-15]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
@@ -2522,7 +2522,7 @@
     "name": "Domination (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-35]% Strength for enemy [All] units in adjacent [All] tiles",
+      "[-35]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
@@ -2642,7 +2642,7 @@
       "Scout"
     ],
     "uniques": [
-      "[This Unit] gains the [Hidden (Spell)] status for [2] turn(s) <for all movement> <for units without [Hidden (Spell)]>"
+      "Can cast EMM spell [Hide]"
     ],
     "civilopediaText": [
       {
