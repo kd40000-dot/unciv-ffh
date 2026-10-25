@@ -1723,8 +1723,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Mutation",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_OPEN_CHEST",
@@ -1800,8 +1800,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Poisoned Blade",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_POTION_OF_INVISIBILITY",
@@ -2196,8 +2196,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Shadowwalk",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_SHIELD_OF_FAITH",
@@ -3175,8 +3175,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Temperance",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_TREETOP_TACTICS",
