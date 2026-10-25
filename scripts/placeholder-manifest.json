@@ -1,8 +1,61 @@
 {
   "created": [
     {
-      "unit": "Adept",
-      "faction": null,
+      "unit": "Adept-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Adept-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Adept-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Adept-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Adept-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
       "role": "staff",
       "bounds": [
         211,
@@ -13,8 +66,256 @@
       "polygons": 36
     },
     {
-      "unit": "Archer",
+      "unit": "Adept-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Adept-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        222,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Adept-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Adept-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Adept-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Adept-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Adept",
       "faction": null,
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Archer-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        176,
+        354,
+        477
+      ],
+      "polygons": 42
+    },
+    {
+      "unit": "Archer-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Archer-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Archer-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Archer-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -25,8 +326,256 @@
       "polygons": 37
     },
     {
-      "unit": "Assassin",
+      "unit": "Archer-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Archer-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        198,
+        340,
+        476
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Archer-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        177,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Archer-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Archer-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Archer-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Archer-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Archer",
       "faction": null,
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Assassin-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        176,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Assassin-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        366,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Assassin-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Assassin-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Assassin-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
       "role": "dagger",
       "bounds": [
         199,
@@ -37,8 +586,451 @@
       "polygons": 35
     },
     {
+      "unit": "Assassin-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        366,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Assassin-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        209,
+        198,
+        340,
+        476
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Assassin-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        177,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        366,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Assassin-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Assassin-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Assassin-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Assassin",
+      "faction": null,
+      "kind": "humanoid",
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Axeman-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Axeman-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Axeman-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Axeman-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Axeman-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Axeman-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        209,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Axeman-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Axeman-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Axeman-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Axeman-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Axeman-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
       "unit": "Axeman",
       "faction": null,
+      "kind": "humanoid",
       "role": "axe",
       "bounds": [
         188,
@@ -51,6 +1043,7 @@
     {
       "unit": "Beastmaster",
       "faction": null,
+      "kind": "humanoid",
       "role": "axe",
       "bounds": [
         188,
@@ -63,6 +1056,7 @@
     {
       "unit": "Berserker",
       "faction": null,
+      "kind": "humanoid",
       "role": "axe",
       "bounds": [
         188,
@@ -75,6 +1069,254 @@
     {
       "unit": "Caravel",
       "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "Champion-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Champion-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Champion-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Champion-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Champion-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Champion-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        208,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Champion-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Champion-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Champion-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Champion-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -87,6 +1329,7 @@
     {
       "unit": "Champion",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -99,6 +1342,7 @@
     {
       "unit": "Chariot",
       "faction": null,
+      "kind": "humanoid",
       "role": "spear",
       "bounds": [
         216,
@@ -111,6 +1355,7 @@
     {
       "unit": "Crossbowman",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -123,6 +1368,7 @@
     {
       "unit": "Eidolon",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -131,10 +1377,635 @@
         477
       ],
       "polygons": 36
+    },
+    {
+      "unit": "Frigate",
+      "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
     },
     {
       "unit": "Galleon",
       "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "Galley",
+      "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "Horse Archer",
+      "faction": null,
+      "kind": "creature",
+      "role": "bow",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Bannor",
+      "faction": "Bannor",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Calabim",
+      "faction": "Calabim",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Doviello",
+      "faction": "Doviello",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Elohim",
+      "faction": "Elohim",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Grigori",
+      "faction": "Grigori",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Hippus",
+      "faction": "Hippus",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Illians",
+      "faction": "Illians",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Khazad",
+      "faction": "Khazad",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Lanun",
+      "faction": "Lanun",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Malakim",
+      "faction": "Malakim",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Sheaim",
+      "faction": "Sheaim",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Sidar",
+      "faction": "Sidar",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman-Barbarians",
+      "faction": "Barbarians",
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Horseman",
+      "faction": null,
+      "kind": "creature",
+      "role": "spear",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Hunter-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        176,
+        354,
+        477
+      ],
+      "polygons": 42
+    },
+    {
+      "unit": "Hunter-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Hunter-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Hunter-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Hunter-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Hunter-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        198,
+        340,
+        476
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Hunter-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        177,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Hunter-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Hunter-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Hunter-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Hunter-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Hunter",
+      "faction": null,
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Knight-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Knight-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Knight-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Knight-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Knight-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -145,23 +2016,25 @@
       "polygons": 36
     },
     {
-      "unit": "Horse Archer",
-      "faction": null,
-      "role": "bow",
+      "unit": "Knight-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "sword",
       "bounds": [
-        197,
-        187,
-        354,
+        207,
+        191,
+        366,
         477
       ],
-      "polygons": 37
+      "polygons": 40
     },
     {
-      "unit": "Horseman",
-      "faction": null,
-      "role": "spear",
+      "unit": "Knight-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "sword",
       "bounds": [
-        216,
+        207,
         191,
         354,
         477
@@ -169,20 +2042,165 @@
       "polygons": 36
     },
     {
-      "unit": "Hunter",
-      "faction": null,
-      "role": "bow",
+      "unit": "Knight-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "sword",
       "bounds": [
-        197,
-        187,
+        207,
+        191,
         354,
         477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        208,
+        198,
+        340,
+        476
       ],
       "polygons": 37
     },
     {
+      "unit": "Knight-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Knight-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Knight-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Knight-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Knight-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
       "unit": "Knight",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -195,6 +2213,7 @@
     {
       "unit": "Longbowman",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -207,6 +2226,7 @@
     {
       "unit": "Marksman",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -219,6 +2239,7 @@
     {
       "unit": "Paladin",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -231,6 +2252,7 @@
     {
       "unit": "Phalanx",
       "faction": null,
+      "kind": "humanoid",
       "role": "spear",
       "bounds": [
         216,
@@ -243,30 +2265,85 @@
     {
       "unit": "Privateer",
       "faction": null,
+      "kind": "vessel",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        144,
+        167,
+        380,
+        447
       ],
-      "polygons": 36
+      "polygons": 8
     },
     {
       "unit": "Queen Of The Line",
       "faction": null,
+      "kind": "vessel",
       "role": "sword",
       "bounds": [
-        207,
-        191,
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "Ranger-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        176,
         354,
         477
       ],
-      "polygons": 36
+      "polygons": 42
     },
     {
-      "unit": "Ranger",
-      "faction": null,
+      "unit": "Ranger-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Ranger-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Ranger-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Ranger-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -277,8 +2354,451 @@
       "polygons": 37
     },
     {
+      "unit": "Ranger-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Ranger-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        198,
+        340,
+        476
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Ranger-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        177,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Ranger-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        366,
+        477
+      ],
+      "polygons": 41
+    },
+    {
+      "unit": "Ranger-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Ranger-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 39
+    },
+    {
+      "unit": "Ranger-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Ranger",
+      "faction": null,
+      "kind": "humanoid",
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Scout-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Scout-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Scout-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Scout-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Scout-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Scout-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Scout-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Scout-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Scout-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Scout-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Scout-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
       "unit": "Scout",
       "faction": null,
+      "kind": "humanoid",
       "role": "spear",
       "bounds": [
         216,
@@ -291,6 +2811,527 @@
     {
       "unit": "Trireme",
       "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "War Elephant",
+      "faction": null,
+      "kind": "creature",
+      "role": "sword",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
+      "unit": "Warrior-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Warrior-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Warrior-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Warrior-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Warrior-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Warrior-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        209,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Warrior-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Warrior-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Warrior-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Warrior-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Warrior-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Workboat",
+      "faction": null,
+      "kind": "vessel",
+      "role": "sword",
+      "bounds": [
+        144,
+        167,
+        380,
+        447
+      ],
+      "polygons": 8
+    },
+    {
+      "unit": "Swordsman-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Swordsman-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Swordsman-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Swordsman-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Swordsman-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Swordsman-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        208,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Swordsman-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Swordsman-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Swordsman-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Swordsman-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -303,6 +3344,7 @@
     {
       "unit": "Swordsman",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -315,6 +3357,7 @@
     {
       "unit": "Firebow",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -327,6 +3370,7 @@
     {
       "unit": "Chanter",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -339,6 +3383,7 @@
     {
       "unit": "Goblin",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         208,
@@ -351,6 +3396,7 @@
     {
       "unit": "Shaman",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -361,8 +3407,22 @@
       "polygons": 36
     },
     {
+      "unit": "Wolf Rider",
+      "faction": null,
+      "kind": "creature",
+      "role": "sword",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
       "unit": "Lizardman",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -375,6 +3435,7 @@
     {
       "unit": "Ogre",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         197,
@@ -387,6 +3448,7 @@
     {
       "unit": "Lizardman Ranger",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -399,6 +3461,7 @@
     {
       "unit": "Lizardman Assassin",
       "faction": null,
+      "kind": "humanoid",
       "role": "dagger",
       "bounds": [
         199,
@@ -411,6 +3474,7 @@
     {
       "unit": "Lizardman Beastmaster",
       "faction": null,
+      "kind": "humanoid",
       "role": "axe",
       "bounds": [
         188,
@@ -423,6 +3487,7 @@
     {
       "unit": "Stoneskin Ogre",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         197,
@@ -435,6 +3500,7 @@
     {
       "unit": "Ljosalfar Swordsman",
       "faction": "Ljosalfar",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -447,6 +3513,7 @@
     {
       "unit": "Flurry",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -457,8 +3524,256 @@
       "polygons": 36
     },
     {
+      "unit": "Mage-Balseraphs",
+      "faction": "Balseraphs",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        176,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Mage-Bannor",
+      "faction": "Bannor",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Mage-Calabim",
+      "faction": "Calabim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Mage-Clan of Embers",
+      "faction": "Clan of Embers",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Mage-Doviello",
+      "faction": "Doviello",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Elohim",
+      "faction": "Elohim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Mage-Grigori",
+      "faction": "Grigori",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Hippus",
+      "faction": "Hippus",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Illians",
+      "faction": "Illians",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Khazad",
+      "faction": "Khazad",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        222,
+        198,
+        340,
+        476
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Mage-Kuriotates",
+      "faction": "Kuriotates",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Lanun",
+      "faction": "Lanun",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        177,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Ljosalfar",
+      "faction": "Ljosalfar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Luchuirp",
+      "faction": "Luchuirp",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Malakim",
+      "faction": "Malakim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        366,
+        477
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Mage-Sheaim",
+      "faction": "Sheaim",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Mage-Sidar",
+      "faction": "Sidar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage-Svartalfar",
+      "faction": "Svartalfar",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Mage-Barbarians",
+      "faction": "Barbarians",
+      "kind": "humanoid",
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
       "unit": "Mage",
       "faction": null,
+      "kind": "humanoid",
       "role": "staff",
       "bounds": [
         211,
@@ -471,6 +3786,7 @@
     {
       "unit": "Archmage",
       "faction": null,
+      "kind": "humanoid",
       "role": "staff",
       "bounds": [
         211,
@@ -483,6 +3799,7 @@
     {
       "unit": "Wizard",
       "faction": null,
+      "kind": "humanoid",
       "role": "staff",
       "bounds": [
         211,
@@ -495,18 +3812,20 @@
     {
       "unit": "Balseraphs Swordsman",
       "faction": "Balseraphs",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
-        191,
+        176,
         354,
         477
       ],
-      "polygons": 38
+      "polygons": 40
     },
     {
       "unit": "Mimic",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -519,6 +3838,7 @@
     {
       "unit": "Harlequin",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -531,6 +3851,7 @@
     {
       "unit": "Taskmaster",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -541,8 +3862,22 @@
       "polygons": 36
     },
     {
+      "unit": "Bloodpet",
+      "faction": null,
+      "kind": "humanoid",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
       "unit": "Moroi",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -555,6 +3890,7 @@
     {
       "unit": "Vampire",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -567,6 +3903,7 @@
     {
       "unit": "Brujah",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -579,6 +3916,7 @@
     {
       "unit": "Beastman",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -591,6 +3929,7 @@
     {
       "unit": "Doviello Shaman",
       "faction": "Doviello",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -603,6 +3942,7 @@
     {
       "unit": "Sons Of Asena",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -615,6 +3955,7 @@
     {
       "unit": "Javelin Thrower",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -627,6 +3968,7 @@
     {
       "unit": "Battlemaster",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -639,6 +3981,7 @@
     {
       "unit": "Circle Of Urd",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -651,6 +3994,7 @@
     {
       "unit": "Bison Rider",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -663,6 +4007,7 @@
     {
       "unit": "Verdandi",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -675,6 +4020,7 @@
     {
       "unit": "Devout",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -685,8 +4031,22 @@
       "polygons": 36
     },
     {
+      "unit": "Dragon Slayer",
+      "faction": null,
+      "kind": "creature",
+      "role": "sword",
+      "bounds": [
+        131,
+        251,
+        408,
+        426
+      ],
+      "polygons": 12
+    },
+    {
       "unit": "Illians Javelin Thrower",
       "faction": "Illians",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -699,6 +4059,7 @@
     {
       "unit": "Dwarven Slinger",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -711,30 +4072,33 @@
     {
       "unit": "Boar Rider",
       "faction": null,
+      "kind": "creature",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        131,
+        251,
+        408,
+        426
       ],
-      "polygons": 36
+      "polygons": 12
     },
     {
       "unit": "Myconid",
       "faction": null,
+      "kind": "creature",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        131,
+        251,
+        408,
+        426
       ],
-      "polygons": 36
+      "polygons": 12
     },
     {
       "unit": "Hornguard",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -747,6 +4111,7 @@
     {
       "unit": "Kuriotates Swordsman",
       "faction": "Kuriotates",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -759,6 +4124,7 @@
     {
       "unit": "Centaur",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -771,6 +4137,7 @@
     {
       "unit": "Centaur Archer",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -783,6 +4150,7 @@
     {
       "unit": "Centaur Charger",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -795,6 +4163,7 @@
     {
       "unit": "Centaur Lancer",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -807,10 +4176,11 @@
     {
       "unit": "Lanun Swordsman",
       "faction": "Lanun",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
-        191,
+        177,
         354,
         477
       ],
@@ -819,42 +4189,46 @@
     {
       "unit": "Boarding Party",
       "faction": null,
+      "kind": "creature",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        131,
+        251,
+        408,
+        426
       ],
-      "polygons": 36
+      "polygons": 12
     },
     {
       "unit": "War Tortoise",
       "faction": null,
+      "kind": "creature",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        131,
+        251,
+        408,
+        426
       ],
-      "polygons": 36
+      "polygons": 12
     },
     {
       "unit": "Pirate",
       "faction": null,
+      "kind": "vessel",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        144,
+        167,
+        380,
+        447
       ],
-      "polygons": 36
+      "polygons": 8
     },
     {
       "unit": "Fyrdwell",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -867,30 +4241,33 @@
     {
       "unit": "Mud Golem",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Wood Golem",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Luchuirp Dwarven Slinger",
       "faction": "Luchuirp",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -903,30 +4280,33 @@
     {
       "unit": "Luchuirp Boar Rider",
       "faction": "Luchuirp",
+      "kind": "creature",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        131,
+        251,
+        408,
+        426
       ],
-      "polygons": 36
+      "polygons": 12
     },
     {
       "unit": "Iron Golem",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Gargoyle",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -939,18 +4319,20 @@
     {
       "unit": "Clockwork Golem",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Luchuirp Hornguard",
       "faction": "Luchuirp",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -963,30 +4345,33 @@
     {
       "unit": "Nullstone Golem",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Malakim Swordsman",
       "faction": "Malakim",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
         191,
-        354,
+        366,
         477
       ],
-      "polygons": 36
+      "polygons": 40
     },
     {
       "unit": "Camel Archer",
       "faction": null,
+      "kind": "humanoid",
       "role": "bow",
       "bounds": [
         197,
@@ -999,18 +4384,20 @@
     {
       "unit": "Pyre Zombie",
       "faction": null,
+      "kind": "construct",
       "role": "sword",
       "bounds": [
-        207,
-        191,
-        354,
-        477
+        182,
+        171,
+        390,
+        468
       ],
-      "polygons": 36
+      "polygons": 10
     },
     {
       "unit": "Divided Soul",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1023,6 +4410,7 @@
     {
       "unit": "Ghost",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1035,6 +4423,7 @@
     {
       "unit": "Svartalfar Swordsman",
       "faction": "Svartalfar",
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1042,11 +4431,12 @@
         354,
         477
       ],
-      "polygons": 36
+      "polygons": 38
     },
     {
       "unit": "Nyxkin",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1059,6 +4449,7 @@
     {
       "unit": "Lightbringer",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1071,6 +4462,7 @@
     {
       "unit": "Lucian",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1083,6 +4475,7 @@
     {
       "unit": "Slave",
       "faction": null,
+      "kind": "humanoid",
       "role": "sword",
       "bounds": [
         207,
@@ -1094,17 +4487,12 @@
     }
   ],
   "preserved": [
-    "Warrior",
-    "Bloodpet"
+    "Settler",
+    "Worker",
+    "Warrior"
   ],
   "excluded": [
     "Catapult",
-    "Frigate",
-    "Galley",
-    "War Elephant",
-    "Workboat",
-    "Wolf Rider",
-    "Dragon Slayer",
     "Trebuchet"
   ]
 }
