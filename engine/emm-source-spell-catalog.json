@@ -2119,8 +2119,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Rust",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_SACRIFICE_ALTAR",
