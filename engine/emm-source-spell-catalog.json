@@ -557,8 +557,8 @@
     "python": true,
     "declaredEffect": "review XML",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Domination",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_DROP_ATHAME_ITEM",
@@ -931,8 +931,8 @@
     "python": true,
     "declaredEffect": "review XML",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Escape",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_EXPLORE_LAIR_AIFON_ISLE",
@@ -1415,8 +1415,8 @@
     "python": true,
     "declaredEffect": "buff",
     "inventoryNotes": "Proxy(dev): Stealth Scout Hide; two-turn non-adjacent invisibility instead of full source invisibility until combat/cast; Android unverified",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Hide",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ESUS_HIDE",
@@ -2262,8 +2262,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Slow",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_SLOW_GREATER",
@@ -3186,8 +3186,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Treetop Tactics",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_TRUST",
@@ -3318,8 +3318,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Valor",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_VEIL_OF_NIGHT",
