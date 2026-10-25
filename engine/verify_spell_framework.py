@@ -171,5 +171,7 @@ assert any(u.startswith("Can cast EMM spell [Enchant Spellstaff]") for u in prom
 assert any(u.startswith("Can cast EMM spell [Resurrection]") for u in promotions["Life III"]["uniques"])
 assert by_name["Resurrection"]["summonUnit"] == "Returned Soul (Summoned)"
 assert by_name["Enchant Spellstaff"]["status"] == "Spellstaff (Spell)"
+assert by_name["Enchant Spellstaff"]["duration"] == -1
+assert by_name["Enchant Spellstaff"]["target"] == "SELF"
 assert by_name["Potion of Invisibility"]["status"] == "Hidden (Spell)"
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
