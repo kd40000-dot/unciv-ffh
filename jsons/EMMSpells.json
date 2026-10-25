@@ -347,5 +347,18 @@
       "Sword"
     ],
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Dispel Magic",
+    "sourceId": "SPELL_DISPEL_MAGIC",
+    "target": "FRIENDLY",
+    "effect": "CLEANSE",
+    "radius": 1,
+    "removeStatuses": [
+      "Withered (Spell)",
+      "Rusted (Spell)",
+      "Slowed"
+    ],
+    "maxCastsPerTurn": 1
   }
 ]
