@@ -62,6 +62,15 @@ object EmmSpellEngine {
             .toList()
     }
 
+    /** EMM selects a single strongest, least resistant viable adjacent enemy.
+     * Exact Civ IV spell resistance is not yet available in the Unciv engine. */
+    private fun dominationTarget(caster: MapUnit, spell: EMMSpell): MapUnit? =
+        targets(caster, spell)
+            .filter { it.isMilitary() && "Loyalty (Spell)" !in it.promotions.promotions &&
+                !it.hasStatus("Loyalty (Spell)") }
+            .maxWithOrNull(compareBy<MapUnit> { it.baseUnit.strength * 10 }
+                .thenBy { it.health })
+
     private fun damageAllowed(target: MapUnit, spell: EMMSpell): Int {
         // FfH2 iDamageLimit caps TOTAL accrued damage, not damage dealt per cast.
         val remainingAllowed = spell.damageLimit - (100 - target.health)
@@ -98,6 +107,7 @@ object EmmSpellEngine {
                     (spell.effect != "DAMAGE_STATUS" || (spell.amount > 0 && spell.damageLimit in 0..100))
             "DAMAGE" -> spell.amount > 0 && spell.damageLimit in 0..100
             "HEAL" -> spell.amount > 0
+            "DOMINATE" -> spell.target == "ENEMY" && spell.radius == 1
             "CLEANSE" -> spell.removeStatuses.isNotEmpty() &&
                 spell.removeStatuses.all { it.isNotBlank() }
             "SUMMON" -> spell.summonUnit.isNotBlank() &&
@@ -126,6 +136,7 @@ object EmmSpellEngine {
         // Do not allow direct calls to bypass the real learned promotion/unique.
         if (caster.getMatchingUniques(UniqueType.EmmSpell).none { it.params[0] == name }) return false
         return when (spell.effect) {
+            "DOMINATE" -> dominationTarget(caster, spell) != null
             "SUMMON" -> spell.summonUnit.isNotEmpty() &&
                 caster.civ.gameInfo.ruleset.units.containsKey(spell.summonUnit) &&
                 (spell.maxActivePerCaster <= 0 ||
@@ -146,7 +157,16 @@ object EmmSpellEngine {
         if (!canCast(caster, name)) return
         val spell = definition(caster, name) ?: return
         var applied = false
-        if (spell.effect == "SUMMON") {
+        if (spell.effect == "DOMINATE") {
+            val target = dominationTarget(caster, spell)
+            if (target != null) {
+                // Capture API updates both civilizations' unit registries and
+                // rehomes the unit if its destination tile becomes illegal.
+                target.capturedBy(caster.civ)
+                target.currentMovement = 0f
+                applied = true
+            }
+        } else if (spell.effect == "SUMMON") {
             val summoned = caster.civ.units.placeUnitNearTile(caster.getTile().position, spell.summonUnit)
             if (summoned != null) {
                 summoned.emmSummonerId = caster.id
