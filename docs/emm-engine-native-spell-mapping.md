@@ -81,3 +81,16 @@ These five actions were converted from caster-only JSON proxies to individual re
 | Flaming Arrows (Enchantment II) | `PROMOTION_FLAMING_ARROWS` | Give individual friendly Archery units `Flaming Arrows (Spell)`, rather than a caster aura | Current +20% Strength is not the source extra Fire damage |
 
 **Registry coverage after this batch: 29 EMM source-backed native actions.** This means registered actions in the experimental engine; it is **not** a tally of verified faithful EMM spells. Several are explicitly limited proxies and the remaining source spell records remain unimplemented.
+
+
+## Promotion-lifetime corrections and elemental resistance
+
+Implemented after the 29-action engine conversion; this is **not a new action count**.
+
+* The EMM source promotion files confirm that `PROMOTION_COURAGE`, `PROMOTION_LOYALTY`, `PROMOTION_FLAMING_ARROWS`, and `PROMOTION_WITHERED` do **not** have fixed two-turn expirations. The native statuses now support a persistent (-1) lifetime. Courage adds +10 natural healing; Withered subtracts 20 HP from natural healing (clamped to zero) and changes ordinary combat strength by -10%.
+* EMM `PROMOTION_REGENERATION` has `bRemovedWhenHealed=1`. The native status now persists until a unit heals to full HP. The source also gives +10 healing and always-heal (the base status has corresponding Unciv uniques).
+* EMM `PROMOTION_STONESKIN` has `bRemovedByCombat=1` and 50% resist to Cold, Death, Fire, Holy, Lightning, Poison, and Unholy. The current engine implements resistance against the three declared spell types and removes Stoneskin when positive damage is taken; this **does not yet equal combat-based removal even on zero-damage exchanges**. The original also supplies three first strikes.
+* `SPELL_MAELSTROM`, `SPELL_SNOWFALL`, and `SPELL_WITHER` now declare LIGHTNING, COLD and DEATH damage respectively. Native matching Stoneskin status halves those damages. Other innate and promotion-derived resistances remain unimplemented.
+* `PROMOTION_BLUR` source expires with 50% probability; `PROMOTION_DANCE_OF_BLADES` expires with 100%. Both currently use deterministic two-turn statuses: these **still need a save-safe probabilistic expiry system**.
+
+These changes require the newest Android engine build and in-game verification. Do not interpret the source-value parity tests as verification of spell duration, turn-order timing, actual target resistance or combat result.
