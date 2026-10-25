@@ -114,6 +114,34 @@ def main():
         }
         unit.movement.clearPathfindingCache()''')
 
+    # Save event cooldowns on the city, rather than using transient UI state.
+    replace_once(root, base+"logic/city/City.kt",
+        '    var turnAcquired = 0',
+        '''    var turnAcquired = 0
+    /** EMM event cooldown, keyed by event name. Persisted across saves. */
+    var emmEventLastTurn = HashMap<String, Int>()''')
+    # Per-civilization turn processing; one chance per city and event, with
+    # a minimum cooldown and crime-driven eligibility. This is the first
+    # generic event execution substrate, not the complete EMM event catalog.
+    replace_once(root, base+"logic/civilization/managers/TurnManager.kt",
+        '        for (city in civInfo.cities) city.hasSoldBuildingThisTurn = false',
+        '''        for (city in civInfo.cities) {
+            city.hasSoldBuildingThisTurn = false
+            val crime = city.cityStats.emmCrimeModifier
+            val turn = civInfo.gameInfo.turns
+            // Temporary source-mapped prototype: Dungeon supplies a persistent
+            // negative crime modifier, reducing incident risk. Incidents do not
+            // overwrite city buildings or launch without a legitimate city.
+            val incidentChance = (5 + crime).coerceIn(0, 30)
+            val last = city.emmEventLastTurn["Crime Incident"] ?: -1000
+            if (city.population.population >= 3 && turn - last >= 15 &&
+                kotlin.random.Random.nextInt(100) < incidentChance) {
+                city.emmEventLastTurn["Crime Incident"] = turn
+                // Automatic consequence while interactive Civ IV event choices
+                // are not ported: the city pays an upkeep loss.
+                civInfo.addGold(-10)
+            }
+        }''')
     # Source-inspired FfH/EMM war weariness. The original tracks a score
     # per opposing team and applies per-city percentage reductions.
     replace_once(root, base+"logic/civilization/Civilization.kt",
