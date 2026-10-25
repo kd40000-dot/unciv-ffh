@@ -72,4 +72,16 @@ assert by_name["Repair"]["eligibleUnitTypes"] == ["Siege", "Melee Water", "Civil
 assert "Golem" in by_name["Repair"]["eligibleNameContains"]
 assert by_name["Summon Fire Elemental"]["summonDuration"] > 0
 assert promotions["Courage (Spell)"]["uniques"] == ["Not shown on world screen"]
+
+# Check recipient-based Enchanted Blade does not regress to the old caster aura.
+blade = by_name["Enchanted Blade"]
+assert blade["sourceId"] == "SPELL_ENCHANTED_BLADE"
+assert blade["effect"] == "STATUS" and blade["target"] == "FRIENDLY"
+assert blade["radius"] == 1 and blade["duration"] == -1
+assert blade["eligibleUnitTypes"] == ["Sword"]
+assert blade["removeStatus"] == "Rusted (Spell)"
+assert "[+20]% Strength" in promotions["Enchanted Blade (Spell)"]["uniques"]
+assert any(u.startswith("Can cast EMM spell [Enchanted Blade]") for u in promotions["Enchantment I"]["uniques"])
+assert not any("Enchanted Blade Aura" in u for u in promotions["Enchantment I"]["uniques"])
+
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
