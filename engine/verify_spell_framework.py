@@ -17,7 +17,7 @@ units = {x["name"]: x for x in entries("Units.json")}
 
 assert len(spells) >= 21 and len({x["name"] for x in spells}) == len(spells)
 valid_targets = {"SELF", "FRIENDLY", "ENEMY"}
-valid_effects = {"STATUS", "HEAL", "DAMAGE", "DAMAGE_STATUS", "SUMMON"}
+valid_effects = {"STATUS", "HEAL", "DAMAGE", "DAMAGE_STATUS", "SUMMON", "CLEANSE"}
 for spell in spells:
     name = spell["name"]
     assert spell["sourceId"].startswith("SPELL_"), name
@@ -33,6 +33,9 @@ for spell in spells:
     if spell["effect"] in {"STATUS", "DAMAGE_STATUS"}:
         assert spell["status"] in promotions, name
         assert spell["duration"] == -1 or spell["duration"] >= 1, name
+    if spell["effect"] == "CLEANSE":
+        assert spell.get("removeStatuses"), name
+        assert all(status in promotions for status in spell["removeStatuses"]), name
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
         assert spell.get("summonDuration", 0) >= 0, name
@@ -95,4 +98,10 @@ assert "[-10]% Strength" in promotions["Rusted (Spell)"]["uniques"]
 assert any(u.startswith("Can cast EMM spell [Rust]") for u in promotions["Entropy I"]["uniques"])
 assert not any("gains the [Rusted (Spell)] status" in u for u in promotions["Entropy I"]["uniques"])
 
+dispel = by_name["Dispel Magic"]
+assert dispel["sourceId"] == "SPELL_DISPEL_MAGIC"
+assert dispel["effect"] == "CLEANSE" and dispel["target"] == "FRIENDLY"
+assert dispel["radius"] == 1
+assert set(dispel["removeStatuses"]) == {"Withered (Spell)", "Rusted (Spell)", "Slowed"}
+assert any(u.startswith("Can cast EMM spell [Dispel Magic]") for u in promotions["Metamagic II"]["uniques"])
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
