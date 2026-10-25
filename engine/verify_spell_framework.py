@@ -174,4 +174,9 @@ assert by_name["Enchant Spellstaff"]["status"] == "Spellstaff (Spell)"
 assert by_name["Enchant Spellstaff"]["duration"] == -1
 assert by_name["Enchant Spellstaff"]["target"] == "SELF"
 assert by_name["Potion of Invisibility"]["status"] == "Hidden (Spell)"
+# Native engine must not allow a banked Spellstaff to refresh itself.
+engine_source = (ROOT / "engine" / "overlay" / "EmmSpellEngine.kt").read_text(encoding="utf-8")
+assert 'extraSpellstaffCast && spell.sourceId == "SPELL_ENCHANT_SPELLSTAFF"' in engine_source
+assert 'caster.hasStatus("Spellstaff (Spell)")' in engine_source
+assert 'if (spentSpellstaff) caster.removeStatus("Spellstaff (Spell)")' in engine_source
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
