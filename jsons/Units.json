@@ -1257,7 +1257,7 @@
       "[+100]% Strength <with [Mithril]> <after discovering [Mithril Working]>",
       "[+50]% Strength <with [Iron]> <after discovering [Iron Working]> <without [Mithril]>",
       "[+25]% Strength <with [Copper]> <after discovering [Bronze Working]> <without [Iron]> <without [Mithril]>",
-      "[This Unit] gains the [Burning Blood (Ability)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Burning Blood]"
     ],
     "upgradesTo": "Champion",
     "civilopediaText": [
@@ -1741,7 +1741,7 @@
     "upgradesTo": "Horse Archer",
     "uniques": [
       "Can upgrade to [Chariot]",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
+      "Can cast EMM spell [Sprint]"
     ],
     "civilopediaText": [
       {
@@ -1771,7 +1771,7 @@
       }
     ],
     "uniques": [
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
+      "Can cast EMM spell [Sprint]"
     ]
   },
   {
@@ -1785,7 +1785,7 @@
     "replaces": "Chariot",
     "uniques": [
       "[-40]% Strength <when defending>",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
+      "Can cast EMM spell [Sprint]"
     ],
     "upgradesTo": "Knight",
     "civilopediaText": [
@@ -1809,7 +1809,7 @@
     "uniques": [
       "[-36]% Strength <when defending>",
       "Limited to [4] per Civilization",
-      "[This Unit] gains the [Sprint Fatigue (Ability)] status for [2] turn(s) <for all movement> <for units without [Sprint Fatigue (Ability)]>"
+      "Can cast EMM spell [Sprint]"
     ],
     "civilopediaText": [
       {
