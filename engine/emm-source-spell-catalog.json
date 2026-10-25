@@ -216,8 +216,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Development branch: Moroi self-buff proxy (+20% Strength/+1 Movement; no betrayal/Blitz); Android unverified",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Burning Blood",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_CALL_BLIZZARD",
@@ -2350,8 +2350,8 @@
     "python": true,
     "declaredEffect": "buff",
     "inventoryNotes": "Development branch: four Kuriotates Centaurs gain +1 Movement/-10% Strength temporary self-status; Android unverified",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Sprint",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_STASIS",
