@@ -361,7 +361,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Air Mana]"
+      "Provides [1] [Air Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -378,7 +379,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Body Mana]"
+      "Provides [1] [Body Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -395,7 +397,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Chaos Mana]"
+      "Provides [1] [Chaos Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -412,7 +415,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Creation Mana]"
+      "Provides [1] [Creation Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -429,7 +433,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Death Mana]"
+      "Provides [1] [Death Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -446,7 +451,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Dimensional Mana]"
+      "Provides [1] [Dimensional Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -463,7 +469,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Earth Mana]"
+      "Provides [1] [Earth Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -480,7 +487,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Enchantment Mana]"
+      "Provides [1] [Enchantment Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -497,7 +505,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Entropy Mana]"
+      "Provides [1] [Entropy Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -514,7 +523,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Fire Mana]"
+      "Provides [1] [Fire Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -531,7 +541,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Force Mana]"
+      "Provides [1] [Force Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -548,7 +559,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Ice Mana]"
+      "Provides [1] [Ice Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -565,7 +577,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Law Mana]"
+      "Provides [1] [Law Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -582,7 +595,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Life Mana]"
+      "Provides [1] [Life Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -599,7 +613,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Metamagic Mana]"
+      "Provides [1] [Metamagic Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -616,7 +631,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Mind Mana]"
+      "Provides [1] [Mind Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -633,7 +649,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Nature Mana]"
+      "Provides [1] [Nature Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -650,7 +667,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Spirit Mana]"
+      "Provides [1] [Spirit Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -667,7 +685,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Water Mana]"
+      "Provides [1] [Water Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -684,7 +703,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Shadow Mana]"
+      "Provides [1] [Shadow Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
@@ -701,7 +721,8 @@
       "Can only be built to improve a resource",
       "Can only be built on [Raw Mana] tiles",
       "Can only be built on [your] tiles",
-      "Provides [1] [Sun Mana]"
+      "Provides [1] [Sun Mana]",
+      "Will not be replaced by automated units"
     ],
     "civilopediaText": [
       {
