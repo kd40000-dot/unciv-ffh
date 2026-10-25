@@ -4,7 +4,7 @@ package com.unciv.models.ruleset
  * Ruleset-defined EMM spell. All fields have defaults for LibGDX JSON loading.
  *
  * Target: SELF | FRIENDLY | ENEMY
- * Effect: STATUS | DAMAGE | HEAL | SUMMON
+ * Effect: STATUS | DAMAGE | DAMAGE_STATUS | HEAL | SUMMON
  *
  * EMMSpell definitions live in the mod's jsons/EMMSpells.json rather than
  * requiring a new Kotlin branch for every FfH2 sphere spell.
