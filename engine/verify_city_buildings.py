@@ -27,4 +27,10 @@ assert "healing = healing * (100 + healingPercent) / 100" in overlay
 assert "populationUnhealth - buildingHealth" in overlay
 assert "var emmCrime = 0" in overlay
 assert "var emmWarWearinessPercent = 0" in overlay
+units=json.loads((root/"jsons/Units.json").read_text(encoding="utf-8"))
+units_by_name={u["name"]:u for u in units}
+for name in ("Beastmaster","Lizardman Beastmaster","Myconid"):
+    assert "Can only be built <in cities with a [Grove]>" in units_by_name[name].get("uniques",[]), name
+for name in ("Tavern","Tavern Grigori"):
+    assert by_name[name]["happiness"] == 1, name
 print(f"EMM city buildings: {len(buildings)} examined, health conversion and crime/war metadata verified")
