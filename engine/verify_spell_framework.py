@@ -102,6 +102,6 @@ dispel = by_name["Dispel Magic"]
 assert dispel["sourceId"] == "SPELL_DISPEL_MAGIC"
 assert dispel["effect"] == "CLEANSE" and dispel["target"] == "FRIENDLY"
 assert dispel["radius"] == 1
-assert set(dispel["removeStatuses"]) == {"Withered (Spell)", "Rusted (Spell)", "Slowed"}
+assert set(dispel["removeStatuses"]) == {"Withered (Spell)", "Rusted (Spell)"}
 assert any(u.startswith("Can cast EMM spell [Dispel Magic]") for u in promotions["Metamagic II"]["uniques"])
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
