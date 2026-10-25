@@ -545,5 +545,25 @@
     "maxActivePerCaster": 1,
     "maxCastsPerTurn": 1,
     "requiredBaseTerrain": "Desert"
+  },
+  {
+    "name": "Burning Blood",
+    "sourceId": "SPELL_BURNING_BLOOD",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Burning Blood (Ability)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Sprint",
+    "sourceId": "SPELL_SPRINT",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Sprint Fatigue (Ability)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
   }
 ]
