@@ -191,6 +191,9 @@
     "civilopediaText": [
       {
         "text": "A protected natural sanctuary tied to woodland traditions."
+      },
+      {
+        "text": "Required to train Beastmasters and Myconids, including Clan of Embers Lizardman Beastmasters. Other druid-tier units are still missing from the mod."
       }
     ]
   },
@@ -496,9 +499,13 @@
       },
       {
         "text": "EMM Crime Rate: +5. Crime-based random events are not yet implemented in the experimental Unciv engine."
+      },
+      {
+        "text": "Restored EMM tavern amenity: +1 city happiness. Additional trade-route, maintenance and specialist effects still require implementation."
       }
     ],
-    "emmCrime": 5
+    "emmCrime": 5,
+    "happiness": 1
   },
   {
     "name": "Tax Office",
@@ -661,9 +668,13 @@
       },
       {
         "text": "EMM Crime Rate: +5. Crime-based random events are not yet implemented in the experimental Unciv engine."
+      },
+      {
+        "text": "Restored EMM tavern amenity: +1 city happiness. Additional trade-route, maintenance and specialist effects still require implementation."
       }
     ],
-    "emmCrime": 5
+    "emmCrime": 5,
+    "happiness": 1
   },
   {
     "name": "Forum",
