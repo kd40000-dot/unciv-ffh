@@ -82,6 +82,7 @@ object EmmSpellEngine {
             "DAMAGE" -> damageAllowed(target, spell) > 0
             "DAMAGE_STATUS" -> damageAllowed(target, spell) > 0 || !target.hasStatus(spell.status)
             "HEAL" -> target.health < 100 && spell.amount > 0
+            "CLEANSE" -> spell.removeStatuses.any { target.hasStatus(it) }
             else -> false
         }
 
@@ -100,7 +101,7 @@ object EmmSpellEngine {
                  caster.civ.units.getCivUnits().count {
                      it.name == spell.summonUnit && it.emmSummonerId == caster.id
                  } < spell.maxActivePerCaster)
-            "STATUS", "DAMAGE", "DAMAGE_STATUS", "HEAL" -> targets(caster, spell).any { wouldChange(it, spell) }
+            "STATUS", "DAMAGE", "DAMAGE_STATUS", "HEAL", "CLEANSE" -> targets(caster, spell).any { wouldChange(it, spell) }
             else -> false
         }
     }
@@ -138,6 +139,7 @@ object EmmSpellEngine {
                         if (!target.isDestroyed) target.setStatus(spell.status, spell.duration)
                     }
                     "HEAL" -> target.healBy(spell.amount)
+                    "CLEANSE" -> spell.removeStatuses.filter { target.hasStatus(it) }.forEach { target.removeStatus(it) }
                 }
                 applied = true
             }
