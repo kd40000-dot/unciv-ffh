@@ -1294,7 +1294,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Mutation (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Mutation]"
     ],
     "civilopediaText": [
       {
@@ -1688,7 +1688,7 @@
     ],
     "uniques": [
       "Only available <with [Force Mana]>",
-      "[This Unit] gains the [Temperance (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Temperance]"
     ],
     "civilopediaText": [
       {
@@ -2010,7 +2010,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Poisoned Blade (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Poisoned Blade]"
     ],
     "civilopediaText": [
       {
@@ -2068,7 +2068,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "[This Unit] gains the [Shadowwalk (Spell)] status for [2] turn(s) <for all movement>"
+      "Can cast EMM spell [Shadowwalk]"
     ],
     "civilopediaText": [
       {
@@ -2429,7 +2429,7 @@
     "name": "Poisoned Blade (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[+15]% Strength bonus for [Sword] units within [1] tiles",
+      "[+15]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
