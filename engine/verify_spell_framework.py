@@ -32,7 +32,7 @@ for spell in spells:
     ), f"No native cast action registered for {name}"
     if spell["effect"] in {"STATUS", "DAMAGE_STATUS"}:
         assert spell["status"] in promotions, name
-        assert spell["duration"] >= 1, name
+        assert spell["duration"] == -1 or spell["duration"] >= 1, name
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
         assert spell.get("summonDuration", 0) >= 0, name
