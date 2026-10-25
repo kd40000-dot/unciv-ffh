@@ -17,7 +17,7 @@ units = {x["name"]: x for x in entries("Units.json")}
 
 assert len(spells) >= 21 and len({x["name"] for x in spells}) == len(spells)
 valid_targets = {"SELF", "FRIENDLY", "ENEMY"}
-valid_effects = {"STATUS", "HEAL", "DAMAGE", "SUMMON"}
+valid_effects = {"STATUS", "HEAL", "DAMAGE", "DAMAGE_STATUS", "SUMMON"}
 for spell in spells:
     name = spell["name"]
     assert spell["sourceId"].startswith("SPELL_"), name
@@ -30,13 +30,13 @@ for spell in spells:
         for promotion in promotions.values()
         for u in promotion.get("uniques", [])
     ), f"No native cast action registered for {name}"
-    if spell["effect"] == "STATUS":
+    if spell["effect"] in {"STATUS", "DAMAGE_STATUS"}:
         assert spell["status"] in promotions, name
         assert spell["duration"] >= 1, name
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
         assert spell.get("summonDuration", 0) >= 0, name
-    if spell["effect"] in {"HEAL", "DAMAGE"}:
+    if spell["effect"] in {"HEAL", "DAMAGE", "DAMAGE_STATUS"}:
         assert spell["amount"] > 0, name
 
 sources = {
@@ -55,6 +55,8 @@ for spell in spells:
     assert any(u.startswith(f"Can cast EMM spell [{spell['name']}]") for u in promotions[promotion]["uniques"]), spell["name"]
 
 by_name = {s["name"]: s for s in spells}
+assert by_name["Snowfall"]["amount"] == 40 and by_name["Snowfall"]["damageLimit"] == 70
+assert by_name["Wither"]["amount"] == 10 and by_name["Wither"]["damageLimit"] == 40
 assert by_name["Maelstrom"]["radius"] == 2
 assert by_name["Maelstrom"]["amount"] == 15
 assert by_name["Maelstrom"]["damageLimit"] == 30
