@@ -460,5 +460,68 @@
     "duration": 2,
     "landOnly": true,
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Treetop Tactics",
+    "sourceId": "SPELL_TREETOP_TACTICS",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Treetop Tactics",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Valor",
+    "sourceId": "SPELL_VALOR",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Valor (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Slow",
+    "sourceId": "SPELL_SLOW",
+    "target": "ENEMY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Chilling Presence (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Escape",
+    "sourceId": "SPELL_ESCAPE",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Escape (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Domination",
+    "sourceId": "SPELL_DOMINATION",
+    "target": "ENEMY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Domination (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Hide",
+    "sourceId": "SPELL_HIDE",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Hidden (Spell)",
+    "duration": 2,
+    "maxCastsPerTurn": 1
   }
 ]
