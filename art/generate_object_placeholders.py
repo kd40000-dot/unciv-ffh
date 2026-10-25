@@ -6,7 +6,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 categories=[("Buildings.json","BuildingIcons","BuildingIcons"),
             ("TileImprovements.json","ImprovementIcons","TileImprovementIcons")]
 manifest=json.loads((ROOT/"art/PLACEHOLDER_SPRITES.json").read_text())
-rows=[]
+rows=list(manifest.get('objects', []))
 def safe(s):return s.replace("/","-").replace("\\","-")
 def draw_obj(name,kind):
     im=Image.new("RGBA",(384,384),(0,0,0,0))
