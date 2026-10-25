@@ -119,7 +119,12 @@ def main():
     replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
         '        else -> healingAmountForTile(getTile(), noTerrainDamage = true)',
         '''        else -> healingAmountForTile(getTile(), noTerrainDamage = true).let { amount ->
-            if (amount > 0 && hasStatus("Courage (Spell)")) amount + 10 else amount
+            when {
+                amount <= 0 -> 0
+                hasStatus("Withered (Spell)") -> (amount - 20).coerceAtLeast(0)
+                hasStatus("Courage (Spell)") -> amount + 10
+                else -> amount
+            }
         }''')
 
     # EMM uses permanent/condition-removable promotions for several spells.
