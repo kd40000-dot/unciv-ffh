@@ -121,4 +121,15 @@ assert by_name["Destroy Undead"]["effect"] == "DAMAGE"
 assert by_name["Charm Person"]["target"] == "ENEMY"
 assert by_name["Blinding Light"]["target"] == "ENEMY"
 assert by_name["Fair Winds"]["eligibleUnitTypes"] == ["Melee Water", "Civilian Water"]
+# Additional recipient-targeted sphere actions.
+for sphere, name, target in (
+    ("Chaos II", "Mutation", "FRIENDLY"),
+    ("Force I", "Temperance", "FRIENDLY"),
+    ("Nature II", "Poisoned Blade", "FRIENDLY"),
+    ("Shadow II", "Shadowwalk", "FRIENDLY"),
+):
+    assert by_name[name]["target"] == target and by_name[name]["effect"] == "STATUS", name
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[sphere]["uniques"]), name
+assert by_name["Poisoned Blade"]["eligibleUnitTypes"] == ["Sword"]
+assert promotions["Poisoned Blade (Spell)"]["uniques"] == ["[+15]% Strength", "Not shown on world screen"]
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
