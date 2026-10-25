@@ -143,8 +143,12 @@
     "civilopediaText": [
       {
         "text": "Smiths work iron and other metals into weapons, armor and tools."
+      },
+      {
+        "text": "EMM city health modifier: -1."
       }
-    ]
+    ],
+    "emmHealth": -1
   },
   {
     "name": "Gambling House",
@@ -208,9 +212,13 @@
       },
       {
         "text": "Provides +1 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
+      },
+      {
+        "text": "EMM effect: units recover 10% faster while healing in this city."
       }
     ],
-    "emmHealth": 1
+    "emmHealth": 1,
+    "emmCityHealingPercent": 10
   },
   {
     "name": "Hunting Lodge",
@@ -235,9 +243,16 @@
       },
       {
         "text": "Provides +2 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
+      },
+      {
+        "text": "EMM effect: units recover 25% faster while healing in this city."
+      },
+      {
+        "text": "EMM city health modifier: +3."
       }
     ],
-    "emmHealth": 2
+    "emmHealth": 3,
+    "emmCityHealingPercent": 25
   },
   {
     "name": "Inn",
@@ -249,10 +264,14 @@
       },
       {
         "text": "EMM Crime Rate: +5. Crime-based random events are not yet implemented in the experimental Unciv engine."
+      },
+      {
+        "text": "EMM effect: units recover 25% faster while healing in this city."
       }
     ],
     "gold": 1,
-    "emmCrime": 5
+    "emmCrime": 5,
+    "emmCityHealingPercent": 25
   },
   {
     "name": "Library",
