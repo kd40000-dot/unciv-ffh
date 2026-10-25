@@ -12,6 +12,8 @@ required=(
     "val incidentChance = (5 + crime).coerceIn(0, 30)",
     "turn - last >= 15",
     "civInfo.addGold(-10)",
+    "NotificationCategory.General",
+    "city.location, NotificationCategory.General",
 )
 for signature in required:
     assert signature in overlay, signature
