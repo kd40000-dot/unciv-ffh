@@ -7,6 +7,7 @@ on:
       - feature/emm-engine-2026-10-25
       - feature/emm-engine-framework-2026-10-25
       - checkpoint/emm-spell-wiring-inventory-2026-10-25
+      - checkpoint/emm-engine-safety-2026-10-25
     paths:
       - "engine/**"
       - "jsons/**"
