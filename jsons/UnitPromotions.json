@@ -2684,5 +2684,17 @@
         "text": "Engine-native recipient status from Enchanted Blade. Lasts until dispelled; the 20% Strength effect remains an Unciv approximation of EMM's enchanted weapon bonus."
       }
     ]
+  },
+  {
+    "name": "Slowed",
+    "uniques": [
+      "[-1] Movement",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Native status applied by Slow. Reduces recipient movement by one until its duration expires or Haste removes it. Engine-native spell prototype pending EMM resistance, duration and caster selection verification."
+      }
+    ]
   }
 ]
