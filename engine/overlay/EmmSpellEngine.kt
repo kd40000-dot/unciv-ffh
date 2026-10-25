@@ -111,7 +111,11 @@ object EmmSpellEngine {
         if (caster.isDestroyed) return false
         val spell = definition(caster, name) ?: return false
         if (!validDefinition(spell, name)) return false
+        // A banked staff charge must not be refreshed by casting Enchant Spellstaff.
+        if (spell.sourceId == "SPELL_ENCHANT_SPELLSTAFF" &&
+            caster.hasStatus("Spellstaff (Spell)")) return false
         val extraSpellstaffCast = caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn
+        if (extraSpellstaffCast && spell.sourceId == "SPELL_ENCHANT_SPELLSTAFF") return false
         // Spellstaff provides one banked extra cast, including after ordinary
         // spellcasting consumed all movement. It is removed only on success.
         if (extraSpellstaffCast && !caster.hasStatus("Spellstaff (Spell)")) return false
