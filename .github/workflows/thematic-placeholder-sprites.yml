@@ -1,0 +1,55 @@
+name: Generate thematic placeholder sprites
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        type: choice
+        description: Generate pilot four civilizations or all scoped sprites
+        options:
+          - pilot
+          - all
+        default: pilot
+  push:
+    branches:
+      - checkpoint/art-quality-redo-2026-10-25
+    paths:
+      - art/generate_thematic_placeholders.py
+      - .github/workflows/thematic-placeholder-sprites.yml
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: checkpoint/art-quality-redo-2026-10-25
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Generate placeholders
+        env:
+          SCOPE: ${{ github.event.inputs.scope }}
+        run: |
+          if [ "$SCOPE" = 'all' ]; then python art/generate_thematic_placeholders.py --all; else python art/generate_thematic_placeholders.py; fi
+      - name: Validate and commit
+        run: |
+          python - <<'PY'
+          import json
+          from PIL import Image
+          from pathlib import Path
+          rows=json.loads(Path('art/SCOPED_UNIT_REDRAW_QUEUE.json').read_text())['entries']
+          matched=[r for r in rows if r.get('previous')=='procedural-themed-v2']
+          assert matched
+          for r in matched:
+              assert r['civilization']!='Amurites' and r['unit'] not in ('Worker','Settler')
+              with Image.open(r['path']) as im:
+                  assert im.mode=='RGBA' and im.size==(512,512)
+                  assert im.getpixel((0,0))[3]==0
+          print('Validated',len(matched),'temporary sprites')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Images/TileSets/AmuritesSimple/Units/Generated placeholder-generated.atlas art/SCOPED_UNIT_REDRAW_QUEUE.json
+          if ! git diff --cached --quiet; then git commit -m 'Generate unique civilization-themed procedural placeholders'; git push; fi
