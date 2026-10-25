@@ -208,9 +208,6 @@
     "requiredTech": "Agriculture",
     "civilopediaText": [
       {
-        "text": "Uses herbs and medicinal knowledge to improve health. Currently represented by a Food bonus."
-      },
-      {
         "text": "Provides +1 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
       },
       {
@@ -240,9 +237,6 @@
     "civilopediaText": [
       {
         "text": "I stare out the window a lot now. Outside there are children playing, laughing, running, and chasing each other. They will never know war. They will never know sacrifice, and I am grateful for that. To see the sun rise and fall, and never understand loss like mine is a beautiful and tragic thing.\n\nMy nurse comes regularly to me, to tend to my leg, and to ask if my other still feels like it's there. It does sometimes. I dream that I wander through our old house, your golden hair shining in the sunlight and lightening my heart. I chase you in my dreams, through our fields in Yullda pass, and ride our horses together. I know those days are gone. I know you've found someone new, and I am happy for you. I expect her to love you as I did.\n\nYour mother visited me once, and cried for me. Tell her not to worry, there are worse here than I."
-      },
-      {
-        "text": "Provides +2 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
       },
       {
         "text": "EMM effect: units recover 25% faster while healing in this city."
