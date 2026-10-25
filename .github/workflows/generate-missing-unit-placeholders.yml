@@ -40,4 +40,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add Images/TileSets/AmuritesSimple/Units/Generated amurites-simple-complete.atlas scripts/placeholder-manifest.json
-          git diff --cached --quiet || (git commit -m "Generate missing role-aware placeholder sprites and atlas entries" && git push)
+          git diff --cached --quiet || (git commit -m "Generate missing role-aware placeholder sprites and atlas entries" && git pull --rebase origin main && git push)
