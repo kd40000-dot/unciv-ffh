@@ -114,6 +114,31 @@ def main():
         }
         unit.movement.clearPathfindingCache()''')
 
+    # EMM city health is distinct from unconditional food yields. Store
+    # building modifiers as data and apply net unhealth to food consumption.
+    replace_once(root, base+"models/ruleset/Building.kt",
+        '    var maintenance = 0',
+        '''    var maintenance = 0
+    /** EMM health modifier; interpreted by CityStats, not as direct food. */
+    var emmHealth = 0
+    /** EMM crime-rate modifier; pending crime-event integration. */
+    var emmCrime = 0
+    /** EMM war-weariness modifier; pending war weariness integration. */
+    var emmWarWearinessPercent = 0''')
+    replace_once(root, base+"logic/city/CityStats.kt",
+        '        return foodEaten\\n    }',
+        '''        // EMM health prototype: population creates unhealth; public
+        // sanitation buildings counter it. Do not add their health directly
+        // to city food yield. Natural health/resource components are still
+        // pending source-accurate EMM porting.
+        val buildingHealth = city.cityConstructions.builtBuildings.sumOf { buildingName ->
+            city.civ.gameInfo.ruleset.buildings[buildingName]?.emmHealth ?: 0
+        }
+        val populationUnhealth = (city.population.population - 5).coerceAtLeast(0)
+        foodEaten += (populationUnhealth - buildingHealth).coerceAtLeast(0)
+        return foodEaten
+    }''')
+
     # Courage boosts natural per-turn healing of the actual recipient,
     # not the original temporary caster's entire adjacent healing aura.
     replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
