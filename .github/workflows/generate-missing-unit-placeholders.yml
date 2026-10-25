@@ -1,0 +1,43 @@
+name: Generate missing unit placeholders
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/generate_unit_placeholders.py'
+      - '.github/workflows/generate-missing-unit-placeholders.yml'
+permissions:
+  contents: write
+concurrency:
+  group: ffh-placeholder-art
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install vector renderer
+        run: python -m pip install Pillow cairosvg
+      - name: Generate missing role-aware units
+        run: python scripts/generate_unit_placeholders.py
+      - name: Check generated asset integrity
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          d=json.loads(Path('scripts/placeholder-manifest.json').read_text())
+          for x in d['created']:
+              name=x['unit']
+              im=Image.open(Path('Images/TileSets/AmuritesSimple/Units/Generated')/(name+'.png'))
+              assert im.size==(512,512) and im.mode=='RGBA',name
+              assert im.getpixel((0,0))[3]==0,name
+              assert x['bounds'][3]<493,name
+          assert len(d['created'])>0,'No new assets generated'
+          print('Verified',len(d['created']),'new sprites; preserved',len(d['preserved']))
+          PY
+      - name: Commit assets, manifest and atlas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Images/TileSets/AmuritesSimple/Units/Generated amurites-simple-complete.atlas scripts/placeholder-manifest.json
+          git diff --cached --quiet || (git commit -m "Generate missing role-aware placeholder sprites and atlas entries" && git push)
