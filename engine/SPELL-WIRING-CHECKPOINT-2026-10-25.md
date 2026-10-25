@@ -11,7 +11,7 @@ Branch: `checkpoint/emm-spell-wiring-inventory-2026-10-25`. This branch inherits
 - `d27c19c`: mark the linked source action in the coverage manifest.
 - `522f87a`: assertions for Enchanted Blade recipient behavior.
 
-## Currently registered: 30 of 355
+## Currently registered: 31 of 355
 
 **This is NOT 355 playable EMM spells.** The remainder need explicit source reviews and effect implementations.
 
@@ -23,7 +23,15 @@ Branch: `checkpoint/emm-spell-wiring-inventory-2026-10-25`. This branch inherits
 - Android acceptance: adjacent friendly sword gets status and bonuses; non-Sword and hostile units do not; existing status persists after caster moves; duplicate casting is gated; Rust removal when Rust is represented as unit status; normal Unciv untouched.
 
 ## Validation
-A connector-side read of the committed branch confirmed 355 source records, 30 native spell definitions, and 30 corresponding promotion grants without missing names. The new Python assertions and Android workflow have been committed, **not yet run to successful completion**. Kotlin compilation and actual gameplay are outstanding.
+A connector-side read of the committed branch confirmed 355 source records, 31 native spell definitions, and 31 corresponding promotion grants without missing names. The new Python assertions and Android workflow have been committed, **not yet run to successful completion**. Kotlin compilation and actual gameplay are outstanding.
 
 ## Next engine work
 Implement first-class effects for terrain/feature/improvement manipulation, city-targeted spells, equipment mutations, promotion cleansing with explicit status taxonomy, target selection and diplomacy, then world-spell persistence. Do not promote a catalog entry to `native-registered` without executable effect and grant.
+
+## Continuation: native Rust (SPELL_RUST)
+
+- Migrated Entropy I from a caster self-aura to the EMM native cast action.
+- Eligible adjacent war-enemy Sword recipients receive a persistent `Rusted (Spell)` status (-10% Strength proxy). `Enchanted Blade (Spell)` is removed before applying Rust.
+- Native registry, source catalog, and regression assertions were updated in consecutive GitHub commits.
+- **Fidelity remains unverified:** EMM Rust's exact valid targets, defense modifiers, dispel conditions, magic resistance, and Civ IV stack targeting need source examination and gameplay verification. An enemy at peace will not be targeted by this adaptation.
+- Connector-based consistency check after commits: 355 records, 31 definitions, 31 promotion grants, no mismatches. GitHub Actions compile and Android gameplay tests have not been verified in this continuation.
