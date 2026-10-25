@@ -11,7 +11,7 @@ Branch: `checkpoint/emm-spell-wiring-inventory-2026-10-25`. This branch inherits
 - `d27c19c`: mark the linked source action in the coverage manifest.
 - `522f87a`: assertions for Enchanted Blade recipient behavior.
 
-## Currently registered: 31 of 355
+## Currently registered: 32 of 355
 
 **This is NOT 355 playable EMM spells.** The remainder need explicit source reviews and effect implementations.
 
@@ -35,3 +35,11 @@ Implement first-class effects for terrain/feature/improvement manipulation, city
 - Native registry, source catalog, and regression assertions were updated in consecutive GitHub commits.
 - **Fidelity remains unverified:** EMM Rust's exact valid targets, defense modifiers, dispel conditions, magic resistance, and Civ IV stack targeting need source examination and gameplay verification. An enemy at peace will not be targeted by this adaptation.
 - Connector-based consistency check after commits: 355 records, 31 definitions, 31 promotion grants, no mismatches. GitHub Actions compile and Android gameplay tests have not been verified in this continuation.
+
+## Continuation: native status-cleansing executor and Dispel Magic
+
+- The engine now supports a `CLEANSE` effect with explicitly declared `removeStatuses`, only offering a cast where at least one recipient has a removable status.
+- `SPELL_DISPEL_MAGIC` is registered on Metamagic II with a one-hex friendly-unit cleanse of `Withered (Spell)` and `Rusted (Spell)`. Existing mana-node-clearing action remains separately available.
+- This is **partial EMM functionality**, not full dispelling: original source effects on enemy beneficial promotions, mana nodes, summons and wider ranges still need faithful implementation, where applicable.
+- All 355 source entries still tracked; 32 have native effect definitions and promotion grants, 323 remain. Static registry consistency was checked through GitHub connector, but compilation and Android tests are not yet confirmed.
+- Negative status names not declared in `UnitPromotions.json` must not be inserted in `removeStatuses`; the schema validator now enforces this.
