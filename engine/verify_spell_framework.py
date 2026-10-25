@@ -17,7 +17,7 @@ units = {x["name"]: x for x in entries("Units.json")}
 
 assert len(spells) >= 21 and len({x["name"] for x in spells}) == len(spells)
 valid_targets = {"SELF", "FRIENDLY", "ENEMY"}
-valid_effects = {"STATUS", "HEAL", "DAMAGE", "DAMAGE_STATUS", "SUMMON", "CLEANSE"}
+valid_effects = {"STATUS", "HEAL", "DAMAGE", "DAMAGE_STATUS", "SUMMON", "CLEANSE", "DOMINATE"}
 for spell in spells:
     name = spell["name"]
     assert spell["sourceId"].startswith("SPELL_"), name
@@ -141,6 +141,8 @@ for sphere, name in (("Nature I", "Treetop Tactics"), ("Law III", "Valor"),
     assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[sphere]["uniques"]), name
 assert by_name["Slow"]["target"] == "ENEMY"
 assert by_name["Domination"]["target"] == "ENEMY"
+assert by_name["Domination"]["effect"] == "DOMINATE"
+assert by_name["Domination"]["radius"] == 1
 assert by_name["Hide"]["status"] == "Hidden (Spell)"
 assert by_name["Slow"]["status"] == "Slowed"
 assert by_name["Haste"]["removeStatus"] == "Slowed"
