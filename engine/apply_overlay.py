@@ -121,6 +121,44 @@ def main():
         '''        else -> healingAmountForTile(getTile(), noTerrainDamage = true).let { amount ->
             if (amount > 0 && hasStatus("Courage (Spell)")) amount + 10 else amount
         }''')
+
+    # EMM uses permanent/condition-removable promotions for several spells.
+    # Negative UnitStatus.turnsLeft is a persistent status, not an expired one.
+    replace_once(root, base+"logic/map/mapunit/UnitTurnManager.kt",
+        '''        for (status in unit.statusMap.values.toList()){
+            status.turnsLeft--
+            if (status.turnsLeft <= 0) unit.removeStatus(status.name)
+        }''',
+        '''        for (status in unit.statusMap.values.toList()){
+            if (status.turnsLeft < 0) continue // EMM: until dispelled / specific removal event.
+            status.turnsLeft--
+            if (status.turnsLeft <= 0) unit.removeStatus(status.name)
+        }''')
+
+    # EMM regeneration has bRemovedWhenHealed=1: it persists until completely healed.
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '''        if (health > 100) health = 100
+        cache.updateUniques()
+    }
+
+    fun takeDamage(amount: Int) {''',
+        '''        if (health > 100) health = 100
+        if (health >= 100 && hasStatus("Regeneration (Spell)"))
+            removeStatus("Regeneration (Spell)")
+        cache.updateUniques()
+    }
+
+    fun takeDamage(amount: Int) {''')
+    # Source Stoneskin bRemovedByCombat; taking combat damage is a subset
+    # of combat events. We explicitly document this remaining discrepancy.
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '''    fun takeDamage(amount: Int) {
+        health -= amount''',
+        '''    fun takeDamage(amount: Int) {
+        if (amount > 0 && hasStatus("Stoneskin (Spell)"))
+            removeStatus("Stoneskin (Spell)")
+        health -= amount''')
+
     spellModel = root / base / "models/ruleset/EMMSpell.kt"
     if spellModel.exists():
         raise RuntimeError("EMMSpell.kt already exists; overlay should not be applied twice")
