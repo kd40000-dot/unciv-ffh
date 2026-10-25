@@ -1066,8 +1066,8 @@
     ],
     "uniques": [
       "Only available <with [Enchantment Mana]>",
-      "[This Unit] gains the [Enchanted Blade Aura] status for [2] turn(s) <for all movement>",
-      "Can cast EMM spell [Repair] <for units with [Dwarf]>"
+      "Can cast EMM spell [Repair] <for units with [Dwarf]>",
+      "Can cast EMM spell [Enchanted Blade]"
     ],
     "civilopediaText": [
       {
@@ -2670,6 +2670,18 @@
     "civilopediaText": [
       {
         "text": "EMM Withered native recipient debuff: -10% combat strength (source iCombatPercent=-10), and -20 HP to natural healing via engine. Source -50% XP, reduced combat defense and spell resistance still require porting. Lasts until dispelled."
+      }
+    ]
+  },
+  {
+    "name": "Enchanted Blade (Spell)",
+    "uniques": [
+      "[+20]% Strength <for [Sword] units>",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Engine-native recipient status from Enchanted Blade. Lasts until dispelled; the 20% Strength effect remains an Unciv approximation of EMM's enchanted weapon bonus."
       }
     ]
   }
