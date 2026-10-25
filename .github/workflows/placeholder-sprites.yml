@@ -36,7 +36,7 @@ jobs:
           from PIL import Image
           m=json.loads(Path('art/PLACEHOLDER_SPRITES.json').read_text())
           assert m['count'] > 100, m['count']
-          assert m['objectsCount'] > 50, m['objectsCount']
+          assert len(list(Path('Images/BuildingIcons').glob('*.png'))) + len(list(Path('Images/ImprovementIcons').glob('*.png'))) > 50
           for r in m['sprites'] + m['objects']:
               p=Path(r['path'])
               with Image.open(p) as im:
