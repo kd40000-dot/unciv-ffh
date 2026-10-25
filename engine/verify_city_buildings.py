@@ -27,6 +27,10 @@ assert "healing = healing * (100 + healingPercent) / 100" in overlay
 assert "populationUnhealth - buildingHealth" in overlay
 assert "var emmCrime = 0" in overlay
 assert "var emmWarWearinessPercent = 0" in overlay
+assert "emmWarWearinessByEnemy" in overlay
+assert 'newHappinessList["EMM War Weariness"] = -warUnhappiness' in overlay
+assert "emmWarWearinessMultiplier" in overlay
+assert "(score - 100).coerceAtLeast(0)" in overlay
 units=json.loads((root/"jsons/Units.json").read_text(encoding="utf-8"))
 units_by_name={u["name"]:u for u in units}
 for name in ("Beastmaster","Lizardman Beastmaster","Myconid"):
