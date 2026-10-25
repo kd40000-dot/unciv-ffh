@@ -119,7 +119,9 @@ def main():
         '    var turnAcquired = 0',
         '''    var turnAcquired = 0
     /** EMM event cooldown, keyed by event name. Persisted across saves. */
-    var emmEventLastTurn = HashMap<String, Int>()''')
+    var emmEventLastTurn = HashMap<String, Int>()
+    /** Prevent repeated event rolls on same turn after reload. */
+    var emmEventCheckedTurn = -1''')
     # Source-inspired FfH/EMM war weariness. The original tracks a score
     # per opposing team and applies per-city percentage reductions.
     replace_once(root, base+"logic/civilization/Civilization.kt",
@@ -173,9 +175,11 @@ def main():
 
         for (city in civInfo.cities) {
             city.hasSoldBuildingThisTurn = false
-            val crime = city.cityStats.emmCrimeModifier
             val turn = civInfo.gameInfo.turns
-            // Temporary source-mapped prototype: Dungeon supplies a persistent
+            if (city.emmEventCheckedTurn == turn) continue
+            city.emmEventCheckedTurn = turn
+            val crime = city.cityStats.emmCrimeModifier
+            // EXPERIMENTAL NON-EMM EVENT: Dungeon supplies a persistent
             // negative crime modifier, reducing incident risk. Incidents do not
             // overwrite city buildings or launch without a legitimate city.
             val incidentChance = (5 + crime).coerceIn(0, 30)
