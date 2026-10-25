@@ -172,8 +172,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Blinding Light",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_BLOOM",
@@ -271,8 +271,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Charm Person",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_CONSUME_SOUL",
@@ -513,8 +513,8 @@
     "python": true,
     "declaredEffect": "review XML",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Destroy Undead",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_DISPEL_MAGIC",
@@ -1063,8 +1063,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Fair Winds",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_FEAST",
