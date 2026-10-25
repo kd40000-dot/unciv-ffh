@@ -3159,522 +3159,522 @@ TileSets/AbsoluteUnits/Units/Severed Soul (Summoned)-Amurites
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Adept-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Adept-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Adept-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archer-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Assassin-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Assassin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Assassin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Axeman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Axeman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Axeman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Beastmaster-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Beastmaster-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beastmaster-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Berserker-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Berserker-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Berserker-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Caravel-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Caravel-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Caravel-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Catapult-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Catapult-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Catapult-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Champion-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Champion-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Champion-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Chariot-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Chariot-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Chariot-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Crossbowman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Crossbowman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Crossbowman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Eidolon-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Eidolon-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Eidolon-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Frigate-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Frigate-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frigate-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galleon-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galleon-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galleon-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galley-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galley-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galley-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horse Archer-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horse Archer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horse Archer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horseman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horseman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horseman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Hunter-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Hunter-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Hunter-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Knight-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Knight-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Knight-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Longbowman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Longbowman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longbowman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Marksman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Marksman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Marksman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Paladin-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Paladin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Phalanx-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Phalanx-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Phalanx-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Privateer-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Privateer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Privateer-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Queen Of The Line-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Queen Of The Line-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Queen Of The Line-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Ranger-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Ranger-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -3699,42 +3699,42 @@ TileSets/AbsoluteUnits/Units/Scout-Balseraphs
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Trireme-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Trireme-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Trireme-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/War Elephant-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/War Elephant-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Elephant-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -3759,62 +3759,62 @@ TileSets/AbsoluteUnits/Units/Warrior-Balseraphs
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Workboat-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Workboat-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Workboat-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Mage-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Mage-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archmage-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archmage-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -4279,662 +4279,662 @@ TileSets/AbsoluteUnits/Units/Severed Soul (Summoned)-Balseraphs
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Adept-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Adept-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Adept-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archer-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Assassin-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Assassin-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Assassin-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Axeman-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Axeman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Axeman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Beastmaster-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Beastmaster-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beastmaster-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Berserker-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Berserker-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Berserker-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Caravel-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Caravel-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Caravel-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Catapult-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Catapult-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Catapult-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Champion-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Champion-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Champion-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Chariot-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Chariot-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Chariot-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Crossbowman-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Crossbowman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Crossbowman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Eidolon-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Eidolon-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Eidolon-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Frigate-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Frigate-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frigate-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galleon-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galleon-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galleon-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galley-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galley-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galley-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horse Archer-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horse Archer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horse Archer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horseman-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horseman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horseman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Hunter-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Hunter-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Hunter-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Knight-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Knight-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Knight-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Longbowman-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Longbowman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longbowman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Marksman-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Marksman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Marksman-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Paladin-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Paladin-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Phalanx-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Phalanx-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Phalanx-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Privateer-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Privateer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Privateer-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Queen Of The Line-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Queen Of The Line-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Queen Of The Line-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Ranger-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Ranger-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Scout-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Scout-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Scout-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Trireme-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Trireme-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Trireme-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/War Elephant-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/War Elephant-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Elephant-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Warrior-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Warrior-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Warrior-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Workboat-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Workboat-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Workboat-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Mage-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Mage-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archmage-Bannor.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archmage-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-Bannor
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -5399,662 +5399,662 @@ TileSets/AbsoluteUnits/Units/Severed Soul (Summoned)-Bannor
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Adept-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Adept-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Adept-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archer-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Assassin-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Assassin-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Assassin-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Axeman-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Axeman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Axeman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Beastmaster-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Beastmaster-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beastmaster-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Berserker-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Berserker-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Berserker-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Caravel-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Caravel-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Caravel-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Catapult-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Catapult-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Catapult-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Champion-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Champion-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Champion-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Chariot-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Chariot-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Chariot-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Crossbowman-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Crossbowman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Crossbowman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Eidolon-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Eidolon-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Eidolon-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Frigate-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Frigate-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frigate-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galleon-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galleon-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galleon-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galley-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galley-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galley-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horse Archer-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horse Archer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horse Archer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horseman-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horseman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horseman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Hunter-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Hunter-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Hunter-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Knight-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Knight-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Knight-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Longbowman-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Longbowman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longbowman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Marksman-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Marksman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Marksman-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Paladin-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Paladin-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Phalanx-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Phalanx-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Phalanx-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Privateer-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Privateer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Privateer-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Queen Of The Line-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Queen Of The Line-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Queen Of The Line-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Ranger-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Ranger-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Scout-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Scout-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Scout-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Trireme-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Trireme-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Trireme-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/War Elephant-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/War Elephant-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Elephant-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Warrior-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Warrior-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Warrior-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Workboat-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Workboat-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Workboat-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Mage-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Mage-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archmage-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archmage-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -6519,642 +6519,642 @@ TileSets/AbsoluteUnits/Units/Severed Soul (Summoned)-Calabim
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Adept-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Adept-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Adept-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archer-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Assassin-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Assassin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Assassin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Axeman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Axeman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Axeman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Beastmaster-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Beastmaster-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beastmaster-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Berserker-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Berserker-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Berserker-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Caravel-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Caravel-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Caravel-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Catapult-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Catapult-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Catapult-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Champion-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Champion-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Champion-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Chariot-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Chariot-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Chariot-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Crossbowman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Crossbowman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Crossbowman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Eidolon-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Eidolon-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Eidolon-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Frigate-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Frigate-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frigate-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galleon-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galleon-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galleon-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Galley-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Galley-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Galley-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horse Archer-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horse Archer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horse Archer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Horseman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Horseman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Horseman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Hunter-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Hunter-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Hunter-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Knight-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Knight-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Knight-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Longbowman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Longbowman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Longbowman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Marksman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Marksman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Marksman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Paladin-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Paladin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Paladin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Phalanx-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Phalanx-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Phalanx-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Privateer-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Privateer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Privateer-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Queen Of The Line-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Queen Of The Line-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Queen Of The Line-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Ranger-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Ranger-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ranger-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Scout-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Scout-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Scout-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Trireme-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Trireme-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Trireme-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/War Elephant-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/War Elephant-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/War Elephant-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Workboat-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Workboat-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Workboat-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Mage-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Mage-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mage-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Archmage-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Archmage-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Archmage-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -23299,182 +23299,182 @@ TileSets/AbsoluteUnits/Units/Severed Soul (Summoned)-Svartalfar
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Goblin-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Goblin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Goblin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Shaman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Shaman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Shaman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Wolf Rider-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Wolf Rider-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Wolf Rider-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Lizardman-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Lizardman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lizardman-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Ogre-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Ogre-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ogre-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Lizardman Ranger-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Lizardman Ranger-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lizardman Ranger-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Lizardman Assassin-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Lizardman Assassin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lizardman Assassin-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Lizardman Beastmaster-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Lizardman Beastmaster-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lizardman Beastmaster-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Stoneskin Ogre-Clan of Embers.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Stoneskin Ogre-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Stoneskin Ogre-Clan of Embers
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -23519,162 +23519,162 @@ TileSets/AbsoluteUnits/Units/Flurry-Ljosalfar
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Balseraphs Swordsman-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Balseraphs Swordsman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Balseraphs Swordsman-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Mimic-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Mimic-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Mimic-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Harlequin-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Harlequin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Harlequin-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Taskmaster-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Taskmaster-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Taskmaster-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Bloodpet-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Bloodpet-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bloodpet-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Moroi-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Moroi-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Moroi-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Vampire-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Vampire-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Vampire-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Brujah-Calabim.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Brujah-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Brujah-Calabim
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
