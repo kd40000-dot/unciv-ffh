@@ -130,6 +130,8 @@ def main():
         // Unciv has no culture-weighted plot-ownership shares; ownership is
         // a provisional binary proxy for that original calculation.
         if (attacker is MapUnitCombatant && defender is MapUnitCombatant &&
+            !attacker.getCivInfo().isBarbarian && !defender.getCivInfo().isBarbarian &&
+            attacker.unit.emmSummonTurnsLeft == 0 && defender.unit.emmSummonTurnsLeft == 0 &&
             attacker.getCivInfo().isAtWarWith(defender.getCivInfo())) {
             val attackingCiv = attacker.getCivInfo()
             val defendingCiv = defender.getCivInfo()
