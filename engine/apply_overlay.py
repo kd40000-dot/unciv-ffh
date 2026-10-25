@@ -126,6 +126,22 @@ def main():
     /** EMM war-weariness modifier; pending war weariness integration. */
     var emmWarWearinessPercent = 0''')
     replace_once(root, base+"logic/city/CityStats.kt",
+        'class CityStats(val city: City) {',
+        '''class CityStats(val city: City) {
+    /** EMM building-driven crime modifier. Event gating remains pending. */
+    val emmCrimeModifier: Int
+        get() = city.cityConstructions.builtBuildings.sumOf { name ->
+            city.civ.gameInfo.ruleset.buildings[name]?.emmCrime ?: 0
+        }
+
+    /** Local multiplicative war-weariness modifier. Currently calculated,
+     * but will only have an effect when EMM weariness is ported. */
+    val emmWarWearinessMultiplier: Float
+        get() = (100 + city.cityConstructions.builtBuildings.sumOf { name ->
+            city.civ.gameInfo.ruleset.buildings[name]?.emmWarWearinessPercent ?: 0
+        }).coerceAtLeast(0) / 100f
+''')
+    replace_once(root, base+"logic/city/CityStats.kt",
         '        return foodEaten\\n    }',
         '''        // EMM health prototype: population creates unhealth; public
         // sanitation buildings counter it. Do not add their health directly
