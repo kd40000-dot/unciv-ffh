@@ -414,5 +414,51 @@
       "Civilian Water"
     ],
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Mutation",
+    "sourceId": "SPELL_MUTATION",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Mutation (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Temperance",
+    "sourceId": "SPELL_TEMPERANCE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Temperance (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Poisoned Blade",
+    "sourceId": "SPELL_POISONED_BLADE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Poisoned Blade (Spell)",
+    "duration": 2,
+    "eligibleUnitTypes": [
+      "Sword"
+    ],
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Shadowwalk",
+    "sourceId": "SPELL_SHADOWWALK",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Shadowwalk (Spell)",
+    "duration": 2,
+    "landOnly": true,
+    "maxCastsPerTurn": 1
   }
 ]
