@@ -14,10 +14,14 @@ for name,crime in {"Courthouse":-10,"Market":5,"Gambling House":5,
     assert by_name[name]["emmCrime"] == crime
 for name,rate in {"Herbalist":10,"Infirmary":25,"Inn":25}.items():
     assert by_name[name]["emmCityHealingPercent"] == rate
+for name,resources in {"Herbalist":["Spices"],"Granary":["Wheat"],"Smokehouse":["Cattle","Sheep","Deer"],"Harbor":["Fish"]}.items():
+    assert by_name[name]["emmHealthResourceBonuses"] == resources
 assert by_name["Dungeon"]["emmCrime"] == -10
 assert by_name["Dungeon"]["emmWarWearinessPercent"] == -25
 overlay=(root/"engine/apply_overlay.py").read_text(encoding="utf-8")
 assert "var emmHealth = 0" in overlay
+assert "var emmHealthResourceBonuses = ArrayList<String>()" in overlay
+assert "city.civ.getResourceAmount(resource) > 0" in overlay
 assert "var emmCityHealingPercent = 0" in overlay
 assert "healing = healing * (100 + healingPercent) / 100" in overlay
 assert "populationUnhealth - buildingHealth" in overlay
