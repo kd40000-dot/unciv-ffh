@@ -112,6 +112,9 @@ object EmmSpellEngine {
         val spell = definition(caster, name) ?: return false
         if (!validDefinition(spell, name)) return false
         if (caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn) return false
+        val casterTile = caster.getTile()
+        if (spell.requiredBaseTerrain.isNotBlank() && casterTile.baseTerrain != spell.requiredBaseTerrain) return false
+        if (spell.requiredTerrainFeature.isNotBlank() && spell.requiredTerrainFeature !in casterTile.terrainFeatures) return false
         // Do not allow direct calls to bypass the real learned promotion/unique.
         if (caster.getMatchingUniques(UniqueType.EmmSpell).none { it.params[0] == name }) return false
         return when (spell.effect) {
