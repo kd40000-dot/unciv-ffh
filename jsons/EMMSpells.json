@@ -333,5 +333,19 @@
       "Sword"
     ],
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Rust",
+    "sourceId": "SPELL_RUST",
+    "target": "ENEMY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Rusted (Spell)",
+    "removeStatus": "Enchanted Blade (Spell)",
+    "duration": -1,
+    "eligibleUnitTypes": [
+      "Sword"
+    ],
+    "maxCastsPerTurn": 1
   }
 ]
