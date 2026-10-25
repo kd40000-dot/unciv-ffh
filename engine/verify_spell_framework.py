@@ -40,6 +40,8 @@ for spell in spells:
         assert len(set(spell["removeStatuses"])) == len(spell["removeStatuses"]), name
         assert not any(not status.strip() for status in spell["removeStatuses"]), name
         assert all(status in promotions for status in spell["removeStatuses"]), name
+    for promotion in spell.get("eligiblePromotions", []):
+        assert promotion in promotions, (name, promotion)
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
         assert spell.get("summonDuration", 0) >= 0, name
@@ -110,4 +112,13 @@ assert dispel["effect"] == "CLEANSE" and dispel["target"] == "FRIENDLY"
 assert dispel["radius"] == 1
 assert set(dispel["removeStatuses"]) == {"Withered (Spell)", "Rusted (Spell)"}
 assert any(u.startswith("Can cast EMM spell [Dispel Magic]") for u in promotions["Metamagic II"]["uniques"])
+# Native recipient-effect migration. These still have documented EMM fidelity gaps.
+for sphere, name in (("Life II", "Destroy Undead"), ("Mind II", "Charm Person"),
+                     ("Sun II", "Blinding Light"), ("Air I", "Fair Winds")):
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[sphere]["uniques"]), name
+assert by_name["Destroy Undead"]["eligiblePromotions"] == ["Undead"]
+assert by_name["Destroy Undead"]["effect"] == "DAMAGE"
+assert by_name["Charm Person"]["target"] == "ENEMY"
+assert by_name["Blinding Light"]["target"] == "ENEMY"
+assert by_name["Fair Winds"]["eligibleUnitTypes"] == ["Melee Water", "Civilian Water"]
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
