@@ -68,8 +68,7 @@ object EmmSpellEngine {
         targets(caster, spell)
             .filter { it.isMilitary() && "Loyalty (Spell)" !in it.promotions.promotions &&
                 !it.hasStatus("Loyalty (Spell)") }
-            .maxWithOrNull(compareBy<MapUnit> { it.baseUnit.strength * 10 }
-                .thenBy { it.health })
+            .maxByOrNull { it.baseUnit.strength * 10 }
 
     private fun damageAllowed(target: MapUnit, spell: EMMSpell): Int {
         // FfH2 iDamageLimit caps TOTAL accrued damage, not damage dealt per cast.
