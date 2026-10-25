@@ -234,5 +234,39 @@
     "immobileOnCreate": false,
     "maxActivePerCaster": 1,
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Snowfall",
+    "sourceId": "SPELL_SNOWFALL",
+    "target": "ENEMY",
+    "effect": "DAMAGE",
+    "radius": 1,
+    "amount": 40,
+    "damageLimit": 70,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Wither",
+    "sourceId": "SPELL_WITHER",
+    "target": "ENEMY",
+    "effect": "DAMAGE_STATUS",
+    "radius": 1,
+    "amount": 10,
+    "damageLimit": 40,
+    "status": "Withered (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Regeneration",
+    "sourceId": "SPELL_REGENERATION",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Regeneration (Spell)",
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
   }
 ]
