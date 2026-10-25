@@ -5,6 +5,7 @@ import com.unciv.models.ruleset.EMMSpell
 import com.unciv.models.ruleset.unique.UniqueType
 import kotlin.math.min
 import kotlin.math.max
+import kotlin.random.Random
 
 /**
  * EMM spell executor shared by ruleset-defined spells.
@@ -62,13 +63,29 @@ object EmmSpellEngine {
             .toList()
     }
 
-    /** EMM selects a single strongest, least resistant viable adjacent enemy.
-     * Exact Civ IV spell resistance is not yet available in the Unciv engine. */
-    private fun dominationTarget(caster: MapUnit, spell: EMMSpell): MapUnit? =
-        targets(caster, spell)
-            .filter { it.isMilitary() && "Loyalty (Spell)" !in it.promotions.promotions &&
-                !it.hasStatus("Loyalty (Spell)") }
-            .maxByOrNull { it.baseUnit.strength * 10 }
+    /**
+     * EMM CvUnit::getResistChance: base 20 + level*5 + spell modifier 10,
+     * city +10, clamped 5..100. Unciv does not yet expose the full EMM
+     * promotion/civilization/city resistance-stat aggregation; such bonuses
+     * must be added here before this counts as source-exact.
+     */
+    private fun dominationResistChance(target: MapUnit): Int {
+        val level = target.promotions.numberOfPromotions + 1
+        val cityBonus = if (target.getTile().isCityCenter()) 10 else 0
+        return (20 + level * 5 + 10 + cityBonus).coerceIn(5, 100)
+    }
+
+    private fun dominationTarget(caster: MapUnit, spell: EMMSpell): MapUnit? {
+        val maximumResistance = if (caster.civ.isHuman()) 95 else 20
+        return targets(caster, spell)
+            .filter { it.isMilitary() &&
+                "Loyalty (Spell)" !in it.promotions.promotions &&
+                !it.hasStatus("Loyalty (Spell)") &&
+                dominationResistChance(it) <= maximumResistance }
+            .maxByOrNull {
+                it.baseUnit.strength * 10 + (100 - dominationResistChance(it))
+            }
+    }
 
     private fun damageAllowed(target: MapUnit, spell: EMMSpell): Int {
         // FfH2 iDamageLimit caps TOTAL accrued damage, not damage dealt per cast.
@@ -159,10 +176,15 @@ object EmmSpellEngine {
         if (spell.effect == "DOMINATE") {
             val target = dominationTarget(caster, spell)
             if (target != null) {
-                // Capture API updates both civilizations' unit registries and
-                // rehomes the unit if its destination tile becomes illegal.
-                target.capturedBy(caster.civ)
-                target.currentMovement = 0f
+                // EMM rolls 0..99; a resisted Domination removes Mind III.
+                if (Random.nextInt(100) < dominationResistChance(target)) {
+                    caster.promotions.removePromotion("Mind III")
+                } else {
+                    // The capture API updates both ownership registries.
+                    target.capturedBy(caster.civ)
+                    target.currentMovement = 0f
+                }
+                // Failed/resisted casts still consume the caster's action.
                 applied = true
             }
         } else if (spell.effect == "SUMMON") {
