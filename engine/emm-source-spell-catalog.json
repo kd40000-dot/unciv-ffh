@@ -150,8 +150,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: religion, priest or non-sphere casting",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Bless",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_BLESSING",
@@ -876,8 +876,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Enchant Spellstaff",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ENCHANTED_BLADE",
@@ -1316,8 +1316,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Esus Blur",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ESUS_HASTE",
@@ -1327,8 +1327,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Esus Haste",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ESUS_POISONED_BLADE",
@@ -1338,8 +1338,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Esus Poisoned Blade",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ESUS_REGENERATION",
@@ -1349,8 +1349,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Esus Regeneration",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ESUS_SHADOWWALK",
@@ -1360,8 +1360,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Esus Shadowwalk",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_EXTORT",
@@ -1811,8 +1811,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: EMM special unit ability, faction world spell or Python mechanics; source review needed",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Potion of Invisibility",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_POTION_OF_RESTORATION",
@@ -1987,8 +1987,8 @@
     "python": true,
     "declaredEffect": "review XML",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Resurrection",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_RESSURECTION_GRAVEYARD",
@@ -2207,8 +2207,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Deferred: religion, priest or non-sphere casting",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Shield of Faith",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_SING",
