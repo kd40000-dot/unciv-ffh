@@ -32,6 +32,8 @@ for spell in spells:
         for promotion in promotions.values()
         for u in promotion.get("uniques", [])
     ), f"No native cast action registered for {name}"
+    if spell.get("removeStatus"):
+        assert spell["removeStatus"] in promotions, (name, spell["removeStatus"])
     if spell["effect"] in {"STATUS", "DAMAGE_STATUS"}:
         assert spell["status"] in promotions, name
         assert spell["duration"] == -1 or spell["duration"] >= 1, name
@@ -140,6 +142,10 @@ for sphere, name in (("Nature I", "Treetop Tactics"), ("Law III", "Valor"),
 assert by_name["Slow"]["target"] == "ENEMY"
 assert by_name["Domination"]["target"] == "ENEMY"
 assert by_name["Hide"]["status"] == "Hidden (Spell)"
+assert by_name["Slow"]["status"] == "Slowed"
+assert by_name["Haste"]["removeStatus"] == "Slowed"
+assert by_name["Treetop Tactics"]["requiredTerrainFeature"] == "Forest"
+assert by_name["Summon Sand Lion"]["requiredBaseTerrain"] == "Desert"
 assert by_name["Treetop Tactics"]["target"] == "SELF"
 for promo, name, expected_unit in (
     ("Metamagic I", "Floating Eye", "Floating Eye (Summoned)"),
