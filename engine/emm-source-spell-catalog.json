@@ -524,8 +524,8 @@
     "python": true,
     "declaredEffect": "review XML",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Dispel Magic",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_DISRUPT",
