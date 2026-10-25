@@ -469,7 +469,8 @@
     "radius": 0,
     "status": "Treetop Tactics",
     "duration": 2,
-    "maxCastsPerTurn": 1
+    "maxCastsPerTurn": 1,
+    "requiredTerrainFeature": "Forest"
   },
   {
     "name": "Valor",
@@ -542,6 +543,7 @@
     "summonUnit": "Sand Lion (Summoned)",
     "summonDuration": 1,
     "maxActivePerCaster": 1,
-    "maxCastsPerTurn": 1
+    "maxCastsPerTurn": 1,
+    "requiredBaseTerrain": "Desert"
   }
 ]
