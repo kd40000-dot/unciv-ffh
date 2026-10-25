@@ -887,8 +887,8 @@
     "python": false,
     "declaredEffect": "buff",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Enchanted Blade",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_ENTANGLE",
