@@ -1129,8 +1129,8 @@
     "python": false,
     "declaredEffect": "summon",
     "inventoryNotes": "Dev branch: action or explicitly marked proxy; static CI, Android pending",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Floating Eye",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_FOR_THE_HORDE",
@@ -2526,8 +2526,8 @@
     "python": true,
     "declaredEffect": "summon",
     "inventoryNotes": "Development branch: Malakim Channeling II casters on Desert summon persistent Sand Lion (manual dismissal); Android unverified",
-    "nativeSpell": null,
-    "integration": "requires-engine-review"
+    "nativeSpell": "Summon Sand Lion",
+    "integration": "native-registered"
   },
   {
     "sourceId": "SPELL_SUMMON_SPECTRE",
