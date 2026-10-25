@@ -91,11 +91,11 @@ def collect():
     atlas_path=root/"placeholder-generated.atlas"
     atlas=atlas_path.read_text()
     for row in targets:
-        line=row["path"]+"\\nsize: 128, 128"
-        replacement=row["path"]+"\\nsize: 512, 512"
+        line=row["path"]+"\nsize: 128, 128"
+        replacement=row["path"]+"\nsize: 512, 512"
         assert atlas.count(line)==1, (row["unit"],atlas.count(line))
         start=atlas.index(line)
-        end=atlas.find("\\n\\n",start)
+        end=atlas.find("\n\n",start)
         if end<0:end=len(atlas)
         section=atlas[start:end]
         section=section.replace("size: 128, 128","size: 512, 512")
