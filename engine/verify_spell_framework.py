@@ -84,4 +84,15 @@ assert "[+20]% Strength" in promotions["Enchanted Blade (Spell)"]["uniques"]
 assert any(u.startswith("Can cast EMM spell [Enchanted Blade]") for u in promotions["Enchantment I"]["uniques"])
 assert not any("Enchanted Blade Aura" in u for u in promotions["Enchantment I"]["uniques"])
 
+
+rust = by_name["Rust"]
+assert rust["sourceId"] == "SPELL_RUST"
+assert rust["effect"] == "STATUS" and rust["target"] == "ENEMY"
+assert rust["radius"] == 1 and rust["duration"] == -1
+assert rust["eligibleUnitTypes"] == ["Sword"]
+assert rust["removeStatus"] == "Enchanted Blade (Spell)"
+assert "[-10]% Strength" in promotions["Rusted (Spell)"]["uniques"]
+assert any(u.startswith("Can cast EMM spell [Rust]") for u in promotions["Entropy I"]["uniques"])
+assert not any("gains the [Rusted (Spell)] status" in u for u in promotions["Entropy I"]["uniques"])
+
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
