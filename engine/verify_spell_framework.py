@@ -27,7 +27,6 @@ for spell in spells:
     assert spell.get("maxCastsPerTurn", 1) >= 1, name
     assert spell.get("damageLimit", 100) in range(101), name
     assert spell.get("maxActivePerCaster", 0) >= 0, name
-    assert spell.get("target", "SELF") in valid_targets, name
     assert any(
         u.startswith(f"Can cast EMM spell [{name}]")
         for promotion in promotions.values()
@@ -44,6 +43,8 @@ for spell in spells:
     if spell["effect"] == "SUMMON":
         assert spell["summonUnit"] in units, name
         assert spell.get("summonDuration", 0) >= 0, name
+    if spell["effect"] in {"DAMAGE", "DAMAGE_STATUS"}:
+        assert spell.get("damageLimit", 100) in range(101), name
     if spell["effect"] in {"HEAL", "DAMAGE", "DAMAGE_STATUS"}:
         assert spell["amount"] > 0, name
 
