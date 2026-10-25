@@ -32,6 +32,8 @@ class EMMSpell {
     /** Repair and similar spells accept a union of these unit types and name categories. */
     var eligibleUnitTypes = ArrayList<String>()
     var eligibleNameContains = ArrayList<String>()
+    /** Qualifying unit promotions; match any alongside name/type criteria. */
+    var eligiblePromotions = ArrayList<String>()
     /** EMM bImmobileUnitCreate: summoned unit cannot move in its creation turn. */
     var immobileOnCreate: Boolean = false
     /** 0 is unlimited; otherwise prevents one caster maintaining excess summons. */
