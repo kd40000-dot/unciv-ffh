@@ -1789,7 +1789,9 @@
       "civilization": "Balseraphs",
       "race": "human",
       "status": "placeholder",
-      "source": "procedural flat 2D silhouette, not canonical EMM artwork"
+      "source": "individually constructed faceless Balseraph carnival character, NOT a recolor of an Amurite sprite",
+      "revision": "bespoke-harlequin-v3",
+      "reviewNeeded": true
     },
     {
       "path": "Images/TileSets/AmuritesSimple/Units/Generated/Trireme-Balseraphs.png",
@@ -1813,7 +1815,9 @@
       "civilization": "Balseraphs",
       "race": "human",
       "status": "placeholder",
-      "source": "procedural flat 2D silhouette, not canonical EMM artwork"
+      "source": "individually constructed faceless Balseraph carnival character, NOT a recolor of an Amurite sprite",
+      "revision": "bespoke-harlequin-v3",
+      "reviewNeeded": true
     },
     {
       "path": "Images/TileSets/AmuritesSimple/Units/Generated/Workboat-Balseraphs.png",

@@ -3679,22 +3679,22 @@ TileSets/AbsoluteUnits/Units/Ranger-Balseraphs
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Scout-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Scout-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Scout-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
@@ -3739,22 +3739,22 @@ TileSets/AbsoluteUnits/Units/War Elephant-Balseraphs
   index: -1
 
 Images/TileSets/AmuritesSimple/Units/Generated/Warrior-Balseraphs.png
-size: 128, 128
+size: 512, 512
 format: RGBA8888
 filter: Linear, Linear
 repeat: none
 TileSets/AmuritesSimple/Units/Warrior-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Warrior-Balseraphs
   rotate: false
   xy: 0, 0
-  size: 128, 128
-  orig: 128, 128
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1
 
