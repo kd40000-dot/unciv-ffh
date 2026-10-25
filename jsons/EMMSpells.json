@@ -319,5 +319,19 @@
     "eligibleUnitTypes": [
       "Archery"
     ]
+  },
+  {
+    "name": "Enchanted Blade",
+    "sourceId": "SPELL_ENCHANTED_BLADE",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Enchanted Blade (Spell)",
+    "removeStatus": "Rusted (Spell)",
+    "duration": -1,
+    "eligibleUnitTypes": [
+      "Sword"
+    ],
+    "maxCastsPerTurn": 1
   }
 ]
