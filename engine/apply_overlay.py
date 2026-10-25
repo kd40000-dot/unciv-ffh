@@ -190,6 +190,9 @@ def main():
                 // Automatic consequence while interactive Civ IV event choices
                 // are not ported: the city pays an upkeep loss.
                 civInfo.addGold(-10)
+                civInfo.addNotification(
+                    "A crime incident in [${city.name}] cost [10] Gold",
+                    city.location, NotificationCategory.General)
             }
         }''')
     replace_once(root, base+"logic/city/CityStats.kt",
