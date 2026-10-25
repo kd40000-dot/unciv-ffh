@@ -32,3 +32,18 @@ Source-confirmed EMM Python example: `python/entrypoints/CvRandomEventInterface.
 8. Compare cities with independent event state; crime modifiers only affect the owning city.
 
 **Current status:** implementation committed but Python patcher, Kotlin compilation and Android gameplay not yet verified for this branch.
+
+## Source XML inventory importer
+
+`engine/import_emm_events.py` parses pinned EMM `XML/Events/CIV4EventTriggerInfos.xml` and `XML/Events/CIV4EventInfos.xml`, recording trigger weights, city and population prerequisites, recurring flags, world-counter thresholds, building/religion prerequisites, and option IDs; event options record fixed effects and Python callback names.
+
+Usage on a checkout of the pinned EMM source:
+
+```sh
+python3 engine/import_emm_events.py \
+  /path/to/extramodmod/XML/Events/CIV4EventTriggerInfos.xml \
+  /path/to/extramodmod/XML/Events/CIV4EventInfos.xml \
+  engine/emm-event-source-catalog.json
+```
+
+This is an audit/import tool, not proof that every source event is playable. In particular, the source's `EVENTTRIGGER_ORDER_VS_VEIL` requires both The Order and Ashen Veil and a sufficiently high world counter, while `EVENT_ORDER_VS_VEIL_4` specifically requires a Dungeon. Those conditions cannot be replaced with a generic crime incident without changing EMM gameplay.
