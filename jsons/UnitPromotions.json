@@ -1574,7 +1574,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "[This Unit] gains [1] movement <for [0] movement> <once>"
+      "Can cast EMM spell [Enchant Spellstaff]"
     ],
     "civilopediaText": [
       {
@@ -1898,7 +1898,7 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling III]>",
-      "Free [Returned Soul (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Resurrection]"
     ],
     "civilopediaText": [
       {
@@ -2695,6 +2695,61 @@
       {
         "text": "Native status applied by Slow. Reduces recipient movement by one until its duration expires or Haste removes it. Engine-native spell prototype pending EMM resistance, duration and caster selection verification."
       }
+    ]
+  },
+  {
+    "name": "Esus Agent",
+    "uniques": [
+      "Can cast EMM spell [Esus Blur]",
+      "Can cast EMM spell [Esus Haste]",
+      "Can cast EMM spell [Esus Poisoned Blade]",
+      "Can cast EMM spell [Esus Regeneration]",
+      "Can cast EMM spell [Esus Shadowwalk]",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Experimental: EMM Esus agent spell permissions. The mod does not yet grant Esus Agent through religion gameplay; developer-granted units can test the associated native spell actions."
+      }
+    ]
+  },
+  {
+    "name": "Potion of Invisibility (Item)",
+    "uniques": [
+      "Can cast EMM spell [Potion of Invisibility]",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Experimental item access; equipment acquisition, charges and consumable semantics not yet wired."
+      }
+    ]
+  },
+  {
+    "name": "Divine Spellcaster (EMM)",
+    "uniques": [
+      "Can cast EMM spell [Bless]",
+      "Can cast EMM spell [Shield of Faith]",
+      "Not shown on world screen"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Experimental priest spell permissions. Proper religion and Channeling II restrictions are not yet implemented."
+      }
+    ]
+  },
+  {
+    "name": "Bless (Spell)",
+    "uniques": [
+      "[+10]% Strength",
+      "Not shown on world screen"
+    ]
+  },
+  {
+    "name": "Shield of Faith (Spell)",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "Not shown on world screen"
     ]
   }
 ]
