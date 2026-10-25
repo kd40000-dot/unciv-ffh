@@ -64,7 +64,15 @@ object EmmSpellEngine {
     private fun damageAllowed(target: MapUnit, spell: EMMSpell): Int {
         // FfH2 iDamageLimit caps TOTAL accrued damage, not damage dealt per cast.
         val remainingAllowed = spell.damageLimit - (100 - target.health)
-        return max(0, min(spell.amount, remainingAllowed))
+        var actualDamage = spell.amount
+        // EMM Stoneskin (PROMOTION_STONESKIN): 50% resist to each of these
+        // seven named elemental types. Other inherent/promotional resistances
+        // still require source-backed integration with the creature registry.
+        val resistedByStoneskin = setOf("COLD", "DEATH", "FIRE", "HOLY",
+            "LIGHTNING", "POISON", "UNHOLY")
+        if (target.hasStatus("Stoneskin (Spell)") && spell.damageType in resistedByStoneskin)
+            actualDamage = (actualDamage * 50) / 100
+        return max(0, min(actualDamage, remainingAllowed))
     }
 
     private fun wouldChange(target: MapUnit, spell: EMMSpell): Boolean =
