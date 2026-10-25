@@ -1,0 +1,1110 @@
+{
+  "created": [
+    {
+      "unit": "Adept",
+      "faction": null,
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Archer",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Assassin",
+      "faction": null,
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Axeman",
+      "faction": null,
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Beastmaster",
+      "faction": null,
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Berserker",
+      "faction": null,
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Caravel",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Champion",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Chariot",
+      "faction": null,
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Crossbowman",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Eidolon",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Galleon",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Horse Archer",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Horseman",
+      "faction": null,
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Hunter",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Knight",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Longbowman",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Marksman",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Paladin",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Phalanx",
+      "faction": null,
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Privateer",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Queen Of The Line",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Ranger",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Scout",
+      "faction": null,
+      "role": "spear",
+      "bounds": [
+        216,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Trireme",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Swordsman",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Firebow",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Chanter",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Goblin",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        208,
+        198,
+        340,
+        476
+      ],
+      "polygons": 40
+    },
+    {
+      "unit": "Shaman",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Lizardman",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Ogre",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        197,
+        155,
+        362,
+        478
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Lizardman Ranger",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Lizardman Assassin",
+      "faction": null,
+      "role": "dagger",
+      "bounds": [
+        199,
+        191,
+        354,
+        477
+      ],
+      "polygons": 35
+    },
+    {
+      "unit": "Lizardman Beastmaster",
+      "faction": null,
+      "role": "axe",
+      "bounds": [
+        188,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Stoneskin Ogre",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        197,
+        155,
+        362,
+        478
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Ljosalfar Swordsman",
+      "faction": "Ljosalfar",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Flurry",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mage",
+      "faction": null,
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Archmage",
+      "faction": null,
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Wizard",
+      "faction": null,
+      "role": "staff",
+      "bounds": [
+        211,
+        171,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Balseraphs Swordsman",
+      "faction": "Balseraphs",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Mimic",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Harlequin",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Taskmaster",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Moroi",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Vampire",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 38
+    },
+    {
+      "unit": "Brujah",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Beastman",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Doviello Shaman",
+      "faction": "Doviello",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Sons Of Asena",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Javelin Thrower",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Battlemaster",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Circle Of Urd",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Bison Rider",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Verdandi",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Devout",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Illians Javelin Thrower",
+      "faction": "Illians",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Dwarven Slinger",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Boar Rider",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Myconid",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Hornguard",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Kuriotates Swordsman",
+      "faction": "Kuriotates",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Centaur",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Centaur Archer",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Centaur Charger",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Centaur Lancer",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Lanun Swordsman",
+      "faction": "Lanun",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Boarding Party",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "War Tortoise",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Pirate",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Fyrdwell",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Mud Golem",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Wood Golem",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Luchuirp Dwarven Slinger",
+      "faction": "Luchuirp",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Luchuirp Boar Rider",
+      "faction": "Luchuirp",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Iron Golem",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Gargoyle",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Clockwork Golem",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Luchuirp Hornguard",
+      "faction": "Luchuirp",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Nullstone Golem",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Malakim Swordsman",
+      "faction": "Malakim",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Camel Archer",
+      "faction": null,
+      "role": "bow",
+      "bounds": [
+        197,
+        187,
+        354,
+        477
+      ],
+      "polygons": 37
+    },
+    {
+      "unit": "Pyre Zombie",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Divided Soul",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Ghost",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Svartalfar Swordsman",
+      "faction": "Svartalfar",
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Nyxkin",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Lightbringer",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Lucian",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    },
+    {
+      "unit": "Slave",
+      "faction": null,
+      "role": "sword",
+      "bounds": [
+        207,
+        191,
+        354,
+        477
+      ],
+      "polygons": 36
+    }
+  ],
+  "preserved": [
+    "Warrior",
+    "Bloodpet"
+  ],
+  "excluded": [
+    "Catapult",
+    "Frigate",
+    "Galley",
+    "War Elephant",
+    "Workboat",
+    "Wolf Rider",
+    "Dragon Slayer",
+    "Trebuchet"
+  ]
+}
