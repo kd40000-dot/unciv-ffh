@@ -1934,7 +1934,8 @@
     ],
     "uniques": [
       "Only available <for units with [Channeling II]>",
-      "Remove [All] improvements from this tile <for all movement> <in [Raw Mana] tiles> <in [your] tiles>"
+      "Remove [All] improvements from this tile <for all movement> <in [Raw Mana] tiles> <in [your] tiles>",
+      "Can cast EMM spell [Dispel Magic]"
     ],
     "civilopediaText": [
       {
