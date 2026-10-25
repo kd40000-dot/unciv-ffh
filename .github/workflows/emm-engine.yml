@@ -6,6 +6,7 @@ on:
     branches:
       - feature/emm-engine-2026-10-25
       - feature/emm-engine-framework-2026-10-25
+      - checkpoint/emm-spell-wiring-inventory-2026-10-25
     paths:
       - "engine/**"
       - "jsons/**"
@@ -49,6 +50,7 @@ jobs:
         run: |
           python3 -m py_compile ffh-mod/engine/apply_overlay.py
           python3 ffh-mod/engine/verify_spell_framework.py
+          python3 ffh-mod/engine/verify_355_spell_wiring.py
       - name: Check patch diff for whitespace errors
         working-directory: unciv-source
         run: git diff --check
