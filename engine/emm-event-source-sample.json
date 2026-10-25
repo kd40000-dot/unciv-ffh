@@ -1,0 +1,33 @@
+{
+  "pinnedSource": "bewlay/extramodmod@60b0ec3740083162aaab7bf8491761a54a65a610",
+  "triggers": [
+    {
+      "sourceId": "EVENTTRIGGER_ORDER_VS_VEIL",
+      "weight": 400,
+      "minimumPopulation": 3,
+      "requiredReligions": [
+        "RELIGION_THE_ORDER",
+        "RELIGION_THE_ASHEN_VEIL"
+      ],
+      "minimumReligions": 2,
+      "worldCounterMinimum": 15,
+      "recurring": true,
+      "pickCity": true,
+      "options": [
+        "EVENT_ORDER_VS_VEIL_1",
+        "EVENT_ORDER_VS_VEIL_2",
+        "EVENT_ORDER_VS_VEIL_3",
+        "EVENT_ORDER_VS_VEIL_4"
+      ],
+      "integration": "not-implemented"
+    }
+  ],
+  "options": [
+    {
+      "sourceId": "EVENT_ORDER_VS_VEIL_4",
+      "pythonRequirement": "canApplyOrderVsVeil4",
+      "requiredBuilding": "Dungeon",
+      "integration": "not-implemented"
+    }
+  ]
+}
