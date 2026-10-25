@@ -57,6 +57,11 @@ for spell in spells:
 by_name = {s["name"]: s for s in spells}
 assert by_name["Snowfall"]["amount"] == 40 and by_name["Snowfall"]["damageLimit"] == 70
 assert by_name["Wither"]["amount"] == 10 and by_name["Wither"]["damageLimit"] == 40
+assert by_name["Maelstrom"]["damageType"] == "LIGHTNING"
+assert by_name["Snowfall"]["damageType"] == "COLD"
+assert by_name["Wither"]["damageType"] == "DEATH"
+for name in ("Courage", "Wither", "Regeneration", "Stoneskin", "Loyalty", "Flaming Arrows"):
+    assert by_name[name]["duration"] == -1, name
 assert by_name["Maelstrom"]["radius"] == 2
 assert by_name["Maelstrom"]["amount"] == 15
 assert by_name["Maelstrom"]["damageLimit"] == 30
