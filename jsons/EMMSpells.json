@@ -359,5 +359,60 @@
       "Rusted (Spell)"
     ],
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Destroy Undead",
+    "sourceId": "SPELL_DESTROY_UNDEAD",
+    "target": "ENEMY",
+    "effect": "DAMAGE",
+    "radius": 1,
+    "amount": 20,
+    "damageLimit": 100,
+    "eligiblePromotions": [
+      "Undead"
+    ],
+    "eligibleNameContains": [
+      "Skeleton",
+      "Spectre",
+      "Wraith",
+      "Lich",
+      "Pyre Zombie"
+    ],
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Charm Person",
+    "sourceId": "SPELL_CHARM_PERSON",
+    "target": "ENEMY",
+    "effect": "STATUS",
+    "status": "Charm Person (Spell)",
+    "radius": 1,
+    "duration": 2,
+    "livingOnly": true,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Blinding Light",
+    "sourceId": "SPELL_BLINDING_LIGHT",
+    "target": "ENEMY",
+    "effect": "STATUS",
+    "status": "Blinding Light (Spell)",
+    "radius": 1,
+    "duration": 2,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Fair Winds",
+    "sourceId": "SPELL_FAIR_WINDS",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "status": "Fair Winds (Spell)",
+    "radius": 1,
+    "duration": 2,
+    "eligibleUnitTypes": [
+      "Melee Water",
+      "Civilian Water"
+    ],
+    "maxCastsPerTurn": 1
   }
 ]
