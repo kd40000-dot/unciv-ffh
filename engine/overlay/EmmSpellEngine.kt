@@ -39,12 +39,13 @@ object EmmSpellEngine {
             "ENEMY" -> if (!caster.civ.isAtWarWith(other.civ)) return false
             else -> return false
         }
-        if (spell.eligibleUnitTypes.isNotEmpty() || spell.eligibleNameContains.isNotEmpty()) {
+        if (spell.eligibleUnitTypes.isNotEmpty() || spell.eligibleNameContains.isNotEmpty() || spell.eligiblePromotions.isNotEmpty()) {
             val typeMatch = other.baseUnit.unitType in spell.eligibleUnitTypes
             val nameMatch = spell.eligibleNameContains.any {
                 other.baseUnit.name.contains(it, ignoreCase = true)
             }
-            if (!typeMatch && !nameMatch) return false
+            val promotionMatch = spell.eligiblePromotions.any { it in other.promotions.promotions }
+            if (!typeMatch && !nameMatch && !promotionMatch) return false
         }
         if (spell.militaryOnly && !other.isMilitary()) return false
         if (spell.landOnly && (other.baseUnit.unitType !in landMilitaryTypes || other.isEmbarked())) return false
