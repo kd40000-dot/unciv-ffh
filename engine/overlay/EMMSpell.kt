@@ -17,6 +17,8 @@ class EMMSpell {
     var radius: Int = 0
     var status: String = ""
     var removeStatus: String = ""
+    /** Status names explicitly eligible for multi-status removal. */
+    var removeStatuses = ArrayList<String>()
     var duration: Int = 2
     var amount: Int = 0
     /** EMM damageLimit: maximum accumulated damage, measured from full health. */
