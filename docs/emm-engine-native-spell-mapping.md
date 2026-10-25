@@ -51,3 +51,18 @@ The current engine has one cast per unit turn, explicit radius/relations, native
 - Same-plot targeting is adapted to adjacent hexes for EMM group spells and Repair.
 - Summoned unit combat bonuses, summoned promotion expiry interaction, animation and source caster restrictions are not fully modeled.
 - A spell can presently specify one status/heal/damage/summon effect. Multi-effect, world-spell and targeted-player choices require more executor actions and save-state structures.
+
+
+## New native spell behaviors: October 25 continuation (awaiting Android playtest)
+
+This section supersedes any earlier 21-spell count above. Registry now has **24** actions (21 preceding plus three newly wired), but **none of these are certified EMM-exact** merely because an engine build succeeds.
+
+| Name | EMM XML | Engine implementation | Explicit fidelity gaps | Player QA |
+|---|---|---|---|---|
+| Snowfall (Ice III) | `SPELL_SNOWFALL`: `iRange=1`, `iDamage=40`, `iDamageLimit=70`, cold; `PyResult=spellSnowfall` | Damage to war enemies within one hex, maximum cumulative 70 damage | No `spellSnowfall` Python terrain/secondary effects, elemental cold resistance, neutral-provokes-war handling | [ ] |
+| Wither (Entropy III) | `SPELL_WITHER`: range 1, Death 10 damage cap 40, resistable, `PROMOTION_WITHERED`, living enemy only | Individual living enemies within radius 1 take 10 damage, max cumulative 40, and receive temporary Withered debuff | Spell resistance, persistent source promotion and original promotion healing/XP modifiers not faithfully ported | [ ] |
+| Regeneration (Body II) | `SPELL_REGENERATION`: `PROMOTION_REGENERATION`, no nonliving recipients | Apply regeneration individually to allied living units near caster, 2 turns | Same-plot Civ IV stacking adapted to radius 1, source promotion lifetime and actual recipient healing not fully verified | [ ] |
+
+**Critical test:** A combat spell must never affect an out-of-war civilization simply because it is within radius. This is currently a limitation: EMM `bCausesWar` may declare war, while this framework only attacks existing war enemies. For Wither, EMM `bResistable` is still unimplemented. Summon duration is an Unciv owner-turn approximation, not a universal promise of Civ IV's EMM expiry timing.
+
+Source reference: `bewlay/extramodmod` `XML/Units/CIV4SpellInfos.xml` pinned at `60b0ec3740083162aaab7bf8491761a54a65a610`.
