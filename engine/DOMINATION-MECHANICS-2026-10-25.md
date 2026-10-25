@@ -9,7 +9,7 @@ Pinned EMM `bewlay/extramodmod` commit `60b0ec3740083162aaab7bf8491761a54a65a610
 - `Domination` is now an explicit `DOMINATE` effect instead of a temporary -35% Strength status.
 - Targets a single living enemy military unit within range one, refuses Loyalty-protected recipients, and uses Unciv's `MapUnit.capturedBy(caster.civ)` to transfer unit ownership instead of applying a combat penalty.
 - Native capture zeroes the captured unit's movement and performs tile-eligibility checks in pinned Unciv.
-- Among eligible enemies, target selection prioritizes base combat strength, then health. This differs from the EMM resistance-weighted ranking.
+- Among eligible enemies, target selection prioritizes base combat strength only. This differs from EMM's resistance-weighted ranking.
 - The casting action is still gated by ownership of Mind III, movement and the spell budget.
 
 ## IMPORTANT: Remaining parity gaps
