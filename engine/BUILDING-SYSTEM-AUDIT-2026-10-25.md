@@ -33,7 +33,9 @@ Source reference for mechanics:
 
 Dungeon now has source-backed `emmCrime:-10` and `emmWarWearinessPercent:-25`. We added corresponding fields to native `Building` and computed local `CityStats.emmCrimeModifier` and `CityStats.emmWarWearinessMultiplier`.
 
-**These are not yet complete gameplay mechanics.** EMM random events must read the calculated Crime Rate and the full global/initial city Crime values; Unciv lacks the EMM random-event engine. Dungeon's war-weariness multiplier is calculated but cannot alter Happiness until EMM team war-exhaustion accrual, decay and per-city population anger are ported. Claiming Dungeon is fixed now would be misleading.
+**Crime remains incomplete:** EMM random events must read Crime Rate and global/initial city Crime values. This experimental client computes the modifier but does not yet run EMM crime events.
+
+**War weariness has a first native gameplay implementation:** a per-enemy persisted war-weariness score increases on wartime unit casualties (Civ4 source factors 3/1/2/2), decays each turn (−1 point, with 99% retained in peacetime), and creates city population-scaled unhappiness. Dungeon applies its −25% local modifier. The culture-weighted territory ratio is approximated with tile ownership; other modifiers and captured-unit cases remain incomplete. Test only on the experimental custom-engine client; this is not EMM-exact.
 
 Other building Crime modifiers stored for future native event logic: Courthouse -10, Market +5, Gambling House +5, Inn +5, Public Baths +5, Tavern +5, Tavern Grigori +5, Warrens -5. Exact EMM source values and conditional modifiers require full audit before merging.
 
@@ -64,13 +66,13 @@ Other building Crime modifiers stored for future native event logic: Courthouse 
 - [ ] Confirm Forge can increase excess unhealth.
 - [ ] Compare Tavern Happiness +1.
 - [ ] Check Beastmaster/Lizardman Beastmaster/Myconid production is restricted before Grove and unlocked after.
-- [ ] Dungeon Crime -10 and War Weariness -25 are **metadata-only in this checkpoint**. Do not report them as gameplay-tested until their dependent systems are implemented.
+- [ ] Dungeon Crime −10 remains metadata-only until crime random events are ported. Dungeon War Weariness −25% is now a combat-driven native effect, not yet gameplay-verified.
 - [ ] Test save/load for city buildings and health values.
 
 ## Recommended implementation order
 
 1. Full health aggregation / city UI, plus all health resources, traits and Fallow exemptions.
 2. Native Crime Rate state, EMM source-defined random event prerequisites and player-choice outcomes; Dungeon becomes consequential.
-3. War weariness combat accumulator + decay + CityStats unhappiness; apply Dungeon and other local modifiers.
+3. Validate and expand the war weariness prototype: source culture-weighted territory, captured units, civ modifiers, world/difficulty scaling and accurate city anger.
 4. City teleportation, Planar Gate, specialist and unit eligibility systems.
 5. Re-audit all 81 buildings against pinned EMM source and playtest with the custom Android engine.
