@@ -2676,7 +2676,7 @@
   {
     "name": "Enchanted Blade (Spell)",
     "uniques": [
-      "[+20]% Strength <for [Sword] units>",
+      "[+20]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
