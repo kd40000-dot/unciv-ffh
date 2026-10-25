@@ -66,3 +66,18 @@ This section supersedes any earlier 21-spell count above. Registry now has **24*
 **Critical test:** A combat spell must never affect an out-of-war civilization simply because it is within radius. This is currently a limitation: EMM `bCausesWar` may declare war, while this framework only attacks existing war enemies. For Wither, EMM `bResistable` is still unimplemented. Summon duration is an Unciv owner-turn approximation, not a universal promise of Civ IV's EMM expiry timing.
 
 Source reference: `bewlay/extramodmod` `XML/Units/CIV4SpellInfos.xml` pinned at `60b0ec3740083162aaab7bf8491761a54a65a610`.
+
+
+## Recipient-targeted promotions (native action migration)
+
+These five actions were converted from caster-only JSON proxies to individual recipient statuses. They **still do not reproduce every EMM promotion property**. All require Android gameplay testing.
+
+| EMM spell | Source promotion | Native engine effect | Missing fidelity |
+|---|---|---|---|
+| Blur (Shadow I) | `PROMOTION_BLUR` | Apply `Blur (Spell)` to friendly units in caster's 1-hex radius | Existing status gives +20% defending Strength instead of exact immunity to first strikes; fixed timer and stack→adjacency |
+| Dance of Blades (Chaos I) | `PROMOTION_DANCE_OF_BLADES` | Apply `Dance of Blades (Spell)` to friendly units within 1 hex | Existing status approximates one first strike with +15% attacking Strength |
+| Stoneskin (Earth II) | `PROMOTION_STONESKIN` | Self-only `Stoneskin (Spell)` buff | Existing +2 defensive Strength approximation; source stoneskin mechanics, promotion expiry and damage absorption need review |
+| Loyalty (Law I) | `PROMOTION_LOYALTY` | Apply `Loyalty (Spell)` to friendlies within 1 hex | `Uncapturable` proxy lacks source Loyalty and Burning Blood interplay |
+| Flaming Arrows (Enchantment II) | `PROMOTION_FLAMING_ARROWS` | Give individual friendly Archery units `Flaming Arrows (Spell)`, rather than a caster aura | Current +20% Strength is not the source extra Fire damage |
+
+**Registry coverage after this batch: 29 EMM source-backed native actions.** This means registered actions in the experimental engine; it is **not** a tally of verified faithful EMM spells. Several are explicitly limited proxies and the remaining source spell records remain unimplemented.
