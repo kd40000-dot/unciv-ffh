@@ -492,7 +492,7 @@
     "unitTypes": [],
     "uniques": [
       "Not shown on world screen",
-      "Free [Sand Lion (Summoned)] appears <for all movement> <for [Malakim] Civilizations> <in [Desert] tiles>"
+      "Can cast EMM spell [Summon Sand Lion] <for [Malakim] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -1916,7 +1916,7 @@
     ],
     "uniques": [
       "Only available <with [Metamagic Mana]>",
-      "Free [Floating Eye (Summoned)] appears <for all movement>"
+      "Can cast EMM spell [Floating Eye]"
     ],
     "civilopediaText": [
       {
