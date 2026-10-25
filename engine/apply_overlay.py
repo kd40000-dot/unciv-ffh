@@ -121,6 +121,8 @@ def main():
         '''    var maintenance = 0
     /** EMM health modifier; interpreted by CityStats, not as direct food. */
     var emmHealth = 0
+    /** Additional percentage of unit healing while inside the city. */
+    var emmCityHealingPercent = 0
     /** EMM crime-rate modifier; pending crime-event integration. */
     var emmCrime = 0
     /** EMM war-weariness modifier; pending war weariness integration. */
@@ -154,6 +156,22 @@ def main():
         foodEaten += (populationUnhealth - buildingHealth).coerceAtLeast(0)
         return foodEaten
     }''')
+
+    # Building-based EMM healing works for troops in the city center.
+    # Terrain damage must continue to apply after the healing bonus.
+    replace_once(root, base+"logic/map/mapunit/MapUnit.kt",
+        '        if (noTerrainDamage) return healing\\n        healing -= getDamageFromTerrain(tile)',
+        '''        if (tile.isCityCenter()) {
+            val healingCity = tile.getCity()
+            if (healingCity != null && isAlly(healingCity.civ)) {
+                val healingPercent = healingCity.cityConstructions.builtBuildings.sumOf { name ->
+                    healingCity.civ.gameInfo.ruleset.buildings[name]?.emmCityHealingPercent ?: 0
+                }
+                healing = healing * (100 + healingPercent) / 100
+            }
+        }
+        if (noTerrainDamage) return healing
+        healing -= getDamageFromTerrain(tile)''')
 
     # Courage boosts natural per-turn healing of the actual recipient,
     # not the original temporary caster's entire adjacent healing aura.
