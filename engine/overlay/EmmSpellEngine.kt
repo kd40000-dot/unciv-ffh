@@ -86,11 +86,30 @@ object EmmSpellEngine {
             else -> false
         }
 
+    /** Reject malformed or partial mod data before displaying any cast action. */
+    private fun validDefinition(spell: EMMSpell, expectedName: String): Boolean {
+        if (spell.name != expectedName || !spell.sourceId.startsWith("SPELL_")) return false
+        if (spell.radius < 0 || spell.maxCastsPerTurn < 1) return false
+        if (spell.target !in setOf("SELF", "FRIENDLY", "ENEMY")) return false
+        return when (spell.effect) {
+            "STATUS", "DAMAGE_STATUS" ->
+                spell.status.isNotBlank() && (spell.duration == -1 || spell.duration > 0) &&
+                    (spell.effect != "DAMAGE_STATUS" || (spell.amount > 0 && spell.damageLimit in 0..100))
+            "DAMAGE" -> spell.amount > 0 && spell.damageLimit in 0..100
+            "HEAL" -> spell.amount > 0
+            "CLEANSE" -> spell.removeStatuses.isNotEmpty() &&
+                spell.removeStatuses.all { it.isNotBlank() }
+            "SUMMON" -> spell.summonUnit.isNotBlank() &&
+                spell.summonDuration >= 0 && spell.maxActivePerCaster >= 0
+            else -> false
+        }
+    }
+
     /** Rechecked at execution time: an available UI action may become stale. */
     fun canCast(caster: MapUnit, name: String): Boolean {
         if (caster.isDestroyed || !caster.hasMovement()) return false
         val spell = definition(caster, name) ?: return false
-        if (spell.name.isBlank() || spell.sourceId.isBlank()) return false
+        if (!validDefinition(spell, name)) return false
         if (caster.emmSpellsCastThisTurn >= spell.maxCastsPerTurn) return false
         // Do not allow direct calls to bypass the real learned promotion/unique.
         if (caster.getMatchingUniques(UniqueType.EmmSpell).none { it.params[0] == name }) return false
