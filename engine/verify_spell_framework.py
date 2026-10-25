@@ -132,4 +132,13 @@ for sphere, name, target in (
     assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[sphere]["uniques"]), name
 assert by_name["Poisoned Blade"]["eligibleUnitTypes"] == ["Sword"]
 assert promotions["Poisoned Blade (Spell)"]["uniques"] == ["[+15]% Strength", "Not shown on world screen"]
+# Source-scoped native action migration; mechanics still require Android parity tests.
+for sphere, name in (("Nature I", "Treetop Tactics"), ("Law III", "Valor"),
+                     ("Ice I", "Slow"), ("Dimensional I", "Escape"),
+                     ("Mind III", "Domination"), ("Stealth", "Hide")):
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions[sphere]["uniques"]), name
+assert by_name["Slow"]["target"] == "ENEMY"
+assert by_name["Domination"]["target"] == "ENEMY"
+assert by_name["Hide"]["status"] == "Hidden (Spell)"
+assert by_name["Treetop Tactics"]["target"] == "SELF"
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
