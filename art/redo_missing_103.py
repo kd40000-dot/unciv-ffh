@@ -71,8 +71,10 @@ def collect():
         role=template(name)
         path=art/(role+"-Amurites.png")
         if not path.exists():path=art/"Warrior-Amurites.png"
-        with Image.open(path) as src:
-            picture=tinted(src,palette(name,row.get("race","human")),row.get("race","human"))
+        water=any(k in name.lower() for k in ("caravel","frigate","galleon","galley","privateer","trireme","workboat","queen of the line"))
+        nonhumanoid=any(k in name.lower() for k in ("wolf","lion","tiger","bear","spider","elephant","dragon","wyvern","hawk","golem","elemental","treant","floating eye"))
+        with Image.open((root/row["path"]) if water or nonhumanoid else path) as src:
+            picture=(src.convert("RGBA") if water or nonhumanoid else tinted(src,palette(name,row.get("race","human")),row.get("race","human")))
             picture.thumbnail((448,448),Image.Resampling.LANCZOS)
             result=Image.new("RGBA",(512,512),(0,0,0,0))
             result.alpha_composite(picture,((512-picture.width)//2,(512-picture.height)//2))
@@ -81,10 +83,26 @@ def collect():
             dest=root/row["path"]
             result.save(dest,optimize=True)
             row["revision"]="approved-art-derived-v2"
-            row["sourceReference"]=str(path.relative_to(root))
+            row["sourceReference"]=str(((root/row["path"]) if water or nonhumanoid else path).relative_to(root))
             row["reviewNeeded"]=True
             row["status"]="placeholder"
             done.append(name)
+    # Atlas sizes must agree with the regenerated 512 x 512 PNG pages.
+    atlas_path=root/"placeholder-generated.atlas"
+    atlas=atlas_path.read_text()
+    for row in targets:
+        line=row["path"]+"\\nsize: 128, 128"
+        replacement=row["path"]+"\\nsize: 512, 512"
+        assert atlas.count(line)==1, (row["unit"],atlas.count(line))
+        start=atlas.index(line)
+        end=atlas.find("\\n\\n",start)
+        if end<0:end=len(atlas)
+        section=atlas[start:end]
+        section=section.replace("size: 128, 128","size: 512, 512")
+        section=section.replace("  size: 128, 128","  size: 512, 512")
+        section=section.replace("  orig: 128, 128","  orig: 512, 512")
+        atlas=atlas[:start]+section+atlas[end:]
+    atlas_path.write_text(atlas)
     data["count"]=len(data["sprites"])
     data["reworked103"]=done
     manifest.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n")
