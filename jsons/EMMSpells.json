@@ -488,7 +488,7 @@
     "target": "ENEMY",
     "effect": "STATUS",
     "radius": 1,
-    "status": "Chilling Presence (Spell)",
+    "status": "Slowed",
     "duration": 2,
     "livingOnly": true,
     "maxCastsPerTurn": 1
