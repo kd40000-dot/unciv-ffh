@@ -523,5 +523,25 @@
     "status": "Hidden (Spell)",
     "duration": 2,
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Floating Eye",
+    "sourceId": "SPELL_FLOATING_EYE",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Floating Eye (Summoned)",
+    "summonDuration": 1,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Summon Sand Lion",
+    "sourceId": "SPELL_SUMMON_SAND_LION",
+    "target": "SELF",
+    "effect": "SUMMON",
+    "summonUnit": "Sand Lion (Summoned)",
+    "summonDuration": 1,
+    "maxActivePerCaster": 1,
+    "maxCastsPerTurn": 1
   }
 ]
