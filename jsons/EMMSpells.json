@@ -268,5 +268,53 @@
     "duration": 2,
     "livingOnly": true,
     "maxCastsPerTurn": 1
+  },
+  {
+    "name": "Blur",
+    "sourceId": "SPELL_BLUR",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Blur (Spell)",
+    "duration": 2
+  },
+  {
+    "name": "Dance of Blades",
+    "sourceId": "SPELL_DANCE_OF_BLADES",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Dance of Blades (Spell)",
+    "duration": 2
+  },
+  {
+    "name": "Stoneskin",
+    "sourceId": "SPELL_STONESKIN",
+    "target": "SELF",
+    "effect": "STATUS",
+    "radius": 0,
+    "status": "Stoneskin (Spell)",
+    "duration": 2
+  },
+  {
+    "name": "Loyalty",
+    "sourceId": "SPELL_LOYALTY",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Loyalty (Spell)",
+    "duration": 2
+  },
+  {
+    "name": "Flaming Arrows",
+    "sourceId": "SPELL_FLAMING_ARROWS",
+    "target": "FRIENDLY",
+    "effect": "STATUS",
+    "radius": 1,
+    "status": "Flaming Arrows (Spell)",
+    "duration": 2,
+    "eligibleUnitTypes": [
+      "Archery"
+    ]
   }
 ]
