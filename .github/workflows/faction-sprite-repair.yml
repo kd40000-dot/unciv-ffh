@@ -1,0 +1,46 @@
+name: Repair faction-specific unit sprites
+on:
+  push:
+    branches:
+      - checkpoint/faction-sprite-repair-2026-10-25
+    paths:
+      - 'art/repair_balseraph_basics.py'
+      - '.github/workflows/faction-sprite-repair.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: checkpoint/faction-sprite-repair-2026-10-25
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - run: python art/repair_balseraph_basics.py
+      - name: Validate assets and atlas references
+        run: |
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          a=Path('placeholder-generated.atlas').read_text()
+          for n in ['Warrior-Balseraphs','Scout-Balseraphs']:
+              with Image.open('Images/TileSets/AmuritesSimple/Units/Generated/'+n+'.png') as im:
+                  assert im.mode=='RGBA' and im.size==(512,512)
+                  assert im.getpixel((0,0))[3]==0 and im.getpixel((511,511))[3]==0
+              assert 'TileSets/AbsoluteUnits/Units/'+n in a
+              assert n+'.png\nsize: 512, 512' in a
+          print('Validated Balseraph Warrior and Scout, registration and alpha.')
+          PY
+      - name: Commit verified sprites
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Images/TileSets/AmuritesSimple/Units/Generated/Warrior-Balseraphs.png Images/TileSets/AmuritesSimple/Units/Generated/Scout-Balseraphs.png placeholder-generated.atlas art/PLACEHOLDER_SPRITES.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Replace Balseraph basics with bespoke harlequin character art"
+            git push
+          fi
