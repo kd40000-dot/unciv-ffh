@@ -98,7 +98,8 @@
         "text": "Curse those cards! He'd been so close to winning his passage on the earlier ship, when he was dealt the Curse of Arawn-particularly sickening as it had followed a Seven of Towers which surely would have won him the pot. His luck had been horrendous since then, he'd lost most of his winnings on that game, and then spent a lot more drowning his sorrows. He'd then been woken with a pail of water, finding himself press-ganged into service on a galley heading for the unknown lands. After five torturous days of seasickness, Lanun pirates struck, the galley was sunk and here he was now-after being washed ashore-in a Svartalfar courtroom charged with spying.\n\nWhat did he know about these elves? Civil war was it? Something about Seelie and Unseelie Court. Growing up on a farmstead had left him a little vague on world politics. His eyes looked around this strange court-pretty grandiose décor, with a sense of opulence, certainly not the functional style of his Hippus homeland. His eyes fell on a statuette. There was something not quite right about it... ah... yes... the scales, tipped with coins. So... Mammon has a part to play in this courtroom does he? There were still some coins in his hidden pouch. Once he signaled to the bailiff, things began to gather momentum, indeed Mammon had obviously provided a slick fast-tracking system as he found himself ushered away from the courtroom-at the cost of a few coins-to a private room.\n\n\"It seems you have been a little down on your luck, and would like to... aha... speed the courtroom process up, so to speak?\"\n\n\"Yes, your honor.\"\n\n\"...and you can pay the fine of five coins?\"\n\n\"Yes.\"\n\n\"Okay... that seems in order. No need for paper work, I think we can come to a satisfactory conclusion here and now: Guilty as charged, you hang tomorrow. In Esus we Trust.\"\n\n\"...but ...but the statuette to Mammon?!\"\n\n\"Yes, a pretty little thing isn't it? ...and worth its weight in gold I must say.\"\n\n-When entering a courtroom, effort should be made to check the patron Angel before constructing your defense."
       }
     ],
-    "gold": 2
+    "gold": 2,
+    "emmCrime": -10
   },
   {
     "name": "Dungeon",
@@ -151,7 +152,8 @@
       {
         "text": "Gambling houses are full of assorted dice, card and board games. Some even host pits for animal fights or darker pleasures. The Khazad are known to host rat races while Sheaim adepts summon minor creatures to battle against each other.\n\nBut one thing is similar across all of them, their most popular game, Somnium. Played on cards among the Balseraphs, on tiles by the Elohim and on crude patches of dried leather by the Clan of Embers the game has permeated all layers of Erebus. That's not to say that house rules don't exist, Overlord faithful often offer extra points for Cups cards, followers of Kilmorph often make Tower cards immune to stealing. But regardless of the specific rules the game remains a fascination for kings and peasants and nearly every gambling house hosts a few men praying desperately to avoid death and turn over the 7 of the suit they are missing."
       }
-    ]
+    ],
+    "emmCrime": 5
   },
   {
     "name": "Granary",
@@ -240,7 +242,8 @@
         "text": "The hustle and bustle of a city inn sets it apart from its countryside relative where benches have often warped to fit the posterior of its regular host. It serves much the same function, acting as a place to unwind and as a community centre, but the fiddle doesn't always stop when a new face appears.\n\nThe city inn serves other, less expected functions though: it is a center for business-legitimate or not, it is a place where new contacts are made, a center for the spread of information and new, or imported, ideas. True, some of those ideas are quickly passed over with a clearer head the next morning, some of the information is \"beer talk,\" and some of the contacts are best left forgotten, but there are few other places where an Amurite could meet a Balseraph where they are not (necessarily) swinging a sword at each other.\n\nContacts are created, palms are greased, and the business of running a city, and even an empire, are made.\n\nExtract from a recently recovered University dissertation: \"A Treatise of the City Inn: the Wheels of Empire\" by Kandros Fir"
       }
     ],
-    "gold": 1
+    "gold": 1,
+    "emmCrime": 5
   },
   {
     "name": "Library",
@@ -297,7 +300,8 @@
       {
         "text": "Early markets were little more than a place for trappers and farmers to trade goods. They boost the city's gold output, but reduce the research rate as the citizens pursue financial goals instead of longer-term efforts."
       }
-    ]
+    ],
+    "emmCrime": 5
   },
   {
     "name": "Moneychanger",
@@ -368,7 +372,8 @@
       {
         "text": "A civic space devoted to bathing and public life."
       }
-    ]
+    ],
+    "emmCrime": 5
   },
   {
     "name": "Shipyard",
@@ -435,7 +440,8 @@
       {
         "text": "There are hundreds of different kinds of taverns across Erebus, some quiet and comfortable, others violent and dangerous. But the most interesting lies in the sewers beneath Alexandria and is called \"The Pit.\" It only opens at night, when the curfew keeps the honorable inside their homes and those with more exotic tastes sneak to and from the labyrinth of sewer passages to get to the Pit.\n\nWithin everyone wears masks, the common folk wear black hoods while the rich often sport lavish demon masks set with valuable stones and gold. Masks set with fake gems and painted to look like valuable metals allow a commoner to masquerade as a noble, and a simple black burlap sack with eyeholes allows a high priest to find lurid pleasures without being noticed.\n\nThere are various forms of debauchery practiced in the Pit, but the most renown is the Chorus of Hell. Within the deepest hell there are wastes filled with the souls of those that committed suicide. These souls are gathered by demons and forced to lament eternally as it pleases the lord of despair. The Chorus of Hell is a single man who is able to channel this music. As he stands on the Pit's sunken stage sounds too horrific and beautiful for a single voice pour through him into the room. The effect is entrancing and those that hear it find it haunts them for weeks and months afterwards. More than a few people have committed suicide themselves after hearing the song. The truly depraved never miss a performance."
       }
-    ]
+    ],
+    "emmCrime": 5
   },
   {
     "name": "Tax Office",
@@ -548,7 +554,8 @@
       "All newly-trained [Mage] units [in this city] receive the [Warrens Birth - Mage] promotion <hidden from users>",
       "[+10]% maintenance cost for [All] buildings [in this city]"
     ],
-    "maintenance": 1
+    "maintenance": 1,
+    "emmCrime": -5
   },
   {
     "name": "Arena",
@@ -592,7 +599,8 @@
       {
         "text": "A gathering place for Grigori travelers, adventurers and independent thinkers. Its special effects remain unfinished."
       }
-    ]
+    ],
+    "emmCrime": 5
   },
   {
     "name": "Forum",
