@@ -44,9 +44,12 @@
     "civilopediaText": [
       {
         "text": "Khmer Otterfig sat back and admired his handiwork, well the work of slaves, but it was his guidance and prudent use of the whip that would now bring a new life to Belphemon. The brutal lines of his Grand Aqueduct-hewn from stone carved from the very mountain that fed it-snaked down, providing fresh water to the city and bringing with it nourishment to the warrens that could not have been imagined from festering wells that oozed with years of neglect. The filth that some of his brethren would live in!\n\nYes, there were others of his kin famed for their leadership in battle, but Otterfig knew that they were nothing without an army and that he was the one who gave the Clans the means to build one. Still, it did bother him that a butcher like Palpeious-self proclaimed \"Warlord\"-gets a statue for killing a few humans, and the only thanks he gets for bringing fresh water to the masses was \"It's cold.\" It isn't easy being green."
+      },
+      {
+        "text": "Provides +2 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
       }
     ],
-    "food": 1
+    "emmHealth": 2
   },
   {
     "name": "Archery Range",
@@ -104,8 +107,13 @@
     "civilopediaText": [
       {
         "text": "Tears and Blood\n\nNo simple bond between man and wife\nIs close to what we together share\nParents, children, friends for life\nThose relationships don't compare\nFor what we have is even more rare\nYou, my victim, held by chains\nAnd I, with knives, who brings you pain\n\nNever more honest than when with me\nYou will betray those other loves\nFaithful, focused you will be\nYour trembling lips will kiss my glove\nAs if I am your god above\nWe will share what you hold dear\nThose hidden thoughts only I will hear\n\nAs lovers joined in rapt delight\nSo we will be upon my boards\nBut where their devotion lasts a night\nMy pains will keep you bound for more\nMore fierce than any common whore\nThe world will slip away from us\nFor torture is more intense than lust\n\nWhen finally our dance is through\nAnd you have shown your heart to me\nA yearning will return to you\nA desire to inflict misery\nTo return to our sweet fantasy\nFor all else is subdued by suffering\nTears and blood are true intimacy\n\n-A Svartalfar torturer's rhyme"
+      },
+      {
+        "text": "EMM effects: -10 city Crime Rate and -25% local War Weariness. Crime and war-weariness consequences require engine services; the values are recorded for the upcoming implementation."
       }
-    ]
+    ],
+    "emmCrime": -10,
+    "emmWarWearinessPercent": -25
   },
   {
     "name": "Elder Council",
@@ -189,9 +197,12 @@
     "civilopediaText": [
       {
         "text": "Uses herbs and medicinal knowledge to improve health. Currently represented by a Food bonus."
+      },
+      {
+        "text": "Provides +1 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
       }
     ],
-    "food": 1
+    "emmHealth": 1
   },
   {
     "name": "Hunting Lodge",
@@ -213,9 +224,12 @@
     "civilopediaText": [
       {
         "text": "I stare out the window a lot now. Outside there are children playing, laughing, running, and chasing each other. They will never know war. They will never know sacrifice, and I am grateful for that. To see the sun rise and fall, and never understand loss like mine is a beautiful and tragic thing.\n\nMy nurse comes regularly to me, to tend to my leg, and to ask if my other still feels like it's there. It does sometimes. I dream that I wander through our old house, your golden hair shining in the sunlight and lightening my heart. I chase you in my dreams, through our fields in Yullda pass, and ride our horses together. I know those days are gone. I know you've found someone new, and I am happy for you. I expect her to love you as I did.\n\nYour mother visited me once, and cried for me. Tell her not to worry, there are worse here than I."
+      },
+      {
+        "text": "Provides +2 EMM city health (not bonus food). Positive health offsets population unhealthiness in the experimental EMM engine."
       }
     ],
-    "food": 2
+    "emmHealth": 2
   },
   {
     "name": "Inn",
