@@ -508,12 +508,11 @@
     "name": "Domination",
     "sourceId": "SPELL_DOMINATION",
     "target": "ENEMY",
-    "effect": "STATUS",
+    "effect": "DOMINATE",
     "radius": 1,
-    "status": "Domination (Spell)",
-    "duration": 2,
     "livingOnly": true,
-    "maxCastsPerTurn": 1
+    "maxCastsPerTurn": 1,
+    "eligiblePromotions": []
   },
   {
     "name": "Hide",
