@@ -127,7 +127,8 @@
     "uniques": [
       "Limited to [4] per Civilization",
       "Only available <for [non-[Luchuirp]] Civilizations>",
-      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>"
+      "Free [Severed Soul (Summoned)] appears <for all movement> <for [Sidar] Civilizations> <once>",
+      "Can only be built <in cities with a [Grove]>"
     ],
     "civilopediaText": [
       {
@@ -908,7 +909,8 @@
     "uniqueTo": "Clan of Embers",
     "replaces": "Beastmaster",
     "uniques": [
-      "Limited to [4] per Civilization"
+      "Limited to [4] per Civilization",
+      "Can only be built <in cities with a [Grove]>"
     ],
     "civilopediaText": [
       {
@@ -1670,7 +1672,8 @@
     "replaces": "Beastmaster",
     "uniques": [
       "Limited to [4] per Civilization",
-      "[This Unit] gains the [Spores (Ability)] status for [2] turn(s) <for all movement>"
+      "[This Unit] gains the [Spores (Ability)] status for [2] turn(s) <for all movement>",
+      "Can only be built <in cities with a [Grove]>"
     ],
     "civilopediaText": [
       {
