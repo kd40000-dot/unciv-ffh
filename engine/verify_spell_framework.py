@@ -160,4 +160,16 @@ for centaur in ("Centaur", "Centaur Archer", "Centaur Charger", "Centaur Lancer"
     assert any(u.startswith("Can cast EMM spell [Sprint]") for u in units[centaur]["uniques"])
 assert by_name["Burning Blood"]["status"] == "Burning Blood (Ability)"
 assert by_name["Sprint"]["status"] == "Sprint Fatigue (Ability)"
+# Source-specific development spell permissions. These promotions are not
+# automatically granted through religion/item gameplay yet.
+for name in ("Esus Blur", "Esus Haste", "Esus Poisoned Blade", "Esus Regeneration", "Esus Shadowwalk"):
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions["Esus Agent"]["uniques"]), name
+for name in ("Bless", "Shield of Faith"):
+    assert any(u.startswith(f"Can cast EMM spell [{name}]") for u in promotions["Divine Spellcaster (EMM)"]["uniques"]), name
+assert any("Can cast EMM spell [Potion of Invisibility]" in u for u in promotions["Potion of Invisibility (Item)"]["uniques"])
+assert any(u.startswith("Can cast EMM spell [Enchant Spellstaff]") for u in promotions["Enchantment III"]["uniques"])
+assert any(u.startswith("Can cast EMM spell [Resurrection]") for u in promotions["Life III"]["uniques"])
+assert by_name["Resurrection"]["summonUnit"] == "Returned Soul (Summoned)"
+assert by_name["Enchant Spellstaff"]["status"] == "Spellstaff (Spell)"
+assert by_name["Potion of Invisibility"]["status"] == "Hidden (Spell)"
 print("EMM framework registry valid:", len(spells), "spells; all effects/references and source-derived Maelstrom values verified")
