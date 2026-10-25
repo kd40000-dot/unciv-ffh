@@ -12,6 +12,7 @@ read = lambda p: json.loads((root / p).read_text(encoding="utf-8"))
 catalog = read("engine/emm-source-spell-catalog.json")
 native = read("jsons/EMMSpells.json")
 promotions = read("jsons/UnitPromotions.json")
+units = read("jsons/Units.json")
 assert len(catalog) == 355, f"Expected 355 pinned EMM actions; got {len(catalog)}"
 ids = [s["sourceId"] for s in catalog]
 assert len(ids) == len(set(ids)), "Duplicate EMM IDs"
@@ -19,7 +20,7 @@ by_id = {s["sourceId"]: s for s in catalog}
 assert len(native) == len({s["sourceId"] for s in native}), "Duplicate native spell IDs"
 grants = {
     u.split("Can cast EMM spell [", 1)[1].split("]", 1)[0]
-    for p in promotions for u in p.get("uniques", [])
+    for p in promotions + units for u in p.get("uniques", [])
     if u.startswith("Can cast EMM spell [")
 }
 names = {s["name"] for s in native}
