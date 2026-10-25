@@ -151,7 +151,10 @@ object EmmSpellEngine {
                         if (spell.removeStatus.isNotEmpty()) target.removeStatus(spell.removeStatus)
                         target.setStatus(spell.status, spell.duration)
                     }
-                    "DAMAGE" -> target.takeDamage(damageAllowed(target, spell))
+                    "DAMAGE" -> {
+                        val damage = damageAllowed(target, spell)
+                        if (damage > 0) target.takeDamage(damage)
+                    }
                     "DAMAGE_STATUS" -> {
                         val damage = damageAllowed(target, spell)
                         if (damage > 0) target.takeDamage(damage)
