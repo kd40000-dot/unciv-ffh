@@ -21,6 +21,8 @@ class EMMSpell {
     var amount: Int = 0
     /** EMM damageLimit: maximum accumulated damage, measured from full health. */
     var damageLimit: Int = 100
+    /** Civ IV damage category: COLD, DEATH, FIRE, HOLY, LIGHTNING, POISON, UNHOLY. */
+    var damageType: String = ""
     var summonUnit: String = ""
     /** 0 means a permanent EMM unit, positive values expire automatically. */
     var summonDuration: Int = 0
