@@ -11,6 +11,7 @@ on:
       - checkpoint/emm-domination-2026-10-25
       - checkpoint/protect-mana-nodes-2026-10-25
       - checkpoint/emm-city-health-dungeon-2026-10-25
+      - checkpoint/emm-random-events-2026-10-25
     paths:
       - "engine/**"
       - "jsons/**"
