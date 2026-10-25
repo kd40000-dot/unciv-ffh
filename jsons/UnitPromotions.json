@@ -2664,12 +2664,12 @@
     "name": "Withered (Spell)",
     "unitTypes": [],
     "uniques": [
-      "[-20]% Strength",
+      "[-10]% Strength",
       "Not shown on world screen"
     ],
     "civilopediaText": [
       {
-        "text": "Temporary native Wither debuff on individual hostile living units. EMM Withered also modifies healing and experience; these aspects are not yet faithful."
+        "text": "EMM Withered native recipient debuff: -10% combat strength (source iCombatPercent=-10), and -20 HP to natural healing via engine. Source -50% XP, reduced combat defense and spell resistance still require porting. Lasts until dispelled."
       }
     ]
   }
