@@ -58,6 +58,7 @@ jobs:
           python3 ffh-mod/engine/verify_355_spell_wiring.py
           python3 ffh-mod/engine/verify_mana_node_protection.py
           python3 ffh-mod/engine/verify_city_buildings.py
+          python3 ffh-mod/engine/verify_random_events.py
       - name: Check patch diff for whitespace errors
         working-directory: unciv-source
         run: git diff --check
