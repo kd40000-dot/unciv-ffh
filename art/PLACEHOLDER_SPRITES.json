@@ -9826,5 +9826,855 @@
       "status": "placeholder",
       "source": "procedural flat 2D silhouette, not canonical EMM artwork"
     }
-  ]
+  ],
+  "objects": [
+    {
+      "path": "Images/BuildingIcons/Palace.png",
+      "object": "Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Alchemy Lab.png",
+      "object": "Alchemy Lab",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Aqueduct.png",
+      "object": "Aqueduct",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Archery Range.png",
+      "object": "Archery Range",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Carnival.png",
+      "object": "Carnival",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Command Post.png",
+      "object": "Command Post",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Courthouse.png",
+      "object": "Courthouse",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Dungeon.png",
+      "object": "Dungeon",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Elder Council.png",
+      "object": "Elder Council",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Forge.png",
+      "object": "Forge",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Gambling House.png",
+      "object": "Gambling House",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Granary.png",
+      "object": "Granary",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Grove.png",
+      "object": "Grove",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Harbor.png",
+      "object": "Harbor",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Herbalist.png",
+      "object": "Herbalist",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Hunting Lodge.png",
+      "object": "Hunting Lodge",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Infirmary.png",
+      "object": "Infirmary",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Inn.png",
+      "object": "Inn",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Library.png",
+      "object": "Library",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Lighthouse.png",
+      "object": "Lighthouse",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Mage Guild.png",
+      "object": "Mage Guild",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Market.png",
+      "object": "Market",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Moneychanger.png",
+      "object": "Moneychanger",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Monument.png",
+      "object": "Monument",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Obsidian Gate.png",
+      "object": "Obsidian Gate",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Pagan Temple.png",
+      "object": "Pagan Temple",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Palisade.png",
+      "object": "Palisade",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Public Baths.png",
+      "object": "Public Baths",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Shipyard.png",
+      "object": "Shipyard",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Siege Workshop.png",
+      "object": "Siege Workshop",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Smokehouse.png",
+      "object": "Smokehouse",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Stable.png",
+      "object": "Stable",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Tavern.png",
+      "object": "Tavern",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Tax Office.png",
+      "object": "Tax Office",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Theatre.png",
+      "object": "Theatre",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Training Yard.png",
+      "object": "Training Yard",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Walls.png",
+      "object": "Walls",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Museum.png",
+      "object": "Museum",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Cave of Ancestors.png",
+      "object": "Cave of Ancestors",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Warrens.png",
+      "object": "Warrens",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Arena.png",
+      "object": "Arena",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Reliquary.png",
+      "object": "Reliquary",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Tavern Grigori.png",
+      "object": "Tavern Grigori",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Forum.png",
+      "object": "Forum",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Grigori Museum.png",
+      "object": "Grigori Museum",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Temple Of The Hand.png",
+      "object": "Temple Of The Hand",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Dwarven Smithy.png",
+      "object": "Dwarven Smithy",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Harbor Lanun.png",
+      "object": "Harbor Lanun",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Sculptors Studio.png",
+      "object": "Sculptors Studio",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Desert Shrine.png",
+      "object": "Desert Shrine",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Amurites Palace.png",
+      "object": "Amurites Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Balseraphs Palace.png",
+      "object": "Balseraphs Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Bannor Palace.png",
+      "object": "Bannor Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Calabim Palace.png",
+      "object": "Calabim Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Clan of Embers Palace.png",
+      "object": "Clan of Embers Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Doviello Palace.png",
+      "object": "Doviello Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Elohim Palace.png",
+      "object": "Elohim Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Grigori Palace.png",
+      "object": "Grigori Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Hippus Palace.png",
+      "object": "Hippus Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Illians Palace.png",
+      "object": "Illians Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Khazad Palace.png",
+      "object": "Khazad Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Kuriotates Palace.png",
+      "object": "Kuriotates Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Lanun Palace.png",
+      "object": "Lanun Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Ljosalfar Palace.png",
+      "object": "Ljosalfar Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Luchuirp Palace.png",
+      "object": "Luchuirp Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Malakim Palace.png",
+      "object": "Malakim Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Sheaim Palace.png",
+      "object": "Sheaim Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Sidar Palace.png",
+      "object": "Sidar Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Svartalfar Palace.png",
+      "object": "Svartalfar Palace",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Growth (Spell).png",
+      "object": "Growth (Spell)",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Blessing (Spell).png",
+      "object": "Blessing (Spell)",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Wall of Stone (Spell).png",
+      "object": "Wall of Stone (Spell)",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Hope (Spell).png",
+      "object": "Hope (Spell)",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/BuildingIcons/Illumination (Spell).png",
+      "object": "Illumination (Spell)",
+      "category": "BuildingIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Farm.png",
+      "object": "Farm",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Mine.png",
+      "object": "Mine",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Trading post.png",
+      "object": "Trading post",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Camp.png",
+      "object": "Camp",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Pasture.png",
+      "object": "Pasture",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Plantation.png",
+      "object": "Plantation",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Quarry.png",
+      "object": "Quarry",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Fishing Boats.png",
+      "object": "Fishing Boats",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Pirate Cove.png",
+      "object": "Pirate Cove",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Pirate Harbor.png",
+      "object": "Pirate Harbor",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Pirate Port.png",
+      "object": "Pirate Port",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Fort.png",
+      "object": "Fort",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Road.png",
+      "object": "Road",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Remove Forest.png",
+      "object": "Remove Forest",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Remove Jungle.png",
+      "object": "Remove Jungle",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Repair.png",
+      "object": "Repair",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Ancient ruins.png",
+      "object": "Ancient ruins",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/City ruins.png",
+      "object": "City ruins",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/City center.png",
+      "object": "City center",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Barbarian encampment.png",
+      "object": "Barbarian encampment",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Remove Marsh.png",
+      "object": "Remove Marsh",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Remove Road.png",
+      "object": "Remove Road",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Cancel improvement order.png",
+      "object": "Cancel improvement order",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Air Node.png",
+      "object": "Air Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Body Node.png",
+      "object": "Body Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Chaos Node.png",
+      "object": "Chaos Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Creation Node.png",
+      "object": "Creation Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Death Node.png",
+      "object": "Death Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Dimensional Node.png",
+      "object": "Dimensional Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Earth Node.png",
+      "object": "Earth Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Enchantment Node.png",
+      "object": "Enchantment Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Entropy Node.png",
+      "object": "Entropy Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Fire Node.png",
+      "object": "Fire Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Force Node.png",
+      "object": "Force Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Ice Node.png",
+      "object": "Ice Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Law Node.png",
+      "object": "Law Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Life Node.png",
+      "object": "Life Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Metamagic Node.png",
+      "object": "Metamagic Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Mind Node.png",
+      "object": "Mind Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Nature Node.png",
+      "object": "Nature Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Spirit Node.png",
+      "object": "Spirit Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Water Node.png",
+      "object": "Water Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Shadow Node.png",
+      "object": "Shadow Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Sun Node.png",
+      "object": "Sun Node",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Smoke.png",
+      "object": "Smoke",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Labyrinth (Spell).png",
+      "object": "Labyrinth (Spell)",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    },
+    {
+      "path": "Images/ImprovementIcons/Rift (Spell).png",
+      "object": "Rift (Spell)",
+      "category": "ImprovementIcons",
+      "status": "placeholder",
+      "source": "procedural geometric object icon, not canonical EMM artwork"
+    }
+  ],
+  "objectsCount": 121
 }

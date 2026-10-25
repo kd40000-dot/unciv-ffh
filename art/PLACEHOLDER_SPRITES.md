@@ -1232,3 +1232,129 @@ Total new PNGs: **1228**. Every entry below is a placeholder and not verified EM
 | Nyxkin | Svartalfar | elf | Images/TileSets/AmuritesSimple/Units/Generated/Nyxkin-Svartalfar.png |
 | Lightbringer | Malakim | human | Images/TileSets/AmuritesSimple/Units/Generated/Lightbringer-Malakim.png |
 | Lucian | Doviello | human | Images/TileSets/AmuritesSimple/Units/Generated/Lucian-Doviello.png |
+
+## Building and improvement objects (121 new placeholders)
+
+| Name | Type | Path |
+|---|---|---|
+| Palace | BuildingIcons | Images/BuildingIcons/Palace.png |
+| Alchemy Lab | BuildingIcons | Images/BuildingIcons/Alchemy Lab.png |
+| Aqueduct | BuildingIcons | Images/BuildingIcons/Aqueduct.png |
+| Archery Range | BuildingIcons | Images/BuildingIcons/Archery Range.png |
+| Carnival | BuildingIcons | Images/BuildingIcons/Carnival.png |
+| Command Post | BuildingIcons | Images/BuildingIcons/Command Post.png |
+| Courthouse | BuildingIcons | Images/BuildingIcons/Courthouse.png |
+| Dungeon | BuildingIcons | Images/BuildingIcons/Dungeon.png |
+| Elder Council | BuildingIcons | Images/BuildingIcons/Elder Council.png |
+| Forge | BuildingIcons | Images/BuildingIcons/Forge.png |
+| Gambling House | BuildingIcons | Images/BuildingIcons/Gambling House.png |
+| Granary | BuildingIcons | Images/BuildingIcons/Granary.png |
+| Grove | BuildingIcons | Images/BuildingIcons/Grove.png |
+| Harbor | BuildingIcons | Images/BuildingIcons/Harbor.png |
+| Herbalist | BuildingIcons | Images/BuildingIcons/Herbalist.png |
+| Hunting Lodge | BuildingIcons | Images/BuildingIcons/Hunting Lodge.png |
+| Infirmary | BuildingIcons | Images/BuildingIcons/Infirmary.png |
+| Inn | BuildingIcons | Images/BuildingIcons/Inn.png |
+| Library | BuildingIcons | Images/BuildingIcons/Library.png |
+| Lighthouse | BuildingIcons | Images/BuildingIcons/Lighthouse.png |
+| Mage Guild | BuildingIcons | Images/BuildingIcons/Mage Guild.png |
+| Market | BuildingIcons | Images/BuildingIcons/Market.png |
+| Moneychanger | BuildingIcons | Images/BuildingIcons/Moneychanger.png |
+| Monument | BuildingIcons | Images/BuildingIcons/Monument.png |
+| Obsidian Gate | BuildingIcons | Images/BuildingIcons/Obsidian Gate.png |
+| Pagan Temple | BuildingIcons | Images/BuildingIcons/Pagan Temple.png |
+| Palisade | BuildingIcons | Images/BuildingIcons/Palisade.png |
+| Public Baths | BuildingIcons | Images/BuildingIcons/Public Baths.png |
+| Shipyard | BuildingIcons | Images/BuildingIcons/Shipyard.png |
+| Siege Workshop | BuildingIcons | Images/BuildingIcons/Siege Workshop.png |
+| Smokehouse | BuildingIcons | Images/BuildingIcons/Smokehouse.png |
+| Stable | BuildingIcons | Images/BuildingIcons/Stable.png |
+| Tavern | BuildingIcons | Images/BuildingIcons/Tavern.png |
+| Tax Office | BuildingIcons | Images/BuildingIcons/Tax Office.png |
+| Theatre | BuildingIcons | Images/BuildingIcons/Theatre.png |
+| Training Yard | BuildingIcons | Images/BuildingIcons/Training Yard.png |
+| Walls | BuildingIcons | Images/BuildingIcons/Walls.png |
+| Museum | BuildingIcons | Images/BuildingIcons/Museum.png |
+| Cave of Ancestors | BuildingIcons | Images/BuildingIcons/Cave of Ancestors.png |
+| Warrens | BuildingIcons | Images/BuildingIcons/Warrens.png |
+| Arena | BuildingIcons | Images/BuildingIcons/Arena.png |
+| Reliquary | BuildingIcons | Images/BuildingIcons/Reliquary.png |
+| Tavern Grigori | BuildingIcons | Images/BuildingIcons/Tavern Grigori.png |
+| Forum | BuildingIcons | Images/BuildingIcons/Forum.png |
+| Grigori Museum | BuildingIcons | Images/BuildingIcons/Grigori Museum.png |
+| Temple Of The Hand | BuildingIcons | Images/BuildingIcons/Temple Of The Hand.png |
+| Dwarven Smithy | BuildingIcons | Images/BuildingIcons/Dwarven Smithy.png |
+| Harbor Lanun | BuildingIcons | Images/BuildingIcons/Harbor Lanun.png |
+| Sculptors Studio | BuildingIcons | Images/BuildingIcons/Sculptors Studio.png |
+| Desert Shrine | BuildingIcons | Images/BuildingIcons/Desert Shrine.png |
+| Amurites Palace | BuildingIcons | Images/BuildingIcons/Amurites Palace.png |
+| Balseraphs Palace | BuildingIcons | Images/BuildingIcons/Balseraphs Palace.png |
+| Bannor Palace | BuildingIcons | Images/BuildingIcons/Bannor Palace.png |
+| Calabim Palace | BuildingIcons | Images/BuildingIcons/Calabim Palace.png |
+| Clan of Embers Palace | BuildingIcons | Images/BuildingIcons/Clan of Embers Palace.png |
+| Doviello Palace | BuildingIcons | Images/BuildingIcons/Doviello Palace.png |
+| Elohim Palace | BuildingIcons | Images/BuildingIcons/Elohim Palace.png |
+| Grigori Palace | BuildingIcons | Images/BuildingIcons/Grigori Palace.png |
+| Hippus Palace | BuildingIcons | Images/BuildingIcons/Hippus Palace.png |
+| Illians Palace | BuildingIcons | Images/BuildingIcons/Illians Palace.png |
+| Khazad Palace | BuildingIcons | Images/BuildingIcons/Khazad Palace.png |
+| Kuriotates Palace | BuildingIcons | Images/BuildingIcons/Kuriotates Palace.png |
+| Lanun Palace | BuildingIcons | Images/BuildingIcons/Lanun Palace.png |
+| Ljosalfar Palace | BuildingIcons | Images/BuildingIcons/Ljosalfar Palace.png |
+| Luchuirp Palace | BuildingIcons | Images/BuildingIcons/Luchuirp Palace.png |
+| Malakim Palace | BuildingIcons | Images/BuildingIcons/Malakim Palace.png |
+| Sheaim Palace | BuildingIcons | Images/BuildingIcons/Sheaim Palace.png |
+| Sidar Palace | BuildingIcons | Images/BuildingIcons/Sidar Palace.png |
+| Svartalfar Palace | BuildingIcons | Images/BuildingIcons/Svartalfar Palace.png |
+| Growth (Spell) | BuildingIcons | Images/BuildingIcons/Growth (Spell).png |
+| Blessing (Spell) | BuildingIcons | Images/BuildingIcons/Blessing (Spell).png |
+| Wall of Stone (Spell) | BuildingIcons | Images/BuildingIcons/Wall of Stone (Spell).png |
+| Hope (Spell) | BuildingIcons | Images/BuildingIcons/Hope (Spell).png |
+| Illumination (Spell) | BuildingIcons | Images/BuildingIcons/Illumination (Spell).png |
+| Farm | ImprovementIcons | Images/ImprovementIcons/Farm.png |
+| Mine | ImprovementIcons | Images/ImprovementIcons/Mine.png |
+| Trading post | ImprovementIcons | Images/ImprovementIcons/Trading post.png |
+| Camp | ImprovementIcons | Images/ImprovementIcons/Camp.png |
+| Pasture | ImprovementIcons | Images/ImprovementIcons/Pasture.png |
+| Plantation | ImprovementIcons | Images/ImprovementIcons/Plantation.png |
+| Quarry | ImprovementIcons | Images/ImprovementIcons/Quarry.png |
+| Fishing Boats | ImprovementIcons | Images/ImprovementIcons/Fishing Boats.png |
+| Pirate Cove | ImprovementIcons | Images/ImprovementIcons/Pirate Cove.png |
+| Pirate Harbor | ImprovementIcons | Images/ImprovementIcons/Pirate Harbor.png |
+| Pirate Port | ImprovementIcons | Images/ImprovementIcons/Pirate Port.png |
+| Fort | ImprovementIcons | Images/ImprovementIcons/Fort.png |
+| Road | ImprovementIcons | Images/ImprovementIcons/Road.png |
+| Remove Forest | ImprovementIcons | Images/ImprovementIcons/Remove Forest.png |
+| Remove Jungle | ImprovementIcons | Images/ImprovementIcons/Remove Jungle.png |
+| Repair | ImprovementIcons | Images/ImprovementIcons/Repair.png |
+| Ancient ruins | ImprovementIcons | Images/ImprovementIcons/Ancient ruins.png |
+| City ruins | ImprovementIcons | Images/ImprovementIcons/City ruins.png |
+| City center | ImprovementIcons | Images/ImprovementIcons/City center.png |
+| Barbarian encampment | ImprovementIcons | Images/ImprovementIcons/Barbarian encampment.png |
+| Remove Marsh | ImprovementIcons | Images/ImprovementIcons/Remove Marsh.png |
+| Remove Road | ImprovementIcons | Images/ImprovementIcons/Remove Road.png |
+| Cancel improvement order | ImprovementIcons | Images/ImprovementIcons/Cancel improvement order.png |
+| Air Node | ImprovementIcons | Images/ImprovementIcons/Air Node.png |
+| Body Node | ImprovementIcons | Images/ImprovementIcons/Body Node.png |
+| Chaos Node | ImprovementIcons | Images/ImprovementIcons/Chaos Node.png |
+| Creation Node | ImprovementIcons | Images/ImprovementIcons/Creation Node.png |
+| Death Node | ImprovementIcons | Images/ImprovementIcons/Death Node.png |
+| Dimensional Node | ImprovementIcons | Images/ImprovementIcons/Dimensional Node.png |
+| Earth Node | ImprovementIcons | Images/ImprovementIcons/Earth Node.png |
+| Enchantment Node | ImprovementIcons | Images/ImprovementIcons/Enchantment Node.png |
+| Entropy Node | ImprovementIcons | Images/ImprovementIcons/Entropy Node.png |
+| Fire Node | ImprovementIcons | Images/ImprovementIcons/Fire Node.png |
+| Force Node | ImprovementIcons | Images/ImprovementIcons/Force Node.png |
+| Ice Node | ImprovementIcons | Images/ImprovementIcons/Ice Node.png |
+| Law Node | ImprovementIcons | Images/ImprovementIcons/Law Node.png |
+| Life Node | ImprovementIcons | Images/ImprovementIcons/Life Node.png |
+| Metamagic Node | ImprovementIcons | Images/ImprovementIcons/Metamagic Node.png |
+| Mind Node | ImprovementIcons | Images/ImprovementIcons/Mind Node.png |
+| Nature Node | ImprovementIcons | Images/ImprovementIcons/Nature Node.png |
+| Spirit Node | ImprovementIcons | Images/ImprovementIcons/Spirit Node.png |
+| Water Node | ImprovementIcons | Images/ImprovementIcons/Water Node.png |
+| Shadow Node | ImprovementIcons | Images/ImprovementIcons/Shadow Node.png |
+| Sun Node | ImprovementIcons | Images/ImprovementIcons/Sun Node.png |
+| Smoke | ImprovementIcons | Images/ImprovementIcons/Smoke.png |
+| Labyrinth (Spell) | ImprovementIcons | Images/ImprovementIcons/Labyrinth (Spell).png |
+| Rift (Spell) | ImprovementIcons | Images/ImprovementIcons/Rift (Spell).png |
