@@ -81,7 +81,8 @@ replacement='''        val foodEaten = calcFoodEaten()
             // Building contributions are extracted from pinned EMM CIV4BuildingInfos.xml.
             // Difficulty health is read from pinned EMM CIV4HandicapInfo.xml.
             val handicapHealth = EMM_DIFFICULTY_HEALTH[city.civ.gameInfo.difficulty] ?: 2
-            val buildingHealth = EMM_HEALTH_MAP.entries.sumOf { (name, value) -> if (name in built) value else 0 }
+            val buildingHealth = EMM_HEALTH_MAP.entries.sumOf { (name, value) -> if (name in built) value.coerceAtLeast(0) else 0 }
+            val buildingUnhealth = EMM_HEALTH_MAP.entries.sumOf { (name, value) -> if (name in built) (-value).coerceAtLeast(0) else 0 }
             val expansiveHealth = if (city.civ.civName in EMM_EXPANSIVE_CIVS) 3 else 0
             val resourceHealth = EMM_RESOURCE_HEALTH.entries.sumOf { (name, value) ->
                 if (city.civ.getResourceAmount(name) > 0) value else 0
@@ -125,11 +126,12 @@ s=s.replace(field, '''    var emmHealthInfo: Pair<Int, Int>? = null // (healthy,
 s=s.replace('        val foodEaten = calcFoodEaten()', '''        emmHealthInfo = null
         emmHealthBreakdown = emptyMap()
         val foodEaten = calcFoodEaten()''', 1)
-s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth
+s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth + buildingUnhealth
             emmHealthInfo = healthySources to totalUnhealthy
             emmHealthBreakdown = linkedMapOf(
                 "Difficulty health" to handicapHealth,
-                "Buildings" to buildingHealth,
+                "Healthy buildings" to buildingHealth,
+                "Unhealthy buildings" to -buildingUnhealth,
                 "Empire-wide buildings" to globalHealth,
                 "Continent buildings" to areaHealth,
                 "Expansive trait" to expansiveHealth,
@@ -191,22 +193,17 @@ c=info.read_text()
 anchor='''            if (cityConstructions.isBuilt(construction.name)) {'''
 assert c.count(anchor)==1
 code='''            if (construction is Building && cityView.getEmmHealthInfo() != null) {
-                val health = when (construction.name) {
-                    "Herbalist" -> 1
-                    "Aqueduct" -> 2
-                    "Infirmary" -> 3
-                    else -> 0
-                }
-                if (health > 0) {
+                val health = EMM_CONSTRUCTION_HEALTH[construction.name] ?: 0
+                if (health != 0) {
                     row()
                     add(Table().apply {
                         add(ImageGetter.getExternalImage("Icons/EMMHealth.png")).size(20f).padRight(5f)
-                        add("+$health".toLabel(Color.FOREST))
+                        add("${if (health > 0) "+" else ""}$health".toLabel(if (health > 0) Color.FOREST else Color.SCARLET))
                     }).colspan(2).left().row()
                 }
             }
 '''
 # toLabel extension is included for concise value text.
 c=c.replace('import com.unciv.ui.components.extensions.toTextButton','import com.unciv.ui.components.extensions.toLabel\nimport com.unciv.ui.components.extensions.toTextButton')
-c=c.replace(anchor,code+anchor)
+c=c.replace(anchor,code.replace('EMM_CONSTRUCTION_HEALTH',health_map)+anchor)
 info.write_text(c)
