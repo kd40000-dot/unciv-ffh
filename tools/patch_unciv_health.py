@@ -384,3 +384,69 @@ a=a.replace(needle,'''        if (unit.civ.gameInfo.ruleset.buildings.containsKe
 '''+needle)
 actions.write_text(a)
 print('Added playable Medic II Cure Disease unit action')
+
+# Start the full-engine Armageddon Counter integration. Its value and event state
+# are serialized; future EMM spell/civic/city triggers must call changeEmmArmageddon.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+anchor='class GameInfo : '
+# Insert into class body after the opening brace, not in GameInfoPreview.
+start=g.index('class GameInfo :')
+opening=g.index('{',start)
+g=g[:opening+1]+'''
+    /** EMM world Armageddon Counter, 0..100, saved with the game. */
+    var emmArmageddonCounter = 0
+    var emmBlightTriggered = false
+    var emmPestilenceTriggered = false
+
+    fun changeEmmArmageddon(delta: Int) {
+        if (!ruleset.buildings.containsKey("Herbalist")) return
+        val prior = emmArmageddonCounter
+        emmArmageddonCounter = (prior + delta).coerceIn(0, 100)
+        if (prior < 30 && emmArmageddonCounter >= 30 && !emmBlightTriggered) {
+            emmBlightTriggered = true
+            com.unciv.logic.city.EmmArmageddonEvents.fireBlight(this)
+        }
+        if (prior < 35 && emmArmageddonCounter >= 35 && !emmPestilenceTriggered) {
+            emmPestilenceTriggered = true
+            com.unciv.logic.city.EmmArmageddonEvents.firePestilence(this)
+        }
+    }
+'''+g[opening+1:]
+gamefile.write_text(g)
+
+dispatcher=root/'core/src/com/unciv/logic/city/EmmArmageddonEvents.kt'
+dispatcher.write_text('''package com.unciv.logic.city
+
+import com.unciv.logic.GameInfo
+
+/**
+ * EMM Armageddon threshold dispatcher. This deliberately does not invent AC
+ * generation: changing the counter must be hooked to source-accurate actions.
+ */
+object EmmArmageddonEvents {
+    fun fireBlight(game: GameInfo) {
+        for (civ in game.civilizations) for (city in civ.cities) {
+            val breakdown = city.cityStats.emmHealthBreakdown
+            val random = city.state.stateBasedRandom("EMM.Blighter." + game.turns).nextInt(15)
+            EmmCityEpidemics.blight(
+                city, random,
+                -(breakdown["Unhealthy features"] ?: 0),
+                breakdown["Forests and features (healthy)"] ?: 0,
+                breakdown["Healthy buildings"] ?: 0
+            )
+            city.cityStats.update()
+        }
+    }
+
+    fun firePestilence(game: GameInfo) {
+        for (civ in game.civilizations) for (city in civ.cities) {
+            val random = city.state.stateBasedRandom("EMM.Pestilence." + game.turns).nextInt(9)
+            val goodBuildingHealth = city.cityStats.emmHealthBreakdown["Healthy buildings"] ?: 0
+            EmmCityEpidemics.pestilence(city, random, goodBuildingHealth)
+            city.cityStats.update()
+        }
+    }
+}
+''')
+print('Installed serialized Armageddon threshold state and Blight/Pestilence dispatcher')
