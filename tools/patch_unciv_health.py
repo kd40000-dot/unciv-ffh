@@ -543,3 +543,32 @@ t=t.replace(needle,needle+'''
 ''')
 tech.write_text(t)
 print('Wired EMM religion founding by technology and distinct-city religion spread AC changes')
+
+
+# Make the original Ashen Veil spread source accessible during ordinary play.
+actiontype=root/'core/src/com/unciv/models/UnitAction.kt'
+a=actiontype.read_text()
+needle='    EmmCureDisease("Cure Disease"),'
+assert a.count(needle)==1
+a=a.replace(needle,needle+'\n    EmmSpreadAshenVeil("Spread the Ashen Veil"),')
+actiontype.write_text(a)
+
+actions=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt'
+a=actions.read_text()
+needle='''        addSkipAction(unit)'''
+assert a.count(needle)==1
+a=a.replace(needle,'''        if (unit.name == "Disciple of the Ashen Veil" &&
+            unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            val city = unit.getTile().getCity()
+            if (city != null && "The Ashen Veil" !in city.emmEstablishedReligions &&
+                "The Ashen Veil" in unit.civ.gameInfo.emmFoundedReligions) {
+                yield(UnitAction(UnitActionType.EmmSpreadAshenVeil,
+                    action = if (unit.hasMovement()) ({
+                        unit.civ.gameInfo.emmSpreadReligion("The Ashen Veil", city)
+                        unit.destroy()
+                    }) else null))
+            }
+        }
+'''+needle)
+actions.write_text(a)
+print('Wired gameplay missionary action into source-backed +1/city AC progress')
