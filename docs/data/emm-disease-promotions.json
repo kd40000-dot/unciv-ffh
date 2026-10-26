@@ -1,0 +1,61 @@
+{
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "source": "XML/Units/CIV4PromotionInfos.xml",
+  "promotions": {
+    "PROMOTION_DISEASED": {
+      "Type": "PROMOTION_DISEASED",
+      "Description": "TXT_KEY_PROMOTION_DISEASED",
+      "Sound": "AS2D_IF_LEVELUP",
+      "iEnemyHealChange": "-10",
+      "iNeutralHealChange": "-10",
+      "iFriendlyHealChange": "-10",
+      "iCombatPercent": "-30",
+      "Button": "Art/Interface/Buttons/Promotions/Diseased.dds",
+      "bMutation": "1",
+      "bPrereqAlive": "1",
+      "iAIWeight": "-100",
+      "iCombatPercentDefense": "-30",
+      "iMinLevel": "-1",
+      "PromotionCombatApply": "PROMOTION_DISEASED"
+    },
+    "PROMOTION_IMMUNE_DISEASE": {
+      "Type": "PROMOTION_IMMUNE_DISEASE",
+      "Description": "TXT_KEY_PROMOTION_IMMUNE_DISEASE",
+      "Sound": "AS2D_IF_LEVELUP",
+      "Button": "Art/Interface/Buttons/Promotions/Immunedisease.dds",
+      "bMutation": "1",
+      "iMinLevel": "-1",
+      "PromotionImmune1": "PROMOTION_DISEASED",
+      "PromotionImmune2": "PROMOTION_PLAGUED"
+    },
+    "PROMOTION_PLAGUED": {
+      "Type": "PROMOTION_PLAGUED",
+      "Description": "TXT_KEY_PROMOTION_PLAGUED",
+      "Sound": "AS2D_IF_LEVELUP",
+      "iEnemyHealChange": "-20",
+      "iNeutralHealChange": "-20",
+      "iFriendlyHealChange": "-20",
+      "iCombatPercent": "-60",
+      "Button": "Art/Interface/Buttons/Promotions/Plagued.dds",
+      "bPrereqAlive": "1",
+      "iAIWeight": "-100",
+      "iCombatPercentDefense": "-60",
+      "iMinLevel": "-1"
+    },
+    "PROMOTION_POISONED": {
+      "Type": "PROMOTION_POISONED",
+      "Description": "TXT_KEY_PROMOTION_POISONED",
+      "Help": "TXT_KEY_PROMOTION_POISONED_PEDIA",
+      "Sound": "AS2D_IF_LEVELUP",
+      "iEnemyHealChange": "-3",
+      "iNeutralHealChange": "-5",
+      "iFriendlyHealChange": "-8",
+      "iCombatPercent": "-10",
+      "Button": "Art/Interface/Buttons/Promotions/Poisoned.dds",
+      "bRemovedWhenHealed": "1",
+      "iAIWeight": "-100",
+      "iCombatPercentDefense": "-10",
+      "iMinLevel": "-1"
+    }
+  }
+}
