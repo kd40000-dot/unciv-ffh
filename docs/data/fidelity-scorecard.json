@@ -244,8 +244,8 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 18,
-      "status": "early",
+      "percent": 20,
+      "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
         "XML/Terrain/CIV4BonusInfos.xml"
@@ -266,10 +266,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-based Diseased combat transmission and all-source immunity/cure-on-immunity hooks implemented in patched engine. Static regression contracts added. Compilation and gameplay tests pending; source contact applicability and biological target eligibility not yet exhaustively verified.",
-      "remainingDifferences": "City health and temporary epidemic penalties implemented as earlier. Combat transmission of Diseased when an affected attacker/defender survive added; Immune to Disease rejects new Diseased/Plagued promotion from all grant paths and clears existing infections. Remaining: Cure Disease and Healing Salve actions, nonliving immunity/eligibility, all EMM directionality/target edge cases, automatic AC30 Blight/AC35 Pestilence dispatch, unit Death damage, epidemic lair/spell triggers, exact sickness duration and gameplay tests.",
+      "verification": "Medic II Cure Disease action and persistent world Armageddon Counter with crossing-event dispatch code committed; static source contracts added. Build verification and player tests required. No source-faithful changes currently drive AC automatically; 30/35 events latent without changeEmmArmageddon calls.",
+      "remainingDifferences": "Medic II cure action covers co-located friendly diseased/plagued units but precise EMM spell targeting and full Medic I/II bonuses still missing. Global AC 0-100 counter/one-shot Blight 30 and Pestilence 35 threshold dispatch code exists, but no source-accurate generators wired, no meter and no event unit Death damage. Healing Salve, living-only immunity, lair infection, full plague transmission/curing, area/building-resource interactions, AI and comprehensive gameplay verification remain open.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 disease combat transmission and global immunity enforcement"
+      "updatedBy": "2026-10-26 playable Medic II cure action and serialized global Armageddon threshold dispatcher"
     },
     {
       "id": "F14",
