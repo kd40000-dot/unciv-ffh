@@ -88,3 +88,9 @@ Outstanding: disease/plagued unit promotions and combat contagion, spell curing,
 Pinned [EMM disease promotion inventory](data/emm-disease-promotions.json) confirms: Diseased incurs **-30% combat strength and -10 healing** in friendly, neutral and enemy territory, while Plagued incurs **-60% combat strength and -20 healing**. The mod declares these statuses and the patched Unciv engine now subtracts their healing amounts in the unit heal computation. This means the penalties apply **when the promotion is present**. The promotions do not yet spread through combat, apply themselves from random events, or implement immunity/cures. Their saved-unit and in-game interactions have not been accepted by the player yet.
 
 Source-backed city Blight/Pestilence event code exists, but the global Armageddon Counter (30/35 threshold dispatch) is not yet present; no automatic catastrophe is claimed. The latest APK build passes CI but needs gameplay checks of the stats display, sickness persistence and turn decay.
+
+### Diseased combat transmission (2026-10-26)
+
+The pinned EMM `PROMOTION_DISEASED` has `PromotionCombatApply=PROMOTION_DISEASED`; `PROMOTION_IMMUNE_DISEASE` lists Disease and Plagued as blocked incoming promotions. The engine combat hook now attempts to add Diseased to a surviving defender when an attacking Diseased unit also survives and the defender is neither immune nor already diseased/plagued. It is guarded to the EMM ruleset, leaving base Unciv unaffected.
+
+**Not yet faithful or player tested:** reciprocal defensive combat infection may be required by EMM's C++ implementation; exact applicability to nonliving targets, cure spells (including Healing Salve and Cure Disease), the process of granting Immune to Disease, and disease from lairs/events. The spell source shows that Healing Salve removes Diseased, Plagued, Poisoned and Withered from the caster, but this is not yet exposed as an in-game action. Do not mark these as complete.
