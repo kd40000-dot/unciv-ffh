@@ -66,3 +66,7 @@ The source extractor now includes EMM `XML/Gameinfo/CIV4HandicapInfo.xml` and wr
 **Still missing:** correct city landmass/area health (`iAreaHealth`), full modifier interactions, richer source-specific resource and terrain breakdown, disease/Blight, AI valuation, and game verification of these new cases. XML extraction and compilation do not substitute for gameplay tests.
 
 **Additional regression tests:** Compare Settler (+4) to Chieftain (+3) and Prince (+2) on identical cities; test two Kuriotate cities before and after constructing their Palace; verify cities with any `bNoUnhealthyPopulation` effect show no population unhealthiness while retaining negative feature health. Confirm population still consumes its usual Food; this effect eliminates **health penalty**, not basic citizen consumption.
+
+### Area-health follow-up
+
+The engine now reads EMM's iAreaHealth building field and applies area bonuses to same-continent cities. Aquae Sucellus has +1 area health in the pinned EMM XML. The building is not yet available in the current mod, so in-game testing of this rule awaits its port. Compare two cities on one continent and a third on another when testing.
