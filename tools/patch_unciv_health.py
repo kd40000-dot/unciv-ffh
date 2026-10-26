@@ -1257,3 +1257,153 @@ v=v.replace(needle,'''            "EVENTTRIGGER_SHRINE_CAMULOS" -> listOf(
             )''')
 alert.write_text(v)
 print('Enabled four source-gated EMM event families with full-effect-safe choices')
+
+
+# Reusable EMM event-choice effect interpreter. Only XML effect fields that
+# the engine can execute faithfully are allowed into the gameplay whitelist.
+# Built from source JSON at build time rather than hand-maintained deltas.
+eventdata=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+supported_fields={'Type','Description','Button','Civilopedia','iMaxNumReligions','iAIValue',
+    'iGlobalCounter','bPickCity','iGold','iPopulationChange','iHappy','iHealth'}
+effectmap={}
+for trigger in eventdata['events']:
+    for choice in trigger['choices']:
+        fields=choice['fields']
+        extras={k for k in fields if k not in supported_fields}
+        if extras: continue
+        vals={k:int(fields.get(k,['0'])[0]) for k in
+            ('iGlobalCounter','iGold','iPopulationChange','iHappy','iHealth')}
+        effectmap[choice['id']]=vals
+assert effectmap['EVENT_WITCH_1']['iHealth']==-3
+assert effectmap['EVENT_HOLY_CHILD_2']['iGold']==-50
+def entry(name,values):
+    return '        %s to EmmEventEffect(%d, %d, %d, %d, %d)'%(
+        ks(name),values['iGlobalCounter'],values['iGold'],
+        values['iPopulationChange'],values['iHappy'],values['iHealth'])
+effectfile=root/'core/src/com/unciv/logic/EmmEventEffects.kt'
+effectfile.write_text('''package com.unciv.logic
+
+/** Whitelisted complete numeric effects, extracted from EMM EventInfos XML. */
+data class EmmEventEffect(
+    val armageddon: Int,
+    val gold: Int,
+    val population: Int,
+    val happiness: Int,
+    val health: Int
+)
+object EmmEventEffects {
+    val choices = mapOf(
+%s
+    )
+}
+'''%(',\n'.join(entry(n,v) for n,v in sorted(effectmap.items()))))
+
+cityfile=root/'core/src/com/unciv/logic/city/City.kt'
+c=cityfile.read_text()
+needle='    var emmDiseaseHealthCounter = 0'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'''
+    /** Persistent EMM city event effects distinct from temporary epidemic unhealth. */
+    var emmEventHealth = 0
+    var emmEventHappiness = 0
+''')
+needle='        toReturn.emmDiseaseHealthCounter = emmDiseaseHealthCounter'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'''
+        toReturn.emmEventHealth = emmEventHealth
+        toReturn.emmEventHappiness = emmEventHappiness''')
+cityfile.write_text(c)
+
+city_stats=root/'core/src/com/unciv/logic/city/CityStats.kt'
+v=city_stats.read_text()
+needle='''            val totalUnhealthy = unhealthyPopulation + featureUnhealth + buildingUnhealth + city.emmDiseaseHealthCounter'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            val eventUnhealth = (-city.emmEventHealth).coerceAtLeast(0)
+            val eventHealthy = city.emmEventHealth.coerceAtLeast(0)
+            val totalUnhealthy = unhealthyPopulation + featureUnhealth + buildingUnhealth +
+                city.emmDiseaseHealthCounter + eventUnhealth''')
+needle='''            emmHealthInfo = healthySources to totalUnhealthy'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            emmHealthInfo = (healthySources + eventHealthy) to totalUnhealthy''')
+needle='''                "Healthy buildings" to buildingHealth,'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+                "Event health" to city.emmEventHealth,''')
+needle='''            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            val netUnhealthy = (totalUnhealthy - healthySources - eventHealthy).coerceAtLeast(0)''')
+needle='''        happinessList = newHappinessList'''
+assert v.count(needle)==1
+v=v.replace(needle,'''        if (city.emmEventHappiness != 0)
+            newHappinessList["EMM random events"] = city.emmEventHappiness.toFloat()
+'''+needle)
+city_stats.write_text(v)
+
+# This gate is shared by UI, AI, and debug console.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''        if (choice == "EVENT_HOLY_CHILD_3" && event == "EVENTTRIGGER_HOLY_CHILD") {'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        val effect = EmmEventEffects.choices[choice] ?: return false
+        val civ = civilizations.firstOrNull { it.civID == civID } ?: return false
+        if (effect.gold < 0 && civ.gold < -effect.gold) return false
+        if (effect.population != 0 || effect.health != 0 || effect.happiness != 0) {
+            val city = civ.cities.firstOrNull { it.id == emmPendingEventCities[civID] }
+                ?: return false
+            if (city.population.population + effect.population < 1) return false
+        }
+'''+needle)
+needle='''            "EVENTTRIGGER_WITCH" -> choice == "EVENT_WITCH_2"'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_WITCH" ->
+                choice == "EVENT_WITCH_2" || choice == "EVENT_WITCH_1"''',1)
+needle='''            "EVENTTRIGGER_HOLY_CHILD" -> choice == "EVENT_HOLY_CHILD_1"'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_HOLY_CHILD" ->
+                choice == "EVENT_HOLY_CHILD_1" || choice == "EVENT_HOLY_CHILD_2"''',1)
+needle='''        if (choice != accepted) return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        if (!emmCanResolveEvent(civID, choice)) return false
+        if (choice != accepted &&
+            choice !in listOf("EVENT_WITCH_1", "EVENT_HOLY_CHILD_2")) return false''')
+needle='''        if (choice == "EVENT_HOLY_CHILD_3") {
+            if (!emmCanResolveEvent(civID, choice)) return false
+            val civ = civilizations.first { it.civID == civID }
+            val city = civ.cities.first { it.id == emmPendingEventCities[civID] }
+            civ.addGold(-25)
+            city.population.setPopulation(city.population.population - 2)
+        }
+        // Original XML: the two decline choices have no counter or secondary effect.
+        if (choice !in listOf("EVENT_IRON_ORB_1", "EVENT_STRANGE_ADEPT_1") &&
+            !applyEmmArmageddonEventChoice(choice)) return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        val effect = EmmEventEffects.choices[choice] ?: return false
+        val civ = civilizations.first { it.civID == civID }
+        if (effect.gold != 0) civ.addGold(effect.gold)
+        if (effect.population != 0 || effect.health != 0 || effect.happiness != 0) {
+            val city = civ.cities.first { it.id == emmPendingEventCities[civID] }
+            if (effect.population != 0)
+                city.population.setPopulation(city.population.population + effect.population)
+            city.emmEventHealth += effect.health
+            city.emmEventHappiness += effect.happiness
+            city.cityStats.update()
+        }
+        if (effect.armageddon != 0) changeEmmArmageddon(effect.armageddon)''')
+gamefile.write_text(g)
+
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''            "EVENTTRIGGER_WITCH" -> listOf(
+                "EVENT_WITCH_2" to "Reject the witch (Armageddon -1)"
+            )'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            "EVENTTRIGGER_WITCH" -> listOf(
+                "EVENT_WITCH_1" to "Accept the witch (+1 city happiness, -3 health; Armageddon +2)",
+                "EVENT_WITCH_2" to "Reject the witch (Armageddon -1)"
+            )''')
+needle='''                "EVENT_HOLY_CHILD_1" to "Protect the child (Armageddon -5)",'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+                "EVENT_HOLY_CHILD_2" to "Support the child (-50 gold, +1 city happiness, +1 health; Armageddon -10)",''')
+alert.write_text(v)
+print('Generated generic EMM numeric event effects, integrated persistent city health/happiness and two new source choices')
