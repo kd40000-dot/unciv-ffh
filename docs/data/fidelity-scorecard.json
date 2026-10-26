@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 26,
+      "percent": 27,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -264,17 +264,18 @@
         "jsons/Units.json",
         "docs/data/emm-leader-alignments.json",
         "docs/data/emm-armageddon-event-choices.json",
-        "scripts/extract_emm_leader_alignments.py"
+        "scripts/extract_emm_leader_alignments.py",
+        "docs/data/emm-armageddon-event-callbacks.json"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-backed selected-leader eliminations (Good +5, Evil -5 after AD 5, idempotent), Order/Ashen Veil 35% conflict, Sanctify (-1), Rob Grave (+1), Necrototem destruction (-2), and all 52 XML event-choice AC deltas compiled in engine or registered as callable API. Build and ruleset tests passed; player tests of new cases pending.",
-      "remainingDifferences": "Natural AC from religion founding (+5 Ashen/+3 Overlords), Ashen spread (+1), selected-leader civilization eliminations (+5 Good / -5 Evil after AD 5), Order/Veil religion conflicts, Sanctify (-1 on ruins/grave), Rob Grave (+1), Necrototem destruction (-2). 52 original event-choice AC values available through engine API but native random-event generation/prerequisites not implemented. Pending: other Civ4 spell events (Peace halves AC, Seven Pines), four random event callbacks, scenario-only Gela -10, other C++ AC contributions, native religion pressure and AI, native graveyard/Necrototem spawning, grave-loot rewards, correct dynamic alignments, Blight/Pestilence unit Death damage, disease gameplay validation.",
+      "verification": "EMM source-aligned Corlindale Peace spell (ends all non-barbarian wars, sacrifices caster, halves counter) implemented as a playable Elohim action; four random-event callback AC deltas (+2/-2/+3/-3) registered as engine API. Ruleset validation passed; Android build and player gameplay checks pending. Native random event prerequisites and non-counter side effects NOT implemented.",
+      "remainingDifferences": "Normal-play counter sources include religions, two disciples, alignment-based eliminations, Order/Veil conflicts, Sanctify, Rob Grave, Necrototem destruction and Corlindale Peace. 52 EMM random-event choice deltas and four callback deltas are callable by future event system, not playable or automatically generated. Still missing Seven Pines unique improvement/one-use Peace, native random-event engine and callbacks' non-AC effects, other EMM C++ counter sources, dynamic alignments, native religious propagation, several scenario-only sources, full Blight/Pestilence unit Death damage, gameplay acceptance tests.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 selected-leader alignment elimination, religion conflicts, Sanctify/Rob Grave, Necrototem, full XML event-choice AC registry"
+      "updatedBy": "2026-10-26 Corlindale Peace and four source-exact callback values"
     },
     {
       "id": "F14",
