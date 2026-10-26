@@ -133,3 +133,18 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('EmmEventCatalog.kt','EmmEventTrigger(','EmmEventCatalog.eraChance','definition.percentActive','weighted.sumOf { it.weight }','emmPendingEventCities = hashMapOf<String, String>()','private fun addEmmEvent()','"EMM_EVENT:" + selected','EVENT_HOLY_CHILD_3','civ.addGold(-25)','city.population.setPopulation(city.population.population - 2)'):
     assert token in patch,token
 print('PASS: source-derived 23-event catalog, per-era chance/weight, native popup and complete Holy Child sacrifice effect')
+
+# Second playable event-batch: full-effect-safe choices only.
+registry=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+event_map={e['id']:e for e in registry['events']}
+assert event_map['EVENTTRIGGER_SHRINE_CAMULOS']['criteria']['percentGamesActive']==10
+assert event_map['EVENTTRIGGER_SHRINE_CAMULOS']['criteria']['buildingClass']==['BUILDINGCLASS_TRAINING_YARD']
+assert event_map['EVENTTRIGGER_IRON_ORB']['criteria']['minTreasury']==75
+assert event_map['EVENTTRIGGER_IRON_ORB']['criteria']['buildingClass']==['BUILDINGCLASS_LIBRARY']
+assert event_map['EVENTTRIGGER_STRANGE_ADEPT']['criteria']['buildingClass']==['BUILDINGCLASS_MAGE_GUILD']
+assert event_map['EVENTTRIGGER_NECRO_CANNIBALISM']['criteria']['minAC']==65
+assert event_map['EVENTTRIGGER_NECRO_CANNIBALISM']['criteria']['minPopulation']==5
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('containsBuildingOrEquivalent("Training Yard")','containsBuildingOrEquivalent("Library")','containsBuildingOrEquivalent("Mage Guild")','EVENT_SHRINE_CAMULOS_1','EVENT_NECRO_CANNIBALISM_2','EVENT_IRON_ORB_1','EVENT_STRANGE_ADEPT_1'):
+ assert token in patch,token
+print('PASS: four added fully safe EMM event families and exact source gating')
