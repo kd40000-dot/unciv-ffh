@@ -70,3 +70,15 @@ The source extractor now includes EMM `XML/Gameinfo/CIV4HandicapInfo.xml` and wr
 ### Area-health follow-up
 
 The engine now reads EMM's iAreaHealth building field and applies area bonuses to same-continent cities. Aquae Sucellus has +1 area health in the pinned EMM XML. The building is not yet available in the current mod, so in-game testing of this rule awaits its port. Compare two cities on one continent and a third on another when testing.
+
+### Disease, Blight, Pestilence — source audit (2026-10-26)
+
+Pinned [EMM `CvRandomEventInterface.py`](https://github.com/bewlay/extramodmod/blob/60b0ec3740083162aaab7bf8491761a54a65a610/python/entrypoints/CvRandomEventInterface.py) defines:
+
+- **Blight**, Armageddon trigger **30**: for non-Infernal cities, a random `0..14` plus population plus bad feature health, minus good feature health and positive building health. A **positive** result increases the city's temporary health penalty counter. Living units also take source-defined Death damage 25.
+- **Pestilence**, Armageddon trigger **35**: for non-Infernal cities, random `0..8` plus integer `population/4` minus good building health, adding the **signed** result to the temporary health counter. Living units also take Death damage 25.
+- Both events use EMM's Civ IV `changeEspionageHealthCounter`. That identifier refers to a **temporary city health penalty**, not traditional BtS espionage gameplay.
+
+The engine patch adds a **serialized temporary city unhealthiness counter** (including cloning and city-screen/food-penalty calculation), decays it one per city turn, and supplies `EmmCityEpidemics.blight` and `pestilence` event APIs with the documented source formulas. It does **not yet trigger** these events automatically: the Armageddon Counter and event dispatcher have not been ported. It also does not yet apply their **unit Death damage**. This is infrastructure and gameplay behavior for explicitly invoked events, **not** a complete Blight/Pestilence implementation.
+
+Outstanding: disease/plagued unit promotions and combat contagion, spell curing, disease-bearing lairs and random events, unit-type immunities, exact temporary sickness decay, event dispatch (AC 30/35), unit death damage and global Armageddon AI consequences. Never raise the score based on an event that has not been triggered and tested.
