@@ -23,6 +23,15 @@ jobs:
         run: python3 tools/patch_unciv_download_client.py upstream-unciv
       - name: Apply EMM health patch
         run: python3 tools/patch_unciv_health.py upstream-unciv
+      - name: Add credited Game-icons health symbol
+        run: |
+          python3 -m pip install cairosvg
+          curl -fL --retry 3 'https://game-icons.net/icons/ffffff/transparent/1x1/sbed/health-normal.svg' -o /tmp/emm-health.svg
+          mkdir -p upstream-unciv/android/Images.Icons/StatIcons
+          python3 - <<'PY'
+          import cairosvg
+          cairosvg.svg2png(url='/tmp/emm-health.svg',write_to='upstream-unciv/android/Images.Icons/StatIcons/EMMHealth.png',output_width=128,output_height=128)
+          PY
       - name: Install side-by-side with existing Unciv
         run: |
           python3 - <<'PY'
