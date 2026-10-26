@@ -26,14 +26,14 @@
 | F16 | Population, specialists and slavery | 15% |
 | F17 | Culture and territory | 30% |
 | F18 | Resources and improvements | 35% |
-| F19 | Armageddon Counter | 0% |
+| F19 | Armageddon Counter | 30% |
 | F20 | Hell terrain and transformation | 5% |
 | F21 | Wilderness and barbarian factions | 5% |
 | F22 | Lairs, dungeons and exploration | 5% |
 | F23 | Diplomacy, councils and vassalage | 10% |
 | F24 | Advanced tactics, forts and revolutions | 5% |
 | F25 | Victory conditions | 10% |
-| | **Equal-weight mean** | **12.0%** |
+| | **Equal-weight mean (current implementation)** | **14.4%** |
 
 **Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.9%.
 
@@ -64,7 +64,28 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.2% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.4% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+
+## Current scoring policy — implementation completeness (2026-10-26)
+
+**Current equal-weight implementation estimate: 14.4%.** The individual percentage
+scores rate the breadth and source fidelity of implemented gameplay behavior,
+without discounting the score simply because the player has not yet tested it
+in-game. Compile/static results and user-tested outcomes are retained as
+separate evidence fields rather than blended into the fidelity percentage.
+
+This corrects F19 Armageddon Counter **0% → 30%**: the original entry was stale
+after persisted AC, counter sources, threshold dispatch and the reusable
+source-derived event engine were implemented. It does not imply that full EMM
+Armageddon conditions, events, Death damage or Hell terrain are present.
+F13 health/disease remains **35%**: the recently committed provisional epidemic
+damage patcher is not a fully integrated typed Death damage implementation.
+
+**Development policy:** Defer interactive gameplay QA until health and its
+closely related disease/Armageddon systems are implemented as close to 100%
+source completeness as feasible. Maintain automated consistency checks and
+compilation throughout development. Player testing neither contributes to
+nor reduces these implementation-only percentage estimates.
 
 ## Change history
 
