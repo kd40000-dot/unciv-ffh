@@ -47,7 +47,7 @@
       }
     ],
     "uniques": [
-      "Health: +2 (EMM health-enabled Unciv required)"
+      "Comment [Health: +2 (EMM health-enabled Unciv required)]"
     ]
   },
   {
@@ -194,7 +194,7 @@
       }
     ],
     "uniques": [
-      "Health: +1 (EMM health-enabled Unciv required)"
+      "Comment [Health: +1 (EMM health-enabled Unciv required)]"
     ]
   },
   {
@@ -220,7 +220,7 @@
       }
     ],
     "uniques": [
-      "Health: +3 (EMM health-enabled Unciv required)"
+      "Comment [Health: +3 (EMM health-enabled Unciv required)]"
     ]
   },
   {
