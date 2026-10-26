@@ -1700,3 +1700,99 @@ v=v.replace(needle,needle+'''
             )''')
 alert.write_text(v)
 print('Wired source War Games veteran unit targeting/disbanding and reusable unit/tile event effect APIs')
+
+
+# Source EMM Winds from Hell 3: remove selected owned Windmill outright.
+# The source XML identifies iImprovementChange=-1, ImprovementType=WINDMILL,
+# AC threshold 20 and Knowledge of the Ether prerequisite. Persist selected tile
+# coordinates so it cannot affect an unrelated Windmill after loading a save.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''    var emmPendingEventUnits = hashMapOf<String, Int>()'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+    var emmPendingEventTiles = hashMapOf<String, com.unciv.logic.map.HexCoord>()''')
+needle='''            "EVENTTRIGGER_WAR_GAMES" ->
+                choice == "EVENT_WAR_GAMES_1" || choice == "EVENT_WAR_GAMES_2"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            "EVENTTRIGGER_WINDS_FROM_HELL" -> choice == "EVENT_WINDS_FROM_HELL_3"''')
+needle='''            "EVENTTRIGGER_WAR_GAMES" ->
+                if (choice == "EVENT_WAR_GAMES_2") choice else "EVENT_WAR_GAMES_1"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            "EVENTTRIGGER_WINDS_FROM_HELL" -> "EVENT_WINDS_FROM_HELL_3"''')
+needle='''        val effect = EmmEventEffects.choices[choice] ?: return false'''
+assert g.count(needle)==2
+g=g.replace(needle,'''        if (event == "EVENTTRIGGER_WINDS_FROM_HELL") {
+            if (choice != "EVENT_WINDS_FROM_HELL_3") return false
+            val position = emmPendingEventTiles[civID] ?: return false
+            if (position !in tileMap) return false
+            val target = tileMap[position]
+            if (target.improvement != "Windmill" ||
+                target.getOwner()?.civID != civID) return false
+        }
+'''+needle,1)
+needle='''        if (event == "EVENTTRIGGER_WAR_GAMES") {
+            val selectedUnit = civ.units.getUnitById(emmPendingEventUnits[civID]!!)
+                ?: return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        if (event == "EVENTTRIGGER_WINDS_FROM_HELL") {
+            val tile = tileMap[emmPendingEventTiles[civID]!!]
+            if (!EmmEventWorldEffects.removeNamedImprovement(tile, "Windmill"))
+                return false
+        }
+'''+needle)
+needle='''        emmPendingEventUnits.remove(civID)'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+        emmPendingEventTiles.remove(civID)''')
+needle='''            if (emmArmageddonCounter >= 2 && civ.units.getCivUnits()'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            if (emmArmageddonCounter >= 20 &&
+                civ.tech.isResearched("Knowledge of the Ether") &&
+                tileMap.values.any {
+                    it.getOwner() == civ && it.improvement == "Windmill"
+                })
+                eligible.add("EVENTTRIGGER_WINDS_FROM_HELL")
+'''+needle)
+needle='''            emmPendingEvents[civ.civID] = selected'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            if (selected == "EVENTTRIGGER_WINDS_FROM_HELL")
+                tileMap.values.firstOrNull {
+                    it.getOwner() == civ && it.improvement == "Windmill"
+                }?.let {
+                    emmPendingEventTiles[civ.civID] = it.position
+                    emmPendingEventCities[civ.civID] = it.getCity()!!.id
+                }''')
+needle='''                    "EVENTTRIGGER_WAR_GAMES" -> "EVENT_WAR_GAMES_2"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+                    "EVENTTRIGGER_WINDS_FROM_HELL" -> "EVENT_WINDS_FROM_HELL_3"''')
+gamefile.write_text(g)
+
+effectfile=root/'core/src/com/unciv/logic/EmmEventEffects.kt'
+v=effectfile.read_text()
+needle='''        "EVENT_WAR_GAMES_2" to EmmEventEffect(0, 0, 0, 0, 0),'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+        "EVENT_WINDS_FROM_HELL_3" to EmmEventEffect(0, 0, 0, 0, 0),''')
+effectfile.write_text(v)
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''            "EVENTTRIGGER_WAR_GAMES" -> "War Games"'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+            "EVENTTRIGGER_WINDS_FROM_HELL" -> "Winds from Hell"''')
+needle='''            "EVENTTRIGGER_WAR_GAMES" -> listOf(
+                "EVENT_WAR_GAMES_1" to "Disband the veteran unit (Armageddon -2)",
+                "EVENT_WAR_GAMES_2" to "Spare the unit (-1 experience)"
+            )'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+            "EVENTTRIGGER_WINDS_FROM_HELL" -> listOf(
+                "EVENT_WINDS_FROM_HELL_3" to "Destroy the affected Windmill"
+            )''')
+alert.write_text(v)
+print('Implemented source Winds from Hell windmill removal with persisted tile targeting')
