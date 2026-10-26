@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 29,
+      "percent": 31,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -275,10 +275,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-derived 23-trigger typed Kotlin catalog, original EMM per-era event chance 4%, original XML trigger weights, native blocking human-choice popup and gold/population effect of Holy Child 3. Kotlin compile passed; APK packaging/player tests still pending. Three trigger families enabled, one additional choice fully implemented; others source-only.",
-      "remainingDifferences": "Only Witch, Holy Child and Demonic Tome event families are auto-scheduled; source catalog enumerates 23 but unimplemented family prerequisites/callbacks and effects remain gated off. Event scheduling still does not recreate full Civ IV RNG, gameplay speed/difficulty probabilities; native UI only offers fully supported choices (including Holy Child sacrifice), not original complete choice menus. Recurrence semantics, AI weighted selection, 20 remaining event families, 52 complete choice consequences, seven pines, blight/pestilence unit damage, full alignment/religion mechanics and in-game end-to-end testing pending.",
+      "verification": "Four more source-derived random event families enabled: Camulos (population>=3 Training Yard, 10% game activation, +1 AC), Necro-Cannibalism (AC>=65 population>=5 evil selected leader, +3 AC), Iron Orb (Library and 75 Gold; refusal), Strange Adept (Mage Guild; refusal). GitHub ruleset validation passed. Android build pending; no device tests.",
+      "remainingDifferences": "7 of 23 AC event trigger families currently scheduled; most choices other than the safe source-effect ones remain gated off. Remaining 16 triggers, original full choices and callbacks, dynamic alignment, event frequency tuning, full blight/pestilence Death damage, save/load player acceptance and AI decision fidelity still pending.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 native event dialog, XML-derived 23-trigger engine registry and source era chances"
+      "updatedBy": "2026-10-26 7 event trigger families active with source-gated full-effect-safe choice support"
     },
     {
       "id": "F14",
