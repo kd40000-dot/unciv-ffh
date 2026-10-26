@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 33,
+      "percent": 35,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -275,10 +275,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source EMM EventInfos: Iron Orb 2 pays 75 gold, adds 2 research to its Library while retained, adds 2 AC; Sobs 1 causes -1 city happiness. Reusable event resolver selects eligible Library-containing city and stores science modifier. Static verification and Android build pending player acceptance.",
-      "remainingDifferences": "8/23 EMM Armageddon event families with playable restricted choices. Remaining events and optional choices require event plot/resource qualifiers, promotions, unit spawning, Python callbacks, diplomacy/religion, dynamic alignment, and complete AI/event RNG scheduling. Library modifier conditional on building, but original building-specific Civ IV extra commerce under further verification; no device gameplay test.",
+      "verification": "Source-informed reusable event world actions: spawn matching class unit with free promotions, rollback on placement failure; conditional named-tile-improvement removal; saved unit/tile selection across game clones. War Games disband/XP outcomes and source-ac; Winds from Hell Windmill destruction; Doviello Necro-Cannibalism Warrior-class unit and native Cannibalize on-kill +10 HP effect. CI ruleset validation passed, Kotlin engine compilation passed; Android packaging/player tests pending.",
+      "remainingDifferences": "10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Full Blight/Pestilence living-unit damage and remaining sources continue to be outstanding.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 Iron Orb Library +2 permanent science effect and Sobs city happiness event"
+      "updatedBy": "2026-10-26 EMM event unit spawning, free promotions, War Games, Winds Windmill removal, Doviello Cannibalize and cloned event state"
     },
     {
       "id": "F14",
