@@ -1162,5 +1162,32 @@
         "text": "Source: EMM PROMOTION_IMMUNE_DISEASE: immune to Diseased and Plagued. Actual immunity to incoming promotion effects requires engine implementation."
       }
     ]
+  },
+  {
+    "name": "Medic I",
+    "unitTypes": [
+      "Disciple"
+    ],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "EMM Medic promotion prerequisite. Further healing effects pending full source audit."
+      }
+    ]
+  },
+  {
+    "name": "Medic II",
+    "unitTypes": [
+      "Disciple"
+    ],
+    "prerequisites": [
+      "Medic I"
+    ],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "EMM Medic II enables Cure Disease. This promotion currently lacks other EMM Medic effects until the full promotion family is ported."
+      }
+    ]
   }
 ]
