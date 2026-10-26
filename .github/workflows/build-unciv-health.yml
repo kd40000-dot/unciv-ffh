@@ -29,9 +29,9 @@ jobs:
           from pathlib import Path
           p=Path('upstream-unciv/android/build.gradle.kts')
           s=p.read_text()
-          anchor='        debug {\n            isDebuggable = true'
+          anchor='applicationIdSuffix = ".httpfix"'
           assert s.count(anchor)==1
-          p.write_text(s.replace(anchor,'        debug {\n            applicationIdSuffix = ".emmhealth"\n            isDebuggable = true'))
+          p.write_text(s.replace(anchor,'applicationIdSuffix = ".emmhealth"'))
           PY
       - name: Verify patch scope
         run: |
