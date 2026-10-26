@@ -46,15 +46,20 @@ difficultyBonuses = {entry['id'].removeprefix('HANDICAP_').capitalize():int(entr
 assert difficultyBonuses['Settler']==4 and difficultyBonuses['Chieftain']==3 and difficultyBonuses['Prince']==2
 handicap_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(difficultyBonuses.items()))+')'
 global_health={}
+area_health={}
 no_population_unhealth=[]
 for row in source['groups']['buildings']['entries']:
     name=' '.join(part.capitalize() for part in row['id'].removeprefix('BUILDING_').split('_'))
     if name.startswith('Palace '): name=name.removeprefix('Palace ')+' Palace'
+    area_amount=int(row['fields'].get('iAreaHealth','0'))
+    if area_amount: area_health[name]=area_amount
     global_amount=int(row['fields'].get('iGlobalHealth','0'))
     if global_amount: global_health[name]=global_amount
     if row['fields'].get('bNoUnhealthyPopulation')=='1':no_population_unhealth.append(name)
 assert global_health.get('Kuriotates Palace')==1
+assert area_health.get('Aquae Sucellus')==1
 assert 'Demonic Citizens' in no_population_unhealth
+area_health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(area_health.items()))+')'
 global_health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(global_health.items()))+')'
 no_unhealth_set='setOf('+', '.join('"'+n+'"' for n in no_population_unhealth)+')'
 health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(health.items()))+')'
@@ -90,7 +95,13 @@ replacement='''        val foodEaten = calcFoodEaten()
             val globalHealth = EMM_GLOBAL_HEALTH.entries.sumOf { (name, value) ->
                 if (city.civ.cities.any { name in it.cityConstructions.builtBuildings }) value else 0
             }
-            val healthySources = handicapHealth + buildingHealth + globalHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
+            val currentContinent = city.getCenterTile().getContinent()
+            val areaHealth = EMM_AREA_HEALTH.entries.sumOf { (name, value) ->
+                if (currentContinent >= 0 && city.civ.cities.any {
+                    it.getCenterTile().getContinent() == currentContinent && name in it.cityConstructions.builtBuildings
+                }) value else 0
+            }
+            val healthySources = handicapHealth + buildingHealth + globalHealth + areaHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
             val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
@@ -98,6 +109,7 @@ replacement='''        val foodEaten = calcFoodEaten()
 assert s.count(anchor)==1,'Pinned CityStats changed, refusing unsafe patch'
 replacement=replacement.replace('EMM_HEALTH_MAP',health_map)
 replacement=replacement.replace('EMM_GLOBAL_HEALTH',global_health_map)
+replacement=replacement.replace('EMM_AREA_HEALTH',area_health_map)
 replacement=replacement.replace('EMM_NO_UNHEALTHY_POPULATION',no_unhealth_set)
 replacement=replacement.replace('EMM_DIFFICULTY_HEALTH',handicap_map)
 replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
@@ -119,6 +131,7 @@ s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnheal
                 "Difficulty health" to handicapHealth,
                 "Buildings" to buildingHealth,
                 "Empire-wide buildings" to globalHealth,
+                "Continent buildings" to areaHealth,
                 "Expansive trait" to expansiveHealth,
                 "Connected resources" to resourceHealth,
                 "Fresh water" to freshwaterHealth,
