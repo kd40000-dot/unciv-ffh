@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 22% |
+| F13 | City health and disease | 26% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.7%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.8%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.7% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.8% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -122,3 +122,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **20% → 22%**; 25-system mean **12.6% → 12.7%** rounded. Pinned `XML/Gameinfo/CIV4ReligionInfo.xml`: first founding of Ashen Veil +5 AC, Octopus Overlords +3 AC, spread of Ashen Veil +1 AC per newly reached city. Religion-founding technologies from `python/CvEventManager.py` now generate these deltas when researched. A source-traced buildable Disciple of the Ashen Veil (`UNIT_DISCIPLE_THE_ASHEN_VEIL`, cost 60, strength 3, move 1) can spread the Veil through a normal city-center unit action, granting its source-based AC change.
 - **Faithfulness caveat:** the temporary missionary action and serialized religion city flag are not a full EMM religion system. Natural passive spreading, AI missionary use, holy-city rules, religion buildings/civics, and numerous other AC changes are pending. Reaching Blight (30) or Pestilence (35) requires enough genuine research-and-conversion actions; no made-up per-turn counter increases were added.
 - Unciv build and validation passing only confirm code/package checks, not successful in-game epidemic trigger testing.
+
+### 2026-10-26 — Expanded source-backed Armageddon counter sources (F13)
+- F13 **22% → 26%**, 25-system gameplay average **12.7% → 12.8%** rounded. New engine hooks cover selected leader elimination alignment (+5 Good / −5 Evil, year 5+, once), source Order/Veil conflicts (35% incoming victory; ±1 AC), Life I Sanctify (−1), Rob Grave (+1), and Necrototem permanent destruction (−2). New Order Disciple is source-traced for missionary conflicts.
+- 19 leader alignments extracted from pinned `CIV4LeaderHeadInfos.xml`; 52 signed `iGlobalCounter` event-choice values extracted from pinned `CIV4EventInfos.xml`, with a callable API but **not** active source-compatible random events. Reference registry `docs/data/emm-armageddon-sources.json` records what remains unported.
+- Android build and full mod validation passed. In-game testing of new spells/religion/elimination cases is still outstanding; automated random-event selection, special source spells and world scenarios require further engine work, and Blight/Pestilence unit Death damage is unfinished. This is not 100% AC fidelity.
