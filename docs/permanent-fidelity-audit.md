@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 14% |
+| F13 | City health and disease | 16% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -100,3 +100,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **12% → 14%**, total gameplay scorecard **12.3% → 12.4%** (rounded). The old adapter incorrectly treated Forge, Dwarven Smithy, Reliquary and Public Baths negative-health source values as subtraction from healthy totals; they now contribute to the unhealthy counter while preserving the correct net-Food effect. Their construction info uses signed icon bonuses, rather than only three hard-coded health buildings.
 - Added static EMM-source checks in `tools/verify_emm_health_rules.py` to guard against sign regressions, with the Android workflow executing them.
 - **Gameplay verification pending:** city growth, negative building effects, source health contributions, area/global effects, save/reload, disease and Armageddon effects. This percentage is an estimate, not proof of completeness.
+
+### 2026-10-26 — Disease, Blight and Pestilence first source-backed slice (F13)
+- F13 **14% → 16%**; overall gameplay scorecard **12.4%** (rounded). The engine now stores a serialized temporary sickness counter in cities, applies its effects as extra unhealthiness, and exposes helper functions implementing EMM Blight/Pestilence sickness formulas.
+- EMM source references: `python/entrypoints/CvRandomEventInterface.py` (Blight threshold 30, Pestilence threshold 35) and `XML/Units/CIV4PromotionInfos.xml` (Diseased -30% combat, Plagued -60%). The latter combat strength values are present in the port's promotion data.
+- **Not complete or verified in-game:** Blight/Pestilence are not automatically triggered until the Armageddon Counter is implemented, unit damage and disease transmission/cures/immunity remain absent, and Kotlin build plus in-game save/load/decay tests are needed. UI simulation alone is not equivalent to full EMM disease behavior.
