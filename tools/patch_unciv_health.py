@@ -81,5 +81,47 @@ replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
 replacement=replacement.replace('EMM_RESOURCE_HEALTH',resource_map)
 replacement=replacement.replace('EMM_FEATURE_HEALTH',feature_map)
 s=s.replace(anchor,replacement)
+# Shared city health state is recalculated alongside Food penalties.
+field='    var currentCityStats: Stats = Stats()'
+assert s.count(field)==1
+s=s.replace(field, '    var emmHealthInfo: Pair<Int, Int>? = null // (healthy, unhealthy) for city UI\\n'.replace('\\n','\n')+field)
+s=s.replace('        val foodEaten = calcFoodEaten()', '        emmHealthInfo = null\n        val foodEaten = calcFoodEaten()',1)
+s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '            val totalUnhealthy = unhealthyPopulation + featureUnhealth\n            emmHealthInfo = healthySources to totalUnhealthy\n            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)')
 path.write_text(s)
+# Expose the read-only health figures on CityView for both city widgets.
+view=root/'core/src/com/unciv/view/CityView.kt'
+v=view.read_text()
+needle='    @Readonly fun getCurrentCityStats(): Stats = city.cityStats.currentCityStats'
+assert v.count(needle)==1
+v=v.replace(needle,needle+'\n    @Readonly fun getEmmHealthInfo(): Pair<Int, Int>? = city.cityStats.emmHealthInfo')
+view.write_text(v)
+# Show city health at all population sizes, not only during starvation.
+ui=root/'core/src/com/unciv/ui/screens/cityscreen/CityStatsTable.kt'
+u=ui.read_text()
+needle='        lowerTable.add(unassignedPopLabel).row()'
+assert u.count(needle)==1
+u=u.replace(needle, '''        cityView.getEmmHealthInfo()?.let { (healthy, unhealthy) ->
+            val net = healthy - unhealthy
+            val status = if (net >= 0) Color.FOREST else Color.SCARLET
+            val healthLabel = "Health: $healthy / $unhealthy (net ${if (net >= 0) "+" else ""}$net)".toLabel(status, hideIcons = true)
+            lowerTable.add(healthLabel).row()
+        }
+'''+needle)
+ui.write_text(u)
+# Add breakdown to the detailed Stats popup, preceding existing stat tables.
+pop=root/'core/src/com/unciv/ui/screens/cityscreen/DetailedStatsPopup.kt'
+d=pop.read_text()
+needle='        totalTable.add("Base values".toLabel().apply { setAlignment(Align.center) })'
+assert d.count(needle)==1
+d=d.replace(needle,'''        cityView.getEmmHealthInfo()?.let { (healthy, unhealthy) ->
+            val net = healthy - unhealthy
+            totalTable.add("City health: $healthy healthy / $unhealthy unhealthy (net ${if (net >= 0) "+" else ""}$net)".toLabel(if (net >= 0) Color.GREEN else Color.SCARLET))
+                .colspan(columnCount).left().row()
+            totalTable.add("Population unhealthiness and buildings, resources, terrain, traits and freshwater health are included.".toLabel())
+                .colspan(columnCount).left().row()
+            totalTable.addSeparator(colSpan = columnCount)
+        }
+'''+needle)
+pop.write_text(d)
+print('Patched city health status in CityStats, CityView, city screen, Stats popup')
 print('Patched',path)
