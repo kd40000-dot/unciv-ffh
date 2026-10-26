@@ -237,3 +237,45 @@ t=t.replace(needle,'''        city.clearCaches()
             city.emmDiseaseHealthCounter -= 1
 ''')
 turn.write_text(t)
+
+# Source-aligned Armageddon event application API. The global AC threshold,
+# once ported, must call these methods once at the appropriate event threshold.
+event=root/'core/src/com/unciv/logic/city/EmmCityEpidemics.kt'
+event.write_text('''package com.unciv.logic.city
+
+import kotlin.math.max
+
+/** Per-city disease effects; global Armageddon event dispatch is tracked separately. */
+object EmmCityEpidemics {
+    /**
+     * EMM CvRandomEventInterface.doArmageddonBlight:
+     * random(15) + population + bad feature health - good feature health
+     * - total *good building* health. Infernal cities are excluded.
+     *
+     * Caller supplies source random draw in 0..14, preserving global RNG policy.
+     * Creature damage (25 death-type, capped at 100 in EMM) is handled separately.
+     */
+    fun blight(city: City, random15: Int, badFeatureHealth: Int,
+               goodFeatureHealth: Int, goodBuildingHealth: Int) {
+        require(random15 in 0..14)
+        if (city.civ.civName == "Infernal") return
+        val amount = random15 + city.population.population + badFeatureHealth -
+                goodFeatureHealth - goodBuildingHealth
+        if (amount > 0)
+            city.emmDiseaseHealthCounter += amount
+    }
+
+    /**
+     * EMM CvRandomEventInterface.doArmageddonPestilence:
+     * random(9) + floor(population / 4) - good building health.
+     * Unlike Blight, the original source adds the signed result.
+     */
+    fun pestilence(city: City, random9: Int, goodBuildingHealth: Int) {
+        require(random9 in 0..8)
+        if (city.civ.civName == "Infernal") return
+        val amount = random9 + city.population.population / 4 - goodBuildingHealth
+        city.emmDiseaseHealthCounter = max(0, city.emmDiseaseHealthCounter + amount)
+    }
+}
+''')
+print('Patched persisted city epidemic counter and event source formulas')
