@@ -560,7 +560,8 @@ assert a.count(needle)==1
 a=a.replace(needle,'''        if (unit.name == "Disciple of the Ashen Veil" &&
             unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
             val city = unit.getTile().getCity()
-            if (city != null && "The Ashen Veil" !in city.emmEstablishedReligions &&
+            if (unit.getTile().isCityCenter() && city != null &&
+                "The Ashen Veil" !in city.emmEstablishedReligions &&
                 "The Ashen Veil" in unit.civ.gameInfo.emmFoundedReligions) {
                 yield(UnitAction(UnitActionType.EmmSpreadAshenVeil,
                     action = if (unit.hasMovement()) ({
