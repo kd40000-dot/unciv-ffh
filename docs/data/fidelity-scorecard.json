@@ -266,10 +266,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-derived Diseased (-30% strength, -10 healing) and Plagued (-60% strength, -20 healing) implemented in ruleset and engine, subject to player test. Blight/Pestilence source callbacks now have code and persisted city disease counter but are not dispatched automatically pending global Armageddon Counter. Immunity and combat spreading not yet implemented. Kotlin/APK compilation is separate from in-game confirmation.",
-      "remainingDifferences": "Blight/Pestilence source formula APIs and city temporary unhealthiness persistence/decay are present but not connected to AC 30/35 global triggers; missing event Death-type unit damage. Diseased (-30%) and Plagued (-60%) base strength penalties defined but disease contagion, cure spells, immunity enforcement and automatic event/lair acquisition are missing; source-defined healing penalties now implemented in the patched engine. City health from difficulty, buildings (signed effects), traits, terrain, resource, global/area modifiers exists but exact Civ4 feature/plot semantics, epidemic decay and AI behavior remain not fully tested.",
+      "verification": "Added combat-triggered Diseased transmission with Immune to Disease guard, based on EMM PromotionCombatApply and PromotionImmune1/2. Android build underway; not yet in-game tested. Cures, acquisition from lairs/events, other immunity cases and Blight/Pestilence global dispatch remain open.",
+      "remainingDifferences": "Blight/Pestilence source formula APIs and city temporary unhealthiness persistence/decay are present but not connected to AC 30/35 global triggers; missing event Death-type unit damage. Diseased (-30%) and Plagued (-60%) base strength penalties defined but disease transmission source rule (engine hook untested), cure spells, comprehensive immunity enforcement and automatic event/lair acquisition are missing; source-defined healing penalties now implemented in the patched engine. City health from difficulty, buildings (signed effects), traits, terrain, resource, global/area modifiers exists but exact Civ4 feature/plot semantics, epidemic decay and AI behavior remain not fully tested.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "EMM disease promotion healing implementation + source extraction"
+      "updatedBy": "2026-10-26 Diseased contact infection and immunity hook"
     },
     {
       "id": "F14",
