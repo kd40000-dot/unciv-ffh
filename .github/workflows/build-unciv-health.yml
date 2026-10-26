@@ -21,6 +21,8 @@ jobs:
           persist-credentials: false
       - name: Preserve working mod-download HTTP fix
         run: python3 tools/patch_unciv_download_client.py upstream-unciv
+      - name: Check source-backed health contracts
+        run: python3 tools/verify_emm_health_rules.py
       - name: Apply EMM health patch
         run: python3 tools/patch_unciv_health.py upstream-unciv
       - name: Add credited Game-icons health symbol
