@@ -477,7 +477,7 @@ u=ui.read_text()
 needle='''        cityView.getEmmHealthInfo()?.let { (healthy, unhealthy) ->'''
 assert u.count(needle)==1
 u=u.replace(needle,'''        if (cityView.getEmmHealthInfo() != null) {
-            val ac = cityView.getState().civInfo.gameInfo.emmArmageddonCounter
+            val ac = cityView.getState().gameInfo?.emmArmageddonCounter ?: 0
             lowerTable.add(("Armageddon: $ac / 100").toLabel(
                 if (ac >= 35) Color.SCARLET else if (ac >= 30) Color.ORANGE else Color.LIGHT_GRAY,
                 hideIcons = true
