@@ -45,6 +45,18 @@ resource_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorte
 difficultyBonuses = {entry['id'].removeprefix('HANDICAP_').capitalize():int(entry['fields']['iHealthBonus']) for entry in source['groups']['handicaps']['entries'] if 'iHealthBonus' in entry['fields']}
 assert difficultyBonuses['Settler']==4 and difficultyBonuses['Chieftain']==3 and difficultyBonuses['Prince']==2
 handicap_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(difficultyBonuses.items()))+')'
+global_health={}
+no_population_unhealth=[]
+for row in source['groups']['buildings']['entries']:
+    name=' '.join(part.capitalize() for part in row['id'].removeprefix('BUILDING_').split('_'))
+    if name.startswith('Palace '): name=name.removeprefix('Palace ')+' Palace'
+    global_amount=int(row['fields'].get('iGlobalHealth','0'))
+    if global_amount: global_health[name]=global_amount
+    if row['fields'].get('bNoUnhealthyPopulation')=='1':no_population_unhealth.append(name)
+assert global_health.get('Kuriotates Palace')==1
+assert 'Demonic Citizens' in no_population_unhealth
+global_health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(global_health.items()))+')'
+no_unhealth_set='setOf('+', '.join('"'+n+'"' for n in no_population_unhealth)+')'
 health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(health.items()))+')'
 path=root/'core/src/com/unciv/logic/city/CityStats.kt'
 s=path.read_text()
@@ -58,8 +70,9 @@ replacement='''        val foodEaten = calcFoodEaten()
         // This ruleset guard keeps ordinary Unciv games completely unaffected.
         if (city.getRuleset().buildings.containsKey("Herbalist") &&
             city.getRuleset().buildings.containsKey("Infirmary")) {
-            val unhealthyPopulation = city.population.population
             val built = city.cityConstructions.builtBuildings
+            val exemptPopulation = EMM_NO_UNHEALTHY_POPULATION.any { it in built }
+            val unhealthyPopulation = if (exemptPopulation) 0 else city.population.population
             // Building contributions are extracted from pinned EMM CIV4BuildingInfos.xml.
             // Difficulty health is read from pinned EMM CIV4HandicapInfo.xml.
             val handicapHealth = EMM_DIFFICULTY_HEALTH[city.civ.gameInfo.difficulty] ?: 2
@@ -74,13 +87,18 @@ replacement='''        val foodEaten = calcFoodEaten()
                 .toList()
             val featureHealth = featureEffects.sumOf { it.coerceAtLeast(0) } / 100
             val featureUnhealth = featureEffects.sumOf { (-it).coerceAtLeast(0) } / 100
-            val healthySources = handicapHealth + buildingHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
+            val globalHealth = EMM_GLOBAL_HEALTH.entries.sumOf { (name, value) ->
+                if (city.civ.cities.any { name in it.cityConstructions.builtBuildings }) value else 0
+            }
+            val healthySources = handicapHealth + buildingHealth + globalHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
             val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
         }'''
 assert s.count(anchor)==1,'Pinned CityStats changed, refusing unsafe patch'
 replacement=replacement.replace('EMM_HEALTH_MAP',health_map)
+replacement=replacement.replace('EMM_GLOBAL_HEALTH',global_health_map)
+replacement=replacement.replace('EMM_NO_UNHEALTHY_POPULATION',no_unhealth_set)
 replacement=replacement.replace('EMM_DIFFICULTY_HEALTH',handicap_map)
 replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
 replacement=replacement.replace('EMM_RESOURCE_HEALTH',resource_map)
@@ -100,6 +118,7 @@ s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnheal
             emmHealthBreakdown = linkedMapOf(
                 "Difficulty health" to handicapHealth,
                 "Buildings" to buildingHealth,
+                "Empire-wide buildings" to globalHealth,
                 "Expansive trait" to expansiveHealth,
                 "Connected resources" to resourceHealth,
                 "Fresh water" to freshwaterHealth,
