@@ -1796,3 +1796,70 @@ v=v.replace(needle,needle+'''
             )''')
 alert.write_text(v)
 print('Implemented source Winds from Hell windmill removal with persisted tile targeting')
+
+
+# EMM Necro-Cannibalism 3: Doviello faction's Warrior-class replacement
+# receives a free Cannibalize promotion. The EMM XML includes only +3 AC,
+# one unit with Cannibalize, and the civilization restriction.
+data=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+ch=next(c for e in data['events'] for c in e['choices']
+        if c['id']=='EVENT_NECRO_CANNIBALISM_3')
+assert ch['acDelta']==3
+assert ch['fields']['UnitClass']==['UNITCLASS_WARRIOR']
+assert ch['fields']['UnitPromotion']==['PROMOTION_CANNIBALIZE']
+assert ch['fields']['iNumFreeUnits']==['1']
+assert ch['fields']['PrereqCivilization']==['CIVILIZATION_DOVIELLO']
+effects=root/'core/src/com/unciv/logic/EmmEventEffects.kt'
+v=effects.read_text()
+needle='''        "EVENT_WINDS_FROM_HELL_3" to EmmEventEffect(0, 0, 0, 0, 0),'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+        "EVENT_NECRO_CANNIBALISM_3" to EmmEventEffect(3, 0, 0, 0, 0),''')
+effects.write_text(v)
+
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''            "EVENTTRIGGER_NECRO_CANNIBALISM" -> choice == "EVENT_NECRO_CANNIBALISM_2"'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_NECRO_CANNIBALISM" ->
+                choice == "EVENT_NECRO_CANNIBALISM_2" ||
+                (choice == "EVENT_NECRO_CANNIBALISM_3" && civ.civName == "Doviello" &&
+                    civ.cities.any { it.id == emmPendingEventCities[civID] } &&
+                    "Cannibalize" in ruleset.unitPromotions)''')
+needle='''            "EVENTTRIGGER_NECRO_CANNIBALISM" -> "EVENT_NECRO_CANNIBALISM_2"'''
+assert g.count(needle)==2
+g=g.replace(needle,'''            "EVENTTRIGGER_NECRO_CANNIBALISM" ->
+                if (choice == "EVENT_NECRO_CANNIBALISM_3") choice
+                else "EVENT_NECRO_CANNIBALISM_2"''',1)
+needle='''            choice !in listOf("EVENT_WITCH_1", "EVENT_HOLY_CHILD_2",
+                "EVENT_IRON_ORB_2")) return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            choice !in listOf("EVENT_WITCH_1", "EVENT_HOLY_CHILD_2",
+                "EVENT_IRON_ORB_2", "EVENT_NECRO_CANNIBALISM_3")) return false''')
+needle='''        if (event == "EVENTTRIGGER_WINDS_FROM_HELL") {
+            val tile = tileMap[emmPendingEventTiles[civID]!!]'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        if (choice == "EVENT_NECRO_CANNIBALISM_3") {
+            val city = civ.cities.firstOrNull {
+                it.id == emmPendingEventCities[civID]
+            } ?: return false
+            if (!EmmEventWorldEffects.spawnWithPromotions(
+                civ, city, civ.getEquivalentUnit("Warrior").name,
+                listOf("Cannibalize"), 1
+            )) return false
+        }
+'''+needle)
+gamefile.write_text(g)
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''            "EVENTTRIGGER_NECRO_CANNIBALISM" -> listOf(
+                "EVENT_NECRO_CANNIBALISM_2" to "Permit the practice (Armageddon +3)"
+            )'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            "EVENTTRIGGER_NECRO_CANNIBALISM" -> listOf(
+                "EVENT_NECRO_CANNIBALISM_2" to "Permit the practice (Armageddon +3)",
+                "EVENT_NECRO_CANNIBALISM_3" to
+                    "Raise a Cannibalize-trained Doviello Warrior (Armageddon +3)"
+            )''')
+alert.write_text(v)
+print('Enabled Doviello Warrior-class spawn with native free Cannibalize promotion and EMM 10-HP kill healing')
