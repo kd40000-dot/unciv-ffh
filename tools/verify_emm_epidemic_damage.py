@@ -35,6 +35,8 @@ object EmmArmageddonEvents {
     assert result.count("damageLivingUnits(game)") == 2
     assert result.count("private fun damageLivingUnits(game: GameInfo)") == 1
     assert "unit.takeDamage(25)" in result
+    assert "unit.baseUnit.isWaterUnit()" in result
+    assert result.index("unit.baseUnit.isWaterUnit()") < result.index("unit.takeDamage(25)")
     assert result.count("city.cityStats.update()") == 2
 print("PASS: Blight and Pestilence engine hook injection and idempotence")
 print("NOTE: this tests source transformation, not Kotlin compilation or typed Death resistance")
