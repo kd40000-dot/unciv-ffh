@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 27% |
+| F13 | City health and disease | 29% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.9% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -132,3 +132,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **26% → 27%**; 25-system equal-weight gameplay fidelity **12.8% → 12.9%** rounded. Source-backed Elohim Corlindale unit and its Peace action are now in the engine, using the EMM spell prerequisite, sacrifice, war-ending and integer half-AC effect.
 - Four source-derived random-event callbacks now have registered AC deltas: Flare Entropy +2; Flare Life −2; Sign Aeron +3; Sign Sirona −3. **Not automatically triggered.** The 52 EMM event-choice AC delta registry is also still conditional on future event selection/trigger integration.
 - Incomplete: Seven Pines peace site, event eligibility/scheduling and side effects, more C++ sources, live player verification of Corlindale and related pathways. Kotlin CI success and Android build are separate gates from gameplay testing.
+
+### 2026-10-26 — EMM native event decision UI and source-derived event catalog (F13)
+- F13 **27% → 29%**; the 25-system mean **12.9% → 13.0%** rounded. The engine builds a typed catalog from the 23 pinned EMM Armageddon event triggers, including weighted selection, activation percentage, preconditions, recurrence flags and all choice identifiers. Pinned EMM `CIV4EraInfos.xml` specifies `iEventChancePerTurn=4` across all available eras; the 1% provisional roll was replaced by this source rate for the supported scheduler (not yet full Civ IV RNG/game-speed parity).
+- Human players now see a native modal choice dialog for **Witch, Holy Child and Demonic Tome** rather than console-only resolution. **Holy Child 3** now applies its source -25 gold, -2 city population and +10 AC with eligibility checks and a saved target city; other safe choices already present remain available. AI resolves safe choices automatically. A successful Kotlin + Android build verifies compilation only, not full gameplay acceptance.
+- **Still incomplete:** 20 of 23 triggers are source-indexed but intentionally disabled; most of the 52 Armageddon-related choices require effects/callbacks/eligibility not yet ported, exact Civ IV random event scheduling and AI decision heuristics differ, and player gameplay tests are pending. This is a substantial event-framework milestone, not completion of the full EMM event system.
