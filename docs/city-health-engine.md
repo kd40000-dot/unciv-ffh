@@ -47,3 +47,10 @@ extra_food_consumption = max(0, unhealthy - healthy)
 9. Confirm ordinary stock Unciv rulesets are unaffected.
 
 **Release rule:** Do not elevate the fidelity estimate or remove any gaps as complete until the patched APK is installed and the relevant scenarios are actually confirmed in-game.
+
+## City screen UI and art (2026-10-26)
+
+- The health-enabled Unciv engine exposes its same calculated `healthy / unhealthy` totals in the city information panel beside the **Health normal** icon.
+- The Stats popup displays health totals and a health source breakdown: provisional base, buildings, Expansive trait, connected resources, freshwater, healthy/unhealthy map features, and population. The city food penalty uses those exact computed totals.
+- **Asset attribution:** `Health normal` by **sbed**, Game-icons.net, **CC BY 3.0** — https://game-icons.net/1x1/sbed/health-normal.html (source SVG retrieved during reproducible build, rendered in the Unciv stat-icon atlas). Attribution and license: https://creativecommons.org/licenses/by/3.0/ .
+- Android visual/gameplay QA still required, especially font visibility and city-panel layout on narrow screens. The prototype starting health and Civ4-to-hex feature mapping remain deviations.
