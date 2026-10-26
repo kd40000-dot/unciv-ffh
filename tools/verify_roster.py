@@ -18,6 +18,8 @@ bbid={r["id"]:r for r in source["buildings"]}
 rename=lambda s:s.removeprefix("UNIT_").removeprefix("BUILDING_").lower().replace("_"," ").title()
 factions=load("docs/data/emm-civilizations.json")
 unit_aliases={r["name"]:r["sourceId"] for r in factions["addedUnits"]}
+# EMM named missionary follows its source identifier, not a civ-specific replacement.
+unit_aliases["Disciple of the Ashen Veil"]="UNIT_DISCIPLE_THE_ASHEN_VEIL"
 building_aliases={r["name"]:r["sourceId"] for r in factions["addedBuildings"]}
 palace_aliases={r["civilization"]+" Palace":r["sourceId"] for r in load("docs/data/emm-leader-palace-fidelity.json")["palaceSources"]}
 vault_aliases={f'Dwarven Vault ({r["name"]})':r["sourceId"] for r in load("docs/data/emm-khazad-vaults.json")["tiers"]}
