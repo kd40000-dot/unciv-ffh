@@ -20,7 +20,6 @@ factions=load("docs/data/emm-civilizations.json")
 unit_aliases={r["name"]:r["sourceId"] for r in factions["addedUnits"]}
 # EMM named missionary follows its source identifier, not a civ-specific replacement.
 unit_aliases["Disciple of the Ashen Veil"]="UNIT_DISCIPLE_THE_ASHEN_VEIL"
-aliases["Disciple of the Order"]="UNIT_DISCIPLE_THE_ORDER"
 unit_aliases["Disciple of the Order"]="UNIT_DISCIPLE_THE_ORDER"
 building_aliases={r["name"]:r["sourceId"] for r in factions["addedBuildings"]}
 palace_aliases={r["civilization"]+" Palace":r["sourceId"] for r in load("docs/data/emm-leader-palace-fidelity.json")["palaceSources"]}
