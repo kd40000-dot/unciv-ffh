@@ -263,10 +263,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Implementation committed; prior city health UI smoke test passed. Expanded health rules require Kotlin/Android CI outcome and targeted in-game tests; special building effects may be latent until their building definitions are ported. 12% is a conservative engineering estimate, not verified mechanic completion.",
-      "remainingDifferences": "City Food-consumption health effects and visible health totals; source-backed health from EMM handicap (Settler +4, Chieftain +3, all other named EMM difficulties +2), buildings, global building bonuses (Kuriotates Palace +1), Expansive trait, resources including mana, freshwater and map-feature contributions. Source bNoUnhealthyPopulation supported if relevant building is built. Missing iAreaHealth landmass-wide bonuses, disease/plague/Blight, finer health source/feature accounting and interactions, AI valuation, player acceptance of revised APK, additional game save/load tests. EMM handicap values fallback to +2 for Unciv-only difficulty names.",
+      "verification": "Player smoke-test previously confirmed city health display. Source-backed difficulty/global/area building health and no-population-unhealthy rules require refreshed Android build and targeted gameplay checks. Some capabilities remain latent until the corresponding source buildings are ported.",
+      "remainingDifferences": "City Food-consumption health effects and visible health totals; source-backed health from EMM handicap (Settler +4, Chieftain +3, all other named EMM difficulties +2), buildings, global building bonuses (Kuriotates Palace +1), Expansive trait, resources including mana, freshwater and map-feature contributions. Source bNoUnhealthyPopulation supported if relevant building is built. Area-wide building health (+1 Aquae Sucellus) now source-coded by same-continent cities, but not yet play-tested; disease/plague/Blight, finer health source/feature accounting and interactions, AI valuation, player acceptance of revised APK, additional game save/load tests. EMM handicap values fallback to +2 for Unciv-only difficulty names.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 EMM handicap source + global buildings + no-population-unhealth support"
+      "updatedBy": "2026-10-26 EMM handicap, global/area health buildings and no-population-unhealthy"
     },
     {
       "id": "F14",
