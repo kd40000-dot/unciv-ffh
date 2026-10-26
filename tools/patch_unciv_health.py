@@ -573,3 +573,20 @@ a=a.replace(needle,'''        if (unit.name == "Disciple of the Ashen Veil" &&
 '''+needle)
 actions.write_text(a)
 print('Wired gameplay missionary action into source-backed +1/city AC progress')
+
+
+# EMM CvEventManager.onImprovementDestroyed: destruction of a Necrototem
+# decrements AC by two. Unciv pillage/destruction must fire this effect only
+# for a genuinely removed improvement (not merely damaged/temporarily pillaged).
+pillage=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActionsPillage.kt'
+v=pillage.read_text()
+needle='''                    tile.removeImprovement()
+                }'''
+assert v.count(needle)==1
+v=v.replace(needle,'''                    if (pillagedImprovement == "Necrototem" &&
+                        unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist"))
+                        unit.civ.gameInfo.changeEmmArmageddon(-2)
+                    tile.removeImprovement()
+                }''')
+pillage.write_text(v)
+print('Linked EMM Necrototem destruction to source-defined -2 AC')
