@@ -450,3 +450,22 @@ object EmmArmageddonEvents {
 }
 ''')
 print('Installed serialized Armageddon threshold state and Blight/Pestilence dispatcher')
+
+# Expose an explicit developer-console path to test AC without fabricating
+# EMM's still-unported AC-generating world events.
+console=root/'core/src/com/unciv/ui/screens/devconsole/ConsoleGameCommands.kt'
+v=console.read_text()
+needle='''        "setdifficulty" to ConsoleAction'''
+assert v.count(needle)==1
+v=v.replace(needle,'''        "emm-armageddon" to ConsoleAction("game emm-armageddon <delta>") { console, params ->
+            val delta = params[0].toIntOrNull()
+                ?: throw ConsoleErrorException("Expected signed integer change")
+            if (!console.gameInfo.ruleset.buildings.containsKey("Herbalist"))
+                throw ConsoleErrorException("EMM mod not active")
+            console.gameInfo.changeEmmArmageddon(delta)
+            DevConsoleResponse.OK
+        },
+
+'''+needle)
+console.write_text(v)
+print('Added game emm-armageddon <delta> test command for world-event acceptance')
