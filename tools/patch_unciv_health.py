@@ -71,14 +71,6 @@ replacement='''        val foodEaten = calcFoodEaten()
             val featureHealth = featureEffects.sumOf { it.coerceAtLeast(0) } / 100
             val featureUnhealth = featureEffects.sumOf { (-it).coerceAtLeast(0) } / 100
             val healthySources = 2 + buildingHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
-            // Remove old temporary Food bonuses standing in for health buildings.
-            // Only the health-enabled EMM ruleset gets this correction.
-            val outdatedFoodProxy =
-                (if ("Aqueduct" in built) 1 else 0) +
-                (if ("Herbalist" in built) 1 else 0) +
-                (if ("Infirmary" in built) 2 else 0)
-            if (outdatedFoodProxy > 0)
-                newFinalStatList.add("Replace health Food proxies", Stats(food = -outdatedFoodProxy.toFloat()))
             val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
