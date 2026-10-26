@@ -772,3 +772,26 @@ a=a.replace(needle,'''        if (unit.name == "Disciple of the Order" &&
 '''+needle)
 actions.write_text(a)
 print('Exposed EMM Order disciple and source-faithful opposing-religion AC conflict')
+
+
+# EMM CvSpellInterface.spellPeace and spellPeaceSevenPines both remove floor(AC/2)
+# from the global counter. This engine entry point is shared by both spell routes.
+# We do not expose it to arbitrary ordinary units: each spell still requires
+# its original Corlindale / Seven Pines eligibility and peace-making effect.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    fun changeEmmArmageddon(delta: Int) {'
+assert g.count(needle)==1
+g=g.replace(needle,'''    /**
+     * Source: EMM CvSpellInterface.spellPeace and spellPeaceSevenPines.
+     * Both reduce AC by half, using Python/Civ IV integer truncation.
+     * Call after executing the spell's required diplomatic peace effect.
+     */
+    fun emmPeaceReducesArmageddon() {
+        if (!ruleset.buildings.containsKey("Herbalist")) return
+        changeEmmArmageddon(-(emmArmageddonCounter / 2))
+    }
+
+'''+needle)
+gamefile.write_text(g)
+print('Installed source-exact Peace/Seven Pines shared Armageddon reduction API')
