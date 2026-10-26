@@ -73,3 +73,17 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('game emm-armageddon <delta>','changeEmmArmageddon(delta)','Armageddon: $ac / 100'):
  assert token in patch,token
 print('PASS: user-visible Armageddon meter and developer counter test entry point')
+
+arm=json.loads(Path('docs/data/emm-armageddon-sources.json').read_text())
+assert arm['commit']=='60b0ec3740083162aaab7bf8491761a54a65a610'
+r={item['religion']:item for item in arm['sources']}
+assert r['The Ashen Veil']['iGlobalCounterFound']==5
+assert r['The Ashen Veil']['iGlobalCounterSpread']==1
+assert r['Octopus Overlords']['iGlobalCounterFound']==3
+assert r['Octopus Overlords']['iGlobalCounterSpread']==0
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('emmFoundReligion(name: String','emmSpreadReligion(name: String','changeEmmArmageddon(5)','changeEmmArmageddon(3)','changeEmmArmageddon(1)','"Corruption of Spirit"','"Message from the Deep"','EmmSpreadAshenVeil','unit.getTile().isCityCenter()'):
+ assert token in patch,token
+u=next(x for x in json.loads(Path('jsons/Units.json').read_text()) if x['name']=='Disciple of the Ashen Veil')
+assert (u['cost'],u['strength'],u['movement'])==(60,3,1)
+print('PASS: native gameplay EMM religious AC source values and disciple')
