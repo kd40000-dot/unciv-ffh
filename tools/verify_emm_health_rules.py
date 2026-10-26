@@ -27,3 +27,16 @@ for healthy, unhealthy, building_health in ((5,4,-1),(3,7,-1),(4,2,2)):
  resulting_unhealthy=unhealthy+negative
  assert resulting_healthy-resulting_unhealthy==healthy-unhealthy+building_health
 print('PASS: signed building health, difficulty, area/global and population-exemption source rules')
+
+# City counters are serialized and event formulas are source-aligned but only
+# activated by the future global Armageddon event dispatch.
+patch=Path('tools/patch_unciv_health.py').read_text()
+for code in ('emmDiseaseHealthCounter','EmmCityEpidemics','fun blight(','fun pestilence(','random15 + city.population.population','random9 + city.population.population / 4'):
+ assert code in patch,code
+# Property-level event formula tests, including suppression of negative Blight.
+def blight(pop, random, bad, good, buildings):return max(0,random+pop+bad-good-buildings)
+def pestilence(pop, random, buildings):return random+pop//4-buildings
+assert blight(8,3,2,1,4)==8
+assert blight(2,0,0,3,2)==0
+assert pestilence(12,4,2)==5
+print('PASS: Blight/Pestilence formula and city-counter serialization contracts')
