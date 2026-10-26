@@ -5,7 +5,7 @@
     "repository": "https://github.com/bewlay/extramodmod",
     "commit": "60b0ec3740083162aaab7bf8491761a54a65a610"
   },
-  "method": "Expert estimates of behavioral fidelity, not objective test coverage. Scores may have ±5–10 percentage points or greater uncertainty. Only dated player confirmations qualify as in-game tests; static CI alone does not.",
+  "method": "Implementation-only estimates of source-derived EMM mechanics implemented in mod/engine. Gameplay verification is separately tracked and does not affect percent or block estimate updates. Count neither unintegrated scaffolding nor unimplemented/approximate features as faithful. Scores remain subjective (often ±5–10 percentage points or more); in-game acceptance deferred until health is near-complete.",
   "systems": [
     {
       "id": "F01",
@@ -268,17 +268,20 @@
         "docs/data/emm-armageddon-event-callbacks.json",
         "docs/data/emm-armageddon-event-triggers.json",
         "docs/data/emm-event-era-chances.json",
-        "tools/verify_emm_armageddon_events.py"
+        "tools/verify_emm_armageddon_events.py",
+        "tools/patch_emm_epidemic_damage.py",
+        ".github/workflows/build-emm-epidemic.yml",
+        "tools/verify_emm_epidemic_damage.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-informed reusable event world actions: spawn matching class unit with free promotions, rollback on placement failure; conditional named-tile-improvement removal; saved unit/tile selection across game clones. War Games disband/XP outcomes and source-ac; Winds from Hell Windmill destruction; Doviello Necro-Cannibalism Warrior-class unit and native Cannibalize on-kill +10 HP effect. CI ruleset validation passed, Kotlin engine compilation passed; Android packaging/player tests pending.",
-      "remainingDifferences": "10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Full Blight/Pestilence living-unit damage and remaining sources continue to be outstanding.",
+      "verification": "Source-informed reusable event world actions: spawn matching class unit with free promotions, rollback on placement failure; conditional named-tile-improvement removal; saved unit/tile selection across game clones. War Games disband/XP outcomes and source-ac; Winds from Hell Windmill destruction; Doviello Necro-Cannibalism Warrior-class unit and native Cannibalize on-kill +10 HP effect. CI ruleset validation passed, Kotlin engine compilation passed; Android packaging/player tests pending. In-game checks deliberately deferred; scores concern source implementation completeness only.",
+      "remainingDifferences": "10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Provisional raw Blight/Pestilence unit damage exists as an optional post-patcher, but full typed Death damage, faithful isAlive classification, build integration proof and remaining source mechanics are outstanding.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 EMM event unit spawning, free promotions, War Games, Winds Windmill removal, Doviello Cannibalize and cloned event state"
+      "updatedBy": "Implementation-only estimate and evidence separation (no gameplay QA weighting)"
     },
     {
       "id": "F14",
@@ -380,21 +383,26 @@
     {
       "id": "F19",
       "title": "Armageddon Counter",
-      "percent": 0,
-      "status": "missing",
+      "percent": 30,
+      "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4SpellInfos.xml",
-        "python/entrypoints/CvSpellInterface.py"
+        "python/entrypoints/CvSpellInterface.py",
+        "python/entrypoints/CvRandomEventInterface.py",
+        "XML/Events/CIV4EventInfos.xml"
       ],
       "portEvidence": [
-        "docs/open-fidelity-gaps.md",
-        "docs/compatibility.md"
+        "tools/patch_unciv_health.py",
+        "docs/data/emm-armageddon-sources.json",
+        "docs/data/emm-armageddon-event-triggers.json",
+        "docs/city-health-engine.md",
+        "tools/verify_emm_armageddon_events.py"
       ],
       "gameplayConfirmed": [],
-      "verification": "Further source-equivalence and in-game regression testing required",
-      "remainingDifferences": "No global Armageddon counter or dependent event pipeline.",
+      "verification": "Implementation review only: persisted global AC 0–100, source-linked increment/decrement hooks, one-time Blight/Pestilence thresholds, a typed event catalog, restricted native event-choice pipeline, and saved event targets. Static CI/build evidence exists for earlier slices; no in-game verification required for this estimate.",
+      "remainingDifferences": "Many original AC inputs, effects and special events unimplemented; thirteen of twenty-three catalogued Armageddon-related event families not playable, existing families have gated choices. Full catastrophe effects, typed Death damage, living-unit classification, probability/AI/source timing parity and Hell terrain remain incomplete. Provisional epidemic damage post-patcher is present but not yet demonstrated in successful Android build.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Initial 25-system audit"
+      "updatedBy": "Implementation-only scoring correction: Armageddon subsystem incorrectly marked 0 despite source-backed counter and event engine"
     },
     {
       "id": "F20",
