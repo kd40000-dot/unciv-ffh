@@ -54,3 +54,7 @@ extra_food_consumption = max(0, unhealthy - healthy)
 - The Stats popup displays health totals and a health source breakdown: provisional base, buildings, Expansive trait, connected resources, freshwater, healthy/unhealthy map features, and population. The city food penalty uses those exact computed totals.
 - **Asset attribution:** `Health normal` by **sbed**, Game-icons.net, **CC BY 3.0** — https://game-icons.net/1x1/sbed/health-normal.html (source SVG retrieved during reproducible build, rendered in the Unciv stat-icon atlas). Attribution and license: https://creativecommons.org/licenses/by/3.0/ .
 - Android visual/gameplay QA still required, especially font visibility and city-panel layout on narrow screens. The prototype starting health and Civ4-to-hex feature mapping remain deviations.
+
+### 2026-10-26 follow-up: icon visibility and buildings
+
+Player screenshot confirmed the first health totals (3 healthy / 2 unhealthy) rendered, but the stat atlas lookup returned a **white square**, and Herbalist showed only a textual Comment bonus. The replacement APK loads `Icons/EMMHealth.png` from a bundled Android `ExtraImages` asset rather than an unregistered sprite atlas entry; Herbalist (+1), Aqueduct (+2) and Infirmary (+3) display that same health icon in their selected-construction panels, and outdated Comment bonuses were removed. These visual corrections require player confirmation on the replacement APK; health remains 10% estimated fidelity until further mechanical tests.
