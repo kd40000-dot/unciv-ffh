@@ -31,6 +31,9 @@ patched = """            city.cityStats.update()
         val nonliving = setOf("Undead", "Demon", "Angel", "Elemental", "Golem", "Not Alive")
         for (civ in game.civilizations)
             for (unit in civ.units.getCivUnits().toList()) {
+                // EMM treats vessels as nonliving even when they have crews.
+                // Base-unit water classification is available in pinned Unciv.
+                if (unit.baseUnit.isWaterUnit()) continue
                 if (unit.promotions.promotions.any { it in nonliving }) continue
                 unit.takeDamage(25)
             }
