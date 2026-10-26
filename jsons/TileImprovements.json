@@ -727,5 +727,31 @@
         "text": "Created by Blaze (Fire I): scorched smoke on an unimproved friendly forest or jungle tile. Enemy units ending a turn next to Smoke take 5 damage. This is a permanent battlefield-hazard approximation; EMM has spreading flames and smoke behavior which Unciv does not implement automatically. Replace Smoke with another improvement to remove it."
       }
     ]
+  },
+  {
+    "name": "Graveyard",
+    "turnsToBuild": -1,
+    "uniques": [
+      "Unbuildable",
+      "Destroyed when pillaged"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Graveyard: robbing increases Armageddon by 1; Sanctify decreases Armageddon by 1. Loot rewards remain pending."
+      }
+    ]
+  },
+  {
+    "name": "Necrototem",
+    "turnsToBuild": -1,
+    "uniques": [
+      "Unbuildable",
+      "Destroyed when pillaged"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM Necrototem: destruction reduces Armageddon by 2. Original spawning remains pending."
+      }
+    ]
   }
 ]
