@@ -1201,5 +1201,27 @@
         "text": "EMM Life I sphere enables Sanctify. Other Life I effects remain unfinished."
       }
     ]
+  },
+  {
+    "name": "Cannibalize",
+    "unitTypes": [
+      "Magic",
+      "Archery",
+      "Scout",
+      "Sword",
+      "Mounted",
+      "Disciple"
+    ],
+    "prerequisites": [
+      "Combat II"
+    ],
+    "uniques": [
+      "Heals [10] damage if it kills a unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM PROMOTION_CANNIBALIZE: heals 10% of maximum combat health when killing a unit; granted freely to the event-created Doviello Warrior-class unit. Original EMM also marks it as a mutation."
+      }
+    ]
   }
 ]
