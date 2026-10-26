@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 32,
+      "percent": 33,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -275,10 +275,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Generated Kotlin EmmEventEffects source whitelist reads EMM XML iGold/iPopulationChange/iHappy/iHealth/iGlobalCounter fields; applies numeric effects with precondition checks and persistent city health/happiness modifiers. Witch 1 (+1 happiness, -3 health, +2 AC), Holy Child 2 (-50 gold, +1 health, +1 happiness, -10 AC) made playable. Kotlin engine compilation and ruleset validation succeeded; Android packaging and gameplay tests pending.",
-      "remainingDifferences": "7/23 event families scheduled; only complete numerical choices supported. 16 other trigger families and all choices requiring Python callbacks, promotions, terrain effects, units, diplomacy, random-event game rules, dynamic alignment and religion still pending. In-game event visual/persistence and full random outcomes untested.",
+      "verification": "Source EMM EventInfos: Iron Orb 2 pays 75 gold, adds 2 research to its Library while retained, adds 2 AC; Sobs 1 causes -1 city happiness. Reusable event resolver selects eligible Library-containing city and stores science modifier. Static verification and Android build pending player acceptance.",
+      "remainingDifferences": "8/23 EMM Armageddon event families with playable restricted choices. Remaining events and optional choices require event plot/resource qualifiers, promotions, unit spawning, Python callbacks, diplomacy/religion, dynamic alignment, and complete AI/event RNG scheduling. Library modifier conditional on building, but original building-specific Civ IV extra commerce under further verification; no device gameplay test.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 reusable event gold/population/health/happiness interpreter; Witch and Holy Child extra choices"
+      "updatedBy": "2026-10-26 Iron Orb Library +2 permanent science effect and Sobs city happiness event"
     },
     {
       "id": "F14",
