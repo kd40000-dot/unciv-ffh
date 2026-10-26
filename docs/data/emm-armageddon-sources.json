@@ -1,0 +1,23 @@
+{
+  "upstream": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "sources": [
+    {
+      "id": "RELIGION_THE_ASHEN_VEIL",
+      "religion": "The Ashen Veil",
+      "foundedByTech": "Corruption of Spirit",
+      "iGlobalCounterFound": 5,
+      "iGlobalCounterSpread": 1,
+      "source": "XML/Gameinfo/CIV4ReligionInfo.xml"
+    },
+    {
+      "id": "RELIGION_OCTOPUS_OVERLORDS",
+      "religion": "Octopus Overlords",
+      "foundedByTech": "Message from the Deep",
+      "iGlobalCounterFound": 3,
+      "iGlobalCounterSpread": 0,
+      "source": "XML/Gameinfo/CIV4ReligionInfo.xml"
+    }
+  ],
+  "notes": "Source-valued counter deltas; the Unciv-native Civ IV religion conversion and passive spread mechanisms are not ported in full. The custom Disciple action is an accessible interim spread route."
+}
