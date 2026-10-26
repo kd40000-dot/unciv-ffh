@@ -684,3 +684,63 @@ needle='    var emmPestilenceTriggered = false'
 assert g.count(needle)==1
 g=g.replace(needle,needle+'\n    var emmCountedEliminations = hashSetOf<String>()')
 gamefile.write_text(g)
+
+
+# EMM source onReligionSpread: Order/Veil conflict gives AC -1 or +1
+# on the 35% incoming-faith victory outcome (except holy cities).
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''        emmSpreadReligion(name, city)
+    }
+
+    fun emmSpreadReligion(name: String, city: com.unciv.logic.city.City) {'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        city.emmHolyCityOf = name
+        emmSpreadReligion(name, city)
+    }
+
+    fun emmSpreadReligion(name: String, city: com.unciv.logic.city.City) {''')
+needle='''        if (name == "The Ashen Veil") changeEmmArmageddon(1)
+    }'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        if (name == "The Ashen Veil") changeEmmArmageddon(1)
+        if (city.emmHolyCityOf == null) {
+            val opposing = when (name) {
+                "The Order" -> "The Ashen Veil"
+                "The Ashen Veil" -> "The Order"
+                else -> null
+            }
+            if (opposing != null && opposing in city.emmEstablishedReligions) {
+                // EMM CvEventManager.onReligionSpread: 35% for the incoming faith.
+                val incomingWins = city.state.stateBasedRandom(
+                    "EMM.OrderVeil." + turns + "." + name
+                ).nextInt(100) < 35
+                if (incomingWins) {
+                    city.emmEstablishedReligions.remove(opposing)
+                    if (city.population.population > 1)
+                        city.population.setPopulation(city.population.population - 1)
+                    changeEmmArmageddon(if (name == "The Order") -1 else 1)
+                } else {
+                    city.emmEstablishedReligions.remove(name)
+                }
+            }
+        }
+    }''')
+gamefile.write_text(g)
+cityfile=root/'core/src/com/unciv/logic/city/City.kt'
+c=cityfile.read_text()
+needle='    var emmEstablishedReligions = hashSetOf<String>()'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'\n    var emmHolyCityOf: String? = null')
+needle='        toReturn.emmEstablishedReligions.addAll(emmEstablishedReligions)'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'\n        toReturn.emmHolyCityOf = emmHolyCityOf')
+cityfile.write_text(c)
+tech=root/'core/src/com/unciv/logic/civilization/managers/TechManager.kt'
+t=tech.read_text()
+needle='''                "Message from the Deep" -> civInfo.gameInfo.emmFoundReligion("Octopus Overlords", civInfo.cities.first())'''
+assert t.count(needle)==1
+t=t.replace(needle,needle+'''
+                "Orders from Heaven" -> civInfo.gameInfo.emmFoundReligion("The Order", civInfo.cities.first())''')
+tech.write_text(t)
+print('Added source-specific Order/Veil 35% clash, AC, and population loss')
