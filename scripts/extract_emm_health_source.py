@@ -11,6 +11,7 @@ groups=[
 ("traits","XML/Civilizations/CIV4TraitInfos.xml","TraitInfo"),
 ("resources","XML/Terrain/CIV4BonusInfos.xml","BonusInfo"),
 ("features","XML/Terrain/CIV4FeatureInfos.xml","FeatureInfo"),
+("handicaps","XML/Gameinfo/CIV4HandicapInfo.xml","HandicapInfo"),
 ]
 doc={"upstream":"bewlay/extramodmod","commit":"60b0ec3740083162aaab7bf8491761a54a65a610","groups":{}}
 for group,rel,tag in groups:
