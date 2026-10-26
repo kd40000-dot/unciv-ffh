@@ -1055,3 +1055,99 @@ g=g.replace(needle,'''                civ.popupAlerts.add(
                 )''')
 gamefile.write_text(g)
 print('Added native EMM event choice popup and source-backed Holy Child sacrifice effect')
+
+
+# Generate a typed reusable engine-side source catalog for all 23 EMM event
+# triggers. Eligibility checks can be progressively added without copying XML
+# numbers into game logic or silently treating unsupported predicates as valid.
+event_registry=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+assert len(event_registry['events'])==23
+era_chances=json.loads(Path('docs/data/emm-event-era-chances.json').read_text())['eraEventChancePercent']
+assert set(era_chances.values())=={4}
+def ks(value):
+    return json.dumps(str(value),ensure_ascii=False)
+def kl(values):
+    return 'listOf('+', '.join(ks(v) for v in values)+')'
+definitions=[]
+for event in event_registry['events']:
+    c=event['criteria']
+    definitions.append('''        EmmEventTrigger(
+            id=%s, weight=%d, percentActive=%d, minAC=%d,
+            minPopulation=%d, minTreasury=%d,
+            prerequisiteTech=%s, needsCity=%s,
+            needsPlots=%s, needsUnits=%s,
+            terrain=%s, features=%s, improvements=%s,
+            resources=%s, pythonConditions=%s,
+            civilizations=%s, buildings=%s,
+            recurring=%s, choices=%s
+        )'''%(
+        ks(event['id']),c['weight'],c['percentGamesActive'],c['minAC'],
+        c['minPopulation'],c['minTreasury'],
+        'null' if not c['prereqTech'] else ks(c['prereqTech'].removeprefix('TECH_').replace('_',' ').title()),
+        str(bool(c['city'])).lower(),str(bool(c['plots'])).lower(),str(bool(c['units'])).lower(),
+        kl(c['terrain']),kl(c['features']),kl(c['improvements']),
+        kl(c['bonuses']),kl(c['python']),kl(c['civilizations']),
+        kl(c['buildingClass']),str(bool(c['recurring'])).lower(),
+        kl([x['id'] for x in event['choices'])
+    ))
+catalog=root/'core/src/com/unciv/logic/EmmEventCatalog.kt'
+catalog.write_text('''package com.unciv.logic
+
+/** Parsed at build time from the pinned EMM event XML. */
+data class EmmEventTrigger(
+    val id: String,
+    val weight: Int,
+    val percentActive: Int,
+    val minAC: Int,
+    val minPopulation: Int,
+    val minTreasury: Int,
+    val prerequisiteTech: String?,
+    val needsCity: Boolean,
+    val needsPlots: Boolean,
+    val needsUnits: Boolean,
+    val terrain: List<String>,
+    val features: List<String>,
+    val improvements: List<String>,
+    val resources: List<String>,
+    val pythonConditions: List<String>,
+    val civilizations: List<String>,
+    val buildings: List<String>,
+    val recurring: Boolean,
+    val choices: List<String>
+)
+
+/** All 23 original triggers, not all enabled until full XML effects are supported. */
+object EmmEventCatalog {
+    const val eraChance = 4
+    val triggers = listOf(
+%s
+    )
+    val byId = triggers.associateBy { it.id }
+}
+'''%(',\n'.join(definitions)))
+print('Generated EMM catalog with 23 source-derived trigger records and source era chance')
+
+
+# The source EMM catalog now owns the supported three trigger weights and
+# the original per-era event chance. Unsupported predicates are not enabled.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''            if (eligible.isEmpty() || roll.nextInt(100) != 0) continue
+            val selected = eligible[roll.nextInt(eligible.size)]'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            if (eligible.isEmpty() ||
+                roll.nextInt(100) >= EmmEventCatalog.eraChance) continue
+            val weighted = eligible.mapNotNull { id ->
+                val definition = EmmEventCatalog.byId[id] ?: return@mapNotNull null
+                if (roll.nextInt(100) >= definition.percentActive) null
+                else definition
+            }
+            if (weighted.isEmpty()) continue
+            val totalWeight = weighted.sumOf { it.weight }
+            var choiceRoll = roll.nextInt(totalWeight)
+            val selected = weighted.first { definition ->
+                choiceRoll -= definition.weight
+                choiceRoll < 0
+            }.id''')
+gamefile.write_text(g)
+print('Replaced arbitrary 1%/uniform event selection with source era chance and XML trigger weights')
