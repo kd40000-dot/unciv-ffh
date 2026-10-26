@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 31% |
+| F13 | City health and disease | 33% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
