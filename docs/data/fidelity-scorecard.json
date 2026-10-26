@@ -252,13 +252,15 @@
       ],
       "portEvidence": [
         "docs/open-fidelity-gaps.md",
-        "tools/patch_unciv_health.py"
+        "tools/patch_unciv_health.py",
+        "docs/data/emm-health-source.json",
+        ".github/workflows/build-unciv-health.yml"
       ],
       "gameplayConfirmed": [],
-      "verification": "Engine patch committed; APK compilation and in-game test pending. Provisional +2 baseline/+2 Aqueduct/+2 Herbalist/+3 Infirmary mapping MUST be checked against EMM XML before fidelity can rise further.",
-      "remainingDifferences": "First engine-level food penalty: max(0,population - (provisional baseline 2 + Aqueduct 2 + Herbalist 2 + Infirmary 3)). Missing source-accurate healthy baseline, resource/terrain/feature contributions, buildings other than three, Expansive trait, disease and Blight, player-visible total health and detailed city UI, AI health evaluation. Provisional values are not claimed EMM exact.",
+      "verification": "Pinned-source building health verified from EMM XML (Aqueduct +2, Herbalist +1, Infirmary +3) and Expansive trait (+3). Initial patch compiled in test APK; revised build incorporating source values and proxy removal not yet verified in-game.",
+      "remainingDifferences": "Health-enabled engine prototype computes population unhealthiness and offsets against a provisional +2 base, source-derived building health and Expansive trait. It cancels obsolete Aqueduct/Herbalist/Infirmary Food proxies in engine. Still missing health from connected resources, terrain/freshwater/features, difficulty, buildings with area/global effects, disease/Blight, specialists/events, UI breakdown, AI valuation and saved-game regression. Health guard applies when Herbalist and Infirmary ruleset buildings exist. No user gameplay tests yet.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "First engine-level city unhealthiness patch, commit 20f031b"
+      "updatedBy": "Source-derived building and Expansive health engine patch d1c7a21"
     },
     {
       "id": "F14",
