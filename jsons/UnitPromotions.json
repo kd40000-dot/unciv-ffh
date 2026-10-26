@@ -1128,5 +1128,39 @@
         "text": "Requires Channeling I and Mind Mana. Cast Inspiration while stationed in any city center, spending all movement but keeping the caster. Inspiration grants a 2-turn status that produces +2 Science at turn start only while the caster remains in a city center; recast to maintain. Unlike EMM's sustained city building, its science is credited to the empire rather than listed as a city building yield, and Great Sage points are not generated."
       }
     ]
+  },
+  {
+    "name": "Diseased",
+    "unitTypes": [],
+    "uniques": [
+      "[-30]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Source: EMM PROMOTION_DISEASED: -30% combat strength, -10 healing on friendly, neutral and enemy territory; disease can be transmitted through combat. Healing and transmission pending engine implementation."
+      }
+    ]
+  },
+  {
+    "name": "Plagued",
+    "unitTypes": [],
+    "uniques": [
+      "[-60]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Source: EMM PROMOTION_PLAGUED: -60% combat strength, -20 healing on friendly, neutral and enemy territory. Transmission and healing modifiers pending engine implementation."
+      }
+    ]
+  },
+  {
+    "name": "Immune to Disease",
+    "unitTypes": [],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Source: EMM PROMOTION_IMMUNE_DISEASE: immune to Diseased and Plagued. Actual immunity to incoming promotion effects requires engine implementation."
+      }
+    ]
   }
 ]
