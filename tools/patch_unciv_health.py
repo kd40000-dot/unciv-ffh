@@ -744,3 +744,31 @@ t=t.replace(needle,needle+'''
                 "Orders from Heaven" -> civInfo.gameInfo.emmFoundReligion("The Order", civInfo.cities.first())''')
 tech.write_text(t)
 print('Added source-specific Order/Veil 35% clash, AC, and population loss')
+
+# Add Order disciple action using the source -1 clash outcome when victorious.
+actiontype=root/'core/src/com/unciv/models/UnitAction.kt'
+a=actiontype.read_text()
+needle='    EmmSpreadAshenVeil("Spread the Ashen Veil"),'
+assert a.count(needle)==1
+a=a.replace(needle,needle+'\n    EmmSpreadOrder("Spread the Order"),')
+actiontype.write_text(a)
+actions=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt'
+a=actions.read_text()
+needle='''        addSkipAction(unit)'''
+assert a.count(needle)==1
+a=a.replace(needle,'''        if (unit.name == "Disciple of the Order" &&
+            unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            val city = unit.getTile().getCity()
+            if (unit.getTile().isCityCenter() && city != null &&
+                "The Order" !in city.emmEstablishedReligions &&
+                "The Order" in unit.civ.gameInfo.emmFoundedReligions) {
+                yield(UnitAction(UnitActionType.EmmSpreadOrder,
+                    action = if (unit.hasMovement()) ({
+                        unit.civ.gameInfo.emmSpreadReligion("The Order", city)
+                        unit.destroy()
+                    }) else null))
+            }
+        }
+'''+needle)
+actions.write_text(a)
+print('Exposed EMM Order disciple and source-faithful opposing-religion AC conflict')
