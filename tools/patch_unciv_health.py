@@ -298,3 +298,27 @@ section=section.replace(needle,'''        if (civ.gameInfo.ruleset.buildings.con
 u=u[:begin]+section+u[end:]
 unit.write_text(u)
 print('Installed EMM Diseased/Plagued healing modifiers (-10/-20)')
+
+
+# Diseased promotion has PromotionCombatApply=PROMOTION_DISEASED in EMM.
+# Apply on surviving targets after damage, blocked by source immunity.
+battle=root/'core/src/com/unciv/logic/battle/Battle.kt'
+b=battle.read_text()
+anchor='''        // Exploring units surviving an attack should "wake up"'''
+assert b.count(anchor)==1
+code='''        // EMM: Diseased transmits through combat to eligible living targets.
+        // This is NOT a plague spell: Plagued does not have PromotionCombatApply.
+        if (attacker is MapUnitCombatant && defender is MapUnitCombatant &&
+            !attacker.isDefeated() && !defender.isDefeated() &&
+            attacker.unit.civ.gameInfo.ruleset.unitPromotions.containsKey("Diseased") &&
+            "Diseased" in attacker.unit.promotions.promotions &&
+            "Immune to Disease" !in defender.unit.promotions.promotions &&
+            "Diseased" !in defender.unit.promotions.promotions &&
+            "Plagued" !in defender.unit.promotions.promotions) {
+            defender.unit.promotions.addPromotion("Diseased", isFree = true)
+        }
+
+'''
+b=b.replace(anchor,code+anchor)
+battle.write_text(b)
+print('Added EMM Diseased combat infection with immunity guard')
