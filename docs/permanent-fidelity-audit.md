@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 0% |
+| F13 | City health and disease | 5% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -33,9 +33,9 @@
 | F23 | Diplomacy, councils and vassalage | 10% |
 | F24 | Advanced tactics, forts and revolutions | 5% |
 | F25 | Victory conditions | 10% |
-| | **Equal-weight mean** | **11.8%** |
+| | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline unless a later audit explicitly revises it with documented evidence.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.0%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); baseline is **11.8% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -74,3 +74,9 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - Confirmed user tests have been recorded separately from static validations; all other mechanics remain unverified until explicit test evidence.
 - Historic gaps in `docs/open-fidelity-gaps.md` may be stale relative to the October 23–24 magic documentation. Do not interpret historic omissions as current.
 
+
+### 2026-10-26 — Health engine prototype (F13)
+- F13 **0% → 5%**; equal-weight **11.8% → 12.0%**. Added `tools/patch_unciv_health.py` and automated APK build workflow.
+- Net unhealthiness contributes a negative Food entry to city stats **before growth modifiers**, while ordinary Unciv rulesets remain untouched by the ruleset guard.
+- **Status: unverified / provisional**. Health source values in this prototype (baseline, Aqueduct, Herbalist, Infirmary) are not yet source-checked; no Android playtest, city UI, terrain/resources, Expansive trait or disease. No claim of EMM-equivalent health.
+- Existing Food-proxy building bonuses remain and must be removed only as part of a validated migration to the health-enabled engine.
