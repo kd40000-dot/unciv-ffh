@@ -828,3 +828,27 @@ a=a.replace(needle,'''        if (unit.name == "Corlindale" &&
 '''+needle)
 actions.write_text(a)
 print('Added Corlindale Peace spell: peacemaking, AC halving, sacrifice')
+
+
+# EMM CvRandomEventInterface callbacks with independent AC deltas.
+# Scheduling/eligibility and non-AC side effects remain part of the original
+# random-event implementation; don't synthesize random events here.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    fun applyEmmArmageddonEventChoice(sourceEventId: String): Boolean {'
+assert g.count(needle)==1
+g=g.replace(needle,'''    fun applyEmmArmageddonEventCallback(sourceCallback: String): Boolean {
+        val delta = when (sourceCallback) {
+            "doFlareEntropyNode" -> 2
+            "doFlareLifeNode" -> -2
+            "doSignAeron" -> 3
+            "doSignSirona" -> -3
+            else -> return false
+        }
+        changeEmmArmageddon(delta)
+        return true
+    }
+
+'''+needle)
+gamefile.write_text(g)
+print('Registered source-exact EMM random-event callbacks (not fake spontaneous triggers)')
