@@ -257,11 +257,13 @@
         ".github/workflows/build-unciv-health.yml",
         "docs/city-health-engine.md"
       ],
-      "gameplayConfirmed": [],
-      "verification": "Full health prototype compiled successfully in GitHub Actions; no in-game acceptance tests yet. Correct source building, trait, resource and feature values loaded from pinned EMM XML. Full side-by-side APK packaging pending.",
-      "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old building Food proxies are canceled in patched engine. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, detailed city UI, AI health planning and gameplay/save/load verification.",
+      "gameplayConfirmed": [
+        "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test."
+      ],
+      "verification": "User screenshot 2026-10-26 confirmed old Herbalist tooltip still displayed +1 Food. Removed Food proxy from Herbalist/Aqueduct/Infirmary, added descriptive health tooltips, and removed compensating engine subtraction. Corrected build requires CI and fresh APK verification.",
+      "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old health-building Food proxies removed directly from ruleset. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, detailed city UI, AI health planning and gameplay/save/load verification.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "First expanded EMM health engine milestone; pinned source audit and Android build"
+      "updatedBy": "Correct Herbalist/Aqueduct/Infirmary UI and remove outdated Food proxies"
     },
     {
       "id": "F14",
