@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'tools/patch_unciv_health.py'
+      - 'tools/verify_emm_health_rules.py'
       - '.github/workflows/build-unciv-health.yml'
 permissions:
   contents: read
