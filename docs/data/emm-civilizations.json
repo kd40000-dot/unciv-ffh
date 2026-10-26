@@ -3245,6 +3245,10 @@
       "name": "Nyxkin",
       "sourceId": "UNIT_NYXKIN",
       "replaces": "Horse Archer"
+    },
+    {
+      "name": "Disciple of the Ashen Veil",
+      "sourceId": "UNIT_DISCIPLE_THE_ASHEN_VEIL"
     }
   ],
   "addedBuildings": [
