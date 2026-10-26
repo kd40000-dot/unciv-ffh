@@ -2247,5 +2247,18 @@
         "text": "EMM first-passage port: a follower of the Ashen Veil who can spread that religion to another city. EMM source AC: +5 when the religion is first founded, +1 on spreading to a previously unreached city. Unit statistics and missionary behavior remain to be audited for fidelity."
       }
     ]
+  },
+  {
+    "name": "Disciple of the Order",
+    "unitType": "Disciple",
+    "movement": 1,
+    "cost": 60,
+    "strength": 3,
+    "requiredTech": "Orders from Heaven",
+    "civilopediaText": [
+      {
+        "text": "Source EMM UNIT_DISCIPLE_THE_ORDER. Spreads the Order to city centers; a contested Order/Ashen Veil city may trigger the original 35% conflict and -1 Armageddon consequence."
+      }
+    ]
   }
 ]
