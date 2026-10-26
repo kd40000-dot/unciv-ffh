@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.1% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -141,3 +141,7 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 ### 2026-10-26 — Source-gated Armageddon event family expansion (F13)
 - F13 **29% → 31%**, overall equal-weight gameplay fidelity **13.0%** rounded. Added source-gated Shrine of Camulos (+1 AC choice, Training Yard, population 3+, 10% active-games threshold), Necro-Cannibalism (+3 AC evil-aligned choice, AC 65+, population 5+), Iron Orb (75 gold + Library, only original do-nothing refusal currently) and Strange Adept (Mage Guild, original refusal). Native dialogs and AI safe resolutions now cover **7/23** source-inventoried Armageddon random event families.
 - The remaining 16 families and other event choices still require faithful consequences, Python conditions and the rest of their gameplay prerequisites; dynamic alignment and full original random-event probability weighting remain limited. A successful Android build confirms compilation but not in-game event dialogs or effects. No unimplemented outcomes have been allowed to apply only their AC deltas.
+
+### 2026-10-26 — Library research event and Sobs (F13)
+- **F13 32% → 33%**, overall simple 25-system average **13.08% → 13.12%** (both approximately **13.1%**). **Iron Orb 2** now consumes 75 Gold, adds 2 Armageddon and grants 2 persistent city research from an existing Library, grounded in the source's `BUILDINGCLASS_LIBRARY`, `COMMERCE_RESEARCH` and `iExtraCommerce=2`. This is stored in the city save state and applies while the Library remains. **Sobs 1** is a newly playable eighth Armageddon-related event family at AC ≥10 and city population ≥3, applying −1 persistent local happiness. Target selection now associates Iron Orb with a Library city, rather than an arbitrary population-eligible city.
+- **Pending:** original Civ IV building-extra-commerce accounting parity, in-game choice/persistence acceptance, 15 unscheduled families and missing choices requiring plot effects, unit spawning/promotions, XML/Python callbacks, religions, diplomacy and full probability selection.
