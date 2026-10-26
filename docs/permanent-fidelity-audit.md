@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 17% |
+| F13 | City health and disease | 18% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -109,3 +109,7 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 #### Disease combat/healing source milestone
 - F13 **16% → 17%**; overall gameplay **12.4% → 12.5%** (rounded). From pinned EMM `CIV4PromotionInfos.xml`, added Diseased -30% and Plagued -60% combat penalties to the mod, and implemented their respective -10/-20 healing modifiers in the health engine. Exact XML status definitions are preserved in `docs/data/emm-disease-promotions.json`.
 - **Unverified in game:** transmission through combat, immunity, curing, auto-promotion from lairs/events, and the Blight/Pestilence Armageddon triggers all remain incomplete; test APK compile result recorded separately.
+
+#### Disease contact transmission and immunity
+- F13 **17% → 18%**; 25-system mean **12.5%** rounded. Combat now has a source-derived Diseased transmission hook, and the promotion manager blocks Diseased and Plagued when Immune to Disease is present; granting immunity also removes existing infections. This does **not** replace the missing curing spell or prove EMM combat infection edge cases.
+- Android compilation and gameplay confirmation are tracked separately. Blight/Pestilence remain inactive without a global Armageddon dispatcher.
