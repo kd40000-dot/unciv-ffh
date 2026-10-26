@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 12% |
+| F13 | City health and disease | 14% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.3%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.4%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.3% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.4% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -95,3 +95,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **10% → 12%**; equal-weight gameplay fidelity **12.2% → 12.3%** (rounded).
 - Additional pinned EMM `CIV4HandicapInfo.xml` inventory and difficulty starting health (Settler +4, Chieftain +3, others +2); `iGlobalHealth` buildings including Kuriotates Palace; `bNoUnhealthyPopulation` building rules. Reuses existing health totals, detailed city health UI and food penalties.
 - **Not yet player tested:** differences at lower difficulty, global health across cities, effects of special buildings. Area health, disease, Blight and richer AI support remain open. Build validation tracked in Actions.
+
+### 2026-10-26 — Signed building health and source checks (F13)
+- F13 **12% → 14%**, total gameplay scorecard **12.3% → 12.4%** (rounded). The old adapter incorrectly treated Forge, Dwarven Smithy, Reliquary and Public Baths negative-health source values as subtraction from healthy totals; they now contribute to the unhealthy counter while preserving the correct net-Food effect. Their construction info uses signed icon bonuses, rather than only three hard-coded health buildings.
+- Added static EMM-source checks in `tools/verify_emm_health_rules.py` to guard against sign regressions, with the Android workflow executing them.
+- **Gameplay verification pending:** city growth, negative building effects, source health contributions, area/global effects, save/reload, disease and Armageddon effects. This percentage is an estimate, not proof of completeness.
