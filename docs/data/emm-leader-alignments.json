@@ -1,0 +1,82 @@
+{
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "source": "XML/Civilizations/CIV4LeaderHeadInfos.xml",
+  "selectedCivilizations": {
+    "Amurites": {
+      "leader": "LEADER_VALLEDIA",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Balseraphs": {
+      "leader": "LEADER_PERPENTACH",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Bannor": {
+      "leader": "LEADER_SABATHIEL",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Calabim": {
+      "leader": "LEADER_ALEXIS",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Clan of Embers": {
+      "leader": "LEADER_JONAS",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Doviello": {
+      "leader": "LEADER_CHARADON",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Elohim": {
+      "leader": "LEADER_ETHNE",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Grigori": {
+      "leader": "LEADER_CASSIEL",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Hippus": {
+      "leader": "LEADER_TASUNKE",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Illians": {
+      "leader": "LEADER_AURIC",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Khazad": {
+      "leader": "LEADER_ARTURUS",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Kuriotates": {
+      "leader": "LEADER_CARDITH",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Lanun": {
+      "leader": "LEADER_FALAMAR",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Ljosalfar": {
+      "leader": "LEADER_ARENDEL",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Luchuirp": {
+      "leader": "LEADER_GARRIM",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Malakim": {
+      "leader": "LEADER_VARN",
+      "alignment": "ALIGNMENT_GOOD"
+    },
+    "Sheaim": {
+      "leader": "LEADER_TEBRYN",
+      "alignment": "ALIGNMENT_EVIL"
+    },
+    "Sidar": {
+      "leader": "LEADER_SANDALPHON",
+      "alignment": "ALIGNMENT_NEUTRAL"
+    },
+    "Svartalfar": {
+      "leader": "LEADER_FAERYL",
+      "alignment": "ALIGNMENT_EVIL"
+    }
+  }
+}
