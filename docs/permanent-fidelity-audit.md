@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 18% |
+| F13 | City health and disease | 20% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.5%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.6%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.5% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.6% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -113,3 +113,7 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 #### Disease contact transmission and immunity
 - F13 **17% → 18%**; 25-system mean **12.5%** rounded. Combat now has a source-derived Diseased transmission hook, and the promotion manager blocks Diseased and Plagued when Immune to Disease is present; granting immunity also removes existing infections. This does **not** replace the missing curing spell or prove EMM combat infection edge cases.
 - Android compilation and gameplay confirmation are tracked separately. Blight/Pestilence remain inactive without a global Armageddon dispatcher.
+
+### 2026-10-26 — Medic II cure and Armageddon threshold dispatch (F13)
+- F13 **18% → 20%**, overall equal-weight fidelity **12.5% → 12.6%**. Adds a Cure Disease unit action for Medic II, preliminary Medic I/II ruleset promotion availability, serialized Armageddon Counter 0–100 and one-shot threshold event dispatch of Blight at 30 and Pestilence at 35.
+- **Incomplete:** no source-faithful AC increase/decrease triggers are connected, so normal gameplay cannot yet fire the events; no unit Death damage, Healing Salve, exact Cure Disease targeting semantics, full Medic promotion effects or robust gameplay tests. Source EMM references in `docs/city-health-engine.md`.
