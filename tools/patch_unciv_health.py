@@ -114,7 +114,7 @@ u=u.replace(needle, '''        cityView.getEmmHealthInfo()?.let { (healthy, unhe
             val net = healthy - unhealthy
             val status = if (net >= 0) Color.FOREST else Color.SCARLET
             val healthLabel = "Health: $healthy / $unhealthy (net ${if (net >= 0) "+" else ""}$net)".toLabel(status, hideIcons = true)
-            lowerTable.add(healthLabel).row()
+            lowerTable.add(Table().apply {\n                add(ImageGetter.getImage(\"StatIcons/EMMHealth\")).size(20f).padRight(5f)\n                add(healthLabel)\n            }).row()
         }
 '''+needle)
 ui.write_text(u)
