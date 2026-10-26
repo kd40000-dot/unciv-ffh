@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<title>Calabim Bloodpet — hand-composed vector study</title>
+<desc>Faceless pale vampire thrall in a ragged burgundy tunic, sweeping asymmetric cloak and hooked short blade. Deliberate flat-color silhouettes with polygonal shadow planes.</desc>
+<g stroke="#20191D" stroke-linejoin="round" stroke-linecap="round">
+<!-- The far cloak: one readable wing-shaped mass, not a pile of details -->
+<path d="M258 166 Q301 159 328 194 L365 251 407 385 356 367 333 423 304 387 262 421 208 366 161 399 181 285 207 207Z" fill="#46262C" stroke-width="8"/>
+<path d="M318 191 350 242 388 361 351 343 334 388 313 356Z" fill="#722E39" stroke="none"/>
+<path d="M211 199 189 287 178 379 211 354 241 397 244 272Z" fill="#792C38" stroke="none"/>
+<path d="M188 354 178 379 211 354 240 398 230 363Z" fill="#9E3540" stroke="none"/>
+<!-- asymmetric lunging stance, no stiff mirrored legs -->
+<path d="M234 333 281 345 269 412 236 464 201 458 216 399Z" fill="#33292E" stroke-width="8"/>
+<path d="M275 340 317 329 332 407 354 464 317 472 285 423 262 387Z" fill="#30262C" stroke-width="8"/>
+<path d="M245 368 266 379 244 423 224 446 215 431Z" fill="#58444B" stroke="none"/>
+<path d="M292 376 315 367 327 425 341 447 318 439Z" fill="#554249" stroke="none"/>
+<!-- tall cuffed boots with practical silhouettes -->
+<path d="M215 422 244 432 235 460 217 478 169 475 Q164 464 183 459 L207 447Z" fill="#3B2A29" stroke-width="7"/>
+<path d="M216 433 234 440 222 452 199 457Z" fill="#91604B" stroke="none"/>
+<path d="M199 467 224 461 216 472 176 470Z" fill="#A67556" stroke="none"/>
+<path d="M311 431 333 420 350 459 377 471 375 483 327 484 314 463Z" fill="#382829" stroke-width="7"/>
+<path d="M319 439 337 437 342 460 326 465Z" fill="#85533F" stroke="none"/>
+<path d="M331 472 361 472 374 480 329 479Z" fill="#A26A4F" stroke="none"/>
+<!-- Torn tunic moves with body: angled contour gives the stance -->
+<path d="M235 213 284 205 322 226 327 279 340 355 312 380 285 363 254 391 222 364 215 294Z" fill="#5C2B35" stroke-width="8"/>
+<path d="M238 226 269 222 248 339 229 356 227 288Z" fill="#8B3540" stroke="none"/>
+<path d="M291 223 316 237 323 282 322 350 301 365 287 348Z" fill="#79323B" stroke="none"/>
+<path d="M253 299 309 297 318 329 277 335 238 325Z" fill="#32252D" stroke="none"/>
+<path d="M232 341 251 351 248 381 221 366Z" fill="#B04C4B" stroke="none"/>
+<path d="M287 350 311 351 339 356 312 381Z" fill="#9E3A41" stroke="none"/>
+<!-- simple crossbody slave harness -->
+<path d="M249 227 266 223 313 331 298 339Z" fill="#2C2227" stroke-width="4"/>
+<path d="M254 229 261 227 303 327 298 329Z" fill="#80564B" stroke="none"/>
+<path d="M226 296 314 314 313 333 224 316Z" fill="#2A2026" stroke-width="5"/>
+<path d="M235 303 305 317 303 323 235 310Z" fill="#885D4A" stroke="none"/>
+<path d="M266 305 286 310 286 326 265 323Z" fill="#BC9B70" stroke-width="3"/>
+<path d="M272 310 280 311 280 320 270 319Z" fill="#4A3030" stroke="none"/>
+<!-- near shoulder and arm held forward, hollow pale forearm -->
+<path d="M234 222 213 210 184 234 161 272 185 287 213 269 242 250Z" fill="#4A2B33" stroke-width="7"/>
+<path d="M208 221 185 244 172 269 185 272 219 240Z" fill="#8B3740" stroke="none"/>
+<path d="M176 273 192 282 166 329 150 352 137 340 145 316Z" fill="#BEA393" stroke-width="6"/>
+<path d="M166 283 175 286 156 323 144 329Z" fill="#E0C4AE" stroke="none"/>
+<path d="M139 335 158 346 150 367 136 375 123 362 126 347Z" fill="#AA8A7D" stroke-width="5"/>
+<!-- bent right arm and visible claw -->
+<path d="M319 228 344 229 360 275 359 304 336 313 319 282 307 258Z" fill="#4B3038" stroke-width="7"/>
+<path d="M333 236 347 253 353 283 339 296 325 271Z" fill="#7F3640" stroke="none"/>
+<path d="M342 304 360 298 379 335 367 350 353 343Z" fill="#AE9186" stroke-width="6"/>
+<path d="M354 305 360 313 370 338 361 339Z" fill="#D7B8A3" stroke="none"/>
+<path d="M365 342 380 335 390 346 383 361 386 371 380 379 371 368 362 373 357 366Z" fill="#B69C8C" stroke-width="5"/>
+<!-- hooked sacrificial blade on left, angled away from body -->
+<path d="M144 344 159 354 108 439 93 429Z" fill="#64483D" stroke-width="4"/>
+<path d="M111 404 120 416 89 446 Q76 455 57 442 Q80 441 88 412 L97 380 107 378Z" fill="#8A9092" stroke-width="6"/>
+<path d="M103 384 107 388 98 422 79 438 Q87 428 91 407Z" fill="#C5C6BC" stroke="none"/>
+<path d="M130 356 163 371 156 380 122 366Z" fill="#2A2329" stroke-width="5"/>
+<!-- shoulders and high gothic collar drawn ABOVE the torso -->
+<path d="M221 213 249 190 277 208 258 253 227 244Z" fill="#29262C" stroke-width="7"/>
+<path d="M305 194 338 218 325 249 300 237 289 210Z" fill="#29262C" stroke-width="7"/>
+<path d="M227 216 247 202 242 232 228 237Z" fill="#7D3540" stroke="none"/>
+<path d="M312 208 333 223 322 237 301 228Z" fill="#84333D" stroke="none"/>
+<path d="M239 231 256 231 273 257 285 240 305 227 315 245 283 282 252 267Z" fill="#AF4146" stroke-width="5"/>
+<path d="M246 237 268 258 281 274 268 268Z" fill="#DD6B5B" stroke="none"/>
+<!-- gaunt head and featureless shadowed face: ears/neck held inside hood -->
+<path d="M263 184 295 182 303 223 285 244 267 232Z" fill="#998477" stroke-width="6"/>
+<path d="M272 210 287 213 281 231 268 228Z" fill="#D9B9A5" stroke="none"/>
+<path d="M264 130 Q282 114 301 132 L312 158 306 200 292 219 275 216 257 198 253 158Z" fill="#B99D8E" stroke-width="7"/>
+<path d="M264 163 276 146 292 141 307 151 304 177 295 195 279 209 262 190Z" fill="#D5B7A1" stroke="none"/>
+<path d="M292 144 304 151 303 188 292 205 279 210 294 181Z" fill="#947F78" stroke="none"/>
+<!-- deliberately minimal facial detail; deeply hooded, no cartoon nose -->
+<path d="M263 174 277 169 284 176 269 182Z" fill="#523C41" stroke="none"/>
+<path d="M290 175 303 171 298 183 288 182Z" fill="#523C41" stroke="none"/>
+<path d="M267 175 276 173 275 177 268 179Z" fill="#9E383C" stroke="none"/>
+<path d="M291 178 299 174 297 180 292 181Z" fill="#A83E40" stroke="none"/>
+<path d="M278 196 285 193 291 197 284 202Z" fill="#6D4446" stroke="none"/>
+<!-- hair + extravagant pointed cowl -->
+<path d="M254 184 249 145 267 115 290 101 311 115 324 143 320 185 305 166 303 141 291 136 278 140 269 165 267 191Z" fill="#272329" stroke-width="8"/>
+<path d="M254 154 269 121 290 109 301 115 280 139 262 173Z" fill="#743039" stroke="none"/>
+<path d="M311 123 322 149 316 170 307 147 296 134Z" fill="#7A2D39" stroke="none"/>
+<path d="M260 177 272 146 280 137 266 194Z" fill="#3B2B32" stroke="none"/>
+<!-- concise metallic accents -->
+<path d="M324 236 333 240 330 249 320 244Z" fill="#CEAD82" stroke-width="2"/>
+<path d="M271 309 282 312 283 323 269 321Z" fill="#E0C29D" stroke="none"/>
+</g>
+</svg>
