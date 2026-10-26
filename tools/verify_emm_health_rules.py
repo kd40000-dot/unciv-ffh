@@ -40,3 +40,13 @@ assert blight(8,3,2,1,4)==8
 assert blight(2,0,0,3,2)==0
 assert pestilence(12,4,2)==5
 print('PASS: Blight/Pestilence formula and city-counter serialization contracts')
+
+source=json.loads(Path('docs/data/emm-disease-promotions.json').read_text())['promotions']
+assert int(source['PROMOTION_DISEASED']['iCombatPercent'])==-30
+assert int(source['PROMOTION_DISEASED']['iFriendlyHealChange'])==-10
+assert int(source['PROMOTION_PLAGUED']['iCombatPercent'])==-60
+assert int(source['PROMOTION_PLAGUED']['iFriendlyHealChange'])==-20
+patch=Path('tools/patch_unciv_health.py').read_text()
+for text in ('it.name == "Diseased" }) healing -= 10','it.name == "Plagued" }) healing -= 20'):
+ assert text in patch,text
+print('PASS: EMM unit disease combat/healing source values')
