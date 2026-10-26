@@ -19,14 +19,26 @@ jobs:
           ref: fce8c9895f604be0e26b4213f8692b7356cbe4b8
           path: upstream-unciv
           persist-credentials: false
-      - name: Apply source patch
+      - name: Preserve working mod-download HTTP fix
+        run: python3 tools/patch_unciv_download_client.py upstream-unciv
+      - name: Apply EMM health patch
         run: python3 tools/patch_unciv_health.py upstream-unciv
-      - name: Verify patch only changes city health accounting
+      - name: Install side-by-side with existing Unciv
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('upstream-unciv/android/build.gradle.kts')
+          s=p.read_text()
+          anchor='        debug {\n            isDebuggable = true'
+          assert s.count(anchor)==1
+          p.write_text(s.replace(anchor,'        debug {\n            applicationIdSuffix = ".emmhealth"\n            isDebuggable = true'))
+          PY
+      - name: Verify patch scope
         run: |
           cd upstream-unciv
           git diff --check
           git diff --stat
-          git diff -- core/src/com/unciv/logic/city/CityStats.kt
+          git diff --stat
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
