@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 22,
+      "percent": 26,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -261,17 +261,20 @@
         "docs/data/emm-disease-promotions.json",
         "jsons/UnitPromotions.json",
         "docs/data/emm-armageddon-sources.json",
-        "jsons/Units.json"
+        "jsons/Units.json",
+        "docs/data/emm-leader-alignments.json",
+        "docs/data/emm-armageddon-event-choices.json",
+        "scripts/extract_emm_leader_alignments.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-derived religion AC contributions now wired to gameplay tech completion and Ashen Veil disciple city spreading (+5 first Ashen Veil founding, +3 first Octopus Overlords founding, +1 per newly reached city). EMM disciple unit baseline movement/combat/cost sourced. Pending latest GitHub CI and in-game religion/spread/threshold tests.",
-      "remainingDifferences": "AC can now increase during normal play from founding Ashen Veil via Corruption of Spirit (+5), founding Octopus Overlords via Message from the Deep (+3), and Ashen Veil disciple conversion of new cities (+1). The EMM natural spread system, global religious founding effects on the rest of the game's mechanics, AI missionary automation, other AC gain/loss sources (civ alignment eliminations, spells, events, city razing), city event Death damage, accurate blight/pestilence decay and gameplay threshold verification remain incomplete. Existing city-health, disease and cure infrastructure as previously documented.",
+      "verification": "Source-backed selected-leader eliminations (Good +5, Evil -5 after AD 5, idempotent), Order/Ashen Veil 35% conflict, Sanctify (-1), Rob Grave (+1), Necrototem destruction (-2), and all 52 XML event-choice AC deltas compiled in engine or registered as callable API. Build and ruleset tests passed; player tests of new cases pending.",
+      "remainingDifferences": "Natural AC from religion founding (+5 Ashen/+3 Overlords), Ashen spread (+1), selected-leader civilization eliminations (+5 Good / -5 Evil after AD 5), Order/Veil religion conflicts, Sanctify (-1 on ruins/grave), Rob Grave (+1), Necrototem destruction (-2). 52 original event-choice AC values available through engine API but native random-event generation/prerequisites not implemented. Pending: other Civ4 spell events (Peace halves AC, Seven Pines), four random event callbacks, scenario-only Gela -10, other C++ AC contributions, native religion pressure and AI, native graveyard/Necrototem spawning, grave-loot rewards, correct dynamic alignments, Blight/Pestilence unit Death damage, disease gameplay validation.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 natural religion-tech AC changes and Ashen Veil missionary spread"
+      "updatedBy": "2026-10-26 selected-leader alignment elimination, religion conflicts, Sanctify/Rob Grave, Necrototem, full XML event-choice AC registry"
     },
     {
       "id": "F14",
