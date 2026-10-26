@@ -22,6 +22,15 @@ nations=json.loads(Path('jsons/Nations.json').read_text())
 expansive=sorted(n['name'] for n in nations if 'Expansive' in n.get('uniqueName','').split(', ') )
 assert int(next(t['fields']['iHealth'] for t in source['groups']['traits']['entries'] if t['id']=='TRAIT_EXPANSIVE'))==3
 expansive_set='setOf('+', '.join('"'+n+'"' for n in expansive)+')'
+feature_names={r['name'] for r in json.loads(Path('jsons/Terrains.json').read_text())}
+feature_health={}
+for row in source['groups']['features']['entries']:
+    amount=int(row['fields'].get('iHealthPercent','0'))
+    name=' '.join(x.capitalize() for x in row['id'].removeprefix('FEATURE_').split('_'))
+    if name=='Flood Plains':name='Flood plains'
+    if name in feature_names and amount:feature_health[name]=amount
+assert feature_health['Forest']==50 and feature_health['Jungle']==-25 and feature_health['Flood Plains']==-40 if 'Flood Plains' in feature_health else feature_health.get('Flood plains')==-40
+feature_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(feature_health.items()))+')'
 resource_names={r['name'] for r in json.loads(Path('jsons/TileResources.json').read_text())}
 health_resources={}
 for row in source['groups']['resources']['entries']:
@@ -55,7 +64,13 @@ replacement='''        val foodEaten = calcFoodEaten()
             val resourceHealth = EMM_RESOURCE_HEALTH.entries.sumOf { (name, value) ->
                 if (city.civ.getResourceAmount(name) > 0) value else 0
             }
-            val healthySources = 2 + buildingHealth + expansiveHealth + resourceHealth
+            val freshwaterHealth = if (city.getCenterTile().isAdjacentTo("Fresh Water")) 2 else 0
+            val featureEffects = city.getCenterTile().getTilesInDistance(2)
+                .flatMap { tile -> tile.terrainFeatures.map { EMM_FEATURE_HEALTH[it] ?: 0 } }
+                .toList()
+            val featureHealth = featureEffects.sumOf { it.coerceAtLeast(0) } / 100
+            val featureUnhealth = featureEffects.sumOf { (-it).coerceAtLeast(0) } / 100
+            val healthySources = 2 + buildingHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
             // Remove old temporary Food bonuses standing in for health buildings.
             // Only the health-enabled EMM ruleset gets this correction.
             val outdatedFoodProxy =
@@ -64,7 +79,7 @@ replacement='''        val foodEaten = calcFoodEaten()
                 (if ("Infirmary" in built) 2 else 0)
             if (outdatedFoodProxy > 0)
                 newFinalStatList.add("Replace health Food proxies", Stats(food = -outdatedFoodProxy.toFloat()))
-            val netUnhealthy = (unhealthyPopulation - healthySources).coerceAtLeast(0)
+            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
         }'''
@@ -72,6 +87,7 @@ assert s.count(anchor)==1,'Pinned CityStats changed, refusing unsafe patch'
 replacement=replacement.replace('EMM_HEALTH_MAP',health_map)
 replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
 replacement=replacement.replace('EMM_RESOURCE_HEALTH',resource_map)
+replacement=replacement.replace('EMM_FEATURE_HEALTH',feature_map)
 s=s.replace(anchor,replacement)
 path.write_text(s)
 print('Patched',path)
