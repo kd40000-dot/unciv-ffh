@@ -2233,5 +2233,21 @@
         "text": "Slaves cannot currently be acquired through normal gameplay in this mod. Their capture and production mechanics remain to be implemented."
       }
     ]
+  },
+  {
+    "name": "Disciple of the Ashen Veil",
+    "unitType": "Disciple",
+    "movement": 2,
+    "cost": 60,
+    "strength": 2,
+    "requiredTech": "Corruption of Spirit",
+    "uniques": [
+      "Cannot attack"
+    ],
+    "civilopediaText": [
+      {
+        "text": "EMM first-passage port: a follower of the Ashen Veil who can spread that religion to another city. EMM source AC: +5 when the religion is first founded, +1 on spreading to a previously unreached city. Unit statistics and missionary behavior remain to be audited for fidelity."
+      }
+    ]
   }
 ]
