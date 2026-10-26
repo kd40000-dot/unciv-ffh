@@ -590,3 +590,44 @@ v=v.replace(needle,'''                    if (pillagedImprovement == "Necrototem
                 }''')
 pillage.write_text(v)
 print('Linked EMM Necrototem destruction to source-defined -2 AC')
+
+
+# Source spells CvSpellInterface.spellSanctify/spellRobGrave:
+# Sanctifying city ruins or graveyards: -1 AC, improvement removed.
+# Robbing a graveyard: +1 AC and consumes the graveyard, with the original
+# random grave loot still pending.
+actiontype=root/'core/src/com/unciv/models/UnitAction.kt'
+a=actiontype.read_text()
+needle='    EmmSpreadAshenVeil("Spread the Ashen Veil"),'
+assert a.count(needle)==1
+a=a.replace(needle,needle+'''
+    EmmSanctify("Sanctify"),
+    EmmRobGrave("Rob Grave"),''')
+actiontype.write_text(a)
+actions=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt'
+a=actions.read_text()
+needle='''        addSkipAction(unit)'''
+assert a.count(needle)==1
+a=a.replace(needle,'''        if (unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            val improvement = unit.getTile().improvement
+            if ("Life I" in unit.promotions.promotions &&
+                (improvement == "City ruins" || improvement == "Graveyard")) {
+                yield(UnitAction(UnitActionType.EmmSanctify,
+                    action = if (unit.hasMovement()) ({
+                        unit.getTile().removeImprovement()
+                        unit.civ.gameInfo.changeEmmArmageddon(-1)
+                        unit.useMovementPoints(1f)
+                    }) else null))
+            }
+            if (improvement == "Graveyard" && unit.isMilitary()) {
+                yield(UnitAction(UnitActionType.EmmRobGrave,
+                    action = if (unit.hasMovement()) ({
+                        unit.getTile().removeImprovement()
+                        unit.civ.gameInfo.changeEmmArmageddon(1)
+                        unit.useMovementPoints(1f)
+                    }) else null))
+            }
+        }
+'''+needle)
+actions.write_text(a)
+print('Linked source-faithful Sanctify (-1) and grave robbing (+1) AC changes')
