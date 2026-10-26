@@ -1,0 +1,32 @@
+name: Inventory pinned EMM health values
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/extract_emm_health_source.py
+      - .github/workflows/extract-emm-health.yml
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: bewlay/extramodmod
+          ref: 60b0ec3740083162aaab7bf8491761a54a65a610
+          path: emm-source
+          sparse-checkout: |
+            XML/Buildings
+            XML/Civilizations/CIV4TraitInfos.xml
+            XML/Terrain/CIV4BonusInfos.xml
+            XML/Terrain/CIV4FeatureInfos.xml
+          persist-credentials: false
+      - run: python3 scripts/extract_emm_health_source.py emm-source docs/data/emm-health-source.json
+      - name: Commit pinned XML evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/emm-health-source.json
+          git diff --cached --quiet || (git commit -m "Inventory original EMM health bonuses" && git pull --rebase origin main && git push)
