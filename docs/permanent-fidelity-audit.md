@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 16% |
+| F13 | City health and disease | 17% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.4%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.5%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.4% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.5% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -105,3 +105,7 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **14% → 16%**; overall gameplay scorecard **12.4%** (rounded). The engine now stores a serialized temporary sickness counter in cities, applies its effects as extra unhealthiness, and exposes helper functions implementing EMM Blight/Pestilence sickness formulas.
 - EMM source references: `python/entrypoints/CvRandomEventInterface.py` (Blight threshold 30, Pestilence threshold 35) and `XML/Units/CIV4PromotionInfos.xml` (Diseased -30% combat, Plagued -60%). The latter combat strength values are present in the port's promotion data.
 - **Not complete or verified in-game:** Blight/Pestilence are not automatically triggered until the Armageddon Counter is implemented, unit damage and disease transmission/cures/immunity remain absent, and Kotlin build plus in-game save/load/decay tests are needed. UI simulation alone is not equivalent to full EMM disease behavior.
+
+#### Disease combat/healing source milestone
+- F13 **16% → 17%**; overall gameplay **12.4% → 12.5%** (rounded). From pinned EMM `CIV4PromotionInfos.xml`, added Diseased -30% and Plagued -60% combat penalties to the mod, and implemented their respective -10/-20 healing modifiers in the health engine. Exact XML status definitions are preserved in `docs/data/emm-disease-promotions.json`.
+- **Unverified in game:** transmission through combat, immunity, curing, auto-promotion from lairs/events, and the Blight/Pestilence Armageddon triggers all remain incomplete; test APK compile result recorded separately.
