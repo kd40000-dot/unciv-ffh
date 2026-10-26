@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 20% |
+| F13 | City health and disease | 22% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.6%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.7%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.6% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.7% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -117,3 +117,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 ### 2026-10-26 — Medic II cure and Armageddon threshold dispatch (F13)
 - F13 **18% → 20%**, overall equal-weight fidelity **12.5% → 12.6%**. Adds a Cure Disease unit action for Medic II, preliminary Medic I/II ruleset promotion availability, serialized Armageddon Counter 0–100 and one-shot threshold event dispatch of Blight at 30 and Pestilence at 35.
 - **Incomplete:** no source-faithful AC increase/decrease triggers are connected, so normal gameplay cannot yet fire the events; no unit Death damage, Healing Salve, exact Cure Disease targeting semantics, full Medic promotion effects or robust gameplay tests. Source EMM references in `docs/city-health-engine.md`.
+
+### 2026-10-26 — First normal-play source-backed AC progression
+- F13 **20% → 22%**; 25-system mean **12.6% → 12.7%** rounded. Pinned `XML/Gameinfo/CIV4ReligionInfo.xml`: first founding of Ashen Veil +5 AC, Octopus Overlords +3 AC, spread of Ashen Veil +1 AC per newly reached city. Religion-founding technologies from `python/CvEventManager.py` now generate these deltas when researched. A source-traced buildable Disciple of the Ashen Veil (`UNIT_DISCIPLE_THE_ASHEN_VEIL`, cost 60, strength 3, move 1) can spread the Veil through a normal city-center unit action, granting its source-based AC change.
+- **Faithfulness caveat:** the temporary missionary action and serialized religion city flag are not a full EMM religion system. Natural passive spreading, AI missionary use, holy-city rules, religion buildings/civics, and numerous other AC changes are pending. Reaching Blight (30) or Pestilence (35) requires enough genuine research-and-conversion actions; no made-up per-turn counter increases were added.
+- Unciv build and validation passing only confirm code/package checks, not successful in-game epidemic trigger testing.
