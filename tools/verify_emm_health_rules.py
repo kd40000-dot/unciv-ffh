@@ -109,3 +109,9 @@ unit=next(u for u in json.loads(Path('jsons/Units.json').read_text()) if u['name
 assert (unit['requiredTech'],unit['uniqueTo'],unit['cost'],unit['movement'],unit['strength'])==('Fanaticism','Elohim',300,2,0)
 assert all((n//2)==(n-(n-n//2)) for n in range(101))
 print('PASS: source-backed Peace, Corlindale and AC event callback values')
+
+# EMM event infrastructure: serialized once-per-world-turn state and safe-choice whitelist.
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('emmResolvedEventTriggers = hashSetOf<String>()','emmPendingEvents = hashMapOf<String, String>()','emmLastEventRollTurn = -1','emmScheduleRandomEvents()','emmResolveRandomEvent(civID: String, choice: String)','EVENTTRIGGER_WITCH','EVENTTRIGGER_HOLY_CHILD','EVENTTRIGGER_DEMONIC_TOME','game emm-event <choiceId>'):
+ assert token in patch,token
+print('PASS: serialized EMM random-event state, world-turn scheduler and safe resolutions')
