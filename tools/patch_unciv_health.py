@@ -795,3 +795,36 @@ g=g.replace(needle,'''    /**
 '''+needle)
 gamefile.write_text(g)
 print('Installed source-exact Peace/Seven Pines shared Armageddon reduction API')
+
+
+# Source EMM SPELL_PEACE: UNITCLASS_CORLINDALE, only available during war;
+# ends wars with all living non-barbarian players, halves AC, consumes caster.
+actiontype=root/'core/src/com/unciv/models/UnitAction.kt'
+a=actiontype.read_text()
+needle='    EmmRobGrave("Rob Grave"),'
+assert a.count(needle)==1
+a=a.replace(needle,needle+'\n    EmmPeace("Peace"),')
+actiontype.write_text(a)
+actions=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt'
+a=actions.read_text()
+needle='''        addSkipAction(unit)'''
+assert a.count(needle)==1
+a=a.replace(needle,'''        if (unit.name == "Corlindale" &&
+            unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            val enemies = unit.civ.gameInfo.civilizations.filter { other ->
+                other != unit.civ && other.isAlive() && !other.isBarbarian &&
+                    unit.civ.isAtWarWith(other)
+            }
+            if (enemies.isNotEmpty()) {
+                yield(UnitAction(UnitActionType.EmmPeace,
+                    action = if (unit.hasMovement()) ({
+                        for (enemy in enemies)
+                            unit.civ.getDiplomacyManager(enemy)?.makePeace()
+                        unit.civ.gameInfo.emmPeaceReducesArmageddon()
+                        unit.destroy()
+                    }) else null))
+            }
+        }
+'''+needle)
+actions.write_text(a)
+print('Added Corlindale Peace spell: peacemaking, AC halving, sacrifice')
