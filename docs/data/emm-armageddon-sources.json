@@ -19,5 +19,61 @@
       "source": "XML/Gameinfo/CIV4ReligionInfo.xml"
     }
   ],
-  "notes": "Source-valued counter deltas; the Unciv-native Civ IV religion conversion and passive spread mechanisms are not ported in full. The custom Disciple action is an accessible interim spread route."
+  "notes": "Source-valued counter deltas; the Unciv-native Civ IV religion conversion and passive spread mechanisms are not ported in full. The custom Disciple action is an accessible interim spread route.",
+  "extraSources": [
+    {
+      "source": "python/CvEventManager.py",
+      "trigger": "onSetPlayerAlive (after year 5)",
+      "effect": "Good civ eliminated +5; Evil civ eliminated -5; Neutral 0",
+      "status": "wired for 19 source-selected leaders; dynamic religion-driven alignment still pending"
+    },
+    {
+      "source": "python/CvEventManager.py",
+      "trigger": "onReligionSpread Order/Ashen Veil",
+      "effect": "35% winning incoming religion may apply -1 (Order) or +1 (Veil) AC with city population loss",
+      "status": "wired via custom missionary conversions, not complete vanilla Civ4 religion logic"
+    },
+    {
+      "source": "python/CvEventManager.py",
+      "trigger": "onImprovementDestroyed Necrototem",
+      "effect": "-2 AC",
+      "status": "wired to Unciv permanent pillage destruction; source spawning deferred"
+    },
+    {
+      "source": "python/entrypoints/CvSpellInterface.py",
+      "trigger": "spellSanctify",
+      "effect": "-1 AC per removed City Ruins or Graveyard improvement",
+      "status": "playable Life I action for map-present improvements, other Sanctify effects deferred"
+    },
+    {
+      "source": "python/entrypoints/CvSpellInterface.py",
+      "trigger": "spellRobGrave",
+      "effect": "+1 AC",
+      "status": "playable graveyard action; source random loot deferred"
+    },
+    {
+      "source": "python/entrypoints/CvSpellInterface.py",
+      "trigger": "spellPeace / spellPeaceSevenPines",
+      "effect": "reduce AC by half",
+      "status": "not connected until source-compatible spell prerequisites and world spells"
+    },
+    {
+      "source": "python/entrypoints/CvRandomEventInterface.py",
+      "trigger": "Flare Entropy/Life nodes and Aeron/Sirona signs",
+      "effect": "+2/-2/+3/-3 AC",
+      "status": "source values audited, random event conditions pending"
+    },
+    {
+      "source": "python/CvEventManager.py",
+      "trigger": "scenario 4 Mercurian Gela",
+      "effect": "-10 AC",
+      "status": "scenario-specific, not ported"
+    },
+    {
+      "source": "XML/Events/CIV4EventInfos.xml",
+      "trigger": "52 nonzero event choice records",
+      "effect": "individual signed changes in docs/data/emm-armageddon-event-choices.json",
+      "status": "engine API and source registry available; event prerequisites and selection not ported"
+    }
+  ]
 }
