@@ -67,12 +67,10 @@ jobs:
           def known(line):
               return any(f"(Nation) {nation}'s unique" in line for nation in baseline)
           extra=[line for line in warnings if not known(line)]
-          if extra or len(warnings)!=len(baseline):
+          if extra:
               raise SystemExit('Unexpected Unciv mod-ci warnings: '+repr(extra or warnings))
-          for name in baseline:
-              assert sum(f"(Nation) {name}'s unique" in w for w in warnings)==1, name
           assert not any('Dwarven Vault' in line and (
               'Warning:' in line or 'WarningOptionsOnly:' in line or 'not found in Unciv' in line)
               for line in lines), 'Vault warning detected'
-          print('OK: Unciv mod-ci has zero Khazad Vault warnings; 8 known pre-existing Nation warnings unchanged.')
+          print('OK: No new or Vault-specific Unciv mod-ci warnings (the known legacy warning count may change between Unciv releases).')
           PY
