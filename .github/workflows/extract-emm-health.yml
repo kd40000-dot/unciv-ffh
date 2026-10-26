@@ -22,6 +22,7 @@ jobs:
             XML/Civilizations/CIV4TraitInfos.xml
             XML/Terrain/CIV4BonusInfos.xml
             XML/Terrain/CIV4FeatureInfos.xml
+            XML/Gameinfo/CIV4HandicapInfo.xml
           persist-credentials: false
       - run: python3 scripts/extract_emm_health_source.py emm-source docs/data/emm-health-source.json
       - name: Commit pinned XML evidence
