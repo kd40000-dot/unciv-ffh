@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 31,
+      "percent": 32,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -275,10 +275,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Four more source-derived random event families enabled: Camulos (population>=3 Training Yard, 10% game activation, +1 AC), Necro-Cannibalism (AC>=65 population>=5 evil selected leader, +3 AC), Iron Orb (Library and 75 Gold; refusal), Strange Adept (Mage Guild; refusal). GitHub ruleset validation passed. Android build pending; no device tests.",
-      "remainingDifferences": "7 of 23 AC event trigger families currently scheduled; most choices other than the safe source-effect ones remain gated off. Remaining 16 triggers, original full choices and callbacks, dynamic alignment, event frequency tuning, full blight/pestilence Death damage, save/load player acceptance and AI decision fidelity still pending.",
+      "verification": "Generated Kotlin EmmEventEffects source whitelist reads EMM XML iGold/iPopulationChange/iHappy/iHealth/iGlobalCounter fields; applies numeric effects with precondition checks and persistent city health/happiness modifiers. Witch 1 (+1 happiness, -3 health, +2 AC), Holy Child 2 (-50 gold, +1 health, +1 happiness, -10 AC) made playable. Kotlin engine compilation and ruleset validation succeeded; Android packaging and gameplay tests pending.",
+      "remainingDifferences": "7/23 event families scheduled; only complete numerical choices supported. 16 other trigger families and all choices requiring Python callbacks, promotions, terrain effects, units, diplomacy, random-event game rules, dynamic alignment and religion still pending. In-game event visual/persistence and full random outcomes untested.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 7 event trigger families active with source-gated full-effect-safe choice support"
+      "updatedBy": "2026-10-26 reusable event gold/population/health/happiness interpreter; Witch and Holy Child extra choices"
     },
     {
       "id": "F14",
