@@ -1151,3 +1151,109 @@ g=g.replace(needle,'''            if (eligible.isEmpty() ||
             }.id''')
 gamefile.write_text(g)
 print('Replaced arbitrary 1%/uniform event selection with source era chance and XML trigger weights')
+
+
+# Next native event families: source eligibility and complete XML choices.
+# Only choices whose full non-AC fields are empty are eligible.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''            "EVENTTRIGGER_DEMONIC_TOME" -> choice == "EVENT_DEMONIC_TOME_2"
+            else -> false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_DEMONIC_TOME" -> choice == "EVENT_DEMONIC_TOME_2"
+            "EVENTTRIGGER_SHRINE_CAMULOS" -> choice == "EVENT_SHRINE_CAMULOS_1"
+            "EVENTTRIGGER_NECRO_CANNIBALISM" -> choice == "EVENT_NECRO_CANNIBALISM_2"
+            "EVENTTRIGGER_IRON_ORB" -> choice == "EVENT_IRON_ORB_1"
+            "EVENTTRIGGER_STRANGE_ADEPT" -> choice == "EVENT_STRANGE_ADEPT_1"
+            else -> false''')
+needle='''            "EVENTTRIGGER_DEMONIC_TOME" -> "EVENT_DEMONIC_TOME_2"
+            else -> return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_DEMONIC_TOME" -> "EVENT_DEMONIC_TOME_2"
+            "EVENTTRIGGER_SHRINE_CAMULOS" -> "EVENT_SHRINE_CAMULOS_1"
+            "EVENTTRIGGER_NECRO_CANNIBALISM" -> "EVENT_NECRO_CANNIBALISM_2"
+            "EVENTTRIGGER_IRON_ORB" -> "EVENT_IRON_ORB_1"
+            "EVENTTRIGGER_STRANGE_ADEPT" -> "EVENT_STRANGE_ADEPT_1"
+            else -> return false''')
+needle='''        if (!applyEmmArmageddonEventChoice(choice)) return false
+        emmPendingEvents.remove(civID)'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        // Original XML: the two decline choices have no counter or secondary effect.
+        if (choice !in listOf("EVENT_IRON_ORB_1", "EVENT_STRANGE_ADEPT_1") &&
+            !applyEmmArmageddonEventChoice(choice)) return false
+        emmPendingEvents.remove(civID)''')
+needle='''            if (emmArmageddonCounter >= 10 && civ.tech.isResearched("Writing"))
+                eligible.add("EVENTTRIGGER_DEMONIC_TOME")'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            if (emmArmageddonCounter >= 10 && civ.tech.isResearched("Writing"))
+                eligible.add("EVENTTRIGGER_DEMONIC_TOME")
+            // Source event: Shrine of Camulos, population 3+ and Training Yard,
+            // only active in 10% of games; the catalog enforces that roll.
+            if (civ.cities.any { city ->
+                city.population.population >= 3 &&
+                city.cityConstructions.containsBuildingOrEquivalent("Training Yard")
+            }) eligible.add("EVENTTRIGGER_SHRINE_CAMULOS")
+            // Source event: Iron Orb requires >=75 treasury and Library.
+            if (civ.gold >= 75 && civ.cities.any { city ->
+                city.cityConstructions.containsBuildingOrEquivalent("Library")
+            }) eligible.add("EVENTTRIGGER_IRON_ORB")
+            if (civ.cities.any { city ->
+                city.cityConstructions.containsBuildingOrEquivalent("Mage Guild")
+            }) eligible.add("EVENTTRIGGER_STRANGE_ADEPT")
+            // Source necro-cannibalism: AC 65+, city 5+, evil alignment
+            // for choice #2. Dynamic alignment remains a separate TODO.
+            if (emmArmageddonCounter >= 65 &&
+                civ.civName in setOf(
+                    "Balseraphs", "Calabim", "Clan of Embers", "Doviello",
+                    "Illians", "Sheaim", "Svartalfar"
+                ) && civ.cities.any { it.population.population >= 5 })
+                eligible.add("EVENTTRIGGER_NECRO_CANNIBALISM")''')
+needle='''                val safe = when(selected) {
+                    "EVENTTRIGGER_WITCH" -> "EVENT_WITCH_2"
+                    "EVENTTRIGGER_HOLY_CHILD" -> "EVENT_HOLY_CHILD_1"
+                    else -> "EVENT_DEMONIC_TOME_2"
+                }'''
+assert g.count(needle)==1
+g=g.replace(needle,'''                val safe = when(selected) {
+                    "EVENTTRIGGER_WITCH" -> "EVENT_WITCH_2"
+                    "EVENTTRIGGER_HOLY_CHILD" -> "EVENT_HOLY_CHILD_1"
+                    "EVENTTRIGGER_SHRINE_CAMULOS" -> "EVENT_SHRINE_CAMULOS_1"
+                    "EVENTTRIGGER_NECRO_CANNIBALISM" -> "EVENT_NECRO_CANNIBALISM_2"
+                    "EVENTTRIGGER_IRON_ORB" -> "EVENT_IRON_ORB_1"
+                    "EVENTTRIGGER_STRANGE_ADEPT" -> "EVENT_STRANGE_ADEPT_1"
+                    else -> "EVENT_DEMONIC_TOME_2"
+                }''')
+gamefile.write_text(g)
+
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''            "EVENTTRIGGER_DEMONIC_TOME" -> "A Demonic Tome has been discovered"
+            else -> return false'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            "EVENTTRIGGER_DEMONIC_TOME" -> "A Demonic Tome has been discovered"
+            "EVENTTRIGGER_SHRINE_CAMULOS" -> "The Shrine of Camulos"
+            "EVENTTRIGGER_NECRO_CANNIBALISM" -> "Necro-Cannibalism"
+            "EVENTTRIGGER_IRON_ORB" -> "The Iron Orb"
+            "EVENTTRIGGER_STRANGE_ADEPT" -> "A Strange Adept"
+            else -> return false''')
+needle='''            else -> listOf(
+                "EVENT_DEMONIC_TOME_2" to "Destroy the tome (Armageddon -5)"
+            )'''
+assert v.count(needle)==1
+v=v.replace(needle,'''            "EVENTTRIGGER_SHRINE_CAMULOS" -> listOf(
+                "EVENT_SHRINE_CAMULOS_1" to "Honor Camulos (Armageddon +1)"
+            )
+            "EVENTTRIGGER_NECRO_CANNIBALISM" -> listOf(
+                "EVENT_NECRO_CANNIBALISM_2" to "Permit the practice (Armageddon +3)"
+            )
+            "EVENTTRIGGER_IRON_ORB" -> listOf(
+                "EVENT_IRON_ORB_1" to "Leave the orb untouched"
+            )
+            "EVENTTRIGGER_STRANGE_ADEPT" -> listOf(
+                "EVENT_STRANGE_ADEPT_1" to "Turn the adept away"
+            )
+            else -> listOf(
+                "EVENT_DEMONIC_TOME_2" to "Destroy the tome (Armageddon -5)"
+            )''')
+alert.write_text(v)
+print('Enabled four source-gated EMM event families with full-effect-safe choices')
