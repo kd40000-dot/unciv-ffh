@@ -279,3 +279,22 @@ object EmmCityEpidemics {
 }
 ''')
 print('Patched persisted city epidemic counter and event source formulas')
+
+
+# Complete disease/plague healing modifiers from EMM PromotionInfos on the
+# pinned Unciv healing path; these are separate from their strength modifiers.
+unit=root/'core/src/com/unciv/logic/map/mapunit/MapUnit.kt'
+u=unit.read_text()
+begin=u.index('fun healingAmountForTile(')
+end=u.index('    // Only military land units',begin)
+section=u[begin:end]
+needle='        if (noTerrainDamage) return healing'
+assert section.count(needle)==1
+section=section.replace(needle,'''        if (civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            if (promotions.getPromotions().any { it.name == "Diseased" }) healing -= 10
+            if (promotions.getPromotions().any { it.name == "Plagued" }) healing -= 20
+        }
+        if (noTerrainDamage) return healing''')
+u=u[:begin]+section+u[end:]
+unit.write_text(u)
+print('Installed EMM Diseased/Plagued healing modifiers (-10/-20)')
