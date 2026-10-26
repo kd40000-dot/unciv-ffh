@@ -1641,7 +1641,7 @@ g=g.replace(needle,needle+'''
             "EVENTTRIGGER_WAR_GAMES" ->
                 choice == "EVENT_WAR_GAMES_1" || choice == "EVENT_WAR_GAMES_2"''')
 needle='''            "EVENTTRIGGER_SOBS" -> "EVENT_SOBS_1"'''
-assert g.count(needle)==1
+assert g.count(needle)==2
 g=g.replace(needle,needle+'''
             "EVENTTRIGGER_WAR_GAMES" ->
                 if (choice == "EVENT_WAR_GAMES_2") choice else "EVENT_WAR_GAMES_1"''',1)
