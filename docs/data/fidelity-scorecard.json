@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 27,
+      "percent": 29,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -265,17 +265,20 @@
         "docs/data/emm-leader-alignments.json",
         "docs/data/emm-armageddon-event-choices.json",
         "scripts/extract_emm_leader_alignments.py",
-        "docs/data/emm-armageddon-event-callbacks.json"
+        "docs/data/emm-armageddon-event-callbacks.json",
+        "docs/data/emm-armageddon-event-triggers.json",
+        "docs/data/emm-event-era-chances.json",
+        "tools/verify_emm_armageddon_events.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "EMM source-aligned Corlindale Peace spell (ends all non-barbarian wars, sacrifices caster, halves counter) implemented as a playable Elohim action; four random-event callback AC deltas (+2/-2/+3/-3) registered as engine API. Ruleset validation passed; Android build and player gameplay checks pending. Native random event prerequisites and non-counter side effects NOT implemented.",
-      "remainingDifferences": "Normal-play counter sources include religions, two disciples, alignment-based eliminations, Order/Veil conflicts, Sanctify, Rob Grave, Necrototem destruction and Corlindale Peace. 52 EMM random-event choice deltas and four callback deltas are callable by future event system, not playable or automatically generated. Still missing Seven Pines unique improvement/one-use Peace, native random-event engine and callbacks' non-AC effects, other EMM C++ counter sources, dynamic alignments, native religious propagation, several scenario-only sources, full Blight/Pestilence unit Death damage, gameplay acceptance tests.",
+      "verification": "Source-derived 23-trigger typed Kotlin catalog, original EMM per-era event chance 4%, original XML trigger weights, native blocking human-choice popup and gold/population effect of Holy Child 3. Kotlin compile passed; APK packaging/player tests still pending. Three trigger families enabled, one additional choice fully implemented; others source-only.",
+      "remainingDifferences": "Only Witch, Holy Child and Demonic Tome event families are auto-scheduled; source catalog enumerates 23 but unimplemented family prerequisites/callbacks and effects remain gated off. Event scheduling still does not recreate full Civ IV RNG, gameplay speed/difficulty probabilities; native UI only offers fully supported choices (including Holy Child sacrifice), not original complete choice menus. Recurrence semantics, AI weighted selection, 20 remaining event families, 52 complete choice consequences, seven pines, blight/pestilence unit damage, full alignment/religion mechanics and in-game end-to-end testing pending.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 Corlindale Peace and four source-exact callback values"
+      "updatedBy": "2026-10-26 native event dialog, XML-derived 23-trigger engine registry and source era chances"
     },
     {
       "id": "F14",
