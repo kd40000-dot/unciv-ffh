@@ -937,3 +937,121 @@ v=v.replace(needle,'''        "emm-event" to ConsoleAction("game emm-event <choi
 '''+needle)
 console.write_text(v)
 print('Installed serialized random event queue, scheduler, and choice resolution')
+
+
+# Native EMM event decision dialog using Unciv's existing PopupAlert pipeline.
+# Keeps pending choice state until the player explicitly selects a supported
+# fully-implemented consequence.
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''    private fun addEvent(): Boolean {'''
+assert v.count(needle)==1
+v=v.replace(needle,'''    private fun addEmmEvent(): Boolean {
+        val eventId = gameInfo.emmPendingEvents[viewingCiv.civID] ?: return false
+        if (popupAlert.value != "EMM_EVENT:" + eventId) return false
+        val caption = when(eventId) {
+            "EVENTTRIGGER_WITCH" -> "A witch has appeared in your lands"
+            "EVENTTRIGGER_HOLY_CHILD" -> "The Holy Child"
+            "EVENTTRIGGER_DEMONIC_TOME" -> "A Demonic Tome has been discovered"
+            else -> return false
+        }
+        addGoodSizedLabel(caption)
+        val options = when(eventId) {
+            "EVENTTRIGGER_WITCH" -> listOf(
+                "EVENT_WITCH_2" to "Reject the witch (Armageddon -1)"
+            )
+            "EVENTTRIGGER_HOLY_CHILD" -> listOf(
+                "EVENT_HOLY_CHILD_1" to "Protect the child (Armageddon -5)",
+                "EVENT_HOLY_CHILD_3" to "Sacrifice two population and 25 gold (Armageddon +10)"
+            )
+            else -> listOf(
+                "EVENT_DEMONIC_TOME_2" to "Destroy the tome (Armageddon -5)"
+            )
+        }
+        for ((id, description) in options) {
+            if (!gameInfo.emmCanResolveEvent(viewingCiv.civID, id)) continue
+            val button = description.toTextButton()
+            button.onActivation {
+                if (gameInfo.emmResolveRandomEvent(viewingCiv.civID, id)) close()
+            }
+            add(button).row()
+        }
+        getScrollPane()?.fadeScrollBars = false
+        return true
+    }
+
+    private fun addEvent(): Boolean {
+        if (popupAlert.value.startsWith("EMM_EVENT:")) return addEmmEvent()''')
+alert.write_text(v)
+
+# Retain explicit choice validation and save a city target for city events.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''    var emmPendingEvents = hashMapOf<String, String>()'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+    var emmPendingEventCities = hashMapOf<String, String>()''')
+needle='''    fun emmResolveRandomEvent(civID: String, choice: String): Boolean {'''
+assert g.count(needle)==1
+g=g.replace(needle,'''    fun emmCanResolveEvent(civID: String, choice: String): Boolean {
+        val event = emmPendingEvents[civID] ?: return false
+        if (choice == "EVENT_HOLY_CHILD_3" && event == "EVENTTRIGGER_HOLY_CHILD") {
+            val civ = civilizations.firstOrNull { it.civID == civID } ?: return false
+            val city = civ.cities.firstOrNull { it.id == emmPendingEventCities[civID] }
+                ?: return false
+            return civ.gold >= 25 && city.population.population >= 3
+        }
+        return when (event) {
+            "EVENTTRIGGER_WITCH" -> choice == "EVENT_WITCH_2"
+            "EVENTTRIGGER_HOLY_CHILD" -> choice == "EVENT_HOLY_CHILD_1"
+            "EVENTTRIGGER_DEMONIC_TOME" -> choice == "EVENT_DEMONIC_TOME_2"
+            else -> false
+        }
+    }
+
+'''+needle)
+needle='''            "EVENTTRIGGER_HOLY_CHILD" -> "EVENT_HOLY_CHILD_1"
+            "EVENTTRIGGER_DEMONIC_TOME" -> "EVENT_DEMONIC_TOME_2"'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            "EVENTTRIGGER_HOLY_CHILD" ->
+                if (choice == "EVENT_HOLY_CHILD_3") "EVENT_HOLY_CHILD_3" else "EVENT_HOLY_CHILD_1"
+            "EVENTTRIGGER_DEMONIC_TOME" -> "EVENT_DEMONIC_TOME_2"''',1)
+needle='''        if (choice != accepted) return false
+        if (!applyEmmArmageddonEventChoice(choice)) return false'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        if (choice != accepted) return false
+        if (choice == "EVENT_HOLY_CHILD_3") {
+            if (!emmCanResolveEvent(civID, choice)) return false
+            val civ = civilizations.first { it.civID == civID }
+            val city = civ.cities.first { it.id == emmPendingEventCities[civID] }
+            civ.addGold(-25)
+            city.population.setPopulation(city.population.population - 2)
+        }
+        if (!applyEmmArmageddonEventChoice(choice)) return false''')
+needle='''        emmPendingEvents.remove(civID)
+        emmResolvedEventTriggers.add(civID + ":" + event)'''
+assert g.count(needle)==1
+g=g.replace(needle,'''        emmPendingEvents.remove(civID)
+        emmPendingEventCities.remove(civID)
+        emmResolvedEventTriggers.add(civID + ":" + event)''')
+needle='''            emmPendingEvents[civ.civID] = selected
+            if (!civ.isHuman()) {'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            emmPendingEvents[civ.civID] = selected
+            if (selected != "EVENTTRIGGER_DEMONIC_TOME")
+                civ.cities.firstOrNull { it.population.population >= 3 }?.let {
+                    emmPendingEventCities[civ.civID] = it.id
+                }
+            if (!civ.isHuman()) {''')
+needle='''                civ.addNotification(
+                    "An EMM random event is awaiting resolution: " + selected,
+                    com.unciv.logic.civilization.NotificationCategory.General
+                )'''
+assert g.count(needle)==1
+g=g.replace(needle,'''                civ.popupAlerts.add(
+                    com.unciv.logic.civilization.PopupAlert(
+                        com.unciv.logic.civilization.AlertType.Event, "EMM_EVENT:" + selected
+                    )
+                )''')
+gamefile.write_text(g)
+print('Added native EMM event choice popup and source-backed Holy Child sacrifice effect')
