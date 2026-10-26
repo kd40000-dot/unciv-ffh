@@ -19,6 +19,9 @@ for group,rel,tag in groups:
   print("Missing optional XML:",p)
   continue
  root=ET.parse(p).getroot()
+ # Civ4 XML uses x-schema default namespaces; normalize tag names for XPath.
+ for e in root.iter():
+  if '}' in e.tag:e.tag=e.tag.rsplit('}',1)[-1]
  rows=[]
  for node in root.iter(tag):
   typ=node.findtext("Type")
