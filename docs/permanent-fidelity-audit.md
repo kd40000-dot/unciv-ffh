@@ -85,3 +85,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **5% → 10%**; equal-weight scorecard **12.0% → 12.2%**. Kotlin engine patch compiles and the city food penalty now includes EMM-derived building, Expansive trait, connected resource (including Life/Creation Mana), fresh-water and feature health; old health building Food proxies are neutralized in this engine.
 - Source: pinned EMM health field extraction `docs/data/emm-health-source.json`; engine `tools/patch_unciv_health.py`; test matrix `docs/city-health-engine.md`.
 - **No gameplay verification yet.** Difficulty-dependent starting health (currently provisional +2), exact area/feature accounting, disease, proper UI and AI response remain unresolved. APK build status must be checked separately.
+
+### 2026-10-26 — City health display (F13)
+- City panel receives a health icon with `healthy/unhealthy` totals and net health; Stats popup receives a source breakdown using the same CityStats calculation as the Food penalty, so the display is not an independent proxy.
+- Game-icons.net `Health normal` by sbed is used under CC BY 3.0, with attribution recorded in `docs/city-health-engine.md`.
+- F13 **remains at 10%** (overall remains **12.2%**) pending compiled UI build and in-game review. UI does not resolve missing EMM disease and starting health rules.
