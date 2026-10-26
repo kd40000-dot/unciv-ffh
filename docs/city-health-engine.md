@@ -16,11 +16,11 @@ For each city:
 - Unhealthiness includes **1 per population**, plus source feature penalties at the current city's radius-two map footprint.
 - Health includes provisional starting health **2**, direct health of owned buildings, the **Expansive** trait (+3 for Clan of Embers, Kuriotates and Lanun in this mod), each distinct connected source-health resource, +2 for adjacent fresh water and positive feature contributions.
 - A city loses **1 Food per net excess unhealthiness**, even if this causes starvation. Balanced or positive health does not add Food.
-- The engine removes temporary **+1 Aqueduct, +1 Herbalist and +2 Infirmary Food proxies** when those buildings exist, so they are not double-counted.
+- The mod now removes its obsolete **+1 Aqueduct, +1 Herbalist and +2 Infirmary Food proxies directly from Buildings.json**. Their building panels instead state the source health bonus through an explanatory Comment unique.
 - Example source bonuses: Aqueduct **+2**, Herbalist **+1**, Infirmary **+3**; Cattle/Deer/Fish/Sheep/Wheat **+1** each; Creation Mana and Life Mana **+1** each.
 - Source feature percentages: Forest **+50%**, Jungle **−25%**, Flood plains **−40%**, with positive and negative components truncated independently to full health points.
 
-The core health effect appears as an `Unhealthiness` negative Food line in Unciv's city stat breakdown. This is **not** a proper Civ IV health-face UI.
+The core health penalty appears as an `Unhealthiness` negative Food line **only when excess unhealthiness exists**. A healthy city still has no city-level healthy/unhealthy count on the interface; the building descriptions now explain their health values, but a full health display remains unimplemented. The user's 2026-10-26 screenshot documented the obsolete Herbalist +1 Food display before this ruleset fix.
 
 ## Formula (initial approximation)
 
