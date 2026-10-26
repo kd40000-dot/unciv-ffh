@@ -202,3 +202,21 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('EmmEventWorldEffects.kt','spawnWithPromotions(','addPromotion(promotion, true)','removeNamedImprovement(','eligibleWarGamesUnit(','emmPendingEventUnits = hashMapOf<String, Int>()','emmPendingEventTiles = hashMapOf<String, com.unciv.logic.map.HexCoord>()','EVENT_WAR_GAMES_1','EVENT_WAR_GAMES_2','EVENT_WINDS_FROM_HELL_3','EVENT_NECRO_CANNIBALISM_3','civ.getEquivalentUnit("Warrior").name','listOf("Cannibalize"), 1'):
     assert token in patch,token
 print('PASS: source-faithful unit, promotion and tile event operation contracts')
+
+# Snapshot clone and save targets must retain all event and world-counter fields.
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in (
+    'toReturn.emmArmageddonCounter = emmArmageddonCounter',
+    'toReturn.emmBlightTriggered = emmBlightTriggered',
+    'toReturn.emmPestilenceTriggered = emmPestilenceTriggered',
+    'toReturn.emmFoundedReligions.addAll(emmFoundedReligions)',
+    'toReturn.emmCountedEliminations.addAll(emmCountedEliminations)',
+    'toReturn.emmResolvedEventTriggers.addAll(emmResolvedEventTriggers)',
+    'toReturn.emmPendingEvents.putAll(emmPendingEvents)',
+    'toReturn.emmPendingEventCities.putAll(emmPendingEventCities)',
+    'toReturn.emmPendingEventUnits.putAll(emmPendingEventUnits)',
+    'toReturn.emmPendingEventTiles.putAll(emmPendingEventTiles)',
+    'toReturn.emmLastEventRollTurn = emmLastEventRollTurn',
+):
+    assert token in patch,token
+print('PASS: world clone preserves all serialized EMM event and Armageddon state')
