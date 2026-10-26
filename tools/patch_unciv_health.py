@@ -1088,7 +1088,7 @@ for event in event_registry['events']:
         kl(c['terrain']),kl(c['features']),kl(c['improvements']),
         kl(c['bonuses']),kl(c['python']),kl(c['civilizations']),
         kl(c['buildingClass']),str(bool(c['recurring'])).lower(),
-        kl([x['id'] for x in event['choices'])
+        kl([x['id'] for x in event['choices']])
     ))
 catalog=root/'core/src/com/unciv/logic/EmmEventCatalog.kt'
 catalog.write_text('''package com.unciv.logic
