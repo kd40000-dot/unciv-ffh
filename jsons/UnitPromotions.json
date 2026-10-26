@@ -1189,5 +1189,17 @@
         "text": "EMM Medic II enables Cure Disease. This promotion currently lacks other EMM Medic effects until the full promotion family is ported."
       }
     ]
+  },
+  {
+    "name": "Life I",
+    "unitTypes": [
+      "Magic"
+    ],
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "EMM Life I sphere enables Sanctify. Other Life I effects remain unfinished."
+      }
+    ]
   }
 ]
