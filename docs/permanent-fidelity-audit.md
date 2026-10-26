@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 26% |
+| F13 | City health and disease | 27% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.8%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.9%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.8% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.9% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -127,3 +127,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - F13 **22% → 26%**, 25-system gameplay average **12.7% → 12.8%** rounded. New engine hooks cover selected leader elimination alignment (+5 Good / −5 Evil, year 5+, once), source Order/Veil conflicts (35% incoming victory; ±1 AC), Life I Sanctify (−1), Rob Grave (+1), and Necrototem permanent destruction (−2). New Order Disciple is source-traced for missionary conflicts.
 - 19 leader alignments extracted from pinned `CIV4LeaderHeadInfos.xml`; 52 signed `iGlobalCounter` event-choice values extracted from pinned `CIV4EventInfos.xml`, with a callable API but **not** active source-compatible random events. Reference registry `docs/data/emm-armageddon-sources.json` records what remains unported.
 - Android build and full mod validation passed. In-game testing of new spells/religion/elimination cases is still outstanding; automated random-event selection, special source spells and world scenarios require further engine work, and Blight/Pestilence unit Death damage is unfinished. This is not 100% AC fidelity.
+
+### 2026-10-26 — Armageddon Peace and event callback expansion (F13)
+- F13 **26% → 27%**; 25-system equal-weight gameplay fidelity **12.8% → 12.9%** rounded. Source-backed Elohim Corlindale unit and its Peace action are now in the engine, using the EMM spell prerequisite, sacrifice, war-ending and integer half-AC effect.
+- Four source-derived random-event callbacks now have registered AC deltas: Flare Entropy +2; Flare Life −2; Sign Aeron +3; Sign Sirona −3. **Not automatically triggered.** The 52 EMM event-choice AC delta registry is also still conditional on future event selection/trigger integration.
+- Incomplete: Seven Pines peace site, event eligibility/scheduling and side effects, more C++ sources, live player verification of Corlindale and related pathways. Kotlin CI success and Android build are separate gates from gameplay testing.
