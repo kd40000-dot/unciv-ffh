@@ -50,3 +50,12 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for text in ('it.name == "Diseased" }) healing -= 10','it.name == "Plagued" }) healing -= 20'):
  assert text in patch,text
 print('PASS: EMM unit disease combat/healing source values')
+
+# Source specifies Diseased combat infection and immunity to Diseased/Plagued.
+assert source['PROMOTION_DISEASED']['PromotionCombatApply']=='PROMOTION_DISEASED'
+assert source['PROMOTION_IMMUNE_DISEASE']['PromotionImmune1']=='PROMOTION_DISEASED'
+assert source['PROMOTION_IMMUNE_DISEASE']['PromotionImmune2']=='PROMOTION_PLAGUED'
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('defender.unit.promotions.addPromotion("Diseased", isFree = true)','"Immune to Disease" !in defender.unit.promotions.promotions'):
+ assert token in patch,token
+print('PASS: Diseased melee/contact promotion source and immunity checks')
