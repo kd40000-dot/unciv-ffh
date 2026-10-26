@@ -148,3 +148,18 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('containsBuildingOrEquivalent("Training Yard")','containsBuildingOrEquivalent("Library")','containsBuildingOrEquivalent("Mage Guild")','EVENT_SHRINE_CAMULOS_1','EVENT_NECRO_CANNIBALISM_2','EVENT_IRON_ORB_1','EVENT_STRANGE_ADEPT_1'):
  assert token in patch,token
 print('PASS: four added fully safe EMM event families and exact source gating')
+
+# Generic source-derived event numeric effect interpreter, rather than bespoke choices.
+events=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+choices={ch['id']:ch for ev in events['events'] for ch in ev['choices']}
+assert choices['EVENT_WITCH_1']['fields']['iHappy']==['1']
+assert choices['EVENT_WITCH_1']['fields']['iHealth']==['-3']
+assert choices['EVENT_WITCH_1']['acDelta']==2
+assert choices['EVENT_HOLY_CHILD_2']['fields']['iGold']==['-50']
+assert choices['EVENT_HOLY_CHILD_2']['fields']['iHappy']==['1']
+assert choices['EVENT_HOLY_CHILD_2']['fields']['iHealth']==['1']
+assert choices['EVENT_HOLY_CHILD_2']['acDelta']==-10
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('EmmEventEffects.kt','EmmEventEffects.choices[choice]','var emmEventHealth = 0','var emmEventHappiness = 0','toReturn.emmEventHealth = emmEventHealth','toReturn.emmEventHappiness = emmEventHappiness','newHappinessList["EMM random events"]','"Event health" to city.emmEventHealth','EVENT_WITCH_1','EVENT_HOLY_CHILD_2','civ.addGold(effect.gold)'):
+ assert token in patch,token
+print('PASS: XML-derived persistent EMM numeric event effects and two expanded city-health/happiness choices')
