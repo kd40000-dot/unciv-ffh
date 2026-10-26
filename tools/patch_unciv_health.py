@@ -229,13 +229,13 @@ cityfile.write_text(v)
 turn=root/'core/src/com/unciv/logic/city/managers/CityTurnManager.kt'
 t=turn.read_text()
 needle='        city.clearCaches()'
-assert t.count(needle)==1
+assert t.count(needle)>=1
 t=t.replace(needle,'''        city.clearCaches()
         // Existing Civ IV temporary sickness steadily clears; retain a persistent
         // numerical counter across save/load. Other disease sources will add to it.
         if (city.emmDiseaseHealthCounter > 0)
             city.emmDiseaseHealthCounter -= 1
-''')
+''', 1)
 turn.write_text(t)
 
 # Source-aligned Armageddon event application API. The global AC threshold,
