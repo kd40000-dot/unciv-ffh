@@ -1,0 +1,17 @@
+{
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "source": "XML/Gameinfo/CIV4EraInfos.xml",
+  "eraEventChancePercent": {
+    "ERA_ANCIENT": 4,
+    "ERA_CLASSICAL": 4,
+    "ERA_MEDIEVAL": 4,
+    "ERA_RUNE": 4,
+    "ERA_ORDE": 4,
+    "ERA_LEAF": 4,
+    "ERA_OCTO": 4,
+    "ERA_VEIL": 4,
+    "ERA_EMPY": 4,
+    "ERA_COUN": 4
+  },
+  "note": "EMM iEventChancePerTurn source values. Does not assert entire Civ4 event frequency and condition algorithm is replicated."
+}
