@@ -1,0 +1,215 @@
+{
+  "upstream": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "source": "XML/Events/CIV4EventInfos.xml",
+  "eventChoices": [
+    {
+      "id": "EVENT_ANGELIC_PROCESSION_1",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_ANGELIC_PROCESSION_2",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_DEMONIC_TOME_1",
+      "delta": 5
+    },
+    {
+      "id": "EVENT_DEMONIC_TOME_2",
+      "delta": -5
+    },
+    {
+      "id": "EVENT_ELOHIM_HALLOWING_1",
+      "delta": -3
+    },
+    {
+      "id": "EVENT_ELOHIM_HALLOWING_3",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_HOLY_CHILD_1",
+      "delta": -5
+    },
+    {
+      "id": "EVENT_HOLY_CHILD_2",
+      "delta": -10
+    },
+    {
+      "id": "EVENT_HOLY_CHILD_3",
+      "delta": 10
+    },
+    {
+      "id": "EVENT_MYSTIC_TREE_1",
+      "delta": 5
+    },
+    {
+      "id": "EVENT_MYSTIC_TREE_2",
+      "delta": -5
+    },
+    {
+      "id": "EVENT_ORPHANAGE_FIRE_2",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_ORPHANAGE_FIRE_3",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_SHEAIM_ELEGY_1",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_SHEAIM_ELEGY_3",
+      "delta": -3
+    },
+    {
+      "id": "EVENT_SOBS_2",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_TWO_HEADED_COW_1",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_TWO_HEADED_COW_2",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_WAR_GAMES_1",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_WITCH_1",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_WITCH_2",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_LUNATIC_3",
+      "delta": 5
+    },
+    {
+      "id": "EVENT_LUNATIC_4",
+      "delta": 5
+    },
+    {
+      "id": "EVENT_SHRINE_CAMULOS_1",
+      "delta": 1
+    },
+    {
+      "id": "EVENT_SHRINE_CAMULOS_2",
+      "delta": -3
+    },
+    {
+      "id": "EVENT_SHRINE_CAMULOS_3",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_IRON_ORB_2",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_IRON_ORB_3",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_STRANGE_ADEPT_2",
+      "delta": 1
+    },
+    {
+      "id": "EVENT_STRANGE_ADEPT_3",
+      "delta": 1
+    },
+    {
+      "id": "EVENT_STRANGE_ADEPT_4",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_TRAPPED_FROSTLINGS_2",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_DEMON_SIGN_1",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_DEMON_SIGN_2",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_DEMON_SIGN_5",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_ASH_COUGH_3",
+      "delta": -3
+    },
+    {
+      "id": "EVENT_ASH_COUGH_4",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_DEAD_ANGEL_1",
+      "delta": -5
+    },
+    {
+      "id": "EVENT_DEAD_ANGEL_2",
+      "delta": -2
+    },
+    {
+      "id": "EVENT_DEAD_ANGEL_3",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_DEAD_ANGEL_4",
+      "delta": 5
+    },
+    {
+      "id": "EVENT_DEAD_ANGEL_5",
+      "delta": 10
+    },
+    {
+      "id": "EVENT_DEPRESSED_TOYMAKER_1",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_DEPRESSED_TOYMAKER_3",
+      "delta": 2
+    },
+    {
+      "id": "EVENT_NECRO_CANNIBALISM_2",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_NECRO_CANNIBALISM_3",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_NECRO_CANNIBALISM_4",
+      "delta": 3
+    },
+    {
+      "id": "EVENT_WINDS_FROM_HELL_2",
+      "delta": 1
+    },
+    {
+      "id": "EVENT_HAUNTED_CASTLE_1",
+      "delta": 1
+    },
+    {
+      "id": "EVENT_HAUNTED_CASTLE_2",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_HAUNTED_CASTLE_3",
+      "delta": -1
+    },
+    {
+      "id": "EVENT_HAUNTED_CASTLE_4",
+      "delta": 1
+    }
+  ]
+}
