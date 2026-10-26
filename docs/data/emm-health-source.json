@@ -2667,6 +2667,65 @@
           }
         }
       ]
+    },
+    "handicaps": {
+      "source": "XML/Gameinfo/CIV4HandicapInfo.xml",
+      "entries": [
+        {
+          "id": "HANDICAP_SETTLER",
+          "fields": {
+            "iHealthBonus": "4"
+          }
+        },
+        {
+          "id": "HANDICAP_CHIEFTAIN",
+          "fields": {
+            "iHealthBonus": "3"
+          }
+        },
+        {
+          "id": "HANDICAP_WARLORD",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_NOBLE",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_PRINCE",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_MONARCH",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_EMPEROR",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_IMMORTAL",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        },
+        {
+          "id": "HANDICAP_DEITY",
+          "fields": {
+            "iHealthBonus": "2"
+          }
+        }
+      ]
     }
   }
 }
