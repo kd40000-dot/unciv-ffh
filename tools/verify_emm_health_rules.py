@@ -163,3 +163,17 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('EmmEventEffects.kt','EmmEventEffects.choices[choice]','var emmEventHealth = 0','var emmEventHappiness = 0','toReturn.emmEventHealth = emmEventHealth','toReturn.emmEventHappiness = emmEventHappiness','newHappinessList["EMM random events"]','"Event health" to city.emmEventHealth','EVENT_WITCH_1','EVENT_HOLY_CHILD_2','civ.addGold(effect.gold)'):
  assert token in patch,token
 print('PASS: XML-derived persistent EMM numeric event effects and two expanded city-health/happiness choices')
+
+# Iron Orb 2 retains library-specific +2 research, -75 Gold and +2 AC;
+# Sobs 1 is -1 permanent local happiness, not global empire happiness.
+events=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+by_choice={c['id']:c for e in events['events'] for c in e['choices']}
+assert by_choice['EVENT_IRON_ORB_2']['fields']['iGold']==['-75']
+assert by_choice['EVENT_IRON_ORB_2']['fields']['iExtraCommerce']==['2']
+assert by_choice['EVENT_IRON_ORB_2']['fields']['BuildingClass']==['BUILDINGCLASS_LIBRARY']
+assert by_choice['EVENT_IRON_ORB_2']['acDelta']==2
+assert by_choice['EVENT_SOBS_1']['fields']['iHappy']==['-1']
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('var emmEventLibraryScience = 0','toReturn.emmEventLibraryScience = emmEventLibraryScience','EmmEventEffect(2, -75, 0, 0, 0, 2)','city.emmEventLibraryScience.toFloat()','"EVENTTRIGGER_SOBS"','"EVENT_IRON_ORB_2"','"EVENT_SOBS_1"'):
+    assert token in patch,token
+print('PASS: source-backed library research event modifier and eighth event family Sobs')
