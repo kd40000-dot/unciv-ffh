@@ -1480,7 +1480,7 @@ g=g.replace(needle,'''            "EVENTTRIGGER_IRON_ORB" ->
                 choice == "EVENT_IRON_ORB_1" || choice == "EVENT_IRON_ORB_2"
             "EVENTTRIGGER_SOBS" -> choice == "EVENT_SOBS_1"''',1)
 needle='''            "EVENTTRIGGER_IRON_ORB" -> "EVENT_IRON_ORB_1"'''
-assert g.count(needle)==1
+assert g.count(needle)==2
 g=g.replace(needle,'''            "EVENTTRIGGER_IRON_ORB" ->
                 if (choice == "EVENT_IRON_ORB_2") choice else "EVENT_IRON_ORB_1"
             "EVENTTRIGGER_SOBS" -> "EVENT_SOBS_1"''',1)
