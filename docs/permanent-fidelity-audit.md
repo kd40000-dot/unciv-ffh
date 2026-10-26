@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 5% |
+| F13 | City health and disease | 10% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -35,7 +35,7 @@
 | F25 | Victory conditions | 10% |
 | | **Equal-weight mean** | **12.0%** |
 
-**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.0%.
+**Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.2%.
 
 ## Evidence standards and definitions
 
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **12.2% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -80,3 +80,8 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 - Net unhealthiness contributes a negative Food entry to city stats **before growth modifiers**, while ordinary Unciv rulesets remain untouched by the ruleset guard.
 - **Status: unverified / provisional**. Health source values in this prototype (baseline, Aqueduct, Herbalist, Infirmary) are not yet source-checked; no Android playtest, city UI, terrain/resources, Expansive trait or disease. No claim of EMM-equivalent health.
 - Existing Food-proxy building bonuses remain and must be removed only as part of a validated migration to the health-enabled engine.
+
+### 2026-10-26 — Source-backed city health expanded (F13)
+- F13 **5% → 10%**; equal-weight scorecard **12.0% → 12.2%**. Kotlin engine patch compiles and the city food penalty now includes EMM-derived building, Expansive trait, connected resource (including Life/Creation Mana), fresh-water and feature health; old health building Food proxies are neutralized in this engine.
+- Source: pinned EMM health field extraction `docs/data/emm-health-source.json`; engine `tools/patch_unciv_health.py`; test matrix `docs/city-health-engine.md`.
+- **No gameplay verification yet.** Difficulty-dependent starting health (currently provisional +2), exact area/feature accounting, disease, proper UI and AI response remain unresolved. APK build status must be checked separately.
