@@ -23,6 +23,8 @@ jobs:
                   json.load(f)
               print("Valid JSON:", path)
           PY
+      - name: Verify permanent gameplay fidelity ledger and gameplay-change audit
+        run: python3 scripts/check_fidelity_audit.py --check-change
       - name: Verify source-faithful EMM technology conversion
         run: python3 tools/verify_tech_tree.py
       - name: Verify EMM unit and building source fidelity
