@@ -1559,3 +1559,142 @@ v=v.replace(needle,'''            "EVENTTRIGGER_IRON_ORB" -> listOf(
             )''')
 alert.write_text(v)
 print('Enabled Iron Orb original Library science bonus and new Sobs event via shared saved numeric effects')
+
+
+# Reusable EMM event unit/tile effect interfaces. The transaction gates map
+# source unit classes to actual ruleset names and skips absent promotions.
+# Unported EMM-only units/promotions are deliberately NOT fabricated.
+eventmethods=root/'core/src/com/unciv/logic/EmmEventWorldEffects.kt'
+eventmethods.write_text('''package com.unciv.logic
+
+import com.unciv.logic.civilization.Civilization
+import com.unciv.logic.city.City
+import com.unciv.logic.map.mapunit.MapUnit
+import com.unciv.logic.map.tile.Tile
+
+/** Shared engine operations for source XML unit, promotion and map effects. */
+object EmmEventWorldEffects {
+    /** Atomic prerequisite checking prevents partial unit/promotion outcomes. */
+    fun spawnWithPromotions(
+        civ: Civilization, city: City, unitName: String,
+        promotionNames: List<String>, count: Int
+    ): Boolean {
+        if (count < 1 || count > 20 ||
+            !civ.gameInfo.ruleset.units.containsKey(unitName) ||
+            promotionNames.any { !civ.gameInfo.ruleset.unitPromotions.containsKey(it) })
+            return false
+        val created = mutableListOf<MapUnit>()
+        repeat(count) {
+            val unit = civ.units.placeUnitNearTile(city.getCenterTile().position, unitName)
+            if (unit == null) {
+                for (placed in created) placed.destroy()
+                return false
+            }
+            created.add(unit)
+        }
+        for (placed in created)
+            for (promotion in promotionNames)
+                placed.promotions.addPromotion(promotion, true)
+        return true
+    }
+
+    /** Delete only the event's specified improvement, never a replacement. */
+    fun removeNamedImprovement(tile: Tile, expectedName: String): Boolean {
+        if (tile.improvement != expectedName) return false
+        tile.removeImprovement()
+        return true
+    }
+
+    /** War Games original selection predicate (living attacker with experience).
+     *  EMM's special Alive flag needs a unit-type source audit: reject obvious
+     *  civilian/zero-strength units and use available combat unit rules.
+     */
+    fun eligibleWarGamesUnit(unit: MapUnit): Boolean =
+        !unit.isCivilian() && unit.baseUnit.strength > 0 &&
+            unit.promotions.totalXpProduced() > 0
+}
+''')
+print('Installed reusable source-validated unit spawn, free promotions and conditional map removal helpers')
+
+# War Games unit target is persisted across save/load just as city targets are.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''    var emmPendingEventCities = hashMapOf<String, String>()'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+    /** ID of the exact combat unit affected by a random event. */
+    var emmPendingEventUnits = hashMapOf<String, Int>()''')
+needle='''        val effect = EmmEventEffects.choices[choice] ?: return false'''
+assert g.count(needle)==2
+g=g.replace(needle,'''        if (event == "EVENTTRIGGER_WAR_GAMES") {
+            if (choice != "EVENT_WAR_GAMES_1" && choice != "EVENT_WAR_GAMES_2")
+                return false
+            val civ = civilizations.firstOrNull { it.civID == civID } ?: return false
+            val target = civ.units.getUnitById(emmPendingEventUnits[civID] ?: return false)
+                ?: return false
+            if (!EmmEventWorldEffects.eligibleWarGamesUnit(target)) return false
+        }
+'''+needle,1)
+needle='''            "EVENTTRIGGER_SOBS" -> choice == "EVENT_SOBS_1"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            "EVENTTRIGGER_WAR_GAMES" ->
+                choice == "EVENT_WAR_GAMES_1" || choice == "EVENT_WAR_GAMES_2"''')
+needle='''            "EVENTTRIGGER_SOBS" -> "EVENT_SOBS_1"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            "EVENTTRIGGER_WAR_GAMES" ->
+                if (choice == "EVENT_WAR_GAMES_2") choice else "EVENT_WAR_GAMES_1"''',1)
+needle='''        if (effect.libraryScience != 0) {'''
+assert g.count(needle)==2
+g=g.replace(needle,'''        if (event == "EVENTTRIGGER_WAR_GAMES") {
+            val selectedUnit = civ.units.getUnitById(emmPendingEventUnits[civID]!!)
+                ?: return false
+            if (choice == "EVENT_WAR_GAMES_1") selectedUnit.destroy()
+            if (choice == "EVENT_WAR_GAMES_2")
+                selectedUnit.promotions.XP = (selectedUnit.promotions.XP - 1).coerceAtLeast(0)
+        }
+'''+needle,1)
+needle='''        emmPendingEventCities.remove(civID)'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+        emmPendingEventUnits.remove(civID)''')
+needle='''            if (emmArmageddonCounter >= 10 && civ.tech.isResearched("Writing"))'''
+assert g.count(needle)==1
+g=g.replace(needle,'''            if (emmArmageddonCounter >= 2 && civ.units.getCivUnits()
+                .any { EmmEventWorldEffects.eligibleWarGamesUnit(it) })
+                eligible.add("EVENTTRIGGER_WAR_GAMES")
+'''+needle)
+needle='''            emmPendingEvents[civ.civID] = selected'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+            if (selected == "EVENTTRIGGER_WAR_GAMES")
+                civ.units.getCivUnits()
+                    .firstOrNull { EmmEventWorldEffects.eligibleWarGamesUnit(it) }
+                    ?.let { emmPendingEventUnits[civ.civID] = it.id }''')
+needle='''                    "EVENTTRIGGER_SOBS" -> "EVENT_SOBS_1"'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+                    "EVENTTRIGGER_WAR_GAMES" -> "EVENT_WAR_GAMES_2"''')
+gamefile.write_text(g)
+
+# Engine source says unit promotions are stored by name; only grant if all
+# event promotion names exist. Actual source ID/unit-class conversion remains
+# gated by the canonical roster.
+alert=root/'core/src/com/unciv/ui/screens/worldscreen/AlertPopup.kt'
+v=alert.read_text()
+needle='''            "EVENTTRIGGER_SOBS" -> "Sobs in the city"'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+            "EVENTTRIGGER_WAR_GAMES" -> "War Games"''')
+needle='''            "EVENTTRIGGER_SOBS" -> listOf(
+                "EVENT_SOBS_1" to "Endure the sorrow (-1 city happiness)"
+            )'''
+assert v.count(needle)==1
+v=v.replace(needle,needle+'''
+            "EVENTTRIGGER_WAR_GAMES" -> listOf(
+                "EVENT_WAR_GAMES_1" to "Disband the veteran unit (Armageddon -2)",
+                "EVENT_WAR_GAMES_2" to "Spare the unit (-1 experience)"
+            )''')
+alert.write_text(v)
+print('Wired source War Games veteran unit targeting/disbanding and reusable unit/tile event effect APIs')
