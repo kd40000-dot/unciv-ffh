@@ -4,19 +4,2669 @@
   "groups": {
     "buildings": {
       "source": "XML/Buildings/CIV4BuildingInfos.xml",
-      "entries": []
+      "entries": [
+        {
+          "id": "BUILDING_ACADEMY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALCHEMY_LAB",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_ANOINTED",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_BLESSED",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_CONSECRATED",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ALTAR_OF_THE_LUONNOTAR_FINAL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_AQUAE_SUCELLUS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "2",
+            "iAreaHealth": "1",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_AQUEDUCT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "2",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ARCHERY_RANGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ASYLUM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BASILICA",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BAZAAR_OF_MAMMON",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BONE_PALACE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BREWERY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CARNIVAL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CATACOMB_LIBRALUS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CELESTIAL_COMPASS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CITY_OF_A_THOUSAND_SLUMS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ADVENTURERS_GUILD",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BLASTING_WORKSHOP",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BREEDING_PIT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CAVE_OF_ANCESTORS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CHANCEL_OF_GUARDIANS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CITADEL_OF_LIGHT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FREAK_SHOW",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PLANAR_GATE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TAILOR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WARRENS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALLENS_ENGINE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HALL_OF_MIRRORS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_JEWELER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_RELIQUARY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ADULARIA_CHAMBER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CODE_OF_JUNIL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_COMMAND_POST",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_COURTHOUSE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GOVERNORS_MANOR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_CROWN_OF_AKHARIEN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DANCING_BEAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DEMONIC_CITIZENS",
+          "fields": {
+            "bNoUnhealthyPopulation": "1",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DEMONS_ALTAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DIES_DIEI",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DUNGEON",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARF_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_ABUNDANT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_EMPTY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_FULL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_LOW",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_OVERFLOWING",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_VAULT_STOCKED",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ELDER_COUNCIL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ELF_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_EYES_AND_EARS_NETWORK",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FORBIDDEN_PALACE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DWARVEN_SMITHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FORGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FORM_OF_THE_TITAN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GAMBLING_HOUSE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GORILLA_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GRANARY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GRAND_MENAGERIE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GREAT_LIBRARY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GREAT_LIGHTHOUSE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GROVE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GUILD_OF_HAMMERS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GUILD_OF_THE_NINE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HERON_THRONE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HALL_OF_KINGS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HARBOR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HARBOR_LANUN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HERBALIST",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HEROIC_EPIC",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HOPE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HUMAN_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HUNTING_LODGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_INFERNAL_GRIMOIRE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_INFIRMARY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "3",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_INN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_INSPIRATION",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_LIBRARY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_LIGHTHOUSE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_LION_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MAGE_GUILD",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MARKET",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MERCURIAN_GATE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MINES_OF_GALDUR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-2",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MOKKAS_CAULDRON",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MONEYCHANGER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_NATIONAL_EPIC",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_NOX_NOCTIS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MONUMENT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_OBSIDIAN_GATE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ORC_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_DESERT_SHRINE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PAGAN_TEMPLE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_THE_HAND",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_AMURITES",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_BALSERAPHS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_BANNOR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_CALABIM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_CLAN_OF_EMBERS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_DOVIELLO",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_ELOHIM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_GRIGORI",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_HIPPUS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_ILLIANS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_INFERNAL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_KHAZAD",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_KURIOTATES",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "1"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_LANUN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_LJOSALFAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_LUCHUIRP",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_MALAKIM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_MERCURIANS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_SHEAIM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_SIDAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE_SVARTALFAR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALISADE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PILLAR_OF_CHAINS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PROPHECY_OF_RAGNAROK",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PUBLIC_BATHS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_RIDE_OF_THE_NINE_KINGS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SHIPYARD",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SHRINE_OF_SIRONA",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SHRINE_OF_THE_CHAMPION",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SIEGE_WORKSHOP",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SMOKEHOUSE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SMUGGLERS_PORT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SONG_OF_AUTUMN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SOUL_FORGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "-2",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SPIDER_PEN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_STABLE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_STIGMATA_ON_THE_UNBORN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SYLIVENS_PERFECT_LYRE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TABLETS_OF_BAMBUR",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TAVERN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TAVERN_GRIGORI",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TAX_OFFICE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_KILMORPH",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_LEAVES",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_TEMPORENCE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_THE_EMPYREAN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_THE_ORDER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_THE_OVERLORDS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TEMPLE_OF_THE_VEIL",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_THE_DRAGONS_HORDE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_THE_NECRONOMICON",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_THE_NEXUS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_THEATRE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_THEATRE_OF_DREAMS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TIGER_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_ALTERATION",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "2"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_COMPLACENCY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_DIVINATION",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_EYES",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_MASTERY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "2"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_NECROMANCY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TOWER_OF_THE_ELEMENTS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ARENA",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SCULPTORS_STUDIO",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_TRAINING_YARD",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_UNYIELDING_ORDER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WALL_OF_STONE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WALLS",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WINTER_PALACE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WOLF_PEN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BLESSING",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FORUM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GROWTH",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "1",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_ILLUMINATION",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_MUSEUM",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PALACE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BEAR_TROPHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_LION_TROPHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_LIZARD_TROPHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PANTHER_TROPHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_WOLF_TROPHY",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_BOAR_PEN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_COBRA_CHARMER",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_GRIFFON_AERIE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_HYENA_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PANTHER_CAGE",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_SCORPION_PEN",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_PATRIAN_ARTIFACT",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        },
+        {
+          "id": "BUILDING_FROZEN_FLAME",
+          "fields": {
+            "bNoUnhealthyPopulation": "0",
+            "bBuildingOnlyHealthy": "0",
+            "iHealth": "0",
+            "iAreaHealth": "0",
+            "iGlobalHealth": "0"
+          }
+        }
+      ]
     },
     "traits": {
       "source": "XML/Civilizations/CIV4TraitInfos.xml",
-      "entries": []
+      "entries": [
+        {
+          "id": "TRAIT_PHILOSOPHICAL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_AGGRESSIVE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SPIRITUAL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_EXPANSIVE",
+          "fields": {
+            "iHealth": "3"
+          }
+        },
+        {
+          "id": "TRAIT_INDUSTRIOUS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_CREATIVE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_FINANCIAL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_ORGANIZED",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_CHARISMATIC",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_ARCANE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_MAGIC_RESISTANT",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_AGNOSTIC",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_BARBARIAN",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_RAIDERS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SUMMONER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_DEFENDER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SPRAWLING",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_INGENUITY",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_ADAPTIVE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_INSANE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_FALLOW",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_TOLERANT",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_DEXTEROUS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_GUARDSMAN",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_HORSELORD",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SINISTER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SUNDERED",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_FOOLISH",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_WEAK",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_AGRARIAN",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SAVAGE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SLAVER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_SAGE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_IMPERIALISTIC",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_WINTERBORN",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_NOMAD",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "TRAIT_DIVERSE",
+          "fields": {
+            "iHealth": "0"
+          }
+        }
+      ]
     },
     "resources": {
       "source": "XML/Terrain/CIV4BonusInfos.xml",
-      "entries": []
+      "entries": [
+        {
+          "id": "BONUS_MANA",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_GUNPOWDER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_COPPER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_HORSE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_IRON",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MARBLE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_DEATH",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_NIGHTMARE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_FIRE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_FORCE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_BANANA",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_BISON",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_CLAM",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_CORN",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_COW",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_CRAB",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_DEER",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_FISH",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_PIG",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_RICE",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_SHEEP",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_WHEAT",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_DYE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_FUR",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_GEMS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_GOLD",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_INCENSE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_IVORY",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_SILK",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MITHRIL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_REAGENTS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_SUGAR",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_WINE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_WHALE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_FRUIT_OF_YGGDRASIL",
+          "fields": {
+            "iHealth": "2"
+          }
+        },
+        {
+          "id": "BONUS_SHEUT_STONE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_TOAD",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_PEARL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_AIR",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_BODY",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_CHAOS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_CREATION",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_MANA_DIMENSIONAL",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_EARTH",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_ENCHANTMENT",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_ENTROPY",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_ICE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_LAW",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_LIFE",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_MANA_METAMAGIC",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_MIND",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_NATURE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_SPIRIT",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_WATER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_SUN",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MANA_SHADOW",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_COTTON",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_GULAGARM",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_ALE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_FINE_CLOTHES",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_JEWELS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_RAZORWEED",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_MUSHROOMS",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_PENGUINS",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_STONE",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_AMBER",
+          "fields": {
+            "iHealth": "0"
+          }
+        },
+        {
+          "id": "BONUS_SALT",
+          "fields": {
+            "iHealth": "1"
+          }
+        },
+        {
+          "id": "BONUS_SHRIMP",
+          "fields": {
+            "iHealth": "1"
+          }
+        }
+      ]
     },
     "features": {
       "source": "XML/Terrain/CIV4FeatureInfos.xml",
-      "entries": []
+      "entries": [
+        {
+          "id": "FEATURE_ICE",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_JUNGLE",
+          "fields": {
+            "iHealthPercent": "-25"
+          }
+        },
+        {
+          "id": "FEATURE_OASIS",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_FLOOD_PLAINS",
+          "fields": {
+            "iHealthPercent": "-40"
+          }
+        },
+        {
+          "id": "FEATURE_FOREST",
+          "fields": {
+            "iHealthPercent": "50"
+          }
+        },
+        {
+          "id": "FEATURE_FOREST_BURNT",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_FOREST_NEW",
+          "fields": {
+            "iHealthPercent": "25"
+          }
+        },
+        {
+          "id": "FEATURE_FALLOUT",
+          "fields": {
+            "iHealthPercent": "-50"
+          }
+        },
+        {
+          "id": "FEATURE_FOREST_ANCIENT",
+          "fields": {
+            "iHealthPercent": "50"
+          }
+        },
+        {
+          "id": "FEATURE_FLAMES",
+          "fields": {
+            "iHealthPercent": "-25"
+          }
+        },
+        {
+          "id": "FEATURE_LABYRINTH",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_OBSIDIAN_PLAINS",
+          "fields": {
+            "iHealthPercent": "-40"
+          }
+        },
+        {
+          "id": "FEATURE_VOLCANO",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_SCRUB",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_BLIZZARD",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_TORMENTED_SOULS",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_DOOR_WEST_CLOSED",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_DOOR_WEST_OPEN",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_DOOR_NORTH_CLOSED",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_DOOR_NORTH_OPEN",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        },
+        {
+          "id": "FEATURE_WALLS",
+          "fields": {
+            "iHealthPercent": "0"
+          }
+        }
+      ]
     }
   }
 }
