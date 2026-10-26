@@ -55,7 +55,7 @@
       "source": "python/entrypoints/CvSpellInterface.py",
       "trigger": "spellPeace / spellPeaceSevenPines",
       "effect": "reduce AC by half",
-      "status": "not connected until source-compatible spell prerequisites and world spells"
+      "status": "Corlindale Peace action connected; Seven Pines remains unconnected"
     },
     {
       "source": "python/entrypoints/CvRandomEventInterface.py",
@@ -74,6 +74,18 @@
       "trigger": "52 nonzero event choice records",
       "effect": "individual signed changes in docs/data/emm-armageddon-event-choices.json",
       "status": "engine API and source registry available; event prerequisites and selection not ported"
+    },
+    {
+      "source": "python/entrypoints/CvSpellInterface.py",
+      "trigger": "spellPeace, Corlindale",
+      "effect": "Peace with current enemies and reduce AC by floor(AC/2); consume caster",
+      "status": "implemented as playable Corlindale action; in-game test pending"
+    },
+    {
+      "source": "python/entrypoints/CvRandomEventInterface.py",
+      "trigger": "doFlareEntropyNode, doFlareLifeNode, doSignAeron, doSignSirona",
+      "effect": "+2, -2, +3, -3",
+      "status": "engine callback registry only; random event trigger system not implemented"
     }
   ]
 }
