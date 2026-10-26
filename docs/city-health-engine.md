@@ -14,7 +14,7 @@ The `tools/patch_unciv_health.py` changes `CityStats.kt`, before growth modifier
 For each city:
 
 - Unhealthiness includes **1 per population**, plus source feature penalties at the current city's radius-two map footprint.
-- Health includes provisional starting health **2**, direct health of owned buildings, the **Expansive** trait (+3 for Clan of Embers, Kuriotates and Lanun in this mod), each distinct connected source-health resource, +2 for adjacent fresh water and positive feature contributions.
+- Health includes difficulty-derived starting health (Settler +4, Chieftain +3, other EMM difficulty levels +2), direct health of owned buildings, the **Expansive** trait (+3 for Clan of Embers, Kuriotates and Lanun in this mod), each distinct connected source-health resource, +2 for adjacent fresh water and positive feature contributions.
 - A city loses **1 Food per net excess unhealthiness**, even if this causes starvation. Balanced or positive health does not add Food.
 - The mod now removes its obsolete **+1 Aqueduct, +1 Herbalist and +2 Infirmary Food proxies directly from Buildings.json**. Their building panels instead state the source health bonus through an explanatory Comment unique.
 - Example source bonuses: Aqueduct **+2**, Herbalist **+1**, Infirmary **+3**; Cattle/Deer/Fish/Sheep/Wheat **+1** each; Creation Mana and Life Mana **+1** each.
@@ -58,3 +58,11 @@ extra_food_consumption = max(0, unhealthy - healthy)
 ### 2026-10-26 follow-up: icon visibility and buildings
 
 Player screenshot confirmed the first health totals (3 healthy / 2 unhealthy) rendered, but the stat atlas lookup returned a **white square**, and Herbalist showed only a textual Comment bonus. The replacement APK loads `Icons/EMMHealth.png` from a bundled Android `ExtraImages` asset rather than an unregistered sprite atlas entry; Herbalist (+1), Aqueduct (+2) and Infirmary (+3) display that same health icon in their selected-construction panels, and outdated Comment bonuses were removed. These visual corrections require player confirmation on the replacement APK; health remains 10% estimated fidelity until further mechanical tests.
+
+### 2026-10-26 — Additional source-based health rules
+
+The source extractor now includes EMM `XML/Gameinfo/CIV4HandicapInfo.xml` and writes its `iHealthBonus` values into `docs/data/emm-health-source.json`. The engine uses the matching in-game difficulty: Settler +4, Chieftain +3 and EMM Warlord/Noble/Prince/Monarch/Emperor/Immortal/Deity +2 (fallback +2 for non-EMM names). Source-defined global city health (`iGlobalHealth`) applies to every city if any of the civilization's cities has the providing building; a Kuriotates Palace grants +1 health empire-wide when present. Source `bNoUnhealthyPopulation` building effect, including Demonic Citizens, removes population-caused unhealthiness in that city when the relevant building is defined and built. This does not remove separate feature unhealthiness.
+
+**Still missing:** correct city landmass/area health (`iAreaHealth`), full modifier interactions, richer source-specific resource and terrain breakdown, disease/Blight, AI valuation, and game verification of these new cases. XML extraction and compilation do not substitute for gameplay tests.
+
+**Additional regression tests:** Compare Settler (+4) to Chieftain (+3) and Prince (+2) on identical cities; test two Kuriotate cities before and after constructing their Palace; verify cities with any `bNoUnhealthyPopulation` effect show no population unhealthiness while retaining negative feature health. Confirm population still consumes its usual Food; this effect eliminates **health penalty**, not basic citizen consumption.
