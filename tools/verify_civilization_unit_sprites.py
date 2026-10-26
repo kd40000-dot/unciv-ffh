@@ -29,7 +29,7 @@ assert len(files)>=len(expected),(len(files),len(expected))  # Additional unit p
 
 page_headers = [line for line in atlas.splitlines() if line.startswith("Images/") and line.endswith(".png")]
 assert len(page_headers)>=len(expected)  # Atlas may contain other generated units
-assert len(set(page_headers))==len(expected)
+assert len(set(page_headers))==len(page_headers)  # All registered pages unique, including placeholders
 for name in expected:
     path = GENERATED/(name+".png")
     assert path.is_file(),path
