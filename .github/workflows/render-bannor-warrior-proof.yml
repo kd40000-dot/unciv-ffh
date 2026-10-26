@@ -1,0 +1,35 @@
+name: Render Bannor Warrior vector proof
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'art-studies/Bannor-Warrior-vector.svg'
+      - '.github/workflows/render-bannor-warrior-proof.yml'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install cairosvg Pillow
+      - name: Render PNG and validate transparent silhouette
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg
+          from PIL import Image
+          svg=Path('art-studies/Bannor-Warrior-vector.svg')
+          png=svg.with_suffix('.png')
+          cairosvg.svg2png(url=str(svg),write_to=str(png),output_width=1024,output_height=1024)
+          art=Image.open(png).convert('RGBA')
+          bbox=art.getchannel('A').getbbox()
+          assert bbox and art.getpixel((0,0))[3]==0
+          print('Final image:',png,'bounds:',bbox)
+          PY
+      - name: Commit image preview
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add art-studies/Bannor-Warrior-vector.png
+          git diff --cached --quiet || (git commit -m "Render Bannor Warrior PNG preview" && git push)
