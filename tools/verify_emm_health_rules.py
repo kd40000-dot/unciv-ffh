@@ -115,3 +115,21 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('emmResolvedEventTriggers = hashSetOf<String>()','emmPendingEvents = hashMapOf<String, String>()','emmLastEventRollTurn = -1','emmScheduleRandomEvents()','emmResolveRandomEvent(civID: String, choice: String)','EVENTTRIGGER_WITCH','EVENTTRIGGER_HOLY_CHILD','EVENTTRIGGER_DEMONIC_TOME','game emm-event <choiceId>'):
  assert token in patch,token
 print('PASS: serialized EMM random-event state, world-turn scheduler and safe resolutions')
+
+
+# Native interactive event choices, original era frequency/weights, and
+# full-effect Holy Child sacrifice are gated by pinned source assertions.
+eras=json.loads(Path('docs/data/emm-event-era-chances.json').read_text())
+assert eras['commit']=='60b0ec3740083162aaab7bf8491761a54a65a610'
+assert set(eras['eraEventChancePercent'].values())=={4}
+raw=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+assert len(raw['events'])==23
+for key in ('EVENTTRIGGER_WITCH','EVENTTRIGGER_HOLY_CHILD','EVENTTRIGGER_DEMONIC_TOME'):
+    assert next(e for e in raw['events'] if e['id']==key)['criteria']['weight']==400
+holy={c['id']:c for e in raw['events'] for c in e['choices']}
+assert holy['EVENT_HOLY_CHILD_3']['fields']['iGold']==['-25']
+assert holy['EVENT_HOLY_CHILD_3']['fields']['iPopulationChange']==['-2']
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('EmmEventCatalog.kt','EmmEventTrigger(','EmmEventCatalog.eraChance','definition.percentActive','weighted.sumOf { it.weight }','emmPendingEventCities = hashMapOf<String, String>()','private fun addEmmEvent()','"EMM_EVENT:" + selected','EVENT_HOLY_CHILD_3','civ.addGold(-25)','city.population.setPopulation(city.population.population - 2)'):
+    assert token in patch,token
+print('PASS: source-derived 23-event catalog, per-era chance/weight, native popup and complete Holy Child sacrifice effect')
