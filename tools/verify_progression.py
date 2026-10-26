@@ -24,6 +24,7 @@ assert {"Combat I","Combat II","Combat III","Combat IV","Combat V","City Raider 
 source_by_id={x["id"]:x for x in d["unitProgression"]}
 aliases={r["name"]:r["sourceId"] for r in load("docs/data/emm-civilizations.json")["addedUnits"]}
 aliases["Disciple of the Ashen Veil"]="UNIT_DISCIPLE_THE_ASHEN_VEIL"
+aliases["Disciple of the Order"]="UNIT_DISCIPLE_THE_ORDER"
 name_for=lambda n:aliases.get(n,"UNIT_"+n.removeprefix("Ljosalfar ").removeprefix("Amurites ").upper().replace(" ","_"))
 for u in units:
     assert u["unitType"] in type_names,u["name"]
