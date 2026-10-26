@@ -260,10 +260,10 @@
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test."
       ],
-      "verification": "User screenshot 2026-10-26 confirmed old Herbalist tooltip still displayed +1 Food. Removed Food proxy from Herbalist/Aqueduct/Infirmary, added descriptive health tooltips, and removed compensating engine subtraction. Corrected build requires CI and fresh APK verification.",
-      "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old health-building Food proxies removed directly from ruleset. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, detailed city UI, AI health planning and gameplay/save/load verification.",
+      "verification": "City health readout implementation committed: shared calculated totals shown in city panel and detailed Stats popup. Android compilation and player testing pending; source-accurate breakdown remains incomplete.",
+      "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old health-building Food proxies removed directly from ruleset. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, source-by-source city health UI breakdown, AI health planning and gameplay/save/load verification.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Correct Herbalist/Aqueduct/Infirmary UI and remove outdated Food proxies"
+      "updatedBy": "Expose city health totals in city panel and Stats popup (8f4d4e9)"
     },
     {
       "id": "F14",
