@@ -42,6 +42,9 @@ for row in source['groups']['resources']['entries']:
     if name in resource_names:health_resources[name]=amount
 assert health_resources.get('Cattle')==1 and health_resources.get('Creation Mana')==1 and health_resources.get('Life Mana')==1
 resource_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(health_resources.items()))+')'
+difficultyBonuses = {entry['id'].removeprefix('HANDICAP_').capitalize():int(entry['fields']['iHealthBonus']) for entry in source['groups']['handicaps']['entries'] if 'iHealthBonus' in entry['fields']}
+assert difficultyBonuses['Settler']==4 and difficultyBonuses['Chieftain']==3 and difficultyBonuses['Prince']==2
+handicap_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(difficultyBonuses.items()))+')'
 health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(health.items()))+')'
 path=root/'core/src/com/unciv/logic/city/CityStats.kt'
 s=path.read_text()
@@ -58,7 +61,8 @@ replacement='''        val foodEaten = calcFoodEaten()
             val unhealthyPopulation = city.population.population
             val built = city.cityConstructions.builtBuildings
             // Building contributions are extracted from pinned EMM CIV4BuildingInfos.xml.
-            // Base health 2 remains provisional pending handicap/terrain/feature mapping.
+            // Difficulty health is read from pinned EMM CIV4HandicapInfo.xml.
+            val handicapHealth = EMM_DIFFICULTY_HEALTH[city.civ.gameInfo.difficulty] ?: 2
             val buildingHealth = EMM_HEALTH_MAP.entries.sumOf { (name, value) -> if (name in built) value else 0 }
             val expansiveHealth = if (city.civ.civName in EMM_EXPANSIVE_CIVS) 3 else 0
             val resourceHealth = EMM_RESOURCE_HEALTH.entries.sumOf { (name, value) ->
@@ -70,13 +74,14 @@ replacement='''        val foodEaten = calcFoodEaten()
                 .toList()
             val featureHealth = featureEffects.sumOf { it.coerceAtLeast(0) } / 100
             val featureUnhealth = featureEffects.sumOf { (-it).coerceAtLeast(0) } / 100
-            val healthySources = 2 + buildingHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
+            val healthySources = handicapHealth + buildingHealth + expansiveHealth + resourceHealth + freshwaterHealth + featureHealth
             val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
         }'''
 assert s.count(anchor)==1,'Pinned CityStats changed, refusing unsafe patch'
 replacement=replacement.replace('EMM_HEALTH_MAP',health_map)
+replacement=replacement.replace('EMM_DIFFICULTY_HEALTH',handicap_map)
 replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
 replacement=replacement.replace('EMM_RESOURCE_HEALTH',resource_map)
 replacement=replacement.replace('EMM_FEATURE_HEALTH',feature_map)
@@ -93,7 +98,7 @@ s=s.replace('        val foodEaten = calcFoodEaten()', '''        emmHealthInfo 
 s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth
             emmHealthInfo = healthySources to totalUnhealthy
             emmHealthBreakdown = linkedMapOf(
-                "Base health (provisional)" to 2,
+                "Difficulty health" to handicapHealth,
                 "Buildings" to buildingHealth,
                 "Expansive trait" to expansiveHealth,
                 "Connected resources" to resourceHealth,
