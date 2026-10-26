@@ -2260,5 +2260,23 @@
         "text": "Source EMM UNIT_DISCIPLE_THE_ORDER. Spreads the Order to city centers; a contested Order/Ashen Veil city may trigger the original 35% conflict and -1 Armageddon consequence."
       }
     ]
+  },
+  {
+    "name": "Corlindale",
+    "unitType": "Magic",
+    "movement": 2,
+    "cost": 300,
+    "strength": 0,
+    "requiredTech": "Fanaticism",
+    "uniqueTo": "Elohim",
+    "uniques": [
+      "Cannot attack",
+      "Limited to [1] per Civilization"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Elohim hero. EMM SPELL_PEACE can end all the caster's wars and reduce the Armageddon Counter by floor(AC/2), sacrificing Corlindale. Source: UNIT_CORLINDALE and SPELL_PEACE, pinned ExtraModMod Continued."
+      }
+    ]
   }
 ]
