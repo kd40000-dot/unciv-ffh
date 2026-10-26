@@ -20,7 +20,7 @@
 | F10 | Equipment and weapon metals | 20% |
 | F11 | Summoning and transformations | 5% |
 | F12 | Stealth and covert operations | 5% |
-| F13 | City health and disease | 33% |
+| F13 | City health and disease | 35% |
 | F14 | Happiness and war weariness | 15% |
 | F15 | City economy and maintenance | 25% |
 | F16 | Population, specialists and slavery | 15% |
@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.1% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current estimate is **13.2% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Change history
 
@@ -145,3 +145,9 @@ The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecar
 ### 2026-10-26 — Library research event and Sobs (F13)
 - **F13 32% → 33%**, overall simple 25-system average **13.08% → 13.12%** (both approximately **13.1%**). **Iron Orb 2** now consumes 75 Gold, adds 2 Armageddon and grants 2 persistent city research from an existing Library, grounded in the source's `BUILDINGCLASS_LIBRARY`, `COMMERCE_RESEARCH` and `iExtraCommerce=2`. This is stored in the city save state and applies while the Library remains. **Sobs 1** is a newly playable eighth Armageddon-related event family at AC ≥10 and city population ≥3, applying −1 persistent local happiness. Target selection now associates Iron Orb with a Library city, rather than an arbitrary population-eligible city.
 - **Pending:** original Civ IV building-extra-commerce accounting parity, in-game choice/persistence acceptance, 15 unscheduled families and missing choices requiring plot effects, unit spawning/promotions, XML/Python callbacks, religions, diplomacy and full probability selection.
+
+### 2026-10-26 — EMM unit/promotion/tile event effect milestone (F13)
+- F13 **33% → 35%**, 25-category mean **13.1% → 13.2%**. Added shared, validated unit spawning/free promotion application, mapped tile improvement removal, and serialized event-specific selected unit IDs and tile HexCoords. Verified the pinned EMM **War Games** source predicate and event options 1/2, source **Winds from Hell** Windmill destruction, and **Necro-Cannibalism 3** Doviello Warrior-class spawn with Cannibalize (+10 HP after killing a unit, using native Unciv on-kill healing).
+- Source-mapped **Windmill** is now buildable after Construction on hills, with base +1 Food/+1 Production/+1 Commerce. The EMM Machinery-dependent additional +1 Production/+1 Commerce and more precise source event unit-aliveness distinctions are not fully ported.
+- Corrected `GameInfo.clone()` to deep-copy the Armageddon Counter, one-shot flags and all EMM event pending/resolved state, including city, unit and tile event targets, which the pinned engine's manual clone implementation otherwise silently omitted.
+- Playable random-event family count now **10/23**, with restricted, source-aligned choice sets. Device event UI and save/load acceptance remain untested, and unit/tile promotion classes for other event families must still be ported. The source-based checklist and estimates should not be interpreted as 100% EMM fidelity.
