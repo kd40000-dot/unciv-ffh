@@ -84,16 +84,26 @@ s=s.replace(anchor,replacement)
 # Shared city health state is recalculated alongside Food penalties.
 field='    var currentCityStats: Stats = Stats()'
 assert s.count(field)==1
-s=s.replace(field, '    var emmHealthInfo: Pair<Int, Int>? = null // (healthy, unhealthy) for city UI\\n'.replace('\\n','\n')+field)
-s=s.replace('        val foodEaten = calcFoodEaten()', '        emmHealthInfo = null\n        val foodEaten = calcFoodEaten()',1)
-s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '            val totalUnhealthy = unhealthyPopulation + featureUnhealth\n            emmHealthInfo = healthySources to totalUnhealthy\n            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)')
+s=s.replace(field, '    var emmHealthInfo: Pair<Int, Int>? = null // (healthy, unhealthy) for city UI\\n    var emmHealthBreakdown: Map<String, Int> = emptyMap()\\n'.replace('\\n','\n')+field)
+s=s.replace('        val foodEaten = calcFoodEaten()', '        emmHealthInfo = null\n        emmHealthBreakdown = emptyMap()\n        val foodEaten = calcFoodEaten()',1)
+s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '            val totalUnhealthy = unhealthyPopulation + featureUnhealth\n            emmHealthInfo = healthySources to totalUnhealthy
+            emmHealthBreakdown = linkedMapOf(
+                "Base health (provisional)" to 2,
+                "Buildings" to buildingHealth,
+                "Expansive trait" to expansiveHealth,
+                "Connected resources" to resourceHealth,
+                "Fresh water" to freshwaterHealth,
+                "Forests and features (healthy)" to featureHealth,
+                "Population" to -unhealthyPopulation,
+                "Unhealthy features" to -featureUnhealth
+            )\n            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)')
 path.write_text(s)
 # Expose the read-only health figures on CityView for both city widgets.
 view=root/'core/src/com/unciv/view/CityView.kt'
 v=view.read_text()
 needle='    @Readonly fun getCurrentCityStats(): Stats = city.cityStats.currentCityStats'
 assert v.count(needle)==1
-v=v.replace(needle,needle+'\n    @Readonly fun getEmmHealthInfo(): Pair<Int, Int>? = city.cityStats.emmHealthInfo')
+v=v.replace(needle,needle+'\n    @Readonly fun getEmmHealthInfo(): Pair<Int, Int>? = city.cityStats.emmHealthInfo\n    @Readonly fun getEmmHealthBreakdown(): Map<String, Int> = city.cityStats.emmHealthBreakdown')
 view.write_text(v)
 # Show city health at all population sizes, not only during starvation.
 ui=root/'core/src/com/unciv/ui/screens/cityscreen/CityStatsTable.kt'
@@ -119,6 +129,12 @@ d=d.replace(needle,'''        cityView.getEmmHealthInfo()?.let { (healthy, unhea
                 .colspan(columnCount).left().row()
             totalTable.add("Population unhealthiness and buildings, resources, terrain, traits and freshwater health are included.".toLabel())
                 .colspan(columnCount).left().row()
+            for ((source, value) in cityView.getEmmHealthBreakdown()) {
+                if (value == 0) continue
+                val sign = if (value > 0) "+" else ""
+                totalTable.add(("    $source: $sign$value").toLabel())
+                    .colspan(columnCount).left().row()
+            }
             totalTable.addSeparator(colSpan = columnCount)
         }
 '''+needle)
