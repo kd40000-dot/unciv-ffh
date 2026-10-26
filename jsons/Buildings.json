@@ -46,7 +46,9 @@
         "text": "Khmer Otterfig sat back and admired his handiwork, well the work of slaves, but it was his guidance and prudent use of the whip that would now bring a new life to Belphemon. The brutal lines of his Grand Aqueduct-hewn from stone carved from the very mountain that fed it-snaked down, providing fresh water to the city and bringing with it nourishment to the warrens that could not have been imagined from festering wells that oozed with years of neglect. The filth that some of his brethren would live in!\n\nYes, there were others of his kin famed for their leadership in battle, but Otterfig knew that they were nothing without an army and that he was the one who gave the Clans the means to build one. Still, it did bother him that a butcher like Palpeious-self proclaimed \"Warlord\"-gets a statue for killing a few humans, and the only thanks he gets for bringing fresh water to the masses was \"It's cold.\" It isn't easy being green."
       }
     ],
-    "food": 1
+    "uniques": [
+      "Health: +2 (EMM health-enabled Unciv required)"
+    ]
   },
   {
     "name": "Archery Range",
@@ -188,10 +190,12 @@
     "requiredTech": "Agriculture",
     "civilopediaText": [
       {
-        "text": "Uses herbs and medicinal knowledge to improve health. Currently represented by a Food bonus."
+        "text": "Herbalists use medicinal plants to improve city health. Provides +1 Health; this reduces excess unhealthiness and its Food-consumption penalty. Requires the EMM health-enabled Unciv APK."
       }
     ],
-    "food": 1
+    "uniques": [
+      "Health: +1 (EMM health-enabled Unciv required)"
+    ]
   },
   {
     "name": "Hunting Lodge",
@@ -215,7 +219,9 @@
         "text": "I stare out the window a lot now. Outside there are children playing, laughing, running, and chasing each other. They will never know war. They will never know sacrifice, and I am grateful for that. To see the sun rise and fall, and never understand loss like mine is a beautiful and tragic thing.\n\nMy nurse comes regularly to me, to tend to my leg, and to ask if my other still feels like it's there. It does sometimes. I dream that I wander through our old house, your golden hair shining in the sunlight and lightening my heart. I chase you in my dreams, through our fields in Yullda pass, and ride our horses together. I know those days are gone. I know you've found someone new, and I am happy for you. I expect her to love you as I did.\n\nYour mother visited me once, and cried for me. Tell her not to worry, there are worse here than I."
       }
     ],
-    "food": 2
+    "uniques": [
+      "Health: +3 (EMM health-enabled Unciv required)"
+    ]
   },
   {
     "name": "Inn",
