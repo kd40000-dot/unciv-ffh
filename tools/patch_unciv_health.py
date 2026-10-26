@@ -351,3 +351,36 @@ p=p.replace(needle,'''        // Granting EMM immunity also cures any existing d
         // Since some units get promotions upon construction''')
 promo.write_text(p)
 print('Implemented global EMM disease-promotion immunity')
+
+# First playable Cure Disease action. EMM SPELL_CURE_DISEASE requires Medic II;
+# cures friendly sick units co-located with the caster. Fine-grained source
+# target selection still requires spell XML audit.
+actiontype=root/'core/src/com/unciv/models/UnitAction.kt'
+a=actiontype.read_text()
+needle='    Skip("Skip turn"),'
+assert a.count(needle)==1
+a=a.replace(needle,'    EmmCureDisease("Cure Disease"),\n'+needle)
+actiontype.write_text(a)
+
+actions=root/'core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt'
+a=actions.read_text()
+needle='''        addSkipAction(unit)'''
+assert a.count(needle)==1
+a=a.replace(needle,'''        if (unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist") &&
+            "Medic II" in unit.promotions.promotions) {
+            val targets = unit.getTile().getUnits().filter { it.civ == unit.civ &&
+                ("Diseased" in it.promotions.promotions || "Plagued" in it.promotions.promotions) }
+            if (targets.isNotEmpty()) {
+                yield(UnitAction(UnitActionType.EmmCureDisease, action = if (unit.hasMovement()) ({
+                    for (target in targets) {
+                        target.promotions.removePromotion("Diseased")
+                        target.promotions.removePromotion("Plagued")
+                    }
+                    unit.useMovementPoints(1f)
+                }) else null))
+            }
+        }
+
+'''+needle)
+actions.write_text(a)
+print('Added playable Medic II Cure Disease unit action')
