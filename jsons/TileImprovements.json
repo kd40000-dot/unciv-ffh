@@ -753,5 +753,24 @@
         "text": "EMM Necrototem: destruction reduces Armageddon by 2. Original spawning remains pending."
       }
     ]
+  },
+  {
+    "name": "Windmill",
+    "terrainsCanBeBuiltOn": [
+      "Hill"
+    ],
+    "food": 1,
+    "production": 1,
+    "gold": 1,
+    "turnsToBuild": 5,
+    "techRequired": "Construction",
+    "uniques": [
+      "Pillaging this improvement yields approximately [+10 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "ExtraModMod Continued: Windmill gives +1 Food, +1 Production and +1 Commerce; requires Construction; built on hills. EMM Machinery yields add another Production and Commerce, pending a fully source-equivalent conditional-yield port."
+      }
+    ]
   }
 ]
