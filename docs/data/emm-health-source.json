@@ -1,0 +1,22 @@
+{
+  "upstream": "bewlay/extramodmod",
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "groups": {
+    "buildings": {
+      "source": "XML/Buildings/CIV4BuildingInfos.xml",
+      "entries": []
+    },
+    "traits": {
+      "source": "XML/Civilizations/CIV4TraitInfos.xml",
+      "entries": []
+    },
+    "resources": {
+      "source": "XML/Terrain/CIV4BonusInfos.xml",
+      "entries": []
+    },
+    "features": {
+      "source": "XML/Terrain/CIV4FeatureInfos.xml",
+      "entries": []
+    }
+  }
+}
