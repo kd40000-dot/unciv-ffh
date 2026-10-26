@@ -1863,3 +1863,39 @@ v=v.replace(needle,'''            "EVENTTRIGGER_NECRO_CANNIBALISM" -> listOf(
             )''')
 alert.write_text(v)
 print('Enabled Doviello Warrior-class spawn with native free Cannibalize promotion and EMM 10-HP kill healing')
+
+
+# GameInfo.clone() manually copies saved fields in the pinned engine. Without
+# extending it, game snapshots and cloned turn simulations lose every EMM AC
+# counter/event pending target even though the JSON save contains them.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='''        toReturn.unitNamesTaken.addAll(unitNamesTaken)'''
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+        toReturn.emmArmageddonCounter = emmArmageddonCounter
+        toReturn.emmBlightTriggered = emmBlightTriggered
+        toReturn.emmPestilenceTriggered = emmPestilenceTriggered
+        toReturn.emmFoundedReligions.addAll(emmFoundedReligions)
+        toReturn.emmCountedEliminations.addAll(emmCountedEliminations)
+        toReturn.emmResolvedEventTriggers.addAll(emmResolvedEventTriggers)
+        toReturn.emmPendingEvents.putAll(emmPendingEvents)
+        toReturn.emmPendingEventCities.putAll(emmPendingEventCities)
+        toReturn.emmPendingEventUnits.putAll(emmPendingEventUnits)
+        toReturn.emmPendingEventTiles.putAll(emmPendingEventTiles)
+        toReturn.emmLastEventRollTurn = emmLastEventRollTurn''')
+gamefile.write_text(g)
+
+# An original EMM War Games trigger requires an owned plot and living combat
+# unit (not just any military unit somewhere on the map).
+helper=root/'core/src/com/unciv/logic/EmmEventWorldEffects.kt'
+v=helper.read_text()
+needle='''        !unit.isCivilian() && unit.baseUnit.strength > 0 &&
+            unit.promotions.totalXpProduced() > 0'''
+assert v.count(needle)==1
+v=v.replace(needle,'''        !unit.isCivilian() && unit.baseUnit.strength > 0 &&
+            unit.getTile().getOwner() == unit.civ &&
+            "Undead" !in unit.promotions.promotions &&
+            unit.promotions.totalXpProduced() > 0''')
+helper.write_text(v)
+print('Fixed cloned Armageddon/event state, including pending unit/tile targets and source War Games owned-plot eligibility')
