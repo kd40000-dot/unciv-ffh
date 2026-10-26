@@ -84,9 +84,14 @@ s=s.replace(anchor,replacement)
 # Shared city health state is recalculated alongside Food penalties.
 field='    var currentCityStats: Stats = Stats()'
 assert s.count(field)==1
-s=s.replace(field, '    var emmHealthInfo: Pair<Int, Int>? = null // (healthy, unhealthy) for city UI\\n    var emmHealthBreakdown: Map<String, Int> = emptyMap()\\n'.replace('\\n','\n')+field)
-s=s.replace('        val foodEaten = calcFoodEaten()', '        emmHealthInfo = null\n        emmHealthBreakdown = emptyMap()\n        val foodEaten = calcFoodEaten()',1)
-s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '            val totalUnhealthy = unhealthyPopulation + featureUnhealth\n            emmHealthInfo = healthySources to totalUnhealthy
+s=s.replace(field, '''    var emmHealthInfo: Pair<Int, Int>? = null // (healthy, unhealthy) for city UI
+    var emmHealthBreakdown: Map<String, Int> = emptyMap()
+'''+field)
+s=s.replace('        val foodEaten = calcFoodEaten()', '''        emmHealthInfo = null
+        emmHealthBreakdown = emptyMap()
+        val foodEaten = calcFoodEaten()''', 1)
+s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth
+            emmHealthInfo = healthySources to totalUnhealthy
             emmHealthBreakdown = linkedMapOf(
                 "Base health (provisional)" to 2,
                 "Buildings" to buildingHealth,
@@ -96,7 +101,8 @@ s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnheal
                 "Forests and features (healthy)" to featureHealth,
                 "Population" to -unhealthyPopulation,
                 "Unhealthy features" to -featureUnhealth
-            )\n            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)')
+            )
+            val netUnhealthy = (totalUnhealthy - healthySources).coerceAtLeast(0)''')
 path.write_text(s)
 # Expose the read-only health figures on CityView for both city widgets.
 view=root/'core/src/com/unciv/view/CityView.kt'
