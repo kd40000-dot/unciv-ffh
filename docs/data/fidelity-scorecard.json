@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 5,
+      "percent": 10,
       "status": "early",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -254,13 +254,14 @@
         "docs/open-fidelity-gaps.md",
         "tools/patch_unciv_health.py",
         "docs/data/emm-health-source.json",
-        ".github/workflows/build-unciv-health.yml"
+        ".github/workflows/build-unciv-health.yml",
+        "docs/city-health-engine.md"
       ],
       "gameplayConfirmed": [],
-      "verification": "Pinned-source building health verified from EMM XML (Aqueduct +2, Herbalist +1, Infirmary +3) and Expansive trait (+3). Initial patch compiled in test APK; revised build incorporating source values and proxy removal not yet verified in-game.",
-      "remainingDifferences": "Health-enabled engine prototype computes population unhealthiness and offsets against a provisional +2 base, source-derived building health and Expansive trait. It cancels obsolete Aqueduct/Herbalist/Infirmary Food proxies in engine. Still missing health from connected resources, terrain/freshwater/features, difficulty, buildings with area/global effects, disease/Blight, specialists/events, UI breakdown, AI valuation and saved-game regression. Health guard applies when Herbalist and Infirmary ruleset buildings exist. No user gameplay tests yet.",
+      "verification": "Full health prototype compiled successfully in GitHub Actions; no in-game acceptance tests yet. Correct source building, trait, resource and feature values loaded from pinned EMM XML. Full side-by-side APK packaging pending.",
+      "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old building Food proxies are canceled in patched engine. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, detailed city UI, AI health planning and gameplay/save/load verification.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Source-derived building and Expansive health engine patch d1c7a21"
+      "updatedBy": "First expanded EMM health engine milestone; pinned source audit and Android build"
     },
     {
       "id": "F14",
