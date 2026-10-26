@@ -369,7 +369,7 @@ assert a.count(needle)==1
 a=a.replace(needle,'''        if (unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist") &&
             "Medic II" in unit.promotions.promotions) {
             val targets = unit.getTile().getUnits().filter { it.civ == unit.civ &&
-                ("Diseased" in it.promotions.promotions || "Plagued" in it.promotions.promotions) }
+                ("Diseased" in it.promotions.promotions || "Plagued" in it.promotions.promotions) }.toList()
             if (targets.isNotEmpty()) {
                 yield(UnitAction(UnitActionType.EmmCureDisease, action = if (unit.hasMovement()) ({
                     for (target in targets) {
