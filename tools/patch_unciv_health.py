@@ -653,3 +653,25 @@ v=v.replace(needle,'''    fun destroy(notificationLocation: HexCoord? = null) {
         revealMapWhenDefeated()'''.replace('EMM_LEADER_ELIMINATION_AC',alignment_map))
 civfile.write_text(v)
 print('Installed source-derived +5 Good/-5 Evil elimination Armageddon rules')
+
+
+# EMM XML defines exactly 52 event-choice Armageddon deltas. This registry
+# is invoked from the future source-faithful random event implementation;
+# do not randomly generate these choices without their XML trigger rules.
+choices=json.loads((mod/'docs/data/emm-armageddon-event-choices.json').read_text())['eventChoices']
+assert len(choices)==52
+choices_map='mapOf('+', '.join(f'"{x["id"]}" to {x["delta"]}' for x in choices)+')'
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    fun changeEmmArmageddon(delta: Int) {'
+assert g.count(needle)==1
+g=g.replace(needle,'''    fun applyEmmArmageddonEventChoice(sourceEventId: String): Boolean {
+        val sourceDeltas = EMM_RANDOM_EVENT_AC
+        val delta = sourceDeltas[sourceEventId] ?: return false
+        changeEmmArmageddon(delta)
+        return true
+    }
+
+'''.replace('EMM_RANDOM_EVENT_AC',choices_map)+needle)
+gamefile.write_text(g)
+print('Added all 52 EMM event-choice AC source deltas to engine API')
