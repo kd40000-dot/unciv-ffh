@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "baselineDate": "2026-10-26",
+  "upstream": {
+    "repository": "https://github.com/bewlay/extramodmod",
+    "commit": "60b0ec3740083162aaab7bf8491761a54a65a610"
+  },
+  "method": "Expert estimates of behavioral fidelity, not objective test coverage. Scores may have ±5–10 percentage points or greater uncertainty. Only dated player confirmations qualify as in-game tests; static CI alone does not.",
+  "systems": [
+    {
+      "id": "F01",
+      "title": "Civilization-specific mechanics",
+      "percent": 25,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Civilizations/CIV4CivilizationInfos.xml",
+        "XML/Buildings/CIV4BuildingInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/civilizations.md",
+        "docs/khazad-vaults.md",
+        "docs/lanun-pirate-cove.md",
+        "docs/warrens-true-duplication.md"
+      ],
+      "gameplayConfirmed": [
+        "Warrens duplication confirmed; Lanun Cove basic placement and Khazad original bonuses previously player-confirmed."
+      ],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Many civilization traits, distinct units, special buildings and conditional rules are missing or proxied.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F02",
+      "title": "Magic and mana",
+      "percent": 15,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4SpellInfos.xml",
+        "XML/Units/CIV4PromotionInfos.xml",
+        "XML/Terrain/CIV4ImprovementInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/mana-nodes.md",
+        "docs/android-magic-acceptance-2026-10-24.md",
+        "docs/emm-full-spell-inventory.md"
+      ],
+      "gameplayConfirmed": [
+        "Raw Mana → Fire Node, node retuning, node construction by caster classes, Fire I Smoke, Body I Haste, Enchanted Blade Aura and Nature I Treetop Tactics user-confirmed (2026-10-24 acceptance).",
+        "Water I Spring reported gameplay-verified (2026-10-23)."
+      ],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Mana node network and several tier-I spells operate; most of the 355 source spell entries and casting semantics do not.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F03",
+      "title": "Religions",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Religion/CIV4ReligionInfo.xml",
+        "XML/Buildings/CIV4BuildingInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Religion founding/spread, holy cities, priest progression and most religious effects are missing.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F04",
+      "title": "Alignment",
+      "percent": 0,
+      "status": "missing",
+      "sourcePaths": [
+        "XML/Civilizations/CIV4CivilizationInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "No source-equivalent Good/Neutral/Evil alignment state, conversion or diplomatic restrictions.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F05",
+      "title": "Heroes and world units",
+      "percent": 10,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4UnitInfos.xml",
+        "XML/Units/CIV4PromotionInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Lucian and some roster elements exist; hero uniqueness, growth and special actions largely absent.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F06",
+      "title": "World spells",
+      "percent": 0,
+      "status": "missing",
+      "sourcePaths": [
+        "XML/Units/CIV4SpellInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "No verified civilization world-spell implementation.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F07",
+      "title": "Civics and government",
+      "percent": 0,
+      "status": "missing",
+      "sourcePaths": [
+        "XML/GameInfo/CIV4CivicInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "EMM-specific civic categories, switching and civic effects absent.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F08",
+      "title": "Combat system",
+      "percent": 30,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Units/CIV4UnitInfos.xml",
+        "XML/Units/CIV4PromotionInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/combat-equipment-to-magic-plan.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Native combat and some modifiers exist; first strikes, resistance, typed damage, collateral and withdrawal incomplete.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F09",
+      "title": "Promotions and experience",
+      "percent": 20,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Units/CIV4PromotionInfos.xml",
+        "XML/Units/CIV4UnitInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/promotions-upgrades-resources.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Basic lines exist; approximately 32 of 305 source promotions, complex eligibility and experience rules absent.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F10",
+      "title": "Equipment and weapon metals",
+      "percent": 20,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Units/CIV4PromotionInfos.xml",
+        "XML/Terrain/CIV4BonusInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/combat-equipment-to-magic-plan.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "28 melee/Sword dynamic percentage approximations; no actual metal equipment promotion states, Rust, or refitting.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F11",
+      "title": "Summoning and transformations",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4SpellInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Some conversions/proxies; no general summon duration, owner linkage and dispel lifecycle.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F12",
+      "title": "Stealth and covert operations",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4PromotionInfos.xml",
+        "XML/Units/CIV4SpellInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Partial native stealth scaffolding; source-exact detection, hidden nationality and covert actions incomplete.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F13",
+      "title": "City health and disease",
+      "percent": 0,
+      "status": "missing",
+      "sourcePaths": [
+        "XML/Buildings/CIV4BuildingInfos.xml",
+        "XML/Terrain/CIV4BonusInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Health/unhealthiness, city UI, disease and population food effects absent; Food bonuses are proxies.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F14",
+      "title": "Happiness and war weariness",
+      "percent": 15,
+      "status": "early",
+      "sourcePaths": [
+        "XML/GameInfo/CIV4CivicInfos.xml",
+        "XML/Buildings/CIV4BuildingInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Native happiness exists; source war-weariness accumulation, modifiers and recovery not implemented.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F15",
+      "title": "City economy and maintenance",
+      "percent": 25,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Buildings/CIV4BuildingInfos.xml",
+        "XML/GameInfo/CIV4CivicInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/economic-test-protocol.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Basic Unciv economy; EMM maintenance formula, civic modifiers and flexible commerce missing.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F16",
+      "title": "Population, specialists and slavery",
+      "percent": 15,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Buildings/CIV4BuildingInfos.xml",
+        "XML/Units/CIV4UnitInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/arena-battle-implementation.md"
+      ],
+      "gameplayConfirmed": [
+        "Arena action noted as implemented, but Arena Slave acquisition and conversion were not consistently validated in repository documentation."
+      ],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Base population exists; specialists, slavery acquisition and source-population effects mostly missing.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F17",
+      "title": "Culture and territory",
+      "percent": 30,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Buildings/CIV4BuildingInfos.xml",
+        "XML/Terrain/CIV4ImprovementInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Native Unciv culture/borders; city revolt, resistance and source cultural-control mechanics incomplete.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F18",
+      "title": "Resources and improvements",
+      "percent": 35,
+      "status": "partial",
+      "sourcePaths": [
+        "XML/Terrain/CIV4BonusInfos.xml",
+        "XML/Terrain/CIV4ImprovementInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/mana-nodes.md",
+        "docs/lanun-pirate-cove.md"
+      ],
+      "gameplayConfirmed": [
+        "Raw Mana → Fire Mana from node and retuning user-confirmed (2026-10-24).",
+        "Lanun basic Cove placement confirmed; latest manual Harbor/Port upgrades unverified."
+      ],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "21 mana resources/nodes plus selected metals/improvements; resource roster, spacing, maturation and eligibility incomplete.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F19",
+      "title": "Armageddon Counter",
+      "percent": 0,
+      "status": "missing",
+      "sourcePaths": [
+        "XML/Units/CIV4SpellInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "No global Armageddon counter or dependent event pipeline.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F20",
+      "title": "Hell terrain and transformation",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Terrain/CIV4TerrainInfos.xml",
+        "XML/Units/CIV4SpellInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Spring/Smoke effects exist; no global Hell terrain propagation and cleansing model.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F21",
+      "title": "Wilderness and barbarian factions",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4UnitInfos.xml",
+        "python/entrypoints/CvSpellInterface.py"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Ordinary barbarian play only; wilderness scaling and regional factions missing.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F22",
+      "title": "Lairs, dungeons and exploration",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Units/CIV4SpellInfos.xml",
+        "XML/Terrain/CIV4ImprovementInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Ruins scaffold; source lair table, repeated exploration and rewards absent.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F23",
+      "title": "Diplomacy, councils and vassalage",
+      "percent": 10,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Civilizations/CIV4CivilizationInfos.xml",
+        "XML/GameInfo/CIV4CivicInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/erebus-diplomacy.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Basic diplomacy text native relations; councils, votes, vassals and related rules absent.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F24",
+      "title": "Advanced tactics, forts and revolutions",
+      "percent": 5,
+      "status": "early",
+      "sourcePaths": [
+        "XML/Terrain/CIV4ImprovementInfos.xml",
+        "XML/GameInfo/CIV4GameOptionInfos.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Stock fort/tactics behavior only; Super Forts and Revolutions not faithfully implemented.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    },
+    {
+      "id": "F25",
+      "title": "Victory conditions",
+      "percent": 10,
+      "status": "early",
+      "sourcePaths": [
+        "XML/GameInfo/CIV4VictoryInfo.xml"
+      ],
+      "portEvidence": [
+        "docs/open-fidelity-gaps.md",
+        "docs/compatibility.md"
+      ],
+      "gameplayConfirmed": [],
+      "verification": "Further source-equivalence and in-game regression testing required",
+      "remainingDifferences": "Basic Unciv victory rules; EMM Tower/Altar/religion special victories missing.",
+      "lastReviewed": "2026-10-26",
+      "updatedBy": "Initial 25-system audit"
+    }
+  ]
+}
