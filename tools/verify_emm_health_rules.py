@@ -63,3 +63,8 @@ print('PASS: Diseased melee/contact promotion source and immunity checks')
 for token in ('promotionName in listOf("Diseased", "Plagued")','"Immune to Disease" in promotions','removePromotion("Diseased")','removePromotion("Plagued")'):
  assert token in Path('tools/patch_unciv_health.py').read_text(), token
 print('PASS: immunity applies to all promotion sources and clears existing disease')
+
+patch=Path('tools/patch_unciv_health.py').read_text()
+for check in ('EmmCureDisease','"Medic II" in unit.promotions.promotions','removePromotion("Diseased")','removePromotion("Plagued")','emmArmageddonCounter = 0','prior < 30','prior < 35','EmmArmageddonEvents.fireBlight(this)','EmmArmageddonEvents.firePestilence(this)'):
+ assert check in patch,check
+print('PASS: Medic II cure and serialized AC 30/35 threshold dispatch contracts')
