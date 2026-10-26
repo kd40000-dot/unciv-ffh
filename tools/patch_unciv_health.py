@@ -126,12 +126,13 @@ s=s.replace(field, '''    var emmHealthInfo: Pair<Int, Int>? = null // (healthy,
 s=s.replace('        val foodEaten = calcFoodEaten()', '''        emmHealthInfo = null
         emmHealthBreakdown = emptyMap()
         val foodEaten = calcFoodEaten()''', 1)
-s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth + buildingUnhealth
+s=s.replace('            val netUnhealthy = (unhealthyPopulation + featureUnhealth - healthySources).coerceAtLeast(0)', '''            val totalUnhealthy = unhealthyPopulation + featureUnhealth + buildingUnhealth + city.emmDiseaseHealthCounter
             emmHealthInfo = healthySources to totalUnhealthy
             emmHealthBreakdown = linkedMapOf(
                 "Difficulty health" to handicapHealth,
                 "Healthy buildings" to buildingHealth,
                 "Unhealthy buildings" to -buildingUnhealth,
+                "Plague and Blight" to -city.emmDiseaseHealthCounter,
                 "Empire-wide buildings" to globalHealth,
                 "Continent buildings" to areaHealth,
                 "Expansive trait" to expansiveHealth,
@@ -207,3 +208,32 @@ code='''            if (construction is Building && cityView.getEmmHealthInfo() 
 c=c.replace('import com.unciv.ui.components.extensions.toTextButton','import com.unciv.ui.components.extensions.toLabel\nimport com.unciv.ui.components.extensions.toTextButton')
 c=c.replace(anchor,code.replace('EMM_CONSTRUCTION_HEALTH',health_map)+anchor)
 info.write_text(c)
+
+
+# Preserve city-level effects in saves and copied game states.
+cityfile=root/'core/src/com/unciv/logic/city/City.kt'
+v=cityfile.read_text()
+needle='    var health = 200'
+assert v.count(needle)==1
+v=v.replace(needle, needle+'''
+    /** EMM Blight/Pestilence excess unhealthiness (not city combat health). Serialized. */
+    var emmDiseaseHealthCounter = 0
+''')
+needle='        toReturn.health = health'
+assert v.count(needle)==1
+v=v.replace(needle,needle+'\n        toReturn.emmDiseaseHealthCounter = emmDiseaseHealthCounter')
+cityfile.write_text(v)
+
+# Health effects are ticked once each city turn. Event application must be invoked
+# by the Armageddon event system, not randomly improvised as normal city disease.
+turn=root/'core/src/com/unciv/logic/city/managers/CityTurnManager.kt'
+t=turn.read_text()
+needle='        city.clearCaches()'
+assert t.count(needle)==1
+t=t.replace(needle,'''        city.clearCaches()
+        // Existing Civ IV temporary sickness steadily clears; retain a persistent
+        // numerical counter across save/load. Other disease sources will add to it.
+        if (city.emmDiseaseHealthCounter > 0)
+            city.emmDiseaseHealthCounter -= 1
+''')
+turn.write_text(t)
