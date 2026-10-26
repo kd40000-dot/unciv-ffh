@@ -120,7 +120,7 @@ u=u.replace(needle, '''        cityView.getEmmHealthInfo()?.let { (healthy, unhe
             val net = healthy - unhealthy
             val status = if (net >= 0) Color.FOREST else Color.SCARLET
             val healthLabel = "Health: $healthy / $unhealthy (net ${if (net >= 0) "+" else ""}$net)".toLabel(status, hideIcons = true)
-            lowerTable.add(Table().apply {\n                add(ImageGetter.getImage(\"StatIcons/EMMHealth\")).size(20f).padRight(5f)\n                add(healthLabel)\n            }).row()
+            lowerTable.add(Table().apply {\n                add(ImageGetter.getExternalImage("Icons/EMMHealth.png")).size(20f).padRight(5f)\n                add(healthLabel)\n            }).row()
         }
 '''+needle)
 ui.write_text(u)
@@ -147,3 +147,29 @@ d=d.replace(needle,'''        cityView.getEmmHealthInfo()?.let { (healthy, unhea
 pop.write_text(d)
 print('Patched city health status in CityStats, CityView, city screen, Stats popup')
 print('Patched',path)
+
+# Display health-building bonuses with the same icon, instead of prose.
+info=root/'core/src/com/unciv/ui/screens/cityscreen/ConstructionInfoTable.kt'
+c=info.read_text()
+anchor='''            if (cityConstructions.isBuilt(construction.name)) {'''
+assert c.count(anchor)==1
+code='''            if (construction is Building && cityView.getEmmHealthInfo() != null) {
+                val health = when (construction.name) {
+                    "Herbalist" -> 1
+                    "Aqueduct" -> 2
+                    "Infirmary" -> 3
+                    else -> 0
+                }
+                if (health > 0) {
+                    row()
+                    add(Table().apply {
+                        add(ImageGetter.getExternalImage("Icons/EMMHealth.png")).size(20f).padRight(5f)
+                        add("+$health".toLabel(Color.FOREST))
+                    }).colspan(2).left().row()
+                }
+            }
+'''
+# toLabel extension is included for concise value text.
+c=c.replace('import com.unciv.ui.components.extensions.toTextButton','import com.unciv.ui.components.extensions.toLabel\nimport com.unciv.ui.components.extensions.toTextButton')
+c=c.replace(anchor,code+anchor)
+info.write_text(c)
