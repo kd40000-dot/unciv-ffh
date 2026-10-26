@@ -87,3 +87,16 @@ for token in ('emmFoundReligion(name: String','emmSpreadReligion(name: String','
 u=next(x for x in json.loads(Path('jsons/Units.json').read_text()) if x['name']=='Disciple of the Ashen Veil')
 assert (u['cost'],u['strength'],u['movement'])==(60,3,1)
 print('PASS: native gameplay EMM religious AC source values and disciple')
+
+align=json.loads(Path('docs/data/emm-leader-alignments.json').read_text())
+assert align['commit']=='60b0ec3740083162aaab7bf8491761a54a65a610'
+assert len(align['selectedCivilizations'])==19
+assert align['selectedCivilizations']['Bannor']['alignment']=='ALIGNMENT_GOOD'
+assert align['selectedCivilizations']['Sheaim']['alignment']=='ALIGNMENT_EVIL'
+events=json.loads(Path('docs/data/emm-armageddon-event-choices.json').read_text())
+assert events['commit']==align['commit'] and len(events['eventChoices'])==52
+assert any(e['id']=='EVENT_DEMONIC_TOME_1' and e['delta']==5 for e in events['eventChoices'])
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('gameInfo.getYear() >= 5','emmCountedEliminations.add(civID)','EMM_RANDOM_EVENT_AC','changeEmmArmageddon(-2)','EmmSanctify','EmmRobGrave','EmmSpreadOrder','"The Order" -> "The Ashen Veil"'):
+ assert token in patch,token
+print('PASS: 19 alignment sources, 52 event-choice sources and spell/religion AC hooks')
