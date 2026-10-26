@@ -100,3 +100,12 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('gameInfo.getYear() >= 5','emmCountedEliminations.add(civID)','EMM_RANDOM_EVENT_AC','changeEmmArmageddon(-2)','EmmSanctify','EmmRobGrave','EmmSpreadOrder','"The Order" -> "The Ashen Veil"'):
  assert token in patch,token
 print('PASS: 19 alignment sources, 52 event-choice sources and spell/religion AC hooks')
+
+# Extra source-exact AC callbacks and Peace spell contracts.
+patch=Path('tools/patch_unciv_health.py').read_text()
+for text in ('EmmPeace("Peace")','unit.name == "Corlindale"','emmPeaceReducesArmageddon()','unit.civ.getDiplomacyManager(enemy)?.makePeace()','unit.destroy()','doFlareEntropyNode" -> 2','doFlareLifeNode" -> -2','doSignAeron" -> 3','doSignSirona" -> -3'):
+ assert text in patch,text
+unit=next(u for u in json.loads(Path('jsons/Units.json').read_text()) if u['name']=='Corlindale')
+assert (unit['requiredTech'],unit['uniqueTo'],unit['cost'],unit['movement'],unit['strength'])==('Fanaticism','Elohim',300,2,0)
+assert all((n//2)==(n-(n-n//2)) for n in range(101))
+print('PASS: source-backed Peace, Corlindale and AC event callback values')
