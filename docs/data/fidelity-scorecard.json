@@ -259,12 +259,13 @@
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
-        "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed."
+        "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
+        "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "City health totals seen in user screenshot. Icon missing/white-square and health building text-only display identified; patched to bundle texture externally and display health icon beside +1/+2/+3 in construction panel. Pending rebuilt APK and user visual confirmation.",
+      "verification": "User smoke-tested corrected city health display and reports health appears to work. Detailed source-by-source calculations, different population sizes, full building/resource effects, save/load and AI remain untested.",
       "remainingDifferences": "Population-based unhealthiness and source-derived direct building (+2 Aqueduct/+1 Herbalist/+3 Infirmary), Expansive (+3), available connected resources, freshwater (+2) and Forest/Jungle/Flood plains percentages now feed excess-Food penalty; old health-building Food proxies removed directly from ruleset. Provisional starting health 2; lacks source-accurate difficulty values, Civ IV city radius geometry, area/global/building-resource synergies, no-unhealthy-population effects, disease/Blight, source-by-source city health UI breakdown, AI health planning and gameplay/save/load verification.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "2026-10-26 health UI icon path and construction info fix"
+      "updatedBy": "2026-10-26 player smoke-test confirmation"
     },
     {
       "id": "F14",
