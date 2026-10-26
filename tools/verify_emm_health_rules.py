@@ -177,3 +177,28 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('var emmEventLibraryScience = 0','toReturn.emmEventLibraryScience = emmEventLibraryScience','EmmEventEffect(2, -75, 0, 0, 0, 2)','city.emmEventLibraryScience.toFloat()','"EVENTTRIGGER_SOBS"','"EVENT_IRON_ORB_2"','"EVENT_SOBS_1"'):
     assert token in patch,token
 print('PASS: source-backed library research event modifier and eighth event family Sobs')
+
+# EMM unit creation/promotions/plot improvement effects from pinned source.
+catalog=json.loads(Path('docs/data/emm-armageddon-event-triggers.json').read_text())
+events={e['id']:e for e in catalog['events']}
+choices={c['id']:c for e in catalog['events'] for c in e['choices']}
+assert events['EVENTTRIGGER_WAR_GAMES']['criteria']['minAC']==2
+assert 'canTriggerWarGamesUnit' in events['EVENTTRIGGER_WAR_GAMES']['criteria']['python']
+assert choices['EVENT_WAR_GAMES_1']['fields']['bDisbandUnit']==['1']
+assert choices['EVENT_WAR_GAMES_1']['acDelta']==-2
+assert choices['EVENT_WAR_GAMES_2']['fields']['iUnitExperience']==['-1']
+assert events['EVENTTRIGGER_WINDS_FROM_HELL']['criteria']['minAC']==20
+assert events['EVENTTRIGGER_WINDS_FROM_HELL']['criteria']['improvements']==['IMPROVEMENT_WINDMILL']
+assert choices['EVENT_WINDS_FROM_HELL_3']['fields']['iImprovementChange']==['-1']
+assert choices['EVENT_NECRO_CANNIBALISM_3']['fields']['UnitClass']==['UNITCLASS_WARRIOR']
+assert choices['EVENT_NECRO_CANNIBALISM_3']['fields']['UnitPromotion']==['PROMOTION_CANNIBALIZE']
+assert choices['EVENT_NECRO_CANNIBALISM_3']['fields']['iNumFreeUnits']==['1']
+promos={p['name']:p for p in json.loads(Path('jsons/UnitPromotions.json').read_text())}
+assert "Heals [10] damage if it kills a unit" in promos['Cannibalize']['uniques']
+improvements={t['name']:t for t in json.loads(Path('jsons/TileImprovements.json').read_text())}
+assert improvements['Windmill']['techRequired']=='Construction'
+assert (improvements['Windmill']['food'],improvements['Windmill']['production'],improvements['Windmill']['gold'])==(1,1,1)
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('EmmEventWorldEffects.kt','spawnWithPromotions(','addPromotion(promotion, true)','removeNamedImprovement(','eligibleWarGamesUnit(','emmPendingEventUnits = hashMapOf<String, Int>()','emmPendingEventTiles = hashMapOf<String, com.unciv.logic.map.HexCoord>()','EVENT_WAR_GAMES_1','EVENT_WAR_GAMES_2','EVENT_WINDS_FROM_HELL_3','EVENT_NECRO_CANNIBALISM_3','civ.getEquivalentUnit("Warrior").name','listOf("Cannibalize"), 1'):
+    assert token in patch,token
+print('PASS: source-faithful unit, promotion and tile event operation contracts')
