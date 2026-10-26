@@ -244,7 +244,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 14,
+      "percent": 16,
       "status": "early",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -257,17 +257,19 @@
         ".github/workflows/build-unciv-health.yml",
         "docs/city-health-engine.md",
         "scripts/extract_emm_health_source.py",
-        "tools/verify_emm_health_rules.py"
+        "tools/verify_emm_health_rules.py",
+        "docs/data/emm-disease-promotions.json",
+        "jsons/UnitPromotions.json"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "City health UI smoke-tested by user; negative building health is now correctly separated into unhealthy points instead of subtracting healthy points; static regression checks added. Corrected APK build and player verification pending; no in-game test for negative health buildings yet.",
-      "remainingDifferences": "Base health by handicap, buildings (including signed negative health), connected resources, Expansive trait, freshwater, forest/jungle/floodplain effects, global and area effects, and no-unhealthy-population flags modeled. The city health indicator and food penalties share data. Outstanding: EMM disease/plague/Blight, exact city tile geometry and healthy/unhealthy feature counting, health from special event/civic/spell effects and building-resource combinations, AI health-aware building valuation, special source buildings not yet present in mod, full save/load and gameplay test matrix.",
+      "verification": "Pinned EMM source callback rules for Blight/Pestilence and promotion penalties audited. Persistent city sickness counter and event API plus strength penalties implemented. Global Armageddon event dispatch, unit Death damage, infection transmission and recovery/immunity are not operational yet. Kotlin build and Android gameplay acceptance pending.",
+      "remainingDifferences": "Blight/Pestilence source formula APIs and city temporary unhealthiness persistence/decay are present but not connected to AC 30/35 global triggers; missing event Death-type unit damage. Diseased (-30%) and Plagued (-60%) base strength penalties defined but source healing penalties (-10/-20 in all territory), disease contagion, cure spells, immunity enforcement and automatic event/lair acquisition are missing. City health from difficulty, buildings (signed effects), traits, terrain, resource, global/area modifiers exists but exact Civ4 feature/plot semantics, epidemic decay and AI behavior remain not fully tested.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Signed building health fix, source contracts and expanded regression"
+      "updatedBy": "2026-10-26 initial source-backed epidemics and disease promotion port"
     },
     {
       "id": "F14",
