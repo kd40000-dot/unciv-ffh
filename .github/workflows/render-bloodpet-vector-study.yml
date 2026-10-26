@@ -1,0 +1,35 @@
+name: Render Bloodpet vector study
+on:
+  push:
+    paths:
+      - 'art-studies/Calabim-Bloodpet-vector-study.svg'
+      - '.github/workflows/render-bloodpet-vector-study.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render and verify PNG from SVG
+        run: |
+          python -m pip install cairosvg Pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import cairosvg
+          source=Path('art-studies/Calabim-Bloodpet-vector-study.svg')
+          out=source.with_suffix('.png')
+          cairosvg.svg2png(url=str(source),write_to=str(out),output_width=1024,output_height=1024)
+          im=Image.open(out).convert('RGBA')
+          assert im.getchannel('A').getbbox() is not None
+          assert im.getpixel((0,0))[3]==0
+          print('Rendered',out,im.size,'alpha bounds',im.getchannel('A').getbbox())
+          PY
+      - name: Commit preview on study branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add art-studies/Calabim-Bloodpet-vector-study.png
+          git diff --cached --quiet || (git commit -m "Render standalone Bloodpet vector study preview" && git push)
