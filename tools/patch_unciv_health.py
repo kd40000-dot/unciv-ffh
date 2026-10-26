@@ -645,7 +645,9 @@ needle='''    fun destroy(notificationLocation: HexCoord? = null) {
         revealMapWhenDefeated()'''
 assert v.count(needle)==1
 v=v.replace(needle,'''    fun destroy(notificationLocation: HexCoord? = null) {
-        if (isMajorCiv() && gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+        if (isMajorCiv() && gameInfo.getYear() >= 5 &&
+            gameInfo.ruleset.buildings.containsKey("Herbalist") &&
+            gameInfo.emmCountedEliminations.add(civID)) {
             // EMM CvEventManager.onSetPlayerAlive: source-selected leader alignment.
             val delta = EMM_LEADER_ELIMINATION_AC[civName] ?: 0
             if (delta != 0) gameInfo.changeEmmArmageddon(delta)
@@ -675,3 +677,10 @@ g=g.replace(needle,'''    fun applyEmmArmageddonEventChoice(sourceEventId: Strin
 '''.replace('EMM_RANDOM_EVENT_AC',choices_map)+needle)
 gamefile.write_text(g)
 print('Added all 52 EMM event-choice AC source deltas to engine API')
+
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    var emmPestilenceTriggered = false'
+assert g.count(needle)==1
+g=g.replace(needle,needle+'\n    var emmCountedEliminations = hashSetOf<String>()')
+gamefile.write_text(g)
