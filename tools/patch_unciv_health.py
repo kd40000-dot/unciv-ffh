@@ -18,6 +18,10 @@ for row in source['groups']['buildings']['entries']:
         name=' '.join(x.capitalize() for x in row['id'].removeprefix('BUILDING_').split('_'))
         health[name]=amount
 assert health['Aqueduct']==2 and health['Herbalist']==1 and health['Infirmary']==3
+nations=json.loads(Path('jsons/Nations.json').read_text())
+expansive=sorted(n['name'] for n in nations if 'Expansive' in n.get('uniqueName','').split(', ') )
+assert int(next(t['fields']['iHealth'] for t in source['groups']['traits']['entries'] if t['id']=='TRAIT_EXPANSIVE'))==3
+expansive_set='setOf('+', '.join('"'+n+'"' for n in expansive)+')'
 health_map='mapOf('+', '.join(f'"{name}" to {amount}' for name,amount in sorted(health.items()))+')'
 path=root/'core/src/com/unciv/logic/city/CityStats.kt'
 s=path.read_text()
@@ -36,13 +40,23 @@ replacement='''        val foodEaten = calcFoodEaten()
             // Building contributions are extracted from pinned EMM CIV4BuildingInfos.xml.
             // Base health 2 remains provisional pending handicap/terrain/feature mapping.
             val buildingHealth = EMM_HEALTH_MAP.entries.sumOf { (name, value) -> if (name in built) value else 0 }
-            val healthySources = 2 + buildingHealth
+            val expansiveHealth = if (city.civ.civName in EMM_EXPANSIVE_CIVS) 3 else 0
+            val healthySources = 2 + buildingHealth + expansiveHealth
+            // Remove old temporary Food bonuses standing in for health buildings.
+            // Only the health-enabled EMM ruleset gets this correction.
+            val outdatedFoodProxy =
+                (if ("Aqueduct" in built) 1 else 0) +
+                (if ("Herbalist" in built) 1 else 0) +
+                (if ("Infirmary" in built) 2 else 0)
+            if (outdatedFoodProxy > 0)
+                newFinalStatList.add("Replace health Food proxies", Stats(food = -outdatedFoodProxy.toFloat()))
             val netUnhealthy = (unhealthyPopulation - healthySources).coerceAtLeast(0)
             if (netUnhealthy > 0)
                 newFinalStatList.add("Unhealthiness", Stats(food = -netUnhealthy.toFloat()))
         }'''
 assert s.count(anchor)==1,'Pinned CityStats changed, refusing unsafe patch'
 replacement=replacement.replace('EMM_HEALTH_MAP',health_map)
+replacement=replacement.replace('EMM_EXPANSIVE_CIVS',expansive_set)
 s=s.replace(anchor,replacement)
 path.write_text(s)
 print('Patched',path)
