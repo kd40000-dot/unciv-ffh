@@ -68,3 +68,8 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for check in ('EmmCureDisease','"Medic II" in unit.promotions.promotions','removePromotion("Diseased")','removePromotion("Plagued")','emmArmageddonCounter = 0','prior < 30','prior < 35','EmmArmageddonEvents.fireBlight(this)','EmmArmageddonEvents.firePestilence(this)'):
  assert check in patch,check
 print('PASS: Medic II cure and serialized AC 30/35 threshold dispatch contracts')
+
+patch=Path('tools/patch_unciv_health.py').read_text()
+for token in ('game emm-armageddon <delta>','changeEmmArmageddon(delta)','Armageddon: $ac / 100'):
+ assert token in patch,token
+print('PASS: user-visible Armageddon meter and developer counter test entry point')
