@@ -631,3 +631,25 @@ a=a.replace(needle,'''        if (unit.civ.gameInfo.ruleset.buildings.containsKe
 '''+needle)
 actions.write_text(a)
 print('Linked source-faithful Sanctify (-1) and grave robbing (+1) AC changes')
+
+
+# Civilization alignment is source-derived from the pinned selected EMM leaders.
+# When a major civilization is eliminated: Good +5 AC, Evil -5 AC, Neutral 0.
+alignment_source=json.loads((mod/'docs/data/emm-leader-alignments.json').read_text())['selectedCivilizations']
+assert len(alignment_source)==19
+alignment_delta={'ALIGNMENT_GOOD':5,'ALIGNMENT_EVIL':-5,'ALIGNMENT_NEUTRAL':0}
+alignment_map='mapOf('+', '.join(f'"{name}" to {alignment_delta[x["alignment"]]}' for name,x in sorted(alignment_source.items()))+')'
+civfile=root/'core/src/com/unciv/logic/civilization/Civilization.kt'
+v=civfile.read_text()
+needle='''    fun destroy(notificationLocation: HexCoord? = null) {
+        revealMapWhenDefeated()'''
+assert v.count(needle)==1
+v=v.replace(needle,'''    fun destroy(notificationLocation: HexCoord? = null) {
+        if (isMajorCiv() && gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            // EMM CvEventManager.onSetPlayerAlive: source-selected leader alignment.
+            val delta = EMM_LEADER_ELIMINATION_AC[civName] ?: 0
+            if (delta != 0) gameInfo.changeEmmArmageddon(delta)
+        }
+        revealMapWhenDefeated()'''.replace('EMM_LEADER_ELIMINATION_AC',alignment_map))
+civfile.write_text(v)
+print('Installed source-derived +5 Good/-5 Evil elimination Armageddon rules')
