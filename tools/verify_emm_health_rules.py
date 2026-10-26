@@ -59,3 +59,7 @@ patch=Path('tools/patch_unciv_health.py').read_text()
 for token in ('defender.unit.promotions.addPromotion("Diseased", isFree = true)','"Immune to Disease" !in defender.unit.promotions.promotions'):
  assert token in patch,token
 print('PASS: Diseased melee/contact promotion source and immunity checks')
+
+for token in ('promotionName in listOf("Diseased", "Plagued")','"Immune to Disease" in promotions','removePromotion("Diseased")','removePromotion("Plagued")'):
+ assert token in Path('tools/patch_unciv_health.py').read_text(), token
+print('PASS: immunity applies to all promotion sources and clears existing disease')
