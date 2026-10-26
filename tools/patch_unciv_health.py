@@ -469,3 +469,19 @@ v=v.replace(needle,'''        "emm-armageddon" to ConsoleAction("game emm-armage
 '''+needle)
 console.write_text(v)
 print('Added game emm-armageddon <delta> test command for world-event acceptance')
+
+# Surface the real saved AC on the city screen, avoiding a hidden invisible
+# world system. Keep it alongside the existing city health display.
+ui=root/'core/src/com/unciv/ui/screens/cityscreen/CityStatsTable.kt'
+u=ui.read_text()
+needle='''        cityView.getEmmHealthInfo()?.let { (healthy, unhealthy) ->'''
+assert u.count(needle)==1
+u=u.replace(needle,'''        if (cityView.getEmmHealthInfo() != null) {
+            val ac = cityView.getState().civInfo.gameInfo.emmArmageddonCounter
+            lowerTable.add(("Armageddon: $ac / 100").toLabel(
+                if (ac >= 35) Color.SCARLET else if (ac >= 30) Color.ORANGE else Color.LIGHT_GRAY,
+                hideIcons = true
+            )).row()
+        }
+'''+needle)
+ui.write_text(u)
