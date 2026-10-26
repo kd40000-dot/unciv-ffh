@@ -852,3 +852,88 @@ g=g.replace(needle,'''    fun applyEmmArmageddonEventCallback(sourceCallback: St
 '''+needle)
 gamefile.write_text(g)
 print('Registered source-exact EMM random-event callbacks (not fake spontaneous triggers)')
+
+
+# Durable EMM random-event scheduler; only source choices with NO other effects
+# are eligible at this stage. Unported choices must not be auto-resolved.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    var emmPestilenceTriggered = false'
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+    var emmResolvedEventTriggers = hashSetOf<String>()
+    var emmPendingEvents = hashMapOf<String, String>()
+    var emmLastEventRollTurn = -1
+
+    fun emmResolveRandomEvent(civID: String, choice: String): Boolean {
+        val event = emmPendingEvents[civID] ?: return false
+        val accepted = when(event) {
+            "EVENTTRIGGER_WITCH" -> "EVENT_WITCH_2"
+            "EVENTTRIGGER_HOLY_CHILD" -> "EVENT_HOLY_CHILD_1"
+            "EVENTTRIGGER_DEMONIC_TOME" -> "EVENT_DEMONIC_TOME_2"
+            else -> return false
+        }
+        if (choice != accepted) return false
+        if (!applyEmmArmageddonEventChoice(choice)) return false
+        emmPendingEvents.remove(civID)
+        emmResolvedEventTriggers.add(civID + ":" + event)
+        return true
+    }
+
+    fun emmScheduleRandomEvents() {
+        if (!ruleset.buildings.containsKey("Herbalist") ||
+            emmLastEventRollTurn == turns) return
+        emmLastEventRollTurn = turns
+        val roll = kotlin.random.Random(turns * 41081 + civilizations.size * 397)
+        for (civ in civilizations) {
+            if (!civ.isAlive() || civ.isBarbarian || emmPendingEvents.containsKey(civ.civID)) continue
+            val eligible = arrayListOf<String>()
+            if (civ.cities.any { it.population.population >= 3 }) {
+                eligible.add("EVENTTRIGGER_WITCH")
+                if (emmArmageddonCounter >= 10) eligible.add("EVENTTRIGGER_HOLY_CHILD")
+            }
+            if (emmArmageddonCounter >= 10 && civ.tech.isResearched("Writing"))
+                eligible.add("EVENTTRIGGER_DEMONIC_TOME")
+            eligible.removeAll { emmResolvedEventTriggers.contains(civ.civID + ":" + it) }
+            if (eligible.isEmpty() || roll.nextInt(100) != 0) continue
+            val selected = eligible[roll.nextInt(eligible.size)]
+            emmPendingEvents[civ.civID] = selected
+            if (!civ.isHuman()) {
+                val safe = when(selected) {
+                    "EVENTTRIGGER_WITCH" -> "EVENT_WITCH_2"
+                    "EVENTTRIGGER_HOLY_CHILD" -> "EVENT_HOLY_CHILD_1"
+                    else -> "EVENT_DEMONIC_TOME_2"
+                }
+                emmResolveRandomEvent(civ.civID, safe)
+            } else {
+                civ.addNotification(
+                    "An EMM random event is awaiting resolution: " + selected,
+                    com.unciv.logic.civilization.NotificationCategory.General
+                )
+            }
+        }
+    }
+''')
+needle='''                turns++
+                if (DebugUtils.SIMULATE_UNTIL_TURN != 0)'''
+assert g.count(needle)==1
+g=g.replace(needle,'''                turns++
+                emmScheduleRandomEvents()
+                if (DebugUtils.SIMULATE_UNTIL_TURN != 0)''')
+gamefile.write_text(g)
+
+console=root/'core/src/com/unciv/ui/screens/devconsole/ConsoleGameCommands.kt'
+v=console.read_text()
+needle='''        "emm-armageddon" to ConsoleAction'''
+assert v.count(needle)==1
+v=v.replace(needle,'''        "emm-event" to ConsoleAction("game emm-event <choiceId>") { console, params ->
+            if (!console.gameInfo.emmResolveRandomEvent(
+                    console.gameInfo.currentPlayerCiv.civID, params[0].toString()
+                ))
+                throw ConsoleErrorException("No pending event with this choice")
+            DevConsoleResponse.OK
+        },
+
+'''+needle)
+console.write_text(v)
+print('Installed serialized random event queue, scheduler, and choice resolution')
