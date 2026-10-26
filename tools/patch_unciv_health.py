@@ -458,8 +458,7 @@ v=console.read_text()
 needle='''        "setdifficulty" to ConsoleAction'''
 assert v.count(needle)==1
 v=v.replace(needle,'''        "emm-armageddon" to ConsoleAction("game emm-armageddon <delta>") { console, params ->
-            val delta = params[0].toIntOrNull()
-                ?: throw ConsoleErrorException("Expected signed integer change")
+            val delta = params[0].toInt()
             if (!console.gameInfo.ruleset.buildings.containsKey("Herbalist"))
                 throw ConsoleErrorException("EMM mod not active")
             console.gameInfo.changeEmmArmageddon(delta)
