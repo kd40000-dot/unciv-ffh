@@ -484,3 +484,62 @@ u=u.replace(needle,'''        if (cityView.getEmmHealthInfo() != null) {
         }
 '''+needle)
 ui.write_text(u)
+
+
+# Source EMM: founding the Ashen Veil gives +5 AC; first founding of
+# Octopus Overlords gives +3; each distinct Ashen Veil city spread gives +1.
+# Keep these independent of vanilla Unciv's very different faith/prophet flow.
+gamefile=root/'core/src/com/unciv/logic/GameInfo.kt'
+g=gamefile.read_text()
+needle='    var emmPestilenceTriggered = false'
+assert g.count(needle)==1
+g=g.replace(needle,needle+'''
+    /** EMM religions first founded anywhere in this world. Serialized. */
+    var emmFoundedReligions = hashSetOf<String>()
+
+    fun emmFoundReligion(name: String, city: com.unciv.logic.city.City) {
+        if (!ruleset.buildings.containsKey("Herbalist")) return
+        if (!emmFoundedReligions.add(name)) return
+        if (name == "The Ashen Veil") changeEmmArmageddon(5)
+        if (name == "Octopus Overlords") changeEmmArmageddon(3)
+        emmSpreadReligion(name, city)
+    }
+
+    fun emmSpreadReligion(name: String, city: com.unciv.logic.city.City) {
+        if (!ruleset.buildings.containsKey("Herbalist")) return
+        if (!city.emmEstablishedReligions.add(name)) return
+        if (name == "The Ashen Veil") changeEmmArmageddon(1)
+    }
+''')
+gamefile.write_text(g)
+
+cityfile=root/'core/src/com/unciv/logic/city/City.kt'
+c=cityfile.read_text()
+needle='    var emmDiseaseHealthCounter = 0'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'''
+    /** Once-per-city EMM religious spread accounting, preserved in saves. */
+    var emmEstablishedReligions = hashSetOf<String>()
+''')
+needle='        toReturn.emmDiseaseHealthCounter = emmDiseaseHealthCounter'
+assert c.count(needle)==1
+c=c.replace(needle,needle+'\n        toReturn.emmEstablishedReligions.addAll(emmEstablishedReligions)')
+cityfile.write_text(c)
+
+# Source EMM: researching a religion's tech founds it for the first player
+# before later players receive the respective missionary instead.
+tech=root/'core/src/com/unciv/logic/civilization/managers/TechManager.kt'
+t=tech.read_text()
+needle='''        val isNewTech = techsResearched.add(techName)'''
+assert t.count(needle)==1
+t=t.replace(needle,needle+'''
+        if (isNewTech && civInfo.cities.isNotEmpty() &&
+            civInfo.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            when (techName) {
+                "Corruption of Spirit" -> civInfo.gameInfo.emmFoundReligion("The Ashen Veil", civInfo.cities.first())
+                "Message from the Deep" -> civInfo.gameInfo.emmFoundReligion("Octopus Overlords", civInfo.cities.first())
+            }
+        }
+''')
+tech.write_text(t)
+print('Wired EMM religion founding by technology and distinct-city religion spread AC changes')
