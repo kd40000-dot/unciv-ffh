@@ -26,14 +26,14 @@
 | F16 | Population, specialists and slavery | 15% |
 | F17 | Culture and territory | 30% |
 | F18 | Resources and improvements | 35% |
-| F19 | Armageddon Counter | 30% |
+| F19 | Armageddon Counter | 0% |
 | F20 | Hell terrain and transformation | 5% |
 | F21 | Wilderness and barbarian factions | 5% |
 | F22 | Lairs, dungeons and exploration | 5% |
 | F23 | Diplomacy, councils and vassalage | 10% |
 | F24 | Advanced tactics, forts and revolutions | 5% |
 | F25 | Victory conditions | 10% |
-| | **Equal-weight mean (current implementation)** | **14.4%** |
+| | **Equal-weight mean (historic baseline snapshot)** | **12.0%** |
 
 **Correction:** The earlier conversational ~14% overall estimate was an arithmetic error. The exact simple average of its 25 proposed percentages is 11.8%, which is the immutable initial baseline before the October 26 health prototype; current estimate is 12.9%.
 
