@@ -322,3 +322,32 @@ code='''        // EMM: Diseased transmits through combat to eligible living tar
 b=b.replace(anchor,code+anchor)
 battle.write_text(b)
 print('Added EMM Diseased combat infection with immunity guard')
+
+# EMM PromotionImmune1/2 must apply to all promotion-granting routes,
+# not only the explicit combat-infection path.
+promo=root/'core/src/com/unciv/logic/map/mapunit/UnitPromotions.kt'
+p=promo.read_text()
+needle='''        if (promotions.contains(promotionName)) return
+        val ruleset = unit.civ.gameInfo.ruleset'''
+assert p.count(needle)==1
+p=p.replace(needle,'''        if (promotions.contains(promotionName)) return
+        // EMM immune-disease blocks both disease promotions from ANY source.
+        if (unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist") &&
+            promotionName in listOf("Diseased", "Plagued") &&
+            "Immune to Disease" in promotions) return
+        val ruleset = unit.civ.gameInfo.ruleset''')
+needle='''        unit.updateUniques()
+
+        // Since some units get promotions upon construction'''
+assert p.count(needle)==1
+p=p.replace(needle,'''        // Granting EMM immunity also cures any existing disease.
+        if (promotionName == "Immune to Disease" &&
+            unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
+            removePromotion("Diseased")
+            removePromotion("Plagued")
+        }
+        unit.updateUniques()
+
+        // Since some units get promotions upon construction''')
+promo.write_text(p)
+print('Implemented global EMM disease-promotion immunity')
