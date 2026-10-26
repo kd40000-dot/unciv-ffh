@@ -1435,7 +1435,9 @@ v=v.replace(needle,'''    val health: Int,
 needle='''    val choices = mapOf('''
 assert v.count(needle)==1
 v=v.replace(needle,'''    val choices = mapOf(
-        "EVENT_IRON_ORB_2" to EmmEventEffect(2, -75, 0, 0, 0, 2),''')
+        "EVENT_IRON_ORB_2" to EmmEventEffect(2, -75, 0, 0, 0, 2),
+        "EVENT_WAR_GAMES_1" to EmmEventEffect(-2, 0, 0, 0, 0),
+        "EVENT_WAR_GAMES_2" to EmmEventEffect(0, 0, 0, 0, 0),''')
 effects.write_text(v)
 
 cityfile=root/'core/src/com/unciv/logic/city/City.kt'
