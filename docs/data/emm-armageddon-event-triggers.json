@@ -1,0 +1,3421 @@
+{
+  "commit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "source": [
+    "XML/Events/CIV4EventTriggerInfos.xml",
+    "XML/Events/CIV4EventInfos.xml"
+  ],
+  "total": 23,
+  "events": [
+    {
+      "id": "EVENTTRIGGER_ANGELIC_PROCESSION",
+      "allChoices": [
+        "EVENT_ANGELIC_PROCESSION_1",
+        "EVENT_ANGELIC_PROCESSION_2"
+      ],
+      "acChoices": [
+        "EVENT_ANGELIC_PROCESSION_1",
+        "EVENT_ANGELIC_PROCESSION_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 5,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [
+          "TERRAIN_GRASS",
+          "TERRAIN_PLAINS",
+          "TERRAIN_TUNDRA"
+        ],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_ANGELIC_PROCESSION_1",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_ANGELIC_PROCESSION_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ANGELIC_PROCESSION_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ANGELIC_PROCESSION_2",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_ANGELIC_PROCESSION_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ANGELIC_PROCESSION_2"
+            ],
+            "YieldType": [
+              "YIELD_FOOD",
+              "YIELD_PRODUCTION",
+              "YIELD_COMMERCE"
+            ],
+            "iExtraYield": [
+              "0",
+              "0",
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_ELOHIM"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_DEMONIC_TOME",
+      "allChoices": [
+        "EVENT_DEMONIC_TOME_1",
+        "EVENT_DEMONIC_TOME_2"
+      ],
+      "acChoices": [
+        "EVENT_DEMONIC_TOME_1",
+        "EVENT_DEMONIC_TOME_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 10,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": "TECH_WRITING",
+        "city": false,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_DEMONIC_TOME_1",
+          "acDelta": 5,
+          "fields": {
+            "Type": [
+              "EVENT_DEMONIC_TOME_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMONIC_TOME_1"
+            ],
+            "iTechPercent": [
+              "25"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iGlobalCounter": [
+              "5"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMONIC_TOME_2",
+          "acDelta": -5,
+          "fields": {
+            "Type": [
+              "EVENT_DEMONIC_TOME_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMONIC_TOME_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iGlobalCounter": [
+              "-5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_ELOHIM_HALLOWING",
+      "allChoices": [
+        "EVENT_ELOHIM_HALLOWING_1",
+        "EVENT_ELOHIM_HALLOWING_2",
+        "EVENT_ELOHIM_HALLOWING_3"
+      ],
+      "acChoices": [
+        "EVENT_ELOHIM_HALLOWING_1",
+        "EVENT_ELOHIM_HALLOWING_3"
+      ],
+      "criteria": {
+        "weight": 200,
+        "percentGamesActive": 100,
+        "minAC": 10,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": true
+      },
+      "choices": [
+        {
+          "id": "EVENT_ELOHIM_HALLOWING_1",
+          "acDelta": -3,
+          "fields": {
+            "Type": [
+              "EVENT_ELOHIM_HALLOWING_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ELOHIM_HALLOWING_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iOurAttitudeModifier": [
+              "1"
+            ],
+            "iAttitudeModifier": [
+              "1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-3"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ELOHIM_HALLOWING_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_ELOHIM_HALLOWING_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ELOHIM_HALLOWING_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iOurAttitudeModifier": [
+              "-1"
+            ],
+            "iAttitudeModifier": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ELOHIM_HALLOWING_3",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_ELOHIM_HALLOWING_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ELOHIM_HALLOWING_3"
+            ],
+            "iGold": [
+              "-10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iOurAttitudeModifier": [
+              "-4"
+            ],
+            "iAttitudeModifier": [
+              "-4"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_HOLY_CHILD",
+      "allChoices": [
+        "EVENT_HOLY_CHILD_1",
+        "EVENT_HOLY_CHILD_2",
+        "EVENT_HOLY_CHILD_3",
+        "EVENT_HOLY_CHILD_4"
+      ],
+      "acChoices": [
+        "EVENT_HOLY_CHILD_1",
+        "EVENT_HOLY_CHILD_2",
+        "EVENT_HOLY_CHILD_3"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 10,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_HOLY_CHILD_1",
+          "acDelta": -5,
+          "fields": {
+            "Type": [
+              "EVENT_HOLY_CHILD_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HOLY_CHILD_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-5"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HOLY_CHILD_2",
+          "acDelta": -10,
+          "fields": {
+            "Type": [
+              "EVENT_HOLY_CHILD_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HOLY_CHILD_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-50"
+            ],
+            "iHappy": [
+              "1"
+            ],
+            "iHealth": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-10"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HOLY_CHILD_3",
+          "acDelta": 10,
+          "fields": {
+            "Type": [
+              "EVENT_HOLY_CHILD_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HOLY_CHILD_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-25"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-2"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "10"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HOLY_CHILD_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_HOLY_CHILD_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HOLY_CHILD_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_PROPHET"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_OCTOPUS_OVERLORDS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_MYSTIC_TREE",
+      "allChoices": [
+        "EVENT_MYSTIC_TREE_1",
+        "EVENT_MYSTIC_TREE_2",
+        "EVENT_MYSTIC_TREE_3",
+        "EVENT_MYSTIC_TREE_4"
+      ],
+      "acChoices": [
+        "EVENT_MYSTIC_TREE_1",
+        "EVENT_MYSTIC_TREE_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 5,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [
+          "FEATURE_FOREST"
+        ],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_MYSTIC_TREE_1",
+          "acDelta": 5,
+          "fields": {
+            "Type": [
+              "EVENT_MYSTIC_TREE_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_MYSTIC_TREE_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappy": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCanDo": [
+              "canApplyNoOrder"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "5"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_MYSTIC_TREE_2",
+          "acDelta": -5,
+          "fields": {
+            "Type": [
+              "EVENT_MYSTIC_TREE_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_MYSTIC_TREE_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCanDo": [
+              "canApplyNoOrder"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-5"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_MYSTIC_TREE_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_MYSTIC_TREE_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_MYSTIC_TREE_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "YieldType": [
+              "YIELD_FOOD",
+              "YIELD_PRODUCTION",
+              "YIELD_COMMERCE"
+            ],
+            "iExtraYield": [
+              "1",
+              "1",
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_FELLOWSHIP_OF_LEAVES"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_MYSTIC_TREE_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_MYSTIC_TREE_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_MYSTIC_TREE_4"
+            ],
+            "FeatureType": [
+              "FEATURE_FLAMES"
+            ],
+            "iFeatureChange": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ORDER"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_ORPHANAGE_FIRE",
+      "allChoices": [
+        "EVENT_ORPHANAGE_FIRE_1",
+        "EVENT_ORPHANAGE_FIRE_2",
+        "EVENT_ORPHANAGE_FIRE_3"
+      ],
+      "acChoices": [
+        "EVENT_ORPHANAGE_FIRE_2",
+        "EVENT_ORPHANAGE_FIRE_3"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 20,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": "TECH_KNOWLEDGE_OF_THE_ETHER",
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_ORPHANAGE_FIRE_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_ORPHANAGE_FIRE_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ORPHANAGE_FIRE_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHurryAnger": [
+              "5"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ORPHANAGE_FIRE_2",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_ORPHANAGE_FIRE_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ORPHANAGE_FIRE_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappy": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_LIFE"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ORPHANAGE_FIRE_3",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_ORPHANAGE_FIRE_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ORPHANAGE_FIRE_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_SPECTRE"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_DEATH"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_SHEAIM_ELEGY",
+      "allChoices": [
+        "EVENT_SHEAIM_ELEGY_1",
+        "EVENT_SHEAIM_ELEGY_2",
+        "EVENT_SHEAIM_ELEGY_3"
+      ],
+      "acChoices": [
+        "EVENT_SHEAIM_ELEGY_1",
+        "EVENT_SHEAIM_ELEGY_3"
+      ],
+      "criteria": {
+        "weight": 200,
+        "percentGamesActive": 100,
+        "minAC": 10,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": true
+      },
+      "choices": [
+        {
+          "id": "EVENT_SHEAIM_ELEGY_1",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_SHEAIM_ELEGY_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHEAIM_ELEGY_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SHEAIM_ELEGY_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_SHEAIM_ELEGY_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHEAIM_ELEGY_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SHEAIM_ELEGY_3",
+          "acDelta": -3,
+          "fields": {
+            "Type": [
+              "EVENT_SHEAIM_ELEGY_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHEAIM_ELEGY_3"
+            ],
+            "iGold": [
+              "-10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_SOBS",
+      "allChoices": [
+        "EVENT_SOBS_1",
+        "EVENT_SOBS_2",
+        "EVENT_SOBS_3"
+      ],
+      "acChoices": [
+        "EVENT_SOBS_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 10,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_SOBS_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_SOBS_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SOBS_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappy": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SOBS_2",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_SOBS_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SOBS_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_SPIRIT"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SOBS_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_SOBS_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SOBS_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "YieldType": [
+              "YIELD_COMMERCE"
+            ],
+            "iExtraYield": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_INFERNAL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_TWO_HEADED_COW",
+      "allChoices": [
+        "EVENT_TWO_HEADED_COW_1",
+        "EVENT_TWO_HEADED_COW_2"
+      ],
+      "acChoices": [
+        "EVENT_TWO_HEADED_COW_1",
+        "EVENT_TWO_HEADED_COW_2"
+      ],
+      "criteria": {
+        "weight": 200,
+        "percentGamesActive": 100,
+        "minAC": 2,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [
+          "BONUS_COW"
+        ],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": true
+      },
+      "choices": [
+        {
+          "id": "EVENT_TWO_HEADED_COW_1",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_TWO_HEADED_COW_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TWO_HEADED_COW_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_TWO_HEADED_COW_2",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_TWO_HEADED_COW_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TWO_HEADED_COW_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_WAR_GAMES",
+      "allChoices": [
+        "EVENT_WAR_GAMES_1",
+        "EVENT_WAR_GAMES_2",
+        "EVENT_WAR_GAMES_3",
+        "EVENT_WAR_GAMES_4"
+      ],
+      "acChoices": [
+        "EVENT_WAR_GAMES_1"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 2,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 1,
+        "units": 1,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [
+          "canTriggerWarGamesUnit"
+        ],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_WAR_GAMES_1",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_WAR_GAMES_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WAR_GAMES_1"
+            ],
+            "bDisbandUnit": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WAR_GAMES_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_WAR_GAMES_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WAR_GAMES_2"
+            ],
+            "iUnitExperience": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WAR_GAMES_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_WAR_GAMES_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WAR_GAMES_3"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WAR_GAMES_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_WAR_GAMES_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WAR_GAMES_4"
+            ],
+            "iUnitExperience": [
+              "2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_WITCH",
+      "allChoices": [
+        "EVENT_WITCH_1",
+        "EVENT_WITCH_2"
+      ],
+      "acChoices": [
+        "EVENT_WITCH_1",
+        "EVENT_WITCH_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 0,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_WITCH_1",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_WITCH_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WITCH_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappy": [
+              "1"
+            ],
+            "iHealth": [
+              "-3"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WITCH_2",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_WITCH_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WITCH_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_LUNATIC",
+      "allChoices": [
+        "EVENT_LUNATIC_1",
+        "EVENT_LUNATIC_2",
+        "EVENT_LUNATIC_3",
+        "EVENT_LUNATIC_4",
+        "EVENT_LUNATIC_5",
+        "EVENT_LUNATIC_6"
+      ],
+      "acChoices": [
+        "EVENT_LUNATIC_3",
+        "EVENT_LUNATIC_4"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 0,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": "TECH_PRIESTHOOD",
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [
+          "canTriggerLunaticCity"
+        ],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_LUNATIC_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_LUNATIC_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_STYGIAN_GUARD"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqReligion": [
+              "RELIGION_OCTOPUS_OVERLORDS"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_LUNATIC_3",
+          "acDelta": 5,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_PRIEST_OF_THE_VEIL"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_CRAZED"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "5"
+            ],
+            "PrereqReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_LUNATIC_4",
+          "acDelta": 5,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_DISCIPLE_FELLOWSHIP_OF_LEAVES"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_CRAZED"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "5"
+            ],
+            "PrereqReligion": [
+              "RELIGION_FELLOWSHIP_OF_LEAVES"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_LUNATIC_5",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_5"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_5"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "25"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqReligion": [
+              "RELIGION_RUNES_OF_KILMORPH"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_LUNATIC_6",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_LUNATIC_6"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_LUNATIC_6"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iCulture": [
+              "20"
+            ],
+            "YieldType": [
+              "YIELD_PRODUCTION"
+            ],
+            "iExtraYield": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqReligion": [
+              "RELIGION_THE_EMPYREAN"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_SHRINE_CAMULOS",
+      "allChoices": [
+        "EVENT_SHRINE_CAMULOS_1",
+        "EVENT_SHRINE_CAMULOS_2",
+        "EVENT_SHRINE_CAMULOS_3"
+      ],
+      "acChoices": [
+        "EVENT_SHRINE_CAMULOS_1",
+        "EVENT_SHRINE_CAMULOS_2",
+        "EVENT_SHRINE_CAMULOS_3"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 10,
+        "minAC": 0,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [
+          "BUILDINGCLASS_TRAINING_YARD"
+        ],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_SHRINE_CAMULOS_1",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_SHRINE_CAMULOS_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHRINE_CAMULOS_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SHRINE_CAMULOS_2",
+          "acDelta": -3,
+          "fields": {
+            "Type": [
+              "EVENT_SHRINE_CAMULOS_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHRINE_CAMULOS_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "applyShrineCamulos2"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-3"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_SHRINE_CAMULOS_3",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_SHRINE_CAMULOS_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_SHRINE_CAMULOS_3"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_IRON_ORB",
+      "allChoices": [
+        "EVENT_IRON_ORB_1",
+        "EVENT_IRON_ORB_2",
+        "EVENT_IRON_ORB_3"
+      ],
+      "acChoices": [
+        "EVENT_IRON_ORB_2",
+        "EVENT_IRON_ORB_3"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 0,
+        "minPopulation": 0,
+        "minTreasury": 75,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 1,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [
+          "BUILDINGCLASS_LIBRARY"
+        ],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_IRON_ORB_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_IRON_ORB_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_IRON_ORB_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_IRON_ORB_2",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_IRON_ORB_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_IRON_ORB_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-75"
+            ],
+            "BuildingClass": [
+              "BUILDINGCLASS_LIBRARY"
+            ],
+            "CommerceType": [
+              "COMMERCE_RESEARCH"
+            ],
+            "iExtraCommerce": [
+              "2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_IRON_ORB_3",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_IRON_ORB_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_IRON_ORB_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-75"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "applyIronOrb3"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_STRANGE_ADEPT",
+      "allChoices": [
+        "EVENT_STRANGE_ADEPT_1",
+        "EVENT_STRANGE_ADEPT_2",
+        "EVENT_STRANGE_ADEPT_3",
+        "EVENT_STRANGE_ADEPT_4"
+      ],
+      "acChoices": [
+        "EVENT_STRANGE_ADEPT_2",
+        "EVENT_STRANGE_ADEPT_3",
+        "EVENT_STRANGE_ADEPT_4"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 0,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 1,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [
+          "BUILDINGCLASS_MAGE_GUILD"
+        ],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_STRANGE_ADEPT_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_STRANGE_ADEPT_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_STRANGE_ADEPT_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_STRANGE_ADEPT_2",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_STRANGE_ADEPT_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_STRANGE_ADEPT_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-30"
+            ],
+            "UnitClass": [
+              "UNITCLASS_ADEPT"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_ENTROPY1",
+              "PROMOTION_DEATH1"
+            ],
+            "iHurryAnger": [
+              "2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "doStrangeAdept"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_STRANGE_ADEPT_3",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_STRANGE_ADEPT_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_STRANGE_ADEPT_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-30"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "doStrangeAdept"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_STRANGE_ADEPT_4",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_STRANGE_ADEPT_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_STRANGE_ADEPT_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappyTurns": [
+              "10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_GOOD"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_TRAPPED_FROSTLINGS",
+      "allChoices": [
+        "EVENT_TRAPPED_FROSTLINGS_1",
+        "EVENT_TRAPPED_FROSTLINGS_2",
+        "EVENT_TRAPPED_FROSTLINGS_3",
+        "EVENT_TRAPPED_FROSTLINGS_4",
+        "EVENT_TRAPPED_FROSTLINGS_5"
+      ],
+      "acChoices": [
+        "EVENT_TRAPPED_FROSTLINGS_2"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 0,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [
+          "CanTriggerTrappedFrostlings"
+        ],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_TRAPPED_FROSTLINGS_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_TRAPPED_FROSTLINGS_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "500"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_TRAPPED_FROSTLINGS_2",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_TRAPPED_FROSTLINGS_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_2"
+            ],
+            "Help": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_2_HELP"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "DoTrappedFrostlings2"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "100"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_GOOD"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_TRAPPED_FROSTLINGS_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_TRAPPED_FROSTLINGS_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "BuildingClass": [
+              "BUILDINGCLASS_CIV_BUILDING1"
+            ],
+            "CommerceType": [
+              "COMMERCE_CULTURE"
+            ],
+            "iExtraCommerce": [
+              "4"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCanDo": [
+              "CanDoTrappedFrostlings3"
+            ],
+            "PythonHelp": [
+              "helpTrappedFrostlings3"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_BALSERAPHS"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_TRAPPED_FROSTLINGS_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_TRAPPED_FROSTLINGS_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iFood": [
+              "5"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_CALABIM"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_TRAPPED_FROSTLINGS_5",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_TRAPPED_FROSTLINGS_5"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_TRAPPED_FROSTLINGS_5"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_FROSTLING"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_STRONG"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_ILLIANS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_DEMON_SIGN",
+      "allChoices": [
+        "EVENT_DEMON_SIGN_1",
+        "EVENT_DEMON_SIGN_2",
+        "EVENT_DEMON_SIGN_3",
+        "EVENT_DEMON_SIGN_4",
+        "EVENT_DEMON_SIGN_5",
+        "EVENT_DEMON_SIGN_6"
+      ],
+      "acChoices": [
+        "EVENT_DEMON_SIGN_1",
+        "EVENT_DEMON_SIGN_2",
+        "EVENT_DEMON_SIGN_5"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 30,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [
+          "CanTriggerDemonSign"
+        ],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_DEMON_SIGN_1",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHurryAnger": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMON_SIGN_2",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-200"
+            ],
+            "UnitClass": [
+              "UNITCLASS_PROPHET"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMON_SIGN_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-50"
+            ],
+            "UnitClass": [
+              "UNITCLASS_PRIEST_OF_THE_VEIL"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_PROPHECY_MARK"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMON_SIGN_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ORDER"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMON_SIGN_5",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_5"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_5"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-100"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "doDemonSign5"
+            ],
+            "PythonCanDo": [
+              "CanDoDemonSign5"
+            ],
+            "PythonHelp": [
+              "helpDemonSign5"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEMON_SIGN_6",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_DEMON_SIGN_6"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEMON_SIGN_6"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iGold": [
+              "-10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_GRIGORI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_ASH_COUGH",
+      "allChoices": [
+        "EVENT_ASH_COUGH_1",
+        "EVENT_ASH_COUGH_2",
+        "EVENT_ASH_COUGH_3",
+        "EVENT_ASH_COUGH_4"
+      ],
+      "acChoices": [
+        "EVENT_ASH_COUGH_3",
+        "EVENT_ASH_COUGH_4"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 15,
+        "minPopulation": 3,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [
+          "CIVILIZATION_INFERNAL"
+        ],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_ASH_COUGH_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_ASH_COUGH_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ASH_COUGH_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ASH_COUGH_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_ASH_COUGH_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ASH_COUGH_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHappy": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "IsCivilization": [
+              "CIVILIZATION_KURIOTATES",
+              "CIVILIZATION_SHEAIM"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ASH_COUGH_3",
+          "acDelta": -3,
+          "fields": {
+            "Type": [
+              "EVENT_ASH_COUGH_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ASH_COUGH_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-3"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ORDER"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_ASH_COUGH_4",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_ASH_COUGH_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_ASH_COUGH_4"
+            ],
+            "Help": [
+              "TXT_KEY_EVENT_ASH_COUGH_4_HELP"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "doAshCough4"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ],
+            "HasBuildingClass": [
+              "BUILDINGCLASS_MAGE_GUILD"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_DEAD_ANGEL",
+      "allChoices": [
+        "EVENT_DEAD_ANGEL_1",
+        "EVENT_DEAD_ANGEL_2",
+        "EVENT_DEAD_ANGEL_3",
+        "EVENT_DEAD_ANGEL_4",
+        "EVENT_DEAD_ANGEL_5"
+      ],
+      "acChoices": [
+        "EVENT_DEAD_ANGEL_1",
+        "EVENT_DEAD_ANGEL_2",
+        "EVENT_DEAD_ANGEL_3",
+        "EVENT_DEAD_ANGEL_4",
+        "EVENT_DEAD_ANGEL_5"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 35,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": false,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [
+          "TERRAIN_GRASS",
+          "TERRAIN_PLAINS"
+        ],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_DEAD_ANGEL_1",
+          "acDelta": -5,
+          "fields": {
+            "Type": [
+              "EVENT_DEAD_ANGEL_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-5"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_LIFE"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEAD_ANGEL_2",
+          "acDelta": -2,
+          "fields": {
+            "Type": [
+              "EVENT_DEAD_ANGEL_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_2"
+            ],
+            "YieldType": [
+              "YIELD_FOOD"
+            ],
+            "iExtraYield": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "-2"
+            ],
+            "IsAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEAD_ANGEL_3",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_DEAD_ANGEL_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_3"
+            ],
+            "YieldType": [
+              "YIELD_FOOD"
+            ],
+            "iExtraYield": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEAD_ANGEL_4",
+          "acDelta": 5,
+          "fields": {
+            "Type": [
+              "EVENT_DEAD_ANGEL_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_4"
+            ],
+            "Help": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_4_HELP"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonExpireCheck": [
+              "doDeadAngel4"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "5"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_ENTROPY"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEAD_ANGEL_5",
+          "acDelta": 10,
+          "fields": {
+            "Type": [
+              "EVENT_DEAD_ANGEL_5"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_5"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_ANGEL"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_UNDEAD",
+              "PROMOTION_PLAGUE_CARRIER"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "UnitName": [
+              "TXT_KEY_EVENT_DEAD_ANGEL_5_UNIT_NAME"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "10"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_DEATH"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_DEPRESSED_TOYMAKER",
+      "allChoices": [
+        "EVENT_DEPRESSED_TOYMAKER_1",
+        "EVENT_DEPRESSED_TOYMAKER_2",
+        "EVENT_DEPRESSED_TOYMAKER_3",
+        "EVENT_DEPRESSED_TOYMAKER_4"
+      ],
+      "acChoices": [
+        "EVENT_DEPRESSED_TOYMAKER_1",
+        "EVENT_DEPRESSED_TOYMAKER_3"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 45,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [
+          "CIVILIZATION_INFERNAL"
+        ],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_DEPRESSED_TOYMAKER_1",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_DEPRESSED_TOYMAKER_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEPRESSED_TOYMAKER_1"
+            ],
+            "iHurryAnger": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ],
+            "IsAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEPRESSED_TOYMAKER_2",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_DEPRESSED_TOYMAKER_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEPRESSED_TOYMAKER_2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEPRESSED_TOYMAKER_3",
+          "acDelta": 2,
+          "fields": {
+            "Type": [
+              "EVENT_DEPRESSED_TOYMAKER_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEPRESSED_TOYMAKER_3"
+            ],
+            "iHappyTurns": [
+              "10"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "2"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_SHEAIM"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_DEPRESSED_TOYMAKER_4",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_DEPRESSED_TOYMAKER_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_DEPRESSED_TOYMAKER_4"
+            ],
+            "iCulture": [
+              "50"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_BALSERAPHS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_NECRO_CANNIBALISM",
+      "allChoices": [
+        "EVENT_NECRO_CANNIBALISM_1",
+        "EVENT_NECRO_CANNIBALISM_2",
+        "EVENT_NECRO_CANNIBALISM_3",
+        "EVENT_NECRO_CANNIBALISM_4"
+      ],
+      "acChoices": [
+        "EVENT_NECRO_CANNIBALISM_2",
+        "EVENT_NECRO_CANNIBALISM_3",
+        "EVENT_NECRO_CANNIBALISM_4"
+      ],
+      "criteria": {
+        "weight": 400,
+        "percentGamesActive": 100,
+        "minAC": 65,
+        "minPopulation": 5,
+        "minTreasury": 0,
+        "prereqTech": null,
+        "city": true,
+        "plots": 0,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_NECRO_CANNIBALISM_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_NECRO_CANNIBALISM_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_NECRO_CANNIBALISM_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iHurryAnger": [
+              "2"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_NECRO_CANNIBALISM_2",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_NECRO_CANNIBALISM_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_NECRO_CANNIBALISM_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_NECRO_CANNIBALISM_3",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_NECRO_CANNIBALISM_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_NECRO_CANNIBALISM_3"
+            ],
+            "UnitClass": [
+              "UNITCLASS_WARRIOR"
+            ],
+            "UnitPromotion": [
+              "PROMOTION_CANNIBALIZE"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqCivilization": [
+              "CIVILIZATION_DOVIELLO"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_NECRO_CANNIBALISM_4",
+          "acDelta": 3,
+          "fields": {
+            "Type": [
+              "EVENT_NECRO_CANNIBALISM_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_NECRO_CANNIBALISM_4"
+            ],
+            "UnitClass": [
+              "UNITCLASS_DISEASED_CORPSE"
+            ],
+            "iNumFreeUnits": [
+              "2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "iPopulationChange": [
+              "-2"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "3"
+            ],
+            "PrereqAlignment": [
+              "ALIGNMENT_EVIL"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_DEATH"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_WINDS_FROM_HELL",
+      "allChoices": [
+        "EVENT_WINDS_FROM_HELL_1",
+        "EVENT_WINDS_FROM_HELL_2",
+        "EVENT_WINDS_FROM_HELL_3"
+      ],
+      "acChoices": [
+        "EVENT_WINDS_FROM_HELL_2"
+      ],
+      "criteria": {
+        "weight": 100,
+        "percentGamesActive": 100,
+        "minAC": 20,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": "TECH_KNOWLEDGE_OF_THE_ETHER",
+        "city": true,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [
+          "IMPROVEMENT_WINDMILL"
+        ],
+        "bonuses": [],
+        "python": [],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_WINDS_FROM_HELL_1",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_WINDS_FROM_HELL_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WINDS_FROM_HELL_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "900"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_AIR"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WINDS_FROM_HELL_2",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_WINDS_FROM_HELL_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WINDS_FROM_HELL_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ],
+            "PrereqStateReligion": [
+              "RELIGION_THE_ASHEN_VEIL"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_WINDS_FROM_HELL_3",
+          "acDelta": 0,
+          "fields": {
+            "Type": [
+              "EVENT_WINDS_FROM_HELL_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_WINDS_FROM_HELL_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "ImprovementType": [
+              "IMPROVEMENT_WINDMILL"
+            ],
+            "iImprovementChange": [
+              "-1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "100"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "EVENTTRIGGER_HAUNTED_CASTLE",
+      "allChoices": [
+        "EVENT_HAUNTED_CASTLE_1",
+        "EVENT_HAUNTED_CASTLE_2",
+        "EVENT_HAUNTED_CASTLE_3",
+        "EVENT_HAUNTED_CASTLE_4"
+      ],
+      "acChoices": [
+        "EVENT_HAUNTED_CASTLE_1",
+        "EVENT_HAUNTED_CASTLE_2",
+        "EVENT_HAUNTED_CASTLE_3",
+        "EVENT_HAUNTED_CASTLE_4"
+      ],
+      "criteria": {
+        "weight": 100,
+        "percentGamesActive": 75,
+        "minAC": 0,
+        "minPopulation": 0,
+        "minTreasury": 0,
+        "prereqTech": "TECH_KNOWLEDGE_OF_THE_ETHER",
+        "city": false,
+        "plots": 1,
+        "units": 0,
+        "buildings": 0,
+        "terrain": [],
+        "features": [],
+        "improvements": [
+          "IMPROVEMENT_FORT",
+          "IMPROVEMENT_CASTLE"
+        ],
+        "bonuses": [],
+        "python": [
+          "canTriggerPlotEmpty"
+        ],
+        "civilizations": [],
+        "buildingClass": [],
+        "recurring": false
+      },
+      "choices": [
+        {
+          "id": "EVENT_HAUNTED_CASTLE_1",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_HAUNTED_CASTLE_1"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HAUNTED_CASTLE_1"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "UnitClass": [
+              "UNITCLASS_SPECTRE"
+            ],
+            "iNumFreeUnits": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "1000"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_DEATH"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HAUNTED_CASTLE_2",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_HAUNTED_CASTLE_2"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HAUNTED_CASTLE_2"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "900"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_SPIRIT"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HAUNTED_CASTLE_3",
+          "acDelta": -1,
+          "fields": {
+            "Type": [
+              "EVENT_HAUNTED_CASTLE_3"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HAUNTED_CASTLE_3"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "900"
+            ],
+            "iGlobalCounter": [
+              "-1"
+            ],
+            "PrereqBonus": [
+              "BONUS_MANA_LIFE"
+            ]
+          }
+        },
+        {
+          "id": "EVENT_HAUNTED_CASTLE_4",
+          "acDelta": 1,
+          "fields": {
+            "Type": [
+              "EVENT_HAUNTED_CASTLE_4"
+            ],
+            "Description": [
+              "TXT_KEY_EVENT_HAUNTED_CASTLE_4"
+            ],
+            "Help": [
+              "TXT_KEY_EVENT_HAUNTED_CASTLE_HELP_4"
+            ],
+            "bPickCity": [
+              "1"
+            ],
+            "iMaxNumReligions": [
+              "-1"
+            ],
+            "PythonCallback": [
+              "doHauntedCastle4"
+            ],
+            "Button": [
+              ",Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5"
+            ],
+            "iAIValue": [
+              "100"
+            ],
+            "iGlobalCounter": [
+              "1"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
