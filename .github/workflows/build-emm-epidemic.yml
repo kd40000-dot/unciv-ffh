@@ -1,0 +1,51 @@
+name: Build EMM epidemic engine test APK
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/patch_unciv_health.py'
+      - 'tools/patch_emm_epidemic_damage.py'
+      - 'tools/verify_emm_epidemic_damage.py'
+      - '.github/workflows/build-emm-epidemic.yml'
+permissions:
+  contents: read
+jobs:
+  android-epidemic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout pinned Unciv source
+        uses: actions/checkout@v4
+        with:
+          repository: yairm210/Unciv
+          ref: fce8c9895f604be0e26b4213f8692b7356cbe4b8
+          path: upstream-unciv
+          persist-credentials: false
+      - name: Test idempotent epidemic engine patch
+        run: python3 tools/verify_emm_epidemic_damage.py
+      - name: Generate health and event engine
+        run: |
+          python3 tools/patch_unciv_health.py upstream-unciv
+          python3 tools/patch_emm_epidemic_damage.py upstream-unciv
+      - name: Check generated Kotlin changes
+        run: |
+          grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
+          cd upstream-unciv
+          git diff --check
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v4
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Compile Android test build
+        working-directory: upstream-unciv
+        run: ./gradlew :android:assembleDebug --no-daemon --stacktrace
+      - name: Publish test APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: EMM-Epidemic-Engine-Debug
+          path: upstream-unciv/android/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14
