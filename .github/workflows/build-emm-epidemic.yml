@@ -8,6 +8,7 @@ on:
       - 'tools/patch_emm_default_races.py'
       - 'tools/patch_emm_typed_damage.py'
       - 'tools/patch_emm_defense_context.py'
+      - 'tools/patch_emm_typed_battle.py'
       - 'docs/data/emm-typed-combat-strength.json'
       - 'docs/data/emm-unit-defense.json'
       - 'docs/data/emm-typed-resistances.json'
@@ -37,9 +38,11 @@ jobs:
           python3 tools/patch_emm_default_races.py upstream-unciv
           python3 tools/patch_emm_typed_damage.py upstream-unciv
           python3 tools/patch_emm_defense_context.py upstream-unciv
+          python3 tools/patch_emm_typed_battle.py upstream-unciv
       - name: Check generated Kotlin changes
         run: |
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
+          grep -q 'private fun emmTypedStrengthMultiplier' upstream-unciv/core/src/com/unciv/logic/battle/BattleDamage.kt
           grep -q 'private fun sourceDefense(unit: MapUnit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
           grep -q 'object EmmTypedDamage' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
           grep -q 'EMM CIVILIZATION_INFERNAL DefaultRace' upstream-unciv/core/src/com/unciv/logic/civilization/managers/UnitManager.kt
