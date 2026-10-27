@@ -23,7 +23,7 @@ with TemporaryDirectory() as dirname:
     assert "fun applyToUnit(" in kotlin
     assert "EmmCityDefense.defenseModifier(" in kotlin
     assert "occupied = city.isInResistance()" in kotlin
-    assert "buildingDefense = city.getStrength().toInt()" in kotlin
+    assert "buildingDefense = city.getStrength().toInt()" in kotlin  # Before persistent-defense postpatch
     assert "typedResistance = resistance(unit.promotions.promotions, type)" in kotlin
     assert "if (amount > 0) unit.takeDamage(amount)" in kotlin
     assert "random.nextInt(initialDamage) + random.nextInt(initialDamage)" in kotlin
