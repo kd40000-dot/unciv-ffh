@@ -152,7 +152,7 @@
     {
       "id": "F08",
       "title": "Combat system",
-      "percent": 32,
+      "percent": 35,
       "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4UnitInfos.xml",
@@ -162,13 +162,17 @@
         "docs/combat-equipment-to-magic-plan.md",
         "docs/data/emm-typed-resistances.json",
         "tools/patch_emm_typed_damage.py",
-        "tools/verify_emm_typed_damage.py"
+        "tools/verify_emm_typed_damage.py",
+        "docs/data/emm-unit-defense.json",
+        "docs/data/emm-typed-combat-strength.json",
+        "tools/patch_emm_defense_context.py",
+        "tools/verify_emm_defense_context.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Source implementation review: generated typed-damage API applies HP changes, accumulates current promotion resistances, and clamps resistance/damage limits. No in-game QA, and Kotlin compile not yet confirmed for latest patch.",
-      "remainingDifferences": "Typed Death direct damage now reaches unit HP through source-derived promotion resistance and two-roll formula, with event-specific RNG. Base defense/level and city-defense input adapters remain approximate; ordinary combat strength and typed melee interactions, collateral, first strikes and withdrawal are incomplete.",
+      "remainingDifferences": "Original EMM base defensive strength extracted for 299 units and offensive typed combat components for 96 units and 14 promotions; connected to typed direct-damage defense inputs when unit identities match. EMM promotion-derived base strength modifiers, exact XP level, city defense, battle strength hooks and the full 355-spell ecosystem remain outstanding.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "Implementation reassessment: 30→32 for live typed HP damage and EMM promotion resistance tables; no combat-wide parity claimed"
+      "updatedBy": "2026-10-27: 32→35; source-derived EMM base defense and typed combat component adapter into typed damage"
     },
     {
       "id": "F09",
@@ -247,7 +251,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 40,
+      "percent": 42,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -280,7 +284,11 @@
         "tools/verify_emm_nonliving_races.py",
         "docs/data/emm-typed-resistances.json",
         "tools/patch_emm_typed_damage.py",
-        "tools/verify_emm_typed_damage.py"
+        "tools/verify_emm_typed_damage.py",
+        "docs/data/emm-unit-defense.json",
+        "docs/data/emm-typed-combat-strength.json",
+        "tools/patch_emm_defense_context.py",
+        "tools/verify_emm_defense_context.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
@@ -288,9 +296,9 @@
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
       "verification": "Implementation-only reassessment: underlying city health, epidemic formulas, one-shot Armageddon dispatch, typed unit HP effects, nonliving races and limited cure/transmission hooks exist in code. Latest generated Android build not confirmed; gameplay verification deferred by project decision.",
-      "remainingDifferences": "City health and sickness calculations, persisted epidemic counters, disease transmission/cures, source-derived dynamic living classification, nine nonliving race definitions, innate assignment to eight extant units, and Infernal default-race hook implemented. Blight and Pestilence both dispatch typed Death damage to eligible living units with independent event RNG. Exact defensive strength/level/city modifiers, complete EMM racial roster/world/animal exceptions, many cures and health interactions, and full epidemic lifecycle remain incomplete; source-specific event choice coverage still limited.",
+      "remainingDifferences": "Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "Cumulative health implementation reassessment: 35→40, based on typed epidemic HP damage, dynamic living status and race assignment; not gameplay QA"
+      "updatedBy": "2026-10-27: 40→42; epidemic damage defense now sources EMM unit and promotion combat data"
     },
     {
       "id": "F14",
