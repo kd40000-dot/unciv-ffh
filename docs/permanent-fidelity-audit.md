@@ -64,11 +64,11 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.88% (14.9% rounded) equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **15.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Current scoring policy — implementation completeness (2026-10-26)
 
-**Current equal-weight implementation estimate: 14.88% (14.9% rounded).** The individual percentage
+**Current equal-weight implementation estimate: 15.0%.** The individual percentage
 scores rate the breadth and source fidelity of implemented gameplay behavior,
 without discounting the score simply because the player has not yet tested it
 in-game. Compile/static results and user-tested outcomes are retained as
@@ -101,6 +101,13 @@ nor reduces these implementation-only percentage estimates.
 - Added pinned EMM reference JSON, a generator post-patch, Android build workflow integration and idempotent source-mapping regression checks. Separated Blight/Pestilence RNG streams and restored epidemic patch idempotence.
 - **Overall 25-system average: 14.68% → 14.88%**, rounded **14.9%**. This is implementation coverage, not gameplay verification.
 - **Still incomplete:** Exact EMM level persistence, city defensive modifier, promotions changing base defense, full typed combat in normal battles and source-mapped spells/terrain damage. CI compilation and player testing not confirmed for this generated patch.
+
+### 2026-10-27 — Typed damage reaches ordinary combat strength
+
+- **F08 combat 35% → 38%.** An EMM-scoped generated `BattleDamage.kt` hook now scales both attacker and defender combat strengths using source unit/promotion typed components and current opponent typed resistances. This changes ordinary combat's strength ratio rather than applying erroneous additional direct HP damage.
+- CI gained an idempotent fixture regression for both directions; the Android engine build workflow applies the new patch after generating the typed resistance and defense libraries.
+- **Overall equal-weight average: 14.88% → 15.0%.** No player verification was counted. Android compilation remains unconfirmed for this integration.
+- This is not exact Civ IV battle resolution: Unciv ratio/damage math, unit-name matching, exact base modifiers, level and city defense remain pending.
 
 ## Change history
 
