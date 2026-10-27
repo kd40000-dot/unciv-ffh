@@ -32,8 +32,8 @@ object EmmArmageddonEvents {
     for _ in range(2):
         subprocess.run([sys.executable, str(upstream), str(root)], check=True)
     result = kt.read_text()
-    assert result.count("damageLivingUnits(game)") == 2
-    assert result.count("private fun damageLivingUnits(game: GameInfo)") == 1
+    assert result.count('damageLivingUnits(game, "Blight")') == 1\n    assert result.count('damageLivingUnits(game, "Pestilence")') == 1\n    assert '"EMM.Epidemic." + event' in result
+    assert result.count("private fun damageLivingUnits(game: GameInfo, event: String)") == 1
     assert "EmmTypedDamage.applyToUnit(" in result
     assert 'type = "DAMAGE_DEATH"' in result
     assert "unit.takeDamage(25)" not in result
