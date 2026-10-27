@@ -11,7 +11,7 @@ import sys
 root = Path(sys.argv[1] if len(sys.argv) > 1 else "upstream-unciv")
 path = root / "core/src/com/unciv/logic/city/EmmArmageddonEvents.kt"
 code = path.read_text()
-if "private fun damageLivingUnits(game: GameInfo)" in code:
+if "private fun damageLivingUnits(game: GameInfo, event: String)" in code:
     print("EMM epidemic unit damage already present")
     sys.exit(0)
 blight = """            city.cityStats.update()
