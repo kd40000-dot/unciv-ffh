@@ -21,7 +21,7 @@ blight = """            city.cityStats.update()
     fun firePestilence(game: GameInfo) {"""
 patched = """            city.cityStats.update()
         }
-        damageLivingUnits(game)
+        damageLivingUnits(game, "Blight")
     }
 
     // Pinned EMM CvUnit::isAlive: m_iAlive == 0.
@@ -48,7 +48,7 @@ patched = """            city.cityStats.update()
     }
     // Source callbacks specify 25 DAMAGE_DEATH, damage cap 100.
     // Typed Death resistance is still outstanding.
-    private fun damageLivingUnits(game: GameInfo) {
+    private fun damageLivingUnits(game: GameInfo, event: String) {
         for (civ in game.civilizations)
             for (unit in civ.units.getCivUnits().toList()) {
                 if (!isEmmLiving(unit)) continue
@@ -57,7 +57,7 @@ patched = """            city.cityStats.update()
                     type = "DAMAGE_DEATH",
                     initialDamage = 25,
                     damageLimit = 100,
-                    random = civ.state.stateBasedRandom("EMM.Epidemic.Death." + game.turns + "." + unit.id)
+                    random = civ.state.stateBasedRandom("EMM.Epidemic." + event + "." + game.turns + "." + unit.id)
                 )
             }
     }
@@ -73,11 +73,11 @@ pestilence = """            EmmCityEpidemics.pestilence(city, random, goodBuildi
 revised = """            EmmCityEpidemics.pestilence(city, random, goodBuildingHealth)
             city.cityStats.update()
         }
-        damageLivingUnits(game)
+        damageLivingUnits(game, "Blight")
     }
 }"""
 assert code.count(pestilence) == 1, "pestilence anchor mismatch"
 code = code.replace(pestilence, revised)
 path.write_text(code)
-assert code.count("damageLivingUnits(game)") == 2
+assert code.count("damageLivingUnits(game, "Pestilence")") == 2
 print("Patched both epidemic callbacks with shared unit damage")
