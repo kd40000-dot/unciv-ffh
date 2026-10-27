@@ -152,7 +152,7 @@
     {
       "id": "F08",
       "title": "Combat system",
-      "percent": 30,
+      "percent": 32,
       "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4UnitInfos.xml",
@@ -165,10 +165,10 @@
         "tools/verify_emm_typed_damage.py"
       ],
       "gameplayConfirmed": [],
-      "verification": "Further source-equivalence and in-game regression testing required",
-      "remainingDifferences": "Blight/Pestilence now call typed damage against unit HP (Death resistance plus double-roll); base strength / approximate level / zero city-defense are provisional adapters. Battle damage, damaging spells, promotion damage and environmental effects are not yet routed through the new API. Source-backed additive typed resistance registry and EMM two-roll direct-damage math kernel now generated in Android workflow, but not yet wired to battle, epidemic damage, context-specific defense/level modifiers or status effects. Native combat and some modifiers exist; first strikes, resistance, typed damage, collateral and withdrawal incomplete.",
+      "verification": "Source implementation review: generated typed-damage API applies HP changes, accumulates current promotion resistances, and clamps resistance/damage limits. No in-game QA, and Kotlin compile not yet confirmed for latest patch.",
+      "remainingDifferences": "Typed Death direct damage now reaches unit HP through source-derived promotion resistance and two-roll formula, with event-specific RNG. Base defense/level and city-defense input adapters remain approximate; ordinary combat strength and typed melee interactions, collateral, first strikes and withdrawal are incomplete.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "2026-10-27: epidemic typed Death damage wired to real unit HP; broader damage dispatch outstanding"
+      "updatedBy": "Implementation reassessment: 30→32 for live typed HP damage and EMM promotion resistance tables; no combat-wide parity claimed"
     },
     {
       "id": "F09",
@@ -247,7 +247,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 35,
+      "percent": 40,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -287,10 +287,10 @@
         "2026-10-26 screenshot: city health totals display (3/2, net +1), but icon rendered as an empty white square and Herbalist displayed text-only health; UI regression confirmed.",
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
-      "verification": "Source-informed reusable event world actions: spawn matching class unit with free promotions, rollback on placement failure; conditional named-tile-improvement removal; saved unit/tile selection across game clones. War Games disband/XP outcomes and source-ac; Winds from Hell Windmill destruction; Doviello Necro-Cannibalism Warrior-class unit and native Cannibalize on-kill +10 HP effect. CI ruleset validation passed, Kotlin engine compilation passed; Android packaging/player tests pending. In-game checks deliberately deferred; scores concern source implementation completeness only.",
-      "remainingDifferences": "Blight/Pestilence now call typed damage against unit HP (Death resistance plus double-roll); base strength / approximate level / zero city-defense are provisional adapters. Battle damage, damaging spells, promotion damage and environmental effects are not yet routed through the new API. Source-backed additive typed resistance registry and EMM two-roll direct-damage math kernel now generated in Android workflow, but not yet wired to battle, epidemic damage, context-specific defense/level modifiers or status effects. Nine source nonliving promotions added and eight currently mapped unit types receive innate promotions; Infernal creation-time default Demon assignment added. Remaining source unit roster (78 mapping entries total), EMM world-unit/animal exceptions, exact promotion transformations, typed Death resistance, and broader health/disease mechanics remain incomplete. 10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Provisional raw Blight/Pestilence unit damage exists as an optional post-patcher, but full typed Death damage, source-derived bMechanized/bNotAlive living classification now implemented in generated epidemic handler; translated unit-name parity and full promotion availability still require static audit, build integration proof and remaining source mechanics are outstanding.",
+      "verification": "Implementation-only reassessment: underlying city health, epidemic formulas, one-shot Armageddon dispatch, typed unit HP effects, nonliving races and limited cure/transmission hooks exist in code. Latest generated Android build not confirmed; gameplay verification deferred by project decision.",
+      "remainingDifferences": "City health and sickness calculations, persisted epidemic counters, disease transmission/cures, source-derived dynamic living classification, nine nonliving race definitions, innate assignment to eight extant units, and Infernal default-race hook implemented. Blight and Pestilence both dispatch typed Death damage to eligible living units with independent event RNG. Exact defensive strength/level/city modifiers, complete EMM racial roster/world/animal exceptions, many cures and health interactions, and full epidemic lifecycle remain incomplete; source-specific event choice coverage still limited.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "2026-10-27: epidemic typed Death damage wired to real unit HP; broader damage dispatch outstanding"
+      "updatedBy": "Cumulative health implementation reassessment: 35→40, based on typed epidemic HP damage, dynamic living status and race assignment; not gameplay QA"
     },
     {
       "id": "F14",
