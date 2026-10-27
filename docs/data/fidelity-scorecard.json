@@ -152,7 +152,7 @@
     {
       "id": "F08",
       "title": "Combat system",
-      "percent": 39,
+      "percent": 40,
       "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4UnitInfos.xml",
@@ -175,12 +175,16 @@
         "tools/patch_emm_unit_levels.py",
         "tools/verify_emm_unit_levels.py",
         "tools/patch_emm_city_defense_state.py",
-        "tools/verify_emm_city_defense_state.py"
+        "tools/verify_emm_city_defense_state.py",
+        "docs/data/emm-culture-defense.json",
+        "tools/patch_emm_culture_defense.py",
+        "tools/patch_emm_culture_progression.py",
+        "tools/verify_emm_culture_defense.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Both regular attack and defender/counterattack paths wired in generated Kotlin and source-transform regression created; CI configured but successful run not verified. Implementation estimate excludes gameplay verification.",
-      "remainingDifferences": "City-defense model now stores dedicated EMM defense/bombardment fields, serialized and cloned; removed false equivalence with Unciv's city-strength stat. Source gameplay rules populating these fields are still pending, so complete in-play defensive effects remain unimplemented. Live unit-in-city lookup and resistance/occupation suppression now feed typed direct damage using EmmCityDefense; city.getStrength is only an Unciv built-strength proxy, NOT source-exact CvCity buildingDefense. Culture, owner, ranged defense, bombardment and correct EMM building-defense values still unimplemented. Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
-      "lastReviewed": "2026-10-27",
+      "remainingDifferences": "EMM's seven culture-defense tiers and speed-specific thresholds now advance from saved lifetime culture and feed the natural-defense calculation. Building/owner/ranged defense and bombardment remain unpopulated, and the latest generated build is not yet compiled. City-defense model now stores dedicated EMM defense/bombardment fields, serialized and cloned; removed false equivalence with Unciv's city-strength stat. Source gameplay rules populating these fields are still pending, so complete in-play defensive effects remain unimplemented. Live unit-in-city lookup and resistance/occupation suppression now feed typed direct damage using EmmCityDefense; city.getStrength is only an Unciv built-strength proxy, NOT source-exact CvCity buildingDefense. Culture, owner, ranged defense, bombardment and correct EMM building-defense values still unimplemented. Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
+      "lastReviewed": "2026-10-28",
       "updatedBy": "2026-10-27: replaced misleading city-strength proxy with persistent EMM defense state; no fidelity increase without live source effects."
     },
     {
@@ -262,7 +266,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 43,
+      "percent": 44,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -305,7 +309,11 @@
         "tools/patch_emm_unit_levels.py",
         "tools/verify_emm_unit_levels.py",
         "tools/patch_emm_city_defense_state.py",
-        "tools/verify_emm_city_defense_state.py"
+        "tools/verify_emm_city_defense_state.py",
+        "docs/data/emm-culture-defense.json",
+        "tools/patch_emm_culture_defense.py",
+        "tools/patch_emm_culture_progression.py",
+        "tools/verify_emm_culture_defense.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
@@ -313,8 +321,8 @@
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
       "verification": "Implementation-only reassessment: underlying city health, epidemic formulas, one-shot Armageddon dispatch, typed unit HP effects, nonliving races and limited cure/transmission hooks exist in code. Latest generated Android build not confirmed; gameplay verification deferred by project decision.",
-      "remainingDifferences": "City-defense model now stores dedicated EMM defense/bombardment fields, serialized and cloned; removed false equivalence with Unciv's city-strength stat. Source gameplay rules populating these fields are still pending, so complete in-play defensive effects remain unimplemented. Live unit-in-city lookup and resistance/occupation suppression now feed typed direct damage using EmmCityDefense; city.getStrength is only an Unciv built-strength proxy, NOT source-exact CvCity buildingDefense. Culture, owner, ranged defense, bombardment and correct EMM building-defense values still unimplemented. Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
-      "lastReviewed": "2026-10-27",
+      "remainingDifferences": "EMM's seven culture-defense tiers and speed-specific thresholds now advance from saved lifetime culture and feed the natural-defense calculation. Building/owner/ranged defense and bombardment remain unpopulated, and the latest generated build is not yet compiled. City-defense model now stores dedicated EMM defense/bombardment fields, serialized and cloned; removed false equivalence with Unciv's city-strength stat. Source gameplay rules populating these fields are still pending, so complete in-play defensive effects remain unimplemented. Live unit-in-city lookup and resistance/occupation suppression now feed typed direct damage using EmmCityDefense; city.getStrength is only an Unciv built-strength proxy, NOT source-exact CvCity buildingDefense. Culture, owner, ranged defense, bombardment and correct EMM building-defense values still unimplemented. Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
+      "lastReviewed": "2026-10-28",
       "updatedBy": "2026-10-27: replaced misleading city-strength proxy with persistent EMM defense state; no fidelity increase without live source effects."
     },
     {
