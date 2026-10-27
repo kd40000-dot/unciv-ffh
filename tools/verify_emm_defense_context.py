@@ -23,6 +23,9 @@ with tempfile.TemporaryDirectory() as temp:
     kotlin=(directory/"EmmTypedDamage.kt").read_text()
     assert kotlin.count("private fun sourceDefense(unit: MapUnit)") == 1
     assert "val effectiveBaseDefense = sourceDefense(unit)" in kotlin
+    assert "fun resistedCombatStrength(" in kotlin
+    assert "scaled -= component * resist" in kotlin
+    assert "fun unitTypedComponents(unit: MapUnit)" in kotlin
     assert "emmSourcePromotionCombat[key].orEmpty().values.sum()" in kotlin
     assert '"UNIT_MUD_GOLEM" to 2' in kotlin
     assert '"UNIT_ANGEL" to mapOf("DAMAGE_HOLY" to 1)' in kotlin
