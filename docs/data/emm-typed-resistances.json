@@ -1,0 +1,143 @@
+{
+  "sourceCommit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "promotionResistances": {
+    "PROMOTION_ANGEL": {
+      "DAMAGE_DEATH": 50,
+      "DAMAGE_FIRE": 20,
+      "DAMAGE_HOLY": 100,
+      "DAMAGE_POISON": 100
+    },
+    "PROMOTION_BLESSED": {
+      "DAMAGE_FIRE": 15
+    },
+    "PROMOTION_BRONZE_WEAPONS": {
+      "DAMAGE_LIGHTNING": -25
+    },
+    "PROMOTION_COLD_RESISTANCE": {
+      "DAMAGE_COLD": 50
+    },
+    "PROMOTION_DARK_ELF": {
+      "DAMAGE_COLD": -25
+    },
+    "PROMOTION_DEMON": {
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_FIRE": 20,
+      "DAMAGE_HOLY": -25,
+      "DAMAGE_POISON": 100,
+      "DAMAGE_UNHOLY": 100
+    },
+    "PROMOTION_DWARF": {
+      "DAMAGE_POISON": 25
+    },
+    "PROMOTION_ELEMENTAL": {
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_POISON": 100
+    },
+    "PROMOTION_ELF": {
+      "DAMAGE_COLD": -25
+    },
+    "PROMOTION_FIRE_RESISTANCE": {
+      "DAMAGE_FIRE": 50
+    },
+    "PROMOTION_FROSTLING": {
+      "DAMAGE_COLD": 100,
+      "DAMAGE_FIRE": -50
+    },
+    "PROMOTION_GODSLAYER": {
+      "DAMAGE_COLD": 100,
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_FIRE": 100,
+      "DAMAGE_HOLY": 100,
+      "DAMAGE_LIGHTNING": 100,
+      "DAMAGE_POISON": 100,
+      "DAMAGE_UNHOLY": 100
+    },
+    "PROMOTION_GOLEM": {
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_POISON": 100
+    },
+    "PROMOTION_ILLUSION": {
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_POISON": 100
+    },
+    "PROMOTION_IMMUNE_COLD": {
+      "DAMAGE_COLD": 100
+    },
+    "PROMOTION_IMMUNE_FIRE": {
+      "DAMAGE_FIRE": 100
+    },
+    "PROMOTION_IMMUNE_LIGHTNING": {
+      "DAMAGE_LIGHTNING": 100
+    },
+    "PROMOTION_IRON_WEAPONS": {
+      "DAMAGE_LIGHTNING": -25
+    },
+    "PROMOTION_JADE_TORC": {
+      "DAMAGE_POISON": 100
+    },
+    "PROMOTION_LIGHTNING_RESISTANCE": {
+      "DAMAGE_LIGHTNING": 50
+    },
+    "PROMOTION_LIZARDMAN": {
+      "DAMAGE_POISON": 10
+    },
+    "PROMOTION_MAGIC_IMMUNE": {
+      "DAMAGE_COLD": 50,
+      "DAMAGE_DEATH": 50,
+      "DAMAGE_FIRE": 50,
+      "DAMAGE_LIGHTNING": 50
+    },
+    "PROMOTION_MAGIC_RESISTANCE": {
+      "DAMAGE_COLD": 20,
+      "DAMAGE_DEATH": 20,
+      "DAMAGE_FIRE": 20,
+      "DAMAGE_LIGHTNING": 20
+    },
+    "PROMOTION_NOMAD": {
+      "DAMAGE_FIRE": 5
+    },
+    "PROMOTION_ORC": {
+      "DAMAGE_FIRE": 25
+    },
+    "PROMOTION_POISON_RESISTANCE": {
+      "DAMAGE_POISON": 50
+    },
+    "PROMOTION_SHEUT_STONE": {
+      "DAMAGE_DEATH": 25,
+      "DAMAGE_HOLY": -10
+    },
+    "PROMOTION_STONESKIN": {
+      "DAMAGE_COLD": 50,
+      "DAMAGE_DEATH": 50,
+      "DAMAGE_FIRE": 50,
+      "DAMAGE_HOLY": 50,
+      "DAMAGE_LIGHTNING": 50,
+      "DAMAGE_POISON": 50,
+      "DAMAGE_UNHOLY": 50
+    },
+    "PROMOTION_SUNDERED": {
+      "DAMAGE_UNHOLY": 25
+    },
+    "PROMOTION_TEMPERANCE": {
+      "DAMAGE_HOLY": 35,
+      "DAMAGE_UNHOLY": 35
+    },
+    "PROMOTION_UNDEAD": {
+      "DAMAGE_DEATH": 100,
+      "DAMAGE_HOLY": -50,
+      "DAMAGE_POISON": 100,
+      "DAMAGE_UNHOLY": 50
+    },
+    "PROMOTION_UNHOLY_TAINT": {
+      "DAMAGE_UNHOLY": 25
+    },
+    "PROMOTION_VULNERABLE_TO_FIRE": {
+      "DAMAGE_FIRE": -50
+    },
+    "PROMOTION_WINTERBORN": {
+      "DAMAGE_COLD": 20,
+      "DAMAGE_FIRE": -10
+    }
+  },
+  "unitResistances": {}
+}
