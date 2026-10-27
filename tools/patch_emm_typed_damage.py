@@ -37,6 +37,33 @@ object EmmTypedDamage {
         promotions.sumOf { sourcePromotionResistances[it]?.get(type) ?: 0 }
             .coerceIn(-100, 100)
 
+    /**
+     * Apply source-typed direct damage to a real Unciv unit.
+     * In EMM, level is XP-derived and defense is baseCombatStrDefense().
+     * Current Unciv adapter uses base strength and earned promotion count;
+     * city defense remains zero until the full EMM city-defense adapter.
+     */
+    fun applyToUnit(
+        unit: MapUnit,
+        type: String,
+        initialDamage: Int,
+        damageLimit: Int,
+        random: Random
+    ): Int {
+        val amount = rollDamage(
+            initialDamage = initialDamage,
+            previousDamage = 100 - unit.health,
+            damageLimit = damageLimit,
+            defenseStrength = unit.baseUnit.strength,
+            level = 1 + unit.promotions.numberOfPromotions,
+            cityDefense = 0,
+            typedResistance = resistance(unit.promotions.promotions, type),
+            random = random
+        )
+        if (amount > 0) unit.takeDamage(amount)
+        return amount
+    }
+
     fun rollDamage(
         initialDamage: Int,
         previousDamage: Int,
