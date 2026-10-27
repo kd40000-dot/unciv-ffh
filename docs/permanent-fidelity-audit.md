@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **15.0% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **15.12% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Current scoring policy — implementation completeness (2026-10-26)
 
@@ -108,6 +108,14 @@ nor reduces these implementation-only percentage estimates.
 - CI gained an idempotent fixture regression for both directions; the Android engine build workflow applies the new patch after generating the typed resistance and defense libraries.
 - **Overall equal-weight average: 14.88% → 15.0%.** No player verification was counted. Android compilation remains unconfirmed for this integration.
 - This is not exact Civ IV battle resolution: Unciv ratio/damage math, unit-name matching, exact base modifiers, level and city defense remain pending.
+
+### 2026-10-27 — Persistent EMM levels and city-defense formula
+
+- Added a serialized `MapUnit.emmLevel` field updated when a genuine purchased promotion is gained and copied during unit stat/upgrade copying, instead of equating level to all innate and free promotions. Typed direct damage now reads this field.
+- Ported `CvCity::getTotalDefense` and `CvCity::getDefenseModifier` exact arithmetic to a reusable Kotlin kernel, including additive building/natural/owner/ranged defense, occupation suppression, and bombardment damage scaling.
+- Added idempotent source-transform tests and Android build generation steps for both systems.
+- F08 **38→39**, F09 **20→21**, F13 **42→43**; equal-weight **15.00→15.12%**. Implementation-only estimates. No gameplay verification performed.
+- Remaining barriers to *full* source fidelity: many EMM level assignment/upgrade pathways, city natural-defense culture levels, building/owner/ranged defenses, bombardment state, city capture/occupation data, and actual runtime city-defense binding into `EmmTypedDamage`. Successful generated Android compilation has not yet been independently confirmed.
 
 ## Change history
 
