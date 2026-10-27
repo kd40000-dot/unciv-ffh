@@ -21,6 +21,9 @@ with TemporaryDirectory() as dirname:
     kotlin=(root/"core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt").read_text()
     assert "object EmmTypedDamage" in kotlin
     assert "fun applyToUnit(" in kotlin
+    assert "EmmCityDefense.defenseModifier(" in kotlin
+    assert "occupied = city.isInResistance()" in kotlin
+    assert "buildingDefense = city.getStrength().toInt()" in kotlin
     assert "typedResistance = resistance(unit.promotions.promotions, type)" in kotlin
     assert "if (amount > 0) unit.takeDamage(amount)" in kotlin
     assert "random.nextInt(initialDamage) + random.nextInt(initialDamage)" in kotlin
