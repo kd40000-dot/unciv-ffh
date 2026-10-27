@@ -54,10 +54,21 @@ object EmmTypedDamage {
         // Unciv strength is the nearest available base-defense value; full
         // typed combat component and EMM level persistence remain pending.
         val effectiveBaseDefense = unit.baseUnit.strength.coerceAtLeast(0)
-        val cityDefense = if (unit.getTile().isCityCenter()) {
-            // Do not fabricate Civ IV cityDefenseModifier from Unciv's
-            // incompatible defensive bonuses. Keep this gap explicit.
-            0
+        val tile = unit.getTile()
+        val city = if (tile.isCityCenter()) tile.getCity() else null
+        val cityDefense = if (city != null && city.civ == unit.civ) {
+            // These two runtime inputs are exact Unciv state (built defenses,
+            // resistance). Civ IV culture/ranged/owner modifiers and bombardment
+            // state still require their own EMM source integrations.
+            com.unciv.logic.city.EmmCityDefense.defenseModifier(
+                buildingDefense = city.getStrength().toInt(),
+                naturalDefense = 0,
+                ownerDefense = 0,
+                rangedDefense = 0,
+                defenseDamage = 0,
+                maximumCityDefenseDamage = 100,
+                occupied = city.isInResistance()
+            )
         } else 0
         val amount = rollDamage(
             initialDamage = initialDamage,
