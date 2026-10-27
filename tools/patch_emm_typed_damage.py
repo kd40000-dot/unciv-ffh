@@ -50,13 +50,22 @@ object EmmTypedDamage {
         damageLimit: Int,
         random: Random
     ): Int {
+        // EMM baseCombatStrDefense = max(0, base defense + typed combat components).
+        // Unciv strength is the nearest available base-defense value; full
+        // typed combat component and EMM level persistence remain pending.
+        val effectiveBaseDefense = unit.baseUnit.strength.coerceAtLeast(0)
+        val cityDefense = if (unit.getTile().isCityCenter()) {
+            // Do not fabricate Civ IV cityDefenseModifier from Unciv's
+            // incompatible defensive bonuses. Keep this gap explicit.
+            0
+        } else 0
         val amount = rollDamage(
             initialDamage = initialDamage,
             previousDamage = 100 - unit.health,
             damageLimit = damageLimit,
-            defenseStrength = unit.baseUnit.strength,
-            level = 1 + unit.promotions.numberOfPromotions,
-            cityDefense = 0,
+            defenseStrength = effectiveBaseDefense,
+            level = unit.promotions.numberOfPromotions + 1,
+            cityDefense = cityDefense,
             typedResistance = resistance(unit.promotions.promotions, type),
             random = random
         )
