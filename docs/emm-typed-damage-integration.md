@@ -20,3 +20,20 @@ Pinned source: `bewlay/extramodmod@60b0ec3740083162aaab7bf8491761a54a65a610`, `C
 6. Confirm Android engine compilation and run static regressions. In-game verification is deliberately postponed until health is substantially complete.
 
 No fidelity percentage was increased for this partial integration.
+
+## 2026-10-27 live city context checkpoint
+
+The typed damage adapter now calls `EmmCityDefense.defenseModifier` when a
+unit stands in its owner's city center. Its `occupied` input is the live
+`City.isInResistance()` state. The current built-defense input is
+`City.getStrength().toInt()`, which is an **Unciv city-strength value** and
+not a proven equivalent of EMM's `CvCity::getBuildingDefense()`.
+
+Thus this wiring eliminates the unconditional zero-city-defense placeholder
+for many city garrisons, but it is **not** a faithful full city-defense port.
+EMM's natural culture-level defense, civilization modifiers, range defense,
+bombardment damage, and building-defense XML data have not yet been mapped
+into actual city state. These remain mandatory before source-parity claims.
+
+All live state integration is guarded by tile city-center and city owner,
+and occupation yields zero via the source formula.
