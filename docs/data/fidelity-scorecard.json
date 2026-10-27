@@ -271,7 +271,10 @@
         "tools/verify_emm_armageddon_events.py",
         "tools/patch_emm_epidemic_damage.py",
         ".github/workflows/build-emm-epidemic.yml",
-        "tools/verify_emm_epidemic_damage.py"
+        "tools/verify_emm_epidemic_damage.py",
+        "docs/data/emm-nonliving-races.json",
+        "tools/patch_emm_default_races.py",
+        "tools/verify_emm_nonliving_races.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
@@ -279,9 +282,9 @@
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
       "verification": "Source-informed reusable event world actions: spawn matching class unit with free promotions, rollback on placement failure; conditional named-tile-improvement removal; saved unit/tile selection across game clones. War Games disband/XP outcomes and source-ac; Winds from Hell Windmill destruction; Doviello Necro-Cannibalism Warrior-class unit and native Cannibalize on-kill +10 HP effect. CI ruleset validation passed, Kotlin engine compilation passed; Android packaging/player tests pending. In-game checks deliberately deferred; scores concern source implementation completeness only.",
-      "remainingDifferences": "10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Provisional raw Blight/Pestilence unit damage exists as an optional post-patcher, but full typed Death damage, source-derived bMechanized/bNotAlive living classification now implemented in generated epidemic handler; translated unit-name parity and full promotion availability still require static audit, build integration proof and remaining source mechanics are outstanding.",
+      "remainingDifferences": "Nine source nonliving promotions added and eight currently mapped unit types receive innate promotions; Infernal creation-time default Demon assignment added. Remaining source unit roster (78 mapping entries total), EMM world-unit/animal exceptions, exact promotion transformations, typed Death resistance, and broader health/disease mechanics remain incomplete. 10/23 EMM Armageddon-related event trigger families scheduled with restricted choices. Generic spawn helper currently only exposed for Doviello Necro-Cannibalism; other summons and their source promotions not yet ported. Windmill Machinery tech extra yields missing. Original EMM living-unit filter in War Games approximated, full Civ IV event random selection/dynamic prerequisites/AI choices and pending event in-game save/load testing missing. Provisional raw Blight/Pestilence unit damage exists as an optional post-patcher, but full typed Death damage, source-derived bMechanized/bNotAlive living classification now implemented in generated epidemic handler; translated unit-name parity and full promotion availability still require static audit, build integration proof and remaining source mechanics are outstanding.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "2026-10-27: source-derived CvUnit living counter, dynamic race promotions; typed Death damage pending"
+      "updatedBy": "2026-10-27: nonliving promotion catalog, eight innate assignments, Infernal default race hook"
     },
     {
       "id": "F14",
