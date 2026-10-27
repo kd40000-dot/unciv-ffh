@@ -170,9 +170,9 @@
       ],
       "gameplayConfirmed": [],
       "verification": "Source implementation review: generated typed-damage API applies HP changes, accumulates current promotion resistances, and clamps resistance/damage limits. No in-game QA, and Kotlin compile not yet confirmed for latest patch.",
-      "remainingDifferences": "Original EMM base defensive strength extracted for 299 units and offensive typed combat components for 96 units and 14 promotions; connected to typed direct-damage defense inputs when unit identities match. EMM promotion-derived base strength modifiers, exact XP level, city defense, battle strength hooks and the full 355-spell ecosystem remain outstanding.",
+      "remainingDifferences": "Shared typed combat-strength calculation now implements EMM's per-damage-type opponent resistance adjustment and unit/promotion component aggregation, but is not yet invoked by ordinary BattleDamage. Exact EMM level and city-defense modifiers still lack compatible runtime state. Original EMM base defensive strength extracted for 299 units and offensive typed combat components for 96 units and 14 promotions; connected to typed direct-damage defense inputs when unit identities match. EMM promotion-derived base strength modifiers, exact XP level, city defense, battle strength hooks and the full 355-spell ecosystem remain outstanding.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "2026-10-27: 32→35; source-derived EMM base defense and typed combat component adapter into typed damage"
+      "updatedBy": "Source-based typed attack strength/resistance helper implemented; no percentage increase until wired into ordinary combat"
     },
     {
       "id": "F09",
