@@ -264,7 +264,8 @@
     ],
     "promotions": [
       "March",
-      "Metal Weaponry"
+      "Metal Weaponry",
+      "Demon"
     ],
     "civilopediaText": [
       {
@@ -1866,6 +1867,9 @@
       {
         "text": "A simple Luchuirp construct shaped from earth and craft."
       }
+    ],
+    "promotions": [
+      "Golem"
     ]
   },
   {
@@ -1882,7 +1886,10 @@
         "text": "A Luchuirp construct animated to serve its makers."
       }
     ],
-    "uniques": []
+    "uniques": [],
+    "promotions": [
+      "Golem"
+    ]
   },
   {
     "name": "Luchuirp Dwarven Slinger",
@@ -1946,7 +1953,10 @@
         "text": "A durable Luchuirp machine built for heavy fighting."
       }
     ],
-    "requiredResource": "Iron"
+    "requiredResource": "Iron",
+    "promotions": [
+      "Golem"
+    ]
   },
   {
     "name": "Gargoyle",
@@ -1964,6 +1974,9 @@
       {
         "text": "A sculpted guardian animated by the Luchuirp."
       }
+    ],
+    "promotions": [
+      "Golem"
     ]
   },
   {
@@ -1984,6 +1997,9 @@
       {
         "text": "An intricate Luchuirp construct driven by advanced mechanisms."
       }
+    ],
+    "promotions": [
+      "Golem"
     ]
   },
   {
@@ -2025,6 +2041,9 @@
       {
         "text": "A rare Luchuirp construct shaped from magic-resistant material."
       }
+    ],
+    "promotions": [
+      "Golem"
     ]
   },
   {
@@ -2086,7 +2105,10 @@
         "text": "An undead abomination created through Sheaim necromancy and destructive magic."
       }
     ],
-    "uniques": []
+    "uniques": [],
+    "promotions": [
+      "Undead"
+    ]
   },
   {
     "name": "Divided Soul",
