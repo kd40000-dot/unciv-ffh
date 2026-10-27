@@ -27,6 +27,8 @@ jobs:
         run: python3 scripts/check_fidelity_audit.py --check-change
       - name: Verify all EMM Armageddon random event source records
         run: python3 tools/verify_emm_armageddon_events.py
+      - name: Verify persistent EMM city-defense state
+        run: python3 tools/verify_emm_city_defense_state.py
       - name: Verify EMM serialized unit level progression
         run: python3 tools/verify_emm_unit_levels.py
       - name: Verify EMM source city defense arithmetic
