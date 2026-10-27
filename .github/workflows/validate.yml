@@ -27,6 +27,8 @@ jobs:
         run: python3 scripts/check_fidelity_audit.py --check-change
       - name: Verify all EMM Armageddon random event source records
         run: python3 tools/verify_emm_armageddon_events.py
+      - name: Verify EMM source defense values and typed combat contribution adapter
+        run: python3 tools/verify_emm_defense_context.py
       - name: Verify EMM typed damage source records and formula
         run: python3 tools/verify_emm_typed_damage.py
       - name: Verify source-mapped EMM nonliving races
