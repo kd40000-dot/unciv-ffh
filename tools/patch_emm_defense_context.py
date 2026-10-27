@@ -31,6 +31,37 @@ defs='''    // Original EMM Civ4 XML defense/typed combat values.
     private fun emmUnitKey(name: String): String =
         "UNIT_" + name.uppercase().replace(" ", "_").replace("-", "_")
 
+    /**
+     * EMM CvUnit::maxCombatStr: typed offensive components are reduced
+     * by the opponent's resistance to each damage type.
+     * The base component is unaffected by typed resistance.
+     */
+    fun resistedCombatStrength(
+        ordinaryStrength: Int,
+        typedComponents: Map<String, Int>,
+        targetPromotions: Set<String>
+    ): Int {
+        var scaled = ordinaryStrength * 100
+        for ((type, component) in typedComponents) {
+            val resist = resistance(targetPromotions, type)
+            scaled -= component * resist
+        }
+        return (scaled / 100).coerceAtLeast(0)
+    }
+
+    fun unitTypedComponents(unit: MapUnit): Map<String, Int> {
+        val output = mutableMapOf<String, Int>()
+        fun include(parts: Map<String, Int>) {
+            for ((type, value) in parts) output[type] = (output[type] ?: 0) + value
+        }
+        include(emmSourceUnitCombat[emmUnitKey(unit.baseUnit.name)].orEmpty())
+        for (held in unit.promotions.promotions) {
+            val key = "PROMOTION_" + held.uppercase().replace(" ", "_").replace("-", "_")
+            include(emmSourcePromotionCombat[key].orEmpty())
+        }
+        return output
+    }
+
     private fun sourceDefense(unit: MapUnit): Int {
         val key = emmUnitKey(unit.baseUnit.name)
         val base = emmSourceBaseDefense[key] ?: unit.baseUnit.strength
