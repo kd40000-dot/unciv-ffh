@@ -3,31 +3,73 @@
   "cultureDefenseLevels": [
     {
       "id": "CULTURELEVEL_NONE",
-      "defense": 0
+      "defense": 0,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 0,
+        "GAMESPEED_EPIC": 0,
+        "GAMESPEED_NORMAL": 0,
+        "GAMESPEED_QUICK": 0
+      }
     },
     {
       "id": "CULTURELEVEL_POOR",
-      "defense": 0
+      "defense": 0,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 0,
+        "GAMESPEED_EPIC": 0,
+        "GAMESPEED_NORMAL": 0,
+        "GAMESPEED_QUICK": 0
+      }
     },
     {
       "id": "CULTURELEVEL_FLEDGLING",
-      "defense": 10
+      "defense": 10,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 30,
+        "GAMESPEED_EPIC": 15,
+        "GAMESPEED_NORMAL": 10,
+        "GAMESPEED_QUICK": 5
+      }
     },
     {
       "id": "CULTURELEVEL_DEVELOPING",
-      "defense": 20
+      "defense": 20,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 300,
+        "GAMESPEED_EPIC": 150,
+        "GAMESPEED_NORMAL": 100,
+        "GAMESPEED_QUICK": 50
+      }
     },
     {
       "id": "CULTURELEVEL_REFINED",
-      "defense": 30
+      "defense": 30,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 1500,
+        "GAMESPEED_EPIC": 750,
+        "GAMESPEED_NORMAL": 500,
+        "GAMESPEED_QUICK": 250
+      }
     },
     {
       "id": "CULTURELEVEL_INFLUENTIAL",
-      "defense": 40
+      "defense": 40,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 15000,
+        "GAMESPEED_EPIC": 7500,
+        "GAMESPEED_NORMAL": 5000,
+        "GAMESPEED_QUICK": 2500
+      }
     },
     {
       "id": "CULTURELEVEL_LEGENDARY",
-      "defense": 50
+      "defense": 50,
+      "thresholds": {
+        "GAMESPEED_MARATHON": 150000,
+        "GAMESPEED_EPIC": 75000,
+        "GAMESPEED_NORMAL": 50000,
+        "GAMESPEED_QUICK": 25000
+      }
     }
   ]
 }
