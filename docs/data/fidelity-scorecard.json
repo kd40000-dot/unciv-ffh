@@ -169,13 +169,15 @@
         "tools/verify_emm_defense_context.py",
         "tools/patch_emm_typed_battle.py",
         "tools/verify_emm_typed_battle.py",
-        ".github/workflows/build-emm-epidemic.yml"
+        ".github/workflows/build-emm-epidemic.yml",
+        "tools/patch_emm_city_defense.py",
+        "tools/verify_emm_city_defense.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Both regular attack and defender/counterattack paths wired in generated Kotlin and source-transform regression created; CI configured but successful run not verified. Implementation estimate excludes gameplay verification.",
-      "remainingDifferences": "Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
+      "remainingDifferences": "The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "Typed attack/defense strength integration, F08 35→38 implementation estimate"
+      "updatedBy": "EMM exact city-defense arithmetic ported as reusable kernel, live inputs unintegrated; no fidelity increase justified."
     },
     {
       "id": "F09",
@@ -291,7 +293,9 @@
         "docs/data/emm-unit-defense.json",
         "docs/data/emm-typed-combat-strength.json",
         "tools/patch_emm_defense_context.py",
-        "tools/verify_emm_defense_context.py"
+        "tools/verify_emm_defense_context.py",
+        "tools/patch_emm_city_defense.py",
+        "tools/verify_emm_city_defense.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
@@ -299,9 +303,9 @@
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
       "verification": "Implementation-only reassessment: underlying city health, epidemic formulas, one-shot Armageddon dispatch, typed unit HP effects, nonliving races and limited cure/transmission hooks exist in code. Latest generated Android build not confirmed; gameplay verification deferred by project decision.",
-      "remainingDifferences": "Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
+      "remainingDifferences": "The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "2026-10-27: 40→42; epidemic damage defense now sources EMM unit and promotion combat data"
+      "updatedBy": "EMM exact city-defense arithmetic ported as reusable kernel, live inputs unintegrated; no fidelity increase justified."
     },
     {
       "id": "F14",
