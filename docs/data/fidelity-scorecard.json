@@ -152,7 +152,7 @@
     {
       "id": "F08",
       "title": "Combat system",
-      "percent": 38,
+      "percent": 39,
       "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4UnitInfos.xml",
@@ -171,31 +171,35 @@
         "tools/verify_emm_typed_battle.py",
         ".github/workflows/build-emm-epidemic.yml",
         "tools/patch_emm_city_defense.py",
-        "tools/verify_emm_city_defense.py"
+        "tools/verify_emm_city_defense.py",
+        "tools/patch_emm_unit_levels.py",
+        "tools/verify_emm_unit_levels.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Both regular attack and defender/counterattack paths wired in generated Kotlin and source-transform regression created; CI configured but successful run not verified. Implementation estimate excludes gameplay verification.",
-      "remainingDifferences": "The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
+      "remainingDifferences": "Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Regular BattleDamage attack and defending-strength calculations now use EMM source typed combat components reduced by opponent promotion resistances, with EMM-only guard. Relative scaling retains Unciv's existing overall battle formula; source-exact Civ IV odds, rounds, base strength modifiers, unit level and city defense, combat promotions and special combat rules are still pending. Kotlin Android compilation and gameplay QA unconfirmed.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "EMM exact city-defense arithmetic ported as reusable kernel, live inputs unintegrated; no fidelity increase justified."
+      "updatedBy": "Serialized EMM level and city-defense formula source kernel; incomplete lifecycle and live defense inputs."
     },
     {
       "id": "F09",
       "title": "Promotions and experience",
-      "percent": 20,
+      "percent": 21,
       "status": "partial",
       "sourcePaths": [
         "XML/Units/CIV4PromotionInfos.xml",
         "XML/Units/CIV4UnitInfos.xml"
       ],
       "portEvidence": [
-        "docs/promotions-upgrades-resources.md"
+        "docs/promotions-upgrades-resources.md",
+        "tools/patch_emm_unit_levels.py",
+        "tools/verify_emm_unit_levels.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Further source-equivalence and in-game regression testing required",
-      "remainingDifferences": "Basic lines exist; approximately 32 of 305 source promotions, complex eligibility and experience rules absent.",
-      "lastReviewed": "2026-10-26",
-      "updatedBy": "Initial 25-system audit"
+      "remainingDifferences": "Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. Basic lines exist; approximately 32 of 305 source promotions, complex eligibility and experience rules absent.",
+      "lastReviewed": "2026-10-27",
+      "updatedBy": "Serialized EMM level and city-defense formula source kernel; incomplete lifecycle and live defense inputs."
     },
     {
       "id": "F10",
@@ -256,7 +260,7 @@
     {
       "id": "F13",
       "title": "City health and disease",
-      "percent": 42,
+      "percent": 43,
       "status": "partial",
       "sourcePaths": [
         "XML/Buildings/CIV4BuildingInfos.xml",
@@ -295,7 +299,9 @@
         "tools/patch_emm_defense_context.py",
         "tools/verify_emm_defense_context.py",
         "tools/patch_emm_city_defense.py",
-        "tools/verify_emm_city_defense.py"
+        "tools/verify_emm_city_defense.py",
+        "tools/patch_emm_unit_levels.py",
+        "tools/verify_emm_unit_levels.py"
       ],
       "gameplayConfirmed": [
         "2026-10-26 player screenshot: Herbalist was advertised as +1 Food in old mod; presentation bug confirmed, not a successful health test.",
@@ -303,9 +309,9 @@
         "2026-10-26 user reports 'Health seems to be working' following corrected health UI APK; broad smoke test only, not confirmation of every formula, building or resource."
       ],
       "verification": "Implementation-only reassessment: underlying city health, epidemic formulas, one-shot Armageddon dispatch, typed unit HP effects, nonliving races and limited cure/transmission hooks exist in code. Latest generated Android build not confirmed; gameplay verification deferred by project decision.",
-      "remainingDifferences": "The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
+      "remainingDifferences": "Source-style persisted unit level now increases on purchased promotions, survives stat-copy/upgrade and is used by typed damage; free racial promotion does not raise level. Requires handling extra EMM level paths and source city-defense input integration. The pinned CvCity total-defense/occupation/bombardment formula is implemented as a reusable generated kernel, but live EMM cultural/owner/ranged defenses, persistent unit level, and the typed-damage call site's city-defense values are not integrated yet. Epidemic typed Death damage now uses source-derived base defense for matched units and current promotion typed combat contributions; source living status, city sickness, and damage dispatch implemented in generator. Exact XP level, city defense, additional promotion modifiers, source full unit mappings, healing/disease edge cases and Armageddon event breadth remain incomplete.",
       "lastReviewed": "2026-10-27",
-      "updatedBy": "EMM exact city-defense arithmetic ported as reusable kernel, live inputs unintegrated; no fidelity increase justified."
+      "updatedBy": "Serialized EMM level and city-defense formula source kernel; incomplete lifecycle and live defense inputs."
     },
     {
       "id": "F14",
