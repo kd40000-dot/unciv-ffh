@@ -1,0 +1,342 @@
+{
+  "sourceCommit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "unitCombat": {
+    "UNIT_IMP": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_AIR_ELEMENTAL": {
+      "DAMAGE_LIGHTNING": 2
+    },
+    "UNIT_ALAZKAN": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_ANGEL": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_ANGEL_OF_DEATH": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_ARCHER_SCORPION_CLAN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_ARS": {
+      "DAMAGE_DEATH": 11,
+      "DAMAGE_UNHOLY": 5
+    },
+    "UNIT_ASSASSIN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_CHANTER": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_GHOST": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_HOLLOW_MAN": {
+      "DAMAGE_COLD": 3
+    },
+    "UNIT_LIZARDMAN_ASSASSIN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_TASKMASTER": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_AURIC_ASCENDED": {
+      "DAMAGE_COLD": 30
+    },
+    "UNIT_PYRE_ZOMBIE": {
+      "DAMAGE_FIRE": 1
+    },
+    "UNIT_AZER": {
+      "DAMAGE_FIRE": 3
+    },
+    "UNIT_BABY_SPIDER": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_BASIUM": {
+      "DAMAGE_HOLY": 4
+    },
+    "UNIT_BEAST_OF_AGARES": {
+      "DAMAGE_UNHOLY": 5
+    },
+    "UNIT_SPIDERKIN": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_BALOR": {
+      "DAMAGE_UNHOLY": 4
+    },
+    "UNIT_BRIGIT": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_BUBOES": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_CHARIOT_SCORPION_CLAN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_COBRA_GREAT": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_COBRA_GIANT": {
+      "DAMAGE_POISON": 4
+    },
+    "UNIT_CRUSADER": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_DISCIPLE_OF_ACHERON": {
+      "DAMAGE_FIRE": 1
+    },
+    "UNIT_DISEASED_CORPSE": {
+      "DAMAGE_DEATH": 2
+    },
+    "UNIT_DRIFA": {
+      "DAMAGE_COLD": 7
+    },
+    "UNIT_DROWN": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_EIDOLON": {
+      "DAMAGE_UNHOLY": 4
+    },
+    "UNIT_EINHERJAR": {
+      "DAMAGE_HOLY": 2
+    },
+    "UNIT_FIRE_ELEMENTAL": {
+      "DAMAGE_FIRE": 3
+    },
+    "UNIT_FIREBALL": {
+      "DAMAGE_FIRE": 4
+    },
+    "UNIT_GHOUL": {
+      "DAMAGE_DEATH": 1
+    },
+    "UNIT_GIANT_SPIDER": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_HIGH_PRIEST_OF_KILMORPH": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_HIGH_PRIEST_OF_THE_EMPYREAN": {
+      "DAMAGE_FIRE": 1,
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_HIGH_PRIEST_OF_THE_ORDER": {
+      "DAMAGE_HOLY": 2
+    },
+    "UNIT_HIGH_PRIEST_OF_THE_OVERLORDS": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_HIGH_PRIEST_OF_THE_VEIL": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_HIGH_PRIEST_OF_WINTER": {
+      "DAMAGE_COLD": 3
+    },
+    "UNIT_WOLF_RIDER_SCORPION_CLAN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_HELLHOUND": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_HYBOREM": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_ICE_ELEMENTAL": {
+      "DAMAGE_COLD": 2
+    },
+    "UNIT_IRA": {
+      "DAMAGE_UNHOLY": 4
+    },
+    "UNIT_DEATH_KNIGHT": {
+      "DAMAGE_DEATH": 2,
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_LICH": {
+      "DAMAGE_DEATH": 2
+    },
+    "UNIT_LIGHTNING_ELEMENTAL": {
+      "DAMAGE_LIGHTNING": 3
+    },
+    "UNIT_MAGIC_MISSILE": {
+      "DAMAGE_FORCE": 5
+    },
+    "UNIT_MANES": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_MANTICORE": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_MARDERO": {
+      "DAMAGE_UNHOLY": 4
+    },
+    "UNIT_MARY": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_MESHABBER": {
+      "DAMAGE_FIRE": 6,
+      "DAMAGE_UNHOLY": 6
+    },
+    "UNIT_METEOR": {
+      "DAMAGE_FIRE": 6
+    },
+    "UNIT_MOKKA": {
+      "DAMAGE_COLD": 1
+    },
+    "UNIT_MUIRIN": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_NIGHTWATCH": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_OPHANIM": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_PALADIN": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_PHOENIX": {
+      "DAMAGE_HOLY": 5
+    },
+    "UNIT_PIT_BEAST": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_PRIEST_OF_THE_EMPYREAN": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_PRIEST_OF_THE_ORDER": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_PRIEST_OF_THE_VEIL": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_PRIEST_OF_WINTER": {
+      "DAMAGE_COLD": 2
+    },
+    "UNIT_REPENTANT_ANGEL": {
+      "DAMAGE_HOLY": 4
+    },
+    "UNIT_REVELERS": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_ROSIER": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_ROSIER_OATHTAKER": {
+      "DAMAGE_HOLY": 1
+    },
+    "UNIT_RUNEWYN": {
+      "DAMAGE_FORCE": 2
+    },
+    "UNIT_SAILORS_DIRGE": {
+      "DAMAGE_DEATH": 1
+    },
+    "UNIT_SAND_LION": {
+      "DAMAGE_FIRE": 1
+    },
+    "UNIT_SAVEROUS": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_SCORPION": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_GOBLIN_SCORPION_CLAN": {
+      "DAMAGE_POISON": 1
+    },
+    "UNIT_SERAPH": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_COURTESAN": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_DWARVEN_SHADOW": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_SHADOW": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_SHADOWRIDER": {
+      "DAMAGE_POISON": 2
+    },
+    "UNIT_SKELETON": {
+      "DAMAGE_DEATH": 1
+    },
+    "UNIT_SON_OF_THE_INFERNO": {
+      "DAMAGE_FIRE": 3
+    },
+    "UNIT_SPHENER": {
+      "DAMAGE_HOLY": 4
+    },
+    "UNIT_STEPHANOS": {
+      "DAMAGE_UNHOLY": 5
+    },
+    "UNIT_STYGIAN_GUARD": {
+      "DAMAGE_UNHOLY": 4
+    },
+    "UNIT_SUCCUBUS": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "UNIT_TAR_DEMON": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "UNIT_VALIN": {
+      "DAMAGE_HOLY": 2
+    },
+    "UNIT_VALKYRIE": {
+      "DAMAGE_HOLY": 3
+    },
+    "UNIT_WIGHT": {
+      "DAMAGE_DEATH": 3
+    },
+    "UNIT_WRAITH": {
+      "DAMAGE_DEATH": 3
+    },
+    "UNIT_YERSINIA": {
+      "DAMAGE_POISON": 7,
+      "DAMAGE_UNHOLY": 5
+    }
+  },
+  "promotionCombat": {
+    "PROMOTION_AERONS_CHOSEN": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "PROMOTION_ATHAME": {
+      "DAMAGE_POISON": 3
+    },
+    "PROMOTION_BLESSED": {
+      "DAMAGE_HOLY": 1
+    },
+    "PROMOTION_FLAMING_ARROWS": {
+      "DAMAGE_FIRE": 1
+    },
+    "PROMOTION_FROSTLING": {
+      "DAMAGE_COLD": 1
+    },
+    "PROMOTION_GELA": {
+      "DAMAGE_UNHOLY": 2
+    },
+    "PROMOTION_NETHER_BLADE": {
+      "DAMAGE_DEATH": 2
+    },
+    "PROMOTION_ORTHUSS_AXE": {
+      "DAMAGE_FIRE": 1
+    },
+    "PROMOTION_POISONED_BLADE": {
+      "DAMAGE_POISON": 1
+    },
+    "PROMOTION_SHEUT_STONE": {
+      "DAMAGE_DEATH": 1
+    },
+    "PROMOTION_STAFF_OF_SOULS": {
+      "DAMAGE_DEATH": 3
+    },
+    "PROMOTION_UNHOLY_TAINT": {
+      "DAMAGE_UNHOLY": 1
+    },
+    "PROMOTION_WAR": {
+      "DAMAGE_UNHOLY": 3
+    },
+    "PROMOTION_SOL": {
+      "DAMAGE_HOLY": 2
+    }
+  }
+}
