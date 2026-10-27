@@ -64,11 +64,11 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.4% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.68% (14.7% rounded) equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Current scoring policy — implementation completeness (2026-10-26)
 
-**Current equal-weight implementation estimate: 14.4%.** The individual percentage
+**Current equal-weight implementation estimate: 14.68% (14.7% rounded).** The individual percentage
 scores rate the breadth and source fidelity of implemented gameplay behavior,
 without discounting the score simply because the player has not yet tested it
 in-game. Compile/static results and user-tested outcomes are retained as
@@ -86,6 +86,14 @@ closely related disease/Armageddon systems are implemented as close to 100%
 source completeness as feasible. Maintain automated consistency checks and
 compilation throughout development. Player testing neither contributes to
 nor reduces these implementation-only percentage estimates.
+
+### 2026-10-27 — Cumulative implementation fidelity reassessment
+
+- **F08 combat: 30% → 32%.** The engine now has a promotion-derived typed resistance registry and an actual HP application API using EMM's double-roll calculation. This is direct damage only; combat-wide typed strength and exact defensive context are not yet ported.
+- **F13 health/disease: 35% → 40%.** Earlier milestones introduced disease transmission/cures, epidemic city counters, Blight/Pestilence typed Death damage applied to real units, a dynamic EMM living-status counter, nine nonliving racial promotions, eight innate unit mappings, and an Infernal default-race creation hook.
+- Blight and Pestilence damage RNG streams are now separately keyed, avoiding duplicate rolls when both thresholds trigger on the same turn.
+- **Overall 25-system equal-weight mean: 14.4% → 14.68%**, rounded **14.7%**.
+- This is a source-implementation estimate only. Latest Android compilation and gameplay acceptance are not established, so no verified-runtime claims are made. Missing mechanics and approximate damage inputs remain explicit.
 
 ## Change history
 
