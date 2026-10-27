@@ -1223,5 +1223,77 @@
         "text": "EMM PROMOTION_CANNIBALIZE: heals 10% of maximum combat health when killing a unit; granted freely to the event-created Doviello Warrior-class unit. Original EMM also marks it as a mutation."
       }
     ]
+  },
+  {
+    "name": "Angel",
+    "civilopediaText": [
+      {
+        "text": "Angel units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Avatar",
+    "civilopediaText": [
+      {
+        "text": "Avatar units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Demon",
+    "civilopediaText": [
+      {
+        "text": "Demon units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Elemental",
+    "civilopediaText": [
+      {
+        "text": "Elemental units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Golem",
+    "civilopediaText": [
+      {
+        "text": "Golem units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Illusion",
+    "civilopediaText": [
+      {
+        "text": "Illusion units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Puppet",
+    "civilopediaText": [
+      {
+        "text": "Puppet units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Rift",
+    "civilopediaText": [
+      {
+        "text": "Rift units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
+  },
+  {
+    "name": "Undead",
+    "civilopediaText": [
+      {
+        "text": "Undead units are nonliving under EMM's bNotAlive promotion rules."
+      }
+    ]
   }
 ]
