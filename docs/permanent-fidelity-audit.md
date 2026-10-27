@@ -64,11 +64,11 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.68% (14.7% rounded) equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **14.88% (14.9% rounded) equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Current scoring policy — implementation completeness (2026-10-26)
 
-**Current equal-weight implementation estimate: 14.68% (14.7% rounded).** The individual percentage
+**Current equal-weight implementation estimate: 14.88% (14.9% rounded).** The individual percentage
 scores rate the breadth and source fidelity of implemented gameplay behavior,
 without discounting the score simply because the player has not yet tested it
 in-game. Compile/static results and user-tested outcomes are retained as
@@ -94,6 +94,13 @@ nor reduces these implementation-only percentage estimates.
 - Blight and Pestilence damage RNG streams are now separately keyed, avoiding duplicate rolls when both thresholds trigger on the same turn.
 - **Overall 25-system equal-weight mean: 14.4% → 14.68%**, rounded **14.7%**.
 - This is a source-implementation estimate only. Latest Android compilation and gameplay acceptance are not established, so no verified-runtime claims are made. Missing mechanics and approximate damage inputs remain explicit.
+
+### 2026-10-27 — Typed defensive-strength source integration
+
+- **F08 combat: 32% → 35%; F13 health/disease: 40% → 42%.** The typed damage adapter now imports original EMM base defensive strength for **299** units and typed combat components for **96** units and **14** promotions, folding those into damage-resistance context for applicable unit names.
+- Added pinned EMM reference JSON, a generator post-patch, Android build workflow integration and idempotent source-mapping regression checks. Separated Blight/Pestilence RNG streams and restored epidemic patch idempotence.
+- **Overall 25-system average: 14.68% → 14.88%**, rounded **14.9%**. This is implementation coverage, not gameplay verification.
+- **Still incomplete:** Exact EMM level persistence, city defensive modifier, promotions changing base defense, full typed combat in normal battles and source-mapped spells/terrain damage. CI compilation and player testing not confirmed for this generated patch.
 
 ## Change history
 
