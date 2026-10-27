@@ -3,7 +3,7 @@
 
 Run after tools/patch_unciv_health.py, before Kotlin compilation.
 Source: pinned EMM CvRandomEventInterface.py (60b0ec374...).
-This is explicitly a raw-damage compatibility adapter, not Death resistance parity.
+Living status follows pinned EMM bMechanized and bNotAlive promotion counters;\nDeath damage remains a raw-damage approximation pending resistance support.
 """
 from pathlib import Path
 import sys
@@ -24,17 +24,34 @@ patched = """            city.cityStats.update()
         damageLivingUnits(game)
     }
 
-    // Both EMM callbacks damage each living unit, including units owned by
-    // the Infernal civilization. Exact DLL isAlive() and typed Death resistance
-    // remain unsupported by this temporary adapter.
+    // Pinned EMM CvUnit::isAlive: m_iAlive == 0.
+    // CvUnit::init adds +1 for bMechanized; setHasPromotion changes it
+    // by +/-1 for every promotion whose bNotAlive is set.
+    // Derived on demand so adding/removing a racial promotion immediately
+    // changes epidemic eligibility, including multiple stacked sources.
+    private val emmNotAlivePromotions = setOf(
+        "Angel", "Avatar", "Demon", "Elemental", "Golem",
+        "Illusion", "Puppet", "Rift", "Undead"
+    )
+    // CIV4UnitInfos.xml bMechanized=1, excluding equipment records.
+    private val emmMechanizedUnits = setOf(
+        "Arcane Barge", "Battering Ram", "Black Wind", "Cannon",
+        "Dwarven Cannon", "Caravel", "Catapult", "Trebuchet", "Frigate",
+        "Galleon", "Galley", "Man O War", "Pirate", "Privateer",
+        "Airship", "Queen Of The Line", "Sailors Dirge", "Trireme",
+        "War Machine", "Workboat"
+    )
+    private fun isEmmLiving(unit: com.unciv.logic.map.mapunit.MapUnit): Boolean {
+        val counter = (if (unit.baseUnit.name in emmMechanizedUnits) 1 else 0) +
+            unit.promotions.promotions.count { it in emmNotAlivePromotions }
+        return counter == 0
+    }
+    // Source callbacks specify 25 DAMAGE_DEATH, damage cap 100.
+    // Typed Death resistance is still outstanding.
     private fun damageLivingUnits(game: GameInfo) {
-        val nonliving = setOf("Undead", "Demon", "Angel", "Elemental", "Golem", "Not Alive")
         for (civ in game.civilizations)
             for (unit in civ.units.getCivUnits().toList()) {
-                // EMM treats vessels as nonliving even when they have crews.
-                // Base-unit water classification is available in pinned Unciv.
-                if (unit.baseUnit.isWaterUnit()) continue
-                if (unit.promotions.promotions.any { it in nonliving }) continue
+                if (!isEmmLiving(unit)) continue
                 unit.takeDamage(25)
             }
     }
