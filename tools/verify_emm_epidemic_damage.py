@@ -34,7 +34,9 @@ object EmmArmageddonEvents {
     result = kt.read_text()
     assert result.count("damageLivingUnits(game)") == 2
     assert result.count("private fun damageLivingUnits(game: GameInfo)") == 1
-    assert "unit.takeDamage(25)" in result
+    assert "EmmTypedDamage.applyToUnit(" in result
+    assert 'type = "DAMAGE_DEATH"' in result
+    assert "unit.takeDamage(25)" not in result
     assert "private fun isEmmLiving(" in result
     assert "unit.baseUnit.name in emmMechanizedUnits" in result
     assert "unit.promotions.promotions.count { it in emmNotAlivePromotions }" in result
