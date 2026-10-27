@@ -1,0 +1,259 @@
+{
+  "sourceCommit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "nonlivingPromotions": [
+    "Angel",
+    "Avatar",
+    "Demon",
+    "Elemental",
+    "Golem",
+    "Illusion",
+    "Puppet",
+    "Rift",
+    "Undead"
+  ],
+  "innateUnitPromotions": {
+    "UNIT_IMP": [
+      "Demon"
+    ],
+    "UNIT_AIR_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_ANGEL": [
+      "Angel"
+    ],
+    "UNIT_ANGEL_OF_DEATH": [
+      "Angel"
+    ],
+    "UNIT_ARS": [
+      "Demon"
+    ],
+    "UNIT_HOLLOW_MAN": [
+      "Undead"
+    ],
+    "UNIT_AUREALIS": [
+      "Elemental"
+    ],
+    "UNIT_AURIC_ASCENDED": [
+      "Avatar"
+    ],
+    "UNIT_PYRE_ZOMBIE": [
+      "Undead"
+    ],
+    "UNIT_WOOD_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_AZER": [
+      "Elemental"
+    ],
+    "UNIT_BARNAXUS": [
+      "Golem"
+    ],
+    "UNIT_BASIUM": [
+      "Angel"
+    ],
+    "UNIT_BEAST_OF_AGARES": [
+      "Demon"
+    ],
+    "UNIT_BALOR": [
+      "Demon"
+    ],
+    "UNIT_CLOCKWORK_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_BRIGIT": [
+      "Angel"
+    ],
+    "UNIT_BRIGIT_HELD": [
+      "Angel"
+    ],
+    "UNIT_BUBOES": [
+      "Demon"
+    ],
+    "UNIT_IRON_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_CHAOS_MARAUDER": [
+      "Demon"
+    ],
+    "UNIT_DISEASED_CORPSE": [
+      "Undead"
+    ],
+    "UNIT_DJINN": [
+      "Elemental"
+    ],
+    "UNIT_DROWN": [
+      "Undead"
+    ],
+    "UNIT_EARTH_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_EIDOLON": [
+      "Demon"
+    ],
+    "UNIT_EINHERJAR": [
+      "Angel"
+    ],
+    "UNIT_FIRE_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_FIREBALL": [
+      "Elemental"
+    ],
+    "UNIT_FLESH_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_GHOUL": [
+      "Undead"
+    ],
+    "UNIT_HERALD": [
+      "Angel"
+    ],
+    "UNIT_HYBOREM": [
+      "Demon"
+    ],
+    "UNIT_ICE_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_BONE_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_IRA": [
+      "Demon"
+    ],
+    "UNIT_DEATH_KNIGHT": [
+      "Demon"
+    ],
+    "UNIT_LICH": [
+      "Undead"
+    ],
+    "UNIT_LIGHTNING_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_GARGOYLE": [
+      "Golem"
+    ],
+    "UNIT_MAGIC_MISSILE": [
+      "Elemental"
+    ],
+    "UNIT_MANES": [
+      "Demon"
+    ],
+    "UNIT_MARDERO": [
+      "Demon"
+    ],
+    "UNIT_MESHABBER": [
+      "Demon"
+    ],
+    "UNIT_METEOR": [
+      "Elemental"
+    ],
+    "UNIT_MISTFORM": [
+      "Elemental"
+    ],
+    "UNIT_MITHRIL_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_MUIRIN": [
+      "Undead"
+    ],
+    "UNIT_OPHANIM": [
+      "Angel"
+    ],
+    "UNIT_NULLSTONE_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_PHOENIX": [
+      "Elemental"
+    ],
+    "UNIT_PIT_BEAST": [
+      "Demon"
+    ],
+    "UNIT_PUPPET": [
+      "Puppet"
+    ],
+    "UNIT_PUPPET_LOKI": [
+      "Puppet"
+    ],
+    "UNIT_RIFT": [
+      "Rift"
+    ],
+    "UNIT_REPENTANT_ANGEL": [
+      "Angel"
+    ],
+    "UNIT_RUNEWYN": [
+      "Angel"
+    ],
+    "UNIT_SAILORS_DIRGE": [
+      "Undead"
+    ],
+    "UNIT_SAND_LION": [
+      "Elemental"
+    ],
+    "UNIT_SAVEROUS": [
+      "Demon"
+    ],
+    "UNIT_SERAPH": [
+      "Angel"
+    ],
+    "UNIT_SEVERED_SOUL": [
+      "Elemental"
+    ],
+    "UNIT_SKELETON": [
+      "Undead"
+    ],
+    "UNIT_SPECTRE": [
+      "Undead"
+    ],
+    "UNIT_SPHENER": [
+      "Angel"
+    ],
+    "UNIT_STEPHANOS": [
+      "Demon"
+    ],
+    "UNIT_STYGIAN_GUARD": [
+      "Demon"
+    ],
+    "UNIT_SUCCUBUS": [
+      "Demon"
+    ],
+    "UNIT_TAR_DEMON": [
+      "Demon"
+    ],
+    "UNIT_TREANT": [
+      "Elemental"
+    ],
+    "UNIT_VALKYRIE": [
+      "Angel"
+    ],
+    "UNIT_WATER_ELEMENTAL": [
+      "Elemental"
+    ],
+    "UNIT_WIGHT": [
+      "Undead"
+    ],
+    "UNIT_MUD_GOLEM": [
+      "Golem"
+    ],
+    "UNIT_WRAITH": [
+      "Undead"
+    ],
+    "UNIT_WRATH": [
+      "Demon"
+    ],
+    "UNIT_YERSINIA": [
+      "Demon"
+    ],
+    "UNIT_YVAIN": [
+      "Elemental"
+    ]
+  },
+  "defaultCivilizationRace": {
+    "CIVILIZATION_CLAN_OF_EMBERS": "PROMOTION_ORC",
+    "CIVILIZATION_INFERNAL": "PROMOTION_DEMON",
+    "CIVILIZATION_KHAZAD": "PROMOTION_DWARF",
+    "CIVILIZATION_LJOSALFAR": "PROMOTION_ELF",
+    "CIVILIZATION_LUCHUIRP": "PROMOTION_DWARF",
+    "CIVILIZATION_SVARTALFAR": "PROMOTION_DARK_ELF",
+    "CIVILIZATION_BARBARIAN": "PROMOTION_ORC"
+  }
+}
