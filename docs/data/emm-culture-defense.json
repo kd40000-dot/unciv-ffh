@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "cultureDefenseLevels": [
+    {
+      "id": "CULTURELEVEL_NONE",
+      "defense": 0
+    },
+    {
+      "id": "CULTURELEVEL_POOR",
+      "defense": 0
+    },
+    {
+      "id": "CULTURELEVEL_FLEDGLING",
+      "defense": 10
+    },
+    {
+      "id": "CULTURELEVEL_DEVELOPING",
+      "defense": 20
+    },
+    {
+      "id": "CULTURELEVEL_REFINED",
+      "defense": 30
+    },
+    {
+      "id": "CULTURELEVEL_INFLUENTIAL",
+      "defense": 40
+    },
+    {
+      "id": "CULTURELEVEL_LEGENDARY",
+      "defense": 50
+    }
+  ]
+}
