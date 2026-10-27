@@ -3,7 +3,7 @@
 
 Run after tools/patch_unciv_health.py, before Kotlin compilation.
 Source: pinned EMM CvRandomEventInterface.py (60b0ec374...).
-Living status follows pinned EMM bMechanized and bNotAlive promotion counters;\nDeath damage remains a raw-damage approximation pending resistance support.
+Living status follows pinned EMM bMechanized and bNotAlive promotion counters;\nEpidemic damage uses source-derived typed resistance and two-roll damage;\nexact strength, experience-level and city-defense parity is still under review.
 """
 from pathlib import Path
 import sys
@@ -52,7 +52,13 @@ patched = """            city.cityStats.update()
         for (civ in game.civilizations)
             for (unit in civ.units.getCivUnits().toList()) {
                 if (!isEmmLiving(unit)) continue
-                unit.takeDamage(25)
+                com.unciv.logic.map.mapunit.EmmTypedDamage.applyToUnit(
+                    unit = unit,
+                    type = "DAMAGE_DEATH",
+                    initialDamage = 25,
+                    damageLimit = 100,
+                    random = civ.state.stateBasedRandom("EMM.Epidemic.Death." + game.turns + "." + unit.id)
+                )
             }
     }
 
