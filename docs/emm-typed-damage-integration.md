@@ -37,3 +37,17 @@ into actual city state. These remain mandatory before source-parity claims.
 
 All live state integration is guarded by tile city-center and city owner,
 and occupation yields zero via the source formula.
+
+## 2026-10-27 — Remove invalid Unciv city-strength proxy
+
+The earlier direct-damage adapter used `city.getStrength().toInt()` as EMM
+`CvCity::getBuildingDefense()`. These values are conceptually different.
+That proxy has been removed. `City` now persists six independent fields:
+`emmBuildingDefense`, `emmNaturalDefense`, `emmOwnerDefense`,
+`emmRangedDefense`, `emmDefenseDamage`, and `emmMaxDefenseDamage`.
+They survive city cloning and feed `EmmCityDefense.defenseModifier`.
+
+All defense components currently initialize to zero (except maximum damage
+100) until the source-specific building/culture/owner/range/bombardment
+systems update them. Consequently, this change corrects model boundaries
+and save state but **does not yet yield full EMM city defense in play**.
