@@ -11,6 +11,8 @@ on:
       - 'tools/patch_emm_typed_battle.py'
       - 'tools/patch_emm_city_defense.py'
       - 'tools/patch_emm_city_defense_state.py'
+      - 'tools/patch_emm_culture_defense.py'
+      - 'docs/data/emm-culture-defense.json'
       - 'tools/patch_emm_unit_levels.py'
       - 'docs/data/emm-typed-combat-strength.json'
       - 'docs/data/emm-unit-defense.json'
@@ -45,6 +47,7 @@ jobs:
           python3 tools/patch_emm_city_defense.py upstream-unciv
           python3 tools/patch_emm_unit_levels.py upstream-unciv
           python3 tools/patch_emm_city_defense_state.py upstream-unciv
+          python3 tools/patch_emm_culture_defense.py upstream-unciv
       - name: Check generated Kotlin changes
         run: |
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
