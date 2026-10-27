@@ -64,7 +64,7 @@ CI rejects gameplay-file changes without an updated audit data file when the wor
 
 ## Current scorecard
 
-The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **15.12% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
+The current scores are those in [fidelity-scorecard.json](data/fidelity-scorecard.json); current implementation-only estimate is **15.20% equal-weight**. On each score-changing task, regenerate the table with `python3 scripts/check_fidelity_audit.py --summary` and paste the output here, preserving the baseline above.
 
 ## Current scoring policy — implementation completeness (2026-10-26)
 
@@ -114,8 +114,15 @@ nor reduces these implementation-only percentage estimates.
 - Added a serialized `MapUnit.emmLevel` field updated when a genuine purchased promotion is gained and copied during unit stat/upgrade copying, instead of equating level to all innate and free promotions. Typed direct damage now reads this field.
 - Ported `CvCity::getTotalDefense` and `CvCity::getDefenseModifier` exact arithmetic to a reusable Kotlin kernel, including additive building/natural/owner/ranged defense, occupation suppression, and bombardment damage scaling.
 - Added idempotent source-transform tests and Android build generation steps for both systems.
-- F08 **38→39**, F09 **20→21**, F13 **42→43**; equal-weight **15.00→15.12%**. Implementation-only estimates. No gameplay verification performed.
+- F08 **38→39**, F09 **20→21**, F13 **42→43**; equal-weight **15.00→15.20%**. Implementation-only estimates. No gameplay verification performed.
 - Remaining barriers to *full* source fidelity: many EMM level assignment/upgrade pathways, city natural-defense culture levels, building/owner/ranged defenses, bombardment state, city capture/occupation data, and actual runtime city-defense binding into `EmmTypedDamage`. Successful generated Android compilation has not yet been independently confirmed.
+
+### 2026-10-28 — Live cultural natural defense
+
+- EMM's seven culture-defense levels (0, 0, 10, 20, 30, 40, 50) and all four game-speed threshold tables extracted from pinned source.
+- City lifetime culture is now saved separately from Unciv's spendable tile-growth culture and is used to advance EMM culture tier each turn; the source level now supplies natural defense in typed HP damage.
+- Replaced false Unciv city-strength proxy with six independent serialized defense fields. Building, owner and ranged contributions and bombardment still need actual source-derived state updates.
+- F08 **39→40**, F13 **43→44**; equal-weight mean **15.12→15.20%**. Generated build compilation and gameplay verification not yet confirmed.
 
 ## Change history
 
