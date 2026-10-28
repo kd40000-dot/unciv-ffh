@@ -73,11 +73,12 @@ pestilence = """            EmmCityEpidemics.pestilence(city, random, goodBuildi
 revised = """            EmmCityEpidemics.pestilence(city, random, goodBuildingHealth)
             city.cityStats.update()
         }
-        damageLivingUnits(game, "Blight")
+        damageLivingUnits(game, "Pestilence")
     }
 }"""
 assert code.count(pestilence) == 1, "pestilence anchor mismatch"
 code = code.replace(pestilence, revised)
 path.write_text(code)
-assert code.count("damageLivingUnits(game, "Pestilence")") == 2
+assert code.count('damageLivingUnits(game, "Blight")') == 1
+assert code.count('damageLivingUnits(game, "Pestilence")') == 1
 print("Patched both epidemic callbacks with shared unit damage")
