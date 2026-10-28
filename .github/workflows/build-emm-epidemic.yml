@@ -49,6 +49,8 @@ jobs:
           persist-credentials: false
       - name: Verify live EMM building-defense generator
         run: python3 tools/verify_emm_building_defense.py
+      - name: Verify source EMM siege bombard action generation
+        run: python3 tools/verify_emm_siege_bombard.py
       - name: Verify building bombard-protection source mapping
         run: python3 tools/verify_emm_bombard_protection.py
       - name: Verify pinned EMM ranged-improvement XML values
