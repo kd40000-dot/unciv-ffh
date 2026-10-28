@@ -22,6 +22,7 @@ helper='''    /**
      * modifiers until the complete CvUnit combat pipeline is ported.
      * This never applies a separate HP damage roll.
      */
+    @yairm210.purity.annotations.Readonly
     private fun emmTypedStrengthMultiplier(own: ICombatant, enemy: ICombatant): Float {
         if (own !is MapUnitCombatant || enemy !is MapUnitCombatant) return 1f
         if (!own.getCivInfo().gameInfo.ruleset.buildings.containsKey("Herbalist")) return 1f
