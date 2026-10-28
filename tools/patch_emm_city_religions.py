@@ -27,7 +27,9 @@ if "fun spreadToCity(" not in s:
     s=s.replace(anchor,'''    /** A source religion may coexist with others in the same city. */
     fun spreadToCity(city: com.unciv.logic.city.City, religionKey: String): Boolean {
         if (religionKey !in byKey) return false
-        return city.emmPresentReligions.add(religionKey)
+        if (!city.emmPresentReligions.add(religionKey)) return false
+        city.civ.gameInfo.changeEmmArmageddon(byKey[religionKey]!!.counterOnSpread)
+        return true
     }
 
     /** Once-only holy-city identity and initial city religion presence. */
@@ -39,7 +41,8 @@ if "fun spreadToCity(" not in s:
             gameCities.any { religionKey in it.emmHolyCityReligions }) return false
         founded.add(religionKey)
         city.emmHolyCityReligions.add(religionKey)
-        city.emmPresentReligions.add(religionKey)
+        spreadToCity(city, religionKey)
+        city.civ.gameInfo.changeEmmArmageddon(byKey[religionKey]!!.counterOnFound)
         return true
     }
 
