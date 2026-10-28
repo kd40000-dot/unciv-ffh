@@ -3,47 +3,37 @@
 from pathlib import Path
 import sys
 root=Path(sys.argv[1] if len(sys.argv)>1 else "upstream-unciv")
-city=root/"core/src/com/unciv/logic/city/City.kt"
-s=city.read_text()
-if "var emmPresentReligions" not in s:
-    anchor="    var religion = CityReligionManager()"
-    assert s.count(anchor)==1
-    s=s.replace(anchor,anchor+'''
-    /** Independently persisted EMM religions (multiple faiths can coexist). */
-    var emmPresentReligions = HashSet<String>()
-    /** Holy-city identities survive capture and changing state religion. */
-    var emmHolyCityReligions = HashSet<String>()''')
-    anchor="        toReturn.religion = religion.clone()"
-    assert s.count(anchor)==1
-    s=s.replace(anchor,anchor+'''
-        toReturn.emmPresentReligions.addAll(emmPresentReligions)
-        toReturn.emmHolyCityReligions.addAll(emmHolyCityReligions)''')
-    city.write_text(s)
 engine=root/"core/src/com/unciv/logic/civilization/EmmReligions.kt"
 s=engine.read_text()
 if "fun spreadToCity(" not in s:
     anchor="    fun adopt(civ: Civilization, religionKey: String): Boolean {"
     assert s.count(anchor)==1
-    s=s.replace(anchor,'''    /** A source religion may coexist with others in the same city. */
+    s=s.replace(anchor,'''    /** Existing EMM health/event engine owns all world/city religion state. */
+    private val gameNames = mapOf(
+        "RELIGION_FELLOWSHIP_OF_LEAVES" to "Fellowship of Leaves",
+        "RELIGION_THE_ORDER" to "The Order",
+        "RELIGION_OCTOPUS_OVERLORDS" to "Octopus Overlords",
+        "RELIGION_RUNES_OF_KILMORPH" to "Runes of Kilmorph",
+        "RELIGION_THE_ASHEN_VEIL" to "The Ashen Veil",
+        "RELIGION_THE_EMPYREAN" to "The Empyrean",
+        "RELIGION_COUNCIL_OF_ESUS" to "Council of Esus"
+    )
+
+    /** Spread through the already integrated EMM clash/AC/city-state engine. */
     fun spreadToCity(city: com.unciv.logic.city.City, religionKey: String): Boolean {
-        if (religionKey !in byKey) return false
-        if (!city.emmPresentReligions.add(religionKey)) return false
-        city.civ.gameInfo.changeEmmArmageddon(byKey[religionKey]!!.counterOnSpread)
-        return true
+        val name = gameNames[religionKey] ?: return false
+        if (name in city.emmEstablishedReligions) return false
+        city.civ.gameInfo.emmSpreadReligion(name, city)
+        return name in city.emmEstablishedReligions
     }
 
-    /** Once-only holy-city identity and initial city religion presence. */
+    /** Preserve global founded slots even if the holy city is destroyed. */
     fun foundAt(city: com.unciv.logic.city.City, religionKey: String): Boolean {
-        if (religionKey !in byKey) return false
-        val gameCities = city.civ.gameInfo.civilizations.flatMap { it.cities }
-        val founded = city.civ.gameInfo.emmFoundedReligions
-        if (religionKey in founded ||
-            gameCities.any { religionKey in it.emmHolyCityReligions }) return false
-        founded.add(religionKey)
-        city.emmHolyCityReligions.add(religionKey)
-        spreadToCity(city, religionKey)
-        city.civ.gameInfo.changeEmmArmageddon(byKey[religionKey]!!.counterOnFound)
-        return true
+        val name = gameNames[religionKey] ?: return false
+        val game = city.civ.gameInfo
+        if (name in game.emmFoundedReligions) return false
+        game.emmFoundReligion(name, city)
+        return name in game.emmFoundedReligions
     }
 
 '''+anchor)
@@ -72,7 +62,7 @@ if "fun onTechnologyResearched(" not in e:
             // religions; source random tie-breaking and settlements still pending.
             val city = civ.cities.maxByOrNull { candidate ->
                 var score = (10 + candidate.population.population) /
-                    (candidate.emmPresentReligions.size + 1)
+                    (candidate.emmEstablishedReligions.size + 1)
                 if (candidate.isCapital()) score /= 8
                 score.coerceAtLeast(1)
             } ?: continue
@@ -115,14 +105,4 @@ call="        EmmReligions.initializeAlignment(this)" + chr(10)
 if "EmmReligions.initializeAlignment(this)" not in t:
     assert t.count(anchor)==1
     civ.write_text(t.replace(anchor,anchor+call,1))
-game=root/"core/src/com/unciv/logic/GameInfo.kt"
-g=game.read_text()
-if "var emmFoundedReligions" not in g:
-    anchor="    var turns = 0"
-    assert g.count(anchor)==1
-    g=g.replace(anchor,anchor+chr(10)+"    /** Global, persistent EMM founded religion slots, even if holy cities are razed. */"+chr(10)+"    var emmFoundedReligions = HashSet<String>()")
-    anchor="        toReturn.turns = turns"
-    assert g.count(anchor)==1
-    g=g.replace(anchor,anchor+chr(10)+"        toReturn.emmFoundedReligions.addAll(emmFoundedReligions)")
-    game.write_text(g)
-print("Installed persisted multi-religion city presence and single holy-city founding API")
+print("Integrated EMM religion source catalog, founding, spread and alignment with existing health/event engine")
