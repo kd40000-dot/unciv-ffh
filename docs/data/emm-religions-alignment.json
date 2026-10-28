@@ -1,0 +1,87 @@
+{
+  "sourceRevision": "60b0ec3740083162aaab7bf8491761a54a65a610",
+  "alignments": [
+    "ALIGNMENT_GOOD",
+    "ALIGNMENT_NEUTRAL",
+    "ALIGNMENT_EVIL"
+  ],
+  "religions": [
+    {
+      "key": "RELIGION_FELLOWSHIP_OF_LEAVES",
+      "tech": "TECH_WAY_OF_THE_FORESTS",
+      "alignment": "ALIGNMENT_NEUTRAL",
+      "best": "ALIGNMENT_GOOD",
+      "worst": "ALIGNMENT_EVIL",
+      "spread": 80,
+      "counterFound": 0,
+      "counterSpread": 0,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_THE_ORDER",
+      "tech": "TECH_ORDERS_FROM_HEAVEN",
+      "alignment": "ALIGNMENT_GOOD",
+      "best": "ALIGNMENT_GOOD",
+      "worst": "ALIGNMENT_GOOD",
+      "spread": 175,
+      "counterFound": 0,
+      "counterSpread": 0,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_OCTOPUS_OVERLORDS",
+      "tech": "TECH_MESSAGE_FROM_THE_DEEP",
+      "alignment": "ALIGNMENT_EVIL",
+      "best": "ALIGNMENT_NEUTRAL",
+      "worst": "ALIGNMENT_EVIL",
+      "spread": 75,
+      "counterFound": 3,
+      "counterSpread": 0,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_RUNES_OF_KILMORPH",
+      "tech": "TECH_WAY_OF_THE_EARTHMOTHER",
+      "alignment": "ALIGNMENT_GOOD",
+      "best": "ALIGNMENT_GOOD",
+      "worst": "ALIGNMENT_NEUTRAL",
+      "spread": 80,
+      "counterFound": 0,
+      "counterSpread": 0,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_THE_ASHEN_VEIL",
+      "tech": "TECH_CORRUPTION_OF_SPIRIT",
+      "alignment": "ALIGNMENT_EVIL",
+      "best": "ALIGNMENT_EVIL",
+      "worst": "ALIGNMENT_EVIL",
+      "spread": 150,
+      "counterFound": 5,
+      "counterSpread": 1,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_THE_EMPYREAN",
+      "tech": "TECH_HONOR",
+      "alignment": "ALIGNMENT_GOOD",
+      "best": "ALIGNMENT_GOOD",
+      "worst": "ALIGNMENT_NEUTRAL",
+      "spread": 100,
+      "counterFound": 0,
+      "counterSpread": 0,
+      "hidden": false
+    },
+    {
+      "key": "RELIGION_COUNCIL_OF_ESUS",
+      "tech": "TECH_DECEPTION",
+      "alignment": "ALIGNMENT_EVIL",
+      "best": "ALIGNMENT_NEUTRAL",
+      "worst": "ALIGNMENT_EVIL",
+      "spread": 100,
+      "counterFound": 0,
+      "counterSpread": 0,
+      "hidden": true
+    }
+  ]
+}
