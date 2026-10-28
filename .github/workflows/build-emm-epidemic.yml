@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'tools/patch_unciv_health.py'
+      - '.github/workflows/build-unciv-health.yml'
       - 'tools/patch_emm_epidemic_damage.py'
       - 'tools/patch_emm_default_races.py'
       - 'tools/patch_emm_typed_damage.py'
@@ -85,6 +86,24 @@ jobs:
           python3 tools/patch_emm_religion_conversion_action.py upstream-unciv
       - name: Verify source-backed EMM religion and alignment state
         run: python3 tools/verify_emm_religions_alignment.py upstream-unciv
+      - name: Bundle EMM city health icon
+        run: |
+          python3 -m pip install cairosvg Pillow
+          curl -fL --retry 3 'https://game-icons.net/icons/ffffff/transparent/1x1/sbed/health-normal.svg' -o /tmp/emm-health.svg
+          mkdir -p upstream-unciv/android/assets/ExtraImages/Icons
+          python3 - <<'PY'
+          from pathlib import Path
+          import cairosvg
+          from PIL import Image
+          target=Path('upstream-unciv/android/assets/ExtraImages/Icons/EMMHealth.png')
+          cairosvg.svg2png(url='/tmp/emm-health.svg',write_to=str(target),output_width=128,output_height=128)
+          with Image.open(target) as image:
+              rgba=image.convert('RGBA')
+              assert rgba.size == (128,128)
+              assert rgba.getchannel('A').getbbox()
+              assert rgba.getpixel((0,0))[3] == 0
+          print('Verified packaged EMM city health icon:',target,target.stat().st_size)
+          PY
       - name: Check generated Kotlin changes
         run: |
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
