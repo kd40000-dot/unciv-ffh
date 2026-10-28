@@ -15,7 +15,7 @@ block="""        copiedFrom?.copyStatisticsTo(unit)
         // New ordinary land units lacking a race receive this as a free promotion.
         // Source exceptions for world units and animals need fuller roster metadata.
         if (civInfo.civName == "Infernal" &&
-            !unit.baseUnit.isWaterUnit() &&
+            !unit.baseUnit.isWaterUnit &&
             civInfo.gameInfo.ruleset.unitPromotions.containsKey("Demon") &&
             unit.promotions.promotions.none {
                 it in setOf("Angel", "Avatar", "Demon", "Elemental", "Golem",
