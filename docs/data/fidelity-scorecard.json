@@ -66,13 +66,17 @@
       ],
       "portEvidence": [
         "docs/open-fidelity-gaps.md",
-        "docs/compatibility.md"
+        "docs/compatibility.md",
+        "tools/patch_emm_religions_alignment.py",
+        "tools/patch_emm_city_religions.py",
+        "tools/verify_emm_religions_alignment.py",
+        "docs/data/emm-religions-alignment.json"
       ],
       "gameplayConfirmed": [],
       "verification": "Further source-equivalence and in-game regression testing required",
-      "remainingDifferences": "Religion founding/spread, holy cities, priest progression and most religious effects are missing.",
+      "remainingDifferences": "Religion founding/spread, holy cities, priest progression and most religious effects are missing. 2026-10-28 foundation: pinned definitions, source-tech founding and old event/health faith-state integration committed; conversion alignment now clamps best/worst, selected leader alignments initialize. Player religion selection UI, natural spread, priest units and full religion economy remain missing. Gameplay verification pending.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Initial 25-system audit"
+      "updatedBy": "2026-10-28: source catalog and alignment foundation committed; percentage held until new Android build and in-game acceptance."
     },
     {
       "id": "F04",
@@ -85,13 +89,16 @@
       ],
       "portEvidence": [
         "docs/open-fidelity-gaps.md",
-        "docs/compatibility.md"
+        "docs/compatibility.md",
+        "tools/patch_emm_religions_alignment.py",
+        "tools/patch_emm_city_religions.py",
+        "docs/data/emm-leader-alignments.json"
       ],
       "gameplayConfirmed": [],
       "verification": "Further source-equivalence and in-game regression testing required",
-      "remainingDifferences": "No source-equivalent Good/Neutral/Evil alignment state, conversion or diplomatic restrictions.",
+      "remainingDifferences": "No source-equivalent Good/Neutral/Evil alignment state, conversion or diplomatic restrictions. 2026-10-28 foundation: pinned definitions, source-tech founding and old event/health faith-state integration committed; conversion alignment now clamps best/worst, selected leader alignments initialize. Player religion selection UI, natural spread, priest units and full religion economy remain missing. Gameplay verification pending.",
       "lastReviewed": "2026-10-26",
-      "updatedBy": "Initial 25-system audit"
+      "updatedBy": "2026-10-28: source catalog and alignment foundation committed; percentage held until new Android build and in-game acceptance."
     },
     {
       "id": "F05",
