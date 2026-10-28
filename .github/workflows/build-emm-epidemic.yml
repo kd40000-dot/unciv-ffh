@@ -17,6 +17,7 @@ on:
       - 'tools/patch_emm_bombard_protection.py'
       - 'tools/patch_emm_siege_bombard.py'
       - 'tools/patch_emm_religions_alignment.py'
+      - 'tools/verify_emm_religions_alignment.py'
       - 'tools/verify_emm_siege_bombard.py'
       - 'tools/patch_emm_culture_defense.py'
       - 'tools/patch_emm_culture_progression.py'
@@ -78,6 +79,8 @@ jobs:
           python3 tools/patch_emm_bombard_protection.py upstream-unciv upstream-emm
           python3 tools/patch_emm_siege_bombard.py upstream-unciv upstream-emm
           python3 tools/patch_emm_religions_alignment.py upstream-unciv upstream-emm
+      - name: Verify source-backed EMM religion and alignment state
+        run: python3 tools/verify_emm_religions_alignment.py upstream-unciv
       - name: Check generated Kotlin changes
         run: |
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
