@@ -3,6 +3,7 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import subprocess, sys
+import xml.etree.ElementTree as ET
 
 source = Path("tools/patch_emm_ranged_defense.py").read_text()
 expected = {
@@ -14,6 +15,23 @@ expected = {
     "Pirate Harbor": (1, 5),
     "Pirate Port": (2, 10),
 }
+if len(sys.argv) > 1:
+    improvement_xml = Path(sys.argv[1]) / "XML/Terrain/CIV4ImprovementInfos.xml"
+    tree = ET.parse(improvement_xml).getroot()
+    def local(tag):
+        return tag.rsplit("}", 1)[-1]
+    def get(entry, name):
+        return next((child.text for child in entry if local(child.tag) == name), None)
+    records = {}
+    for entry in tree.iter():
+        if local(entry.tag) != "ImprovementInfo":
+            continue
+        key = get(entry, "Type")
+        rng = int(get(entry, "iRange") or 0)
+        bonus = int(get(entry, "iRangeDefenseModifier") or 0)
+        if key and bonus:
+            records[key.removeprefix("IMPROVEMENT_").replace("_", " ").title()] = (rng, bonus)
+    assert records == expected, (records, expected)
 for name, values in expected.items():
     assert f'"{name}" to ({values[0]} to {values[1]})' in source
 with TemporaryDirectory() as temp:
