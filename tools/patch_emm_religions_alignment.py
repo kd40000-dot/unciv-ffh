@@ -58,8 +58,13 @@ object EmmReligions {
     fun adopt(civ: Civilization, religionKey: String): Boolean {
         val religion = byKey[religionKey] ?: return false
         if (civ.emmStateReligion == religion.key) return false
+        // CvPlayer::convert clamps alignment between source Best and Worst.
+        val order = listOf("ALIGNMENT_GOOD", "ALIGNMENT_NEUTRAL", "ALIGNMENT_EVIL")
+        val initial = civ.emmAlignment ?: religion.alignment
+        val lower = order.indexOf(religion.best ?: initial).coerceAtLeast(0)
+        val upper = order.indexOf(religion.worst ?: initial).coerceAtLeast(lower)
         civ.emmStateReligion = religion.key
-        civ.emmAlignment = religion.alignment
+        civ.emmAlignment = order[order.indexOf(initial).coerceIn(lower, upper)]
         return true
     }
 
