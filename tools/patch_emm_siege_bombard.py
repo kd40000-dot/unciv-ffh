@@ -48,11 +48,17 @@ object EmmSiegeBombard {
 %s
     )
 
+    /** Player and AI use identical legality and execution rules. */
+    fun tryAutomatedBombard(unit: MapUnit): Boolean {
+        val action = actions(unit).firstOrNull { it.action != null } ?: return false
+        action.action?.invoke()
+        return true
+    }
+
     fun actions(unit: MapUnit): Sequence<UnitAction> {
-        if (!unit.civ.gameInfo.ruleset.buildings.containsKey("Herbalist"))
-            return emptySequence()
         val rate = sourceBombardRate[unit.baseUnit.name] ?: return emptySequence()
-        if (rate <= 0 || unit.attacksThisTurn > 0 || !unit.hasMovement())
+        if (rate <= 0 || unit.attacksThisTurn > 0 || !unit.hasMovement()
+            || unit.isEmbarked() || unit.isTransported)
             return emptySequence()
         val enemies = unit.getTile().getTilesInDistance(1)
             .filter { it.isCityCenter() }
@@ -68,7 +74,8 @@ object EmmSiegeBombard {
                     EmmBuildingDefense.empire(target),
                     EmmRangedDefense.forCity(target)
                 )
-                if (total <= 0) return@UnitAction
+                if (total <= 0 || !unit.hasMovement() || unit.attacksThisTurn > 0
+                    || !unit.civ.isAtWarWith(target.civ)) return@UnitAction
                 EmmCityDefense.bombard(target, rate, false, total)
                 unit.attacksThisTurn += 1
                 unit.useMovementPoints(1f)
@@ -97,4 +104,15 @@ anchor='    Pillage(UnitActionType.Pillage, portrait("Pillage"), false, useFrequ
 if '    Bombard(UnitActionType.Bombard' not in u:
     assert u.count(anchor)==1
     ui.write_text(u.replace(anchor,anchor+'\n    Bombard(UnitActionType.Bombard, portrait("Pillage"), false, useFrequency = 85f),'))
+automation=root/"core/src/com/unciv/logic/automation/unit/UnitAutomation.kt"
+auto=automation.read_text()
+needle="        // if there is an attackable unit in the vicinity, attack!"
+hook="""        // EMM: bombard enemy city defenses before conventional attacks.
+        if (com.unciv.logic.city.EmmSiegeBombard.tryAutomatedBombard(unit)) return
+
+"""
+if hook not in auto:
+    assert auto.count(needle)==1, "Pinned Unciv AI combat anchor moved"
+    automation.write_text(auto.replace(needle,hook+needle))
+
 print(f"Integrated adjacent city bombard action for {len(mapped)} of {len(source)} EMM bombard-rate units")
