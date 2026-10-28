@@ -16,6 +16,7 @@ on:
       - 'tools/patch_emm_bombard_state.py'
       - 'tools/patch_emm_bombard_protection.py'
       - 'tools/patch_emm_siege_bombard.py'
+      - 'tools/verify_emm_siege_bombard.py'
       - 'tools/patch_emm_culture_defense.py'
       - 'tools/patch_emm_culture_progression.py'
       - 'docs/data/emm-culture-defense.json'
