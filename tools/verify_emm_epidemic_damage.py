@@ -21,6 +21,7 @@ object EmmArmageddonEvents {
             city.cityStats.update()
         }
     }
+
     fun firePestilence(game: GameInfo) {
         for (civ in game.civilizations) for (city in civ.cities) {
             EmmCityEpidemics.pestilence(city, random, goodBuildingHealth)
