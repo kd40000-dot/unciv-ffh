@@ -70,4 +70,36 @@ if "fun onTechnologyResearched(" not in e:
 '''
     e=e.replace(hook,method+hook)
     engine.write_text(e)
+# Source-backed starting alignment for the 19 ported civilization/leader choices.
+import json
+leaders=json.loads(Path("docs/data/emm-leader-alignments.json").read_text())
+assert leaders["commit"]=="60b0ec3740083162aaab7bf8491761a54a65a610"
+values=leaders["selectedCivilizations"]
+assert len(values)==19
+records=",\\n".join("        "+json.dumps(k)+" to "+json.dumps(v["alignment"]) for k,v in sorted(values.items()))
+engine=root/"core/src/com/unciv/logic/civilization/EmmReligions.kt"
+e=engine.read_text()
+if "fun initializeAlignment(" not in e:
+    anchor="    fun changeAlignment(civ: Civilization, alignment: String): Boolean {"
+    assert e.count(anchor)==1
+    block='''    private val selectedLeaderAlignments = mapOf(
+%s
+    )
+
+    /** Starting leader alignment, only once; never reset conversions on load. */
+    fun initializeAlignment(civ: Civilization) {
+        if (civ.emmAlignment != null) return
+        civ.emmAlignment = selectedLeaderAlignments[civ.civName]
+    }
+
+''' % records
+    engine.write_text(e.replace(anchor,block+anchor))
+civ=root/"core/src/com/unciv/logic/civilization/Civilization.kt"
+t=civ.read_text()
+anchor='''fun setTransients():Unit = timeThis("Civilization.setTransients") {
+'''
+call="        EmmReligions.initializeAlignment(this)\\n"
+if "EmmReligions.initializeAlignment(this)" not in t:
+    assert t.count(anchor)==1
+    civ.write_text(t.replace(anchor,anchor+call,1))
 print("Installed persisted multi-religion city presence and single holy-city founding API")
