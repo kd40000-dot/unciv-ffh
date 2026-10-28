@@ -23,6 +23,8 @@ assert "candidate.isCapital()" in generated
 assert 'removePrefix("TECH")' in generated
 assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
 assert "city.civ.gameInfo.emmFoundedReligions" in generated
+assert "changeEmmArmageddon(byKey[religionKey]!!.counterOnFound)" in generated
+assert "changeEmmArmageddon(byKey[religionKey]!!.counterOnSpread)" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
 assert "fun initializeAlignment(civ: Civilization)" in generated
 assert "selectedLeaderAlignments[civ.civName]" in generated
