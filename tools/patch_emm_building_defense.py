@@ -24,7 +24,13 @@ for entry in definitions.iter("BuildingInfo"):
     empire = int(entry.findtext("iAllCityDefense", "0"))
     if local or empire:
         records[key] = (local, empire)
-assert records, "No EMM building defenses parsed; inspect upstream XML format"
+if not records:
+    entries = list(definitions.iter("BuildingInfo"))
+    print("EMM XML diagnostics:", "bytes=", xml.stat().st_size,
+          "entries=", len(entries), "root=", definitions.tag,
+          "first=", ET.tostring(entries[0], encoding="unicode")[:1200] if entries else "none",
+          flush=True)
+    raise AssertionError("No EMM building defenses parsed; inspect upstream XML format")
 
 # Explicitly verify the source version, not just an arbitrary checkout.
 # A CI checkout supplies the pinned commit; local executions can use .git.
