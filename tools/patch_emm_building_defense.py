@@ -16,16 +16,24 @@ xml = emm / "XML/Buildings/CIV4BuildingInfos.xml"
 assert xml.is_file(), f"Missing pinned EMM building XML: {xml}"
 definitions = ET.parse(xml).getroot()
 records = {}
-for entry in definitions.iter("BuildingInfo"):
-    key = entry.findtext("Type")
+def tag_name(element):
+    return element.tag.rsplit("}", 1)[-1]
+
+def field(entry, name, default=None):
+    return next((child.text for child in entry if tag_name(child) == name), default)
+
+for entry in definitions.iter():
+    if tag_name(entry) != "BuildingInfo":
+        continue
+    key = field(entry, "Type")
     if not key or not key.startswith("BUILDING_"):
         continue
-    local = int(entry.findtext("iDefense", "0"))
-    empire = int(entry.findtext("iAllCityDefense", "0"))
+    local = int(field(entry, "iDefense", "0"))
+    empire = int(field(entry, "iAllCityDefense", "0"))
     if local or empire:
         records[key] = (local, empire)
 if not records:
-    entries = list(definitions.iter("BuildingInfo"))
+    entries = [entry for entry in definitions.iter() if tag_name(entry) == "BuildingInfo"]
     print("EMM XML diagnostics:", "bytes=", xml.stat().st_size,
           "entries=", len(entries), "root=", definitions.tag,
           "first=", ET.tostring(entries[0], encoding="unicode")[:1200] if entries else "none",
