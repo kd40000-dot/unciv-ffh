@@ -62,7 +62,14 @@ if "fun onTechnologyResearched(" not in e:
             .replace(Regex("[^A-Z0-9]"), "").removePrefix("TECH")
         for (religion in source) {
             if (religion.tech == null || canon(religion.tech) != canon(techName)) continue
-            val city = civ.cities.firstOrNull() ?: continue
+            // CvPlayer::foundReligion ranks cities by population and existing
+            // religions; source random tie-breaking and settlements still pending.
+            val city = civ.cities.maxByOrNull { candidate ->
+                var score = (10 + candidate.population.population) /
+                    (candidate.emmPresentReligions.size + 1)
+                if (candidate.isCapital()) score /= 8
+                score.coerceAtLeast(1)
+            } ?: continue
             foundAt(city, religion.key)
         }
     }
