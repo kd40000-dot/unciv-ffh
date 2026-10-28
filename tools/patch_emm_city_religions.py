@@ -34,7 +34,10 @@ if "fun spreadToCity(" not in s:
     fun foundAt(city: com.unciv.logic.city.City, religionKey: String): Boolean {
         if (religionKey !in byKey) return false
         val gameCities = city.civ.gameInfo.civilizations.flatMap { it.cities }
-        if (gameCities.any { religionKey in it.emmHolyCityReligions }) return false
+        val founded = city.civ.gameInfo.emmFoundedReligions
+        if (religionKey in founded ||
+            gameCities.any { religionKey in it.emmHolyCityReligions }) return false
+        founded.add(religionKey)
         city.emmHolyCityReligions.add(religionKey)
         city.emmPresentReligions.add(religionKey)
         return true
@@ -109,4 +112,14 @@ call="        EmmReligions.initializeAlignment(this)" + chr(10)
 if "EmmReligions.initializeAlignment(this)" not in t:
     assert t.count(anchor)==1
     civ.write_text(t.replace(anchor,anchor+call,1))
+game=root/"core/src/com/unciv/logic/GameInfo.kt"
+g=game.read_text()
+if "var emmFoundedReligions" not in g:
+    anchor="    var turns = 0"
+    assert g.count(anchor)==1
+    g=g.replace(anchor,anchor+chr(10)+"    /** Global, persistent EMM founded religion slots, even if holy cities are razed. */"+chr(10)+"    var emmFoundedReligions = HashSet<String>()")
+    anchor="        toReturn.turns = turns"
+    assert g.count(anchor)==1
+    g=g.replace(anchor,anchor+chr(10)+"        toReturn.emmFoundedReligions.addAll(emmFoundedReligions)")
+    game.write_text(g)
 print("Installed persisted multi-religion city presence and single holy-city founding API")
