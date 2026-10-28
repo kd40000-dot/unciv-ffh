@@ -16,6 +16,8 @@ for info in religions:
 assert "fun adopt(civ: Civilization" in generated
 assert "fun spreadToCity(" in generated
 assert "fun foundAt(" in generated
+assert "fun onTechnologyResearched(" in generated
+assert 'removePrefix("TECH")' in generated
 assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
 civ=(root/"core/src/com/unciv/logic/civilization/Civilization.kt").read_text()
@@ -26,4 +28,6 @@ assert "toReturn.emmStateReligion = emmStateReligion" in civ
 city=(root/"core/src/com/unciv/logic/city/City.kt").read_text()
 assert "toReturn.emmPresentReligions.addAll(emmPresentReligions)" in city
 assert "toReturn.emmHolyCityReligions.addAll(emmHolyCityReligions)" in city
+tech=(root/"core/src/com/unciv/logic/civilization/managers/TechManager.kt").read_text()
+assert "EmmReligions.onTechnologyResearched(civInfo, techName)" in tech
 print("PASS: seven source religions and three alignments; persisted civilization clone fields")
