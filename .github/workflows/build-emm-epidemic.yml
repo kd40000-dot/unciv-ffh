@@ -13,6 +13,7 @@ on:
       - 'tools/patch_emm_city_defense_state.py'
       - 'tools/patch_emm_building_defense.py'
       - 'tools/patch_emm_ranged_defense.py'
+      - 'tools/patch_emm_bombard_state.py'
       - 'tools/patch_emm_culture_defense.py'
       - 'tools/patch_emm_culture_progression.py'
       - 'docs/data/emm-culture-defense.json'
@@ -65,11 +66,13 @@ jobs:
           python3 tools/patch_emm_culture_progression.py upstream-unciv
           python3 tools/patch_emm_building_defense.py upstream-unciv upstream-emm
           python3 tools/patch_emm_ranged_defense.py upstream-unciv
+          python3 tools/patch_emm_bombard_state.py upstream-unciv
       - name: Check generated Kotlin changes
         run: |
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
           grep -q 'private fun emmTypedStrengthMultiplier' upstream-unciv/core/src/com/unciv/logic/battle/BattleDamage.kt
           grep -q 'private fun sourceDefense(unit: MapUnit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
+          grep -q 'EmmCityDefense.startCityTurn' upstream-unciv/core/src/com/unciv/logic/city/managers/CityTurnManager.kt
           grep -q 'EmmRangedDefense.forCity(city)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
           grep -q 'EmmBuildingDefense.local(city)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
           grep -q 'object EmmTypedDamage' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
