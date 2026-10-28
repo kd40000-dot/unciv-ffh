@@ -20,15 +20,23 @@ assert "fun onTechnologyResearched(" in generated
 assert 'removePrefix("TECH")' in generated
 assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
+assert "fun initializeAlignment(civ: Civilization)" in generated
+assert "selectedLeaderAlignments[civ.civName]" in generated
 assert "order.indexOf(initial).coerceIn(lower, upper)" in generated
 civ=(root/"core/src/com/unciv/logic/civilization/Civilization.kt").read_text()
 assert "var emmAlignment: String? = null" in civ
 assert "var emmStateReligion: String? = null" in civ
 assert "toReturn.emmAlignment = emmAlignment" in civ
+assert "EmmReligions.initializeAlignment(this)" in civ
 assert "toReturn.emmStateReligion = emmStateReligion" in civ
 city=(root/"core/src/com/unciv/logic/city/City.kt").read_text()
 assert "toReturn.emmPresentReligions.addAll(emmPresentReligions)" in city
 assert "toReturn.emmHolyCityReligions.addAll(emmHolyCityReligions)" in city
 tech=(root/"core/src/com/unciv/logic/civilization/managers/TechManager.kt").read_text()
 assert "EmmReligions.onTechnologyResearched(civInfo, techName)" in tech
+leaders=json.loads(Path("docs/data/emm-leader-alignments.json").read_text())
+assert len(leaders["selectedCivilizations"])==19
+for name, info in leaders["selectedCivilizations"].items():
+    assert name in generated
+    assert info["alignment"] in doc["alignments"]
 print("PASS: seven source religions and three alignments; persisted civilization clone fields")
