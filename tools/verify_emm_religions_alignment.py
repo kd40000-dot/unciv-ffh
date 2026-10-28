@@ -20,6 +20,7 @@ assert "fun onTechnologyResearched(" in generated
 assert 'removePrefix("TECH")' in generated
 assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
+assert "order.indexOf(initial).coerceIn(lower, upper)" in generated
 civ=(root/"core/src/com/unciv/logic/civilization/Civilization.kt").read_text()
 assert "var emmAlignment: String? = null" in civ
 assert "var emmStateReligion: String? = null" in civ
