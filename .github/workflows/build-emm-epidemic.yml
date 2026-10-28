@@ -18,6 +18,7 @@ on:
       - 'tools/patch_emm_siege_bombard.py'
       - 'tools/patch_emm_religions_alignment.py'
       - 'tools/patch_emm_city_religions.py'
+      - 'tools/patch_emm_religion_conversion_action.py'
       - 'tools/verify_emm_religions_alignment.py'
       - 'tools/verify_emm_siege_bombard.py'
       - 'tools/patch_emm_culture_defense.py'
@@ -81,6 +82,7 @@ jobs:
           python3 tools/patch_emm_siege_bombard.py upstream-unciv upstream-emm
           python3 tools/patch_emm_religions_alignment.py upstream-unciv upstream-emm
           python3 tools/patch_emm_city_religions.py upstream-unciv
+          python3 tools/patch_emm_religion_conversion_action.py upstream-unciv
       - name: Verify source-backed EMM religion and alignment state
         run: python3 tools/verify_emm_religions_alignment.py upstream-unciv
       - name: Check generated Kotlin changes
@@ -89,6 +91,7 @@ jobs:
           grep -q 'private fun emmTypedStrengthMultiplier' upstream-unciv/core/src/com/unciv/logic/battle/BattleDamage.kt
           grep -q 'private fun sourceDefense(unit: MapUnit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
           grep -q 'toReturn.emmEstablishedReligions.addAll' upstream-unciv/core/src/com/unciv/logic/city/City.kt
+          grep -q 'EmmReligions.conversionActions(unit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt
           grep -q 'toReturn.emmAlignment = emmAlignment' upstream-unciv/core/src/com/unciv/logic/civilization/Civilization.kt
           grep -q 'EmmSiegeBombard.actions(unit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt
           grep -q 'EmmBombardProtection.forCity(city)' upstream-unciv/core/src/com/unciv/logic/city/EmmCityDefense.kt
