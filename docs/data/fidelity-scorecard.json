@@ -185,13 +185,17 @@
         "tools/patch_emm_ranged_defense.py",
         "tools/verify_emm_ranged_defense.py",
         "tools/patch_emm_bombard_state.py",
-        "tools/verify_emm_bombard_state.py"
+        "tools/verify_emm_bombard_state.py",
+        "tools/patch_emm_bombard_protection.py",
+        "tools/verify_emm_bombard_protection.py",
+        "tools/patch_emm_siege_bombard.py",
+        "tools/verify_emm_siege_bombard.py"
       ],
       "gameplayConfirmed": [],
       "verification": "Source-XML building generator and ranged-improvement regressions included in Android pipeline; ruleset validation succeeded 2026-10-28; Kotlin compilation awaiting successful run after purity annotation fixes. Pinned CvPlayer::processBuilding updates city-defense modifiers via buildings; no separate C++ trait/civic direct modifier was found.",
-      "remainingDifferences": "Source-derived live defenses now use imported built-building iDefense (3 of 10 source defense-bearing types currently match the mod), empire-wide iAllCityDefense from owned cities, seven source-ranged improvement definitions (only imported improvement names contribute), natural culture tiers and persistent defense damage fields. Potential scripted owner-wide city-defense changes beyond pinned CvPlayer::processBuilding (the only located C++ contributor), fully correct team/coordinate equivalence, bombardment unit actions, bombard defense, recovery, remaining unimported source structures, other Civ IV combat rounds, first strikes, collateral, withdrawal, and some unit-level semantics remain incomplete. Generated Kotlin compilation and gameplay fidelity are tracked separately. Bombardment state/turn recovery helper now generated, but currently no unit action invokes the bombard helper, so live siege damage is not implemented.",
+      "remainingDifferences": "Source-derived live defenses now use imported built-building iDefense (3 of 10 source defense-bearing types currently match the mod), empire-wide iAllCityDefense from owned cities, seven source-ranged improvement definitions (only imported improvement names contribute), natural culture tiers and persistent defense damage fields. Potential scripted owner-wide city-defense changes beyond pinned CvPlayer::processBuilding (the only located C++ contributor), fully correct team/coordinate equivalence, bombardment unit actions, bombard defense, recovery, remaining unimported source structures, other Civ IV combat rounds, first strikes, collateral, withdrawal, and some unit-level semantics remain incomplete. Generated Kotlin compilation and gameplay fidelity are tracked separately. Bombardment state/turn recovery helper now generated, but currently no unit action invokes the bombard helper, so live siege damage is not implemented. Adjacent enemy-city bombard is now wired to player UnitActions with pinned per-unit bombard rates and source-generated building resistance; Super-Forts improvements, siege AI, advanced tactics, and complete target behavior remain missing.",
       "lastReviewed": "2026-10-28",
-      "updatedBy": "2026-10-28: committed bombard damage arithmetic, persistent flags and turn recovery; no percentage change until unit action wiring and verified compilation."
+      "updatedBy": "2026-10-28: source-mapped adjacent-city player bombard action and building bombard resistance committed; implementation score held pending Android build and broader siege fidelity."
     },
     {
       "id": "F09",
