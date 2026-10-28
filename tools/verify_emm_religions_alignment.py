@@ -18,6 +18,9 @@ for info in religions:
     assert info["key"] in generated
     assert info["tech"] in generated if info["tech"] else True
 assert "fun adopt(civ: Civilization" in generated
+assert "fun conversionActions(" in generated
+assert "emmReligionConversionTurn" in generated
+assert "city.emmEstablishedReligions" in generated
 assert "fun spreadToCity(" in generated
 assert "fun foundAt(" in generated
 assert "fun onTechnologyResearched(" in generated
@@ -39,6 +42,7 @@ assert "var emmStateReligion: String? = null" in civ
 assert "toReturn.emmAlignment = emmAlignment" in civ
 assert "EmmReligions.initializeAlignment(this)" in civ
 assert "toReturn.emmStateReligion = emmStateReligion" in civ
+assert "toReturn.emmReligionConversionTurn = emmReligionConversionTurn" in civ
 city=(root/"core/src/com/unciv/logic/city/City.kt").read_text()
 assert "toReturn.emmEstablishedReligions.addAll(emmEstablishedReligions)" in city
 assert "toReturn.emmHolyCityOf = emmHolyCityOf" in city
@@ -52,4 +56,8 @@ for name, info in leaders["selectedCivilizations"].items():
 game=(root/"core/src/com/unciv/logic/GameInfo.kt").read_text()
 assert "var emmFoundedReligions = hashSetOf<String>()" in game
 assert "toReturn.emmFoundedReligions.addAll(emmFoundedReligions)" in game
+actions=(root/"core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt").read_text()
+assert "EmmReligions.conversionActions(unit)" in actions
+ui=(root/"core/src/com/unciv/ui/screens/worldscreen/unit/actions/UiUnitAction.kt").read_text()
+assert "EmmConvertReligion(UnitActionType.EmmConvertReligion" in ui
 print("PASS: seven source religions and three alignments; persisted civilization clone fields")
