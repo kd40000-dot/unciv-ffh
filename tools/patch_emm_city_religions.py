@@ -76,7 +76,7 @@ leaders=json.loads(Path("docs/data/emm-leader-alignments.json").read_text())
 assert leaders["commit"]=="60b0ec3740083162aaab7bf8491761a54a65a610"
 values=leaders["selectedCivilizations"]
 assert len(values)==19
-records=",\\n".join("        "+json.dumps(k)+" to "+json.dumps(v["alignment"]) for k,v in sorted(values.items()))
+records=(chr(44)+chr(10)).join("        "+json.dumps(k)+" to "+json.dumps(v["alignment"]) for k,v in sorted(values.items()))
 engine=root/"core/src/com/unciv/logic/civilization/EmmReligions.kt"
 e=engine.read_text()
 if "fun initializeAlignment(" not in e:
@@ -98,7 +98,7 @@ civ=root/"core/src/com/unciv/logic/civilization/Civilization.kt"
 t=civ.read_text()
 anchor='''fun setTransients():Unit = timeThis("Civilization.setTransients") {
 '''
-call="        EmmReligions.initializeAlignment(this)\\n"
+call="        EmmReligions.initializeAlignment(this)" + chr(10)
 if "EmmReligions.initializeAlignment(this)" not in t:
     assert t.count(anchor)==1
     civ.write_text(t.replace(anchor,anchor+call,1))
