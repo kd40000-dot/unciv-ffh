@@ -223,3 +223,10 @@ nor reduces these implementation-only percentage estimates.
 - Injected `EmmCityDefense.startCityTurn` in pinned `CityTurnManager.startTurn` using the inherited Civ IV `CITY_DEFENSE_DAMAGE_HEAL_RATE` of 5, with no recovery when bombarded since last turn. Source EMM uses `CvCity::doTurn` to clear the bombard flag.
 - `tools/verify_emm_bombard_state.py` checks idempotence and bombardment arithmetic; both Android and validation workflows invoke the new code/test.
 - **Not completed:** regular combat / siege unit actions do not yet call `EmmCityDefense.bombard`, and building-specific bombard-defense protection is not yet populated from source; therefore current additions mainly implement state and turn recovery. Neither source-equivalent siege gameplay nor successful compilation of this new patch is claimed until CI evidence is obtained. Fidelity remains 40% F08 and 15.2% overall.
+
+## 2026-10-28 — Live player siege bombard action and building resistance
+
+- `tools/patch_emm_bombard_protection.py` generates a source-checked `EmmBombardProtection` from the pinned `iBombardDefense` XML field, summing built improvements to supply the siege helper. Exact building identity counts are emitted in CI.
+- `tools/patch_emm_siege_bombard.py` generates `EmmSiegeBombard` from pinned `CIV4UnitInfos.xml` `iBombardRate`. It introduces a `Bombard` unit action for adjacent enemy cities and connects it to `EmmCityDefense.bombard`, city-defense inputs and source building protection, with unit action/movement consumption. Android compilation and in-game verification are separately tracked.
+- This is deliberately a **limited adjacent-city live gameplay slice**, NOT complete EMM siege mechanics: AI selection, Super-Forts improvement targets, full siege targeting rules, war declaration, suicide behavior, advanced tactics experience and remaining source unit roster mapping are not yet done. These are explicit F08 gaps rather than claimed complete.
+- Source-mapped regression fixtures cover both new source generators and repeated patch application. Keep F08 at 40% and overall at 15.2% pending compilation and greater breadth.
