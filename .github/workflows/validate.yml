@@ -29,6 +29,8 @@ jobs:
         run: python3 tools/verify_emm_armageddon_events.py
       - name: Verify source EMM cultural defense levels
         run: python3 tools/verify_emm_culture_defense.py
+      - name: Verify source EMM siege bombard unit actions
+        run: python3 tools/verify_emm_siege_bombard.py
       - name: Verify source EMM building bombard protection
         run: python3 tools/verify_emm_bombard_protection.py
       - name: Verify EMM bombardment state and recovery hooks
