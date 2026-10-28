@@ -230,3 +230,9 @@ nor reduces these implementation-only percentage estimates.
 - `tools/patch_emm_siege_bombard.py` generates `EmmSiegeBombard` from pinned `CIV4UnitInfos.xml` `iBombardRate`. It introduces a `Bombard` unit action for adjacent enemy cities and connects it to `EmmCityDefense.bombard`, city-defense inputs and source building protection, with unit action/movement consumption. Android compilation and in-game verification are separately tracked.
 - This is deliberately a **limited adjacent-city live gameplay slice**, NOT complete EMM siege mechanics: AI selection, Super-Forts improvement targets, full siege targeting rules, war declaration, suicide behavior, advanced tactics experience and remaining source unit roster mapping are not yet done. These are explicit F08 gaps rather than claimed complete.
 - Source-mapped regression fixtures cover both new source generators and repeated patch application. Keep F08 at 40% and overall at 15.2% pending compilation and greater breadth.
+
+## 2026-10-28 — Siege AI integration
+
+- `tools/patch_emm_siege_bombard.py` now injects an AI bombardment branch in pinned `UnitAutomation.automateUnitMoves` immediately before the ordinary combat attack selection; player and AI use one `EmmSiegeBombard.actions` legality/execution path. Transported and embarked siege units are excluded, and action execution checks movement, prior attacks and war status again. The unneeded Herbalist-building presence gate was removed.
+- `tools/verify_emm_siege_bombard.py` checks AI insertion and idempotence as well as the player action.
+- This is a usable, limited adjacent-city AI behavior, not source-equivalent Civ IV siege decision-making; source Super-Forts siege, advanced tactics and city assault prioritization remain incomplete. Android compilation/in-game tests separately required. Fidelity score remains unchanged pending evidence.
