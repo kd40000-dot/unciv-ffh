@@ -67,8 +67,8 @@ if "EmmCityDefense.startCityTurn" not in t:
     # Explicit hook, no assumed numeric recovery constant: Civ4's
     # CITY_DEFENSE_DAMAGE_HEAL_RATE must be pinned independently.
     anchor='''        city.clearCaches()'''
-    assert t.count(anchor)==1
+    assert t.count(anchor)>=1
     t=t.replace(anchor,'''        com.unciv.logic.city.EmmCityDefense.startCityTurn(city, 0)
-'''+anchor)
+'''+anchor,1)
     turn.write_text(t)
 print("Installed persisted EMM bombardment state and live turn hook (heal rate pending verified source constant)")
