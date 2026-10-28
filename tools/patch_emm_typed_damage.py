@@ -33,6 +33,7 @@ object EmmTypedDamage {
 %s
     )
 
+    @yairm210.purity.annotations.Readonly
     fun resistance(promotions: Set<String>, type: String): Int =
         promotions.sumOf { sourcePromotionResistances[it]?.get(type) ?: 0 }
             .coerceIn(-100, 100)
