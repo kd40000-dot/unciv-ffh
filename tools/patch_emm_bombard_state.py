@@ -64,11 +64,11 @@ if "fun changeDefenseDamage(city: City," not in k:
     kernel.write_text(k)
 t=turn.read_text()
 if "EmmCityDefense.startCityTurn" not in t:
-    # Explicit hook, no assumed numeric recovery constant: Civ4's
-    # CITY_DEFENSE_DAMAGE_HEAL_RATE must be pinned independently.
+    # Civ IV base GlobalDefines.xml CITY_DEFENSE_DAMAGE_HEAL_RATE = 5;
+    # EMM does not override the key in its GlobalDefinesAlt.xml.
     anchor='''        city.clearCaches()'''
     assert t.count(anchor)>=1
-    t=t.replace(anchor,'''        com.unciv.logic.city.EmmCityDefense.startCityTurn(city, 0)
+    t=t.replace(anchor,'''        com.unciv.logic.city.EmmCityDefense.startCityTurn(city, 5)
 '''+anchor,1)
     turn.write_text(t)
-print("Installed persisted EMM bombardment state and live turn hook (heal rate pending verified source constant)")
+print("Installed persisted EMM bombardment state and live turn hook (default Civ IV heal rate 5)")
