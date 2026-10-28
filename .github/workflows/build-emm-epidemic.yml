@@ -43,6 +43,8 @@ jobs:
           ref: 60b0ec3740083162aaab7bf8491761a54a65a610
           path: upstream-emm
           persist-credentials: false
+      - name: Verify live EMM building-defense generator
+        run: python3 tools/verify_emm_building_defense.py
       - name: Test idempotent epidemic engine patch
         run: python3 tools/verify_emm_epidemic_damage.py
       - name: Generate health and event engine
