@@ -88,7 +88,7 @@ jobs:
           grep -q 'private fun damageLivingUnits' upstream-unciv/core/src/com/unciv/logic/city/EmmArmageddonEvents.kt
           grep -q 'private fun emmTypedStrengthMultiplier' upstream-unciv/core/src/com/unciv/logic/battle/BattleDamage.kt
           grep -q 'private fun sourceDefense(unit: MapUnit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/EmmTypedDamage.kt
-          grep -q 'toReturn.emmPresentReligions.addAll' upstream-unciv/core/src/com/unciv/logic/city/City.kt
+          grep -q 'toReturn.emmEstablishedReligions.addAll' upstream-unciv/core/src/com/unciv/logic/city/City.kt
           grep -q 'toReturn.emmAlignment = emmAlignment' upstream-unciv/core/src/com/unciv/logic/civilization/Civilization.kt
           grep -q 'EmmSiegeBombard.actions(unit)' upstream-unciv/core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt
           grep -q 'EmmBombardProtection.forCity(city)' upstream-unciv/core/src/com/unciv/logic/city/EmmCityDefense.kt
