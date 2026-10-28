@@ -42,4 +42,32 @@ if "fun spreadToCity(" not in s:
 
 '''+anchor)
     engine.write_text(s)
+tech=root/"core/src/com/unciv/logic/civilization/managers/TechManager.kt"
+t=tech.read_text()
+hook="        val isNewTech = techsResearched.add(techName)"
+call="""        if (isNewTech)
+            com.unciv.logic.civilization.EmmReligions.onTechnologyResearched(civInfo, techName)"""
+if call not in t:
+    assert t.count(hook)==1
+    t=t.replace(hook,hook+"\n"+call)
+    tech.write_text(t)
+engine=root/"core/src/com/unciv/logic/civilization/EmmReligions.kt"
+e=engine.read_text()
+if "fun onTechnologyResearched(" not in e:
+    hook="    fun spreadToCity("
+    assert e.count(hook)==1
+    method='''    /** EMM first-discovery holy-city trigger. A city-selection algorithm is pending. */
+    fun onTechnologyResearched(civ: Civilization, techName: String) {
+        fun canon(value: String) = value.uppercase()
+            .replace(Regex("[^A-Z0-9]"), "").removePrefix("TECH")
+        for (religion in source) {
+            if (religion.tech == null || canon(religion.tech) != canon(techName)) continue
+            val city = civ.cities.firstOrNull() ?: continue
+            foundAt(city, religion.key)
+        }
+    }
+
+'''
+    e=e.replace(hook,method+hook)
+    engine.write_text(e)
 print("Installed persisted multi-religion city presence and single holy-city founding API")
