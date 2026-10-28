@@ -36,6 +36,7 @@ defs='''    // Original EMM Civ4 XML defense/typed combat values.
      * by the opponent's resistance to each damage type.
      * The base component is unaffected by typed resistance.
      */
+    @yairm210.purity.annotations.Readonly
     fun resistedCombatStrength(
         ordinaryStrength: Int,
         typedComponents: Map<String, Int>,
@@ -49,6 +50,7 @@ defs='''    // Original EMM Civ4 XML defense/typed combat values.
         return (scaled / 100).coerceAtLeast(0)
     }
 
+    @yairm210.purity.annotations.Readonly
     fun unitTypedComponents(unit: MapUnit): Map<String, Int> {
         val output = mutableMapOf<String, Int>()
         fun include(parts: Map<String, Int>) {
