@@ -31,6 +31,9 @@ with TemporaryDirectory() as temp:
     ui=root/"core/src/com/unciv/ui/screens/worldscreen/unit/actions/UiUnitAction.kt"
     ui.parent.mkdir(parents=True)
     ui.write_text('    Pillage(UnitActionType.Pillage, portrait("Pillage"), false, useFrequency = 65f),')
+    automation=root/"core/src/com/unciv/logic/automation/unit/UnitAutomation.kt"
+    automation.parent.mkdir(parents=True)
+    automation.write_text("        // if there is an attackable unit in the vicinity, attack!")
     for _ in range(2):
         subprocess.run([sys.executable,str(fixture),str(root),str(emm)],check=True)
     generated=(root/"core/src/com/unciv/logic/city/EmmSiegeBombard.kt").read_text()
@@ -39,6 +42,9 @@ with TemporaryDirectory() as temp:
     assert "unit.useMovementPoints(1f)" in generated
     assert "isAtWarWith(it.civ)" in generated
     assert action.read_text().count("EmmSiegeBombard.actions(unit)") == 1
+    assert automation.read_text().count("EmmSiegeBombard.tryAutomatedBombard(unit)") == 1
+    assert "fun tryAutomatedBombard(unit: MapUnit)" in generated
+    assert "unit.isEmbarked() || unit.isTransported" in generated
     assert model.read_text().count('Bombard("Bombard")') == 1
     assert ui.read_text().count('Bombard(UnitActionType.Bombard') == 1
 print("PASS: EMM bombard-rate data, player action and idempotent patching")
