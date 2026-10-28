@@ -9,6 +9,10 @@ assert doc["alignments"]==["ALIGNMENT_GOOD","ALIGNMENT_NEUTRAL","ALIGNMENT_EVIL"
 religions=doc["religions"]
 assert len(religions)==7 and len(set(x["key"] for x in religions))==7
 assert all(x["alignment"] in doc["alignments"] for x in religions)
+techs=json.loads(Path("jsons/Techs.json").read_text())
+imported={t["name"].upper().replace(" ","").replace("-","") for col in techs for t in col.get("techs",[])}
+for info in religions:
+    assert info["tech"].removeprefix("TECH_").replace("_","").upper() in imported, info["tech"]
 generated=(root/"core/src/com/unciv/logic/civilization/EmmReligions.kt").read_text()
 for info in religions:
     assert info["key"] in generated
