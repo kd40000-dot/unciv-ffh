@@ -8,7 +8,7 @@ import sys
 upstream = Path("tools/patch_emm_epidemic_damage.py")
 assert upstream.is_file()
 source = upstream.read_text()
-assert "damageLivingUnits(game)" in source
+assert 'damageLivingUnits(game, "Blight")' in source
 with TemporaryDirectory() as folder:
     root = Path(folder)
     kt = root / "core/src/com/unciv/logic/city/EmmArmageddonEvents.kt"
