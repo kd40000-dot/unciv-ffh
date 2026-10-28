@@ -18,13 +18,13 @@ assert "fun spreadToCity(" in generated
 assert "fun foundAt(" in generated
 assert "fun onTechnologyResearched(" in generated
 assert "candidate.population.population" in generated
-assert "candidate.emmPresentReligions.size + 1" in generated
+assert "candidate.emmEstablishedReligions.size + 1" in generated
 assert "candidate.isCapital()" in generated
 assert 'removePrefix("TECH")' in generated
-assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
-assert "city.civ.gameInfo.emmFoundedReligions" in generated
-assert "changeEmmArmageddon(byKey[religionKey]!!.counterOnFound)" in generated
-assert "changeEmmArmageddon(byKey[religionKey]!!.counterOnSpread)" in generated
+assert "game.emmFoundedReligions" in generated
+assert "city.civ.gameInfo.emmSpreadReligion(name, city)" in generated
+assert "game.emmFoundReligion(name, city)" in generated
+assert "RELIGION_THE_ASHEN_VEIL" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
 assert "fun initializeAlignment(civ: Civilization)" in generated
 assert "selectedLeaderAlignments[civ.civName]" in generated
@@ -36,8 +36,8 @@ assert "toReturn.emmAlignment = emmAlignment" in civ
 assert "EmmReligions.initializeAlignment(this)" in civ
 assert "toReturn.emmStateReligion = emmStateReligion" in civ
 city=(root/"core/src/com/unciv/logic/city/City.kt").read_text()
-assert "toReturn.emmPresentReligions.addAll(emmPresentReligions)" in city
-assert "toReturn.emmHolyCityReligions.addAll(emmHolyCityReligions)" in city
+assert "toReturn.emmEstablishedReligions.addAll(emmEstablishedReligions)" in city
+assert "toReturn.emmHolyCityOf = emmHolyCityOf" in city
 tech=(root/"core/src/com/unciv/logic/civilization/managers/TechManager.kt").read_text()
 assert "EmmReligions.onTechnologyResearched(civInfo, techName)" in tech
 leaders=json.loads(Path("docs/data/emm-leader-alignments.json").read_text())
@@ -46,6 +46,6 @@ for name, info in leaders["selectedCivilizations"].items():
     assert name in generated
     assert info["alignment"] in doc["alignments"]
 game=(root/"core/src/com/unciv/logic/GameInfo.kt").read_text()
-assert "var emmFoundedReligions = HashSet<String>()" in game
+assert "var emmFoundedReligions = hashSetOf<String>()" in game
 assert "toReturn.emmFoundedReligions.addAll(emmFoundedReligions)" in game
 print("PASS: seven source religions and three alignments; persisted civilization clone fields")
