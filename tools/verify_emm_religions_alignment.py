@@ -17,6 +17,9 @@ assert "fun adopt(civ: Civilization" in generated
 assert "fun spreadToCity(" in generated
 assert "fun foundAt(" in generated
 assert "fun onTechnologyResearched(" in generated
+assert "candidate.population.population" in generated
+assert "candidate.emmPresentReligions.size + 1" in generated
+assert "candidate.isCapital()" in generated
 assert 'removePrefix("TECH")' in generated
 assert "gameCities.any { religionKey in it.emmHolyCityReligions }" in generated
 assert "fun changeAlignment(civ: Civilization" in generated
