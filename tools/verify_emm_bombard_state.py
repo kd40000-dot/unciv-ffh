@@ -35,4 +35,14 @@ with TemporaryDirectory() as temp:
     assert "val effective = -(bombardRate * (100 - reduction).coerceAtLeast(0) / 100)" in e
     assert "if (!city.emmBombardedThisTurn)" in e
     assert turn.count("EmmCityDefense.startCityTurn") == 1
-print("PASS: EMM persisted bombardment damage arithmetic and idempotent turn hook")
+    assert "EmmCityDefense.startCityTurn(city, 5)" in turn
+# Pinned CvCity::changeDefenseModifier and CvUnit::bombard integer paths.
+def damage_after_bombard(damage, rate, building_protection, total, maximum=100):
+    effective = -(rate * max(0, 100 - building_protection) // 100)
+    change = -(maximum * effective) // total if total > 0 else 0
+    return min(maximum, max(0, damage + change))
+assert damage_after_bombard(0, 12, 0, 60) == 20
+assert damage_after_bombard(0, 12, 50, 60) == 10
+assert damage_after_bombard(90, 12, 0, 60) == 100
+assert damage_after_bombard(90, 12, 0, 0) == 90
+print("PASS: EMM persisted bombardment damage arithmetic, cap, building protection and turn hook")
