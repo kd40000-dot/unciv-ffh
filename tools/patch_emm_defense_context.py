@@ -28,6 +28,7 @@ defs='''    // Original EMM Civ4 XML defense/typed combat values.
     private val emmSourcePromotionCombat = mapOf(
 %s
     )
+    @yairm210.purity.annotations.Readonly
     private fun emmUnitKey(name: String): String =
         "UNIT_" + name.uppercase().replace(" ", "_").replace("-", "_")
 
