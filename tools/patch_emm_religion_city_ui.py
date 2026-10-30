@@ -5,11 +5,17 @@ import sys
 root=Path(sys.argv[1] if len(sys.argv)>1 else "upstream-unciv")
 # The original religion records are separate from the native Unciv religion UI.
 # Show EMM city state explicitly, instead of making research appear to do nothing.
+view=root/"core/src/com/unciv/view/CityView.kt"
+v=view.read_text()
+anchor="    @Readonly fun getEmmHealthInfo(): Pair<Int, Int>? = city.cityStats.emmHealthInfo"
+assert v.count(anchor)==1
+if "getEmmReligionCity()" not in v:
+    view.write_text(v.replace(anchor,anchor+chr(10)+"    @Readonly fun getEmmReligionCity(): City = city"))
 ui=root/"core/src/com/unciv/ui/screens/cityscreen/CityStatsTable.kt"
 s=ui.read_text()
 anchor='        lowerTable.add(unassignedPopLabel).row()'
 block='''        // EMM's religious city state is separate from Unciv's vanilla religion manager.
-        val emmCity = cityView.getCity()
+        val emmCity = cityView.getEmmReligionCity()
         if (emmCity.civ.gameInfo.ruleset.buildings.containsKey("Herbalist")) {
             val names = emmCity.emmEstablishedReligions.sorted()
             if (names.isNotEmpty()) {
