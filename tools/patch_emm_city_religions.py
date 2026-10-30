@@ -66,7 +66,17 @@ if "fun onTechnologyResearched(" not in e:
                 if (candidate.isCapital()) score /= 8
                 score.coerceAtLeast(1)
             } ?: continue
-            foundAt(city, religion.key)
+            if (foundAt(city, religion.key)) {
+                civ.addNotification(
+                    displayName(religion.key) + " founded in [" + city.name + "]!",
+                    NotificationCategory.General
+                )
+            } else if (gameNames[religion.key] in civ.gameInfo.emmFoundedReligions) {
+                civ.addNotification(
+                    displayName(religion.key) + " has already been founded.",
+                    NotificationCategory.General
+                )
+            }
         }
     }
 
