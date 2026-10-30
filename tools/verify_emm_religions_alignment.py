@@ -24,6 +24,9 @@ assert "city.emmEstablishedReligions" in generated
 assert "fun spreadToCity(" in generated
 assert "fun foundAt(" in generated
 assert "fun onTechnologyResearched(" in generated
+assert "founded in [" in generated
+assert "has already been founded." in generated
+assert "fun displayName(key: String)" in generated
 assert "candidate.population.population" in generated
 assert "candidate.emmEstablishedReligions.size + 1" in generated
 assert "candidate.isCapital()" in generated
@@ -60,4 +63,8 @@ actions=(root/"core/src/com/unciv/logic/map/mapunit/actions/UnitActions.kt").rea
 assert "EmmReligions.conversionActions(unit)" in actions
 ui=(root/"core/src/com/unciv/ui/screens/worldscreen/unit/actions/UiUnitAction.kt").read_text()
 assert "EmmConvertReligion(UnitActionType.EmmConvertReligion" in ui
+city_ui=(root/"core/src/com/unciv/ui/screens/cityscreen/CityStatsTable.kt").read_text()
+assert "Religions: " in city_ui and "Holy City: " in city_ui
+assert "Alignment: " in city_ui and "State Religion: " in city_ui
+assert "getEmmReligionCity()" in (root/"core/src/com/unciv/view/CityView.kt").read_text()
 print("PASS: seven source religions and three alignments; persisted civilization clone fields")
