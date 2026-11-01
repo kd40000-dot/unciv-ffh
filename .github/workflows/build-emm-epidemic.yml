@@ -20,6 +20,7 @@ on:
       - 'tools/patch_emm_religions_alignment.py'
       - 'tools/patch_emm_city_religions.py'
       - 'tools/patch_emm_religion_city_ui.py'
+      - 'tools/patch_emm_religion_retroactive.py'
       - 'tools/patch_emm_religion_conversion_action.py'
       - 'tools/verify_emm_religions_alignment.py'
       - 'tools/verify_emm_siege_bombard.py'
@@ -86,6 +87,7 @@ jobs:
           python3 tools/patch_emm_city_religions.py upstream-unciv
           python3 tools/patch_emm_religion_conversion_action.py upstream-unciv
           python3 tools/patch_emm_religion_city_ui.py upstream-unciv
+          python3 tools/patch_emm_religion_retroactive.py upstream-unciv
       - name: Verify source-backed EMM religion and alignment state
         run: python3 tools/verify_emm_religions_alignment.py upstream-unciv
       - name: Bundle EMM city health icon
